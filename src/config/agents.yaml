@@ -1,0 +1,31 @@
+cv_parser:
+  role: >
+    CV Parser
+  goal: >
+    
+  backstory: >
+    
+
+job_parser:
+  role: >
+    Job Parser
+  goal: >
+    
+  backstory: >
+    
+
+reviwer:
+  role: >
+    Reviwer
+  goal: >
+    
+  backstory: >
+    
+
+optimizer:
+  role: >
+    Optimizer
+  goal: >
+    
+  backstory: >
+    
