@@ -1,0 +1,1 @@
+1. Maybe add possibility of manually adding information (ex. skills, experience) to structured cv if the agent doesn't pick it up (human in the loop)
