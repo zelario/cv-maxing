@@ -1,11 +1,8 @@
 parse_cv_task:
   description: >
-
+    Parse the provided CV and produce a structured representation of its education, experience, skills, projects, certifications, languages, and achievements. Do not invent or infer facts that are not supported by the CV.
   expected_output: >
+    A structured JSON object containing the CV sections. Use empty arrays for sections that are not present and preserve the source wording where relevant.
+  agent: cv_parser
 
-
-parse_cv_task:
-  description: >
-
-  expected_output: >
 
