@@ -66,3 +66,61 @@ parse_job_task:
     employment type, seniority, required and preferred skills, experience
     requirements, education requirements, responsibilities, keywords, and
     other relevant requirements, with source evidence whenever available.
+
+
+review_cv_task:
+  description: >
+    Review the structured CV against the structured job posting.
+
+    The context contains:
+    1. The output of the CV Parser Agent.
+    2. The output of the Job Parser Agent.
+
+    Use the provided CV and job data as the only source of candidate and job
+    information.
+
+    The deterministic scoring system is currently disabled and must not be
+    used. Do not call the deterministic scoring tool and do not assign or
+    simulate a deterministic score.
+
+    Independently review the candidate's fit using your own reasoning.
+
+    For every relevant job requirement, determine whether the CV provides:
+
+    - satisfied evidence
+    - weak evidence
+    - no evidence
+
+    Distinguish between skills that are merely listed and skills demonstrated
+    through experience, projects, responsibilities, or achievements.
+
+    Consider the importance of each requirement according to the specific job.
+
+    Identify:
+    - strong matches
+    - missing requirements
+    - weak evidence
+    - relevant strengths
+    - relevant weaknesses
+
+    Evaluate the CV in the context of the specific job rather than judging
+    the CV in isolation.
+
+    Only identify strengths that are relevant to the specific job.
+
+    Do not invent information, qualifications, skills, experience,
+    achievements, or evidence.
+
+    Do not provide recommendations or suggest how the candidate should
+    improve the CV.
+
+    Do not assign a numerical AI score. Instead, provide a qualitative
+    assessment of the overall fit and explain the main reasons for that
+    assessment.
+
+    Finally, save the structured review to a JSON file using the save_structured_review tool.
+
+  expected_output: >
+    A validated ReviewerResult containing a qualitative overall assessment,
+    requirement matches, missing requirements, weak evidence, relevant
+    strengths, relevant weaknesses, and supporting reasoning.

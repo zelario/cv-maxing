@@ -1,3 +1,7 @@
 crewai
 python-dotenv
 docling
+pydantic
+requests
+trafilatura
+beautifulsoup4

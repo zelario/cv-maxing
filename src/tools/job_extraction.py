@@ -90,7 +90,7 @@ def save_structured_job(structured_job: str) -> None:
     Save a structured job posting as a formatted JSON file.
     """
 
-    json_path = Path("logs/structured_job_temp.json")
+    json_path = Path("data/structured_job_temp.json")
 
     data = json.loads(structured_job)
 

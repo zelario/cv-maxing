@@ -33,7 +33,7 @@ def save_structured_cv(structured_cv: str) -> None:
     Save a structured CV as a formatted JSON file.
     """
 
-    json_path = Path("logs/structured_cv_temp.json")
+    json_path = Path("data/structured_cv_temp.json")
 
     data = json.loads(structured_cv)
 
