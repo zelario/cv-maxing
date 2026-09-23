@@ -1,8 +1,68 @@
 parse_cv_task:
   description: >
-    Parse the provided CV and produce a structured representation of its education, experience, skills, projects, certifications, languages, and achievements. Do not invent or infer facts that are not supported by the CV.
+    Parse the CV located at {cv}.
+
+    First, use the convert_cv_to_markdown tool to extract the content of the PDF.
+
+    Then, extract and structure all relevant information explicitly stated
+    in the CV.
+
+    Preserve the original meaning and relevant source evidence.
+
+    Do not invent or infer information that is not explicitly supported by
+    the CV.
+
+    Distinguish between information that is explicitly stated and information
+    that is not present.
+
+    Preserve the source section and relevant source text whenever possible.
+
+    Keep information that does not clearly belong to a predefined category
+    under "other" rather than discarding it.
+
+    Do not evaluate the CV, compare it to a job posting, assign scores, or
+    provide recommendations.
+
+    Finally, save the structured cv to a JSON file using the save_structured_cv tool.
+
   expected_output: >
-    A structured JSON object containing the CV sections. Use empty arrays for sections that are not present and preserve the source wording where relevant.
-  agent: cv_parser
+    A structured CV containing education, work experience, skills, projects,
+    certifications, languages, achievements, summary information, and other
+    relevant content, with source evidence whenever available.
 
+  
+parse_job_task:
+  description: >
+    Parse the job posting provided by the user on {job}.
 
+    First, use the convert_job_to_markdown tool with the provided job input.
+    The tool automatically determines whether the input is a job posting URL
+    or an already extracted job description.
+
+    Then, extract and structure all relevant information explicitly stated
+    in the job posting.
+
+    Preserve the original meaning and relevant source evidence.
+
+    Do not invent or infer requirements, skills, experience, qualifications,
+    responsibilities, seniority, or other information that is not explicitly
+    supported by the job posting.
+
+    Distinguish between required and preferred requirements whenever this
+    distinction is explicitly stated.
+
+    Preserve the source section and relevant source text whenever possible.
+
+    Keep information that does not clearly belong to a predefined category
+    under "other_requirements" rather than discarding it.
+
+    Do not evaluate the candidate, compare the job posting to a CV, assign
+    scores, or provide recommendations.
+
+    Finally, save the structured job posting to a JSON file using the save_structured_job tool.
+
+  expected_output: >
+    A structured job posting containing the job title, company, location,
+    employment type, seniority, required and preferred skills, experience
+    requirements, education requirements, responsibilities, keywords, and
+    other relevant requirements, with source evidence whenever available.

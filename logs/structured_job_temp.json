@@ -1,0 +1,205 @@
+{
+  "job_title": "Consultant / Senior - Artificial Intelligence & Data",
+  "company": {
+    "name": "Deloitte",
+    "location": "Lisboa, PT",
+    "website": "www.deloitte.com/pt/careers"
+  },
+  "location": "Lisboa, PT (also mentions Coimbra, PT Viseu, PT Braga, PT Porto, PT)",
+  "employment_type": "",
+  "seniority": "Consultant / Senior",
+  "description": "Queres integrar uma das maiores organizações na prestação de serviços de consultoria do mercado? Junta-te a nós e vais poder reforçar as tuas competências e potenciar a tua carreira. Estamos a reforçar a nossa área de Technology & Transformation com os melhores experts em Data, para integrar projetos de Data Science, Data Engineering e Analytics. Na Deloitte, oferecemos uma experiência profissional que inspira talentos como tu a transformar o mundo e a torná-lo mais eficiente e tecnológico. Somos uma comunidade talentosa e diversa que nos potencia para criarmos valor nas nossas pessoas, empresas e sociedade. Somos um Tech Hub internacional e estamos à procura dos melhores especialistas em dados e AI, para desenvolverem soluções únicas e ajudar os nossos Clientes a transformarem o seu negócio; a melhorarem a qualidade dos seus serviços; e a aumentar a eficácia e eficiência das suas operações. Na Deloitte alcançamos estes objetivos através de conhecimentos de negócio e de tecnologias inovadoras tal como o GenAI. Estamos à procura dos melhores talentos para se juntarem a variados projetos, de Portugal para o mundo. Juntas-te a nós?",
+  "skills": [
+    {
+      "name": "SQL",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "SQL: Experiência em SQL, com conhecimento em bases de dados relacionais (ex. SQL Server, Oracle, PostgreSQL ou equivalente)"
+    },
+    {
+      "name": "ETL/ELT tools (ADF, AWS Glue, SSIS, Pentaho, dbt or equivalent)",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "ETL/ELT: Experiência em ferramentas de ETL de dados (ex. ADF, AWS Glue, SSIS, Pentaho, dbt ou equivalente)."
+    },
+    {
+      "name": "Python, Scala or Java",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Linguagens de Programação: Conhecimentos em Python,Scala ou Java."
+    },
+    {
+      "name": "CI/CD practices applied to data lifecycle",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "CI/CD: Conhecimento em práticas de CI/CD aplicadas ao ciclo de vida de dados"
+    },
+    {
+      "name": "Data Modeling and database design best practices",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Data Modeling: Conhecimento em modelação de dados e boas práticas de design de bases de dados"
+    },
+    {
+      "name": "Generative AI technologies (OpenAI, Gemini, Claude, Cursor or equivalent)",
+      "requirement_type": "preferred",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "AI: Experiência com tecnologias de Generative AI (ex: OpenAI; Gemini; Claude, Cursor ou equivalente)"
+    },
+    {
+      "name": "Big Data tools (Hadoop, Spark, Kafka, Hive)",
+      "requirement_type": "preferred",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Big Data: Experiência com ferramentas de Big Data (ex. Hadoop, Spark, Kafka, Hive)"
+    },
+    {
+      "name": "Cloud Computing environments (Azure, AWS, GCP) and cloud data tools (Redshift, BigQuery, Databricks, Snowflake, Singlestore)",
+      "requirement_type": "preferred",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Cloud Computing: Experiência em ambientes de Cloud Computing (Azure, AWS, GCP), com conhecimento de ferramentas de dados em cloud (ex. Redshift, BigQuery, Databricks, Snowflake, Singlestore)"
+    },
+    {
+      "name": "Agile methodologies (Scrum, Kanban)",
+      "requirement_type": "preferred",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Conhecimentos das metodologias ágeis (ex. Scrum, Kanban)"
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Experiência profissional nas áreas da tecnologia ou engenharia, com foco em dados",
+      "years": "2 a 10 anos",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Experiência profissional entre 2 e 10 anos nas áreas da tecnologia ou engenharia, com foco em dados"
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "",
+      "degree": "Licenciatura ou Mestrado",
+      "field": "Engenharia Informática, Computadores, Dados, Matemática ou áreas relacionadas",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "Licenciatura ou Mestrado em Engenharia Informática, Computadores, Dados, Matemática ou áreas relacionadas"
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Supervisão e/ou participação em projetos de engenharia de dados, garantindo a entrega de soluções robustas e escaláveis",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Supervisão e/ou participação em projetos de engenharia de dados, garantindo a entrega de soluções robustas e escaláveis"
+    },
+    {
+      "description": "Desenvolvimento e manutenção de pipelines de dados eficientes, para ingestão, transformação e disponibilização de dados",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Desenvolvimento e manutenção de pipelines de dados eficientes, para ingestão, transformação e disponibilização de dados"
+    },
+    {
+      "description": "Colaboração com equipas multidisciplinares (analistas, cientistas de dados, arquitetos) em projetos com clientes de referência a nível nacional e internacional",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Colaboração com equipas multidisciplinares (analistas, cientistas de dados, arquitetos) em projetos com clientes de referência a nível nacional e internacional"
+    },
+    {
+      "description": "Gestão das relações diárias com os stakeholders técnicos e funcionais, assegurando o alinhamento das soluções com os requisitos de negócio",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Gestão das relações diárias com os stakeholders técnicos e funcionais, assegurando o alinhamento das soluções com os requisitos de negócio"
+    },
+    {
+      "description": "Planeamento e execução autónoma das tarefas atribuídas, incluindo desenvolvimento, documentação, testes e otimização de processos de dados",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Planeamento e execução autónoma das tarefas atribuídas, incluindo desenvolvimento, documentação, testes e otimização de processos de dados"
+    },
+    {
+      "description": "Identificação e resolução de desafios técnicos em ambientes de dados complexos",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Identificação e resolução de desafios técnicos em ambientes de dados complexos"
+    },
+    {
+      "description": "Garantia do cumprimento de prazos e da qualidade na execução das suas entregas",
+      "source_section": "O teu dia a dia e responsabilidades:",
+      "source_text": "- Garantia do cumprimento de prazos e da qualidade na execução das suas entregas"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Sobre a Deloitte",
+      "source_section": "Keywords:",
+      "source_text": "Keywords: Sobre a Deloitte; Consulting; Technology"
+    },
+    {
+      "keyword": "Consulting",
+      "source_section": "Keywords:",
+      "source_text": "Keywords: Sobre a Deloitte; Consulting; Technology"
+    },
+    {
+      "keyword": "Technology",
+      "source_section": "Keywords:",
+      "source_text": "Keywords: Sobre a Deloitte; Consulting; Technology"
+    },
+    {
+      "keyword": "#LI-HYBRID",
+      "source_section": "Keywords:",
+      "source_text": "#LI-HYBRID #LI-RSG #TECHDTT #Experienced"
+    },
+    {
+      "keyword": "#LI-RSG",
+      "source_section": "Keywords:",
+      "source_text": "#LI-HYBRID #LI-RSG #TECHDTT #Experienced"
+    },
+    {
+      "keyword": "#TECHDTT",
+      "source_section": "Keywords:",
+      "source_text": "#LI-HYBRID #LI-RSG #TECHDTT #Experienced"
+    },
+    {
+      "keyword": "#Experienced",
+      "source_section": "Keywords:",
+      "source_text": "#LI-HYBRID #LI-RSG #TECHDTT #Experienced"
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Language",
+      "description": "Obrigatória fluência em Português e Inglês, tanto escrito como falado, especialmente em contextos técnicos",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Obrigatória fluência em Português e Inglês, tanto escrito como falado, especialmente em contextos técnicos"
+    },
+    {
+      "type": "Soft Skill",
+      "description": "Motivação e interesse para aprender e trabalhar com diferentes tecnologias",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Motivação e interesse para aprender e trabalhar com diferentes tecnologias"
+    },
+    {
+      "type": "Soft Skill",
+      "description": "Orientação para o cliente e para resultados",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Orientação para o cliente e para resultados"
+    },
+    {
+      "type": "Soft Skill",
+      "description": "Comunicação, relacionamento interpessoal, trabalho em equipa e colaboração",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Comunicação, relacionamento interpessoal, trabalho em equipa e colaboração"
+    },
+    {
+      "type": "Soft Skill",
+      "description": "Resolução de problemas, capacidade analítica e espírito crítico",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Resolução de problemas, capacidade analítica e espírito crítico"
+    },
+    {
+      "type": "Soft Skill",
+      "description": "Organização, planeamento e orientação para a qualidade dos projetos",
+      "requirement_type": "required",
+      "source_section": "És tu quem procuramos?",
+      "source_text": "- Organização, planeamento e orientação para a qualidade dos projetos"
+    }
+  ]
+}

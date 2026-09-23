@@ -160,9 +160,7 @@ The CV Parser Agent uses an LLM to interpret and structure the extracted informa
 
 ### Tools
 
-* **PyMuPDF** for PDF text extraction
-* **spaCy / rule-based methods** for supporting NLP tasks
-* **Pydantic** for structured data validation
+* **Docling** for PDF text extraction
 * **LLM** for interpreting and structuring extracted CV information
 
 The original document content should remain available so that extracted information can be validated and information loss can be detected.
