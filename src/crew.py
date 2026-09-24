@@ -12,14 +12,14 @@ from models.job import StructuredJob
 from models.review import ReviewerResult
 from models.optimization import CVOptimizationResult
 
-from tools.cv_extraction import convert_cv_to_markdown, save_structured_cv
-from tools.job_extraction import convert_job_to_markdown, save_structured_job
-from tools.cv_evaluation import get_evaluation_framework, save_structured_review
+from tools.cv_extraction import convert_cv_to_markdown
+from tools.job_extraction import convert_job_to_markdown
+from tools.cv_evaluation import get_evaluation_framework
 from tools.cv_optimization import (
     ask_user,
     save_optimized_cv_markdown,
-    save_structured_optimization,
 )
+from tools.json_storage import save_json
 
 
 @CrewBase
@@ -32,7 +32,7 @@ class CVMaxingCrew:
     def cv_parser(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_parser"],
-            tools=[convert_cv_to_markdown, save_structured_cv],
+            tools=[convert_cv_to_markdown, save_json],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -42,7 +42,7 @@ class CVMaxingCrew:
     def job_parser(self) -> Agent:
         return Agent(
             config=self.agents_config["job_parser"],
-            tools=[convert_job_to_markdown, save_structured_job],
+            tools=[convert_job_to_markdown, save_json],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -52,7 +52,7 @@ class CVMaxingCrew:
     def reviewer(self) -> Agent:
         return Agent(
             config=self.agents_config["reviewer"],
-            tools=[get_evaluation_framework, save_structured_review],
+            tools=[get_evaluation_framework, save_json],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -62,7 +62,11 @@ class CVMaxingCrew:
     def cv_optimizer(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_optimizer"],
-            tools=[ask_user, save_structured_optimization, save_optimized_cv_markdown],
+            tools=[
+                ask_user,
+                save_json,
+                save_optimized_cv_markdown,
+            ],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,

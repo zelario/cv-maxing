@@ -1,5 +1,4 @@
 from pathlib import Path
-import json
 
 from docling.document_converter import DocumentConverter
 from crewai.tools import tool
@@ -27,18 +26,3 @@ def convert_cv_to_markdown(pdf_path: str) -> str:
     return markdown
 
 
-@tool("save_structured_cv")
-def save_structured_cv(structured_cv: str) -> None:
-    """
-    Save a structured CV as a formatted JSON file.
-    """
-
-    json_path = Path("data/structured_cv_temp.json")
-
-    data = json.loads(structured_cv)
-
-    with open(json_path, "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
-
-    print(f"[TOOL] Structured CV saved to {json_path}")
-    print(f"[TOOL] Saved {len(data)} top-level fields")

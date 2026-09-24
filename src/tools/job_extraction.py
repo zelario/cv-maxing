@@ -1,7 +1,6 @@
 import requests
 import trafilatura
 from bs4 import BeautifulSoup
-import json
 from pathlib import Path
 from crewai.tools import tool
 
@@ -10,7 +9,6 @@ def convert_job_page_to_markdown(url: str) -> str:
     """
     Extract a job posting from a webpage and save the result as Markdown.
     """
-    markdown_path = "data/job.md"
 
     try:
         response = requests.get(
@@ -46,7 +44,6 @@ def convert_job_page_to_markdown(url: str) -> str:
     if not text:
         raise ValueError("Could not extract text from the webpage.")
 
-    print(f"[TOOL] Job posting saved to {markdown_path}")
     print(f"[TOOL] Extracted {len(text)} characters")
 
     return text
@@ -75,23 +72,6 @@ def convert_job_to_markdown(job: str) -> str:
 
     print("[TOOL] Input detected as job description.")
     return convert_job_description_to_markdown(job)
-
-
-@tool("save_structured_job")
-def save_structured_job(structured_job: str) -> None:
-    """
-    Save a structured job posting as a formatted JSON file.
-    """
-
-    json_path = Path("data/structured_job_temp.json")
-
-    data = json.loads(structured_job)
-
-    with open(json_path, "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
-
-    print(f"[TOOL] Structured job saved to {json_path}")
-    print(f"[TOOL] Saved {len(data)} top-level fields")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,3 @@
-import json
 from pathlib import Path
 import yaml
 
@@ -23,17 +22,3 @@ def get_evaluation_framework() -> str:
     )
 
 
-@tool("save_structured_review")
-def save_structured_review(structured_review: str) -> None:
-    """
-    Save a structured review as a formatted JSON file.
-    """
-
-    json_path = Path("data/structured_review_temp.json")
-
-    data = json.loads(structured_review)
-
-    with open(json_path, "w", encoding="utf-8") as file:
-        json.dump(data, file, indent=2, ensure_ascii=False)
-
-    print(f"[TOOL] Structured Review saved to {json_path}")

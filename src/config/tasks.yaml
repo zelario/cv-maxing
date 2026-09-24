@@ -28,7 +28,8 @@ parse_cv_task:
     Do not evaluate the CV, compare it to a job posting, assign scores, or
     provide recommendations.
 
-    Finally, save the structured cv to a JSON file using the save_structured_cv tool, the input must be a string.
+    Finally, save the structured CV using save_json with filename
+    "structured_cv_temp.json" and the complete JSON payload.
 
   expected_output: >
     A structured CV containing education, work experience, skills, projects,
@@ -64,7 +65,8 @@ parse_job_task:
     Do not evaluate the candidate, compare the job posting to a CV, assign
     scores, or provide recommendations.
 
-    Finally, save the structured job posting to a JSON file using the save_structured_job tool, the input must be a string.
+    Finally, save the structured job posting using save_json with filename
+    "structured_job_temp.json" and the complete JSON payload.
 
   expected_output: >
     A structured job posting containing the job title, company, location,
@@ -125,7 +127,8 @@ review_cv_task:
     Do not make a hiring decision or state that the candidate is or is not
     viable for the role.
 
-    Finally, save the structured review using the save_structured_review tool, the input must be a string.
+    Finally, save the structured review using save_json with filename
+    "structured_review_temp.json" and the complete JSON payload.
 
   expected_output: >
     A validated ReviewerResult containing requirement matches, evidence
@@ -235,12 +238,13 @@ optimize_cv_task:
     split, merge, or remove sections whenever this improves the CV. Keep
     unsupported evidence gaps out of the draft and preserve factual meaning.
 
-    Before saving, compare the draft against the proposed_changes list. Do not
+    Compare the draft against the proposed_changes list. Do not
     save a draft that is merely the original CV with unchanged sections. It
     must reflect all supported changes, while retaining relevant original
     content that was not changed. Save the draft using the
     save_optimized_cv_markdown tool. Also save the structured audit result
-    using the save_structured_optimization tool.
+    using save_json with filename "structured_optimization_temp.json" and the
+    complete JSON payload.
 
   expected_output: >
     A validated CVOptimizationResult containing the complete optimized CV in
