@@ -8,8 +8,8 @@ from crew import CVMaxingCrew
 def run():
     result = CVMaxingCrew().crew().kickoff(
         inputs={
-            "cv": "data/cv.pdf",
-            "job": "https://jobs.deloitte.pt/job/Lisboa-Consultant-Senior-Artificial-Intelligence-&-Data/1325292655/?utm_source=LINKEDIN&utm_medium=referrer",
+            "cv": "data/curriculo.pdf",
+            "job": "https://www.revolut.com/en-PT/careers/position/internship-programme-2027-data-scientist-and-analyst-36855ffa-f704-40be-bf77-a8b4deb360fa/",
         }
     )
 

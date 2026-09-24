@@ -23,7 +23,7 @@ parse_cv_task:
     Do not evaluate the CV, compare it to a job posting, assign scores, or
     provide recommendations.
 
-    Finally, save the structured cv to a JSON file using the save_structured_cv tool.
+    Finally, save the structured cv to a JSON file using the save_structured_cv tool, the input must be a string.
 
   expected_output: >
     A structured CV containing education, work experience, skills, projects,
@@ -59,7 +59,7 @@ parse_job_task:
     Do not evaluate the candidate, compare the job posting to a CV, assign
     scores, or provide recommendations.
 
-    Finally, save the structured job posting to a JSON file using the save_structured_job tool.
+    Finally, save the structured job posting to a JSON file using the save_structured_job tool, the input must be a string.
 
   expected_output: >
     A structured job posting containing the job title, company, location,
@@ -76,51 +76,48 @@ review_cv_task:
     1. The output of the CV Parser Agent.
     2. The output of the Job Parser Agent.
 
+    First, use the get_evaluation_framework tool to retrieve the evaluation
+    framework.
+
+    Use the framework as the evaluation methodology for this review.
+
     Use the provided CV and job data as the only source of candidate and job
     information.
 
-    The deterministic scoring system is currently disabled and must not be
-    used. Do not call the deterministic scoring tool and do not assign or
-    simulate a deterministic score.
+    Do not access external information about the candidate.
 
-    Independently review the candidate's fit using your own reasoning.
-
-    For every relevant job requirement, determine whether the CV provides:
-
+    Distinguish between:
     - satisfied evidence
     - weak evidence
     - no evidence
+    - uncertain evidence
+
+    Do not interpret absence of evidence as proof that the candidate lacks
+    a requirement.
 
     Distinguish between skills that are merely listed and skills demonstrated
-    through experience, projects, responsibilities, or achievements.
+    through experience, projects, coursework, responsibilities, or
+    achievements.
 
-    Consider the importance of each requirement according to the specific job.
+    Evaluate requirements according to their importance in the specific job.
 
     Identify:
     - strong matches
-    - missing requirements
     - weak evidence
+    - missing evidence
     - relevant strengths
     - relevant weaknesses
 
-    Evaluate the CV in the context of the specific job rather than judging
-    the CV in isolation.
+    Do not provide recommendations or suggest CV improvements.
 
-    Only identify strengths that are relevant to the specific job.
+    Do not assign numerical scores.
 
-    Do not invent information, qualifications, skills, experience,
-    achievements, or evidence.
+    Do not make a hiring decision or state that the candidate is or is not
+    viable for the role.
 
-    Do not provide recommendations or suggest how the candidate should
-    improve the CV.
-
-    Do not assign a numerical AI score. Instead, provide a qualitative
-    assessment of the overall fit and explain the main reasons for that
-    assessment.
-
-    Finally, save the structured review to a JSON file using the save_structured_review tool.
+    Finally, save the structured review using the save_structured_review tool, the input must be a string.
 
   expected_output: >
-    A validated ReviewerResult containing a qualitative overall assessment,
-    requirement matches, missing requirements, weak evidence, relevant
-    strengths, relevant weaknesses, and supporting reasoning.
+    A validated ReviewerResult containing requirement matches, evidence
+    strength, missing evidence, relevant strengths, relevant weaknesses,
+    overall assessment, and supporting reasoning.

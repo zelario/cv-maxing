@@ -12,7 +12,7 @@ from models.review import ReviewerResult
 
 from tools.cv_extraction import convert_cv_to_markdown, save_structured_cv
 from tools.job_extraction import convert_job_to_markdown, save_structured_job
-from tools.cv_evaluation import calculate_deterministic_score, save_structured_review
+from tools.cv_evaluation import calculate_deterministic_score, get_evaluation_framework, save_structured_review
 
 @CrewBase
 class CVMaxingCrew:
@@ -44,7 +44,7 @@ class CVMaxingCrew:
     def reviewer(self) -> Agent:
         return Agent(
             config=self.agents_config["reviewer"],
-            tools=[calculate_deterministic_score, save_structured_review],
+            tools=[calculate_deterministic_score, get_evaluation_framework, save_structured_review],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,

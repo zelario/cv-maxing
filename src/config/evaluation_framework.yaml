@@ -1,2 +1,467 @@
-criteria:
-  For now ignore this step. Will be implemented in the future.
+evaluation_framework:
+
+  evaluation_mode: qualitative
+
+  purpose: >
+    Evaluate how strongly a CV provides evidence for the requirements of a
+    specific job posting. The framework establishes a general evaluation
+    hierarchy while allowing the importance of each criterion to change
+    according to the job, its explicit requirements, and the candidate's
+    career stage.
+
+  core_principles:
+
+    - >
+      Specific job requirements take precedence over generic CV evaluation
+      practices.
+
+    - >
+      The importance of a criterion must be determined in the context of the
+      specific job rather than by a universal fixed weighting system.
+
+    - >
+      Evidence in the CV must be distinguished from assumptions about the
+      candidate.
+
+    - >
+      Absence of evidence in the CV must not be interpreted as proof that the
+      candidate does not possess the skill, qualification, experience, or
+      characteristic.
+
+    - >
+      Demonstrated evidence should generally be considered stronger than a
+      skill or competency that is merely listed.
+
+    - >
+      The Reviewer must evaluate the submitted CV only and must not retrieve
+      additional information about the candidate from external sources.
+
+    - >
+      The AI Reviewer provides contextual reasoning and must not be treated as
+      ground truth.
+
+    - >
+      Human review remains the final step in the overall system.
+
+  priority_hierarchy:
+
+    required_skills_and_qualifications:
+      base_priority: very_high
+      rationale: >
+        Explicitly required skills and qualifications should receive greater
+        attention than preferred or generic criteria.
+
+    relevant_experience:
+      base_priority: very_high
+      rationale: >
+        Experience should be evaluated according to relevance to the target
+        role, responsibilities, seniority, duration, and similarity to the
+        target position.
+
+    demonstrated_skills_and_evidence:
+      base_priority: very_high
+      rationale: >
+        Demonstrated application of a skill provides stronger evidence than a
+        skill merely listed in a skills section.
+
+    achievements_and_impact:
+      base_priority: high
+      rationale: >
+        Relevant achievements and measurable impact provide stronger evidence
+        of contribution than responsibilities alone.
+
+    projects_and_practical_experience:
+      base_priority: high
+      rationale: >
+        Projects, internships, research, practical coursework, and similar
+        experiences are particularly important for candidates with limited
+        professional experience.
+
+    soft_skills_and_competencies:
+      base_priority: medium_high
+      rationale: >
+        Communication, teamwork, and problem-solving matter when relevant to
+        the role, but self-declared claims should receive limited evidential
+        weight without supporting evidence.
+
+    education_and_certifications:
+      base_priority: context_dependent
+      rationale: >
+        Education and certifications should receive high importance when they
+        are explicit job requirements and lower importance when they are not
+        central to the role.
+
+    keywords_and_ats_alignment:
+      base_priority: medium
+      rationale: >
+        Keywords support screening and matching, but exact keyword presence
+        should not dominate semantic and evidence-based evaluation.
+
+    cv_structure_and_presentation:
+      base_priority: medium_low
+      rationale: >
+        Structure and presentation affect readability and extraction but should
+        not override substantive evidence of suitability.
+
+  contextual_adjustments:
+
+    required_criterion:
+      rule: >
+        If a criterion is explicitly required by the job posting, increase its
+        evaluation priority relative to the same criterion when merely
+        preferred or contextual.
+
+    preferred_criterion:
+      rule: >
+        Preferred requirements should contribute less than equivalent required
+        requirements unless the job posting gives them unusual prominence.
+
+    entry_level_candidate:
+      indicators:
+        - internship
+        - graduate
+        - entry-level
+        - student
+        - limited professional experience
+      adjustments:
+        projects_and_practical_experience: increase
+        demonstrated_skills_and_evidence: increase
+        relevant_experience: reduce_relative_importance
+      rule: >
+        When professional experience is limited, relevant projects,
+        internships, coursework, research, and other experiential learning
+        should be considered meaningful evidence of capability.
+
+    experienced_candidate:
+      indicators:
+        - senior
+        - experienced
+        - years of experience explicitly required
+      adjustments:
+        relevant_experience: increase
+        achievements_and_impact: increase
+        projects_and_practical_experience: reduce_relative_importance
+      rule: >
+        Professional experience and demonstrated impact should generally
+        provide stronger evidence than academic or personal projects for
+        experienced roles.
+
+    explicit_education_requirement:
+      rule: >
+        If the job explicitly requires a degree, field of study, certification,
+        study stage, or graduation condition, education becomes a high-priority
+        criterion.
+
+    explicit_experience_requirement:
+      rule: >
+        If the job explicitly requires years of experience, specific roles,
+        seniority, or domain experience, relevant experience becomes a
+        high-priority criterion.
+
+    explicit_availability_requirement:
+      rule: >
+        Availability, graduation timing, relocation, and work-arrangement
+        requirements should be evaluated separately as eligibility or
+        logistical requirements.
+
+  evidence_strength:
+
+    no_evidence:
+      description: >
+        The CV does not provide explicit evidence supporting the requirement.
+      interpretation: >
+        No evidence in the submitted CV. This does not establish that the
+        candidate lacks the requirement.
+
+    mentioned:
+      description: >
+        The requirement or skill appears explicitly in the CV, but there is
+        little or no supporting context.
+      example: >
+        Python listed in the Skills section.
+
+    supported:
+      description: >
+        The requirement is mentioned and supported by relevant context such as
+        coursework, a project, an internship, professional experience, or
+        responsibilities.
+      example: >
+        Python listed as a skill and used in a university project.
+
+    strongly_demonstrated:
+      description: >
+        The requirement is supported by concrete, relevant evidence showing
+        meaningful application, responsibility, or impact.
+      example: >
+        Developed a Python data pipeline for a project and reduced processing
+        time by 40 percent.
+
+  reviewer_statuses:
+
+    satisfied:
+      meaning: >
+        The CV provides sufficient evidence that the candidate satisfies the
+        requirement.
+
+    weak_evidence:
+      meaning: >
+        Some relevant evidence exists, but the strength, specificity, depth,
+        or context is limited.
+
+    no_evidence:
+      meaning: >
+        The CV does not provide explicit evidence supporting the requirement.
+
+    uncertain:
+      meaning: >
+        The CV contains related information, but the available evidence is
+        insufficient to determine whether the requirement is satisfied.
+
+  evidence_rules:
+
+    listed_skill_vs_demonstrated_skill:
+      rule: >
+        A skill listed without supporting context should generally be treated
+        as weaker evidence than a skill demonstrated through experience,
+        projects, coursework, responsibilities, or achievements.
+
+    experience_relevance:
+      rule: >
+        Experience should be evaluated according to relevance to the target
+        role rather than by years alone.
+
+    achievements:
+      rule: >
+        Relevant measurable outcomes, impact, awards, promotions, and process
+        improvements strengthen evidence when explicitly supported by the CV.
+
+    soft_skills:
+      rule: >
+        Self-declared soft skills should receive weaker evidential support
+        than behaviours or outcomes demonstrating those competencies.
+
+    projects:
+      rule: >
+        Projects are valid evidence of practical capability, especially for
+        entry-level candidates.
+
+    education:
+      rule: >
+        Education should only be used as evidence for specific knowledge or
+        capability when the CV explicitly supports the connection. The name of
+        a degree alone should not be treated as proof of specific coursework,
+        skills, or proficiency unless such information is explicitly stated.
+
+    keywords:
+      rule: >
+        Exact keyword matches should not be treated as sufficient proof of
+        competence.
+
+    semantic_matching:
+      rule: >
+        Related terminology and semantic similarity may indicate relevant
+        experience even when the exact job terminology is not present.
+
+    quantified_evidence:
+      rule: >
+        Quantified achievements should strengthen evidence when the numbers
+        and claims are explicitly supported by the CV.
+
+  matching_logic:
+
+    exact_match:
+      description: >
+        The CV and job use directly corresponding terminology.
+
+    semantic_match:
+      description: >
+        The CV uses different terminology that represents a substantively
+        related concept.
+
+    contextual_match:
+      description: >
+        The relevance is established through surrounding responsibilities,
+        projects, coursework, or experience rather than through a direct
+        keyword match.
+
+    requirement_logic:
+      all:
+        rule: >
+          All conditions must be satisfied when the job explicitly uses AND
+          logic.
+
+      any:
+        rule: >
+          Satisfying any explicitly stated alternative may satisfy the
+          requirement when the job uses OR logic.
+
+      conditional:
+        rule: >
+          Requirements with conditions such as study year, graduation year,
+          availability, or location should be evaluated against the relevant
+          condition rather than as generic skills.
+
+  criterion_evaluation:
+
+    required_skills_and_qualifications:
+      assess:
+        - explicit_requirement_status
+        - evidence_strength
+        - relevance
+        - depth
+        - demonstrated_application
+
+    relevant_experience:
+      assess:
+        - role_relevance
+        - responsibilities
+        - seniority
+        - duration
+        - domain_relevance
+        - similarity_to_target_role
+
+    demonstrated_skills_and_evidence:
+      assess:
+        - whether_skill_is_listed
+        - whether_skill_is_supported
+        - whether_skill_is_demonstrated
+        - depth_of_application
+
+    achievements_and_impact:
+      assess:
+        - measurable_outcomes
+        - scope
+        - contribution
+        - progression
+        - awards_or_recognition
+
+    projects_and_practical_experience:
+      assess:
+        - relevance_to_role
+        - technical_application
+        - candidate_contribution
+        - complexity
+        - outcomes
+
+    soft_skills_and_competencies:
+      assess:
+        - explicit_claims
+        - behavioural_evidence
+        - contextual_evidence
+        - relevance_to_role
+
+    education_and_certifications:
+      assess:
+        - required_vs_preferred
+        - field_relevance
+        - study_level
+        - study_stage
+        - certification_relevance
+        - explicit_graduation_requirements
+
+    keywords_and_ats_alignment:
+      assess:
+        - relevant_terms
+        - semantic_equivalents
+        - terminology_alignment
+        - contextual_support
+
+    cv_structure_and_presentation:
+      assess:
+        - organization
+        - clarity
+        - grammar
+        - formatting
+        - consistency
+        - compliance_with_application_requirements
+
+  reviewer_output_rules:
+
+    must_identify:
+      - strong_matches
+      - weak_evidence
+      - no_evidence
+      - relevant_strengths
+      - relevant_weaknesses
+
+    must_not_infer:
+      - unstated_skills
+      - unstated_experience
+      - unstated_qualifications
+      - unstated_achievements
+      - unstated_proficiency
+      - candidate_capabilities_from_degree_name_alone
+      - candidate_capabilities_from_external_profiles
+
+    must_distinguish:
+      - no_evidence_from_candidate_lacks_requirement
+      - weak_evidence_from_no_evidence
+      - explicit_fact_from_inference
+      - required_requirement_from_preferred_requirement
+      - candidate_evidence_from_generic_job_information
+
+    external_information:
+      allowed: false
+      rule: >
+        The Reviewer must not access LinkedIn, GitHub, personal websites,
+        portfolios, or other external candidate information. Evaluation must
+        be based solely on the supplied CV and job posting.
+
+    hiring_decision:
+      allowed: false
+      rule: >
+        The Reviewer should describe the evidence available for the role and
+        its limitations. It should not make a hiring decision or present the
+        candidate as objectively viable or non-viable.
+
+    recommendations:
+      allowed: false
+      rule: >
+        The Reviewer should not propose CV improvements. Improvement
+        generation belongs to a separate optimization component.
+
+  scoring:
+
+    enabled: false
+
+    rule: >
+      The current Reviewer should produce qualitative evidence-based
+      assessment only. Any future deterministic scoring system should be
+      implemented separately and should not be generated or modified by the
+      AI Reviewer.
+
+  ai_review:
+
+    role: >
+      Provide contextual reasoning over the structured CV, structured job, and
+      evidence evaluation.
+
+    responsibilities:
+      - interpret evidence in job context
+      - identify missing or weak evidence
+      - explain relevant strengths and weaknesses
+      - identify ambiguity or limitations in the available evidence
+      - preserve distinctions between fact and inference
+
+    limitations:
+      - >
+        AI reasoning must not be treated as ground truth.
+      - >
+        The Reviewer must not override explicit evidence with assumptions.
+      - >
+        The Reviewer must not introduce information not present in the input.
+
+  human_oversight:
+
+    required: true
+
+    workflow:
+      - ai_review
+      - human_review
+      - accept
+      - edit
+      - reject
+
+    rule: >
+      The system is intended to support human evaluation rather than replace
+      human decision-making.
