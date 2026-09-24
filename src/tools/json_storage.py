@@ -5,10 +5,37 @@ from pathlib import Path
 from typing import Any
 
 from crewai.tools import tool
+from pydantic import BaseModel
+
+from models.cv import StructuredCV
+from models.job import StructuredJob
+from models.optimization import CVOptimizationResult
+from models.review import ReviewerResult
 
 DATA_DIRECTORY = Path("temp")
 
-def save_json_object(payload: Any, path: Path) -> dict[str, Any]:
+JSON_MODELS: dict[str, type[BaseModel]] = {
+    "structured_cv_temp.json": StructuredCV,
+    "structured_job_temp.json": StructuredJob,
+    "structured_review_temp.json": ReviewerResult,
+    "structured_optimization_temp.json": CVOptimizationResult,
+}
+
+JSON_MARKER_KEYS: dict[str, set[str]] = {
+    "structured_cv_temp.json": {"cv", "personal_information", "education"},
+    "structured_job_temp.json": {"job_title", "company", "skills"},
+    "structured_review_temp.json": {"requirement_matches", "missing_evidence"},
+    "structured_optimization_temp.json": {
+        "optimized_cv_markdown",
+        "proposed_changes",
+    },
+}
+
+def save_json_object(
+    payload: Any,
+    path: Path,
+    model: type[BaseModel] | None = None,
+) -> dict[str, Any]:
     """Normalize a JSON object and write it atomically to disk."""
 
     if isinstance(payload, str):
@@ -23,6 +50,15 @@ def save_json_object(payload: Any, path: Path) -> dict[str, Any]:
 
     if not isinstance(data, dict):
         raise TypeError("The JSON payload must contain an object at the top level.")
+
+    expected_keys = JSON_MARKER_KEYS[path.name]
+    if not expected_keys.intersection(data):
+        raise ValueError(
+            f"Payload does not match the expected schema for {path.name}."
+        )
+
+    if model is not None:
+        data = model.model_validate(data).model_dump(mode="json")
 
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary_path: str | None = None
@@ -57,11 +93,13 @@ def save_json(payload: Any, filename: str) -> str:
     """
 
     requested_path = Path(filename)
-    if requested_path.name != filename or requested_path.suffix.lower() != ".json":
-        raise ValueError("filename must be a JSON filename inside the data directory")
+    if requested_path.name != filename or requested_path.name not in JSON_MODELS:
+        raise ValueError(
+            "filename must be one of the supported structured JSON filenames"
+        )
 
     output_path = DATA_DIRECTORY / requested_path.name
-    save_json_object(payload, output_path)
+    save_json_object(payload, output_path, JSON_MODELS[requested_path.name])
     message = f"[TOOL] JSON saved to {output_path}"
     print(message)
     return message
