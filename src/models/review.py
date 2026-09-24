@@ -15,33 +15,21 @@ class RequirementMatch(BaseModel):
     category: str = ""
     status: EvidenceStatus = EvidenceStatus.NO_EVIDENCE
 
-    evidence: list[str] = Field(
-        default_factory=list
-    )
+    evidence: list[str] = Field(default_factory=list)
 
     reasoning: str = ""
 
 
 class ReviewerResult(BaseModel):
-    requirement_matches: list[RequirementMatch] = Field(
-        default_factory=list
-    )
+    requirement_matches: list[RequirementMatch] = Field(default_factory=list)
 
-    missing_evidence: list[str] = Field(
-        default_factory=list
-    )
+    missing_evidence: list[str] = Field(default_factory=list)
 
-    weak_evidence: list[str] = Field(
-        default_factory=list
-    )
+    weak_evidence: list[str] = Field(default_factory=list)
 
-    strengths: list[str] = Field(
-        default_factory=list
-    )
+    strengths: list[str] = Field(default_factory=list)
 
-    weaknesses: list[str] = Field(
-        default_factory=list
-    )
+    weaknesses: list[str] = Field(default_factory=list)
 
     overall_assessment: str = ""
 

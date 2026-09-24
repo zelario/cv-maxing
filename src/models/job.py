@@ -60,9 +60,7 @@ class JobCompany(BaseModel):
 class StructuredJob(BaseModel):
     job_title: str = ""
 
-    company: JobCompany = Field(
-        default_factory=JobCompany
-    )
+    company: JobCompany = Field(default_factory=JobCompany)
 
     location: str = ""
 
@@ -72,26 +70,16 @@ class StructuredJob(BaseModel):
 
     description: str = ""
 
-    skills: list[JobSkill] = Field(
-        default_factory=list
-    )
+    skills: list[JobSkill] = Field(default_factory=list)
 
     experience_requirements: list[JobExperienceRequirement] = Field(
         default_factory=list
     )
 
-    education_requirements: list[JobEducationRequirement] = Field(
-        default_factory=list
-    )
+    education_requirements: list[JobEducationRequirement] = Field(default_factory=list)
 
-    responsibilities: list[JobResponsibility] = Field(
-        default_factory=list
-    )
+    responsibilities: list[JobResponsibility] = Field(default_factory=list)
 
-    keywords: list[JobKeyword] = Field(
-        default_factory=list
-    )
+    keywords: list[JobKeyword] = Field(default_factory=list)
 
-    other_requirements: list[JobOtherRequirement] = Field(
-        default_factory=list
-    )
+    other_requirements: list[JobOtherRequirement] = Field(default_factory=list)

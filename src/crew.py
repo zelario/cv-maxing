@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 MODEL = os.getenv("MODEL", "openrouter/free")
 
@@ -9,10 +10,17 @@ from crewai.project import CrewBase, agent, crew, task
 from models.cv import StructuredCV
 from models.job import StructuredJob
 from models.review import ReviewerResult
+from models.optimization import CVOptimizationResult
 
 from tools.cv_extraction import convert_cv_to_markdown, save_structured_cv
 from tools.job_extraction import convert_job_to_markdown, save_structured_job
-from tools.cv_evaluation import calculate_deterministic_score, get_evaluation_framework, save_structured_review
+from tools.cv_evaluation import get_evaluation_framework, save_structured_review
+from tools.cv_optimization import (
+    ask_user,
+    save_optimized_cv_markdown,
+    save_structured_optimization,
+)
+
 
 @CrewBase
 class CVMaxingCrew:
@@ -39,12 +47,22 @@ class CVMaxingCrew:
             verbose=True,
             allow_delegation=False,
         )
-        
+
     @agent
     def reviewer(self) -> Agent:
         return Agent(
             config=self.agents_config["reviewer"],
-            tools=[calculate_deterministic_score, get_evaluation_framework, save_structured_review],
+            tools=[get_evaluation_framework, save_structured_review],
+            llm=MODEL,
+            verbose=True,
+            allow_delegation=False,
+        )
+
+    @agent
+    def cv_optimizer(self) -> Agent:
+        return Agent(
+            config=self.agents_config["cv_optimizer"],
+            tools=[ask_user, save_structured_optimization, save_optimized_cv_markdown],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -78,6 +96,19 @@ class CVMaxingCrew:
                 self.parse_job_task(),
             ],
             output_pydantic=ReviewerResult,
+        )
+
+    @task
+    def optimize_cv_task(self) -> Task:
+        return Task(
+            config=self.tasks_config["optimize_cv_task"],
+            agent=self.cv_optimizer(),
+            context=[
+                self.parse_cv_task(),
+                self.parse_job_task(),
+                self.review_cv_task(),
+            ],
+            output_pydantic=CVOptimizationResult,
         )
 
     @crew

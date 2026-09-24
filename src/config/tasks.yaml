@@ -4,6 +4,11 @@ parse_cv_task:
 
     First, use the convert_cv_to_markdown tool to extract the content of the PDF.
 
+    Keep the complete Markdown returned by the extraction tool in the
+    "cv" field of the structured CV. This is the original CV
+    evidence and must remain available to downstream agents, especially the
+    CV optimizer.
+
     Then, extract and structure all relevant information explicitly stated
     in the CV.
 
@@ -76,6 +81,11 @@ review_cv_task:
     1. The output of the CV Parser Agent.
     2. The output of the Job Parser Agent.
 
+    The CV parser output includes the original extracted CV Markdown in
+    "cv". Use it to verify source evidence when needed, but do
+    not treat information absent from the structured CV or source Markdown as
+    candidate evidence.
+
     First, use the get_evaluation_framework tool to retrieve the evaluation
     framework.
 
@@ -121,3 +131,122 @@ review_cv_task:
     A validated ReviewerResult containing requirement matches, evidence
     strength, missing evidence, relevant strengths, relevant weaknesses,
     overall assessment, and supporting reasoning.
+
+
+optimize_cv_task:
+  description: >
+    Optimize the structured CV for the specific job posting.
+
+    The context contains:
+    1. The structured CV, including the original extracted CV Markdown in
+       "cv".
+    2. The structured job posting.
+    3. The Reviewer's assessment.
+
+    Use the original CV Markdown and StructuredCV as the source of truth.
+    Use the Reviewer's diagnosis to prioritize investigation, but verify every
+    conclusion against the original CV and never follow it blindly.
+
+    Follow these phases in order.
+
+    PHASE 1 - AUTONOMOUS OPTIMIZATION
+
+    Before asking any question, use the Reviewer's diagnosis to find every
+    useful improvement supported by existing CV evidence. Optimize
+    assertively for the target role: improve wording, ordering, clarity,
+    relevance, organization, and information hierarchy without changing
+    factual meaning.
+
+    Treat the Reviewer's diagnosis as the primary optimization objective, not
+    as optional advice. You have full editorial freedom to change the CV's
+    structure and presentation: rewrite, condense, expand from supported
+    evidence, reorder, rename, group, split, merge, create, relocate, or
+    remove content whenever this improves alignment with the review. You may
+    substantially change the information architecture and wording; the only
+    hard boundary is that factual claims must remain supported by the original
+    CV or explicit user answers.
+
+    Keep the audit trail granular and independently approvable. Record each
+    concrete operation, including moving content, renaming a category, splitting
+    or merging sections, creating a Projects section, removing duplication,
+    reordering education, adding a confirmed date, adding a skill, or adding a
+    project. The final Markdown may restructure entire sections when that is
+    the best way to implement the review. It may omit generic or redundant
+    content that weakens the CV, while retaining relevant factual evidence.
+
+    Keep any Summary or profile section concise and appropriate to the source
+    CV. Do not turn it into a technical inventory. Place each fact in the
+    most semantically appropriate section for this particular CV and field;
+    do not assume fixed section names or force a universal CV template.
+
+    Use the Reviewer's requirements as an optimization checklist. Make the
+    strongest supported evidence for the most important requirements visible
+    in the first scan of the CV. Align terminology with the job only when the
+    candidate's underlying evidence supports it. Do not preserve the original
+    categories merely because they existed in the source document.
+
+    PHASE 2 - TARGETED USER QUESTIONS
+
+    Only after Phase 1, identify unresolved gaps that are both important to
+    the job and plausibly answerable from the candidate's undiscovered
+    experience. Treat "no evidence in CV" as uncertainty, never as proof that
+    the candidate lacks the requirement.
+
+    Build a checklist from every material gap identified by the Reviewer and
+    process all of it before finishing. Do not stop after the first useful
+    answer or after a fixed number of questions. For each gap, ask one broad
+    question first. Before asking, check the complete CV, previous questions,
+    and user answers. Never ask for information already provided. Ask at most
+    one focused follow-up for the same gap when the answer is insufficient for
+    a useful CV statement. Then mark that gap resolved or unresolved and move
+    to the next material gap. Stop questioning only when every material gap is
+    resolved, confirmed as not applicable, or explicitly recorded as
+    unsupported after the follow-up. Do not ask about trivial issues, but do
+    cover every material gap from the review.
+
+    Keep original CV evidence in source_evidence and user answers in
+    user_provided_evidence. Record every question and answer in the audit
+    trail. For every proposed change set evidence_source to cv, user, or
+    cv_and_user and set requires_human_approval to true. The Markdown file is
+    a proposed draft for later human approval: apply supported changes to the
+    draft, but do not claim that they have been approved or modify the
+    original CV file.
+
+    Never add skills from the job posting, unconfirmed technologies, metrics,
+    project outcomes, responsibilities, dates, or qualifications. Never
+    invent, infer, or strengthen a claim beyond what the CV or the candidate
+    explicitly provided. Structural and editorial freedom does not permit
+    changing what the candidate actually did or adding unsupported facts. Job
+    terminology may improve wording only when the underlying evidence already
+    exists.
+
+    Do not access GitHub, LinkedIn, portfolios, websites, or any other external
+    candidate information. Do not make hiring decisions or viability claims.
+
+    Finally, create a complete optimized CV draft in Markdown. Rebuild the
+    document section by section instead of copying the original unchanged.
+    Start from the original CV Markdown, then rebuild the document around the
+    strongest evidence and the Reviewer's priorities. Apply every supported
+    proposed change. Every user-confirmed technical skill, library, project,
+    course, or date that appears in the audit result must appear in the
+    appropriate section for this particular CV. There is no mandatory section
+    template: choose the information architecture that best serves the
+    Reviewer's priorities and the candidate's field. Create, rename, reorder,
+    split, merge, or remove sections whenever this improves the CV. Keep
+    unsupported evidence gaps out of the draft and preserve factual meaning.
+
+    Before saving, compare the draft against the proposed_changes list. Do not
+    save a draft that is merely the original CV with unchanged sections. It
+    must reflect all supported changes, while retaining relevant original
+    content that was not changed. Save the draft using the
+    save_optimized_cv_markdown tool. Also save the structured audit result
+    using the save_structured_optimization tool.
+
+  expected_output: >
+    A validated CVOptimizationResult containing the complete optimized CV in
+    optimized_cv_markdown and granular proposed changes.
+    Every change must include section, current_content, proposed_content,
+    rationale, evidence_source, source_evidence, user_provided_evidence, and
+    requires_human_approval. Include all questions and answers, the evidence
+    supplied by the user, the optimization strategy, and unresolved evidence
+    gaps that remain after questioning.

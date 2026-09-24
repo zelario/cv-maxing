@@ -4,12 +4,13 @@ AI-powered CV optimization tool that analyzes your CV against a specific job pos
 
 ## Features
 
-* Upload your CV
-* Add a job posting
-* Get a CV-job fit score
-* Identify missing requirements
-* Find weak evidence
+* Parse your CV from PDF
+* Parse a job posting from a URL or description
+* Get a structured CV and job representation
+* Evaluate CV evidence against job requirements
+* Identify missing and weak evidence
 * Get an AI-powered review
+* Get a deterministic CV-job evaluation
 * Receive CV improvement suggestions
 * Optimize and re-evaluate your CV
 * Approve or reject AI suggestions
@@ -18,16 +19,34 @@ AI-powered CV optimization tool that analyzes your CV against a specific job pos
 
 ```text
 CV + Job Posting
+
        ↓
-    AI Review
+
+   CV / Job Parsing
+
        ↓
- Match + Score + Reasoning
+
+Structured CV + Job
+
        ↓
-  Improvements
+
+Deterministic Evaluation + AI Review
+
        ↓
- Human Approval
+
+    Improvements
+
        ↓
-   CV Optimization
+
+  Human Approval
+
+       ↓
+
+  CV Optimization
+
+       ↓
+
+   Re-evaluation
 ```
 
 ## Tech Stack
@@ -35,10 +54,13 @@ CV + Job Posting
 * Python
 * CrewAI
 * LLMs
-* Sentence Transformers
-* PyMuPDF
-* spaCy
+* OpenRouter
 * Pydantic
+* Docling
+* Trafilatura
+* BeautifulSoup
+* PyYAML
+* Sentence Transformers
 * Streamlit
 * SQLite / PostgreSQL
 
@@ -49,6 +71,7 @@ In development
 ## Setup
 
 1. Install Python 3.10 or newer and make sure `python` is available in PowerShell.
+
 2. From the project root, create and activate a virtual environment:
 
 ```powershell
@@ -63,16 +86,23 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-4. Create `.env` from `.env.example` and add your Gemini API key:
+4. Create `.env` from `.env.example`:
 
 ```powershell
 Copy-Item .env.example .env
 ```
 
-5. Run the crew as a Python module:
+5. Add your API key and model to `.env`.
+
+Example:
+
+```env
+OPENROUTER_API_KEY=your_api_key
+MODEL=openrouter/openrouter/free
+```
+
+6. Run the project:
 
 ```powershell
 python -m src.main
 ```
-
-The current crew contains the CV parser task. Input handling and the remaining agents will be added as the project progresses.

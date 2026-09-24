@@ -4,7 +4,6 @@ import yaml
 
 from crewai.tools import tool
 
-
 FRAMEWORK_PATH = Path("src/config/evaluation_framework.yaml")
 
 

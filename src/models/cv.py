@@ -92,6 +92,8 @@ class CVSummary(BaseModel):
 
 
 class StructuredCV(BaseModel):
+    cv: str = ""
+
     personal_information: CVPersonalInformation = Field(
         default_factory=CVPersonalInformation
     )

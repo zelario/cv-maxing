@@ -22,7 +22,7 @@ def convert_job_page_to_markdown(url: str) -> str:
             response.text,
             include_links=False,
             include_images=False,
-            include_tables=True
+            include_tables=True,
         )
 
         if text:
@@ -31,16 +31,9 @@ def convert_job_page_to_markdown(url: str) -> str:
             raise ValueError("Trafilatura returned no text.")
 
     except Exception as error:
-        print(
-            f"[TOOL] Trafilatura failed: {error}. "
-            "Falling back to BeautifulSoup."
-        )
+        print(f"[TOOL] Trafilatura failed: {error}. " "Falling back to BeautifulSoup.")
 
-        response = requests.get(
-            url,
-            timeout=15,
-            headers={"User-Agent": "Mozilla/5.0"}
-        )
+        response = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
         response.raise_for_status()
 
         soup = BeautifulSoup(response.text, "html.parser")
