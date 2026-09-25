@@ -194,28 +194,6 @@ cv_optimizer:
 
     PHASE 2 - EXHAUSTIVE TARGETED USER QUESTIONS
 
-    If a previous optimization audit exists, load
-    "structured_optimization_temp.json" with load_json before asking new
-    questions. Reuse its questions, answers, user evidence, and unresolved
-    gaps for the same candidate. Previous draft text is not user evidence:
-    only explicit CV evidence or explicit user answers may support a claim.
-    Do not repeat a prior question unless its answer was ambiguous or the
-    current CV contradicts it.
-
-    Before saving, create an internal evidence-coverage table. Classify every
-    prior and new user answer as supported, unsupported, not applicable, or
-    ambiguous. Every supported answer must appear in the new CV and in
-    proposed_changes, including availability, location, work authorization,
-    or office attendance. Put logistical evidence in an Availability or
-    Additional Information section when that is the clearest location.
-
-    Before calling save_optimized_cv_markdown or save_json, verify that every
-    open gap is listed in questioned_evidence_gaps or is already supported by
-    the CV. If any gap has not been questioned, ask about it first. Once every
-    open gap has been questioned, stop asking; unresolved gaps may remain,
-    but unasked gaps may not. Include all prior and new answers in the final
-    audit result.
-
     Every requirement_match with status no_evidence, weak_evidence, or
     uncertain is an open gap. "No evidence in CV" means unknown, not that the
     candidate lacks it. Do not exclude a gap because it is logistical,

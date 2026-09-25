@@ -28,5 +28,4 @@ class CVOptimizationResult(BaseModel):
     user_answers: list[UserAnswer] = Field(default_factory=list)
     user_provided_evidence: list[str] = Field(default_factory=list)
     optimization_strategy: str = ""
-    questioned_evidence_gaps: list[str] = Field(default_factory=list)
     unresolved_evidence_gaps: list[str] = Field(default_factory=list)

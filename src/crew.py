@@ -15,11 +15,7 @@ from models.optimization import CVOptimizationResult
 from tools.cv_extraction import convert_cv_to_markdown
 from tools.job_extraction import convert_job_to_markdown
 from tools.cv_evaluation import get_evaluation_framework
-from tools.cv_optimization import (
-    ask_user,
-    save_optimized_cv_markdown,
-)
-from tools.json_storage import load_json, save_json
+from tools.cv_optimization import ask_user
 
 
 @CrewBase
@@ -32,7 +28,7 @@ class CVMaxingCrew:
     def cv_parser(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_parser"],
-            tools=[convert_cv_to_markdown, save_json],
+            tools=[convert_cv_to_markdown],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -42,7 +38,7 @@ class CVMaxingCrew:
     def job_parser(self) -> Agent:
         return Agent(
             config=self.agents_config["job_parser"],
-            tools=[convert_job_to_markdown, save_json],
+            tools=[convert_job_to_markdown],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -52,7 +48,7 @@ class CVMaxingCrew:
     def reviewer(self) -> Agent:
         return Agent(
             config=self.agents_config["reviewer"],
-            tools=[get_evaluation_framework, save_json],
+            tools=[get_evaluation_framework],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -62,12 +58,7 @@ class CVMaxingCrew:
     def cv_optimizer(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_optimizer"],
-            tools=[
-                ask_user,
-                load_json,
-                save_json,
-                save_optimized_cv_markdown,
-            ],
+            tools=[ask_user],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,

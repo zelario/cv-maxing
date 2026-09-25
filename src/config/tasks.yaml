@@ -28,9 +28,6 @@ parse_cv_task:
     Do not evaluate the CV, compare it to a job posting, assign scores, or
     provide recommendations.
 
-    Finally, save the structured CV using save_json with filename
-    "structured_cv_temp.json" and the complete JSON payload.
-
   expected_output: >
     A structured CV containing education, work experience, skills, projects,
     certifications, languages, achievements, summary information, and other
@@ -64,9 +61,6 @@ parse_job_task:
 
     Do not evaluate the candidate, compare the job posting to a CV, assign
     scores, or provide recommendations.
-
-    Finally, save the structured job posting using save_json with filename
-    "structured_job_temp.json" and the complete JSON payload.
 
   expected_output: >
     A structured job posting containing the job title, company, location,
@@ -127,9 +121,6 @@ review_cv_task:
     Do not make a hiring decision or state that the candidate is or is not
     viable for the role.
 
-    Finally, save the structured review using save_json with filename
-    "structured_review_temp.json" and the complete JSON payload.
-
   expected_output: >
     A validated ReviewerResult containing requirement matches, evidence
     strength, missing evidence, relevant strengths, relevant weaknesses,
@@ -145,8 +136,6 @@ optimize_cv_task:
        "cv".
     2. The structured job posting.
     3. The Reviewer's assessment.
-     4. When available, the previous structured optimization audit loaded from
-       "structured_optimization_temp.json".
 
     Use the original CV Markdown and StructuredCV as the source of truth.
     Use the Reviewer's diagnosis to prioritize investigation, but verify every
@@ -191,14 +180,6 @@ optimize_cv_task:
     categories merely because they existed in the source document.
 
     PHASE 2 - EXHAUSTIVE TARGETED USER QUESTIONS
-
-    If a previous optimization audit exists, load it with load_json before
-    asking new questions. Treat its questions, answers, user evidence, and
-    unresolved gaps as prior conversation context for the same candidate.
-    Reuse every prior answer that is still relevant, but do not treat a
-    previous draft's unsupported claims as user evidence. Do not ask again
-    about a gap already answered unless the previous answer was ambiguous or
-    the current CV contradicts it.
 
     Treat every requirement_match whose status is no_evidence, weak_evidence,
     or uncertain as an open gap. "No evidence in CV" means unknown, never
@@ -285,21 +266,11 @@ optimize_cv_task:
     Compare the draft against the proposed_changes list. Do not
     save a draft that is merely the original CV with unchanged sections. It
     must reflect all supported changes, while retaining relevant original
-    content that was not changed. Save the draft using the
-    save_optimized_cv_markdown tool. Also save the structured audit result
-    using save_json with filename "structured_optimization_temp.json" and the
-    complete JSON payload. Before either save, verify that every open gap is
-    present in questioned_evidence_gaps or was already supported by existing
-    evidence. If any gap has not been questioned and is not supported, ask
-    about it before saving. After that check, stop questioning: unresolved
-    gaps may remain, but no unasked gap may remain.
-
   expected_output: >
     A validated CVOptimizationResult containing the complete optimized CV in
     optimized_cv_markdown and granular proposed changes.
     Every change must include section, current_content, proposed_content,
     rationale, evidence_source, source_evidence, user_provided_evidence, and
     requires_human_approval. Include all questions and answers, the evidence
-    supplied by the user, the optimization strategy, every gap covered by a
-    question in questioned_evidence_gaps, and unresolved evidence gaps that
-    remain after questioning.
+    supplied by the user, the optimization strategy, and unresolved evidence
+    gaps that remain after questioning.
