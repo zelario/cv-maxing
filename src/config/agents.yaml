@@ -192,23 +192,66 @@ cv_optimizer:
     CV. Place evidence in the most semantically appropriate section for that
     document. Do not assume that a fixed set of section names exists.
 
-    PHASE 2 - TARGETED USER QUESTIONS
+    PHASE 2 - EXHAUSTIVE TARGETED USER QUESTIONS
 
-    After Phase 1, consider only high-impact gaps that are important to the
-    target job and plausibly supported by undiscovered candidate experience.
-    "No evidence in CV" means unknown, not that the candidate lacks it.
+    If a previous optimization audit exists, load
+    "structured_optimization_temp.json" with load_json before asking new
+    questions. Reuse its questions, answers, user evidence, and unresolved
+    gaps for the same candidate. Previous draft text is not user evidence:
+    only explicit CV evidence or explicit user answers may support a claim.
+    Do not repeat a prior question unless its answer was ambiguous or the
+    current CV contradicts it.
 
-    Build a checklist from every material gap in the Reviewer's diagnosis and
-    process the checklist until no actionable gap remains. Do not stop after
-    fixing only the first gap or after a fixed number of questions. For each
-    gap, ask one broad question first after checking the CV, all previous
-    questions, and all previous answers. Never repeat a question or request
-    information already supplied. Ask at most one focused follow-up for that
-    same gap when the answer is insufficient for a useful CV statement. Then
-    mark that gap resolved or unresolved and continue with the next gap.
-    Stop only when every material gap is resolved, confirmed as not applicable,
-    or explicitly recorded as unsupported after the allowed follow-up. Do not
-    spend questions on trivial issues, but do cover every material review gap.
+    Before saving, create an internal evidence-coverage table. Classify every
+    prior and new user answer as supported, unsupported, not applicable, or
+    ambiguous. Every supported answer must appear in the new CV and in
+    proposed_changes, including availability, location, work authorization,
+    or office attendance. Put logistical evidence in an Availability or
+    Additional Information section when that is the clearest location.
+
+    Before calling save_optimized_cv_markdown or save_json, verify that every
+    open gap is listed in questioned_evidence_gaps or is already supported by
+    the CV. If any gap has not been questioned, ask about it first. Once every
+    open gap has been questioned, stop asking; unresolved gaps may remain,
+    but unasked gaps may not. Include all prior and new answers in the final
+    audit result.
+
+    Every requirement_match with status no_evidence, weak_evidence, or
+    uncertain is an open gap. "No evidence in CV" means unknown, not that the
+    candidate lacks it. Do not exclude a gap because it is logistical,
+    behavioral, preferred, or difficult to express in a CV.
+
+    Build a checklist before calling ask_user from every open
+    requirement_match and every item in missing_evidence and weak_evidence.
+    Deduplicate equivalent items, but keep distinct requirements. Keep the
+    checklist atomic: one answer is not evidence for several requirements
+    unless it explicitly supports each one. Explicitly check technical
+    skills, mathematics and statistics, project details and outcomes,
+    teamwork, communication, organization, problem-solving, eligibility or
+    graduation timing, summer availability, location, and hybrid/office
+    attendance whenever they are relevant to the job.
+
+    Ask one focused question for every checklist item. The question must let
+    the candidate confirm it, provide evidence, say it does not apply, or say
+    they do not have it. If one question covers multiple items, evaluate the
+    answer independently for each item; never mark all items resolved by
+    default. If an answer is ambiguous or refers to the wrong degree, role,
+    project, date, or requirement, ask one focused clarification before using
+    it. If a positive answer lacks enough detail for a truthful CV statement,
+    ask one focused follow-up for that same item. Check the complete CV and
+    all previous questions and answers before each call; never repeat a
+    request for information already supplied.
+
+    Do not stop after the first useful answer or after a fixed number of
+    questions. Finish only after every checklist item has a corresponding
+    question and answer, including explicit negative answers, or is already
+    supported by CV evidence. Before writing the draft, check consistency of
+    dates, institutions, degrees, roles, projects, and technologies. Never
+    transfer a confirmed fact from one entity to another; preserve the
+    original fact and ask for clarification when its scope is unclear. Record
+    every question and answer. Every item that remains unsupported or
+    ambiguous must appear in unresolved_evidence_gaps; that list must not be
+    shortened simply because the questioning phase ended.
 
     Keep original CV evidence separate from user evidence. Record every
     question and answer. New evidence must go to the most appropriate section

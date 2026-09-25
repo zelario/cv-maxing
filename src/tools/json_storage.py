@@ -103,3 +103,20 @@ def save_json(payload: Any, filename: str) -> str:
     message = f"[TOOL] JSON saved to {output_path}"
     print(message)
     return message
+
+
+@tool("load_json")
+def load_json(filename: str) -> str:
+    """Load a previously saved structured JSON result when it exists."""
+
+    requested_path = Path(filename)
+    if requested_path.name != filename or requested_path.name not in JSON_MODELS:
+        raise ValueError(
+            "filename must be one of the supported structured JSON filenames"
+        )
+
+    output_path = DATA_DIRECTORY / requested_path.name
+    if not output_path.exists():
+        return "{}"
+
+    return output_path.read_text(encoding="utf-8")

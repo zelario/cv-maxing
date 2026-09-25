@@ -19,7 +19,7 @@ from tools.cv_optimization import (
     ask_user,
     save_optimized_cv_markdown,
 )
-from tools.json_storage import save_json
+from tools.json_storage import load_json, save_json
 
 
 @CrewBase
@@ -64,6 +64,7 @@ class CVMaxingCrew:
             config=self.agents_config["cv_optimizer"],
             tools=[
                 ask_user,
+                load_json,
                 save_json,
                 save_optimized_cv_markdown,
             ],
