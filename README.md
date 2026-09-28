@@ -1,4 +1,7 @@
-# CV Maxing
+<h1>
+  <img src="docs/icon.png" width="50" height="50" align="center">
+  CV Maxing
+</h1>
 
 AI-powered CV optimization tool that analyzes your CV against a specific job posting and helps you improve it.
 
