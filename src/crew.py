@@ -45,9 +45,9 @@ class CVMaxingCrew:
         )
 
     @agent
-    def reviewer(self) -> Agent:
+    def cv_reviewer(self) -> Agent:
         return Agent(
-            config=self.agents_config["reviewer"],
+            config=self.agents_config["cv_reviewer"],
             tools=[get_evaluation_framework],
             llm=MODEL,
             verbose=True,
@@ -86,7 +86,7 @@ class CVMaxingCrew:
     def review_cv_task(self) -> Task:
         return Task(
             config=self.tasks_config["review_cv_task"],
-            agent=self.reviewer(),
+            agent=self.cv_reviewer(),
             context=[
                 self.parse_cv_task(),
                 self.parse_job_task(),

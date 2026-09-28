@@ -89,7 +89,7 @@ job_parser:
 
     Return only valid JSON following the required schema.
 
-reviewer:
+cv_reviewer:
   role: >
     CV Reviewer
 

@@ -1,0 +1,121 @@
+/* CV stylesheet — single column, A4, ATS-safe.
+   Rules from CV_Format_Research.md: one column, Calibri/Arial 10.5–11 pt,
+   headings 14–16 pt equivalent hierarchy, ~2 cm margins, no tables/icons. */
+
+@page {
+    size: A4;
+    margin: 2cm;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Calibri, Carlito, Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.3;
+    color: #111111;
+    background: #ffffff;
+}
+
+.cv {
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    margin-bottom: 4pt;
+}
+
+h1 {
+    margin: 0 0 2pt 0;
+    font-size: 22pt;
+    line-height: 1.15;
+    color: #1F3864;
+}
+
+.headline {
+    margin-bottom: 3pt;
+    font-size: 12pt;
+}
+
+.contact {
+    font-size: 10.5pt;
+}
+
+/* Sections */
+section {
+    margin-top: 10pt;
+}
+
+h2 {
+    margin: 0 0 4pt 0;
+    padding-bottom: 2pt;
+    font-size: 11.5pt;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1F3864;
+    border-bottom: 1px solid #1F3864;
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+p {
+    margin: 0 0 2pt 0;
+}
+
+/* Entries (experience, education, certifications, projects) */
+.experience,
+.education,
+.certification,
+.project {
+    margin-top: 5pt;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.experience:first-of-type,
+.education:first-of-type,
+.certification:first-of-type,
+.project:first-of-type {
+    margin-top: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+}
+
+.job-header strong {
+    font-size: 11pt;
+}
+
+.job-header span {
+    white-space: nowrap;
+}
+
+ul {
+    margin: 2pt 0 0 0;
+    padding-left: 14pt;
+}
+
+li {
+    margin-bottom: 1pt;
+}
+
+/* Consent line (GDPR) */
+.consent {
+    margin-top: 10pt;
+    font-size: 8.5pt;
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
