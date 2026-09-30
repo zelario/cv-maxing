@@ -1,28 +1,22 @@
 from pathlib import Path
 
-from docling.document_converter import DocumentConverter
+import pdfplumber
 from crewai.tools import tool
 
 
 @tool("convert_cv_to_markdown")
 def convert_cv_to_markdown(pdf_path: str) -> str:
     """
-    Convert a CV PDF into Markdown using Docling and save the result
-    next to the original PDF.
+    Extract the text of a CV PDF and return it.
 
     Use this tool whenever a CV PDF needs to be extracted before parsing.
     """
 
     print(f"[TOOL] Starting CV conversion: {pdf_path}")
 
-    pdf_path = Path(pdf_path)
-
-    converter = DocumentConverter()
-    result = converter.convert(str(pdf_path))
-    markdown = result.document.export_to_markdown()
+    with pdfplumber.open(Path(pdf_path)) as pdf:
+        text = "\n\n".join(page.extract_text() or "" for page in pdf.pages)
 
     print("[TOOL] CV conversion completed successfully")
 
-    return markdown
-
-
+    return text

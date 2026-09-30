@@ -1,0 +1,12 @@
+services:
+  cv-maxing:
+    build:
+      context: .
+    image: cv-maxing
+    env_file:
+      - .env
+    volumes:
+      - ./tests:/app/tests
+      - ./temp:/app/temp
+    stdin_open: true
+    tty: true

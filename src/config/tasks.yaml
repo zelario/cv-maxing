@@ -36,11 +36,11 @@ parse_cv_task:
   
 parse_job_task:
   description: >
-    Parse the job posting provided by the user on {job}.
+    Parse the job posting provided by the user below. The job content has
+    already been extracted from its URL or provided as text. Use only this
+    content as the source of truth:
 
-    First, use the convert_job_to_markdown tool with the provided job input.
-    The tool automatically determines whether the input is a job posting URL
-    or an already extracted job description.
+    {job}
 
     Then, extract and structure all relevant information explicitly stated
     in the job posting.

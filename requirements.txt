@@ -1,9 +1,9 @@
-crewai
+crewai[google-genai]
 python-dotenv
-docling
 pydantic
 requests
 trafilatura
 beautifulsoup4
-jinja2 
+jinja2
 weasyprint
+pdfplumber
