@@ -16,7 +16,7 @@ from tools.cv_extraction import convert_cv_to_markdown
 from tools.job_extraction import convert_job_to_markdown
 from tools.cv_evaluation import get_evaluation_framework
 from tools.cv_optimization import ask_user
-from tools.cv_generation import get_cv_template
+from tools.cv_generation import get_cv_template, generator_ask_user
 
 
 @CrewBase
@@ -69,7 +69,7 @@ class CVMaxingCrew:
     def cv_generator(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_generator"],
-            tools=[get_cv_template, ask_user],
+            tools=[get_cv_template, generator_ask_user],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,

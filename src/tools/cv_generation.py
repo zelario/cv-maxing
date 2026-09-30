@@ -11,3 +11,11 @@ def get_cv_template() -> str:
     with open(TEMPLATE_PATH, "r", encoding="utf-8") as file:
         return file.read()
 
+@tool("generator_ask_user")
+def generator_ask_user(question: str) -> str:
+    """
+    Ask the candidate one focused question and return the answer.
+    """
+
+    print(f"[GENERATOR QUESTION] {question}")
+    return input("Answer: ").strip()
