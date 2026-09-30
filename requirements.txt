@@ -2,8 +2,7 @@ crewai[google-genai]
 python-dotenv
 pydantic
 requests
-trafilatura
 beautifulsoup4
 jinja2
-weasyprint
+playwright
 pdfplumber

@@ -101,7 +101,10 @@ def save_pipeline_outputs(result) -> None:
             raise TypeError(f"Task {task_index} did not return {model.__name__}")
         save_model_json(output, filename)
 
-    optimization = result.tasks_output[3].pydantic
-    save_markdown(optimization.optimized_cv_markdown)
+    generated = result.tasks_output[4].raw
+    if not isinstance(generated, str) or not generated.strip():
+        raise TypeError("Task 4 did not return a non-empty Markdown string")
 
-    print("[PIPELINE] Structured outputs and optimized CV saved")
+    save_markdown(generated)
+
+    print("[PIPELINE] Structured outputs and optimized CV Markdown saved")

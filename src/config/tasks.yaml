@@ -141,6 +141,13 @@ optimize_cv_task:
     Use the Reviewer's diagnosis to prioritize investigation, but verify every
     conclusion against the original CV and never follow it blindly.
 
+    Before optimizing or asking questions, call get_generation_framework.
+    Use it to identify the complete document structure and information
+    expected by the final CV, including contact fields such as LinkedIn,
+    GitHub, website, email, phone, and location. Check each expected field
+    against the CV and ask the candidate about missing fields when relevant.
+    The framework is a completeness checklist, not a source of candidate facts.
+
     Follow these phases in order.
 
     PHASE 1 - AUTONOMOUS OPTIMIZATION
@@ -251,26 +258,84 @@ optimize_cv_task:
     Do not access GitHub, LinkedIn, portfolios, websites, or any other external
     candidate information. Do not make hiring decisions or viability claims.
 
-    Finally, create a complete optimized CV draft in Markdown. Rebuild the
-    document section by section instead of copying the original unchanged.
-    Start from the original CV Markdown, then rebuild the document around the
-    strongest evidence and the Reviewer's priorities. Apply every supported
-    proposed change. Every user-confirmed technical skill, library, project,
-    course, or date that appears in the audit result must appear in the
-    appropriate section for this particular CV. There is no mandatory section
-    template: choose the information architecture that best serves the
-    Reviewer's priorities and the candidate's field. Create, rename, reorder,
-    split, merge, or remove sections whenever this improves the CV. Keep
-    unsupported evidence gaps out of the draft and preserve factual meaning.
-
-    Compare the draft against the proposed_changes list. Do not
-    save a draft that is merely the original CV with unchanged sections. It
-    must reflect all supported changes, while retaining relevant original
+    Do not create a final CV document or PDF. The cv_generator task will
+    transform this result and the original structured CV into the final CV.
+    Return the complete audit trail and every supported change needed by that
+    generator. Keep optimized_cv_markdown empty.
   expected_output: >
-    A validated CVOptimizationResult containing the complete optimized CV in
-    optimized_cv_markdown and granular proposed changes.
+    A validated CVOptimizationResult containing granular proposed changes,
+    with optimized_cv_markdown empty.
     Every change must include section, current_content, proposed_content,
     rationale, evidence_source, source_evidence, user_provided_evidence, and
     requires_human_approval. Include all questions and answers, the evidence
     supplied by the user, the optimization strategy, and unresolved evidence
     gaps that remain after questioning.
+
+generate_cv_task:
+  description: >
+    Create the final CV by filling the Markdown template returned by
+    get_generation_framework.
+
+    The context contains:
+    1. The complete StructuredCV from the CV Parser, including the original
+      extracted CV text and source evidence.
+    2. The CVOptimizationResult from the Optimizer, including proposed changes,
+      evidence sources, user answers, and unresolved evidence gaps.
+
+    First, call get_generation_framework. Its returned Markdown is the exact
+    output template. The final CV MUST follow this template exactly, including
+    its headings, section order, field structure, Markdown syntax, and
+    formatting conventions. Do not create a different structure or introduce
+    alternative formatting. Replace its placeholders and examples with
+    supported candidate information only. The template is a formatting and
+    structure definition, not a source of candidate facts.
+
+    Work through the following stages:
+
+    1. Read the complete StructuredCV and CVOptimizationResult before writing
+      any output. Establish the original CV and explicitly supported user
+      answers as the evidence boundary.
+
+    2. Review every proposed change independently. Apply supported changes
+      whose evidence_source is cv, user, or cv_and_user and whose source
+      evidence supports the proposed content. Apply changes marked
+      requires_human_approval as a draft for later approval; do not discard
+      them for that reason.
+
+    3. Reject unsupported, ambiguous, unresolved, inferred, or job-only
+      changes. Never use unresolved_evidence_gaps as content. Absence of
+      evidence must result in omission, not an invented replacement.
+
+    4. Fill the template using the candidate's supported information.
+      Preserve the template's exact section order. Within sections such as
+      Experience and Education, use reverse chronological order unless the
+      template explicitly specifies otherwise.
+
+    5. Prioritise relevant demonstrated experience, achievements, projects,
+      research, practical coursework, supported skills, and explicit
+      qualifications. Keep the Summary concise and evidence-based. Remove
+      repetition and low-relevance detail when necessary, without removing
+      relevant supported information.
+
+    6. Replace every template placeholder with supported content. Remove
+      placeholder text, examples, HTML comments, and sections with no
+      supported content. Do not copy template examples into the final CV.
+
+    7. Apply ATS and readability rules while preserving the template's
+      structure: use standard text, consistent dates, concise bullets, and
+      avoid unsupported icons, tables, columns, graphics, or decorative
+      content.
+
+    8. Run a final evidence audit. Confirm that every output value is supported
+      by the original CV or an explicitly supported user answer. Specifically
+      check that no job requirement, reviewer conclusion, assumed proficiency,
+      metric, date, responsibility, qualification, link, or seniority claim
+      was added without evidence.
+
+    Return only the final CV in Markdown. Do not create a PDF, explain your
+    reasoning, or include framework instructions in the response.
+
+  expected_output: >
+    The completed Markdown template following the provided template exactly,
+    with only supported candidate content. Return only the Markdown document,
+    with no placeholders, examples, comments, or explanations.

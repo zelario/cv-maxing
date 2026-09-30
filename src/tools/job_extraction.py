@@ -1,60 +1,30 @@
 import requests
-import trafilatura
 from bs4 import BeautifulSoup
-from pathlib import Path
 from crewai.tools import tool
 
 
 def convert_job_page_to_markdown(url: str) -> str:
-    """
-    Extract a job posting from a webpage and save the result as Markdown.
-    """
+    response = requests.get(
+        url,
+        timeout=15,
+        headers={"User-Agent": "Mozilla/5.0"},
+    )
+    response.raise_for_status()
 
-    try:
-        response = requests.get(
-            url,
-        )
-        response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    for element in soup(["script", "style", "noscript"]):
+        element.decompose()
 
-        text = trafilatura.extract(
-            response.text,
-            include_links=False,
-            include_images=False,
-            include_tables=True,
-        )
-
-        if text:
-            print("[TOOL] Trafilatura successfully extracted text.")
-        else:
-            raise ValueError("Trafilatura returned no text.")
-
-    except Exception as error:
-        print(f"[TOOL] Trafilatura failed: {error}. " "Falling back to BeautifulSoup.")
-
-        response = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
-        response.raise_for_status()
-
-        soup = BeautifulSoup(response.text, "html.parser")
-
-        for element in soup(["script", "style", "noscript"]):
-            element.decompose()
-
-        text = soup.get_text("\n", strip=True)
-
+    text = soup.get_text("\n", strip=True)
     if not text:
         raise ValueError("Could not extract text from the webpage.")
 
     print(f"[TOOL] Extracted {len(text)} characters")
-
     return text
 
 
 def convert_job_description_to_markdown(description: str) -> str:
-    """
-    Save a job description as Markdown and return its content.
-    """
     print(f"[TOOL] Received {len(description)} characters")
-
     return description
 
 
@@ -76,4 +46,4 @@ def convert_job_to_markdown(job: str) -> str:
 
 if __name__ == "__main__":
     job = input("Enter the job posting URL or description: ")
-    convert_job_to_markdown.run(job)
+    print(convert_job_to_markdown.run(job))

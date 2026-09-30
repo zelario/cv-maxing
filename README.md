@@ -1,5 +1,5 @@
 <h1>
-  <img src="assets/icon.png" width="50" height="50" align="center">
+  <img src="docs/icon.png" width="50" height="50" align="center">
   CV Maxing
 </h1>
 
@@ -60,7 +60,6 @@ Deterministic Evaluation + AI Review
 * OpenRouter
 * Pydantic
 * Docling
-* Trafilatura
 * BeautifulSoup
 * PyYAML
 * Sentence Transformers

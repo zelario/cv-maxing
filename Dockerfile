@@ -4,7 +4,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PIP_NO_CACHE_DIR=1
 
-WORKDIR /app
+WORKDIR /app/src
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -19,10 +19,10 @@ RUN python -m pip install --upgrade pip \
     && python -m pip install -r requirements.txt
 
 RUN useradd --create-home appuser \
-    && mkdir -p /app/temp && chown appuser /app/temp
+    && mkdir -p /app/src/temp && chown appuser /app/src/temp
 
 COPY --chown=appuser src ./src
 COPY --chown=appuser assets ./assets
 
 USER appuser
-ENTRYPOINT ["python", "-m", "src.main"]
+ENTRYPOINT ["python", "main.py"]

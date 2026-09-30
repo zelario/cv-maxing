@@ -13,7 +13,7 @@ def run():
         .kickoff(
             inputs={
                 "cv": "tests/cv.pdf",
-                "job": "https://www.revolut.com/en-PT/careers/position/data-scientist-credit-5bfed8c7-9f9d-48e2-8e28-7ecf00ac17a8/",
+                "job": "https://www.mckinsey.com/careers/search-jobs/jobs/summerbusinessanalystintern-techai-110176?appsource=LinkedIn",
             }
         )
     )
