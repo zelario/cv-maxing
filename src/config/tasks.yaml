@@ -259,8 +259,8 @@ optimize_cv_task:
 
 generate_cv_task:
   description: >
-    Create the final CV by filling the Markdown template returned by
-    get_generation_framework.
+    Create the final CV using the Markdown template returned by
+    get_cv_template.
 
     The context contains:
     1. The complete StructuredCV from the CV Parser, including the original
@@ -268,60 +268,127 @@ generate_cv_task:
     2. The CVOptimizationResult from the Optimizer, including proposed changes,
       evidence sources, user answers, and unresolved evidence gaps.
 
-    First, call get_generation_framework. Its returned Markdown is the exact
-    output template. The final CV MUST follow this template exactly, including
-    its headings, section order, field structure, Markdown syntax, and
-    formatting conventions. Do not create a different structure or introduce
-    alternative formatting. Replace its placeholders and examples with
-    supported candidate information only. The template is a formatting and
-    structure definition, not a source of candidate facts.
+    STEP 1 - GET THE TEMPLATE
 
-    Work through the following stages:
+    First, call get_cv_template.
 
-    1. Read the complete StructuredCV and CVOptimizationResult before writing
-      any output. Establish the original CV and explicitly supported user
-      answers as the evidence boundary.
+    The output of get_cv_template is the AUTHORITATIVE DOCUMENT STRUCTURE.
+    The final CV must use this template exactly.
 
-    2. Review every proposed change independently. Apply supported changes
-      whose evidence_source is cv, user, or cv_and_user and whose source
-      evidence supports the proposed content. Apply changes marked
-      requires_human_approval as a draft for later approval; do not discard
-      them for that reason.
+    Do NOT:
+    - create a different structure
+    - change the section order
+    - rename headings
+    - create new sections
+    - merge sections
+    - split sections
+    - change field names
+    - change the Markdown structure
+    - replace the template with your own CV format
+    - add formatting conventions not present in the template
 
-    3. Reject unsupported, ambiguous, unresolved, inferred, or job-only
-      changes. Never use unresolved_evidence_gaps as content. Absence of
-      evidence must result in omission, not an invented replacement.
+    The template is the fixed structure. Your job is to fill it, not redesign
+    it.
 
-    4. Fill the template using the candidate's supported information.
-      Preserve the template's exact section order. Within sections such as
-      Experience and Education, use reverse chronological order unless the
-      template explicitly specifies otherwise.
+    STEP 2 - CHECK MISSING INFORMATION
 
-    5. Prioritise relevant demonstrated experience, achievements, projects,
-      research, practical coursework, supported skills, and explicit
-      qualifications. Keep the Summary concise and evidence-based. Remove
-      repetition and low-relevance detail when necessary, without removing
-      relevant supported information.
+    Before generating any final Markdown, inspect EVERY section and field in
+    the template.
 
-    6. Replace every template placeholder with supported content. Remove
-      placeholder text, examples, HTML comments, and sections with no
-      supported content. Do not copy template examples into the final CV.
+    For each section or field, check whether the required information is
+    supported by:
+    - the original StructuredCV
+    - the original CV text
+    - supported user evidence in the CVOptimizationResult
 
-    7. Apply ATS and readability rules while preserving the template's
-      structure: use standard text, consistent dates, concise bullets, and
-      avoid unsupported icons, tables, columns, graphics, or decorative
-      content.
+    If a section or field requires information that is not available, you MUST
+    use ask_user to ask the candidate for that specific information before
+    generating the final CV.
 
-    8. Run a final evidence audit. Confirm that every output value is supported
-      by the original CV or an explicitly supported user answer. Specifically
-      check that no job requirement, reviewer conclusion, assumed proficiency,
-      metric, date, responsibility, qualification, link, or seniority claim
-      was added without evidence.
+    Do not assume that missing information does not exist.
+    Do not silently omit a section because information is missing.
+    Do not invent or infer the missing information.
 
-    Return only the final CV in Markdown. Do not create a PDF, explain your
-    reasoning, or include framework instructions in the response.
+    Ask focused questions for missing information one item at a time.
+    Check all previous answers before asking a question and never ask for
+    information that has already been provided.
+
+    If the candidate confirms that they do not have the requested information
+    or that the section does not apply, remove that section only if doing so
+    is allowed by the template. Otherwise leave the section empty according
+    to the template's format.
+
+    You MUST complete this missing-information check for the entire template
+    before producing the final CV.
+
+    STEP 3 - APPLY OPTIMIZATION CHANGES
+
+    Read the complete StructuredCV and CVOptimizationResult.
+
+    Apply a proposed optimization change only when its evidence_source is
+    cv, user, or cv_and_user and the provided evidence supports the change.
+
+    Apply changes marked requires_human_approval because this output is a
+    draft for later human approval.
+
+    Preserve relevant information from the original CV even when it is not
+    explicitly mentioned in the optimization result.
+
+    Never use unresolved_evidence_gaps, job requirements, reviewer
+    conclusions, assumptions, or inferred information as candidate facts.
+
+    STEP 4 - FILL THE TEMPLATE
+
+    Fill the template without changing its structure.
+
+    Replace placeholders with supported candidate information.
+
+    Replace template examples with candidate information when supported.
+
+    Remove placeholder text and comments.
+
+    Never copy template example content into the candidate's CV.
+
+    Preserve names, dates, companies, institutions, job titles, skills,
+    technologies, links, language levels, certifications, and achievements
+    exactly as supported by the evidence.
+
+    Never invent or infer:
+    - skills
+    - responsibilities
+    - achievements
+    - metrics
+    - technologies
+    - seniority
+    - qualifications
+    - dates
+    - experience
+
+    STEP 5 - FINAL STRUCTURE CHECK
+
+    Before returning the CV, compare the generated Markdown against the
+    template returned by get_cv_template.
+
+    Verify that:
+    - all template sections appear in the same order
+    - all template headings are unchanged
+    - all template fields are preserved
+    - the Markdown structure is unchanged
+    - no new sections were introduced
+    - no sections were reordered
+    - no alternative CV structure was created
+    - all placeholders and examples have been handled
+    - every candidate claim is supported by evidence
+
+    If the generated Markdown does not match the template structure, correct it
+    before returning the result.
+
+    Return only the completed Markdown CV. Do not create a PDF, explain the
+    reasoning, or include an audit trail.
 
   expected_output: >
-    The completed Markdown template following the provided template exactly,
-    with only supported candidate content. Return only the Markdown document,
-    with no placeholders, examples, comments, or explanations.
+    The completed Markdown CV using the exact structure of the template
+    returned by get_cv_template. The section order, headings, fields, and
+    Markdown structure must match the template. All candidate information
+    must be supported by the original CV or explicit user evidence. Return
+    only the Markdown document.
