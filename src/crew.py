@@ -59,7 +59,7 @@ class CVMaxingCrew:
     def cv_optimizer(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_optimizer"],
-            tools=[ask_user, get_cv_template],
+            tools=[ask_user],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,
@@ -69,7 +69,7 @@ class CVMaxingCrew:
     def cv_generator(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_generator"],
-            tools=[get_cv_template],
+            tools=[get_cv_template, ask_user],
             llm=MODEL,
             verbose=True,
             allow_delegation=False,

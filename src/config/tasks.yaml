@@ -141,13 +141,6 @@ optimize_cv_task:
     Use the Reviewer's diagnosis to prioritize investigation, but verify every
     conclusion against the original CV and never follow it blindly.
 
-    Before optimizing or asking questions, call get_generation_framework.
-    Use it to identify the complete document structure and information
-    expected by the final CV, including contact fields such as LinkedIn,
-    GitHub, website, email, phone, and location. Check each expected field
-    against the CV and ask the candidate about missing fields when relevant.
-    The framework is a completeness checklist, not a source of candidate facts.
-
     Follow these phases in order.
 
     PHASE 1 - AUTONOMOUS OPTIMIZATION
@@ -170,106 +163,99 @@ optimize_cv_task:
     Keep the audit trail granular and independently approvable. Record each
     concrete operation, including moving content, renaming a category, splitting
     or merging sections, creating a Projects section, removing duplication,
-    reordering education, adding a confirmed date, adding a skill, or adding a
-    project. The final Markdown may restructure entire sections when that is
-    the best way to implement the review. It may omit generic or redundant
-    content that weakens the CV, while retaining relevant factual evidence.
+    reordering education, adding a confirmed date, adding a skill, or adding
+    a project.
+
+    Do not force a universal CV structure or use a fixed template. Place each
+    fact in the most semantically appropriate section for this particular CV,
+    field, and target role.
 
     Keep any Summary or profile section concise and appropriate to the source
-    CV. Do not turn it into a technical inventory. Place each fact in the
-    most semantically appropriate section for this particular CV and field;
-    do not assume fixed section names or force a universal CV template.
+    CV. Do not turn it into a technical inventory.
 
     Use the Reviewer's requirements as an optimization checklist. Make the
     strongest supported evidence for the most important requirements visible
     in the first scan of the CV. Align terminology with the job only when the
-    candidate's underlying evidence supports it. Do not preserve the original
-    categories merely because they existed in the source document.
+    candidate's underlying evidence supports it.
 
     PHASE 2 - EXHAUSTIVE TARGETED USER QUESTIONS
 
     Treat every requirement_match whose status is no_evidence, weak_evidence,
     or uncertain as an open gap. "No evidence in CV" means unknown, never
-    that the candidate lacks the requirement. Do not filter out a gap merely
-    because it is logistical, behavioral, preferred, or difficult to include
-    in a CV: ask whether it applies, then record the answer.
+    that the candidate lacks the requirement.
 
     Before calling ask_user, build an internal checklist containing every open
     requirement_match plus every item in missing_evidence and weak_evidence.
-    Deduplicate equivalent items, but preserve all distinct requirements. Keep
-    the checklist atomic: do not treat a single answer as evidence for several
-    different requirements unless the answer explicitly supports each one.
-    The checklist must explicitly consider, when present: required and
-    preferred technical skills; mathematics and statistics; project details
-    and outcomes; teamwork, communication, organization, and problem-solving;
-    eligibility or graduation timing; summer availability; work authorization
-    if relevant; location and hybrid/office attendance.
+    Deduplicate equivalent items, but preserve all distinct requirements.
 
-    Process the complete checklist before finishing. For each open gap, first
-    ask one focused, answerable question that allows the candidate to confirm
-    experience, provide evidence, say it does not apply, or say they do not
-    have it. If a question covers multiple gaps, record and evaluate the
-    answer separately for each gap; do not silently mark all of them as
-    resolved. If an answer is ambiguous, refers to the wrong degree, role,
-    project, date, or requirement, ask one focused clarification before using
-    it. If a positive answer lacks enough detail for a useful CV statement,
-    ask exactly one focused follow-up for that same gap. Do not repeat
-    information already present in the CV, previous questions, or answers. A
-    yes/no answer closes only the exact gap it addresses and only after that
-    gap is recorded as supported, unsupported, not applicable, or unresolved.
+    Process the complete checklist before finishing. For each open gap, ask one
+    focused question that allows the candidate to confirm experience, provide
+    evidence, say it does not apply, or say they do not have it.
 
-    Do not stop after a useful answer, after a fixed number of questions, or
-    once the technical gaps are covered. Stop only when every checklist item
-    has a corresponding question and answer (including an explicit negative
-    answer) or is already supported by existing evidence. Before producing
-    the draft, run a consistency check over dates, institutions, degrees,
-    roles, projects, and technologies. Never move a confirmed fact from one
-    entity to another; if its scope is unclear, keep the original fact and
-    ask for clarification. The final unresolved_evidence_gaps must list every
-    item that remains unsupported or ambiguous; it must never be empty merely
-    because questioning stopped. Record every question and answer in the
-    audit trail, including questions whose answer was no.
+    If a question covers multiple gaps, record and evaluate the answer
+    separately for each gap. If an answer is ambiguous, ask one focused
+    clarification before using it. If a positive answer lacks enough detail
+    for a useful CV statement, ask one focused follow-up for that same gap.
+
+    Do not repeat information already present in the CV, previous questions, or
+    answers.
+
+    Do not stop after a useful answer or after a fixed number of questions.
+    Stop only when every checklist item has a corresponding question and
+    answer, including explicit negative answers, or is already supported by
+    existing evidence.
+
+    Before producing the draft, check consistency over dates, institutions,
+    degrees, roles, projects, and technologies. Never move a confirmed fact
+    from one entity to another. If its scope is unclear, ask for clarification.
+
+    The final unresolved_evidence_gaps must contain every item that remains
+    unsupported or ambiguous. It must not be shortened simply because the
+    questioning phase ended.
 
     Keep original CV evidence in source_evidence and user answers in
     user_provided_evidence. Record every question and answer in the audit
-    trail. For every proposed change set evidence_source to cv, user, or
-    cv_and_user and set requires_human_approval to true. The Markdown file is
-    a proposed draft for later human approval: apply supported changes to the
-    draft, but do not claim that they have been approved or modify the
-    original CV file.
+    trail.
 
-    Before saving, build a final evidence-coverage table internally. Every
-    prior or new user answer must be classified as supported, unsupported,
-    not applicable, or ambiguous. Every supported answer must appear in the
-    new Markdown in the appropriate section. This includes non-technical
-    answers such as availability, location, work authorization, or office
-    attendance; use an Availability or Additional Information section when
-    appropriate. If an answer is supported but absent from the draft, add it
-    before saving and include the change in proposed_changes.
+    For every proposed change set evidence_source to cv, user, or cv_and_user
+    and set requires_human_approval to true.
+
+    The optimized Markdown is a proposed draft for later human approval.
+    Apply supported changes to the draft, but do not claim that they have been
+    approved or modify the original CV file.
+
+    Before saving, verify that every user answer is classified as supported,
+    unsupported, not applicable, or ambiguous. Every supported answer that is
+    relevant to the CV should be represented in the optimized draft and
+    included in proposed_changes.
 
     Never add skills from the job posting, unconfirmed technologies, metrics,
     project outcomes, responsibilities, dates, or qualifications. Never
     invent, infer, or strengthen a claim beyond what the CV or the candidate
-    explicitly provided. Structural and editorial freedom does not permit
-    changing what the candidate actually did or adding unsupported facts. Job
-    terminology may improve wording only when the underlying evidence already
-    exists.
+    explicitly provided.
+
+    Job terminology may improve wording only when the underlying evidence
+    already exists.
 
     Do not access GitHub, LinkedIn, portfolios, websites, or any other external
     candidate information. Do not make hiring decisions or viability claims.
 
-    Do not create a final CV document or PDF. The cv_generator task will
-    transform this result and the original structured CV into the final CV.
-    Return the complete audit trail and every supported change needed by that
-    generator. Keep optimized_cv_markdown empty.
+    Do not use or access any CV template or generation framework. The optimizer
+    is responsible only for deciding what content and structural changes should
+    be made to the CV. The cv_generator task is responsible for applying that
+    optimized content to the final template.
+
+    Return the complete audit trail and every supported change needed by the
+    cv_generator.
+
   expected_output: >
-    A validated CVOptimizationResult containing granular proposed changes,
-    with optimized_cv_markdown empty.
+    A validated CVOptimizationResult containing granular proposed changes.
     Every change must include section, current_content, proposed_content,
     rationale, evidence_source, source_evidence, user_provided_evidence, and
     requires_human_approval. Include all questions and answers, the evidence
     supplied by the user, the optimization strategy, and unresolved evidence
     gaps that remain after questioning.
+
 
 generate_cv_task:
   description: >
