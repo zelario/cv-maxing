@@ -19,10 +19,11 @@ class ProposedCVChange(BaseModel):
 class UserAnswer(BaseModel):
     question: str = ""
     answer: str = ""
+    gap: str = ""
+    resolution: Literal["supported", "unsupported", "not_applicable", "unresolved"] = "unresolved"
 
 
 class CVOptimizationResult(BaseModel):
-    optimized_cv_markdown: str = ""
     proposed_changes: list[ProposedCVChange] = Field(default_factory=list)
     questions_asked: list[str] = Field(default_factory=list)
     user_answers: list[UserAnswer] = Field(default_factory=list)

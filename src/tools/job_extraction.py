@@ -1,12 +1,28 @@
 import requests
 from bs4 import BeautifulSoup
 from crewai.tools import tool
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 
 def convert_job_page_to_markdown(url: str) -> str:
-    response = requests.get(
+    retry = Retry(
+        total=3,
+        connect=3,
+        read=2,
+        status=3,
+        backoff_factor=1,
+        status_forcelist=(429, 500, 502, 503, 504),
+        allowed_methods=frozenset({"GET"}),
+        respect_retry_after_header=True,
+    )
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retry))
+    session.mount("http://", HTTPAdapter(max_retries=retry))
+
+    response = session.get(
         url,
-        timeout=15,
+        timeout=(10, 45),
         headers={"User-Agent": "Mozilla/5.0"},
     )
     response.raise_for_status()
@@ -16,8 +32,11 @@ def convert_job_page_to_markdown(url: str) -> str:
         element.decompose()
 
     text = soup.get_text("\n", strip=True)
-    if not text:
-        raise ValueError("Could not extract text from the webpage.")
+    if len(text) < 200:
+        raise ValueError(
+            "Could not extract enough job posting text. Retry later or provide "
+            "the job description as text instead of a URL."
+        )
 
     print(f"[TOOL] Extracted {len(text)} characters")
     return text

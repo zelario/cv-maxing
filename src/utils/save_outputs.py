@@ -8,6 +8,8 @@ from models.cv import StructuredCV
 from models.job import StructuredJob
 from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
+from models.generated_cv import GeneratedCV
+from tools.cv_generation import validate_generated_cv
 
 
 DATA_DIRECTORY = Path("temp")
@@ -16,6 +18,7 @@ JSON_FILENAMES = {
     "structured_job_temp.json",
     "structured_review_temp.json",
     "structured_optimization_temp.json",
+    "generated_cv_temp.json",
 }
 
 
@@ -54,7 +57,7 @@ def save_model_json(model: BaseModel, filename: str) -> Path:
 
 
 def save_markdown(content: str, filename: str = "optimized_cv.md") -> Path:
-    """Write the optimized CV Markdown atomically to the temp directory."""
+    """Write deterministic rendered CV Markdown atomically to temp."""
 
     if filename != "optimized_cv.md":
         raise ValueError("filename must be optimized_cv.md")
@@ -86,7 +89,7 @@ def save_markdown(content: str, filename: str = "optimized_cv.md") -> Path:
 
 
 def save_pipeline_outputs(result) -> None:
-    """Save all validated task outputs and the optimized CV Markdown."""
+    """Save validated structured pipeline outputs."""
 
     outputs = [
         (0, "structured_cv_temp.json", StructuredCV),
@@ -101,10 +104,14 @@ def save_pipeline_outputs(result) -> None:
             raise TypeError(f"Task {task_index} did not return {model.__name__}")
         save_model_json(output, filename)
 
-    generated = result.tasks_output[4].raw
-    if not isinstance(generated, str) or not generated.strip():
-        raise TypeError("Task 4 did not return a non-empty Markdown string")
+    generated = result.tasks_output[4].pydantic
+    if not isinstance(generated, GeneratedCV):
+        raise TypeError("Task 4 did not return GeneratedCV")
+    generated = validate_generated_cv(
+        generated,
+        result.tasks_output[0].pydantic,
+        result.tasks_output[3].pydantic,
+    )
+    save_model_json(generated, "generated_cv_temp.json")
 
-    save_markdown(generated)
-
-    print("[PIPELINE] Structured outputs and optimized CV Markdown saved")
+    print("[PIPELINE] Structured CV, job, review, optimization, and generated CV saved")

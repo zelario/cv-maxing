@@ -1,0 +1,55 @@
+# {{ contact.name }}
+
+{% if contact.headline or contact.specialisation %}**{{ contact.headline or '' }}**{% if contact.headline and contact.specialisation %} | {% endif %}{{ contact.specialisation or '' }}
+{% endif %}
+{% set contact_line = [contact.phone, contact.email, contact.location] | select | join(' | ') %}{% if contact_line %}{{ contact_line }}
+{% endif %}
+{% set links = [contact.linkedin, contact.portfolio, contact.github] | select | join(' | ') %}{% if links %}{{ links }}
+{% endif %}
+---
+
+## PROFESSIONAL SUMMARY
+
+{% if summary %}{{ summary }}{% endif %}
+
+---
+
+## PROFESSIONAL EXPERIENCE
+{% for item in experience %}
+**{{ item.title }}**{% if item.dates %} — {{ item.dates }}{% endif %}
+*{{ item.company }}{% if item.location %} · {{ item.location }}{% endif %}*
+{% for bullet in item.bullets %}- {{ bullet }}
+{% endfor %}{% endfor %}
+---
+
+## EDUCATION
+{% for item in education %}
+**{{ item.degree }}**{% if item.dates %} — {{ item.dates }}{% endif %}
+*{{ item.institution }}{% if item.location %} · {{ item.location }}{% endif %}{% if item.grade %} · {{ item.grade }}{% endif %}*
+{% endfor %}
+---
+
+## SKILLS
+{% if skills.technical %}**Technical:** {{ skills.technical | join(', ') }}
+{% endif %}{% if skills.tools %}**Tools and software:** {{ skills.tools | join(', ') }}
+{% endif %}{% if skills.methodologies %}**Methodologies:** {{ skills.methodologies | join(', ') }}
+{% endif %}{% if skills.transferable %}**Transferable:** {{ skills.transferable | join(', ') }}
+{% endif %}
+---
+
+## LANGUAGES
+{% for item in languages %}**{{ item.name }}:**{% if item.level %} {{ item.level }}{% endif %}{% if item.details %} ({{ item.details }}){% endif %}{% if item.certification %} · {{ item.certification }}{% endif %}
+{% endfor %}
+---
+
+## CERTIFICATIONS AND ADDITIONAL TRAINING
+{% for item in certifications %}- {{ item.name }}{% if item.issuer %} · {{ item.issuer }}{% endif %}{% if item.year %} · {{ item.year }}{% endif %}
+{% endfor %}
+---
+
+## PROJECTS, VOLUNTEERING AND OTHER (OPTIONAL)
+{% for item in projects %}- **{{ item.name }}**{% if item.description %}: {{ item.description }}{% endif %}{% if item.link %} · {{ item.link }}{% endif %}{% if item.volunteering_or_other %} · {{ item.volunteering_or_other }}{% endif %}
+{% endfor %}
+---
+
+{% if consent %}*I consent to the processing of my personal data for recruitment purposes, in accordance with the GDPR (Regulation (EU) 2016/679).*{% endif %}

@@ -20,8 +20,25 @@ class RequirementMatch(BaseModel):
     reasoning: str = ""
 
 
+class CompletenessStatus(str, Enum):
+    PRESENT = "present"
+    MISSING = "missing"
+    UNCERTAIN = "uncertain"
+
+
+class CompletenessItem(BaseModel):
+    section: str = ""
+    field: str = ""
+    status: CompletenessStatus = CompletenessStatus.MISSING
+    evidence: list[str] = Field(default_factory=list)
+    relevance: str = ""
+    reasoning: str = ""
+
+
 class ReviewerResult(BaseModel):
     requirement_matches: list[RequirementMatch] = Field(default_factory=list)
+
+    completeness: list[CompletenessItem] = Field(default_factory=list)
 
     missing_evidence: list[str] = Field(default_factory=list)
 
