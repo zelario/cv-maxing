@@ -122,6 +122,13 @@ review_cv_task:
     projects, volunteering, and other role-relevant evidence; and GDPR consent
     when applicable.
 
+    For profile completeness, distinguish platform/activity mentions from
+    direct URLs. A statement that projects are published on GitHub may make
+    "GitHub activity/project evidence" present while "GitHub profile URL" is
+    missing if no exact URL appears. Assess LinkedIn URL, GitHub URL, and
+    portfolio URL as separate fields. One kind of evidence never proves the
+    presence of a different profile URL.
+
     Decide whether each optional item is relevant to this candidate and target
     role; do not treat optional information as universally mandatory. Explain
     why an item is relevant or missing. For example, GitHub may matter for a
@@ -147,7 +154,10 @@ review_cv_task:
     A validated ReviewerResult containing separate requirement_matches and
     completeness lists, plus missing_evidence, weak_evidence, strengths,
     weaknesses, overall_assessment, and supporting reasoning. Job-fit gaps
-    must not be mixed with CV-completeness gaps.
+    must not be mixed with CV-completeness gaps. Return overall_assessment
+    and top-level reasoning as single strings, not lists. Use lists only for
+    fields defined as lists in ReviewerResult. Each item-level reasoning and
+    completeness relevance field must also be a string.
 
 
 
@@ -203,6 +213,54 @@ optimize_cv_task:
     evidence supports it.
 
     PHASE 2 - COMBINED GAP CHECKLIST AND QUESTIONS
+
+    Before job-gap questions, run a mandatory section-by-section CV
+    confirmation pass. It is required even when the Reviewer marked a field
+    present: confirm that extracted information is accurate and ask whether
+    omitted information exists. Ask one focused question at a time, wait for
+    the answer, record it, and then move to the next item. Do not bundle
+    unrelated sections. Skip only a field explicitly confirmed in a previous
+    answer during this run.
+
+    Cover these items in order, adapting questions to known information:
+    1. Target role/headline: state the exact job title from the posting and
+       confirm that it is the role being pursued. The final headline must be
+       exactly that title.
+    2. Contact/profile: separately ask for an exact LinkedIn URL, GitHub
+       profile URL, and portfolio URL when absent. GitHub activity or a
+       project link does not confirm a profile URL. Explicitly allow “I do not
+       have one” for each profile.
+    3. Professional experience: summarize listed roles for confirmation. If
+       none are listed, explicitly ask whether employment, internships,
+       freelance, or other relevant experience should be added. Accept a
+       confirmed “none” without creating an empty section or negative claim.
+    4. Education: confirm each qualification, institution, dates,
+       completion/in-progress status, and grade shown; ask separately whether
+       another qualification is missing. Never transfer a grade or date
+       between qualifications.
+    5. Skills and tools: confirm listed skills, programming languages,
+       software/tools, and methods. Ask separately about relevant skills
+       absent from the CV. Record only named skills and never infer level.
+    6. Languages: confirm each language and level, and ask whether another
+       language should be included. Never guess proficiency.
+    7. Certifications/training: confirm each exact name, issuer, and stated
+       date/year; ask whether others exist. If none are listed, explicitly ask
+       whether the candidate has relevant certifications or training and
+       accept “none”. Never infer an issuer or date.
+    8. Projects, volunteering, achievements, and other evidence: confirm
+       listed items and ask whether relevant items are missing. Keep projects,
+       employment, volunteering, and achievements distinct.
+    9. Summary and location: confirm factual claims in the summary and that
+       contact location contains only city/locality and country. Do not ask
+       for a full street address.
+
+    A single question may confirm multiple existing entries in the same
+    section, but unrelated facts must be asked separately. A “yes” confirms
+    only the exact entries stated in that question. Ask focused follow-ups for
+    ambiguous corrections. Record each answer in user_answers with a
+    section-specific gap identifier and resolution. An explicit “none” must
+    not become CV content. Add unanswered or uncertain details to
+    unresolved_evidence_gaps.
 
     The Reviewer provides two independent types of gaps: job-fit gaps and
     CV-completeness gaps. Both must be considered during the questioning
@@ -326,8 +384,16 @@ generate_cv_task:
     technical, tools, methodologies, or transferable skills only when its type
     is supported. Map language proficiency only when the source states it;
     map certifications only for evidenced credentials/training. Map projects
-    and activities without implying employment or inventing links. Set consent
+    and activities without implying employment or inventing links. Copy a
+    project's dates only when explicitly attached to that project in the CV or
+    a candidate answer; keep the exact date wording. Set consent
     true only when the CV or candidate explicitly provides consent.
+
+    ContactInfo uses separate location_city and location_country fields. Copy
+    only explicitly stated city/locality and country values. Never place a
+    street, building number, or postal address in these contact fields. Leave
+    a component null if the CV does not state it; do not infer it from a street
+    address or postal code.
 
     Before returning, inspect each populated field against its source. Check
     that names, dates, titles, employers, institutions, grades, skill names,

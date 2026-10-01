@@ -1,6 +1,15 @@
 from enum import Enum
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
+
+
+def _as_text(value):
+    """Normalize common list-shaped LLM output for scalar text fields."""
+    if isinstance(value, list):
+        return "\n".join(str(item) for item in value if item is not None)
+    if value is None:
+        return ""
+    return value
 
 
 class EvidenceStatus(str, Enum):
@@ -19,6 +28,11 @@ class RequirementMatch(BaseModel):
 
     reasoning: str = ""
 
+    @field_validator("reasoning", mode="before")
+    @classmethod
+    def normalize_reasoning(cls, value):
+        return _as_text(value)
+
 
 class CompletenessStatus(str, Enum):
     PRESENT = "present"
@@ -33,6 +47,11 @@ class CompletenessItem(BaseModel):
     evidence: list[str] = Field(default_factory=list)
     relevance: str = ""
     reasoning: str = ""
+
+    @field_validator("relevance", "reasoning", mode="before")
+    @classmethod
+    def normalize_text_fields(cls, value):
+        return _as_text(value)
 
 
 class ReviewerResult(BaseModel):
@@ -51,3 +70,8 @@ class ReviewerResult(BaseModel):
     overall_assessment: str = ""
 
     reasoning: str = ""
+
+    @field_validator("overall_assessment", "reasoning", mode="before")
+    @classmethod
+    def normalize_text_fields(cls, value):
+        return _as_text(value)

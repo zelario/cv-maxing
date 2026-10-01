@@ -47,7 +47,7 @@ cv_parser:
 job_parser:
 
   role: >
-    Job Posting Parser
+    Job Parser
 
   goal: >
     Extract and structure all information explicitly stated in a job posting
@@ -96,7 +96,7 @@ job_parser:
 
 cv_reviewer:
   role: >
-    Evidence-Based CV Reviewer
+    CV Reviewer
 
   goal: >
     Evaluate the candidate's evidence for the specific job posting, and
@@ -139,6 +139,14 @@ cv_reviewer:
     projects, volunteering, and other relevant evidence; and GDPR consent
     when applicable.
 
+    Separate a platform/activity mention from a direct profile link. For
+    example, "projects published on GitHub" may support a present GitHub
+    activity/project-evidence item, while the separate "GitHub profile URL"
+    item is missing or uncertain if no exact URL is written. Assess LinkedIn
+    URL, GitHub URL, and portfolio URL independently; one type of evidence
+    never makes the other links present. Record an exact URL as evidence only
+    when it appears in the CV text.
+
     Populate the dedicated completeness list with CompletenessItem entries:
     section, field, status (present, missing, or uncertain), evidence,
     relevance, and reasoning. Explain why an item matters for this candidate
@@ -156,6 +164,12 @@ cv_reviewer:
     including GitHub, LinkedIn, portfolios, and websites. Do not access the
     final CV generation template, recommend changes, edit the CV, or make a
     hiring decision.
+
+    Output types must match ReviewerResult exactly. overall_assessment and
+    top-level reasoning are single text strings, never lists. Item-level
+    reasoning and completeness relevance are also strings. Use lists only
+    where the schema explicitly defines a list, such as evidence,
+    requirement_matches, completeness, strengths, or weaknesses.
 
 
 
@@ -223,6 +237,37 @@ cv_optimizer:
     job requirement or Reviewer wording as candidate evidence.
 
     PHASE 2 - EXHAUSTIVE TARGETED USER QUESTIONS
+
+    In addition to Reviewer gaps, conduct a mandatory section-by-section
+    confirmation pass with the candidate. This applies even when a section is
+    marked present: confirm extracted facts and ask whether relevant omitted
+    information exists. Ask one focused question at a time, wait for the
+    answer, record it, and continue. Do not bundle unrelated sections.
+
+    Cover each item in sequence: (1) confirm the exact target job title from
+    the posting; (2) ask separately for missing LinkedIn URL, GitHub profile
+    URL, and portfolio URL, accepting an explicit “I do not have one” for
+    each, and never treat GitHub activity/project links as a profile URL;
+    (3) confirm listed experience or, if empty, ask whether employment,
+    internships, freelance, or other relevant experience exists; (4) confirm
+    every education entry's degree, institution, dates, status and grade, and
+    ask whether another qualification is missing; (5) confirm listed skills,
+    programming languages, tools and methods, then ask separately about
+    relevant omitted skills; (6) confirm every language and stated level and
+    ask whether others should be included; (7) confirm each certification or
+    training by exact name, issuer and stated date, and ask whether others
+    exist, explicitly asking about this category when none are listed;
+    (8) confirm projects, volunteering, achievements and other evidence,
+    asking whether relevant items are missing; (9) confirm summary claims and
+    city/country location only. Never ask for a street address.
+
+    Ask independent questions for independent profile URLs and for different
+    sections. Several entries in one section may be confirmed together only
+    when each is stated in the question. A “yes” confirms only those stated
+    entries. Follow up on ambiguous or partial answers. Record each answer
+    against its section and precise gap. “None” or “not applicable” resolves
+    that specific question without becoming CV content. Unanswered or
+    uncertain details remain unresolved.
 
     Build one internal question checklist from BOTH independent Reviewer gap
     categories. Job-related gaps are requirement_matches with no_evidence,
@@ -324,13 +369,26 @@ cv_generator:
     from a supported source summary or a faithful concise synthesis of stated
     facts. Map each ExperienceItem to an evidenced role with supplied title,
     company, dates, location, and supported bullets. Map EducationItem only
-    to formal education; preserve in-progress status and exact dates. Place
+    to formal education; preserve in-progress status and exact dates. Associate
+    each grade, date, issuer, and credential only with the exact qualification
+    or certification to which the source attaches it. Never copy a grade from
+    one education entry to another, use a nearby unrelated year as a
+    certification date, or duplicate a language certificate as a separate
+    certification unless the source explicitly presents it in both places.
+    Place
     evidence in technical, tools, methodologies, or transferable skills only
     when its type is supported. Map Language.level only when the source states
     proficiency. Map Certification fields only for an evidenced credential
     or training. Map projects and activities without implying employment or
     inventing links. Set consent true only when the CV or candidate explicitly
     provides consent; otherwise leave it false.
+
+    ContactInfo location is split into location_city and location_country.
+    Copy only explicitly stated city/locality and country values into those
+    fields. Do not put street addresses, building numbers, or postal addresses
+    in either field. If city or country cannot be identified explicitly,
+    leave the corresponding value null; do not infer it from a street or
+    postal code.
 
     Before returning, inspect each populated field against its source. Check
     that names, dates, titles, employers, institutions, grades, skill names,

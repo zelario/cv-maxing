@@ -80,7 +80,8 @@ def run():
     generated = result.tasks_output[-1].pydantic
     parsed_cv = result.tasks_output[0].pydantic
     optimized = result.tasks_output[3].pydantic
-    markdown = validate_and_render_cv(generated, parsed_cv, optimized)
+    parsed_job = result.tasks_output[1].pydantic
+    markdown = validate_and_render_cv(generated, parsed_cv, optimized, parsed_job)
     save_markdown(markdown)
 
 if __name__ == "__main__":

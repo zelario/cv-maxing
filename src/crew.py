@@ -122,7 +122,7 @@ class CVMaxingCrew:
         return Task(
             config=self.tasks_config["generate_cv_task"],
             agent=self.cv_generator(),
-            context=[self.parse_cv_task(), self.optimize_cv_task()],
+            context=[self.parse_cv_task(), self.parse_job_task(), self.optimize_cv_task()],
             output_pydantic=GeneratedCV,
         )
 

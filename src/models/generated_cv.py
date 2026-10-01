@@ -1,13 +1,16 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class ContactInfo(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     name: str
     headline: str | None = None
     specialisation: str | None = None
     phone: str | None = None
     email: str | None = None
-    location: str | None = None
+    location_city: str | None = None
+    location_country: str | None = None
     linkedin: str | None = None
     github: str | None = None
     portfolio: str | None = None
@@ -51,6 +54,7 @@ class Certification(BaseModel):
 
 class Project(BaseModel):
     name: str
+    dates: str | None = None
     description: str | None = None
     link: str | None = None
     volunteering_or_other: str | None = None
