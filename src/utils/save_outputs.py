@@ -9,7 +9,7 @@ from models.job import StructuredJob
 from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
 from models.generated_cv import GeneratedCV
-from tools.cv_generation import validate_generated_cv
+from tools.cv_generation import prepare_generated_cv
 
 
 DATA_DIRECTORY = Path("temp")
@@ -88,7 +88,7 @@ def save_markdown(content: str, filename: str = "optimized_cv.md") -> Path:
     return output_path
 
 
-def save_pipeline_outputs(result) -> None:
+def save_pipeline_outputs(result) -> GeneratedCV:
     """Save validated structured pipeline outputs."""
 
     outputs = [
@@ -107,11 +107,8 @@ def save_pipeline_outputs(result) -> None:
     generated = result.tasks_output[4].pydantic
     if not isinstance(generated, GeneratedCV):
         raise TypeError("Task 4 did not return GeneratedCV")
-    generated = validate_generated_cv(
-        generated,
-        result.tasks_output[0].pydantic,
-        result.tasks_output[3].pydantic,
-    )
+    generated = prepare_generated_cv(generated, result.tasks_output[1].pydantic)
     save_model_json(generated, "generated_cv_temp.json")
 
     print("[PIPELINE] Structured CV, job, review, optimization, and generated CV saved")
+    return generated

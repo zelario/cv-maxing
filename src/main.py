@@ -4,7 +4,7 @@ load_dotenv()
 
 from crew import CVMaxingCrew
 from utils.save_outputs import save_pipeline_outputs
-from tools.cv_generation import validate_and_render_cv
+from tools.cv_generation import render_cv
 from utils.save_outputs import save_markdown
 
 cv = "tests/cv.pdf"
@@ -76,12 +76,8 @@ def run():
         )
     )
 
-    save_pipeline_outputs(result)
-    generated = result.tasks_output[-1].pydantic
-    parsed_cv = result.tasks_output[0].pydantic
-    optimized = result.tasks_output[3].pydantic
-    parsed_job = result.tasks_output[1].pydantic
-    markdown = validate_and_render_cv(generated, parsed_cv, optimized, parsed_job)
+    generated = save_pipeline_outputs(result)
+    markdown = render_cv(generated)
     save_markdown(markdown)
 
 if __name__ == "__main__":
