@@ -39,7 +39,6 @@ def prepare_generated_cv(
     prepared = GeneratedCV.model_validate(generated.model_dump())
     if job and job.job_title.strip():
         prepared.contact.headline = job.job_title.strip()
-        prepared.contact.specialisation = None
     _sort_chronologically(prepared)
     return prepared
 

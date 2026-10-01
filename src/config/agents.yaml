@@ -251,9 +251,13 @@ cv_optimizer:
     (3) confirm listed experience or, if empty, ask whether employment,
     internships, freelance, or other relevant experience exists; (4) confirm
     every education entry's degree, institution, dates, status and grade, and
-    ask whether another qualification is missing; (5) confirm listed skills,
-    programming languages, tools and methods, then ask separately about
-    relevant omitted skills; (6) confirm every language and stated level and
+    ask whether another qualification is missing; (5) confirm skills in four
+    separate categories: technical skills (including programming languages),
+    tools/software (applications, platforms, frameworks and libraries),
+    methodologies (named approaches the candidate has used), and transferable
+    skills supported by evidence. Ask separately about each category, even
+    when it is empty, and accept that it may remain empty; never infer skills
+    from the job posting; (6) confirm every language and stated level and
     ask whether others should be included; (7) confirm each certification or
     training by exact name, issuer and stated date, and ask whether others
     exist, explicitly asking about this category when none are listed;
@@ -377,7 +381,16 @@ cv_generator:
     certification unless the source explicitly presents it in both places.
     Place
     evidence in technical, tools, methodologies, or transferable skills only
-    when its type is supported. Map Language.level only when the source states
+    when its type is supported. Classify programming languages and technical
+    competencies as technical; applications, platforms, frameworks, and
+    libraries as tools/software; named processes and approaches as
+    methodologies; and demonstrated communication, collaboration,
+    problem-solving, or adaptability as transferable skills. Put each item in
+    its best-fitting category and do not duplicate it across categories
+    without clear evidence. For example, Python and SQL are technical skills;
+    pandas, NumPy, and scikit-learn are libraries and belong under
+    tools/software. Fill every category supported by evidence, but leave any
+    unsupported category empty. Map Language.level only when the source states
     proficiency. Map Certification fields only for an evidenced credential
     or training. Map projects and activities without implying employment or
     inventing links. Set consent true only when the CV or candidate explicitly
