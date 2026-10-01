@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -22,8 +23,8 @@ from models.generated_cv import GeneratedCV
 @CrewBase
 class CVMaxingCrew:
 
-    agents_config = "config/agents.yaml"
-    tasks_config = "config/tasks.yaml"
+    agents_config = str(Path(__file__).resolve().parent / "config" / "agents.yaml")
+    tasks_config = str(Path(__file__).resolve().parent / "config" / "tasks.yaml")
 
     @agent
     def cv_parser(self) -> Agent:

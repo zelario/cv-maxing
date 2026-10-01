@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+from pathlib import Path
 
 load_dotenv()
 
@@ -7,7 +8,7 @@ from utils.save_outputs import save_pipeline_outputs
 from tools.cv_generation import render_cv
 from utils.save_outputs import save_markdown
 
-cv = "tests/cv.pdf"
+cv = Path("tests") / "cv.pdf"
 job = """# Data Scientist Intern
 
 **Revolut · London / Hybrid**

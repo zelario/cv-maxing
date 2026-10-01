@@ -103,8 +103,14 @@ OPENROUTER_API_KEY=your_api_key
 MODEL=openrouter/openrouter/free
 ```
 
-6. Run the project:
+6. Start the web application from the project root:
 
 ```powershell
-python -m src.main
+python -m uvicorn src.api:app --reload
 ```
+
+Open <http://127.0.0.1:8000>. The API runs the CV parser, job parser, reviewer,
+optimizer, and generator agents. When the optimizer calls `ask_user`, its live
+question appears in the browser and the agent waits for your answer. The generated
+CV and agent review are shown when the pipeline finishes. You can also start the
+application with `docker compose up --build`.

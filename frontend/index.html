@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="CV Maxing helps you shape a stronger CV for the opportunity ahead." />
+    <title>CV Maxing</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <script src="/static/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="brand" id="brand-home" type="button" aria-label="CV Maxing, return to start">
+        <span>CV MAXING</span>
+      </button>
+      <span class="header-note">A BETTER FIRST IMPRESSION</span>
+    </header>
+
+    <main id="app">
+      <section class="screen landing-screen" id="landing" aria-labelledby="landing-title">
+        <div class="landing-content">
+          <h1 id="landing-title">Make every<br />word count .</span></h1>
+          <p class="landing-intro">A sharper CV for the role you actually want.</p>
+          <button class="button button-primary landing-cta" id="begin-button" type="button">Optimize your CV <span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="screen flow-screen" id="upload" aria-labelledby="upload-title" hidden>
+        <div class="flow-content">
+          <div class="step-heading"><span>01 / YOUR CV</span><span>START HERE</span></div>
+          <div class="step-rule"><span class="step-rule-fill step-one"></span></div>
+          <div class="flow-title-block"><p class="eyebrow">THE FIRST STEP</p><h2 id="upload-title">Start with your CV.</h2><p>Upload your CV as a PDF.</p></div>
+          <div id="upload-box">
+            <input id="cv-file" type="file" accept=".pdf,application/pdf" hidden aria-label="Select a PDF CV" />
+            <button id="upload-trigger" class="upload-box" type="button" aria-label="Choose a PDF or drag it here">
+              <span class="upload-title" id="upload-name">Upload your CV</span>
+              <span class="upload-detail" id="upload-detail">Choose a PDF or drag it here</span>
+            </button>
+            <p class="form-error" id="upload-error" role="alert" hidden>Choose a valid PDF smaller than 15 MB.</p>
+          </div>
+          <div class="flow-actions"><button class="text-button" id="upload-back" type="button">← Back</button><button class="button button-primary" id="upload-next" type="button" disabled>Continue <span aria-hidden="true">→</span></button></div>
+        </div>
+      </section>
+
+      <section class="screen flow-screen" id="job" aria-labelledby="job-title" hidden>
+        <div class="flow-content">
+          <div class="step-heading"><span>02 / THE ROLE</span><span>MAKE IT RELEVANT</span></div>
+          <div class="step-rule"><span class="step-rule-fill step-two"></span></div>
+          <div class="flow-title-block"><p class="eyebrow">THE OPPORTUNITY</p><h2 id="job-title">What role are you applying for?</h2><p>Paste the job link or description here.</p></div>
+          <div id="job-input">
+            <label class="job-label" for="job-description">JOB DESCRIPTION</label>
+            <textarea class="job-textarea" id="job-description" spellcheck="true"></textarea>
+          </div>
+          <div class="flow-actions"><button class="text-button" id="job-back" type="button">← Back</button><button class="button button-primary" id="start-button" type="button">Start Optimization <span aria-hidden="true">↗</span></button></div>
+          <p class="form-error" id="job-error" role="alert" hidden>Include a job title and description before continuing.</p>
+        </div>
+      </section>
+
+      <section class="screen processing-screen" id="processing" aria-labelledby="processing-title" hidden>
+        <div class="processing-content"><span class="loading-indicator" aria-hidden="true"><span></span><span></span><span></span></span><p class="eyebrow">ASSESSING WHERE YOU CAN IMPROVE</p><h2 id="processing-title">Finding the<br />right words .</span></h2><div id="loading-screen" role="status" aria-live="polite"></div></div>
+      </section>
+
+      <section class="screen flow-screen" id="questions" aria-labelledby="current-question" hidden>
+        <div class="flow-content question-content"><article class="question-card" aria-labelledby="current-question"><h3 id="current-question"></h3><p class="question-help" id="question-help"></p><label class="answer-label" for="answer">YOUR ANSWER</label><textarea class="answer-input" id="answer" aria-describedby="question-help"></textarea><p class="form-error" id="question-answer-error" role="alert" hidden>Enter an answer or choose Skip.</p><div class="question-actions"><button class="text-button" id="question-skip" type="button">Skip</button><button class="button button-primary" id="question-next" type="button">Answer</button></div></article></div>
+      </section>
+
+      <section class="screen result-screen" id="result" aria-labelledby="result-title" hidden>
+        <div class="result-content"><div class="result-intro"><div><p class="eyebrow">YOUR UPDATED CV</p><h2 id="result-title">Ready for what's next.</h2><p class="result-description">Review every detail before sending.</p></div></div><div id="cv-comparison"></div><div class="improvements"><div></div><div class="result-actions"><button class="button button-primary" id="download-button" type="button">Download CV (.md)</button><button class="button button-secondary" id="restart-button" type="button">Start another optimization</button></div></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>CV MAXING © 2026</span><span></span></span></footer>
+  </body>
+</html>
