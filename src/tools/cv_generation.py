@@ -1,5 +1,3 @@
-"""Deterministic CV rendering from structured candidate data."""
-
 from pathlib import Path
 import re
 
@@ -36,6 +34,7 @@ def prepare_generated_cv(
     generated: GeneratedCV, job: StructuredJob | None = None
 ) -> GeneratedCV:
     """Copy generated data, then apply deterministic headline and ordering."""
+
     prepared = GeneratedCV.model_validate(generated.model_dump())
     if job and job.job_title.strip():
         prepared.contact.headline = job.job_title.strip()
@@ -45,21 +44,14 @@ def prepare_generated_cv(
 
 def render_cv(generated: GeneratedCV) -> str:
     """Render the fixed Jinja2 template without adding candidate data."""
+
     model = GeneratedCV.model_validate(generated.model_dump())
+
     env = Environment(
         loader=FileSystemLoader(str(TEMPLATE_PATH.parent)),
         autoescape=False,
         undefined=StrictUndefined,
         keep_trailing_newline=True,
     )
+
     return env.get_template(TEMPLATE_PATH.name).render(**model.model_dump())
-
-
-def validate_and_render_cv(
-    generated: GeneratedCV,
-    cv=None,
-    optimization=None,
-    job: StructuredJob | None = None,
-) -> str:
-    """Backward-compatible wrapper; applies no evidence-based removals."""
-    return render_cv(prepare_generated_cv(generated, job))

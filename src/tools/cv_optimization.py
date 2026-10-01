@@ -9,4 +9,3 @@ def ask_user(question: str) -> str:
 
     print(f"[OPTIMIZER QUESTION] {question}")
     return input("Answer: ").strip()
-

@@ -20,5 +20,3 @@ def get_evaluation_framework() -> str:
         allow_unicode=True,
         sort_keys=False,
     )
-
-
