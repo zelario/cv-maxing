@@ -15,7 +15,20 @@ const screenIds = ['landing', 'upload', 'job', 'processing', 'questions', 'resul
 
 function showScreen(id) {
   state.screen = id;
-  screenIds.forEach((screenId) => { byId(screenId).hidden = screenId !== id; });
+  screenIds.forEach((screenId) => {
+    const screen = byId(screenId);
+    const isActive = screenId === id;
+    screen.hidden = !isActive;
+    screen.classList.toggle('is-active', isActive);
+    if (isActive) {
+      // Restart the entrance animation when revisiting a screen.
+      screen.classList.remove('screen-entering');
+      void screen.offsetWidth;
+      screen.classList.add('screen-entering');
+    } else {
+      screen.classList.remove('screen-entering');
+    }
+  });
   window.scrollTo(0, 0);
   const heading = byId(id).querySelector('h1, h2, h3');
   if (heading) {
@@ -151,7 +164,7 @@ async function followOptimization() {
       }));
       continue;
     }
-    byId('loading-screen').textContent = 'Analyzing your CV and the job…';
+    byId('loading-screen').textContent = 'Thinking about the details…';
     await delay(1200);
   }
 }

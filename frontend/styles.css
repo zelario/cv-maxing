@@ -275,3 +275,53 @@ body {
   #cv-comparison { grid-template-columns: 1fr; }
   .agent-findings { max-height: 320px; }
 }
+
+/* Smooth screen changes and small interaction cues */
+.screen-entering {
+  animation: screen-enter .48s cubic-bezier(.2, .7, .25, 1) both;
+}
+
+.screen-entering .flow-content,
+.screen-entering .processing-content,
+.screen-entering .result-content {
+  animation: content-enter .55s cubic-bezier(.2, .7, .25, 1) both;
+}
+
+.button, .text-button, .brand, .upload-box, .sample-button,
+.job-textarea, .answer-input, .cv-document, .agent-findings {
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease,
+    background-color .22s ease, color .22s ease, opacity .22s ease;
+}
+
+.button:not(:disabled):hover { transform: translateY(-2px); box-shadow: 0 5px 14px rgb(0 0 0 / 12%); }
+.button:not(:disabled):active { transform: translateY(0) scale(.98); box-shadow: none; }
+.text-button:hover, .brand:hover { transform: translateY(-1px); }
+.upload-box:hover, .sample-button:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgb(0 0 0 / 5%); }
+.job-textarea:focus, .answer-input:focus { box-shadow: 0 4px 0 rgb(0 0 0 / 5%); }
+.loading-indicator span { transform-origin: center; animation: loading-wave .9s ease-in-out infinite alternate; }
+.loading-indicator span:nth-child(2) { animation-delay: .15s; }
+.loading-indicator span:nth-child(3) { animation-delay: .3s; }
+
+@keyframes screen-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes content-enter {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loading-wave {
+  from { transform: scaleY(.65); opacity: .55; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
