@@ -1,0 +1,178 @@
+
+
+:root {
+  --font-family: Calibri, Carlito, Arial, Helvetica, sans-serif;
+  --accent: #172553;       
+  --text: #171717;
+  --body-size: 10.5pt;       /* docx default run size: 21 half-points */
+  --name-size: 24pt;         /* docx: name run size */
+  --headline-size: 14pt;     /* docx: headline run size */
+  --heading-size: 11.5pt;    /* docx Heading1 style: 23 half-points */
+  --small-size: 8.5pt;       /* docx: consent line size: 17 half-points */
+  --margin: 2cm;             /* ~ docx left/right margin (720090 EMU) */
+  --margin-v: 1.76cm;        /* ~ docx top/bottom margin (635000 EMU) */
+}
+
+@page {
+  size: A4;
+  margin: var(--margin-v) var(--margin);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--body-size);
+  line-height: 1.26;
+  color: var(--text);
+  background: #ffffff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.cv {
+  max-width: 100%;
+  /* When NOT printed via @page (e.g. previewing in a plain browser tab),
+     this padding approximates the docx margins. Playwright's PDF output
+     uses @page above, so this has no visual effect there. */
+  padding: var(--margin-v) var(--margin);
+}
+
+@media print {
+  .cv {
+    padding: 0;
+  }
+}
+
+/* ---------- Header ---------- */
+
+header {
+  margin-bottom: 4pt;
+}
+
+h1.name {
+  margin: 0 0 2pt 0;
+  font-size: var(--name-size);
+  font-weight: bold;
+  line-height: 1.1;
+  color: var(--accent);
+}
+
+.headline {
+  margin: 0 0 3pt 0;
+  font-size: var(--headline-size);
+  color: var(--text);
+}
+
+.contact {
+  font-size: var(--body-size);
+}
+
+.contact .sep {
+  margin: 0 0.35em;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-top: 6pt;
+}
+
+h2 {
+  margin: 0 0 4pt 0;
+  padding-bottom: 2pt;
+  font-size: var(--heading-size);
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1pt solid var(--accent);
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 2pt 0;
+}
+
+/* ---------- Entries (education, certifications, projects) ---------- */
+
+.entry {
+  margin-top: 4pt;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+ul {
+  margin: 2pt 0 0;
+  padding-left: 16pt;
+}
+
+li {
+  margin: 1pt 0;
+}
+
+@media print {
+  h1, h2, h3, h4 { break-after: avoid-page; }
+  p, li { orphans: 2; widows: 2; }
+}
+
+.entry:first-of-type {
+  margin-top: 0;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+
+.entry-header strong {
+  font-size: 11pt;
+}
+
+.entry-header .dates {
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+.entry-sub {
+  font-style: italic;
+}
+
+/* ---------- Skills / Languages (label: value lines) ---------- */
+
+.field {
+  margin: 0 0 2pt 0;
+}
+
+.field .label {
+  font-weight: bold;
+}
+
+/* ---------- Projects / free-text entries with a bold lead-in ---------- */
+
+.lead-in {
+  font-weight: bold;
+}
+
+/* ---------- Consent / GDPR line ---------- */
+
+.consent {
+  margin-top: 6pt;
+  font-size: var(--small-size);
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

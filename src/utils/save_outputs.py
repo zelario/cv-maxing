@@ -1,4 +1,5 @@
 import os
+import re
 import tempfile
 from pathlib import Path
 
@@ -9,17 +10,49 @@ from models.job import StructuredJob
 from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
 from models.generated_cv import GeneratedCV
-from tools.cv_generation import prepare_generated_cv
 
 
 DATA_DIRECTORY = Path("temp")
 JSON_FILENAMES = {
-    "structured_cv_temp.json",
-    "structured_job_temp.json",
-    "structured_review_temp.json",
-    "structured_optimization_temp.json",
+    "cv_temp.json",
+    "job_temp.json",
+    "review_temp.json",
+    "optimization_temp.json",
     "generated_cv_temp.json",
 }
+
+
+def _date_sort_key(value: str | None) -> tuple[int, int]:
+    """Sort dated entries newest first; undated entries remain at the end."""
+    if not value:
+        return (0, 0)
+    years = [int(year) for year in re.findall(r"\b(?:19|20)\d{2}\b", value)]
+    if not years:
+        return (0, 0)
+    if re.search(r"\b(present|ongoing|current|atualmente|presente)\b", value, re.I):
+        return (9999, max(years))
+    return (max(years), min(years))
+
+
+def _sort_chronologically(generated: GeneratedCV) -> None:
+    generated.experience.sort(key=lambda item: _date_sort_key(item.dates), reverse=True)
+    generated.education.sort(key=lambda item: _date_sort_key(item.dates), reverse=True)
+    generated.certifications.sort(
+        key=lambda item: _date_sort_key(item.year), reverse=True
+    )
+    generated.projects.sort(key=lambda item: _date_sort_key(item.dates), reverse=True)
+
+
+def prepare_generated_cv(
+    generated: GeneratedCV, job: StructuredJob | None = None
+) -> GeneratedCV:
+    """Copy generated data, then apply deterministic headline and ordering."""
+
+    prepared = GeneratedCV.model_validate(generated.model_dump())
+    if job and job.job_title.strip():
+        prepared.contact.headline = job.job_title.strip()
+    _sort_chronologically(prepared)
+    return prepared
 
 
 def save_model_json(model: BaseModel, filename: str) -> Path:
@@ -92,10 +125,10 @@ def save_pipeline_outputs(result) -> GeneratedCV:
     """Save validated structured pipeline outputs."""
 
     outputs = [
-        (0, "structured_cv_temp.json", StructuredCV),
-        (1, "structured_job_temp.json", StructuredJob),
-        (2, "structured_review_temp.json", ReviewerResult),
-        (3, "structured_optimization_temp.json", CVOptimizationResult),
+        (0, "cv_temp.json", StructuredCV),
+        (1, "job_temp.json", StructuredJob),
+        (2, "review_temp.json", ReviewerResult),
+        (3, "optimization_temp.json", CVOptimizationResult),
     ]
 
     for task_index, filename, model in outputs:

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ contact.name }} – CV</title>
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+  <main class="cv">
+    <header>
+      <h1 class="name">{{ contact.name }}</h1>
+      {% if contact.headline or contact.specialisation %}
+      <div class="headline">{{ contact.headline or '' }}{% if contact.headline and contact.specialisation %} | {% endif %}{{ contact.specialisation or '' }}</div>
+      {% endif %}
+      {% set location = [contact.location_city, contact.location_country] | select | join(', ') %}
+      {% set contact_items = [contact.phone, contact.email, location] | select | list %}
+      {% if contact_items %}<div class="contact">{% for item in contact_items %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{{ item }}{% endfor %}</div>{% endif %}
+      {% set links = [contact.linkedin, contact.github, contact.portfolio] | select | list %}
+      {% if links %}<div class="contact">{% for item in links %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{{ item }}{% endfor %}</div>{% endif %}
+    </header>
+
+    {% if summary %}<section><h2>Professional Summary</h2><p>{{ summary }}</p></section>{% endif %}
+
+    {% if experience %}<section>
+      <h2>Professional Experience</h2>
+      {% for item in experience %}<article class="entry">
+        <div class="entry-header"><strong>{{ item.title }}</strong>{% if item.dates %}<span class="dates">{{ item.dates }}</span>{% endif %}</div>
+        <div class="entry-sub">{{ item.company }}{% if item.location %} · {{ item.location }}{% endif %}</div>
+        {% if item.bullets %}<ul>{% for bullet in item.bullets %}<li>{{ bullet }}</li>{% endfor %}</ul>{% endif %}
+      </article>{% endfor %}
+    </section>{% endif %}
+
+    {% if education %}<section>
+      <h2>Education</h2>
+      {% for item in education %}<article class="entry">
+        <div class="entry-header"><strong>{{ item.degree }}</strong>{% if item.dates %}<span class="dates">{{ item.dates }}</span>{% endif %}</div>
+        <div class="entry-sub">{{ item.institution }}{% if item.location %} · {{ item.location }}{% endif %}{% if item.grade %} · {{ item.grade }}{% endif %}</div>
+      </article>{% endfor %}
+    </section>{% endif %}
+
+    {% if skills.technical or skills.tools or skills.methodologies or skills.transferable %}<section>
+      <h2>Skills</h2>
+      {% if skills.technical %}<p class="field"><span class="label">Technical:</span> {{ skills.technical | join(', ') }}</p>{% endif %}
+      {% if skills.tools %}<p class="field"><span class="label">Tools and software:</span> {{ skills.tools | join(', ') }}</p>{% endif %}
+      {% if skills.methodologies %}<p class="field"><span class="label">Methodologies:</span> {{ skills.methodologies | join(', ') }}</p>{% endif %}
+      {% if skills.transferable %}<p class="field"><span class="label">Transferable:</span> {{ skills.transferable | join(', ') }}</p>{% endif %}
+    </section>{% endif %}
+
+    {% if languages %}<section><h2>Languages</h2>
+      {% for item in languages %}<p class="field"><span class="label">{{ item.name }}:</span>{% if item.level %} {{ item.level }}{% endif %}{% if item.details %} ({{ item.details }}){% endif %}{% if item.certification %} · {{ item.certification }}{% endif %}</p>{% endfor %}
+    </section>{% endif %}
+
+    {% if certifications %}<section><h2>Certifications and Additional Training</h2>
+      {% for item in certifications %}<article class="entry">
+        <div class="entry-header"><strong>{{ item.name }}</strong>{% if item.year %}<span class="dates">{{ item.year }}</span>{% endif %}</div>
+        {% if item.issuer %}<div class="entry-sub">{{ item.issuer }}</div>{% endif %}
+      </article>{% endfor %}
+    </section>{% endif %}
+
+    {% if projects %}<section><h2>Projects, Volunteering and Other</h2>
+      {% for item in projects %}<p><span class="lead-in">{{ item.name }}{% if item.dates %} ({{ item.dates }}){% endif %}:</span>{% if item.description %} {{ item.description }}{% endif %}{% if item.link %} · {{ item.link }}{% endif %}{% if item.volunteering_or_other %} · {{ item.volunteering_or_other }}{% endif %}</p>{% endfor %}
+    </section>{% endif %}
+
+    {% if consent %}<footer class="consent">I consent to the processing of my personal data for recruitment purposes, in accordance with the GDPR (Regulation (EU) 2016/679).</footer>{% endif %}
+  </main>
+</body>
+</html>

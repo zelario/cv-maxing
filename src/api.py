@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 load_dotenv(ROOT / ".env")
 
 from crew import CVMaxingCrew
-from tools.cv_generation import render_cv
+from tools.cv_generation import render_cv_html, render_cv_markdown, render_cv_pdf
 from tools.cv_optimization import set_question_handler
 from utils.save_outputs import save_pipeline_outputs
 
@@ -49,6 +49,7 @@ class Session:
         self.answer_event: threading.Event | None = None
         self.result: dict | None = None
         self.error: str | None = None
+        self.output_pdf_path: Path | None = None
 
     def ask(self, question: str) -> str:
         with self.lock:
@@ -93,14 +94,18 @@ def _run_pipeline(session: Session) -> None:
             .kickoff(inputs={"cv": session.pdf_path, "job": session.job_description})
         )
         generated = save_pipeline_outputs(result)
+        markdown = render_cv_markdown(generated)
+        pdf_path = ROOT / "temp" / f"optimized_cv_{session.job_id}.pdf"
+        pdf_path.write_bytes(render_cv_pdf(render_cv_html(generated)))
         payload = {
-            "markdown": render_cv(generated),
+            "markdown": markdown,
             "cv": generated.model_dump(),
             "review": result.tasks_output[2].pydantic.model_dump(),
             "optimization": result.tasks_output[3].pydantic.model_dump(),
         }
         with session.lock:
             session.result = payload
+            session.output_pdf_path = pdf_path
             session.status = "complete"
     except Exception as exc:
         with session.lock:
@@ -166,6 +171,27 @@ async def get_job(job_id: str):
     if session is None:
         raise HTTPException(status_code=404, detail="Optimization not found.")
     return session.public_state()
+
+
+@app.get("/api/jobs/{job_id}/pdf")
+async def download_job_pdf(job_id: str):
+    with _jobs_lock:
+        session = _jobs.get(job_id)
+    if session is None:
+        raise HTTPException(status_code=404, detail="Optimization not found.")
+
+    with session.lock:
+        if session.status != "complete" or session.output_pdf_path is None:
+            raise HTTPException(status_code=409, detail="The CV PDF is not ready.")
+        pdf_path = session.output_pdf_path
+
+    if not pdf_path.is_file():
+        raise HTTPException(status_code=404, detail="The CV PDF is no longer available.")
+    return FileResponse(
+        pdf_path,
+        media_type="application/pdf",
+        filename="optimized-cv.pdf",
+    )
 
 
 @app.post("/api/jobs/{job_id}/answer")

@@ -310,7 +310,12 @@ function renderResult() {
   documentText.textContent = result.markdown;
   documentSection.append(documentHeading, documentText);
   container.append(documentSection);
+  byId('download-pdf-button').onclick = downloadPdf;
   byId('download-button').onclick = downloadResult;
+}
+
+function downloadPdf() {
+  window.location.href = `/api/jobs/${state.jobId}/pdf`;
 }
 
 function downloadResult() {

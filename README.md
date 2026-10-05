@@ -1,116 +1,50 @@
-<h1>
-  <img src="docs/icon.png" width="50" height="50" align="center">
+<h1 align="center">
+  <img src="docs/icon.png" width="48" height="48" align="center" alt="">
   CV Maxing
 </h1>
 
-AI-powered CV optimization tool that analyzes your CV against a specific job posting and helps you improve it.
+CV Maxing is a human-centered AI project that helps candidates tailor their CV to a job opportunity. It reviews the information in a CV against a job description, invites the candidate to provide additional context, and generates an updated CV for them to review.
 
-## Features
+## How it works
 
-* Parse your CV from PDF
-* Parse a job posting from a URL or description
-* Get a structured CV and job representation
-* Evaluate CV evidence against job requirements
-* Identify missing and weak evidence
-* Get an AI-powered review
-* Get a deterministic CV-job evaluation
-* Receive CV improvement suggestions
-* Optimize and re-evaluate your CV
-* Approve or reject AI suggestions
+1. The candidate provides a CV in PDF format and a job description or link.
+2. AI agents extract and structure information from both documents.
+3. The system reviews how the CV's evidence relates to the role.
+4. The candidate can answer questions or skip them.
+5. The system generates an updated CV, available as a PDF or Markdown file.
 
-## How It Works
+The candidate remains involved in the process and can review the generated CV before using it.
+
+## Technologies
+
+- **Python** — application logic and AI workflow.
+- **CrewAI** — coordination of AI agents and tasks.
+- **Large language models (LLMs)** — CV and job analysis, review, and generation.
+- **OpenRouter** — access to language models.
+- **Pydantic** — structured data models for CVs, job descriptions, and reviews.
+- **FastAPI** — backend API.
+- **HTML, CSS, and JavaScript** — web interface.
+- **Docling, pdfplumber, and Beautiful Soup** — document and job posting extraction.
+- **Jinja2 and Playwright** — CV formatting and PDF generation.
+- **Docker** — packaging and deployment.
+
+## Project layout
 
 ```text
-CV + Job Posting
-
-       ↓
-
-   CV / Job Parsing
-
-       ↓
-
-Structured CV + Job
-
-       ↓
-
-Deterministic Evaluation + AI Review
-
-       ↓
-
-    Improvements
-
-       ↓
-
-  Human Approval
-
-       ↓
-
-  CV Optimization
-
-       ↓
-
-   Re-evaluation
+src/
+  api.py                 FastAPI app and asynchronous job/session handling
+  crew.py                CrewAI agents and pipeline tasks
+  config/                Agent and task prompts
+  models/                Pydantic data models
+  tools/                 CV/job extraction, evaluation, optimization, rendering
+  utils/                 Pipeline output helpers
+frontend/                Browser interface (HTML, CSS, JavaScript)
+docs/                    Project documentation and research notes
+tests/                   Sample job description and space for CV inputs
+temp/                    Temporary uploads and generated outputs
 ```
 
-## Tech Stack
+## License
 
-* Python
-* CrewAI
-* LLMs
-* OpenRouter
-* Pydantic
-* Docling
-* BeautifulSoup
-* PyYAML
-* Sentence Transformers
-* Streamlit
-* SQLite / PostgreSQL
+No license has been added to this repository yet.
 
-## Status
-
-In development
-
-## Setup
-
-1. Install Python 3.10 or newer and make sure `python` is available in PowerShell.
-
-2. From the project root, create and activate a virtual environment:
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-3. Install the dependencies:
-
-```powershell
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-```
-
-4. Create `.env` from `.env.example`:
-
-```powershell
-Copy-Item .env.example .env
-```
-
-5. Add your API key and model to `.env`.
-
-Example:
-
-```env
-OPENROUTER_API_KEY=your_api_key
-MODEL=openrouter/openrouter/free
-```
-
-6. Start the web application from the project root:
-
-```powershell
-python -m uvicorn src.api:app --reload
-```
-
-Open <http://127.0.0.1:8000>. The API runs the CV parser, job parser, reviewer,
-optimizer, and generator agents. When the optimizer calls `ask_user`, its live
-question appears in the browser and the agent waits for your answer. The generated
-CV and agent review are shown when the pipeline finishes. You can also start the
-application with `docker compose up --build`.

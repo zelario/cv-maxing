@@ -10,6 +10,9 @@ COPY requirements.txt .
 RUN python -m pip install --upgrade pip \
     && python -m pip install -r requirements.txt
 
+RUN python -m playwright install --with-deps chromium \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY src ./src
 COPY frontend ./frontend
 RUN mkdir -p /app/temp
