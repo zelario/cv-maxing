@@ -96,6 +96,19 @@ button:disabled { cursor: not-allowed; opacity: .35; }
 .question-speaker::before { content: ''; display: block; width: 7px; height: 7px; background: #111; }
 .question-card h3 { max-width: 700px; margin: 0; font-size: clamp(34px, 4vw, 50px); font-weight: 500; line-height: 1.15; letter-spacing: -.06em; }
 .question-help { margin: 20px 0 53px; color: #888; font-size: 14px; line-height: 1.6; }
+.quick-answer-fieldset { margin: 0 0 30px; padding: 0; border: 0; }
+.quick-answer-fieldset legend { width: 100%; box-sizing: border-box; padding: 0 0 14px; border-bottom: 1px solid #111; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.quick-answer-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.quick-answer-option { position: relative; display: flex; align-items: center; min-height: 54px; box-sizing: border-box; padding: 0 18px; border: 1px solid #d9d9d9; border-radius: 3px; background: #fff; color: #555; font-size: 13px; font-weight: 600; cursor: pointer; transition: border-color .2s, background-color .2s, color .2s, transform .2s; }
+.quick-answer-option:hover { border-color: #111; color: #111; transform: translateY(-1px); }
+.quick-answer-option:has(input:checked) { border-color: #111; background: #111; color: #fff; }
+.quick-answer-option input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.quick-answer-option:has(input:focus-visible) { outline: 2px solid #111; outline-offset: 3px; }
+.quick-answer-option-mark { display: grid; place-items: center; flex: 0 0 auto; width: 17px; height: 17px; margin-right: 11px; border: 1px solid currentColor; }
+.quick-answer-option input[type="radio"] + .quick-answer-option-mark { border-radius: 50%; }
+.quick-answer-option:has(input:checked) .quick-answer-option-mark::after { content: ''; width: 7px; height: 7px; background: currentColor; }
+.quick-answer-option:has(input[type="radio"]:checked) .quick-answer-option-mark::after { border-radius: 50%; }
+.answer-label.has-quick-answers { border-top-color: #e7e7e7; color: #777; }
 .answer-label { display: block; padding-top: 20px; border-top: 1px solid #111; font-size: 11px; font-weight: 700; letter-spacing: .14em; }
 .answer-input { box-sizing: border-box; width: 100%; min-height: 170px; margin-top: 19px; padding: 0; resize: vertical; border: 0; background: transparent; color: #222; font-size: 17px; line-height: 1.65; outline: none; }
 .answer-input:focus-visible { outline: 2px solid #111; outline-offset: 4px; }
@@ -153,6 +166,7 @@ button:disabled { cursor: not-allowed; opacity: .35; }
   .question-actions .button { gap: 14px; }
   .sample-button { align-items: start; flex-direction: column; }
   .sample-button span:last-child { text-align: left; }
+  .quick-answer-options { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

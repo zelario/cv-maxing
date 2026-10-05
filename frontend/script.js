@@ -12,6 +12,100 @@ const state = {
 
 const byId = (id) => document.getElementById(id);
 const screenIds = ['landing', 'upload', 'job', 'processing', 'questions', 'result'];
+const yesNoQuestionPattern = /^(?:(?:the candidate|the cv|the resume|you|they|he|she)\s+)?(?:do|does|did|is|are|was|were|have|has|had|can|could|would|will|should|may)\b|^(?:(?:voce|tu|ele|ela|o candidato|a candidata|a pessoa|o curriculo|a candidatura)\s+)?(?:nao\s+)?(?:tem|tens|e|sao|foi|foram|pode|podes|podem|consegue|consegues|conseguem|gostaria|aceita|aceitas|aceitam|esta|estas|estao|estava|estavam|fez|fizeste|existe|existem|ha|houve|possui|possuem|inclui|incluem|trabalha|trabalhas|sabe|sabes|sabem|conhece|conheces|conhecem|quer|queres|querem|pretende|pretendes|pretendem)\b|\b(?:answer|responda)\s+(?:yes\s+or\s+no|sim\s+ou\s+nao)\b/i;
+const openQuestionPattern = /^(?:(?:please|can you|could you|would you)\s+)?(?:what|which|who|whom|whose|when|where|why|how|describe|explain|list|name|provide|share|specify|identify|give(?: me)?|o que|que|qual|quais|quem|quando|onde|por que|porque|como|descreva|explique|liste|enumere|indique|diga|forneca|partilhe|especifique|identifique)\b|^(?:(?:can|could|would)\s+you\s+)?(?:please\s+)?(?:describe|explain|list|name|provide|share|specify|identify)\b|\b(?:tell me|diga-me)\s+(?!(?:if|whether|se)\b)\w+|\b(?:if yes|if so|se sim|caso afirmativo)\s*[,;:]?\s*(?:what|which|how|describe|explain|list|qual|quais|como|descreva|explique|enumere)\b|\b(?:and|e)\s+(?:what|which|when|where|how|describe|explain|list|qual|quais|quando|onde|como|descreva|explique|enumere)\b|[?.!]\s*(?:what|which|who|when|where|why|how|qual|quais|quem|quando|onde|porque|como)\b|\b(?:provide|share|give|indicate|specify|forneca|partilhe|indique)\s+(?:(?:the|your|an?|exact|any|the exact)\s+)*(?:details?|dates?|examples?|url|information|context|details?|detalhes|datas|exemplos|informacao|contexto)\b|\b(?:describe|explain|list|provide details|give details|specify|share details|explique|descreva|enumere|indique os detalhes)\b/i;
+
+function normalizeQuestionText(text) {
+  return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+}
+
+function cleanOption(option) {
+  return option
+    .replace(/^[\s\-\u2013\u2014\u2022\d.()]+/, '')
+    .replace(/[\s?.!);()]+$/, '')
+    .trim();
+}
+
+function extractQuestionOptions(question) {
+  const singleChoice = /\b(?:choose|select)\s+one\s+(?:of|from)|\b(?:choose|select)\s+between|\b(?:escolha|escolhe|selecione|seleciona)\s+(?:um|uma|entre)\b/i.test(question);
+  const introduced = question.match(/(?:choose (?:any|one|all) of (?:the following )?|select (?:any|one|all) of (?:the following )?|select all that apply|check all that apply|choose from (?:the following )?|select from (?:the following )?|choose between|select between|options? (?:are|include)|the following options|among (?:the following )?|entre (?:as )?(?:seguintes )?(?:op\u00e7\u00f5es? )?|escolha entre|escolhe entre|selecione entre|seleciona entre|escolha (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|selecione (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|op\u00e7\u00f5es? (?:s\u00e3o|incluem))\s*:?\s*([^?.]+)/i);
+  const source = introduced?.[1].replace(/\s+(?:and|e)\s+(?:please\s+)?(?:describe|explain|list|provide|share|specify|tell|explique|descreva|liste|indique|diga|forneca)\b.*$/i, '');
+  if (!source) return null;
+
+  const options = source
+    .replace(/\s+(?:and|or|e|ou)\s+/gi, ',')
+    .split(/[,;|/]/)
+    .map(cleanOption)
+    .filter((option) => option.length > 0 && option.length < 45);
+
+  const uniqueOptions = [...new Set(options)].slice(0, 8);
+  return uniqueOptions.length > 1 ? { type: singleChoice ? 'single' : 'multiple', options: uniqueOptions } : null;
+}
+
+function getQuestionConfig(question) {
+  if (question && typeof question === 'object') {
+    const text = question.text || question.prompt || question.question || '';
+    const options = Array.isArray(question.options) ? question.options.map(String).map(cleanOption).filter(Boolean) : [];
+    const type = question.type;
+    if (type === 'yes_no') return { text, type: 'single', options: ['Yes', 'No'] };
+    if (type === 'single_choice') return { text, type: 'single', options };
+    if (type === 'enumeration') return { text, type: 'multiple', options };
+    if (type === 'open') return { text, type: 'open', options: [] };
+    return classifyQuestionText(text);
+  }
+
+  return classifyQuestionText(String(question || ''));
+}
+
+function classifyQuestionText(text) {
+  const optionConfig = extractQuestionOptions(text);
+  if (optionConfig) return { text, ...optionConfig };
+  const trimmed = normalizeQuestionText(text.trim());
+  if (openQuestionPattern.test(trimmed)) return { text, type: 'multiple', options: [] };
+  if (yesNoQuestionPattern.test(trimmed)) {
+    return { text, type: 'single', options: ['Yes', 'No'] };
+  }
+  return { text, type: 'multiple', options: [] };
+}
+
+function renderQuickAnswers(config) {
+  const fieldset = byId('quick-answer-fieldset');
+  const container = byId('quick-answer-options');
+  container.replaceChildren();
+  fieldset.hidden = config.options.length === 0;
+  byId('answer-label').classList.toggle('has-quick-answers', config.options.length > 0);
+  byId('answer-label').textContent = config.options.length > 0 ? 'ADD A NOTE (OPTIONAL)' : 'YOUR ANSWER';
+  byId('answer').placeholder = config.options.length > 0
+    ? 'Add any useful context here…'
+    : '';
+  if (!config.options.length) return;
+
+  byId('quick-answer-legend').textContent = config.type === 'single' ? 'CHOOSE AN ANSWER' : 'SELECT ALL THAT APPLY';
+  config.options.forEach((option, index) => {
+    const label = document.createElement('label');
+    label.className = 'quick-answer-option';
+    const input = document.createElement('input');
+    input.type = config.type === 'single' ? 'radio' : 'checkbox';
+    input.name = 'quick-answer';
+    input.value = option;
+    input.id = `quick-answer-${index}`;
+    const mark = document.createElement('span');
+    mark.className = 'quick-answer-option-mark';
+    mark.setAttribute('aria-hidden', 'true');
+    const text = document.createElement('span');
+    text.textContent = option;
+    label.append(input, mark, text);
+    container.append(label);
+  });
+}
+
+function getCurrentAnswer() {
+  const selections = [...document.querySelectorAll('#quick-answer-options input:checked')].map((input) => input.value);
+  const note = byId('answer').value.trim();
+  if (!selections.length) return note;
+  if (!note) return selections.join(', ');
+  return `${selections.join(', ')} — ${note}`;
+}
 
 function showScreen(id) {
   state.screen = id;
@@ -76,9 +170,11 @@ function setupJobInput() {
 }
 
 function showQuestion(questionId, question) {
+  const config = getQuestionConfig(question);
   state.questionId = questionId;
-  byId('current-question').textContent = question;
+  byId('current-question').textContent = config.text;
   byId('answer').value = '';
+  renderQuickAnswers(config);
   byId('question-answer-error').hidden = true;
   byId('question-next').disabled = false;
   byId('answer').disabled = false;
@@ -88,7 +184,8 @@ function showQuestion(questionId, question) {
 function submitCurrentAnswer(answer) {
   if (!answer.trim()) {
     byId('question-answer-error').hidden = false;
-    byId('answer').focus();
+    const firstQuickAnswer = byId('quick-answer-options').querySelector('input');
+    (firstQuickAnswer || byId('answer')).focus();
     return;
   }
   byId('question-next').disabled = true;
@@ -222,9 +319,15 @@ byId('upload-back').addEventListener('click', () => showScreen('landing'));
 byId('upload-next').addEventListener('click', () => showScreen('job'));
 byId('job-back').addEventListener('click', () => showScreen('upload'));
 byId('start-button').addEventListener('click', startOptimization);
-byId('question-next').addEventListener('click', () => submitCurrentAnswer(byId('answer').value));
+byId('question-next').addEventListener('click', () => submitCurrentAnswer(getCurrentAnswer()));
 byId('question-skip').addEventListener('click', () => submitCurrentAnswer('I do not know or have information to answer this question.'));
+byId('quick-answer-options').addEventListener('change', () => {
+  byId('question-answer-error').hidden = true;
+});
+byId('answer').addEventListener('input', () => {
+  byId('question-answer-error').hidden = true;
+});
 byId('answer').addEventListener('keydown', (event) => {
-  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') submitCurrentAnswer(byId('answer').value);
+  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') submitCurrentAnswer(getCurrentAnswer());
 });
 byId('restart-button').addEventListener('click', reset);
