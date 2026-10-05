@@ -6,14 +6,17 @@ const state = {
   job: '',
   jobId: null,
   questionId: null,
+  questionType: 'open',
   submitAnswer: null,
   result: null,
 };
 
 const byId = (id) => document.getElementById(id);
 const screenIds = ['landing', 'upload', 'job', 'processing', 'questions', 'result'];
-const yesNoQuestionPattern = /^(?:(?:the candidate|the cv|the resume|you|they|he|she)\s+)?(?:do|does|did|is|are|was|were|have|has|had|can|could|would|will|should|may)\b|^(?:(?:voce|tu|ele|ela|o candidato|a candidata|a pessoa|o curriculo|a candidatura)\s+)?(?:nao\s+)?(?:tem|tens|e|sao|foi|foram|pode|podes|podem|consegue|consegues|conseguem|gostaria|aceita|aceitas|aceitam|esta|estas|estao|estava|estavam|fez|fizeste|existe|existem|ha|houve|possui|possuem|inclui|incluem|trabalha|trabalhas|sabe|sabes|sabem|conhece|conheces|conhecem|quer|queres|querem|pretende|pretendes|pretendem)\b|\b(?:answer|responda)\s+(?:yes\s+or\s+no|sim\s+ou\s+nao)\b/i;
+const yesNoQuestionPattern = /^(?:(?:the candidate|the cv|the resume|you|they|he|she)\s+)?(?:do|does|did|is|are|was|were|have|has|had|can|could|would|will|should|may)\b|^(?:(?:voce|voces|tu|ele|ela|o candidato|a candidata|a pessoa|o curriculo|a candidatura)\s+)?(?:nao\s+)?(?:ja\s+|alguma vez\s+)?(?:tem|tens|e|es|sao|foi|foram|pode|podes|podem|consegue|consegues|conseguem|gostaria|aceita|aceitas|aceitam|esta|estas|estao|estava|estavam|fez|fizeste|existe|existem|ha|houve|possui|possuem|inclui|incluem|trabalha|trabalhas|trabalhaste|trabalhou|trabalharam|usaste|usou|utilizaste|utilizou|frequentaste|frequentou|concluiste|concluiu|sabe|sabes|sabem|conhece|conheces|conhecem|quer|queres|querem|pretende|pretendes|pretendem)\b|\b(?:answer|responda)\s+(?:yes\s+or\s+no|yes\s*\/\s*no|sim\s+ou\s+nao|sim\s*\/\s*nao)\b/i;
 const openQuestionPattern = /^(?:(?:please|can you|could you|would you)\s+)?(?:what|which|who|whom|whose|when|where|why|how|describe|explain|list|name|provide|share|specify|identify|give(?: me)?|o que|que|qual|quais|quem|quando|onde|por que|porque|como|descreva|explique|liste|enumere|indique|diga|forneca|partilhe|especifique|identifique)\b|^(?:(?:can|could|would)\s+you\s+)?(?:please\s+)?(?:describe|explain|list|name|provide|share|specify|identify)\b|\b(?:tell me|diga-me)\s+(?!(?:if|whether|se)\b)\w+|\b(?:if yes|if so|se sim|caso afirmativo)\s*[,;:]?\s*(?:what|which|how|describe|explain|list|qual|quais|como|descreva|explique|enumere)\b|\b(?:and|e)\s+(?:what|which|when|where|how|describe|explain|list|qual|quais|quando|onde|como|descreva|explique|enumere)\b|[?.!]\s*(?:what|which|who|when|where|why|how|qual|quais|quem|quando|onde|porque|como)\b|\b(?:provide|share|give|indicate|specify|forneca|partilhe|indique)\s+(?:(?:the|your|an?|exact|any|the exact)\s+)*(?:details?|dates?|examples?|url|information|context|details?|detalhes|datas|exemplos|informacao|contexto)\b|\b(?:describe|explain|list|provide details|give details|specify|share details|explique|descreva|enumere|indique os detalhes)\b/i;
+const openDetailRequestPattern = /^(?:(?:pode|podes|podem|poderia|poderias|consegue|consegues|conseguem)\s+)(?:por favor\s+)?(?:descrever|explicar|listar|indicar|fornecer|partilhar|especificar|identificar)\b|^(?:(?:pode|podes|podem|poderia|poderias|consegue|consegues|conseguem)\s+)(?:dizer(?:-me)?\s+(?!(?:se)\b)\w+)/i;
+const selectionIntentPattern = /\b(?:choose|select|pick|mark|check)\s+(?:one|any|all|from|between)|\b(?:which|what)\s+of\s+(?:the following|these)|\boptions?\s+(?:are|include|:)|\bchoices?\s*:|\bopcoes\s*:|\b(?:escolha|escolhe|selecione|seleciona|assinale|marque)\b|\b(?:qual|quais)\s+(?:das|dos)\s+(?:seguintes|opcoes)\b|\bentre\s+(?:as\s+)?(?:seguintes|opcoes)\b/i;
 
 function normalizeQuestionText(text) {
   return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
@@ -21,22 +24,32 @@ function normalizeQuestionText(text) {
 
 function cleanOption(option) {
   return option
-    .replace(/^[\s\-\u2013\u2014\u2022\d.()]+/, '')
+    .replace(/^[\s\-\u2013\u2014\u2022\d.():]+/, '')
     .replace(/[\s?.!);()]+$/, '')
     .trim();
 }
 
 function extractQuestionOptions(question) {
-  const singleChoice = /\b(?:choose|select)\s+one\s+(?:of|from)|\b(?:choose|select)\s+between|\b(?:escolha|escolhe|selecione|seleciona)\s+(?:um|uma|entre)\b/i.test(question);
-  const introduced = question.match(/(?:choose (?:any|one|all) of (?:the following )?|select (?:any|one|all) of (?:the following )?|select all that apply|check all that apply|choose from (?:the following )?|select from (?:the following )?|choose between|select between|options? (?:are|include)|the following options|among (?:the following )?|entre (?:as )?(?:seguintes )?(?:op\u00e7\u00f5es? )?|escolha entre|escolhe entre|selecione entre|seleciona entre|escolha (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|selecione (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|op\u00e7\u00f5es? (?:s\u00e3o|incluem))\s*:?\s*([^?.]+)/i);
+  const singleChoice = /\b(?:choose|select|which)\s+one\b|\b(?:choose|select)\s+between|\b(?:escolha|escolhe|selecione|seleciona)\s+(?:um|uma|entre)\b/i.test(normalizeQuestionText(question));
+  const normalized = normalizeQuestionText(question);
+  const introduced = question.match(/(?:choose (?:any|one|all) of (?:the following )?|select (?:any|one|all) of (?:the following )?|select all that apply|check all that apply|(?:select|choose) (?:all|any) (?:relevant |applicable )?(?:skills|tools|options|items)[^:]*:|(?:choose|select) one\s*(?:of\s*)?(?:the following )?[^:]*:|(?:select|choose|pick|check|mark|selecione|escolha|assinale|marque)\s*:\s*|assinale (?:todas as )?op\u00e7\u00f5es[^:]*:|marque (?:todas as )?op\u00e7\u00f5es[^:]*:|escolha (?:um|uma) das op\u00e7\u00f5es[^:]*:|choose from (?:the following )?|select from (?:the following )?|choose between|select between|which one of (?:the following|these)[^:]*:|which of (?:the following|these)[^:]*:|what of (?:the following|these)[^:]*:|options? (?:are|include)|the following options|among (?:the following )?|(?:qual|quais) (?:das|dos) seguintes[^:]*:|entre (?:as )?(?:seguintes )?(?:op\u00e7\u00f5es? )?|escolha entre|escolhe entre|selecione entre|seleciona entre|escolha (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|selecione (?:um|uma) das (?:seguintes )?op\u00e7\u00f5es|op\u00e7\u00f5es? (?:s\u00e3o|incluem))\s*:?\s*([^?.]+)/i);
+  const labeledList = question.match(/(?:options?|choices?|op\u00e7\u00f5es?)\s*:\s*([^?.]+)/i);
   const source = introduced?.[1].replace(/\s+(?:and|e)\s+(?:please\s+)?(?:describe|explain|list|provide|share|specify|tell|explique|descreva|liste|indique|diga|forneca)\b.*$/i, '');
-  if (!source) return null;
+  const mayUseExampleOptions = openQuestionPattern.test(normalized)
+    || openDetailRequestPattern.test(normalized)
+    || selectionIntentPattern.test(normalized);
+  const exampleList = mayUseExampleOptions
+    ? question.match(/\((?:e\.?g\.?|for example|such as|por exemplo|como)\s*[:,]?\s*([^)]+)\)/i)?.[1]
+      || question.match(/\(([^()]*[,;|/][^()]*)\)/)?.[1]
+    : null;
+  const optionSource = source || labeledList?.[1] || exampleList;
+  if (!optionSource) return null;
 
-  const options = source
+  const options = optionSource
     .replace(/\s+(?:and|or|e|ou)\s+/gi, ',')
     .split(/[,;|/]/)
     .map(cleanOption)
-    .filter((option) => option.length > 0 && option.length < 45);
+    .filter((option) => option.length > 0 && option.length < 45 && !/^(?:etc\.?|and more|e outros?)$/i.test(option));
 
   const uniqueOptions = [...new Set(options)].slice(0, 8);
   return uniqueOptions.length > 1 ? { type: singleChoice ? 'single' : 'multiple', options: uniqueOptions } : null;
@@ -47,10 +60,10 @@ function getQuestionConfig(question) {
     const text = question.text || question.prompt || question.question || '';
     const options = Array.isArray(question.options) ? question.options.map(String).map(cleanOption).filter(Boolean) : [];
     const type = question.type;
-    if (type === 'yes_no') return { text, type: 'single', options: ['Yes', 'No'] };
-    if (type === 'single_choice') return { text, type: 'single', options };
-    if (type === 'enumeration') return { text, type: 'multiple', options };
-    if (type === 'open') return { text, type: 'open', options: [] };
+    if (type === 'yes_no') return { text, type: 'single', kind: 'yes_no', options: ['Yes', 'No'] };
+    if (type === 'single_choice') return { text, type: 'single', kind: 'single_choice', options };
+    if (type === 'enumeration') return { text, type: 'multiple', kind: 'enumeration', options };
+    if (type === 'open') return { text, type: 'open', kind: 'open', options: [] };
     return classifyQuestionText(text);
   }
 
@@ -58,14 +71,23 @@ function getQuestionConfig(question) {
 }
 
 function classifyQuestionText(text) {
-  const optionConfig = extractQuestionOptions(text);
-  if (optionConfig) return { text, ...optionConfig };
   const trimmed = normalizeQuestionText(text.trim());
-  if (openQuestionPattern.test(trimmed)) return { text, type: 'multiple', options: [] };
-  if (yesNoQuestionPattern.test(trimmed)) {
-    return { text, type: 'single', options: ['Yes', 'No'] };
+  const isOpen = openQuestionPattern.test(trimmed) || openDetailRequestPattern.test(trimmed);
+  const isYesNo = yesNoQuestionPattern.test(trimmed);
+  const optionConfig = extractQuestionOptions(text);
+  const hasSelectionIntent = selectionIntentPattern.test(trimmed);
+
+  if (optionConfig && (isOpen || hasSelectionIntent)) {
+    return { text, ...optionConfig, kind: optionConfig.type === 'single' ? 'single_choice' : 'enumeration' };
   }
-  return { text, type: 'multiple', options: [] };
+  if (isYesNo && !isOpen) {
+    return { text, type: 'single', kind: 'yes_no', options: ['Yes', 'No'] };
+  }
+
+  if (optionConfig) return { text, ...optionConfig, kind: optionConfig.type === 'single' ? 'single_choice' : 'enumeration' };
+  if (isOpen) return { text, type: 'open', kind: 'open', options: [] };
+  if (isYesNo) return { text, type: 'single', kind: 'yes_no', options: ['Yes', 'No'] };
+  return { text, type: 'open', kind: 'open', options: [] };
 }
 
 function renderQuickAnswers(config) {
@@ -74,9 +96,11 @@ function renderQuickAnswers(config) {
   container.replaceChildren();
   fieldset.hidden = config.options.length === 0;
   byId('answer-label').classList.toggle('has-quick-answers', config.options.length > 0);
-  byId('answer-label').textContent = config.options.length > 0 ? 'ADD A NOTE (OPTIONAL)' : 'YOUR ANSWER';
+  byId('answer-label').textContent = config.options.length > 0
+    ? config.kind === 'enumeration' ? 'ADD OTHER ITEMS OR A NOTE (OPTIONAL)' : 'ADD A NOTE (OPTIONAL)'
+    : 'YOUR ANSWER';
   byId('answer').placeholder = config.options.length > 0
-    ? 'Add any useful context here…'
+    ? config.kind === 'enumeration' ? 'Add items not listed or any useful context…' : 'Add any useful context here…'
     : '';
   if (!config.options.length) return;
 
@@ -172,6 +196,7 @@ function setupJobInput() {
 function showQuestion(questionId, question) {
   const config = getQuestionConfig(question);
   state.questionId = questionId;
+  state.questionType = config.kind;
   byId('current-question').textContent = config.text;
   byId('answer').value = '';
   renderQuickAnswers(config);
@@ -181,8 +206,13 @@ function showQuestion(questionId, question) {
   showScreen('questions');
 }
 
-function submitCurrentAnswer(answer) {
-  if (!answer.trim()) {
+function submitCurrentAnswer(answer, allowSkip = false) {
+  const hasSelection = document.querySelectorAll('#quick-answer-options input:checked').length > 0;
+  const selectionRequired = state.questionType === 'yes_no' || state.questionType === 'single_choice';
+  if (!answer.trim() || (!allowSkip && selectionRequired && !hasSelection)) {
+    byId('question-answer-error').textContent = selectionRequired
+      ? 'Choose an option or select Skip.'
+      : 'Enter an answer or choose Skip.';
     byId('question-answer-error').hidden = false;
     const firstQuickAnswer = byId('quick-answer-options').querySelector('input');
     (firstQuickAnswer || byId('answer')).focus();
@@ -320,7 +350,7 @@ byId('upload-next').addEventListener('click', () => showScreen('job'));
 byId('job-back').addEventListener('click', () => showScreen('upload'));
 byId('start-button').addEventListener('click', startOptimization);
 byId('question-next').addEventListener('click', () => submitCurrentAnswer(getCurrentAnswer()));
-byId('question-skip').addEventListener('click', () => submitCurrentAnswer('I do not know or have information to answer this question.'));
+byId('question-skip').addEventListener('click', () => submitCurrentAnswer('I do not know or have information to answer this question.', true));
 byId('quick-answer-options').addEventListener('change', () => {
   byId('question-answer-error').hidden = true;
 });
