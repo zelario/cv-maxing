@@ -13,13 +13,6 @@ const state = {
 const byId = (id) => document.getElementById(id);
 const screenIds = ['landing', 'upload', 'job', 'processing', 'questions', 'result'];
 
-function getQuestionText(question) {
-  if (question && typeof question === 'object') {
-    return question.text || question.prompt || question.question || '';
-  }
-  return String(question || '');
-}
-
 function showScreen(id) {
   state.screen = id;
   screenIds.forEach((screenId) => {
@@ -84,27 +77,23 @@ function setupJobInput() {
 
 function showQuestion(questionId, question) {
   state.questionId = questionId;
-  byId('current-question').textContent = getQuestionText(question);
+  byId('current-question').textContent = question;
   byId('answer').value = '';
   byId('question-answer-error').hidden = true;
   byId('question-next').disabled = false;
   byId('answer').disabled = false;
-  byId('answer').placeholder = '';
   showScreen('questions');
-  byId('answer').focus({ preventScroll: true });
 }
 
-function submitCurrentAnswer() {
-  const answer = byId('answer').value.trim();
-  if (!answer) {
-    byId('question-answer-error').textContent = 'Enter your answer.';
+function submitCurrentAnswer(answer) {
+  if (!answer.trim()) {
     byId('question-answer-error').hidden = false;
     byId('answer').focus();
     return;
   }
   byId('question-next').disabled = true;
   byId('answer').disabled = true;
-  state.submitAnswer?.(answer);
+  state.submitAnswer?.(answer.trim());
 }
 
 function delay(milliseconds) {
@@ -194,12 +183,7 @@ function renderResult() {
   documentText.textContent = result.markdown;
   documentSection.append(documentHeading, documentText);
   container.append(documentSection);
-  byId('download-pdf-button').onclick = downloadPdf;
   byId('download-button').onclick = downloadResult;
-}
-
-function downloadPdf() {
-  window.location.href = `/api/jobs/${state.jobId}/pdf`;
 }
 
 function downloadResult() {
@@ -238,11 +222,9 @@ byId('upload-back').addEventListener('click', () => showScreen('landing'));
 byId('upload-next').addEventListener('click', () => showScreen('job'));
 byId('job-back').addEventListener('click', () => showScreen('upload'));
 byId('start-button').addEventListener('click', startOptimization);
-byId('question-next').addEventListener('click', submitCurrentAnswer);
-byId('answer').addEventListener('input', () => {
-  byId('question-answer-error').hidden = true;
-});
+byId('question-next').addEventListener('click', () => submitCurrentAnswer(byId('answer').value));
+byId('question-skip').addEventListener('click', () => submitCurrentAnswer('I do not know or have information to answer this question.'));
 byId('answer').addEventListener('keydown', (event) => {
-  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') submitCurrentAnswer();
+  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') submitCurrentAnswer(byId('answer').value);
 });
 byId('restart-button').addEventListener('click', reset);
