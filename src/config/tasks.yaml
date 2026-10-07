@@ -355,80 +355,31 @@ optimize_cv_task:
     not include an optimized Markdown document.
 
 
-
 generate_cv_task:
-
   description: >
-    Map validated facts from StructuredCV and CVOptimizationResult into the
-    GeneratedCV Pydantic schema. Consider all source sections and original CV
-    text, then apply proposed changes only when their evidence_source and
-    attached evidence support them. Explicit candidate answers may supply
-    new facts; unresolved gaps and job requirements are never candidate facts.
+    Generate the final GeneratedCV from StructuredCV and
+    CVOptimizationResult.
 
-    Map contact facts only to contact fields; map role/project-specific work
-    evidence to ExperienceItem or Project; map formal study to EducationItem;
-    map only explicit skills to the corresponding Skills lists; map a language
-    and level only when both are supported; and map certifications only when
-    the candidate's actual credential/training is evidenced. Do not convert
-    a generic skill into a certification, a project into employment, or
-    coursework into professional experience. Preserve the source's distinction
-    between a degree in progress and a completed qualification.
+    Build the CV using the candidate's existing information as the source
+    of truth. Use optimization suggestions to improve relevance, clarity,
+    wording and presentation when they are supported by candidate evidence.
 
-    Preserve names, dates, titles, employers, institution names, qualifications,
-    achievements, language levels, and URLs exactly as supplied. Never infer
-    or invent URLs, skills, metrics, dates, titles, employers, qualifications,
-    certifications, languages, achievements, or experience. A URL is allowed
-    only if its exact string occurs in StructuredCV.cv or explicit user
-    evidence/answer. A mention of GitHub, a username, or personal projects is
-    not proof of a specific URL. Leave unsupported URL fields null, optional
-    fields null, and unsupported collections empty. Do not source candidate
-    facts from a proposed phrase unless its evidence supports that phrase.
+    You are allowed to rewrite and synthesize information. The final CV
+    does not need to reproduce the source wording verbatim, but it must
+    preserve the underlying facts accurately.
 
-    Map contact fields only from explicit contact evidence. Map summary only
-    from a supported source summary or a faithful concise synthesis of stated
-    facts. Map ExperienceItem to an evidenced role with supplied title,
-    company, dates, location, and supported bullets. Map EducationItem only
-    to formal education and preserve in-progress status. Place evidence in
-    technical, tools, methodologies, or transferable skills only when its type
-    is supported. Classify programming languages and technical competencies
-    as technical; named applications, platforms, frameworks, and libraries as
-    tools; named processes and approaches as methodologies; and demonstrated
-    communication, collaboration, problem-solving, or adaptability as
-    transferable skills. Put each item in its best-fitting category and do
-    not duplicate it across categories without clear evidence. For example,
-    Python and SQL are technical skills; pandas, NumPy, and scikit-learn are
-    libraries and belong under tools/software. Populate every category that
-    has evidence, but leave unsupported categories empty. Map language
-    proficiency only when the source states it;
-    map certifications only for evidenced credentials/training. Map projects
-    and activities without implying employment or inventing links. Copy a
-    project's dates only when explicitly attached to that project in the CV or
-    a candidate answer; keep the exact date wording. Set consent
-    true only when the CV or candidate explicitly provides consent.
+    Do not introduce information merely because it would make the CV
+    stronger or because it is required or preferred by the target job.
 
-    ContactInfo uses separate location_city and location_country fields. Copy
-    only explicitly stated city/locality and country values. Never place a
-    street, building number, or postal address in these contact fields. Leave
-    a component null if the CV does not state it; do not infer it from a street
-    address or postal code.
+    Do not infer missing qualifications, skills, experience, achievements,
+    metrics, dates, certifications, languages, proficiency levels,
+    locations, or URLs.
 
-    Before returning, inspect each populated field against its source. Check
-    that names, dates, titles, employers, institutions, grades, skill names,
-    language levels, and URLs have not been altered. Verify each list item
-    individually and ensure no placeholder or example remains. If a source
-    field is unreadable or conflicting, do not guess; omit it or preserve only
-    the unambiguous supported part. The renderer handles headings, order,
-    optional visibility, and Markdown syntax.
+    If a fact is unsupported or ambiguous, omit it rather than guessing.
 
-    For each non-empty GeneratedCV field, be able to trace the value to the
-    original CV or explicit user evidence. Keep names, dates, and supplied
-    wording exact; do not silently normalize a date or fill a missing location.
-    If evidence is contradictory, ambiguous, or missing, omit the disputed
-    value instead of choosing the most likely interpretation. Do not treat
-    examples from any prompt or the template as candidate data.
+    Return only a valid GeneratedCV Pydantic model. The deterministic
+    renderer is responsible for the document structure and formatting.
 
-    Return the GeneratedCV Pydantic model only. Do not ask_user, call tools,
-    write Markdown, access or change the final template, or choose document
-    structure. The deterministic Jinja2 renderer owns the fixed CV format.
-
-  expected_output: A valid GeneratedCV Pydantic model containing only supported candidate facts.
+  expected_output: >
+    A valid GeneratedCV containing an accurate, professional and
+    appropriately optimized representation of the candidate.

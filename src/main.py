@@ -80,10 +80,7 @@ def run():
     generated = save_pipeline_outputs(result)
     markdown = render_cv_markdown(generated)
     save_markdown(markdown)
-    pdf_path = Path("temp") / "optimized_cv.pdf"
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    pdf_path.write_bytes(render_cv_pdf(render_cv_html(generated)))
-    print(f"PDF saved to {pdf_path.resolve()}")
+    print("Optimized CV rendered without saving a PDF file to disk.")
 
 if __name__ == "__main__":
     run()

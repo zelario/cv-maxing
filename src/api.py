@@ -7,7 +7,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -49,7 +49,7 @@ class Session:
         self.answer_event: threading.Event | None = None
         self.result: dict | None = None
         self.error: str | None = None
-        self.output_pdf_path: Path | None = None
+        self.output_pdf_bytes: bytes | None = None
 
     def ask(self, question: str) -> str:
         with self.lock:
@@ -95,8 +95,7 @@ def _run_pipeline(session: Session) -> None:
         )
         generated = save_pipeline_outputs(result)
         markdown = render_cv_markdown(generated)
-        pdf_path = ROOT / "temp" / f"optimized_cv_{session.job_id}.pdf"
-        pdf_path.write_bytes(render_cv_pdf(render_cv_html(generated)))
+        session_pdf_bytes = render_cv_pdf(render_cv_html(generated))
         payload = {
             "markdown": markdown,
             "cv": generated.model_dump(),
@@ -105,7 +104,7 @@ def _run_pipeline(session: Session) -> None:
         }
         with session.lock:
             session.result = payload
-            session.output_pdf_path = pdf_path
+            session.output_pdf_bytes = session_pdf_bytes
             session.status = "complete"
     except Exception as exc:
         with session.lock:
@@ -149,10 +148,10 @@ async def start_optimization(cv: UploadFile = File(...), job: str = Form(...)):
                 detail="An optimization is already running. Try again later.",
             )
         job_id = uuid.uuid4().hex
-        temp_dir = ROOT / "temp"
-        temp_dir.mkdir(exist_ok=True)
         with tempfile.NamedTemporaryFile(
-            dir=temp_dir, suffix=".pdf", delete=False
+            prefix="cv-maxing-original-",
+            suffix=".pdf",
+            delete=False,
         ) as file:
             file.write(data)
             pdf_path = file.name
@@ -181,16 +180,14 @@ async def download_job_pdf(job_id: str):
         raise HTTPException(status_code=404, detail="Optimization not found.")
 
     with session.lock:
-        if session.status != "complete" or session.output_pdf_path is None:
+        if session.status != "complete" or session.output_pdf_bytes is None:
             raise HTTPException(status_code=409, detail="The CV PDF is not ready.")
-        pdf_path = session.output_pdf_path
+        pdf_bytes = session.output_pdf_bytes
 
-    if not pdf_path.is_file():
-        raise HTTPException(status_code=404, detail="The CV PDF is no longer available.")
-    return FileResponse(
-        pdf_path,
+    return Response(
+        content=pdf_bytes,
         media_type="application/pdf",
-        filename="optimized-cv.pdf",
+        headers={"Content-Disposition": 'attachment; filename="optimized-cv.pdf"'},
     )
 
 

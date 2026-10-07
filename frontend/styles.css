@@ -244,6 +244,7 @@ body {
   gap: 24px;
 }
 #cv-comparison > section { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.cv-pdf-preview { flex: 1 1 auto; width: 100%; min-height: 0; border: 1px solid #111; background: #f3f3f3; }
 .generated-document {
   flex: 1 1 auto;
   height: auto;
@@ -265,6 +266,7 @@ body {
 
 @media (max-width: 740px) {
   #cv-comparison { grid-template-columns: 1fr; }
+  .cv-pdf-preview { height: 520px; flex: none; }
   .agent-findings { max-height: 320px; }
 }
 

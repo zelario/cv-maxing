@@ -8,6 +8,7 @@ const state = {
   questionId: null,
   submitAnswer: null,
   result: null,
+  pdfUrl: null,
 };
 
 const byId = (id) => document.getElementById(id);
@@ -145,6 +146,7 @@ async function followOptimization() {
     if (current.status === 'error') throw new Error(current.error || 'Could not complete the optimization.');
     if (current.status === 'complete') {
       state.result = current.result;
+      state.pdfUrl = `/api/jobs/${state.jobId}/pdf`;
       renderResult();
       state.jobId = null;
       showScreen('result');
@@ -174,16 +176,27 @@ function renderResult() {
 
   const container = byId('cv-comparison');
   container.replaceChildren();
+  const pdfSection = document.createElement('section');
+  const pdfHeading = document.createElement('h3');
+  pdfHeading.className = 'comparison-heading';
+  pdfHeading.textContent = 'PDF PREVIEW';
+  const pdfFrame = document.createElement('iframe');
+  pdfFrame.className = 'cv-pdf-preview';
+  pdfFrame.title = 'Preview of the optimized CV PDF';
+  pdfFrame.src = state.pdfUrl;
+  pdfSection.append(pdfHeading, pdfFrame);
+
   const documentSection = document.createElement('section');
   const documentHeading = document.createElement('h3');
   documentHeading.className = 'comparison-heading';
-  documentHeading.textContent = 'OPTIMIZED CV';
+  documentHeading.textContent = 'TEXT PREVIEW';
   const documentText = document.createElement('pre');
   documentText.className = 'cv-document optimized generated-document';
   documentText.textContent = result.markdown;
   documentSection.append(documentHeading, documentText);
-  container.append(documentSection);
+  container.append(pdfSection, documentSection);
   byId('download-button').onclick = downloadResult;
+  byId('download-pdf-button').onclick = downloadPdfResult;
 }
 
 function downloadResult() {
@@ -198,11 +211,21 @@ function downloadResult() {
   window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
+function downloadPdfResult() {
+  const link = document.createElement('a');
+  link.href = state.pdfUrl;
+  link.download = 'optimized-cv.pdf';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
 function reset() {
   if (state.jobId) return;
   state.file = null;
   state.job = '';
   state.result = null;
+  state.pdfUrl = null;
   state.questionId = null;
   byId('cv-file').value = '';
   byId('upload-name').textContent = 'Upload your CV';
