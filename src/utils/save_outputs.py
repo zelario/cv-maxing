@@ -11,14 +11,14 @@ from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
 from models.generated_cv import GeneratedCV
 
-
 DATA_DIRECTORY = Path("temp")
 JSON_FILENAMES = {
-    "cv_temp.json",
-    "job_temp.json",
-    "review_temp.json",
-    "optimization_temp.json",
-    "generated_cv_temp.json",
+    "temp_cv.json",
+    "temp_job.json",
+    "temp_review.json",
+    "temp_optimization.json",
+    "temp_generated_cv.json",
+    "temp_judge.json",
 }
 
 
@@ -125,10 +125,10 @@ def save_pipeline_outputs(result) -> GeneratedCV:
     """Save validated structured pipeline outputs."""
 
     outputs = [
-        (0, "cv_temp.json", StructuredCV),
-        (1, "job_temp.json", StructuredJob),
-        (2, "review_temp.json", ReviewerResult),
-        (3, "optimization_temp.json", CVOptimizationResult),
+        (0, "temp_cv.json", StructuredCV),
+        (1, "temp_job.json", StructuredJob),
+        (2, "temp_review.json", ReviewerResult),
+        (3, "temp_optimization.json", CVOptimizationResult),
     ]
 
     for task_index, filename, model in outputs:
@@ -141,7 +141,7 @@ def save_pipeline_outputs(result) -> GeneratedCV:
     if not isinstance(generated, GeneratedCV):
         raise TypeError("Task 4 did not return GeneratedCV")
     generated = prepare_generated_cv(generated, result.tasks_output[1].pydantic)
-    save_model_json(generated, "generated_cv_temp.json")
+    save_model_json(generated, "temp_generated_cv.json")
 
     print("[PIPELINE] Structured CV, job, review, optimization, and generated CV saved")
     return generated

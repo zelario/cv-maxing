@@ -5,10 +5,10 @@ load_dotenv()
 
 from crew import CVMaxingCrew
 from utils.save_outputs import save_pipeline_outputs
-from tools.cv_generation import render_cv_markdown, render_cv_html, render_cv_pdf
+from tools.cv_generation import render_cv_markdown
 from utils.save_outputs import save_markdown
 
-cv = Path("tests") / "cv.pdf"
+cv = Path("tests") / "cvs" / "cv.pdf"
 job = """# Data Scientist Intern
 
 **Revolut · London / Hybrid**
@@ -80,7 +80,6 @@ def run():
     generated = save_pipeline_outputs(result)
     markdown = render_cv_markdown(generated)
     save_markdown(markdown)
-    print("Optimized CV rendered without saving a PDF file to disk.")
 
 if __name__ == "__main__":
     run()
