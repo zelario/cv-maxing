@@ -6,24 +6,8 @@ from playwright.sync_api import sync_playwright
 
 from models.generated_cv import GeneratedCV
 
-MARKDOWN_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "config" / "cv_template.md.j2"
 HTML_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "config" / "cv.html"
 CSS_TEMPLATE_PATH = Path(__file__).resolve().parents[1] / "config" / "cv.css"
-
-
-def render_cv_markdown(generated: GeneratedCV) -> str:
-    """Render the fixed Jinja2 template without adding candidate data."""
-
-    model = GeneratedCV.model_validate(generated.model_dump())
-
-    env = Environment(
-        loader=FileSystemLoader(str(MARKDOWN_TEMPLATE_PATH.parent)),
-        autoescape=False,
-        undefined=StrictUndefined,
-        keep_trailing_newline=True,
-    )
-
-    return env.get_template(MARKDOWN_TEMPLATE_PATH.name).render(**model.model_dump())
 
 
 def render_cv_html(generated: GeneratedCV) -> str:

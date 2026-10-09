@@ -84,6 +84,7 @@ function showQuestion(questionId, question) {
   byId('question-next').disabled = false;
   byId('answer').disabled = false;
   showScreen('questions');
+  byId('answer').focus();
 }
 
 function submitCurrentAnswer(answer) {
@@ -172,52 +173,41 @@ async function followOptimization() {
 }
 
 function renderResult() {
-  const result = state.result;
-
   const container = byId('cv-comparison');
   container.replaceChildren();
+
+  // ── PDF preview (full view) ──
   const pdfSection = document.createElement('section');
-  const pdfHeading = document.createElement('h3');
-  pdfHeading.className = 'comparison-heading';
-  pdfHeading.textContent = 'PDF PREVIEW';
+  pdfSection.className = 'pdf-preview-section';
+
   const pdfFrame = document.createElement('iframe');
   pdfFrame.className = 'cv-pdf-preview';
   pdfFrame.title = 'Preview of the optimized CV PDF';
+  pdfFrame.type = 'application/pdf';
   pdfFrame.src = state.pdfUrl;
-  pdfSection.append(pdfHeading, pdfFrame);
 
-  const documentSection = document.createElement('section');
-  const documentHeading = document.createElement('h3');
-  documentHeading.className = 'comparison-heading';
-  documentHeading.textContent = 'TEXT PREVIEW';
-  const documentText = document.createElement('pre');
-  documentText.className = 'cv-document optimized generated-document';
-  documentText.textContent = result.markdown;
-  documentSection.append(documentHeading, documentText);
-  container.append(pdfSection, documentSection);
-  byId('download-button').onclick = downloadResult;
+  pdfSection.append(pdfFrame);
+  container.append(pdfSection);
+
   byId('download-pdf-button').onclick = downloadPdfResult;
 }
 
-function downloadResult() {
-  const file = new Blob([state.result.markdown], { type: 'text/markdown;charset=utf-8' });
-  const url = URL.createObjectURL(file);
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = 'optimized-cv.md';
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-function downloadPdfResult() {
-  const link = document.createElement('a');
-  link.href = state.pdfUrl;
-  link.download = 'optimized-cv.pdf';
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
+async function downloadPdfResult() {
+  try {
+    const response = await fetch(state.pdfUrl);
+    const blob = await response.blob();
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'optimized-cv.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  } catch {
+    // Fallback: open in new tab
+    window.open(state.pdfUrl, '_blank');
+  }
 }
 
 function reset() {
@@ -248,6 +238,9 @@ byId('start-button').addEventListener('click', startOptimization);
 byId('question-next').addEventListener('click', () => submitCurrentAnswer(byId('answer').value));
 byId('question-skip').addEventListener('click', () => submitCurrentAnswer('I do not know or have information to answer this question.'));
 byId('answer').addEventListener('keydown', (event) => {
-  if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') submitCurrentAnswer(byId('answer').value);
+  if (event.key === 'Enter' && !event.shiftKey) {
+    event.preventDefault();
+    submitCurrentAnswer(byId('answer').value);
+  }
 });
 byId('restart-button').addEventListener('click', reset);

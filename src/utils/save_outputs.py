@@ -89,38 +89,6 @@ def save_model_json(model: BaseModel, filename: str) -> Path:
     return output_path
 
 
-def save_markdown(content: str, filename: str = "optimized_cv.md") -> Path:
-    """Write deterministic rendered CV Markdown atomically to temp."""
-
-    if filename != "optimized_cv.md":
-        raise ValueError("filename must be optimized_cv.md")
-
-    output_path = DATA_DIRECTORY / filename
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    temporary_path: str | None = None
-
-    try:
-        with tempfile.NamedTemporaryFile(
-            mode="w",
-            encoding="utf-8",
-            dir=output_path.parent,
-            prefix=".optimized_cv.",
-            suffix=".tmp",
-            delete=False,
-        ) as file:
-            temporary_path = file.name
-            file.write(content)
-            file.flush()
-            os.fsync(file.fileno())
-
-        os.replace(temporary_path, output_path)
-    finally:
-        if temporary_path and os.path.exists(temporary_path):
-            os.remove(temporary_path)
-
-    return output_path
-
-
 def save_pipeline_outputs(result) -> GeneratedCV:
     """Save validated structured pipeline outputs."""
 

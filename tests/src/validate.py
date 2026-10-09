@@ -1,12 +1,16 @@
 import os
+import sys
 import json
 from pathlib import Path
+
+_THIS_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(_THIS_DIR))
 
 from dotenv import load_dotenv
 from judge import Judge
 
-DATA_DIRECTORY = Path("temp")
-
+PROJECT_ROOT = _THIS_DIR.parent.parent
+DATA_DIRECTORY = PROJECT_ROOT / "temp"
 
 def _load_json(filename: str) -> dict:
     path = DATA_DIRECTORY / filename

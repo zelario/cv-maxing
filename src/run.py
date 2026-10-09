@@ -5,8 +5,7 @@ load_dotenv()
 
 from crew import CVMaxingCrew
 from utils.save_outputs import save_pipeline_outputs
-from tools.cv_generation import render_cv_markdown
-from utils.save_outputs import save_markdown
+from tools.cv_generation import render_cv_html, render_cv_pdf
 
 cv = Path("tests") / "cvs" / "cv.pdf"
 job = """# Data Scientist Intern
@@ -78,8 +77,11 @@ def run():
     )
 
     generated = save_pipeline_outputs(result)
-    markdown = render_cv_markdown(generated)
-    save_markdown(markdown)
+    pdf_bytes = render_cv_pdf(render_cv_html(generated))
+    pdf_path = Path("temp") / "optimized_cv.pdf"
+    pdf_path.parent.mkdir(parents=True, exist_ok=True)
+    pdf_path.write_bytes(pdf_bytes)
+    print(f"[PIPELINE] Optimized CV PDF saved to {pdf_path}")
 
 if __name__ == "__main__":
     run()

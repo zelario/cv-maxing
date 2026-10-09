@@ -16,7 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 load_dotenv(ROOT / ".env")
 
 from crew import CVMaxingCrew
-from tools.cv_generation import render_cv_html, render_cv_markdown, render_cv_pdf
+from tools.cv_generation import render_cv_html, render_cv_pdf
 from tools.cv_optimization import set_question_handler
 from utils.save_outputs import save_pipeline_outputs
 
@@ -94,10 +94,8 @@ def _run_pipeline(session: Session) -> None:
             .kickoff(inputs={"cv": session.pdf_path, "job": session.job_description})
         )
         generated = save_pipeline_outputs(result)
-        markdown = render_cv_markdown(generated)
         session_pdf_bytes = render_cv_pdf(render_cv_html(generated))
         payload = {
-            "markdown": markdown,
             "cv": generated.model_dump(),
             "review": result.tasks_output[2].pydantic.model_dump(),
             "optimization": result.tasks_output[3].pydantic.model_dump(),
@@ -187,7 +185,7 @@ async def download_job_pdf(job_id: str):
     return Response(
         content=pdf_bytes,
         media_type="application/pdf",
-        headers={"Content-Disposition": 'attachment; filename="optimized-cv.pdf"'},
+        headers={"Content-Disposition": 'inline; filename="optimized-cv.pdf"'},
     )
 
 

@@ -1,7 +1,4 @@
-<h1 align="center">
-  <img src="docs/icon.png" width="48" height="48" align="center" alt="">
-  CV Maxing
-</h1>
+# CV Maxing
 
 CV Maxing is a human-centered AI project that helps candidates tailor their CV to a job opportunity. It reviews the information in a CV against a job description, invites the candidate to provide additional context, and generates an updated CV for them to review.
 
