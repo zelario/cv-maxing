@@ -7,7 +7,8 @@ from crew import CVMaxingCrew
 from utils.save_outputs import save_pipeline_outputs
 from tools.cv_generation import render_cv_html, render_cv_pdf
 
-cv = Path("tests") / "cvs" / "cv.pdf"
+ROOT = Path(__file__).resolve().parents[1]
+cv = ROOT / "tests" / "cvs" / "cv.pdf"
 job = """# Data Scientist Intern
 
 **Revolut · London / Hybrid**
@@ -78,7 +79,7 @@ def run():
 
     generated = save_pipeline_outputs(result)
     pdf_bytes = render_cv_pdf(render_cv_html(generated))
-    pdf_path = Path("temp") / "optimized_cv.pdf"
+    pdf_path = ROOT / "temp" / "optimized_cv.pdf"
     pdf_path.parent.mkdir(parents=True, exist_ok=True)
     pdf_path.write_bytes(pdf_bytes)
     print(f"[PIPELINE] Optimized CV PDF saved to {pdf_path}")

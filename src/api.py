@@ -16,6 +16,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 load_dotenv(ROOT / ".env")
 
 from crew import CVMaxingCrew
+from models.optimization import CVOptimizationResult
+from models.review import ReviewerResult
 from tools.cv_generation import render_cv_html, render_cv_pdf
 from tools.cv_optimization import set_question_handler
 from utils.save_outputs import save_pipeline_outputs
@@ -95,10 +97,37 @@ def _run_pipeline(session: Session) -> None:
         )
         generated = save_pipeline_outputs(result)
         session_pdf_bytes = render_cv_pdf(render_cv_html(generated))
+        task_outputs = getattr(result, "tasks_output", [])
+        review_obj = next(
+            (
+                t.pydantic
+                for t in task_outputs
+                if isinstance(getattr(t, "pydantic", None), ReviewerResult)
+            ),
+            (
+                task_outputs[2].pydantic
+                if len(task_outputs) > 2
+                and isinstance(task_outputs[2].pydantic, ReviewerResult)
+                else None
+            ),
+        )
+        opt_obj = next(
+            (
+                t.pydantic
+                for t in task_outputs
+                if isinstance(getattr(t, "pydantic", None), CVOptimizationResult)
+            ),
+            (
+                task_outputs[3].pydantic
+                if len(task_outputs) > 3
+                and isinstance(task_outputs[3].pydantic, CVOptimizationResult)
+                else None
+            ),
+        )
         payload = {
             "cv": generated.model_dump(),
-            "review": result.tasks_output[2].pydantic.model_dump(),
-            "optimization": result.tasks_output[3].pydantic.model_dump(),
+            "review": review_obj.model_dump() if review_obj else {},
+            "optimization": opt_obj.model_dump() if opt_obj else {},
         }
         with session.lock:
             session.result = payload

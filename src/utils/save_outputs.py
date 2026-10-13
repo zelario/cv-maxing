@@ -11,7 +11,8 @@ from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
 from models.generated_cv import GeneratedCV
 
-DATA_DIRECTORY = Path("temp")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIRECTORY = PROJECT_ROOT / "temp"
 JSON_FILENAMES = {
     "temp_cv.json",
     "temp_job.json",
@@ -26,10 +27,13 @@ def _date_sort_key(value: str | None) -> tuple[int, int]:
     """Sort dated entries newest first; undated entries remain at the end."""
     if not value:
         return (0, 0)
+    is_ongoing = bool(
+        re.search(r"\b(present|ongoing|current|atualmente|presente)\b", value, re.I)
+    )
     years = [int(year) for year in re.findall(r"\b(?:19|20)\d{2}\b", value)]
     if not years:
-        return (0, 0)
-    if re.search(r"\b(present|ongoing|current|atualmente|presente)\b", value, re.I):
+        return (9999, 9999) if is_ongoing else (0, 0)
+    if is_ongoing:
         return (9999, max(years))
     return (max(years), min(years))
 
@@ -92,23 +96,53 @@ def save_model_json(model: BaseModel, filename: str) -> Path:
 def save_pipeline_outputs(result) -> GeneratedCV:
     """Save validated structured pipeline outputs."""
 
-    outputs = [
-        (0, "temp_cv.json", StructuredCV),
-        (1, "temp_job.json", StructuredJob),
-        (2, "temp_review.json", ReviewerResult),
-        (3, "temp_optimization.json", CVOptimizationResult),
+    model_specs = [
+        ("temp_cv.json", StructuredCV),
+        ("temp_job.json", StructuredJob),
+        ("temp_review.json", ReviewerResult),
+        ("temp_optimization.json", CVOptimizationResult),
     ]
 
-    for task_index, filename, model in outputs:
-        output = result.tasks_output[task_index].pydantic
-        if not isinstance(output, model):
-            raise TypeError(f"Task {task_index} did not return {model.__name__}")
+    task_outputs = getattr(result, "tasks_output", [])
+    outputs_by_model: dict[type[BaseModel], BaseModel] = {}
+
+    for t in task_outputs:
+        pydantic_obj = getattr(t, "pydantic", None)
+        if pydantic_obj is not None:
+            for _, model_cls in model_specs:
+                if isinstance(pydantic_obj, model_cls):
+                    outputs_by_model[model_cls] = pydantic_obj
+            if isinstance(pydantic_obj, GeneratedCV):
+                outputs_by_model[GeneratedCV] = pydantic_obj
+
+    # Positional fallback if any model was not identified by type
+    fallback_models = [
+        StructuredCV,
+        StructuredJob,
+        ReviewerResult,
+        CVOptimizationResult,
+        GeneratedCV,
+    ]
+    for idx, model_cls in enumerate(fallback_models):
+        if model_cls not in outputs_by_model and idx < len(task_outputs):
+            obj = getattr(task_outputs[idx], "pydantic", None)
+            if isinstance(obj, model_cls):
+                outputs_by_model[model_cls] = obj
+
+    for filename, model_cls in model_specs:
+        output = outputs_by_model.get(model_cls)
+        if output is None:
+            raise TypeError(f"Pipeline did not return {model_cls.__name__}")
         save_model_json(output, filename)
 
-    generated = result.tasks_output[4].pydantic
-    if not isinstance(generated, GeneratedCV):
-        raise TypeError("Task 4 did not return GeneratedCV")
-    generated = prepare_generated_cv(generated, result.tasks_output[1].pydantic)
+    raw_generated = outputs_by_model.get(GeneratedCV)
+    if not isinstance(raw_generated, GeneratedCV):
+        raise TypeError("Pipeline did not return GeneratedCV")
+
+    job_output = outputs_by_model.get(StructuredJob)
+    generated = prepare_generated_cv(
+        raw_generated, job_output if isinstance(job_output, StructuredJob) else None
+    )
     save_model_json(generated, "temp_generated_cv.json")
 
     print("[PIPELINE] Structured CV, job, review, optimization, and generated CV saved")

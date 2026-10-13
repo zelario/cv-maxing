@@ -3,7 +3,9 @@ import yaml
 
 from crewai.tools import tool
 
-FRAMEWORK_PATH = Path("src/config/evaluation_framework.yaml")
+FRAMEWORK_PATH = (
+    Path(__file__).resolve().parents[1] / "config" / "evaluation_framework.yaml"
+)
 
 
 @tool("get_evaluation_framework")

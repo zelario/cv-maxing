@@ -1,8 +1,6 @@
 .env
 __pycache__/
 .DS_Store
-report.md
-.env
 *.pdf
 *.json
-optimized_cv.md
+agents.md

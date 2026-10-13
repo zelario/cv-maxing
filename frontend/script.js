@@ -104,7 +104,7 @@ function delay(milliseconds) {
 
 async function readResponse(response) {
   const payload = await response.json();
-  if (!response.ok) throw new Error(payload.detail || 'O pedido falhou.');
+  if (!response.ok) throw new Error(payload.detail || 'The request failed.');
   return payload;
 }
 
