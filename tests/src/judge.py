@@ -1,27 +1,21 @@
+import json
 import sys
 from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
 from google import genai
-from models.validation import ValidationResult
+from google.genai import types
 
+TESTS_SRC_DIR = Path(__file__).resolve().parent
+PROJECT_ROOT = TESTS_SRC_DIR.parents[1]
+TEMP_DIR = PROJECT_ROOT / "temp"
 
-class Judge:
-    def __init__(self, model: str):
-        self.client = genai.Client()
-        self.model = model
+sys.path.insert(0, str(TESTS_SRC_DIR))
 
-    def evaluate(
-        self,
-        pipeline_outputs: list[tuple[str, dict]],
-    ) -> ValidationResult:
-        context = "\n\n".join(
-            f"{filename}:\n{content}" for filename, content in pipeline_outputs
-        )
+try:
+    from models.validation import ValidationResult
+except ImportError:
+    from tests.src.models.validation import ValidationResult
 
-        prompt = f"""
-You are evaluating a CV optimization system.
+DEFAULT_JUDGE_PROMPT = """You are evaluating a CV optimization system.
 
 The following JSON files are the complete pipeline context, in execution order:
 
@@ -48,13 +42,92 @@ in the original CV.
 Return only the structured evaluation.
 """
 
+
+class Judge:
+    PIPELINE_FILES = (
+        "temp_cv.json",
+        "temp_job.json",
+        "temp_review.json",
+        "temp_optimization.json",
+        "temp_generated_cv.json",
+    )
+
+    def __init__(self, model: str, prompt_template: str | None = None):
+        self.client = genai.Client()
+        self.model = model
+        self.prompt_template = prompt_template
+
+    def evaluate(self, directory: Path | None = None) -> ValidationResult | None:
+        """Loads pipeline JSON files from temp/, evaluates with Judge LLM, and prints report."""
+        target_dir = directory or TEMP_DIR
+
+        # 1. Load pipeline outputs
+        outputs = []
+        for filename in self.PIPELINE_FILES:
+            path = target_dir / filename
+            if not path.is_file():
+                print(f"[JUDGE ERROR] Missing required pipeline output: {path}")
+                return None
+            outputs.append(f"{filename}:\n{path.read_text(encoding='utf-8')}")
+
+        context = "\n\n".join(outputs)
+        template = self.prompt_template or DEFAULT_JUDGE_PROMPT
+        prompt = template.format(context=context) if "{context}" in template else f"{template}\n\n{context}"
+
+        # 2. Query Judge LLM
+        print(f"\n[JUDGE] Evaluating outputs in {target_dir} with {self.model}...")
         response = self.client.models.generate_content(
             model=self.model,
             contents=prompt,
-            config={
-                "response_mime_type": "application/json",
-                "response_schema": ValidationResult,
-            },
+            config=types.GenerateContentConfig(
+                response_mime_type="application/json",
+                response_schema=ValidationResult,
+            ),
         )
 
-        return response.parsed
+        if not response.text and not response.parsed:
+            raise ValueError("Judge received empty response from LLM.")
+
+        result = (
+            ValidationResult.model_validate_json(response.text)
+            if response.text
+            else response.parsed
+        )
+
+        # 3. Save result JSON
+        (target_dir / "temp_judge.json").write_text(
+            result.model_dump_json(indent=2) + "\n", encoding="utf-8"
+        )
+
+        # 4. Print clean scores report
+        print(f"\n{'='*45}\n               JUDGE SCORES\n{'='*45}")
+        print(f"  Accuracy:       {result.accuracy_score}/10")
+        print(f"  Job Alignment:  {result.job_alignment_score}/10")
+        print(f"  Completeness:   {result.completeness_score}/10")
+        print(f"  Clarity:        {result.clarity_score}/10")
+        print(f"  Evidence:       {result.evidence_score}/10")
+
+        if result.hallucinations:
+            print("\n⚠️  HALLUCINATIONS DETECTED:")
+            for h in result.hallucinations:
+                print(f"  - {h}")
+
+        if result.strengths:
+            print("\n✅ STRENGTHS:")
+            for s in result.strengths[:3]:
+                print(f"  - {s}")
+
+        if result.issues:
+            print("\n❌ ISSUES:")
+            for i in result.issues[:3]:
+                print(f"  - {i}")
+        print(f"{'='*45}\n")
+
+        return result
+
+    # Alias so both judge() and evaluate() work identically
+    judge = evaluate
+
+    # Alias so both judge() and evaluate() work identically
+    judge = evaluate
+        return result

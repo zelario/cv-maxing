@@ -39,12 +39,11 @@
       </article>{% endfor %}
     </section>{% endif %}
 
-    {% if skills.technical or skills.tools or skills.methodologies or skills.transferable %}<section>
-      <h2>Skills</h2>
-      {% if skills.technical %}<p class="field"><span class="label">Technical:</span> {{ skills.technical | join(', ') }}</p>{% endif %}
-      {% if skills.tools %}<p class="field"><span class="label">Tools and software:</span> {{ skills.tools | join(', ') }}</p>{% endif %}
-      {% if skills.methodologies %}<p class="field"><span class="label">Methodologies:</span> {{ skills.methodologies | join(', ') }}</p>{% endif %}
-      {% if skills.transferable %}<p class="field"><span class="label">Transferable:</span> {{ skills.transferable | join(', ') }}</p>{% endif %}
+    {% if skills %}<section>
+      <h2>Skills & Competencies</h2>
+      {% for group in skills %}
+        {% if group.skills %}<p class="field"><span class="label">{{ group.category_name }}:</span> {{ group.skills | join(', ') }}</p>{% endif %}
+      {% endfor %}
     </section>{% endif %}
 
     {% if languages %}<section><h2>Languages</h2>

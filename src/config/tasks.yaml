@@ -228,10 +228,10 @@ optimize_cv_task:
     1. Target role/headline: state the exact job title from the posting and
        confirm that it is the role being pursued. The final headline must be
        exactly that title.
-    2. Contact/profile: separately ask for an exact LinkedIn URL, GitHub
-       profile URL, and portfolio URL when absent. GitHub activity or a
-       project link does not confirm a profile URL. Explicitly allow “I do not
-       have one” for each profile.
+    2. Contact/profile: separately ask for an exact LinkedIn URL and any relevant
+       portfolio or professional profile URLs (such as GitHub for software/data roles,
+       or professional registers/portfolios when applicable) when absent. Explicitly
+       allow “I do not have one” for each.
     3. Professional experience: summarize listed roles for confirmation. If
        none are listed, explicitly ask whether employment, internships,
        freelance, or other relevant experience should be added. Accept a
@@ -240,17 +240,12 @@ optimize_cv_task:
        completion/in-progress status, and grade shown; ask separately whether
        another qualification is missing. Never transfer a grade or date
        between qualifications.
-    5. Skills: review and ask separately about each of the four CV categories.
-       Technical skills include programming languages and technical
-       competencies. Tools and software include named applications,
-       platforms, frameworks, and libraries. Methodologies include named
-       processes or approaches the candidate has actually used. Transferable
-       skills include communication, collaboration, problem-solving, and
-       adaptability when supported by evidence. Confirm the listed items in
-       each category; if a category is empty, ask whether there is anything to
-       add or whether it should remain empty. Do not bundle the four category
-       questions. Record only named skills, do not infer proficiency, and do
-       not add job requirements as candidate skills.
+    5. Skills: review and confirm skills grouped into domain-appropriate categories
+       relevant to the candidate's profession (e.g., Core Competencies, Tools/Instruments,
+       Methodologies/Protocols, or Transferable Skills). Confirm the listed items in
+       each category; if a category is empty or unstated, ask whether there is anything
+       to add or whether it should remain empty. Record only named skills with verified
+       evidence, do not infer proficiency, and do not add job requirements as candidate skills.
     6. Languages: confirm each language and level, and ask whether another
        language should be included. Never guess proficiency.
     7. Certifications/training: confirm each exact name, issuer, and stated

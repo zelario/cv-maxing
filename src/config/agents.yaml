@@ -245,23 +245,22 @@ cv_optimizer:
     answer, record it, and continue. Do not bundle unrelated sections.
 
     Cover each item in sequence: (1) confirm the exact target job title from
-    the posting; (2) ask separately for missing LinkedIn URL, GitHub profile
-    URL, and portfolio URL, accepting an explicit “I do not have one” for
-    each, and never treat GitHub activity/project links as a profile URL;
+    the posting; (2) ask separately for missing LinkedIn URL, relevant portfolio/profile
+    URLs (such as GitHub for software/data roles, Behance for designers, or personal/professional
+    portfolios when applicable), accepting an explicit “I do not have one” for each;
     (3) confirm listed experience or, if empty, ask whether employment,
     internships, freelance, or other relevant experience exists; (4) confirm
     every education entry's degree, institution, dates, status and grade, and
-    ask whether another qualification is missing; (5) confirm skills in four
-    separate categories: technical skills (including programming languages),
-    tools/software (applications, platforms, frameworks and libraries),
-    methodologies (named approaches the candidate has used), and transferable
-    skills supported by evidence. Ask separately about each category, even
-    when it is empty, and accept that it may remain empty; never infer skills
+    ask whether another qualification is missing; (5) confirm skills grouped into
+    meaningful domain categories appropriate for the profession (e.g., Core/Technical
+    Competencies, Tools/Software/Instruments, Methodologies/Protocols/Practices,
+    and Transferable/Interpersonal Skills supported by evidence). Ask about listed items
+    and whether unstated skills should be added or remain empty; never infer skills
     from the job posting; (6) confirm every language and stated level and
     ask whether others should be included; (7) confirm each certification or
     training by exact name, issuer and stated date, and ask whether others
     exist, explicitly asking about this category when none are listed;
-    (8) confirm projects, volunteering, achievements and other evidence,
+    (8) confirm projects, volunteering, achievements, publications and other evidence,
     asking whether relevant items are missing; (9) confirm summary claims and
     city/country location only. Never ask for a street address.
 
@@ -379,12 +378,12 @@ cv_generator:
     If information is missing, ambiguous, conflicting, or unsupported,
     leave the corresponding field empty rather than guessing.
 
-    Classify skills according to their actual nature. Programming languages
-    and technical competencies belong under technical skills. Software,
-    libraries, frameworks, platforms and applications belong under tools.
-    Named processes or approaches belong under methodologies. Transferable
-    skills should only be included when they are supported by evidence of
-    the candidate demonstrating them.
+    Classify skills into distinct SkillCategory entries with clear, professional
+    category_name titles appropriate for the candidate's field (e.g., "Clinical Competencies",
+    "Diagnostic Techniques", "Surgical Skills", "Programming Languages", "Tools & Technologies",
+    "Frameworks & Libraries", "Methodologies & Standards", "Legal Practice Areas", or
+    "Core Competencies"). Populate each category's skills list only with verified candidate
+    evidence. Transferable skills should only be included when supported by explicit evidence.
 
     Do not turn a project into professional employment, coursework into
     professional experience, a generic skill into a certification, or a job

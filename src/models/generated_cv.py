@@ -32,11 +32,9 @@ class EducationItem(BaseModel):
     grade: str | None = None
 
 
-class Skills(BaseModel):
-    technical: list[str] = Field(default_factory=list)
-    tools: list[str] = Field(default_factory=list)
-    methodologies: list[str] = Field(default_factory=list)
-    transferable: list[str] = Field(default_factory=list)
+class SkillCategory(BaseModel):
+    category_name: str
+    skills: list[str] = Field(default_factory=list)
 
 
 class Language(BaseModel):
@@ -65,7 +63,7 @@ class GeneratedCV(BaseModel):
     summary: str | None = None
     experience: list[ExperienceItem] = Field(default_factory=list)
     education: list[EducationItem] = Field(default_factory=list)
-    skills: Skills
+    skills: list[SkillCategory] = Field(default_factory=list)
     languages: list[Language] = Field(default_factory=list)
     certifications: list[Certification] = Field(default_factory=list)
     projects: list[Project] = Field(default_factory=list)
