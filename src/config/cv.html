@@ -17,7 +17,7 @@
       {% set contact_items = [contact.phone, contact.email, location] | select | list %}
       {% if contact_items %}<div class="contact">{% for item in contact_items %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{{ item }}{% endfor %}</div>{% endif %}
       {% set links = [contact.linkedin, contact.github, contact.portfolio] | select | list %}
-      {% if links %}<div class="contact">{% for item in links %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{{ item }}{% endfor %}</div>{% endif %}
+      {% if links %}<div class="contact">{% for item in links %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{% set display_url = item | replace('https://', '') | replace('http://', '') | replace('www.', '') %}{% set href_url = item if '://' in item else 'https://' ~ item %}<a href="{{ href_url }}">{{ display_url }}</a>{% endfor %}</div>{% endif %}
     </header>
 
     {% if summary %}<section><h2>Professional Summary</h2><p>{{ summary }}</p></section>{% endif %}
@@ -57,8 +57,8 @@
       </article>{% endfor %}
     </section>{% endif %}
 
-    {% if projects %}<section><h2>Projects, Volunteering and Other</h2>
-      {% for item in projects %}<p><span class="lead-in">{{ item.name }}{% if item.dates %} ({{ item.dates }}){% endif %}:</span>{% if item.description %} {{ item.description }}{% endif %}{% if item.link %} · {{ item.link }}{% endif %}{% if item.volunteering_or_other %} · {{ item.volunteering_or_other }}{% endif %}</p>{% endfor %}
+    {% if projects %}<section><h2>Projects</h2>
+      {% for item in projects %}<p><span class="lead-in">{{ item.name }}{% if item.dates %} ({{ item.dates }}){% endif %}:</span>{% if item.description %} {{ item.description }}{% endif %}</p>{% endfor %}
     </section>{% endif %}
 
     {% if consent %}<footer class="consent">I consent to the processing of my personal data for recruitment purposes, in accordance with the GDPR (Regulation (EU) 2016/679).</footer>{% endif %}

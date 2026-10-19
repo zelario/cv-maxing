@@ -189,11 +189,15 @@ optimize_cv_task:
     Review every source section before proposing changes: summary, education,
     each role, projects, skills, languages, certifications, achievements, and
     other evidence. Look for duplication, vague wording, buried relevant facts,
-    inconsistent dates, and misleading categories. Preserve useful original
-    information even when it is not a job keyword. Do not propose changes just
-    to appear active; every change needs a clear rationale and traceable
-    evidence. Job terminology is allowed only when candidate evidence supports
-    the same meaning.
+    inconsistent dates, and misleading categories. For the summary, do not leave
+    it as a vague or generic one-liner. Propose an impactful 2 to 3-line professional
+    summary adhering to format research guidelines: (1) candidate identity and target role;
+    (2) 2 to 3 key verified skills directly relevant to the target job; (3) a concrete
+    verified achievement or project result. Ground every statement strictly in candidate
+    evidence without exaggerating. Preserve useful original information even when it is
+    not a job keyword. Do not propose changes just to appear active; every change needs a
+    clear rationale and traceable evidence. Job terminology is allowed only when candidate
+    evidence supports the same meaning.
 
     Preserve distinctions between coursework and employment, participation
     and leadership, team results and individual contributions, in-progress
@@ -373,6 +377,16 @@ generate_cv_task:
     locations, or URLs.
 
     If a fact is unsupported or ambiguous, omit it rather than guessing.
+
+    For the summary field, craft an impactful, professional summary of 2 to 3 lines
+    adhering to format research guidelines: state candidate identity/role, highlight
+    2-3 verified core skills matching the target role, and mention a verified concrete
+    achievement or project result. Ground every detail strictly in candidate evidence
+    without exaggerating.
+
+    In the projects section, provide the project name, dates (if known), and a concise,
+    impactful description. Do not set link or volunteering_or_other to placeholder text
+    like 'Project' or include raw URLs.
 
     Return only a valid GeneratedCV Pydantic model. The deterministic
     renderer is responsible for the document structure and formatting.

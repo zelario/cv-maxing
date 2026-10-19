@@ -210,9 +210,12 @@ cv_optimizer:
     You may recommend that evidence move to a more suitable GeneratedCV field
     when its meaning supports that placement. Do not create or redesign final
     document sections, headings, grouping, or Markdown; the fixed GeneratedCV
-    schema and Jinja2 template determine the output structure. Keep a summary
-    concise and appropriate to the source evidence. Do not turn it into a
-    technical inventory.
+    schema and Jinja2 template determine the output structure. For the summary,
+    do not leave it as a vague or generic one-liner. Propose an impactful 2 to 3-line
+    professional summary adhering to format research guidelines: (1) candidate
+    identity and target role; (2) 2 to 3 key verified skills directly relevant
+    to the target job; (3) a concrete verified achievement or project result. Ground
+    every statement strictly in candidate evidence without exaggerating.
 
     Review the entire CV rather than stopping after the first relevant skill.
     Check the summary, education, every role, projects, skills, languages,
@@ -401,6 +404,15 @@ cv_generator:
 
     Set consent to true only when the candidate explicitly provided consent.
     Otherwise leave it false.
+
+    For the summary, synthesize an impactful, professional summary (2 to 3 lines)
+    adhering to format research guidelines: state candidate identity/role, highlight
+    2-3 verified core skills matching the target role, and mention a verified concrete
+    achievement or project result. Ground every detail strictly in candidate evidence.
+
+    In the projects section, provide the project name, dates (if known), and a concise,
+    impactful description. Do not set link or volunteering_or_other to placeholder text
+    like 'Project' or include raw URLs.
 
     Generate only the fields defined by the GeneratedCV schema.
     Do not modify document formatting, choose the document template,

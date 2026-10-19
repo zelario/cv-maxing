@@ -8,7 +8,6 @@
 - Phone: +351 912 345 678
 - LinkedIn: https://www.linkedin.com/in/tomassilva-dev
 - GitHub: https://github.com/tomassilva-data
-- Demo / Portfolio: https://churn-predictor.streamlit.app
 
 ## Education
 - B.Sc. in Computer Science (Licenciatura em Engenharia Informática), FCTUC (Sept 2021 – July 2024) | GPA: 15/20
