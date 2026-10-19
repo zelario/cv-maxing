@@ -15,10 +15,13 @@ TEMP_DIR = PROJECT_ROOT / "temp"
 # ==============================================================================
 # CONFIGURATION - Set test file paths here (or pass via command-line arguments)
 # ==============================================================================
-CV_PATH = PROJECT_ROOT / "tests" / "cvs" / "cv.pdf"
-JOB_PATH = PROJECT_ROOT / "tests" / "jobs" / "job.md"
-PROFILE_PATH = None  # e.g. PROJECT_ROOT / "tests" / "profiles" / "profile_doctor.md"
+CV = "tomas_junior"
+JOB = "data_scientist_intern"
 # ==============================================================================
+
+CV_PATH = PROJECT_ROOT / "tests" / "cvs" / f"cv_{CV}.pdf"
+JOB_PATH = PROJECT_ROOT / "tests" / "jobs" / f"job_{JOB}.md"
+PROFILE_PATH = PROJECT_ROOT / "tests" / "profiles" / f"profile_{CV}.md"
 
 for path in (PROJECT_ROOT, SRC_DIR, TESTS_SRC_DIR):
     if str(path) not in sys.path:

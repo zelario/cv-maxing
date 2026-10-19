@@ -43,5 +43,5 @@ temp/                    Temporary uploads and generated outputs
 
 ## License
 
-No license has been added to this repository yet.
+This project is licensed under the [MIT License](LICENSE).
 

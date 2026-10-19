@@ -39,6 +39,9 @@ Do not penalize:
 Do not penalize missing information if it was not present
 in the original CV.
 
+Information provided directly by the candidate in simulated_conversation.json or
+user_answers in temp_optimization.json is valid evidence and must not be considered a hallucination.
+
 Return only the structured evaluation.
 """
 
@@ -69,6 +72,10 @@ class Judge:
                 print(f"[JUDGE ERROR] Missing required pipeline output: {path}")
                 return None
             outputs.append(f"{filename}:\n{path.read_text(encoding='utf-8')}")
+
+        conv_path = target_dir / "simulated_conversation.json"
+        if conv_path.is_file():
+            outputs.append(f"simulated_conversation.json:\n{conv_path.read_text(encoding='utf-8')}")
 
         context = "\n\n".join(outputs)
         template = self.prompt_template or DEFAULT_JUDGE_PROMPT
@@ -121,13 +128,11 @@ class Judge:
             print("\n❌ ISSUES:")
             for i in result.issues[:3]:
                 print(f"  - {i}")
+
+        if result.recommendations:
+            print("\n💡 RECOMMENDATIONS:")
+            for r in result.recommendations[:3]:
+                print(f"  - {r}")
         print(f"{'='*45}\n")
 
-        return result
-
-    # Alias so both judge() and evaluate() work identically
-    judge = evaluate
-
-    # Alias so both judge() and evaluate() work identically
-    judge = evaluate
         return result
