@@ -13,7 +13,7 @@ TESTS_SRC_DIR = PROJECT_ROOT / "tests" / "src"
 TEMP_DIR = PROJECT_ROOT / "temp"
 
 # ==============================================================================
-# CONFIGURATION - Set test file paths here (or pass via command-line arguments)
+# CONFIGURATION 
 # ==============================================================================
 CV = "tomas_junior"
 JOB = "data_scientist_intern"
@@ -73,11 +73,12 @@ def run_pipeline(
     )
 
     # 2. Prepare candidate simulator
+    candidate_model = os.getenv("MODEL_CANDIDATE") or os.getenv("CANDIDATE_MODEL") or model
     candidate = Candidate(
         cv_text=cv_text,
         job_text=job_text,
         extra_context=extra_context,
-        model=model,
+        model=candidate_model,
     )
     set_question_handler(candidate.answer_question)
 
@@ -100,7 +101,8 @@ def run_pipeline(
     )
 
     # 4. Evaluate with Judge
-    Judge(model=model).evaluate(directory=TEMP_DIR)
+    judge_model = os.getenv("MODEL_JUDGE") or os.getenv("JUDGE_MODEL") or model
+    Judge(model=judge_model).evaluate(directory=TEMP_DIR)
 
 
 def main():

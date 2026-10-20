@@ -1,3 +1,4 @@
+import os
 import sys
 from pathlib import Path
 from google import genai
@@ -52,7 +53,8 @@ class Candidate:
         )
         self.model = model
         self.prompt_template = prompt_template or DEFAULT_CANDIDATE_PROMPT
-        self.client = genai.Client()
+        api_key = os.getenv("GEMINI_VALIDATION_API_KEY") or os.getenv("GEMINI_API_KEY")
+        self.client = genai.Client(api_key=api_key) if api_key else genai.Client()
         self.conversation: list[dict[str, str]] = []
 
     def answer_question(self, question: str) -> str:
@@ -71,8 +73,9 @@ class Candidate:
             if not answer:
                 answer = "I do not have additional information to add."
         except Exception as exc:
-            print(f"[CANDIDATE] Error generating answer: {exc}")
-            answer = "I do not have one."
+            print(f"\n[FATAL API ERROR] Erro na API/modelo ({self.model}): {exc}")
+            print("[FATAL API ERROR] A terminar a execução imediatamente conforme configurado.\n")
+            sys.exit(1)
 
         print(f"\n[CANDIDATE QUESTION] {question}")
         print(f"[CANDIDATE ANSWER]   {answer}\n")

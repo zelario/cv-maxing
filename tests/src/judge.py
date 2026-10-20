@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 from pathlib import Path
 from google import genai
@@ -56,7 +57,8 @@ class Judge:
     )
 
     def __init__(self, model: str, prompt_template: str | None = None):
-        self.client = genai.Client()
+        api_key = os.getenv("GEMINI_VALIDATION_API_KEY") or os.getenv("GEMINI_API_KEY")
+        self.client = genai.Client(api_key=api_key) if api_key else genai.Client()
         self.model = model
         self.prompt_template = prompt_template
 
@@ -83,17 +85,23 @@ class Judge:
 
         # 2. Query Judge LLM
         print(f"\n[JUDGE] Evaluating outputs in {target_dir} with {self.model}...")
-        response = self.client.models.generate_content(
-            model=self.model,
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=ValidationResult,
-            ),
-        )
+        try:
+            response = self.client.models.generate_content(
+                model=self.model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=ValidationResult,
+                ),
+            )
+        except Exception as exc:
+            print(f"\n[FATAL API ERROR] Erro na API/modelo do Judge ({self.model}): {exc}")
+            print("[FATAL API ERROR] A terminar a execução imediatamente conforme configurado.\n")
+            sys.exit(1)
 
         if not response.text and not response.parsed:
-            raise ValueError("Judge received empty response from LLM.")
+            print(f"\n[FATAL API ERROR] Judge recebeu uma resposta vazia do LLM ({self.model}).")
+            sys.exit(1)
 
         result = (
             ValidationResult.model_validate_json(response.text)

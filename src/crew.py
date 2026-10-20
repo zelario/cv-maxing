@@ -3,7 +3,12 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
-MODEL = os.getenv("MODEL", "openrouter/free")
+DEFAULT_MODEL = os.getenv("MODEL", "openrouter/free")
+MODEL_CV_PARSER = os.getenv("MODEL_CV_PARSER") or DEFAULT_MODEL
+MODEL_JOB_PARSER = os.getenv("MODEL_JOB_PARSER") or DEFAULT_MODEL
+MODEL_CV_REVIEWER = os.getenv("MODEL_CV_REVIEWER") or DEFAULT_MODEL
+MODEL_CV_OPTIMIZER = os.getenv("MODEL_CV_OPTIMIZER") or DEFAULT_MODEL
+MODEL_CV_GENERATOR = os.getenv("MODEL_CV_GENERATOR") or DEFAULT_MODEL
 
 from crewai import Agent, Crew, Task
 from crewai.project import CrewBase, agent, crew, task
@@ -31,7 +36,7 @@ class CVMaxingCrew:
         return Agent(
             config=self.agents_config["cv_parser"],
             tools=[convert_cv_to_markdown],
-            llm=MODEL,
+            llm=MODEL_CV_PARSER,
             verbose=True,
             allow_delegation=False,
         )
@@ -41,7 +46,7 @@ class CVMaxingCrew:
         return Agent(
             config=self.agents_config["job_parser"],
             tools=[convert_job_to_markdown],
-            llm=MODEL,
+            llm=MODEL_JOB_PARSER,
             verbose=True,
             allow_delegation=False,
         )
@@ -51,7 +56,7 @@ class CVMaxingCrew:
         return Agent(
             config=self.agents_config["cv_reviewer"],
             tools=[get_evaluation_framework],
-            llm=MODEL,
+            llm=MODEL_CV_REVIEWER,
             verbose=True,
             allow_delegation=False,
         )
@@ -61,7 +66,7 @@ class CVMaxingCrew:
         return Agent(
             config=self.agents_config["cv_optimizer"],
             tools=[ask_user],
-            llm=MODEL,
+            llm=MODEL_CV_OPTIMIZER,
             verbose=True,
             allow_delegation=False,
         )
@@ -70,7 +75,7 @@ class CVMaxingCrew:
     def cv_generator(self) -> Agent:
         return Agent(
             config=self.agents_config["cv_generator"],
-            llm=MODEL,
+            llm=MODEL_CV_GENERATOR,
             verbose=True,
             allow_delegation=False,
         )
