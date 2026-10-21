@@ -1,4 +1,3 @@
-
 .git
 .gitignore
 .github
@@ -7,7 +6,6 @@ venv
 .venv
 env
 ENV
-
 
 __pycache__
 *.py[cod]
@@ -26,17 +24,16 @@ temp
 output
 *.log
 
-
 Dockerfile
 docker-compose*.yml
 .dockerignore
-
 
 .vscode
 .idea
 .DS_Store
 Thumbs.db
 
-
-*.md
+README.md
+AGENTS.md
+LICENSE
 docs

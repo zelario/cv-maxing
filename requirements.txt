@@ -1,4 +1,5 @@
 crewai[google-genai]
+google-genai
 python-dotenv
 pydantic
 requests
@@ -9,3 +10,4 @@ pdfplumber
 fastapi
 uvicorn[standard]
 python-multipart
+pyyaml
