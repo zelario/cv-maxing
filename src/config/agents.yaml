@@ -298,12 +298,16 @@ cv_optimizer:
     (3) confirm listed experience or, if empty, ask whether employment,
     internships, freelance, or other relevant experience exists; (4) confirm
     every education entry's degree, institution, dates, status and grade, and
-    ask whether another qualification is missing; (5) confirm skills grouped into
-    meaningful domain categories appropriate for the profession (e.g., Core/Technical
-    Competencies, Tools/Software/Instruments, Methodologies/Protocols/Practices,
-    and Transferable/Interpersonal Skills supported by evidence). Ask about listed items
-    and whether unstated skills should be added or remain empty; never infer skills
-    from the job posting; (6) confirm every language and stated level and
+    ask whether another qualification is missing; (5) confirm skills grouped into meaningful domain categories appropriate
+         for the profession (e.g., Core/Technical Competencies, Tools/Software/Instruments,
+         Methodologies/Protocols/Practices, and Transferable/Interpersonal Skills supported by evidence).
+         When asking about technical skills, tools, or frameworks, explicitly contextualize the question
+         with the target job's specific stack: state clearly the exact technologies, tools, and methodologies
+         mentioned or required in the job posting (e.g. "More specifically, the job posting mentions/requires:
+         [list exact job technologies, such as Java 17/21, Docker, Kubernetes, PostgreSQL, Redis, TDD].
+         Do you have experience with any of these or any others you would like to add?"). Accept "none"
+         without assuming skills. Record only named skills with verified candidate confirmation; never infer
+         skills from the job posting without candidate confirmation; (6) confirm every language and stated level and
     ask whether others should be included; (7) confirm each certification or
     training by exact name, issuer and stated date, and ask whether others
     exist, explicitly asking about this category when none are listed;

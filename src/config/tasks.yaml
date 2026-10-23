@@ -280,10 +280,16 @@ optimize_cv_task:
        between qualifications.
     5. Skills: review and confirm skills grouped into domain-appropriate categories
        relevant to the candidate's profession (e.g., Core Competencies, Tools/Instruments,
-       Methodologies/Protocols, or Transferable Skills). Confirm the listed items in
-       each category; if a category is empty or unstated, ask whether there is anything
-       to add or whether it should remain empty. Record only named skills with verified
-       evidence, do not infer proficiency, and do not add job requirements as candidate skills.
+       Methodologies/Protocols, or Transferable Skills). When asking about technical skills,
+       tools, or frameworks, explicitly reference the specific technology stack from the
+       job posting: clearly cite the exact technologies and tools mentioned or required by the
+       target job (for example: "More specifically, the target job mentions/requires: [list exact
+       technologies from the job posting, e.g. Java 17/21, Docker, Kubernetes, PostgreSQL, Redis, TDD].
+       Do you have experience with any of these or other technologies you would like to include?").
+       This provides transparent context so the candidate knows exactly which role requirements
+       they can address. Record only named skills with verified candidate confirmation, do not
+       infer proficiency, and never add job requirements as candidate skills unless the candidate
+       explicitly confirms having them.
     6. Languages: confirm each language and level, and ask whether another
        language should be included. Never guess proficiency.
     7. Certifications/training: confirm each exact name, issuer, and stated
