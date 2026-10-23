@@ -378,6 +378,13 @@ generate_cv_task:
 
     If a fact is unsupported or ambiguous, omit it rather than guessing.
 
+    Under contact information, contact.portfolio is exclusively for the
+    candidate's personal portfolio website or personal homepage. Never
+    populate contact.portfolio with URLs belonging to specific projects,
+    competitions, hackathons, demos, or code repositories. Project URLs
+    belong strictly in the projects section. If the candidate does not have
+    an explicit personal portfolio website, contact.portfolio must remain null.
+
     For the summary field, craft an impactful, professional summary of 2 to 3 lines
     adhering to format research guidelines: state candidate identity/role, highlight
     2-3 verified core skills matching the target role, and mention a verified concrete

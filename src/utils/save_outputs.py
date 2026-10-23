@@ -55,6 +55,24 @@ def prepare_generated_cv(
     prepared = GeneratedCV.model_validate(generated.model_dump())
     if job and job.job_title.strip():
         prepared.contact.headline = job.job_title.strip()
+    # Normalize GitHub URL if provided as username or relative path
+    if prepared.contact.github:
+        gh = prepared.contact.github.strip()
+        if not gh.startswith("http://") and not gh.startswith("https://"):
+            gh_user = gh.lstrip("/").replace("github.com/", "")
+            prepared.contact.github = f"https://github.com/{gh_user}"
+
+    # Ensure project/competition links never leak into contact.portfolio in the header
+    if prepared.contact.portfolio:
+        portfolio_clean = prepared.contact.portfolio.strip().rstrip("/").lower()
+        is_project_link = any(
+            (p.link and (p.link.strip().rstrip("/").lower() == portfolio_clean or portfolio_clean in p.link.lower() or p.link.lower() in portfolio_clean))
+            or (p.description and portfolio_clean in p.description.lower())
+            for p in prepared.projects
+        )
+        if is_project_link:
+            prepared.contact.portfolio = None
+
     _sort_chronologically(prepared)
     return prepared
 

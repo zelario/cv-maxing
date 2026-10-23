@@ -398,6 +398,14 @@ cv_generator:
     username, project name, or URL-like text is not sufficient evidence
     for a specific URL.
 
+    Distinguish contact header URLs from project URLs: contact.portfolio
+    is strictly for a personal portfolio website or personal homepage.
+    NEVER put individual project URLs, competition links, demo links, or
+    repository links into contact.portfolio or any contact header field.
+    Project and competition links belong solely in their specific Project
+    entry (or omitted). If the candidate did not explicitly provide a personal
+    portfolio website, leave contact.portfolio empty/null.
+
     For contact information, only populate location_city and
     location_country when those values are explicitly supported. Do not
     infer a city or country from a street address or postal code.
