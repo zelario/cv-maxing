@@ -1,4 +1,4 @@
-.PHONY: run dev test help docker-build docker-run docker-down
+.PHONY: run dev test help docker-build docker-run docker-up docker-down
 
 run: dev
 
@@ -12,6 +12,9 @@ docker-build:
 	docker compose build
 
 docker-run:
+	docker compose run --rm --service-ports cv-maxing
+
+docker-up:
 	docker compose up
 
 docker-down:

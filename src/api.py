@@ -97,6 +97,9 @@ def _run_pipeline(session: Session) -> None:
         )
         generated = save_pipeline_outputs(result)
         session_pdf_bytes = render_cv_pdf(render_cv_html(generated))
+        pdf_path = ROOT / "temp" / "optimized_cv.pdf"
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        pdf_path.write_bytes(session_pdf_bytes)
         task_outputs = getattr(result, "tasks_output", [])
         review_obj = next(
             (

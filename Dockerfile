@@ -13,11 +13,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip \
-    && python -m pip install -r requirements.txt
+    && python -m pip install -r requirements.txt \
+    && find /usr/local -depth -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true \
+    && find /usr/local -type f -name '*.pyc' -delete 2>/dev/null || true
 
-# Install Playwright Chromium and its Linux system dependencies
-RUN python -m playwright install --with-deps chromium \
-    && rm -rf /var/lib/apt/lists/*
+# Install only Playwright Chromium Headless Shell and its Linux system dependencies, then prune redundant files
+RUN python -m playwright install --with-deps --only-shell chromium \
+    && rm -rf /root/.cache/ms-playwright/chromium-[0-9]* 2>/dev/null || true \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY src ./src
 COPY frontend ./frontend

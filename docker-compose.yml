@@ -11,4 +11,3 @@ services:
       - .env
     volumes:
       - ./temp:/app/temp
-    restart: unless-stopped
