@@ -73,6 +73,14 @@ def prepare_generated_cv(
         if is_project_link:
             prepared.contact.portfolio = None
 
+    # Clean any raw URLs embedded in institution or company names
+    for edu in prepared.education:
+        if edu.institution:
+            edu.institution = re.sub(r"https?://\S+", "", edu.institution).strip()
+    for exp in prepared.experience:
+        if exp.company:
+            exp.company = re.sub(r"https?://\S+", "", exp.company).strip()
+
     _sort_chronologically(prepared)
     return prepared
 

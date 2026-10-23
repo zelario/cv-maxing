@@ -10,31 +10,65 @@ parse_cv_task:
     evidence and must remain available to downstream agents, especially the
     CV optimizer.
 
-    Then, extract and structure all relevant information explicitly stated
-    in the CV.
+    Then, analyze and structure all information explicitly stated in the CV using
+    intelligent reasoning to adapt the candidate's document structure into StructuredCV:
 
-    Preserve the original meaning and relevant source evidence.
+    1. EDUCATION VS. CERTIFICATIONS & WORKSHOPS:
+       - Categorize only formal multi-year academic degrees (Higher Education, Secondary /
+         High School) under 'education'.
+       - In 'education', 'degree' MUST identify the degree program or major. If the CV is in
+         Europass format and shows a status like "[ 2023 - Current ] University Student" with
+         "Field(s) of study: Engenharia Informática" or "Level in EQF: 5", deduce that the
+         degree is "Licenciatura em Engenharia Informática" (or "Engenharia Informática" /
+         "Bachelor in Informatics Engineering"), and set 'field' to "Engenharia Informática".
+         NEVER record "University Student", "Student", or "Undergraduate" as the degree title.
+       - Clean 'institution' names: strip out any trailing URLs (such as "https://www.uc.pt/en/").
+         The institution must be just the organization/school name.
+       - Non-degree workshops, short courses, boot camps, or training programs (such as
+         "GIT Workshop", "Programar o Futuro - Nível 2") must be categorized under
+         'certifications' (with name, issuer, and date/year), NOT under 'education'.
 
-    Do not invent or infer information that is not explicitly supported by
-    the CV.
+    2. GLOBAL SKILLS & TECHNOLOGIES EXTRACTION:
+       - Do not limit skills extraction to a section titled "Skills". Many CV layouts (like
+         Europass or narrative CVs) do not have a dedicated skills section; their skills
+         appear inside work experience, internship duties, project descriptions, workshop
+         titles, and competition summaries.
+       - Thoroughly scan all sections to extract every explicitly mentioned programming
+         language, framework, developer tool, methodology, and technical domain (e.g. PHP,
+         Python, Git, Docker, frontend, backend, robotics) into the top-level 'skills' list.
+       - For every skill, specify its clean 'name', the 'source_section', and the exact
+         supporting 'source_text'.
+       - NEVER leave 'skills: []' empty when technologies and technical competencies are
+         explicitly stated in the document.
 
-    Distinguish between information that is explicitly stated and information
-    that is not present.
+    3. PREVENTING DUPLICATION BETWEEN EXPERIENCE AND PROJECTS:
+       - Internal company systems, features, or client projects worked on as part of a job or
+         internship (e.g. "PharmaIoT" at BSWebConnect or "LIFT" at IMECX) belong inside the
+         'experience' entry (under description, responsibilities, and skills_evidenced).
+         DO NOT duplicate internal employment tasks as standalone entries in 'projects'.
+       - The 'projects' list is strictly for standalone projects, independent competitions
+         (e.g. "2x Reset by BEST", hackathons, CTFs), personal projects, and extracurricular work.
 
-    Preserve the source section and relevant source text whenever possible.
+    4. ROLES AND VOLUNTEERING:
+       - Deduce accurate role titles (e.g. "Robotics Team Member" or "Robotics Team").
+       - When an entry is short-term event or community volunteering (e.g. 1-day helper at
+         "JNation"), preserve 'job_title: "Volunteer"' and document the event volunteering context.
 
-    Keep information that does not clearly belong to a predefined category
-    under "other" rather than discarding it.
+    5. CLEAN LANGUAGES & CONTACT INFO:
+       - Extract languages cleanly ("Portuguese", "English", "French") and summarize
+         proficiency concisely (e.g. "Mother tongue", "B2", "A1"). Do not dump raw CEFR
+         evaluation grids into the main proficiency string.
+       - Extract clean contact details (name, email, phone, city, country, LinkedIn).
 
-    Do not evaluate the CV, compare it to a job posting, assign scores, or
-    provide recommendations.
+    Preserve all factual evidence faithfully. Do not evaluate, score, or match against
+    job postings. Return only valid StructuredCV.
 
   expected_output: >
-    A structured CV containing education, work experience, skills, projects,
-    certifications, languages, achievements, summary information, and other
-    relevant content, with source evidence whenever available.
+    A fully populated StructuredCV containing clean education, work experience,
+    all evidenced skills, standalone projects, certifications/workshops, languages,
+    achievements, summary information, and other relevant content with source evidence.
 
-  
+
 
 parse_job_task:
 
@@ -377,6 +411,13 @@ generate_cv_task:
     locations, or URLs.
 
     If a fact is unsupported or ambiguous, omit it rather than guessing.
+
+    In the education section, ensure each entry's degree clearly states the qualification
+    and major/field of study (e.g. "Bachelor in Informatics Engineering" or "Engenharia Informática").
+    Never leave degree as a generic status like "University Student". If the source data
+    contained a student status with a field of study, combine them into a clear degree title.
+    Clean institution names: ensure no raw URLs (e.g. https://...) are included in the institution string.
+    Workshops and non-degree short courses must be placed in certifications, not education.
 
     Under contact information, contact.portfolio is exclusively for the
     candidate's personal portfolio website or personal homepage. Never
