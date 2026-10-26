@@ -73,8 +73,8 @@ class Candidate:
             if not answer:
                 answer = "I do not have additional information to add."
         except Exception as exc:
-            print(f"\n[FATAL API ERROR] Erro na API/modelo ({self.model}): {exc}")
-            print("[FATAL API ERROR] A terminar a execução imediatamente conforme configurado.\n")
+            print(f"\n[FATAL API ERROR] Candidate Simulator API/model error ({self.model}): {exc}")
+            print("[FATAL API ERROR] Terminating execution immediately as configured.\n")
             sys.exit(1)
 
         print(f"\n[CANDIDATE QUESTION] {question}")

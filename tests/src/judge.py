@@ -95,12 +95,12 @@ class Judge:
                 ),
             )
         except Exception as exc:
-            print(f"\n[FATAL API ERROR] Erro na API/modelo do Judge ({self.model}): {exc}")
-            print("[FATAL API ERROR] A terminar a execução imediatamente conforme configurado.\n")
+            print(f"\n[FATAL API ERROR] Judge API/model error ({self.model}): {exc}")
+            print("[FATAL API ERROR] Terminating execution immediately as configured.\n")
             sys.exit(1)
 
         if not response.text and not response.parsed:
-            print(f"\n[FATAL API ERROR] Judge recebeu uma resposta vazia do LLM ({self.model}).")
+            print(f"\n[FATAL API ERROR] Judge received an empty response from LLM ({self.model}).")
             sys.exit(1)
 
         result = (
