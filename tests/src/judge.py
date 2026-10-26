@@ -2,6 +2,10 @@ import json
 import os
 import sys
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 from google import genai
 from google.genai import types
 
@@ -123,22 +127,22 @@ class Judge:
         print(f"  Evidence:       {result.evidence_score}/10")
 
         if result.hallucinations:
-            print("\n⚠️  HALLUCINATIONS DETECTED:")
+            print("\n[!] HALLUCINATIONS DETECTED:")
             for h in result.hallucinations:
                 print(f"  - {h}")
 
         if result.strengths:
-            print("\n✅ STRENGTHS:")
+            print("\n[+] STRENGTHS:")
             for s in result.strengths[:3]:
                 print(f"  - {s}")
 
         if result.issues:
-            print("\n❌ ISSUES:")
+            print("\n[-] ISSUES:")
             for i in result.issues[:3]:
                 print(f"  - {i}")
 
         if result.recommendations:
-            print("\n💡 RECOMMENDATIONS:")
+            print("\n[*] RECOMMENDATIONS:")
             for r in result.recommendations[:3]:
                 print(f"  - {r}")
         print(f"{'='*45}\n")

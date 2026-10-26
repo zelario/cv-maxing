@@ -127,7 +127,7 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        default=os.getenv("JUDGE_MODEL") or os.getenv("MODEL", "gemini-3.5-flash-lite"),
+        default=os.getenv("MODEL_JUDGE") or os.getenv("JUDGE_MODEL") or "gemini-3.5-flash-lite",
         help="LLM model",
     )
     args = parser.parse_args()

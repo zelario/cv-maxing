@@ -1,450 +1,172 @@
+# ==============================================================================
+# TASKS CONFIGURATION - CV MAXING PIPELINE
+# ==============================================================================
+
 parse_cv_task:
-
   description: >
-    Parse the CV located at {cv}.
+    Parse the candidate CV located at {cv}.
 
-    First, use the convert_cv_to_markdown tool to extract the content of the PDF.
+    1. EXTRACTION:
+       - Use the convert_cv_to_markdown tool to extract the text content of the PDF.
+       - Store the full extracted Markdown in StructuredCV.cv as the baseline evidence.
 
-    Keep the complete Markdown returned by the extraction tool in the
-    "cv" field of the structured CV. This is the original CV
-    evidence and must remain available to downstream agents, especially the
-    CV optimizer.
+    2. REASONING & STRUCTURAL MAPPING:
+       - Education: Categorize formal academic degrees under 'education'. If the document
+         displays an occupational status with a field of study (e.g. Europass "[2023-Current]
+         University Student" with "Field of study: Engenharia Informática"), deduce the actual
+         degree title (e.g. "Licenciatura em Engenharia Informática" / "Bachelor in Informatics
+         Engineering"). Never leave degree as "University Student". Clean institution names by
+         removing trailing URLs.
+       - Certifications & Workshops: Route non-degree workshops, short courses, and training
+         (e.g. "GIT Workshop", "Programar o Futuro") to 'certifications', NOT 'education'.
+       - Global Skills Extraction: Scan the entire document (experience bullets, projects,
+         workshops, competitions) for explicitly mentioned technologies, languages, and tools.
+         Populate the top-level 'skills' list with clean names, source_section, and source_text.
+         Never leave skills empty when technologies are evidenced in the text.
+       - Experience vs. Projects: Internal company projects worked on during employment stay
+         within 'experience'. Standalone projects, hackathons, and competitions go to 'projects'
+         or 'achievements'.
+       - Languages: Extract language names and clean CEFR levels (e.g. "Mother tongue", "B2", "A1")
+         without dumping raw multi-parameter evaluation grids.
+       - Contact: Extract name, email, phone, city/country location, and clean profile links.
 
-    Then, analyze and structure all information explicitly stated in the CV using
-    intelligent reasoning to adapt the candidate's document structure into StructuredCV:
-
-    1. EDUCATION VS. CERTIFICATIONS & WORKSHOPS:
-       - Categorize only formal multi-year academic degrees (Higher Education, Secondary /
-         High School) under 'education'.
-       - In 'education', 'degree' MUST identify the degree program or major. If the CV is in
-         Europass format and shows a status like "[ 2023 - Current ] University Student" with
-         "Field(s) of study: Engenharia Informática" or "Level in EQF: 5", deduce that the
-         degree is "Licenciatura em Engenharia Informática" (or "Engenharia Informática" /
-         "Bachelor in Informatics Engineering"), and set 'field' to "Engenharia Informática".
-         NEVER record "University Student", "Student", or "Undergraduate" as the degree title.
-       - Clean 'institution' names: strip out any trailing URLs (such as "https://www.uc.pt/en/").
-         The institution must be just the organization/school name.
-       - Non-degree workshops, short courses, boot camps, or training programs (such as
-         "GIT Workshop", "Programar o Futuro - Nível 2") must be categorized under
-         'certifications' (with name, issuer, and date/year), NOT under 'education'.
-
-    2. GLOBAL SKILLS & TECHNOLOGIES EXTRACTION:
-       - Do not limit skills extraction to a section titled "Skills". Many CV layouts (like
-         Europass or narrative CVs) do not have a dedicated skills section; their skills
-         appear inside work experience, internship duties, project descriptions, workshop
-         titles, and competition summaries.
-       - Thoroughly scan all sections to extract every explicitly mentioned programming
-         language, framework, developer tool, methodology, and technical domain (e.g. PHP,
-         Python, Git, Docker, frontend, backend, robotics) into the top-level 'skills' list.
-       - For every skill, specify its clean 'name', the 'source_section', and the exact
-         supporting 'source_text'.
-       - NEVER leave 'skills: []' empty when technologies and technical competencies are
-         explicitly stated in the document.
-
-    3. PREVENTING DUPLICATION BETWEEN EXPERIENCE AND PROJECTS:
-       - Internal company systems, features, or client projects worked on as part of a job or
-         internship (e.g. "PharmaIoT" at BSWebConnect or "LIFT" at IMECX) belong inside the
-         'experience' entry (under description, responsibilities, and skills_evidenced).
-         DO NOT duplicate internal employment tasks as standalone entries in 'projects'.
-       - The 'projects' list is strictly for standalone projects, independent competitions
-         (e.g. "2x Reset by BEST", hackathons, CTFs), personal projects, and extracurricular work.
-
-    4. ROLES AND VOLUNTEERING:
-       - Deduce accurate role titles (e.g. "Robotics Team Member" or "Robotics Team").
-       - When an entry is short-term event or community volunteering (e.g. 1-day helper at
-         "JNation"), preserve 'job_title: "Volunteer"' and document the event volunteering context.
-
-    5. CLEAN LANGUAGES & CONTACT INFO:
-       - Extract languages cleanly ("Portuguese", "English", "French") and summarize
-         proficiency concisely (e.g. "Mother tongue", "B2", "A1"). Do not dump raw CEFR
-         evaluation grids into the main proficiency string.
-       - Extract clean contact details (name, email, phone, city, country, LinkedIn).
-
-    Preserve all factual evidence faithfully. Do not evaluate, score, or match against
-    job postings. Return only valid StructuredCV.
-
+    3. STRICT CONSTRAINTS:
+       - Preserve all factual evidence without inferring unstated details.
+       - Do not evaluate, score, or match against job postings.
+       - Return only valid StructuredCV.
   expected_output: >
-    A fully populated StructuredCV containing clean education, work experience,
-    all evidenced skills, standalone projects, certifications/workshops, languages,
-    achievements, summary information, and other relevant content with source evidence.
-
+    A fully populated StructuredCV containing clean education, work experience, evidenced
+    skills, standalone projects, certifications, languages, achievements, and contact info.
 
 
 parse_job_task:
-
   description: >
-    Parse the job posting provided by the user below:
+    Parse the job posting provided below:
 
     {job}
 
-    If {job} is a URL (starts with http:// or https://) or requires extraction,
-    use the convert_job_to_markdown tool to extract the job content first. If it
-    is already provided as text, use that content directly as the source of truth.
+    1. EXTRACTION:
+       - If {job} is a URL, extract it using convert_job_to_markdown. If provided as text,
+         use that content directly as the source of truth.
 
-    Then, extract and structure all relevant information explicitly stated
-    in the job posting.
+    2. STRUCTURAL MAPPING:
+       - Extract job_title, company (name, location, website), location, employment_type,
+         and seniority level.
+       - Differentiate required vs. preferred skills and qualifications whenever stated.
+       - Categorize requirements into skills, experience_requirements, education_requirements,
+         responsibilities, keywords, and other_requirements.
+       - Record source_section and source_text for each requirement.
 
-    Preserve the original meaning and relevant source evidence.
-
-    Do not invent or infer requirements, skills, experience, qualifications,
-    responsibilities, seniority, or other information that is not explicitly
-    supported by the job posting.
-
-    Distinguish between required and preferred requirements whenever this
-    distinction is explicitly stated.
-
-    Preserve the source section and relevant source text whenever possible.
-
-    Keep information that does not clearly belong to a predefined category
-    under "other_requirements" rather than discarding it.
-
-    Do not evaluate the candidate, compare the job posting to a CV, assign
-    scores, or provide recommendations.
-
+    3. STRICT CONSTRAINTS:
+       - Never invent requirements or extrapolate criteria not explicitly written in the text.
+       - Do not evaluate candidates or score requirements.
+       - Return only valid StructuredJob.
   expected_output: >
-    A structured job posting containing the job title, company, location,
-    employment type, seniority, required and preferred skills, experience
-    requirements, education requirements, responsibilities, keywords, and
-    other relevant requirements, with source evidence whenever available.
-
+    A structured StructuredJob model containing the job title, company, location, required
+    and preferred skills, experience, education, and responsibilities with source evidence.
 
 
 review_cv_task:
-
   description: >
-    Review the structured CV against the structured job posting and perform
-    two independent evaluations: job fit and CV completeness.
+    Review the structured CV against the structured job posting using a two-part evaluation:
 
-    The context contains:
-    1. The output of the CV Parser Agent, including the original extracted CV
-       text in StructuredCV.cv and source evidence.
-    2. The output of the Job Parser Agent, containing the posting's explicit
-       requirements and source evidence.
+    1. METHODOLOGY & FRAMEWORK:
+       - Call get_evaluation_framework to retrieve the evaluation rubric and criteria.
+       - Use StructuredCV and StructuredJob as the sole sources of truth.
 
-    First, use get_evaluation_framework to retrieve the evaluation framework
-    and apply it as the methodology for job-fit assessment. Use the provided
-    CV and job data as the only sources of candidate and job information. You
-    may refer to original CV text to verify parsed evidence, but do not treat
-    information absent from both StructuredCV and source text as evidence.
+    2. PART A - JOB FIT ASSESSMENT:
+       - Evaluate every explicitly stated requirement in the job posting.
+       - Assign each requirement an EvidenceStatus: satisfied, weak_evidence, no_evidence,
+         or uncertain. Differentiate skills merely listed from those demonstrated with context.
+       - Prioritize mandatory/required criteria over preferred/optional criteria.
+       - Populate requirement_matches, missing_evidence, weak_evidence, strengths,
+         weaknesses, and overall_assessment.
+       - Do NOT assign numeric scores or make hiring/viability decisions.
 
-    PART A - JOB FIT
+    3. PART B - CV COMPLETENESS EVALUATION:
+       - Independently inspect the CV for completeness across standard dimensions: contact info,
+         headline, email, phone, location, LinkedIn URL, GitHub/portfolio URL, professional summary,
+         experience, education, technical skills, tools/software, methodologies, transferable skills,
+         languages, certifications/training, projects, and GDPR consent.
+       - Assign status (present, missing, uncertain), relevance, reasoning, and evidence for each.
+       - Differentiate platform mentions (e.g. "code on GitHub") from exact URLs.
 
-    Evaluate every relevant requirement explicitly stated in the job posting.
-    Keep requirement_matches limited to job requirements; do not put missing
-    CV fields there unless the posting itself states them as requirements.
-    For each requirement, preserve its category, EvidenceStatus, supporting
-    evidence, and reasoning. Distinguish satisfied, weak_evidence,
-    no_evidence, and uncertain. Do not interpret absence of evidence as proof
-    that the candidate lacks the requirement.
-
-    Distinguish skills merely listed from skills demonstrated through
-    experience, projects, coursework, responsibilities, or achievements.
-    Evaluate criteria according to importance in this specific job; required
-    criteria receive greater attention than preferred criteria. Identify
-    strong matches, weak evidence, missing evidence, relevant strengths,
-    relevant weaknesses, and an overall assessment. Do not assign numeric
-    scores, recommend CV changes, or make a hiring/viability decision.
-
-    PART B - CV COMPLETENESS
-
-    Independently inspect the complete StructuredCV and original CV text for
-    relevant CV information. Populate the separate completeness list using
-    CompletenessItem fields section, field, status, evidence, relevance, and
-    reasoning. Use only present, missing, or uncertain for completeness
-    status. Consider name; headline/professional identity; email; phone;
-    location; LinkedIn; GitHub/portfolio; professional-summary evidence;
-    experience; education; technical skills; tools/software; methodologies;
-    transferable skills; languages; certifications/additional training;
-    projects, volunteering, and other role-relevant evidence; and GDPR consent
-    when applicable.
-
-    For profile completeness, distinguish platform/activity mentions from
-    direct URLs. A statement that projects are published on GitHub may make
-    "GitHub activity/project evidence" present while "GitHub profile URL" is
-    missing if no exact URL appears. Assess LinkedIn URL, GitHub URL, and
-    portfolio URL as separate fields. One kind of evidence never proves the
-    presence of a different profile URL.
-
-    Decide whether each optional item is relevant to this candidate and target
-    role; do not treat optional information as universally mandatory. Explain
-    why an item is relevant or missing. For example, GitHub may matter for a
-    technical role, projects may help entry-level candidates demonstrate
-    evidence, and languages/certifications depend on the role and profile. A
-    missing or uncertain item means unknown, not that the candidate lacks it.
-    Record evidence only when it appears in the CV.
-
-    Keep completeness separate from requirement_matches. A missing LinkedIn,
-    GitHub, certification, or language detail belongs only in completeness
-    unless the posting separately names it as a requirement. Never infer
-    missing candidate information. Never search external candidate sources,
-    including GitHub, LinkedIn, portfolios, or websites. Do not access the
-    final CV template. Do not suggest improvements, edit the CV, assign scores,
-    make hiring decisions, or state candidate viability.
-
-    Before returning ReviewerResult, check that each job requirement comes
-    from the posting, every evidence statement is present in the supplied CV,
-    and completeness items are stored only in completeness. Explain
-    uncertainty rather than guessing.
-
+    4. STRICT CONSTRAINTS:
+       - Keep job-fit gaps and completeness items distinct.
+       - Never search external web sources or invent candidate data.
+       - Return only valid ReviewerResult.
   expected_output: >
-    A validated ReviewerResult containing separate requirement_matches and
-    completeness lists, plus missing_evidence, weak_evidence, strengths,
-    weaknesses, overall_assessment, and supporting reasoning. Job-fit gaps
-    must not be mixed with CV-completeness gaps. Return overall_assessment
-    and top-level reasoning as single strings, not lists. Use lists only for
-    fields defined as lists in ReviewerResult. Each item-level reasoning and
-    completeness relevance field must also be a string.
-
+    A complete ReviewerResult model with requirement_matches, completeness items, missing
+    evidence, weak evidence, strengths, weaknesses, overall_assessment, and reasoning.
 
 
 optimize_cv_task:
-
   description: >
-    Optimize the CV for the specific job using the original StructuredCV,
-    source CV text, structured job posting, and ReviewerResult. Verify review
-    conclusions against the source; do not follow them blindly. Preserve the
-    existing evidence rules and detailed audit trail.
+    Optimize the candidate's CV for the target job following a strict two-phase workflow:
 
-    PHASE 1 - AUTONOMOUS OPTIMIZATION
+    1. PHASE 1 - AUTONOMOUS EVIDENCE-BASED OPTIMIZATION:
+       - Use existing CV evidence and the Reviewer's diagnosis to identify supported improvements
+         in clarity, relevance, information hierarchy, and professional wording.
+       - Summary: Propose an impactful 2 to 3-line professional summary adhering to format research:
+         (1) candidate identity and target role, (2) 2-3 verified core skills aligned with the job,
+         (3) a concrete verified achievement or project result. Ground every detail strictly in evidence.
+       - Record each proposed change with section, current_content, proposed_content, rationale,
+         evidence_source, and requires_human_approval: true.
 
-    Find every useful improvement supported by existing CV evidence before
-    asking questions. Improve clarity, relevance, wording, and visibility while
-    preserving factual meaning. Prioritize the Reviewer's most important job
-    requirements. Keep each ProposedCVChange granular and independently
-    reviewable. Describe each field-level content improvement in section,
-    current_content, proposed_content, rationale, evidence_source,
-    source_evidence, user_provided_evidence, and requires_human_approval.
-    Set requires_human_approval to true. Use only cv, user, or cv_and_user as
-    evidence_source. Keep CV evidence separate from user evidence. The
-    proposed changes explain content improvements; they do not authorize
-    creating, deleting, renaming, or reordering final document sections.
-    GeneratedCV and the fixed renderer own the final information architecture.
+    2. PHASE 2 - TARGETED HUMAN-IN-THE-LOOP (HITL) QUESTIONS:
+       - Build a question checklist covering open job-fit gaps and relevant completeness gaps.
+       - Ask one focused question at a time using the ask_user tool, wait for the response,
+         and record the answer before proceeding.
+       - Sequence: (1) target role confirmation; (2) missing profile URLs (LinkedIn, GitHub/portfolio);
+         (3) employment/internship confirmation; (4) education qualification and grade confirmation;
+         (5) technical skills confirmation; (6) languages; (7) certifications; (8) projects/competitions;
+         (9) summary claims and location.
+       - Tech Stack Transparency: When questioning technical skills/tools, explicitly cite the target
+         job's specific tech stack (e.g. "More specifically, the job posting mentions/requires: [list
+         exact job technologies, e.g. Java 17/21, Docker, Kubernetes, PostgreSQL, Redis, TDD]. Do you
+         have experience with any of these or any others you would like to include?").
+       - Record all questions and answers in questions_asked and user_answers with their gap resolution
+         (supported, unsupported, not_applicable, unresolved).
+       - Store candidate answers in user_provided_evidence. Any unanswered or unconfirmed gaps must be
+         recorded in unresolved_evidence_gaps.
 
-    Review every source section before proposing changes: summary, education,
-    each role, projects, skills, languages, certifications, achievements, and
-    other evidence. Look for duplication, vague wording, buried relevant facts,
-    inconsistent dates, and misleading categories. For the summary, do not leave
-    it as a vague or generic one-liner. Propose an impactful 2 to 3-line professional
-    summary adhering to format research guidelines: (1) candidate identity and target role;
-    (2) 2 to 3 key verified skills directly relevant to the target job; (3) a concrete
-    verified achievement or project result. Ground every statement strictly in candidate
-    evidence without exaggerating. Preserve useful original information even when it is
-    not a job keyword. Do not propose changes just to appear active; every change needs a
-    clear rationale and traceable evidence. Job terminology is allowed only when candidate
-    evidence supports the same meaning.
-
-    Preserve distinctions between coursework and employment, participation
-    and leadership, team results and individual contributions, in-progress
-    study and completed qualifications, and listed versus demonstrated
-    skills. Do not add metrics, outcomes, responsibilities, seniority, or
-    scope to strengthen a claim. If a change combines several facts, cite
-    evidence for each fact. Never cite a job requirement or Reviewer wording
-    as evidence about the candidate.
-
-    Before asking questions, review all original CV sections and source text.
-    Identify duplicate information, unclear wording, strong evidence that is
-    difficult to find, and supported evidence relevant to the highest-priority
-    job requirements. Improve these points without exaggerating seniority,
-    scope, outcomes, or proficiency. Preserve useful original information even
-    when it is not a job keyword. Do not propose a change merely to create the
-    appearance of activity; every change must have a specific rationale and
-    traceable evidence. Do not use the job posting as evidence about the
-    candidate. Job terminology may be used only when the underlying candidate
-    evidence supports it.
-
-    PHASE 2 - COMBINED GAP CHECKLIST AND QUESTIONS
-
-    Before job-gap questions, run a mandatory section-by-section CV
-    confirmation pass. It is required even when the Reviewer marked a field
-    present: confirm that extracted information is accurate and ask whether
-    omitted information exists. Ask one focused question at a time, wait for
-    the answer, record it, and then move to the next item. Do not bundle
-    unrelated sections. Skip only a field explicitly confirmed in a previous
-    answer during this run.
-
-    Cover these items in order, adapting questions to known information:
-    1. Target role/headline: state the exact job title from the posting and
-       confirm that it is the role being pursued. The final headline must be
-       exactly that title.
-    2. Contact/profile: separately ask for an exact LinkedIn URL and any relevant
-       portfolio or professional profile URLs (such as GitHub for software/data roles,
-       or professional registers/portfolios when applicable) when absent. Explicitly
-       allow “I do not have one” for each.
-    3. Professional experience: summarize listed roles for confirmation. If
-       none are listed, explicitly ask whether employment, internships,
-       freelance, or other relevant experience should be added. Accept a
-       confirmed “none” without creating an empty section or negative claim.
-    4. Education: confirm each qualification, institution, dates,
-       completion/in-progress status, and grade shown; ask separately whether
-       another qualification is missing. Never transfer a grade or date
-       between qualifications.
-    5. Skills: review and confirm skills grouped into domain-appropriate categories
-       relevant to the candidate's profession (e.g., Core Competencies, Tools/Instruments,
-       Methodologies/Protocols, or Transferable Skills). When asking about technical skills,
-       tools, or frameworks, explicitly reference the specific technology stack from the
-       job posting: clearly cite the exact technologies and tools mentioned or required by the
-       target job (for example: "More specifically, the target job mentions/requires: [list exact
-       technologies from the job posting, e.g. Java 17/21, Docker, Kubernetes, PostgreSQL, Redis, TDD].
-       Do you have experience with any of these or other technologies you would like to include?").
-       This provides transparent context so the candidate knows exactly which role requirements
-       they can address. Record only named skills with verified candidate confirmation, do not
-       infer proficiency, and never add job requirements as candidate skills unless the candidate
-       explicitly confirms having them.
-    6. Languages: confirm each language and level, and ask whether another
-       language should be included. Never guess proficiency.
-    7. Certifications/training: confirm each exact name, issuer, and stated
-       date/year; ask whether others exist. If none are listed, explicitly ask
-       whether the candidate has relevant certifications or training and
-       accept “none”. Never infer an issuer or date.
-    8. Projects, volunteering, achievements, and other evidence: confirm
-       listed items and ask whether relevant items are missing. Keep projects,
-       employment, volunteering, and achievements distinct.
-    9. Summary and location: confirm factual claims in the summary and that
-       contact location contains only city/locality and country. Do not ask
-       for a full street address.
-
-    A single question may confirm multiple existing entries in the same
-    section, but unrelated facts must be asked separately. A “yes” confirms
-    only the exact entries stated in that question. Ask focused follow-ups for
-    ambiguous corrections. Record each answer in user_answers with a
-    section-specific gap identifier and resolution. An explicit “none” must
-    not become CV content. Add unanswered or uncertain details to
-    unresolved_evidence_gaps.
-
-    The Reviewer provides two independent types of gaps: job-fit gaps and
-    CV-completeness gaps. Both must be considered during the questioning
-    phase. Job-fit gaps are requirement_matches whose status is no_evidence,
-    weak_evidence, or uncertain. CV-completeness gaps are completeness items
-    whose status is missing or uncertain. A completeness gap means the
-    information is unknown, not that the candidate lacks it.
-
-    Build one internal atomic checklist from both categories, plus distinct
-    entries in missing_evidence and weak_evidence not already covered. Keep
-    job-fit questions separate from completion questions even where subjects
-    overlap. Ask completeness questions only when the Reviewer explains why
-    the field is relevant to this candidate/role. Deduplicate identical gaps,
-    not distinct evidence requirements.
-
-    Ask one focused, answerable question for every relevant open gap using
-    ask_user. Ask for exact missing information. For a missing LinkedIn or
-    GitHub, request the exact URL; for languages, ask for each language and
-    stated proficiency; for certifications/training, ask for name,
-    issuer/provider, and year. Never construct URLs, infer certifications,
-    infer proficiency, or assume the candidate has a common skill. A gap is
-    not a negative answer. Check StructuredCV, original CV text, and every
-    previous answer before asking; never repeat known information.
-
-    When questioning about experience or a project, anchor the question to the
-    specific role/project and distinguish responsibilities, outcomes, dates,
-    tools, and the candidate's individual contribution. Do not silently use a
-    general answer as evidence for a different gap. Ask about logistical or
-    eligibility criteria only when the job posting makes them relevant. If the
-    candidate explicitly says no or not applicable, record that resolution
-    and do not turn the negative answer into a CV claim.
-
-    Questions should identify the exact open topic and invite enough context
-    to assess it. For a technical skill, ask where and how it was used and what
-    the candidate personally did. For project evidence, ask for the project,
-    dates, technologies, contribution, and outcome only as needed to resolve
-    that gap. For eligibility or availability, ask for exact dates or
-    conditions relevant to the posting. Do not bundle unrelated questions or
-    treat one broad positive answer as evidence for each gap.
-
-    If an answer is partial, preserve only its supported portion and keep the
-    remaining detail unresolved. Follow up only on the missing detail. Never
-    treat silence, an empty answer, or an ambiguous answer as confirmation.
-
-    If an answer is ambiguous or scoped to the wrong role, project, degree,
-    date, or requirement, ask a focused clarification. If a positive answer
-    lacks sufficient evidence detail, ask one focused follow-up. Record every
-    question and answer, including no answers. For each gap, record its gap
-    identifier and resolution: supported, unsupported, not_applicable, or
-    unresolved. A yes/no answer resolves only the exact question it answers.
-    Keep original source_evidence separate from user_provided_evidence.
-
-    Do not stop after a useful answer, after a fixed question count, or after
-    technical gaps. Continue until each relevant gap is supported,
-    unsupported, not applicable, or explicitly unresolved. Every remaining
-    unsupported or ambiguous item must appear in unresolved_evidence_gaps.
-    Before finishing, check consistency across names, dates, institutions,
-    degrees, roles, projects, and technologies. Never move a confirmed fact
-    between entities or strengthen it beyond the answer.
-
-    Before returning, audit the checklist item by item. Confirm each gap has a
-    CV source, explicit answer, explicit negative/not-applicable answer, or
-    unresolved status. Confirm every answer and resolution appears in the
-    audit trail, user evidence is not mixed into source_evidence, and every
-    proposed change cites evidence that directly supports its content and is
-    marked for human approval. Remove any unsupported proposed content.
-
-    Before returning, audit the checklist item by item. Confirm each gap has a
-    corresponding CV source, explicit answer, negative/not-applicable answer,
-    or unresolved status. Confirm every user answer appears in the audit trail
-    with its gap and resolution, and that user evidence is not mixed into
-    source_evidence. Confirm every proposed change cites evidence that
-    directly supports its proposed content and is marked for human approval.
-
-    Never access external candidate sources or the final CV template. Do not
-    create Markdown or decide final section order, headings, or formatting.
-    Do not add job-posting skills, technologies, metrics, dates, outcomes,
-    responsibilities, or qualifications without candidate evidence. The
-    GeneratedCV mapper and deterministic renderer handle the final document.
-
+    3. STRICT CONSTRAINTS:
+       - Never invent skills or turn negative/skip answers into CV claims.
+       - Every proposed change must cite traceable evidence and require human approval.
+       - Return only valid CVOptimizationResult (do not author raw Markdown or final document layout).
   expected_output: >
-    CVOptimizationResult with granular proposed_changes, all questions and
-    answers, user_provided_evidence, strategy, and every unresolved gap. Do
-    not include an optimized Markdown document.
+    A complete CVOptimizationResult model containing granular proposed_changes, questions_asked,
+    user_answers, user_provided_evidence, strategy, and unresolved_evidence_gaps.
 
 
 generate_cv_task:
   description: >
-    Generate the final GeneratedCV from StructuredCV and
-    CVOptimizationResult.
+    Consolidate candidate facts from StructuredCV and approved CVOptimizationResult into GeneratedCV:
 
-    Build the CV using the candidate's existing information as the source
-    of truth. Use optimization suggestions to improve relevance, clarity,
-    wording and presentation when they are supported by candidate evidence.
+    1. DATA CONSOLIDATION:
+       - Use original candidate evidence as the source of truth, enhanced by candidate-confirmed
+         optimization improvements.
+       - Preserve factual accuracy across names, roles, institutions, dates, grades, and technologies.
+       - If a detail is unsupported or ambiguous, omit it rather than guessing.
 
-    You are allowed to rewrite and synthesize information. The final CV
-    does not need to reproduce the source wording verbatim, but it must
-    preserve the underlying facts accurately.
+    2. SECTION SPECIFIC MAPPING RULES:
+       - Header & Contact: contact.portfolio is STRICTLY for a personal portfolio website or personal
+         homepage. Never put individual project URLs, competition links, demo links, or repository
+         links into contact.portfolio. If the candidate does not have a personal portfolio, leave it null.
+       - Education: Ensure degree clearly identifies the academic qualification and major/field of study
+         (e.g. "Bachelor in Informatics Engineering" or "Licenciatura em Engenharia Informática"). Never
+         leave degree as a generic status like "University Student". Clean institution names by ensuring
+         no URLs (e.g. https://...) are included. Place non-degree workshops in certifications.
+       - Summary: Synthesize a 2 to 3-line impactful professional summary grounded in verified skills
+         and achievements matching the role.
+       - Skills: Organize verified candidate skills into clean SkillCategory items with professional
+         titles (e.g. "Programming Languages", "Tools & Technologies").
+       - Projects: Include project name, dates (if known), and concise description. Do not set link
+         or volunteering_or_other to placeholder text like 'Project' or raw URLs.
 
-    Do not introduce information merely because it would make the CV
-    stronger or because it is required or preferred by the target job.
-
-    Do not infer missing qualifications, skills, experience, achievements,
-    metrics, dates, certifications, languages, proficiency levels,
-    locations, or URLs.
-
-    If a fact is unsupported or ambiguous, omit it rather than guessing.
-
-    In the education section, ensure each entry's degree clearly states the qualification
-    and major/field of study (e.g. "Bachelor in Informatics Engineering" or "Engenharia Informática").
-    Never leave degree as a generic status like "University Student". If the source data
-    contained a student status with a field of study, combine them into a clear degree title.
-    Clean institution names: ensure no raw URLs (e.g. https://...) are included in the institution string.
-    Workshops and non-degree short courses must be placed in certifications, not education.
-
-    Under contact information, contact.portfolio is exclusively for the
-    candidate's personal portfolio website or personal homepage. Never
-    populate contact.portfolio with URLs belonging to specific projects,
-    competitions, hackathons, demos, or code repositories. Project URLs
-    belong strictly in the projects section. If the candidate does not have
-    an explicit personal portfolio website, contact.portfolio must remain null.
-
-    For the summary field, craft an impactful, professional summary of 2 to 3 lines
-    adhering to format research guidelines: state candidate identity/role, highlight
-    2-3 verified core skills matching the target role, and mention a verified concrete
-    achievement or project result. Ground every detail strictly in candidate evidence
-    without exaggerating.
-
-    In the projects section, provide the project name, dates (if known), and a concise,
-    impactful description. Do not set link or volunteering_or_other to placeholder text
-    like 'Project' or include raw URLs.
-
-    Return only a valid GeneratedCV Pydantic model. The deterministic
-    renderer is responsible for the document structure and formatting.
-
+    3. STRICT CONSTRAINTS:
+       - Never invent qualifications, employers, metrics, or technologies.
+       - Output only structured data conforming to the GeneratedCV Pydantic schema.
+       - Do not author raw HTML, CSS, or markdown layout; rendering is handled deterministically.
   expected_output: >
-    A valid GeneratedCV containing an accurate, professional and
-    appropriately optimized representation of the candidate.
+    A valid GeneratedCV Pydantic model representing an accurate, professional, and optimized CV.
