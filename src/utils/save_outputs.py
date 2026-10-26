@@ -9,7 +9,7 @@ from models.cv import StructuredCV
 from models.job import StructuredJob
 from models.optimization import CVOptimizationResult
 from models.review import ReviewerResult
-from models.generated_cv import GeneratedCV
+from models.generated_cv import GeneratedCV, Project
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIRECTORY = PROJECT_ROOT / "temp"
@@ -50,7 +50,7 @@ def _sort_chronologically(generated: GeneratedCV) -> None:
 def prepare_generated_cv(
     generated: GeneratedCV, job: StructuredJob | None = None
 ) -> GeneratedCV:
-    """Copy generated data, then apply deterministic headline and ordering."""
+    """Copy generated data, then apply deterministic headline, URLs, and ordering."""
 
     prepared = GeneratedCV.model_validate(generated.model_dump())
     if job and job.job_title.strip():
@@ -80,6 +80,24 @@ def prepare_generated_cv(
     for exp in prepared.experience:
         if exp.company:
             exp.company = re.sub(r"https?://\S+", "", exp.company).strip()
+
+    # Volunteering safeguard: relocate any volunteering entries mistakenly placed in experience to projects
+    filtered_experience = []
+    for exp in prepared.experience:
+        text_to_check = f"{exp.title} {exp.company}".lower()
+        if any(term in text_to_check for term in ["volunteer", "voluntári", "voluntari"]):
+            desc = " ".join(exp.bullets) if exp.bullets else ""
+            prepared.projects.append(
+                Project(
+                    name=exp.title,
+                    dates=exp.dates,
+                    description=desc,
+                    volunteering_or_other="Volunteering",
+                )
+            )
+        else:
+            filtered_experience.append(exp)
+    prepared.experience = filtered_experience
 
     _sort_chronologically(prepared)
     return prepared

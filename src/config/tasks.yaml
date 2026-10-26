@@ -15,17 +15,19 @@ parse_cv_task:
          displays an occupational status with a field of study (e.g. Europass "[2023-Current]
          University Student" with "Field of study: Engenharia Informática"), deduce the actual
          degree title (e.g. "Licenciatura em Engenharia Informática" / "Bachelor in Informatics
-         Engineering"). Never leave degree as "University Student". Clean institution names by
-         removing trailing URLs.
-       - Certifications & Workshops: Route non-degree workshops, short courses, and training
-         (e.g. "GIT Workshop", "Programar o Futuro") to 'certifications', NOT 'education'.
+         Engineering"). Never leave degree as generic "University Student". Clean institution
+         names by removing trailing URLs.
+       - Certifications & Workshops: Route non-degree workshops, short courses, and technical
+         training (e.g. "GIT Workshop", "Programar o Futuro") to 'certifications', NOT 'education'.
        - Global Skills Extraction: Scan the entire document (experience bullets, projects,
          workshops, competitions) for explicitly mentioned technologies, languages, and tools.
          Populate the top-level 'skills' list with clean names, source_section, and source_text.
-         Never leave skills empty when technologies are evidenced in the text.
-       - Experience vs. Projects: Internal company projects worked on during employment stay
-         within 'experience'. Standalone projects, hackathons, and competitions go to 'projects'
-         or 'achievements'.
+         Never leave skills empty when technologies are evidenced anywhere in the CV text.
+       - Experience vs. Projects vs. Volunteering:
+         * Internal company projects worked on during employment stay within 'experience'.
+         * Standalone projects, hackathons, and competitions belong in 'projects'.
+         * Volunteering, student union, and extracurricular roles MUST be placed in 'projects'
+           (with volunteering_or_other="Volunteering"), NEVER as standard employment 'experience'.
        - Languages: Extract language names and clean CEFR levels (e.g. "Mother tongue", "B2", "A1")
          without dumping raw multi-parameter evaluation grids.
        - Contact: Extract name, email, phone, city/country location, and clean profile links.
@@ -106,34 +108,43 @@ optimize_cv_task:
 
     1. PHASE 1 - AUTONOMOUS EVIDENCE-BASED OPTIMIZATION:
        - Use existing CV evidence and the Reviewer's diagnosis to identify supported improvements
-         in clarity, relevance, information hierarchy, and professional wording.
+         in clarity, relevance, information hierarchy, and professional wording across all sections.
        - Summary: Propose an impactful 2 to 3-line professional summary adhering to format research:
-         (1) candidate identity and target role, (2) 2-3 verified core skills aligned with the job,
+         (1) candidate identity and target role; (2) 2-3 verified core skills aligned with the job;
          (3) a concrete verified achievement or project result. Ground every detail strictly in evidence.
        - Record each proposed change with section, current_content, proposed_content, rationale,
-         evidence_source, and requires_human_approval: true.
+         evidence_source: "cv", source_evidence, and requires_human_approval: true.
 
-    2. PHASE 2 - TARGETED HUMAN-IN-THE-LOOP (HITL) QUESTIONS:
-       - Build a question checklist covering open job-fit gaps and relevant completeness gaps.
-       - Ask one focused question at a time using the ask_user tool, wait for the response,
-         and record the answer before proceeding.
-       - Sequence: (1) target role confirmation; (2) missing profile URLs (LinkedIn, GitHub/portfolio);
-         (3) employment/internship confirmation; (4) education qualification and grade confirmation;
-         (5) technical skills confirmation; (6) languages; (7) certifications; (8) projects/competitions;
-         (9) summary claims and location.
-       - Tech Stack Transparency: When questioning technical skills/tools, explicitly cite the target
-         job's specific tech stack (e.g. "More specifically, the job posting mentions/requires: [list
-         exact job technologies, e.g. Java 17/21, Docker, Kubernetes, PostgreSQL, Redis, TDD]. Do you
-         have experience with any of these or any others you would like to include?").
-       - Record all questions and answers in questions_asked and user_answers with their gap resolution
-         (supported, unsupported, not_applicable, unresolved).
-       - Store candidate answers in user_provided_evidence. Any unanswered or unconfirmed gaps must be
-         recorded in unresolved_evidence_gaps.
+    2. PHASE 2 - MANDATORY INTERACTIVE HITL QUESTIONS (TOOL EXECUTION REQUIRED):
+       - TOOL CALLING DIRECTIVE: You MUST execute the ask_user tool for EACH question on your checklist,
+         one question at a time. DO NOT output the final JSON answer until you have actively invoked
+         the ask_user tool and received responses. You are strictly forbidden from fabricating or
+         simulating user answers (such as "None provided" or "Confirmed") without calling ask_user.
+       - Question Sequence (ask one focused question at a time via ask_user):
+         1. Target role: confirm the exact job title from the posting as the target headline.
+         2. Missing contact & profile links: ask separately for missing email, phone, location,
+            LinkedIn URL, and portfolio/GitHub URL. Explicitly allow "I do not have one" or skip.
+         3. Employment/internship: confirm listed roles, company names, dates, and achievements.
+         4. Education: confirm degree, institution, dates, grade/GPA, thesis topic and grade.
+         5. Technical skills with Tech Stack Transparency: explicitly cite the target job's specific
+            tech stack (e.g. "More specifically, the job posting mentions/requires: [list exact job
+            technologies]. Do you have experience with any of these or any others you would like to include?").
+         6. Languages: ask for spoken languages and stated CEFR proficiency levels.
+         7. Certifications: ask for name, issuer/provider, and year.
+         8. Projects & competitions: ask for relevant standalone projects, dates, technologies, and individual contribution.
+         9. Summary claims: confirm key points to highlight in the summary.
+       - Handling Candidate Answers:
+         * When the candidate provides new evidence, store it in user_provided_evidence and create
+           corresponding ProposedCVChange items with evidence_source: "user" or "cv_and_user".
+         * Record every question asked in questions_asked, and every actual candidate answer in
+           user_answers with its gap and resolution (supported, unsupported, not_applicable, unresolved).
+         * Every unaddressed gap or negative answer ("I do not have one") must be recorded in
+           unresolved_evidence_gaps.
 
     3. STRICT CONSTRAINTS:
-       - Never invent skills or turn negative/skip answers into CV claims.
-       - Every proposed change must cite traceable evidence and require human approval.
-       - Return only valid CVOptimizationResult (do not author raw Markdown or final document layout).
+       - Never invent skills, qualifications, metrics, or technologies not confirmed by the candidate.
+       - Every proposed change requires human approval (requires_human_approval: true).
+       - Return only a valid CVOptimizationResult model (do not author Markdown or raw layout).
   expected_output: >
     A complete CVOptimizationResult model containing granular proposed_changes, questions_asked,
     user_answers, user_provided_evidence, strategy, and unresolved_evidence_gaps.
@@ -150,19 +161,24 @@ generate_cv_task:
        - If a detail is unsupported or ambiguous, omit it rather than guessing.
 
     2. SECTION SPECIFIC MAPPING RULES:
-       - Header & Contact: contact.portfolio is STRICTLY for a personal portfolio website or personal
-         homepage. Never put individual project URLs, competition links, demo links, or repository
-         links into contact.portfolio. If the candidate does not have a personal portfolio, leave it null.
+       - Header & Contact:
+         * Populate name, headline (exact target job title), email, phone, and location.
+         * contact.portfolio is STRICTLY for a personal portfolio website or personal homepage.
+           Never put individual project URLs, competition links, demo links, or repository links
+           into contact.portfolio. If the candidate has no personal portfolio, leave it null.
        - Education: Ensure degree clearly identifies the academic qualification and major/field of study
          (e.g. "Bachelor in Informatics Engineering" or "Licenciatura em Engenharia Informática"). Never
          leave degree as a generic status like "University Student". Clean institution names by ensuring
          no URLs (e.g. https://...) are included. Place non-degree workshops in certifications.
+       - Experience vs. Projects vs. Volunteering:
+         * Professional employment belongs in 'experience'.
+         * Volunteering, extracurricular, or student leadership roles belong in 'projects' with
+           volunteering_or_other="Volunteering", NEVER in 'experience'.
        - Summary: Synthesize a 2 to 3-line impactful professional summary grounded in verified skills
          and achievements matching the role.
        - Skills: Organize verified candidate skills into clean SkillCategory items with professional
-         titles (e.g. "Programming Languages", "Tools & Technologies").
-       - Projects: Include project name, dates (if known), and concise description. Do not set link
-         or volunteering_or_other to placeholder text like 'Project' or raw URLs.
+         titles (e.g. "Programming Languages", "Libraries & Frameworks", "Tools & Technologies").
+       - Projects: Include project name, dates (if known), concise description, and project link.
 
     3. STRICT CONSTRAINTS:
        - Never invent qualifications, employers, metrics, or technologies.
