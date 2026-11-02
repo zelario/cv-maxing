@@ -1,3 +1,4 @@
+import html
 import os
 import re
 import tempfile
@@ -47,12 +48,24 @@ def _sort_chronologically(generated: GeneratedCV) -> None:
     generated.projects.sort(key=lambda item: _date_sort_key(item.dates), reverse=True)
 
 
+def _unescape_strings(obj):
+    """Recursively decode HTML entities (&ccedil;, &eacute;, etc.) to clean Unicode."""
+    if isinstance(obj, str):
+        return html.unescape(obj)
+    if isinstance(obj, list):
+        return [_unescape_strings(item) for item in obj]
+    if isinstance(obj, dict):
+        return {k: _unescape_strings(v) for k, v in obj.items()}
+    return obj
+
+
 def prepare_generated_cv(
     generated: GeneratedCV, job: StructuredJob | None = None
 ) -> GeneratedCV:
     """Copy generated data, then apply deterministic headline, URLs, and ordering."""
 
-    prepared = GeneratedCV.model_validate(generated.model_dump())
+    raw_dict = _unescape_strings(generated.model_dump())
+    prepared = GeneratedCV.model_validate(raw_dict)
     if job and job.job_title.strip():
         prepared.contact.headline = job.job_title.strip()
     # Normalize GitHub URL if provided as username or relative path

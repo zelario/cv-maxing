@@ -12,6 +12,25 @@ def _as_text(value):
     return value
 
 
+def _as_string_list(value):
+    """Normalize lists where items might be dicts like {'content': '...'} or {'text': '...'}."""
+    if not isinstance(value, list):
+        return []
+    result = []
+    for item in value:
+        if isinstance(item, dict):
+            text = item.get("content") or item.get("text") or item.get("description")
+            if not text:
+                for v in item.values():
+                    if isinstance(v, str) and v.strip():
+                        text = v
+                        break
+            result.append(str(text or ""))
+        elif item is not None:
+            result.append(str(item))
+    return result
+
+
 class EvidenceStatus(str, Enum):
     SATISFIED = "satisfied"
     WEAK_EVIDENCE = "weak_evidence"
@@ -33,6 +52,11 @@ class RequirementMatch(BaseModel):
     def normalize_reasoning(cls, value):
         return _as_text(value)
 
+    @field_validator("evidence", mode="before")
+    @classmethod
+    def normalize_evidence(cls, value):
+        return _as_string_list(value)
+
 
 class CompletenessStatus(str, Enum):
     PRESENT = "present"
@@ -52,6 +76,11 @@ class CompletenessItem(BaseModel):
     @classmethod
     def normalize_text_fields(cls, value):
         return _as_text(value)
+
+    @field_validator("evidence", mode="before")
+    @classmethod
+    def normalize_evidence(cls, value):
+        return _as_string_list(value)
 
 
 class ReviewerResult(BaseModel):
@@ -75,3 +104,8 @@ class ReviewerResult(BaseModel):
     @classmethod
     def normalize_text_fields(cls, value):
         return _as_text(value)
+
+    @field_validator("strengths", "weaknesses", "missing_evidence", "weak_evidence", mode="before")
+    @classmethod
+    def normalize_string_lists(cls, value):
+        return _as_string_list(value)

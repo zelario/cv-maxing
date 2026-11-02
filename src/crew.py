@@ -139,9 +139,11 @@ class CVMaxingCrew:
     @crew
     def crew(self) -> Crew:
 
+        max_rpm = int(os.getenv('MAX_RPM', 10))
         crew = Crew(
             agents=self.agents,
             tasks=self.tasks,
+            max_rpm=max_rpm,
             verbose=True,
         )
 

@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 from pathlib import Path
 from google import genai
 
@@ -64,18 +65,26 @@ class Candidate:
             job=self.job_text,
             question=question,
         )
-        try:
-            response = self.client.models.generate_content(
-                model=self.model,
-                contents=prompt,
-            )
-            answer = (response.text or "").strip()
-            if not answer:
-                answer = "I do not have additional information to add."
-        except Exception as exc:
-            print(f"\n[FATAL API ERROR] Candidate Simulator API/model error ({self.model}): {exc}")
-            print("[FATAL API ERROR] Terminating execution immediately as configured.\n")
-            sys.exit(1)
+        max_retries = 3
+        answer = ""
+        for attempt in range(max_retries):
+            try:
+                response = self.client.models.generate_content(
+                    model=self.model,
+                    contents=prompt,
+                )
+                answer = (response.text or "").strip()
+                if not answer:
+                    answer = "I do not have additional information to add."
+                break
+            except Exception as exc:
+                if ("429" in str(exc) or "RESOURCE_EXHAUSTED" in str(exc)) and attempt < max_retries - 1:
+                    print(f"\n[CANDIDATE SIMULATOR] Rate limited (429), waiting 35s (attempt {attempt + 1}/{max_retries})...")
+                    time.sleep(35)
+                    continue
+                print(f"\n[FATAL API ERROR] Candidate Simulator API/model error ({self.model}): {exc}")
+                print("[FATAL API ERROR] Terminating execution immediately as configured.\n")
+                sys.exit(1)
 
         print(f"\n[CANDIDATE QUESTION] {question}")
         print(f"[CANDIDATE ANSWER]   {answer}\n")
