@@ -1,1 +1,0 @@
-Folder for temporary generated .json files.
