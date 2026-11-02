@@ -1,0 +1,261 @@
+{
+  "job_title": "Backend Software Engineer (Python)",
+  "company": {
+    "name": "CloudScale Technologies",
+    "location": "Porto / Hybrid",
+    "website": ""
+  },
+  "location": "Porto / Hybrid",
+  "employment_type": "",
+  "seniority": "",
+  "description": "CloudScale Technologies is a European cloud infrastructure and distributed platform engineering company. We build resilient, high-availability SaaS backbones that process tens of millions of concurrent requests daily for tier-1 enterprise clients across financial technology, logistics, and digital services.\n\nWe are looking for a Backend Software Engineer with strong Python expertise to join our Core Platform & Services team.\n\nYou will collaborate closely with Software Engineers, Frontend Developers, Cloud/DevOps specialists, and Product Managers to architect scalable microservices, design robust RESTful and asynchronous communication layers, optimize high-throughput relational databases, and ensure mission-critical service reliability.",
+  "skills": [
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django)."
+    },
+    {
+      "name": "FastAPI",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django)."
+    },
+    {
+      "name": "Flask",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django)."
+    },
+    {
+      "name": "Django",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django)."
+    },
+    {
+      "name": "PostgreSQL",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design, optimize, and maintain relational schemas, transactions, and indexing strategies in PostgreSQL."
+    },
+    {
+      "name": "Docker",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Package, containerize, and isolate backend services using Docker and Docker Compose for consistent development and staging workflows."
+    },
+    {
+      "name": "Docker Compose",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Package, containerize, and isolate backend services using Docker and Docker Compose for consistent development and staging workflows."
+    },
+    {
+      "name": "Redis",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Implement structured logging, caching layers with Redis, and error-handling patterns for distributed systems."
+    },
+    {
+      "name": "pytest",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Write comprehensive, maintainable test suites including unit, functional, and integration tests using pytest."
+    },
+    {
+      "name": "Python backend development",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven software development experience focused on Python backend development (FastAPI, Django, or Flask)."
+    },
+    {
+      "name": "Relational database design",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong working knowledge of relational database design, query optimization, and transaction management with PostgreSQL."
+    },
+    {
+      "name": "RESTful API design principles",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid understanding of RESTful API design principles, HTTP protocols, and microservice architecture."
+    },
+    {
+      "name": "HTTP protocols",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid understanding of RESTful API design principles, HTTP protocols, and microservice architecture."
+    },
+    {
+      "name": "Microservice architecture",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid understanding of RESTful API design principles, HTTP protocols, and microservice architecture."
+    },
+    {
+      "name": "Git",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proficiency with version control using Git and standard code collaboration workflows."
+    },
+    {
+      "name": "RabbitMQ",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with asynchronous messaging architectures and task queues using RabbitMQ, Apache Kafka, or Celery."
+    },
+    {
+      "name": "Apache Kafka",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with asynchronous messaging architectures and task queues using RabbitMQ, Apache Kafka, or Celery."
+    },
+    {
+      "name": "Celery",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with asynchronous messaging architectures and task queues using RabbitMQ, Apache Kafka, or Celery."
+    },
+    {
+      "name": "AWS (EC2, S3, RDS)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Working knowledge of cloud providers such as AWS (EC2, S3, RDS) or GCP."
+    },
+    {
+      "name": "GCP",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Working knowledge of cloud providers such as AWS (EC2, S3, RDS) or GCP."
+    },
+    {
+      "name": "GitHub Actions",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with CI/CD automation tools like GitHub Actions or GitLab CI."
+    },
+    {
+      "name": "GitLab CI",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with CI/CD automation tools like GitHub Actions or GitLab CI."
+    },
+    {
+      "name": "Kubernetes",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Exposure to container orchestration with Kubernetes."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Proven software development experience focused on Python backend development",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven software development experience focused on Python backend development (FastAPI, Django, or Flask)."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Bachelor's or Master's degree",
+      "degree": "Bachelor's or Master's degree",
+      "field": "Computer Science, Software Engineering, Informatics, or a related technical discipline",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Bachelor's or Master's degree in Computer Science, Software Engineering, Informatics, or a related technical discipline (or equivalent practical experience)."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django).",
+      "source_section": "What You'll Do",
+      "source_text": "Architect, build, and maintain high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI, Flask, or Django)."
+    },
+    {
+      "description": "Design, optimize, and maintain relational schemas, transactions, and indexing strategies in PostgreSQL.",
+      "source_section": "What You'll Do",
+      "source_text": "Design, optimize, and maintain relational schemas, transactions, and indexing strategies in PostgreSQL."
+    },
+    {
+      "description": "Package, containerize, and isolate backend services using Docker and Docker Compose for consistent development and staging workflows.",
+      "source_section": "What You'll Do",
+      "source_text": "Package, containerize, and isolate backend services using Docker and Docker Compose for consistent development and staging workflows."
+    },
+    {
+      "description": "Implement structured logging, caching layers with Redis, and error-handling patterns for distributed systems.",
+      "source_section": "What You'll Do",
+      "source_text": "Implement structured logging, caching layers with Redis, and error-handling patterns for distributed systems."
+    },
+    {
+      "description": "Write comprehensive, maintainable test suites including unit, functional, and integration tests using pytest.",
+      "source_section": "What You'll Do",
+      "source_text": "Write comprehensive, maintainable test suites including unit, functional, and integration tests using pytest."
+    },
+    {
+      "description": "Participate actively in technical architectural reviews, PR code reviews, and Agile sprint planning.",
+      "source_section": "What You'll Do",
+      "source_text": "Participate actively in technical architectural reviews, PR code reviews, and Agile sprint planning."
+    },
+    {
+      "description": "Work alongside DevOps engineers to streamline CI/CD automation pipelines and staging rollouts.",
+      "source_section": "What You'll Do",
+      "source_text": "Work alongside DevOps engineers to streamline CI/CD automation pipelines and staging rollouts."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Python",
+      "source_section": "Backend Software Engineer (Python)",
+      "source_text": "Backend Software Engineer (Python)"
+    },
+    {
+      "keyword": "Microservices",
+      "source_section": "About the Role",
+      "source_text": "architect scalable microservices"
+    },
+    {
+      "keyword": "RESTful APIs",
+      "source_section": "What You'll Do",
+      "source_text": "high-throughput RESTful APIs"
+    },
+    {
+      "keyword": "PostgreSQL",
+      "source_section": "What You'll Do",
+      "source_text": "PostgreSQL"
+    },
+    {
+      "keyword": "Docker",
+      "source_section": "What You'll Do",
+      "source_text": "Docker"
+    },
+    {
+      "keyword": "Redis",
+      "source_section": "What You'll Do",
+      "source_text": "Redis"
+    },
+    {
+      "keyword": "pytest",
+      "source_section": "What You'll Do",
+      "source_text": "pytest"
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Communication",
+      "description": "Effective communication skills in English and comfort working in an agile, collaborative team.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Effective communication skills in English and comfort working in an agile, collaborative team."
+    },
+    {
+      "type": "Mindset",
+      "description": "Strong problem-solving mindset, clean code habits, and attention to architectural maintainability.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong problem-solving mindset, clean code habits, and attention to architectural maintainability."
+    }
+  ]
+}

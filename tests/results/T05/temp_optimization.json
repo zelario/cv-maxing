@@ -1,0 +1,183 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Diogo Santos",
+      "proposed_content": "Diogo Santos | diogo.santos.backend@example.com | +351 925 678 123 | Porto, Portugal | https://www.linkedin.com/in/diogosantos-backend | https://github.com/dsantos-code",
+      "rationale": "Add missing verified contact information and professional profile URLs provided directly by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: diogo.santos.backend@example.com",
+        "Phone: +351 925 678 123",
+        "Location: Porto, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+        "GitHub: https://github.com/dsantos-code"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+      "proposed_content": "Backend Software Engineer with over 3 years of professional experience designing RESTful APIs, high-throughput microservices, and robust relational databases using Python and PostgreSQL, achieving proven performance optimizations such as a 38% reduction in p95 query latency.",
+      "rationale": "Rewrite the summary to follow best practice format research (identity and target domain alignment, verified core skills in Python and PostgreSQL, and concrete verified achievements) while explicitly acknowledging the backend focus.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "user_provided_evidence": [
+        "3.5 years of backend engineering experience building RESTful APIs, microservices, and optimizing PostgreSQL databases in Python.",
+        "Optimized PostgreSQL queries to reduce p95 latency by 38%."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "PROFESSIONAL EXPERIENCE",
+      "current_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication.",
+      "proposed_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\n- Designed and maintained 12+ REST microservices serving over 800 requests per second using Python, FastAPI, and Django.\n- Led PostgreSQL schema design and comprehensive query optimization, reducing p95 latency by 38% and decreasing database load by 45% via Redis caching.\n- Implemented Docker containerization for standardized deployment environments.\n- Integrated RabbitMQ message brokers to handle asynchronous tasks and microservice communication.",
+      "rationale": "Enhance bullet points with the candidate's verified metrics and achievements regarding REST microservices, request throughput, and latency reduction.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "user_provided_evidence": [
+        "Designed and maintained 12+ REST microservices serving over 800 requests per second.",
+        "Optimized PostgreSQL queries to reduce p95 latency by 38%.",
+        "Implemented Redis caching to decrease database load by 45%."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "EDUCATION",
+      "current_content": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)",
+      "proposed_content": "B.Sc. in Informatics and Computing Engineering\nFEUP | 2017-2020\n- Grade: 14/20\n- Completed practical engineering coursework including a Distributed Key-Value Store (Python/C++) and a Hospital RDBMS project.",
+      "rationale": "Add verified grade and academic projects provided by the candidate to enrich the education section.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+      ],
+      "user_provided_evidence": [
+        "Grade of 14/20",
+        "Practical projects: Distributed Key-Value Store using Python and C++, Hospital RDBMS project"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "TECHNICAL SKILLS",
+      "current_content": "Languages & Frameworks: Python, FastAPI, Django\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux\nTools: Git",
+      "proposed_content": "Languages & Frameworks: Python, FastAPI, Django\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux\nTools & Platforms: Git, GitHub",
+      "rationale": "Add GitHub to tools and platforms based on candidate confirmation of GitHub profile usage.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "user_provided_evidence": [
+        "GitHub profile: https://github.com/dsantos-code"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "LANGUAGES",
+      "current_content": "",
+      "proposed_content": "LANGUAGES\n- Portuguese: Native\n- English: C1 (Full Professional Proficiency)",
+      "rationale": "Add spoken languages and verified CEFR proficiency levels provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Full Professional proficiency"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Could you confirm the exact job title from the posting as the target headline? (Target job posting title: Fullstack Web Developer (React & Node.js))",
+    "Could you please provide your contact and profile details (email, phone, location, LinkedIn URL, and portfolio/GitHub URL)? You may write \"I do not have one\" or skip any if you prefer.",
+    "Could you confirm your employment history details (company names, job titles, dates, and achievements)? More specifically, for your role at CloudScale as Backend Software Engineer (2021-Present), do you have any additional achievements or details to include?",
+    "Could you confirm your education details, including degree, institution, dates, grade/GPA, and thesis topic or grade? More specifically, regarding your B.Sc. in Informatics and Computing Engineering at FEUP (2017-2020), do you have a GPA or thesis to add?",
+    "More specifically, the job posting mentions/requires the following tech stack: React, TypeScript, Node.js, Python, HTML5, modern CSS3, responsive design, Tailwind CSS, RESTful APIs, Git, GitHub, Next.js, PostgreSQL, MySQL, MongoDB, Docker, WCAG 2.1. Do you have experience with any of these or any others you would like to include?",
+    "Could you list any spoken languages and your stated CEFR proficiency levels (e.g. English - C1, Portuguese - Native)?",
+    "Could you provide any professional certifications you hold (name, issuer/provider, and year)? If none, you can simply reply \"None\".",
+    "Could you share any relevant standalone projects or competitions (name, dates, technologies, and your individual contribution)? If none, you can state \"None\".",
+    "Regarding your professional summary, what key points would you like to highlight in your summary to best position your candidacy for the target role?"
+  ],
+  "user_answers": [
+    {
+      "question": "Could you confirm the exact job title from the posting as the target headline? (Target job posting title: Fullstack Web Developer (React & Node.js))",
+      "answer": "Yes, I confirm that the target job title should be Fullstack Web Developer (React & Node.js). However, please note that my background is strictly in backend engineering (Python, FastAPI, Django) and I do not have experience with frontend technologies like React, TypeScript, or Node.js.",
+      "gap": "Target headline confirmed, but candidate noted background is strictly backend.",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your contact and profile details (email, phone, location, LinkedIn URL, and portfolio/GitHub URL)? You may write \"I do not have one\" or skip any if you prefer.",
+      "answer": "My location is Porto, Portugal, and my email is diogo.santos.backend@example.com with phone number +351 925 678 123. You can find my LinkedIn at https://www.linkedin.com/in/diogosantos-backend and my GitHub at https://github.com/dsantos-code, though I do not have a portfolio website.",
+      "gap": "Missing email, phone, location, LinkedIn URL, and GitHub URL provided; portfolio website confirmed absent.",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your employment history details (company names, job titles, dates, and achievements)? More specifically, for your role at CloudScale as Backend Software Engineer (2021-Present), do you have any additional achievements or details to include?",
+      "answer": "At CloudScale, I designed and maintained 12+ REST microservices serving over 800 requests per second, optimized PostgreSQL queries to reduce p95 latency by 38%, and implemented Redis caching to decrease database load by 45%.",
+      "gap": "Added concrete quantitative metrics and achievements for CloudScale role.",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your education details, including degree, institution, dates, grade/GPA, and thesis topic or grade? More specifically, regarding your B.Sc. in Informatics and Computing Engineering at FEUP (2017-2020), do you have a GPA or thesis to add?",
+      "answer": "My B.Sc. in Informatics and Computing Engineering is from FEUP (2017–2020) with a grade of 14/20. I did not complete a thesis for this degree, as it was a Licenciatura focused on coursework and practical projects like a Distributed Key-Value Store and a Hospital RDBMS.",
+      "gap": "Added grade (14/20) and practical coursework projects; thesis confirmed not applicable.",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting/requires the following tech stack: React, TypeScript, Node.js, Python, HTML5, modern CSS3, responsive design, Tailwind CSS, RESTful APIs, Git, GitHub, Next.js, PostgreSQL, MySQL, MongoDB, Docker, WCAG 2.1. Do you have experience with any of these or any others you would like to include?",
+      "answer": "I have extensive experience with Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Git, and GitHub as listed in my background. However, I do not have experience with React, TypeScript, Node.js, Tailwind CSS, Next.js, or frontend development, as I am strictly a backend engineer.",
+      "gap": "Confirmed backend tech stack overlap (Python, PostgreSQL, Docker, Git, GitHub); confirmed lack of frontend tech stack (React, TypeScript, Node.js, Tailwind, Next.js, WCAG 2.1).",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "Could you list any spoken languages and your stated CEFR proficiency levels (e.g. English - C1, Portuguese - Native)?",
+      "answer": "My spoken languages are Portuguese, which is my native language, and English at a C1 Full Professional proficiency level.",
+      "gap": "Added Portuguese (Native) and English (C1).",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you provide any professional certifications you hold (name, issuer/provider, and year)? If none, you can simply reply \"None\".",
+      "answer": "I do not hold any professional certifications.",
+      "gap": "Certifications section is absent / none held.",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Could you share any relevant standalone projects or competitions (name, dates, technologies, and your individual contribution)? If none, you can state \"None\".",
+      "answer": "During my B.Sc. at FEUP, I developed a Distributed Key-Value Store using Python and C++ focusing on replication and fault tolerance, as well as a relational database project for a hospital system.",
+      "gap": "Added academic/standalone projects (Distributed Key-Value Store, Hospital RDBMS).",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding your professional summary, what key points would you like to highlight in your summary to best position your candidacy for the target role?",
+      "answer": "My professional summary should highlight my 3.5 years of backend engineering experience building RESTful APIs, microservices, and optimizing PostgreSQL databases in Python. However, I should note that I do not have professional frontend development experience with React or TypeScript, as my expertise is strictly focused on backend systems.",
+      "gap": "Summary synthesized with backend focus and verified achievements.",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Location: Porto, Portugal",
+    "Email: diogo.santos.backend@example.com",
+    "Phone: +351 925 678 123",
+    "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+    "GitHub: https://github.com/dsantos-code",
+    "CloudScale achievements: Designed and maintained 12+ REST microservices serving over 800 requests per second, optimized PostgreSQL queries to reduce p95 latency by 38%, and implemented Redis caching to decrease database load by 45%.",
+    "Education grade: B.Sc. in Informatics and Computing Engineering at FEUP (2017-2020) with grade 14/20.",
+    "Academic projects: Distributed Key-Value Store using Python and C++; Hospital RDBMS project.",
+    "Languages: Portuguese (Native), English (C1 Full Professional proficiency).",
+    "Certifications: None held."
+  ],
+  "optimization_strategy": "The optimization strategy focused on elevating the candidate's CV by incorporating verified contact details, professional profile URLs, quantitative achievements in backend engineering (microservices, request throughput, latency reduction), education grade, academic projects, and language proficiencies. Given the significant gap between the candidate's backend engineering profile (Python, FastAPI, Django, PostgreSQL, Docker) and the target Fullstack Web Developer role (React, TypeScript, Node.js, Tailwind), transparency was maintained by highlighting the candidate's robust backend capabilities while truthfully recording the absence of frontend framework experience.",
+  "unresolved_evidence_gaps": [
+    "Lack of experience with frontend technologies required by the target role (React, TypeScript, HTML5, modern CSS3, responsive design, Tailwind CSS, Next.js, WCAG 2.1).",
+    "No portfolio website link (candidate confirmed not having one, though GitHub is provided).",
+    "No professional certifications."
+  ]
+}

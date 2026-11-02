@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Can we confirm the exact target job title as 'Backend Software Engineer (Python)' for your CV headline?",
+    "answer": "Yes, we can confirm \"Backend Software Engineer (Python)\" as the target job title for my CV headline."
+  },
+  {
+    "question": "Your CV is currently missing your email address, phone number, and location. Please provide your email, phone, and location, or let me know if you prefer to skip or do not wish to include them.",
+    "answer": "You can reach me at diogo.santos.backend@example.com or +351 925 678 123, and I am based in Porto, Portugal."
+  },
+  {
+    "question": "Your CV is missing your LinkedIn URL and portfolio/GitHub URL. Please provide them if you have them, or let me know if you would like to skip or do not have them.",
+    "answer": "My LinkedIn profile is https://www.linkedin.com/in/diogosantos-backend and my GitHub is https://github.com/dsantos-code. I do not have a separate portfolio website."
+  },
+  {
+    "question": "Let's confirm your employment details. You have Backend Software Engineer at CloudScale from 2021 to Present with responsibilities in FastAPI, Django, PostgreSQL, Docker, and RabbitMQ. Are there any other companies, internships, or achievements you would like to add?",
+    "answer": "I also worked briefly as a Junior Web Developer at SoftPorto Solutions from September to December 2020, maintaining internal CRM portals with Python and Django."
+  },
+  {
+    "question": "Let's confirm your education details. Your CV lists a B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Could you please confirm if you have a final grade/GPA, or if you completed a thesis and its topic/grade?",
+    "answer": "I completed my B.Sc. in Informatics and Computing Engineering at FEUP with a final grade of 14/20. During my studies, I completed academic projects including a Distributed Key-Value Store and a Hospital RDBMS, but I did not complete a formal written thesis."
+  },
+  {
+    "question": "More specifically, the job posting mentions/requires: Python, FastAPI, Flask, Django, PostgreSQL, Docker, Docker Compose, Redis, pytest, RESTful API design, HTTP protocols, Microservice architecture, Git, RabbitMQ, Apache Kafka, Celery, AWS (EC2, S3, RDS), GCP, GitHub Actions, GitLab CI, and Kubernetes. Do you have experience with any of these or any others you would like to include?",
+    "answer": "Yes, I have extensive experience with Python (FastAPI, Django, Flask), PostgreSQL, Docker, Docker Compose, Redis, pytest, RESTful APIs, and microservices. I also work with RabbitMQ, Celery, Git, GitHub Actions, Linux, and have basic experience with AWS (S3, EC2, RDS), though I do not have experience with Kubernetes, Kafka, or GCP."
+  },
+  {
+    "question": "What spoken or natural languages do you speak, and what are your CEFR proficiency levels (e.g., Portuguese (Native), English (Professional Working / C1))?",
+    "answer": "I am a native Portuguese speaker and also have C1 Full Professional proficiency in English."
+  },
+  {
+    "question": "Do you have any relevant professional certifications or training courses you would like to include? Please provide the name, issuer/provider, and year.",
+    "answer": "I do not have any professional certifications, as my expertise is built entirely on my hands-on backend software engineering experience and my degree in Informatics and Computing Engineering."
+  },
+  {
+    "question": "Do you have any standalone projects or competitions you would like to include? Please provide the name, dates, technologies used, and your individual contribution.",
+    "answer": "Yes, during my degree at FEUP I built a Distributed Key-Value Store using Python and C++ featuring replication and fault tolerance, as well as a Hospital RDBMS project. You can check out my code on my GitHub profile (github.com/dsantos-code)."
+  },
+  {
+    "question": "To highlight your fit for the Backend Software Engineer (Python) role, which key points should we emphasize in your professional summary (e.g., 3 years of Python/FastAPI/Django development, relational database optimization, or microservices)?",
+    "answer": "I should emphasize my 3.5 years of experience building high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI and Django), as well as my proven track record in PostgreSQL schema optimization and Redis caching to reduce database load."
+  }
+]

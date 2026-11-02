@@ -1,0 +1,234 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Tomás Silva\nComputer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Tomás Silva\nCoimbra, Portugal | tomas.silva.dev@example.com | +351 912 345 678\nLinkedIn: https://www.linkedin.com/in/tomassilva-dev | GitHub: https://github.com/tomassilva-data\nData Science Intern candidate with expertise in Python, SQL, and Machine Learning backed by a B.Sc. in Computer Science (15/20) and a thesis grade of 17/20.",
+      "rationale": "Incorporates verified contact details, professional links, and a targeted, high-impact professional summary that highlights core skills and verified achievements.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Coimbra, Portugal",
+        "tomas.silva.dev@example.com",
+        "+351 912 345 678",
+        "https://www.linkedin.com/in/tomassilva-dev",
+        "https://github.com/tomassilva-data"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Computer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Results-driven Data Science Intern candidate with a B.Sc. in Computer Science (15/20) and a strong foundation in Python, SQL, and machine learning. Proven ability to analyze large datasets and build predictive models, highlighted by a thesis grade of 17/20 on customer retention and churn prediction.",
+      "rationale": "Optimizes the professional summary to align directly with the Data Scientist Intern role and incorporates verified academic results.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science",
+        "University of Coimbra (2021-2024)",
+        "Grade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Thesis grade of 17/20",
+        "Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20",
+      "proposed_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20\nThesis: \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" (Grade: 17/20)\nRelevant Coursework: Probability and Statistics (16/20), Machine Learning (17/20)",
+      "rationale": "Adds verified thesis details, thesis grade, and relevant coursework grades provided by the candidate to satisfy quantitative and machine learning requirements.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science",
+        "University of Coimbra (2021-2024)",
+        "Grade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning",
+        "Grade: 17/20",
+        "Probability and Statistics (16/20)",
+        "Machine Learning (17/20)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration.",
+      "proposed_content": "Software Development Intern | SoftInov Soluções Tecnológicas (July 2023 - September 2023)\n- Automated unit and integration testing with pytest, raising service test coverage from 62% to 79%.\n- Performed SQL queries and database migrations in PostgreSQL.\n- Documented REST APIs with OpenAPI/Swagger and collaborated with engineering teams.",
+      "rationale": "Enriches the brief internship entry with verified company name, exact dates, and concrete achievements.",
+      "evidence_source": "user",
+      "source_evidence": [
+        "Curricular Summer Internship (3 months)",
+        "software testing and internal tool support",
+        "QA methodologies and team collaboration"
+      ],
+      "user_provided_evidence": [
+        "Software Development Intern",
+        "SoftInov Soluções Tecnológicas",
+        "July to September 2023",
+        "Automated unit and integration testing with pytest (raising service coverage from 62% to 79%)",
+        "Performed SQL queries and database migrations in PostgreSQL",
+        "Documented REST APIs with OpenAPI/Swagger"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages & Tools: Python, SQL, Git\nLibraries/Concepts: Pandas, NumPy, Unit Testing",
+      "proposed_content": "Languages & Tools: Python, SQL, Git, PostgreSQL, pytest\nLibraries/Concepts: Pandas, NumPy, Scikit-Learn, Machine Learning, Probability & Statistics, Unit Testing, Data Pipelines, API Documentation",
+      "rationale": "Expands the technical skills section to accurately reflect the candidate's verified skills and methodologies matching the job requirements.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Python",
+        "SQL",
+        "Git",
+        "Pandas",
+        "NumPy",
+        "Unit Testing"
+      ],
+      "user_provided_evidence": [
+        "PostgreSQL",
+        "pytest",
+        "Scikit-Learn",
+        "Machine Learning",
+        "Probability & Statistics",
+        "Data Pipelines"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Key Projects",
+      "current_content": "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
+      "proposed_content": "Capstone Project: Customer Churn Analysis (B.Sc. Thesis)\n- Built an end-to-end data pipeline in Python analyzing customer churn and retention across 80k+ records using Pandas, Scikit-Learn, and PostgreSQL.\n- Evaluated supervised machine learning classification models, achieving a 17/20 grade for the thesis.",
+      "rationale": "Provides greater detail and quantified metrics for the capstone project based on verified user evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "user_provided_evidence": [
+        "80k+ records",
+        "Evaluated supervised machine learning classification models",
+        "17/20 grade for the thesis"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Advanced, Cambridge Certificate)",
+      "rationale": "Adds spoken languages and verified CEFR proficiency levels.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C1 Advanced, Cambridge Certificate)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Certifications",
+      "current_content": "",
+      "proposed_content": "Certifications: Cambridge C1 Advanced English Certificate",
+      "rationale": "Adds the verified language certification provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Cambridge C1 Advanced English Certificate"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Please confirm your exact target job title from the job posting (e.g., Data Scientist Intern).",
+    "Could you please provide your contact and profile details (email, phone, location, LinkedIn URL, and GitHub/portfolio URL)? If you do not wish to provide any or all of these, simply let me know.",
+    "Could you please confirm your employment details for the listed role: Curricular Summer Internship (company name, exact dates, and any additional achievements or responsibilities)?",
+    "Could you confirm your education details including degree, institution, dates, grade/GPA (B.Sc. in Computer Science, University of Coimbra, 2021-2024, Grade: 15/20), and whether you completed a thesis or final project with a grade?",
+    "More specifically, the job posting mentions/requires: statistics, probability, and quantitative analysis; Python and SQL; Pandas, NumPy, scikit-learn, or similar tools; machine learning fundamentals and model evaluation; experimentation, A/B testing, or causal inference; large datasets or data pipelines; data visualisation tools or frameworks; and cloud platforms or distributed data technologies. Do you have experience with any of these or any others you would like to include?",
+    "What spoken languages do you know, and what are your stated CEFR proficiency levels (e.g., Portuguese (Native), English (Professional Working / C1))? If none, you can skip.",
+    "Do you have any relevant certifications? Please provide the name, issuer/provider, and year for each if available.",
+    "Do you have any relevant standalone projects, competitions, or open-source contributions? Please provide names, dates, technologies used, and your individual contribution.",
+    "What key points would you like to highlight in your professional summary for the target role?"
+  ],
+  "user_answers": [
+    {
+      "question": "Please confirm your exact target job title from the job posting (e.g., Data Scientist Intern).",
+      "answer": "My exact target job title for this application is Data Scientist Intern.",
+      "gap": "Target headline alignment",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your contact and profile details (email, phone, location, LinkedIn URL, and GitHub/portfolio URL)? If you do not wish to provide any or all of these, simply let me know.",
+      "answer": "My contact details are email: tomas.silva.dev@example.com and phone: +351 912 345 678, and I am based in Coimbra, Portugal. You can find my profiles at https://www.linkedin.com/in/tomassilva-dev and https://github.com/tomassilva-data.",
+      "gap": "Missing contact information and professional profile links",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please confirm your employment details for the listed role: Curricular Summer Internship (company name, exact dates, and any additional achievements or responsibilities)?",
+      "answer": "My curricular summer internship was as a Software Development Intern at SoftInov Soluções Tecnológicas from July to September 2023, where I automated unit and integration testing with pytest (raising service coverage from 62% to 79%), performed SQL queries and database migrations in PostgreSQL, and documented REST APIs with OpenAPI/Swagger.",
+      "gap": "Detailed employment history and internship achievements",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your education details including degree, institution, dates, grade/GPA (B.Sc. in Computer Science, University of Coimbra, 2021-2024, Grade: 15/20), and whether you completed a thesis or final project with a grade?",
+      "answer": "Yes, I graduated with a B.Sc. in Computer Science from the University of Coimbra (FCTUC) between September 2021 and July 2024 with a GPA of 15/20. I also completed my thesis titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning,\" which received a grade of 17/20.",
+      "gap": "Education thesis details and grades",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: statistics, probability, and quantitative analysis; Python and SQL; Pandas, NumPy, scikit-learn, or similar tools; machine learning fundamentals and model evaluation; experimentation, A/B testing, or causal inference; large datasets or data pipelines; data visualisation tools or frameworks; and cloud platforms or distributed data technologies. Do you have experience with any of these or any others you would like to include?",
+      "answer": "Yes, I have strong experience with Python, SQL, Pandas, NumPy, and scikit-learn, along with academic coursework in Probability and Statistics (16/20) and Machine Learning (17/20). Additionally, my capstone thesis and projects involved analyzing large datasets (80k+ to 250k+ records) and building data pipelines and predictive models.",
+      "gap": "Missing technical stack evidence (statistics, ML model evaluation, data pipelines)",
+      "resolution": "supported"
+    },
+    {
+      "question": "What spoken languages do you know, and what are your stated CEFR proficiency levels (e.g., Portuguese (Native), English (Professional Working / C1))? If none, you can skip.",
+      "answer": "I am a native speaker of Portuguese and have an advanced command of English, certified at the C1 level with a Cambridge Certificate.",
+      "gap": "Missing languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "Do you have any relevant certifications? Please provide the name, issuer/provider, and year for each if available.",
+      "answer": "Yes, I hold a Cambridge Certificate demonstrating C1 Advanced English proficiency. I do not have any other technical certifications.",
+      "gap": "Missing certifications",
+      "resolution": "supported"
+    },
+    {
+      "question": "Do you have any relevant standalone projects, competitions, or open-source contributions? Please provide names, dates, technologies used, and your individual contribution.",
+      "answer": "Yes, I completed a Capstone Project on Customer Retention & Churn Prediction using Python (Pandas, Scikit-Learn) and PostgreSQL, and an E-Commerce Cohort & Sales SQL Analyzer using 250k+ transactions. You can find more of my work on my GitHub at https://github.com/tomassilva-data.",
+      "gap": "Additional projects and repository links",
+      "resolution": "supported"
+    },
+    {
+      "question": "What key points would you like to highlight in your professional summary for the target role?",
+      "answer": "I would like to highlight my strong academic foundation in machine learning and statistics, along with my hands-on experience in Python, SQL, and predictive modeling from my Computer Science degree and capstone project.",
+      "gap": "Summary emphasis points",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Coimbra, Portugal",
+    "tomas.silva.dev@example.com",
+    "+351 912 345 678",
+    "https://www.linkedin.com/in/tomassilva-dev",
+    "https://github.com/tomassilva-data",
+    "Software Development Intern at SoftInov Soluções Tecnológicas (July to September 2023)",
+    "Automated unit and integration testing with pytest, raising service coverage from 62% to 79%",
+    "Performed SQL queries and database migrations in PostgreSQL",
+    "Documented REST APIs with OpenAPI/Swagger",
+    "Thesis: Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning (Grade: 17/20)",
+    "Probability and Statistics coursework grade: 16/20",
+    "Machine Learning coursework grade: 17/20",
+    "Analyzed large datasets (80k+ to 250k+ records)",
+    "Portuguese (Native)",
+    "English (C1 Advanced, Cambridge Certificate)",
+    "E-Commerce Cohort & Sales SQL Analyzer project using 250k+ transactions"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on bridging critical contact, profile, and technical gaps identified during Phase 1 by conducting a mandatory interactive HITL Q&A session. Candidate-provided evidence regarding contact details, internship achievements at SoftInov, B.Sc. thesis title and grade (17/20), coursework grades in Probability/Statistics and Machine Learning, and language certifications have been incorporated into atomic proposed changes. The professional summary and skills sections have been tailored to directly address the Revolut Data Scientist Intern requirements while maintaining absolute fidelity to verified evidence.",
+  "unresolved_evidence_gaps": [
+    "Experience with experimentation, A/B testing, or causal inference",
+    "Knowledge of data visualisation tools or frameworks",
+    "Experience with cloud platforms or distributed data technologies",
+    "GDPR consent statement"
+  ]
+}

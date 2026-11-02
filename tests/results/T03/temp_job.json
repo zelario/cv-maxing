@@ -1,0 +1,288 @@
+{
+  "job_title": "Cloud & DevOps Engineer",
+  "company": {
+    "name": "Aether Cloud Solutions",
+    "location": "Lisbon / Hybrid",
+    "website": ""
+  },
+  "location": "Lisbon / Hybrid",
+  "employment_type": "",
+  "seniority": "",
+  "description": "Aether Cloud Solutions is a specialized cloud architecture and DevOps consultancy. We design, automate, and manage mission-critical cloud infrastructure for high-growth tech enterprises, ensuring maximum uptime, automated security compliance, and seamless continuous delivery at scale.\n\nWe are seeking a Cloud & DevOps Engineer to join our Cloud Enablement & Infrastructure Operations team.\n\nYou will spearhead infrastructure automation, modernize deployment pipelines, implement Infrastructure as Code (IaC), and empower software development teams with reliable self-service deployment environments.",
+  "skills": [
+    {
+      "name": "Terraform",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design, deploy, and maintain robust cloud infrastructure using Terraform on Amazon Web Services (AWS)."
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design, deploy, and maintain robust cloud infrastructure using Terraform on Amazon Web Services (AWS)."
+    },
+    {
+      "name": "CI/CD pipelines",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Build, optimize, and maintain automated CI/CD pipelines using tools such as GitHub Actions or GitLab CI."
+    },
+    {
+      "name": "GitHub Actions",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Build, optimize, and maintain automated CI/CD pipelines using tools such as GitHub Actions or GitLab CI."
+    },
+    {
+      "name": "GitLab CI",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Build, optimize, and maintain automated CI/CD pipelines using tools such as GitHub Actions or GitLab CI."
+    },
+    {
+      "name": "Docker",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Configure and maintain containerized workloads using Docker and manage container clusters with Kubernetes (EKS)."
+    },
+    {
+      "name": "Kubernetes (EKS)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Configure and maintain containerized workloads using Docker and manage container clusters with Kubernetes (EKS)."
+    },
+    {
+      "name": "Prometheus",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Implement centralized monitoring, logging, and distributed tracing solutions (Prometheus, Grafana, CloudWatch)."
+    },
+    {
+      "name": "Grafana",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Implement centralized monitoring, logging, and distributed tracing solutions (Prometheus, Grafana, CloudWatch)."
+    },
+    {
+      "name": "CloudWatch",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Implement centralized monitoring, logging, and distributed tracing solutions (Prometheus, Grafana, CloudWatch)."
+    },
+    {
+      "name": "IAM",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Harden cloud infrastructure security, managing IAM roles, least-privilege policies, secret rotation, and vulnerability scanning."
+    },
+    {
+      "name": "AWS services (EC2, S3, RDS, VPC, IAM, Route53)",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated hands-on experience provisioning and operating core AWS services (EC2, S3, RDS, VPC, IAM, Route53)."
+    },
+    {
+      "name": "Terraform",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid practical experience writing and managing modular Infrastructure as Code using Terraform."
+    },
+    {
+      "name": "Linux systems administration",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong operational proficiency with Linux systems administration and shell scripting (Bash or Python)."
+    },
+    {
+      "name": "Bash",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong operational proficiency with Linux systems administration and shell scripting (Bash or Python)."
+    },
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong operational proficiency with Linux systems administration and shell scripting (Bash or Python)."
+    },
+    {
+      "name": "Docker",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid working experience containerizing applications and services with Docker."
+    },
+    {
+      "name": "CI/CD",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Practical experience configuring and optimizing continuous integration and deployment pipelines (CI/CD)."
+    },
+    {
+      "name": "Official AWS Certifications (AWS Certified Solutions Architect – Associate/Professional, SysOps Administrator)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Official AWS Certifications (e.g., AWS Certified Solutions Architect – Associate/Professional, SysOps Administrator)."
+    },
+    {
+      "name": "Kubernetes",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Practical production experience deploying and managing Kubernetes clusters."
+    },
+    {
+      "name": "GitOps methodologies (ArgoCD or Flux)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with GitOps methodologies (e.g., ArgoCD or Flux)."
+    },
+    {
+      "name": "Compliance standards (SOC2, ISO 27001)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with compliance standards (SOC2, ISO 27001) in cloud environments."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Demonstrated hands-on experience provisioning and operating core AWS services (EC2, S3, RDS, VPC, IAM, Route53)",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated hands-on experience provisioning and operating core AWS services (EC2, S3, RDS, VPC, IAM, Route53)."
+    },
+    {
+      "description": "Solid practical experience writing and managing modular Infrastructure as Code using Terraform",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid practical experience writing and managing modular Infrastructure as Code using Terraform."
+    },
+    {
+      "description": "Solid working experience containerizing applications and services with Docker",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid working experience containerizing applications and services with Docker."
+    },
+    {
+      "description": "Practical experience configuring and optimizing continuous integration and deployment pipelines (CI/CD)",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Practical experience configuring and optimizing continuous integration and deployment pipelines (CI/CD)."
+    },
+    {
+      "description": "Practical production experience deploying and managing Kubernetes clusters",
+      "years": "",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Practical production experience deploying and managing Kubernetes clusters."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Bachelor's degree",
+      "degree": "Bachelor's degree",
+      "field": "Computer Science, Telecommunications, Informatics, or related engineering field",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Bachelor's degree in Computer Science, Telecommunications, Informatics, or related engineering field (or equivalent operational experience)."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Design, deploy, and maintain robust cloud infrastructure using Terraform on Amazon Web Services (AWS).",
+      "source_section": "What You'll Do",
+      "source_text": "Design, deploy, and maintain robust cloud infrastructure using Terraform on Amazon Web Services (AWS)."
+    },
+    {
+      "description": "Build, optimize, and maintain automated CI/CD pipelines using tools such as GitHub Actions or GitLab CI.",
+      "source_section": "What You'll Do",
+      "source_text": "Build, optimize, and maintain automated CI/CD pipelines using tools such as GitHub Actions or GitLab CI."
+    },
+    {
+      "description": "Configure and maintain containerized workloads using Docker and manage container clusters with Kubernetes (EKS).",
+      "source_section": "What You'll Do",
+      "source_text": "Configure and maintain containerized workloads using Docker and manage container clusters with Kubernetes (EKS)."
+    },
+    {
+      "description": "Implement centralized monitoring, logging, and distributed tracing solutions (Prometheus, Grafana, CloudWatch).",
+      "source_section": "What You'll Do",
+      "source_text": "Implement centralized monitoring, logging, and distributed tracing solutions (Prometheus, Grafana, CloudWatch)."
+    },
+    {
+      "description": "Harden cloud infrastructure security, managing IAM roles, least-privilege policies, secret rotation, and vulnerability scanning.",
+      "source_section": "What You'll Do",
+      "source_text": "Harden cloud infrastructure security, managing IAM roles, least-privilege policies, secret rotation, and vulnerability scanning."
+    },
+    {
+      "description": "Triage infrastructure incidents, conduct blameless post-mortems, and automate corrective actions to eliminate operational toil.",
+      "source_section": "What You'll Do",
+      "source_text": "Triage infrastructure incidents, conduct blameless post-mortems, and automate corrective actions to eliminate operational toil."
+    },
+    {
+      "description": "Collaborate closely with software development squads to architect resilient, scalable cloud-native architectures.",
+      "source_section": "What You'll Do",
+      "source_text": "Collaborate closely with software development squads to architect resilient, scalable cloud-native architectures."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Cloud",
+      "source_section": "About the Role",
+      "source_text": "Cloud & DevOps Engineer"
+    },
+    {
+      "keyword": "DevOps",
+      "source_section": "About the Role",
+      "source_text": "Cloud & DevOps Engineer"
+    },
+    {
+      "keyword": "AWS",
+      "source_section": "About the Role",
+      "source_text": "Terraform on Amazon Web Services (AWS)"
+    },
+    {
+      "keyword": "Terraform",
+      "source_section": "About the Role",
+      "source_text": "Terraform on Amazon Web Services (AWS)"
+    },
+    {
+      "keyword": "Infrastructure as Code",
+      "source_section": "About the Role",
+      "source_text": "implement Infrastructure as Code (IaC)"
+    },
+    {
+      "keyword": "CI/CD",
+      "source_section": "What You'll Do",
+      "source_text": "automated CI/CD pipelines"
+    },
+    {
+      "keyword": "Kubernetes",
+      "source_section": "What You'll Do",
+      "source_text": "Kubernetes (EKS)"
+    },
+    {
+      "keyword": "GitOps",
+      "source_section": "Nice to Have",
+      "source_text": "GitOps methodologies (e.g., ArgoCD or Flux)."
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Work Model",
+      "description": "Hybrid work model (2 days at Lisbon offices, 3 days remote)",
+      "requirement_type": "required",
+      "source_section": "What We Offer",
+      "source_text": "Hybrid work model (2 days at Lisbon offices, 3 days remote)."
+    },
+    {
+      "type": "Application Material",
+      "description": "Submit CV detailing cloud and infrastructure automation experience, along with any relevant public infrastructure configurations, scripts, or certifications",
+      "requirement_type": "required",
+      "source_section": "Application",
+      "source_text": "Please submit your CV detailing your cloud and infrastructure automation experience, along with any relevant public infrastructure configurations, scripts, or certifications."
+    }
+  ]
+}

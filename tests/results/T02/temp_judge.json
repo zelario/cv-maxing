@@ -1,0 +1,20 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 8,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Successfully integrated all candidate-provided contact details and profile URLs",
+    "Accurately incorporated verified internship details and dates from user answers",
+    "Effectively aligned skills and projects with the target Python backend role using truthful evidence",
+    "Clean formatting and clear structural layout"
+  ],
+  "issues": [
+    "Candidate lacks specific framework experience (FastAPI, Flask, Django) and Redis required by the job posting, limiting complete alignment despite honest representation"
+  ],
+  "recommendations": [
+    "Consider gaining familiarity with FastAPI or Flask to bridge remaining technical gaps for future Python backend roles"
+  ]
+}

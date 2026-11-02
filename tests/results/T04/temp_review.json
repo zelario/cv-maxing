@@ -1,0 +1,383 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Python",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Candidate lists Python in skills and demonstrates hands-on experience developing RESTful APIs using Python frameworks."
+    },
+    {
+      "requirement": "FastAPI",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Explicitly listed in skills and demonstrated in professional experience building RESTful APIs."
+    },
+    {
+      "requirement": "Flask",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Flask is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "Django",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Explicitly listed in skills and demonstrated in professional experience."
+    },
+    {
+      "requirement": "PostgreSQL",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Leading PostgreSQL schema design and comprehensive query optimization."
+      ],
+      "reasoning": "Listed under databases and directly demonstrated through leading schema design and query optimization."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Implementing Docker containerization for standardized deployment environments."
+      ],
+      "reasoning": "Listed in skills and demonstrated through implementing containerization for deployment."
+    },
+    {
+      "requirement": "Docker Compose",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Docker Compose is not mentioned in the CV (only Docker is referenced)."
+    },
+    {
+      "requirement": "Redis",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux"
+      ],
+      "reasoning": "Listed in technical skills, but lacks contextual evidence or project usage description in work experience."
+    },
+    {
+      "requirement": "pytest",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "pytest is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "Python backend development experience",
+      "category": "Experience Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+        "Backend Software Engineer at CloudScale | 2021-Present (3 years)"
+      ],
+      "reasoning": "Candidate demonstrates 3 years of professional backend software engineering experience."
+    },
+    {
+      "requirement": "Relational database design and PostgreSQL knowledge",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Leading PostgreSQL schema design and comprehensive query optimization."
+      ],
+      "reasoning": "Directly demonstrated leadership in PostgreSQL schema design and query optimization."
+    },
+    {
+      "requirement": "RESTful API design principles, HTTP protocols, and microservice architecture",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices...",
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Demonstrates experience building RESTful APIs and microservices."
+    },
+    {
+      "requirement": "Git",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Tools: Git"
+      ],
+      "reasoning": "Git is listed in the tools section, but lacks specific context or application in work experience descriptions."
+    },
+    {
+      "requirement": "RabbitMQ",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "reasoning": "Listed in skills and demonstrated through integrating message brokers for asynchronous tasks."
+    },
+    {
+      "requirement": "Apache Kafka",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Apache Kafka is not mentioned in the CV."
+    },
+    {
+      "requirement": "Celery",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Celery is not mentioned in the CV."
+    },
+    {
+      "requirement": "AWS (EC2, S3, RDS) or GCP",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Neither AWS nor GCP is mentioned in the CV."
+    },
+    {
+      "requirement": "GitHub Actions or GitLab CI",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Neither GitHub Actions nor GitLab CI is mentioned in the CV."
+    },
+    {
+      "requirement": "Kubernetes",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Kubernetes is not mentioned in the CV."
+    },
+    {
+      "requirement": "Bachelor's or Master's degree in Computer Science, Software Engineering, Informatics, or related technical discipline",
+      "category": "Education Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering",
+        "FEUP (2017-2020)"
+      ],
+      "reasoning": "Candidate holds a B.Sc. in Informatics and Computing Engineering from FEUP."
+    },
+    {
+      "requirement": "Effective communication skills in English and collaborative team mindset",
+      "category": "Other Requirements",
+      "status": "uncertain",
+      "evidence": [],
+      "reasoning": "The CV does not explicitly mention English communication or team collaboration soft skills."
+    },
+    {
+      "requirement": "Strong problem-solving mindset, clean code habits, and attention to architectural maintainability",
+      "category": "Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices..."
+      ],
+      "reasoning": "Implied through professional software engineering background, but clean code habits and problem-solving mindset are not explicitly stated."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Personal Info / Name",
+      "status": "present",
+      "evidence": [
+        "Diogo Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A professional summary statement functions as the headline introduction."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location or address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is provided in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "High",
+      "reasoning": "A professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django..."
+      ],
+      "relevance": "High",
+      "reasoning": "Professional experience section includes role, company, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education details including degree, institution, and dates are present."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills are categorized and listed clearly."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Tools / Software",
+      "status": "present",
+      "evidence": [
+        "Tools: Git"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Git is listed under tools."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No specific methodologies (e.g., Agile, Scrum) are explicitly listed as a separate category."
+    },
+    {
+      "section": "General",
+      "field": "Transferable Skills",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "Transferable/soft skills are not explicitly detailed."
+    },
+    {
+      "section": "General",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "Spoken/natural languages are not listed."
+    },
+    {
+      "section": "General",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training courses are listed."
+    },
+    {
+      "section": "General",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No standalone personal or academic projects section is included."
+    },
+    {
+      "section": "General",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Flask experience",
+    "Docker Compose experience",
+    "pytest testing experience",
+    "Apache Kafka or Celery experience",
+    "Cloud provider experience (AWS or GCP)",
+    "CI/CD automation tools experience (GitHub Actions or GitLab CI)",
+    "Container orchestration experience (Kubernetes)"
+  ],
+  "weak_evidence": [
+    "Redis (listed in skills but lacks contextual implementation detail in work experience)",
+    "Git (listed in tools without contextual usage)",
+    "Soft skills / communication / agile collaboration (implied by role but not explicitly evidenced)"
+  ],
+  "strengths": [
+    "Solid core Python backend stack matching primary requirements (Python, FastAPI, Django, PostgreSQL).",
+    "Relevant degree in Informatics and Computing Engineering from FEUP.",
+    "Demonstrated professional experience in microservice architecture, RESTful API development, and database optimization.",
+    "Preferred skill match for RabbitMQ and message broker integration."
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location, LinkedIn, GitHub).",
+    "Lacks experience with testing frameworks like pytest.",
+    "Missing cloud platform (AWS/GCP), CI/CD tool, and container orchestration (Kubernetes) experience.",
+    "No mention of Flask or Docker Compose."
+  ],
+  "overall_assessment": "The candidate demonstrates strong foundational alignment with the core technical requirements for the Backend Software Engineer role, specifically in Python (FastAPI, Django), PostgreSQL, Docker, and RabbitMQ, backed by a relevant B.Sc. degree and 3 years of professional experience. However, there are notable gaps in secondary stack requirements such as pytest, Flask, Docker Compose, cloud platforms (AWS/GCP), and CI/CD tools. Furthermore, the CV is incomplete regarding essential contact details and professional links.",
+  "reasoning": "The evaluation was conducted by systematically comparing the structured CV against the structured job posting requirements using the provided evidence status categories and completeness dimensions, ensuring strict adherence to the facts present in the text without external assumptions."
+}

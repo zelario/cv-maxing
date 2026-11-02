@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Could you please confirm the exact job title from the posting as the target headline? (e.g., Backend Software Engineer (Python))",
+    "answer": "Yes, the exact job title from the posting is Backend Software Engineer (Python)."
+  },
+  {
+    "question": "Could you please provide your email address, phone number, location, LinkedIn URL, and GitHub/portfolio URL? (You may reply with \"I do not have one\" or skip any missing items).",
+    "answer": "My email is tomas.silva.dev@example.com, my phone number is +351 912 345 678, and my location is Coimbra, Portugal. My LinkedIn URL is https://www.linkedin.com/in/tomassilva-dev and my GitHub URL is https://github.com/tomassilva-data."
+  },
+  {
+    "question": "Could you please confirm your employment and internship details (company names, exact dates, and achievements for your listed roles)?",
+    "answer": "I completed a 3-month Software Development Internship at SoftInov Soluções Tecnológicas from July to September 2023, where I automated testing with pytest, handled PostgreSQL queries and migrations, and documented REST APIs."
+  },
+  {
+    "question": "Could you please confirm your education degree, institution, dates, grade/GPA, and any thesis topic and grade?",
+    "answer": "My degree is a B.Sc. in Computer Science (Licenciatura em Engenharia Informática) from the University of Coimbra (FCTUC), completed from September 2021 to July 2024 with a GPA of 15/20. My thesis was titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" and received a grade of 17/20."
+  },
+  {
+    "question": "More specifically, the job posting mentions/requires: Python (FastAPI, Flask, or Django), PostgreSQL, Docker and Docker Compose, Redis, pytest, RESTful API design principles, HTTP protocols, and microservice architecture. Do you have experience with any of these or any others you would like to include?",
+    "answer": "Yes, I have experience with Python, PostgreSQL, Docker, and pytest from my academic projects and my software development internship at SoftInov Soluções Tecnológicas. However, I do not have experience with Redis, FastAPI, Flask, Django, or microservice architecture."
+  },
+  {
+    "question": "Could you please provide your spoken languages and stated CEFR proficiency levels?",
+    "answer": "My native language is Portuguese, and I have a C1 Advanced proficiency in English backed by a Cambridge Certificate."
+  },
+  {
+    "question": "Could you please provide any relevant certifications (name, issuer/provider, and year)?",
+    "answer": "I do not have any professional certifications to list. However, I hold a Cambridge Certificate demonstrating C1 Advanced proficiency in English."
+  },
+  {
+    "question": "Could you please provide any relevant standalone projects, dates, technologies, and your individual contribution?",
+    "answer": "During my B.Sc., I developed an E-Commerce Cohort & Sales SQL Analyzer using PostgreSQL, CTEs, window functions, and Python (Matplotlib, Seaborn) to process and analyze over 250k transactions. I also built a Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring."
+  },
+  {
+    "question": "Could you please confirm the key points you would like to highlight in your professional summary?",
+    "answer": "I would like to highlight my strong Python backend development skills, my practical experience with PostgreSQL and Docker from my software internship, and my Computer Science degree from the University of Coimbra."
+  }
+]

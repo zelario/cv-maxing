@@ -1,0 +1,262 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Python",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Python",
+        "Built a data pipeline in Python analyzing customer churn and retention"
+      ],
+      "reasoning": "Candidate lists Python in Technical Skills and demonstrates its use in building a data pipeline in the capstone project."
+    },
+    {
+      "requirement": "FastAPI, Flask, or Django",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention FastAPI, Flask, or Django."
+    },
+    {
+      "requirement": "PostgreSQL",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "PostgreSQL",
+        "using Pandas, Scikit-Learn, and PostgreSQL"
+      ],
+      "reasoning": "PostgreSQL is listed in technical skills / demonstrated in project context."
+    },
+    {
+      "requirement": "Docker and Docker Compose",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Docker and Docker Compose are not mentioned in the CV."
+    },
+    {
+      "requirement": "Redis",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Redis is not mentioned in the CV."
+    },
+    {
+      "requirement": "pytest",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Unit Testing"
+      ],
+      "reasoning": "Candidate lists 'Unit Testing', but pytest is not explicitly mentioned."
+    },
+    {
+      "requirement": "Proven software development experience focused on Python backend development",
+      "category": "Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "Curricular Summer Internship (3 months): Focused on software testing and internal tool support"
+      ],
+      "reasoning": "The candidate has a 3-month curricular internship focused on software testing and QA, rather than dedicated professional Python backend development experience."
+    },
+    {
+      "requirement": "RESTful API design principles, HTTP protocols, and microservice architecture",
+      "category": "Technical Concepts",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of RESTful APIs, HTTP protocols, or microservices in the CV."
+    },
+    {
+      "requirement": "Git",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Git"
+      ],
+      "reasoning": "Git is explicitly listed under Technical Skills."
+    },
+    {
+      "requirement": "Bachelor's or Master's degree in Computer Science, Software Engineering, Informatics, or a related technical discipline",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024)"
+      ],
+      "reasoning": "Candidate holds a B.Sc. in Computer Science from the University of Coimbra."
+    },
+    {
+      "requirement": "RabbitMQ, Apache Kafka, or Celery",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "None of these messaging/task queue tools are mentioned."
+    },
+    {
+      "requirement": "AWS or GCP",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No cloud provider experience is mentioned."
+    },
+    {
+      "requirement": "GitHub Actions or GitLab CI",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Neither GitHub Actions nor GitLab CI is mentioned."
+    },
+    {
+      "requirement": "Kubernetes",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Kubernetes is not mentioned."
+    },
+    {
+      "requirement": "Effective communication skills in English and comfort working in an agile, collaborative team",
+      "category": "Soft Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "gaining practical experience in QA methodologies and team collaboration"
+      ],
+      "reasoning": "Team collaboration is mentioned from the internship, but English communication is not explicitly stated."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Personal Info / Name",
+      "status": "present",
+      "evidence": [
+        "Tomás Silva"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is provided."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No geographic location is provided."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn URL is provided."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is provided."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A brief introductory statement is present."
+    },
+    {
+      "section": "Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "Curricular Summer Internship (3 months)"
+      ],
+      "relevance": "High",
+      "reasoning": "One short internship experience is listed."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education details are clearly stated."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Python, SQL, Git",
+        "Pandas, NumPy, Unit Testing"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills and libraries are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "present",
+      "evidence": [
+        "Capstone Project: Customer Churn Analysis"
+      ],
+      "relevance": "High",
+      "reasoning": "A capstone project is included."
+    },
+    {
+      "section": "General",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "FastAPI, Flask, or Django framework experience",
+    "Docker and Docker Compose containerization experience",
+    "Redis caching experience",
+    "RESTful API design and microservice architecture experience",
+    "Cloud provider experience (AWS/GCP)",
+    "CI/CD tools experience (GitHub Actions/GitLab CI)",
+    "Contact information (Email, Phone number, Location, LinkedIn, GitHub URL)"
+  ],
+  "weak_evidence": [
+    "pytest / testing knowledge (only 'Unit Testing' listed generally)",
+    "Professional Python backend development experience (only a 3-month QA/testing internship)",
+    "English communication skills"
+  ],
+  "strengths": [
+    "Holds a B.Sc. in Computer Science from the University of Coimbra with a strong grade (15/20)",
+    "Demonstrates foundational Python and PostgreSQL skills through a relevant capstone project (Customer Churn Analysis)",
+    "Familiarity with version control (Git)"
+  ],
+  "weaknesses": [
+    "Complete lack of contact details (email, phone, location, LinkedIn, GitHub)",
+    "No professional backend development experience or familiarity with required frameworks (FastAPI, Flask, Django)",
+    "Missing containerization (Docker) and deployment/cloud infrastructure skills"
+  ],
+  "overall_assessment": "The candidate is a recent Computer Science graduate with strong academic credentials and a relevant capstone project demonstrating Python and PostgreSQL usage. However, there are significant gaps regarding the core technical requirements for the Backend Software Engineer role, specifically missing experience with Python web frameworks (FastAPI, Flask, Django), containerization (Docker), caching (Redis), and API/microservice architecture. Additionally, critical contact information is missing from the CV.",
+  "reasoning": "The evaluation compares the candidate's structured CV against the job requirements using an evidence-based approach. While the candidate meets the educational prerequisite and shows basic Python/SQL capability, they lack nearly all specific backend framework, containerization, and architectural requirements. Furthermore, completeness checks reveal missing contact fields."
+}

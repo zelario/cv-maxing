@@ -1,6 +1,6 @@
 .env
 __pycache__/
 .DS_Store
-*.json
+temp/
 !.vscode/settings.json
 agents.md

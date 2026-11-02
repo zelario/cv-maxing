@@ -1,0 +1,214 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Bachelor's degree in Computer Science, Telecommunications, Informatics, or related engineering field",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024)"
+      ],
+      "reasoning": "The candidate holds a B.Sc. in Computer Science from the University of Coimbra, which directly satisfies the education requirement."
+    },
+    {
+      "requirement": "Terraform / Infrastructure as Code",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV lists Python, SQL, Git, Pandas, NumPy, and Unit Testing, but contains no mention of Terraform or Infrastructure as Code."
+    },
+    {
+      "requirement": "Amazon Web Services (AWS) / Core AWS services",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of AWS or its core services in the candidate's CV."
+    },
+    {
+      "requirement": "CI/CD pipelines (GitHub Actions, GitLab CI)",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention CI/CD pipelines, GitHub Actions, or GitLab CI."
+    },
+    {
+      "requirement": "Docker and Kubernetes",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Containerization tools such as Docker and Kubernetes are completely absent from the CV."
+    },
+    {
+      "requirement": "Linux systems administration and shell scripting (Bash or Python)",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Python (listed in Technical Skills and used in Capstone Project)"
+      ],
+      "reasoning": "While Python is listed and demonstrated in a project, there is no evidence of Linux systems administration or shell scripting (Bash)."
+    },
+    {
+      "requirement": "Official AWS Certifications",
+      "category": "Certifications",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No certifications are listed on the CV."
+    },
+    {
+      "requirement": "GitOps methodologies (ArgoCD or Flux)",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GitOps methodologies or tools in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Tomás Silva"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is included in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No geographic location or address is provided."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is included."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub profile or portfolio URL is provided."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A brief objective/summary statement is present."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20"
+      ],
+      "relevance": "High",
+      "reasoning": "Degree, institution, dates, and grade are fully provided."
+    },
+    {
+      "section": "Experience",
+      "field": "Work Experience",
+      "status": "present",
+      "evidence": [
+        "Curricular Summer Internship (3 months)"
+      ],
+      "relevance": "High",
+      "reasoning": "Internship experience is documented, though brief and lacking a specific company name."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Skills & Tools",
+      "status": "present",
+      "evidence": [
+        "Python, SQL, Git",
+        "Pandas, NumPy, Unit Testing"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills and libraries/tools are explicitly listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "present",
+      "evidence": [
+        "Capstone Project: Customer Churn Analysis"
+      ],
+      "relevance": "High",
+      "reasoning": "A capstone project is detailed with technologies used."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications section or entries are present."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No languages section is present."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "No experience with Terraform or Infrastructure as Code",
+    "No experience with Amazon Web Services (AWS) or core AWS services",
+    "No experience with CI/CD pipelines (GitHub Actions, GitLab CI)",
+    "No containerization or orchestration experience (Docker, Kubernetes)",
+    "No Linux systems administration or shell scripting (Bash) experience",
+    "No official AWS certifications"
+  ],
+  "weak_evidence": [
+    "Python programming is evidenced through coursework/projects, but not applied in a DevOps or cloud infrastructure context"
+  ],
+  "strengths": [
+    "Holds a B.Sc. in Computer Science from the University of Coimbra with a strong grade (15/20)",
+    "Demonstrates foundational programming skills in Python and SQL through a relevant Capstone Project",
+    "Gained practical collaboration and QA experience via a curricular summer internship"
+  ],
+  "weaknesses": [
+    "Complete absence of core DevOps, cloud, containerization, and infrastructure automation tools required for the Cloud & DevOps Engineer role",
+    "Missing essential contact details including email address, phone number, and location",
+    "Lack of professional links such as LinkedIn or GitHub profile URLs"
+  ],
+  "overall_assessment": "The candidate Tomás Silva is a recent Computer Science graduate whose background is heavily aligned with software engineering and data science fundamentals (Python, SQL, Git, Pandas, Capstone Project in Customer Churn). However, the applicant lacks all core technical requirements for the Cloud & DevOps Engineer position, including AWS, Terraform, Docker, Kubernetes, CI/CD, and Linux systems administration. Additionally, the CV lacks vital contact information.",
+  "reasoning": "The evaluation compares the candidate's structured CV against the structured job posting for a Cloud & DevOps Engineer. While the educational requirement is met, there is a total mismatch in technical stack requirements (Cloud/DevOps vs. Data Science/Software Engineering). Furthermore, standard CV completeness checks reveal missing contact information and professional links."
+}

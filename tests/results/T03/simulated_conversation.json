@@ -1,0 +1,54 @@
+[
+  {
+    "question": "Could you confirm the exact job title from the posting as the target headline? (e.g., Cloud & DevOps Engineer)",
+    "answer": "Yes, the exact job title from the posting is Cloud & DevOps Engineer."
+  },
+  {
+    "question": "Could you please provide your missing email address? (You may reply with 'I do not have one' or skip)",
+    "answer": "My email address is tomas.silva.dev@example.com."
+  },
+  {
+    "question": "Could you please provide your phone number? (You may reply with 'I do not have one' or skip)",
+    "answer": "My phone number is +351 912 345 678."
+  },
+  {
+    "question": "Could you please provide your geographic location? (You may reply with 'I do not have one' or skip)",
+    "answer": "My location is Coimbra, Portugal, but I am open to relocation, hybrid work, or remote opportunities."
+  },
+  {
+    "question": "Could you please provide your LinkedIn profile URL? (You may reply with 'I do not have one' or skip)",
+    "answer": "Yes, my LinkedIn profile is https://www.linkedin.com/in/tomassilva-dev."
+  },
+  {
+    "question": "Could you please provide your GitHub or portfolio URL? (You may reply with 'I do not have one' or skip)",
+    "answer": "My GitHub profile is https://github.com/tomassilva-data, where you can find my data science and software engineering projects."
+  },
+  {
+    "question": "Could you confirm your employment details, specifically your Curricular Summer Internship (company name, dates, exact role, and key achievements)?",
+    "answer": "I worked as a Software Development Intern at SoftInov Soluções Tecnológicas from July to September 2023, where I automated unit and integration testing with pytest to raise service coverage from 62% to 79%. During the internship, I also handled PostgreSQL database queries and migrations, documented REST APIs with OpenAPI/Swagger, and worked within an agile Scrum environment."
+  },
+  {
+    "question": "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade if applicable)?",
+    "answer": "I graduated with a B.Sc. in Computer Science from the University of Coimbra (FCTUC) between September 2021 and July 2024 with a GPA of 15/20. My thesis was titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning,\" for which I received a grade of 17/20."
+  },
+  {
+    "question": "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash]. Do you have experience with any of these or any others you would like to include?",
+    "answer": "I have basic academic experience with Docker, Git, and Python/Bash scripting, but I do not have professional experience with AWS, Terraform, Kubernetes, or other advanced cloud and DevOps technologies listed in the job description."
+  },
+  {
+    "question": "Could you please provide your spoken languages and stated CEFR proficiency levels? (You may reply with 'I do not have one' or skip)",
+    "answer": "My native language is Portuguese, and I have a C1 Advanced proficiency in English, supported by a Cambridge Certificate."
+  },
+  {
+    "question": "Could you please provide any relevant certifications (name, issuer/provider, and year)? (You may reply with 'I do not have one' or skip)",
+    "answer": "I do not have any cloud certifications, as my background is focused on software engineering and data science rather than cloud infrastructure or DevOps."
+  },
+  {
+    "question": "Could you please provide relevant standalone projects, dates, technologies, and your individual contribution? (You may reply with 'I do not have one' or skip)",
+    "answer": "I do not have standalone cloud or infrastructure projects, as my academic and project background is focused on software development, SQL data analysis, and machine learning."
+  },
+  {
+    "question": "Could you confirm the key points to highlight in your professional summary?",
+    "answer": "I am a Computer Science graduate with a strong academic foundation in databases, algorithms, and software development. My professional summary should highlight my hands-on experience with Python, SQL, and Git from my internship and projects, while honestly reflecting that I am an entry-level candidate without production cloud, Terraform, or Kubernetes experience."
+  }
+]

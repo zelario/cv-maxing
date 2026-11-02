@@ -1,0 +1,22 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 5,
+  "completeness_score": 9,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Contact information, professional profiles, education grades, and language proficiencies provided by the user were accurately integrated.",
+    "Added high-impact quantitative achievements (e.g., reducing p95 latency by 38%) directly sourced from candidate input.",
+    "Clean layout, clear structure, and well-written professional summary.",
+    "Transparently preserved the candidate's core backend engineering competencies."
+  ],
+  "issues": [
+    "The generated CV headline states 'Fullstack Web Developer (React & Node.js)', but the candidate lacks experience in React, TypeScript, and Node.js as confirmed during the interview process, creating a mismatch with the target job posting.",
+    "One bullet point under experience ('Integrating RabbitMQ message brokers...') uses present participle instead of past tense like the surrounding bullet points."
+  ],
+  "recommendations": [
+    "Adjust the headline to align with the candidate's actual backend expertise or explicitly tailor the resume for roles matching Python/backend stacks.",
+    "Ensure consistent tense usage across all experience bullet points."
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Tomás Silva\nComputer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Tomás Silva | tomas.silva.dev@example.com | +351 912 345 678 | Coimbra, Portugal\nLinkedIn: https://www.linkedin.com/in/tomassilva-dev | GitHub: https://github.com/tomassilva-data",
+      "rationale": "Add verified contact information and professional profile links provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: tomas.silva.dev@example.com",
+        "Phone: +351 912 345 678",
+        "Location: Coimbra, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+        "GitHub: https://github.com/tomassilva-data"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Computer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Computer Science graduate and aspiring software engineer targeting entry-level roles. Proficient in Python, SQL, and Git, with practical experience automating unit tests and managing PostgreSQL databases. Completed a B.Sc. in Computer Science with a 15/20 grade and a top-graded thesis in predictive analytics.",
+      "rationale": "Update professional summary to align with format research: candidate identity and target role, 2-3 verified core skills, and a concrete verified achievement.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20",
+        "Python, SQL, Git"
+      ],
+      "user_provided_evidence": [
+        "Software Development Intern at SoftInov Soluções Tecnológicas",
+        "Thesis titled 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning' graded 17/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20",
+      "proposed_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20\nThesis: \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" (Grade: 17/20)",
+      "rationale": "Incorporate verified thesis details and grade provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Thesis: 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning' (Grade: 17/20)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration.",
+      "proposed_content": "Software Development Intern | SoftInov Soluções Tecnológicas (July 2023 - September 2023)\n- Automated unit and integration testing with pytest, raising test coverage from 62% to 79%.\n- Handled PostgreSQL database queries and migrations, supporting internal tool development.\n- Documented REST APIs with OpenAPI/Swagger and collaborated within an agile Scrum team.",
+      "rationale": "Expand internship details with specific company name, dates, and quantifiable achievements provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Company: SoftInov Soluções Tecnológicas",
+        "Dates: July to September 2023",
+        "Role: Software Development Intern",
+        "Achievements: Automated unit/integration testing with pytest raising coverage from 62% to 79%, handled PostgreSQL queries/migrations, documented REST APIs with OpenAPI/Swagger, worked in agile Scrum."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages & Tools: Python, SQL, Git\nLibraries/Concepts: Pandas, NumPy, Unit Testing",
+      "proposed_content": "Languages & Tools: Python, SQL, Git, Bash, Docker\nLibraries/Concepts: Pandas, NumPy, Unit Testing, PostgreSQL, pytest, REST APIs",
+      "rationale": "Add Bash, Docker, pytest, and REST APIs based on verified candidate evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Python, SQL, Git",
+        "Pandas, NumPy, Unit Testing"
+      ],
+      "user_provided_evidence": [
+        "Docker (basic academic experience)",
+        "Bash scripting",
+        "pytest",
+        "REST APIs"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages:\n- Portuguese (Native)\n- English (C1 Advanced - Cambridge Certificate)",
+      "rationale": "Add spoken languages and CEFR proficiency levels provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Advanced (Cambridge Certificate)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Could you confirm the exact job title from the posting as the target headline? (e.g., Cloud & DevOps Engineer)",
+    "Could you please provide your missing email address? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide your phone number? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide your geographic location? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide your LinkedIn profile URL? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide your GitHub or portfolio URL? (You may reply with 'I do not have one' or skip)",
+    "Could you confirm your employment details, specifically your Curricular Summer Internship (company name, dates, exact role, and key achievements)?",
+    "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade if applicable)?",
+    "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash]. Do you have experience with any of these or any others you would like to include?",
+    "Could you please provide your spoken languages and stated CEFR proficiency levels? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide any relevant certifications (name, issuer/provider, and year)? (You may reply with 'I do not have one' or skip)",
+    "Could you please provide relevant standalone projects, dates, technologies, and your individual contribution? (You may reply with 'I do not have one' or skip)",
+    "Could you confirm the key points to highlight in your professional summary?"
+  ],
+  "user_answers": [
+    {
+      "question": "Could you confirm the exact job title from the posting as the target headline? (e.g., Cloud & DevOps Engineer)",
+      "answer": "Yes, the exact job title from the posting is Cloud & DevOps Engineer.",
+      "gap": "Target job title confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your missing email address? (You may reply with 'I do not have one' or skip)",
+      "answer": "My email address is tomas.silva.dev@example.com.",
+      "gap": "Missing email address",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your phone number? (You may reply with 'I do not have one' or skip)",
+      "answer": "My phone number is +351 912 345 678.",
+      "gap": "Missing phone number",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your geographic location? (You may reply with 'I do not have one' or skip)",
+      "answer": "My location is Coimbra, Portugal, but I am open to relocation, hybrid work, or remote opportunities.",
+      "gap": "Missing location",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your LinkedIn profile URL? (You may reply with 'I do not have one' or skip)",
+      "answer": "Yes, my LinkedIn profile is https://www.linkedin.com/in/tomassilva-dev.",
+      "gap": "Missing LinkedIn URL",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your GitHub or portfolio URL? (You may reply with 'I do not have one' or skip)",
+      "answer": "My GitHub profile is https://github.com/tomassilva-data, where you can find my data science and software engineering projects.",
+      "gap": "Missing GitHub/portfolio URL",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your employment details, specifically your Curricular Summer Internship (company name, dates, exact role, and key achievements)?",
+      "answer": "I worked as a Software Development Intern at SoftInov Soluções Tecnológicas from July to September 2023, where I automated unit and integration testing with pytest to raise service coverage from 62% to 79%. During the internship, I also handled PostgreSQL database queries and migrations, documented REST APIs with OpenAPI/Swagger, and worked within an agile Scrum environment.",
+      "gap": "Incomplete internship company name, dates, and achievements",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade if applicable)?",
+      "answer": "I graduated with a B.Sc. in Computer Science from the University of Coimbra (FCTUC) between September 2021 and July 2024 with a GPA of 15/20. My thesis was titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning,\" for which I received a grade of 17/20.",
+      "gap": "Missing thesis topic and grade",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash]. Do you have experience with any of these or any others you would like to include?",
+      "answer": "I have basic academic experience with Docker, Git, and Python/Bash scripting, but I do not have professional experience with AWS, Terraform, Kubernetes, or other advanced cloud and DevOps technologies listed in the job description.",
+      "gap": "Lack of required DevOps and cloud technologies (Terraform, AWS, Kubernetes, CI/CD)",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Could you please provide your spoken languages and stated CEFR proficiency levels? (You may reply with 'I do not have one' or skip)",
+      "answer": "My native language is Portuguese, and I have a C1 Advanced proficiency in English, supported by a Cambridge Certificate.",
+      "gap": "Missing languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide any relevant certifications (name, issuer/provider, and year)? (You may reply with 'I do not have one' or skip)",
+      "answer": "I do not have any cloud certifications, as my background is focused on software engineering and data science rather than cloud infrastructure or DevOps.",
+      "gap": "Missing certifications",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Could you please provide relevant standalone projects, dates, technologies, and your individual contribution? (You may reply with 'I do not have one' or skip)",
+      "answer": "I do not have standalone cloud or infrastructure projects, as my academic and project background is focused on software development, SQL data analysis, and machine learning.",
+      "gap": "Missing standalone cloud/DevOps projects",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Could you confirm the key points to highlight in your professional summary?",
+      "answer": "I am a Computer Science graduate with a strong academic foundation in databases, algorithms, and software development. My professional summary should highlight my hands-on experience with Python, SQL, and Git from my internship and projects, while honestly reflecting that I am an entry-level candidate without production cloud, Terraform, or Kubernetes experience.",
+      "gap": "Professional summary alignment with target role",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: tomas.silva.dev@example.com",
+    "Phone: +351 912 345 678",
+    "Location: Coimbra, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+    "GitHub: https://github.com/tomassilva-data",
+    "Internship Company: SoftInov Soluções Tecnológicas",
+    "Internship Dates: July to September 2023",
+    "Internship Role: Software Development Intern",
+    "Internship Achievement: Automated unit/integration testing with pytest raising coverage from 62% to 79%",
+    "Internship Tasks: Handled PostgreSQL queries/migrations, documented REST APIs with OpenAPI/Swagger, worked in agile Scrum",
+    "Thesis Title: 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning'",
+    "Thesis Grade: 17/20",
+    "Languages: Portuguese (Native), English (C1 Advanced with Cambridge Certificate)",
+    "Technical additions: Basic academic Docker, Bash scripting, pytest, REST APIs"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on integrating newly provided contact details, professional links, detailed internship achievements (SoftInov Soluções Tecnológicas), thesis details, and languages while remaining transparent about evidence gaps regarding the target Cloud & DevOps Engineer role. Because the candidate's background is anchored in software engineering and data science rather than cloud infrastructure, the CV highlights foundational programming (Python, SQL, Git, Docker, Bash) and rigorous testing (pytest) while noting the absence of production AWS, Terraform, and Kubernetes experience.",
+  "unresolved_evidence_gaps": [
+    "No professional experience with Amazon Web Services (AWS) or core AWS services (EC2, S3, RDS, VPC, Route53)",
+    "No practical experience writing or managing modular Infrastructure as Code using Terraform",
+    "No production experience deploying and managing Kubernetes clusters or CI/CD pipelines (GitHub Actions, GitLab CI)",
+    "No official AWS certifications",
+    "No standalone cloud infrastructure projects"
+  ]
+}

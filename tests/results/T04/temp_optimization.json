@@ -1,0 +1,208 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Diogo Santos",
+      "proposed_content": "Diogo Santos\nBackend Software Engineer (Python)\nPorto, Portugal | diogo.santos.backend@example.com | +351 925 678 123\nLinkedIn: https://www.linkedin.com/in/diogosantos-backend | GitHub: https://github.com/dsantos-code",
+      "rationale": "Add target job title headline, contact information, location, and professional profile links provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: diogo.santos.backend@example.com",
+        "Phone: +351 925 678 123",
+        "Location: Porto, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+        "GitHub: https://github.com/dsantos-code"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+      "proposed_content": "Backend Software Engineer with 3.5 years of professional experience specializing in Python (FastAPI, Django), building high-throughput RESTful APIs and asynchronous microservices, and leading PostgreSQL optimization and Redis caching.",
+      "rationale": "Optimize the summary to align with the target role and incorporate verified core skills and achievements confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "user_provided_evidence": [
+        "3.5 years of experience building high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI and Django), PostgreSQL schema optimization, and Redis caching."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication.",
+      "proposed_content": "Backend Software Engineer\nCloudScale | 2021-Present (3.5 years)\n- Developing high-throughput RESTful APIs and asynchronous microservices in Python using FastAPI and Django.\n- Leading PostgreSQL schema design, indexing, and comprehensive query optimization.\n- Implementing Docker and Docker Compose containerization for standardized development and staging workflows.\n- Integrating RabbitMQ message brokers and Celery for asynchronous task queues and microservice communication.\n- Implementing Redis caching layers and writing robust unit and integration test suites using pytest.",
+      "rationale": "Incorporate confirmed technical stack details (Docker Compose, Celery, Redis, pytest) directly into the work experience descriptions.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "user_provided_evidence": [
+        "Docker Compose, Celery, Redis, and pytest experience used in production at CloudScale."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "",
+      "proposed_content": "Junior Web Developer\nSoftPorto Solutions | Sep 2020 - Dec 2020\n- Maintained internal CRM portals and backend workflows using Python and Django.\n- Assisted in database management and version control workflows using Git.",
+      "rationale": "Add verified prior internship experience at SoftPorto Solutions provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Junior Web Developer at SoftPorto Solutions from September to December 2020, maintaining internal CRM portals with Python and Django."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)",
+      "proposed_content": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020) | Final Grade: 14/20",
+      "rationale": "Add confirmed grade point average for the B.Sc. degree from FEUP.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+      ],
+      "user_provided_evidence": [
+        "Final grade of 14/20 for B.Sc. in Informatics and Computing Engineering at FEUP."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages & Frameworks: Python, FastAPI, Django\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux\nTools: Git",
+      "proposed_content": "Languages & Frameworks: Python, FastAPI, Django, Flask\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, Docker Compose, RabbitMQ, Celery, AWS (S3, EC2, RDS), Linux\nTesting & Tools: pytest, Git, GitHub Actions",
+      "rationale": "Expand technical skills section to include Flask, Docker Compose, Celery, pytest, GitHub Actions, and AWS based on candidate confirmation.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "user_provided_evidence": [
+        "Flask, Docker Compose, Celery, pytest, GitHub Actions, and AWS (S3, EC2, RDS) experience."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 - Full Professional Proficiency)",
+      "rationale": "Add spoken languages and CEFR proficiency levels confirmed by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native), English (C1 Full Professional proficiency)."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Projects",
+      "current_content": "",
+      "proposed_content": "PROJECTS\n- Distributed Key-Value Store: Built a resilient distributed key-value store in Python and C++ featuring replication, fault tolerance, and consensus algorithms (FEUP Academic Project).\n- Hospital RDBMS Project: Designed and implemented a relational database management system for hospital operations, optimizing complex SQL queries and indexing strategies.",
+      "rationale": "Add standalone academic projects confirmed by the candidate to strengthen evidence for distributed systems and database design.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Distributed Key-Value Store (Python, C++) and Hospital RDBMS project from FEUP."
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Can we confirm the exact target job title as 'Backend Software Engineer (Python)' for your CV headline?",
+    "Your CV is currently missing your email address, phone number, and location. Please provide your email, phone, and location, or let me know if you prefer to skip or do not wish to include them.",
+    "Your CV is missing your LinkedIn URL and portfolio/GitHub URL. Please provide them if you have them, or let me know if you would like to skip or do not have them.",
+    "Let's confirm your employment details. You have Backend Software Engineer at CloudScale from 2021 to Present with responsibilities in FastAPI, Django, PostgreSQL, Docker, and RabbitMQ. Are there any other companies, internships, or achievements you would like to add?",
+    "Let's confirm your education details. Your CV lists a B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Could you please confirm if you have a final grade/GPA, or if you completed a thesis and its topic/grade?",
+    "More specifically, the job posting mentions/requires: Python, FastAPI, Flask, Django, PostgreSQL, Docker, Docker Compose, Redis, pytest, RESTful API design, HTTP protocols, Microservice architecture, Git, RabbitMQ, Apache Kafka, Celery, AWS (EC2, S3, RDS), GCP, GitHub Actions, GitLab CI, and Kubernetes. Do you have experience with any of these or any others you would like to include?",
+    "What spoken or natural languages do you speak, and what are your CEFR proficiency levels (e.g., Portuguese (Native), English (Professional Working / C1))?",
+    "Do you have any relevant professional certifications or training courses you would like to include? Please provide the name, issuer/provider, and year.",
+    "Do you have any relevant standalone projects or competitions you would like to include? Please provide the name, dates, technologies used, and your individual contribution.",
+    "To highlight your fit for the Backend Software Engineer (Python) role, which key points should we emphasize in your professional summary (e.g., 3 years of Python/FastAPI/Django development, relational database optimization, or microservices)?"
+  ],
+  "user_answers": [
+    {
+      "question": "Can we confirm the exact target job title as 'Backend Software Engineer (Python)' for your CV headline?",
+      "answer": "Yes, we can confirm \"Backend Software Engineer (Python)\" as the target job title for my CV headline.",
+      "gap": "Target headline confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "Your CV is currently missing your email address, phone number, and location. Please provide your email, phone, and location, or let me know if you prefer to skip or do not wish to include them.",
+      "answer": "You can reach me at diogo.santos.backend@example.com or +351 925 678 123, and I am based in Porto, Portugal.",
+      "gap": "Missing email, phone, and location",
+      "resolution": "supported"
+    },
+    {
+      "question": "Your CV is missing your LinkedIn URL and portfolio/GitHub URL. Please provide them if you have them, or let me know if you would like to skip or do not have them.",
+      "answer": "My LinkedIn profile is https://www.linkedin.com/in/diogosantos-backend and my GitHub is https://github.com/dsantos-code. I do not have a separate portfolio website.",
+      "gap": "Missing LinkedIn and GitHub/portfolio URLs",
+      "resolution": "supported"
+    },
+    {
+      "question": "Let's confirm your employment details. You have Backend Software Engineer at CloudScale from 2021 to Present with responsibilities in FastAPI, Django, PostgreSQL, Docker, and RabbitMQ. Are there any other companies, internships, or achievements you would like to add?",
+      "answer": "I also worked briefly as a Junior Web Developer at SoftPorto Solutions from September to December 2020, maintaining internal CRM portals with Python and Django.",
+      "gap": "Prior internship/employment history",
+      "resolution": "supported"
+    },
+    {
+      "question": "Let's confirm your education details. Your CV lists a B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Could you please confirm if you have a final grade/GPA, or if you completed a thesis and its topic/grade?",
+      "answer": "I completed my B.Sc. in Informatics and Computing Engineering at FEUP with a final grade of 14/20. During my studies, I completed academic projects including a Distributed Key-Value Store and a Hospital RDBMS, but I did not complete a formal written thesis.",
+      "gap": "Education grade and thesis details",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: Python, FastAPI, Flask, Django, PostgreSQL, Docker, Docker Compose, Redis, pytest, RESTful API design, HTTP protocols, Microservice architecture, Git, RabbitMQ, Apache Kafka, Celery, AWS (EC2, S3, RDS), GCP, GitHub Actions, GitLab CI, and Kubernetes. Do you have experience with any of these or any others you would like to include?",
+      "answer": "Yes, I have extensive experience with Python (FastAPI, Django, Flask), PostgreSQL, Docker, Docker Compose, Redis, pytest, RESTful APIs, and microservices. I also work with RabbitMQ, Celery, Git, GitHub Actions, Linux, and have basic experience with AWS (S3, EC2, RDS), though I do not have experience with Kubernetes, Kafka, or GCP.",
+      "gap": "Technical skills alignment against job stack",
+      "resolution": "supported"
+    },
+    {
+      "question": "What spoken or natural languages do you speak, and what are your CEFR proficiency levels (e.g., Portuguese (Native), English (Professional Working / C1))?",
+      "answer": "I am a native Portuguese speaker and also have C1 Full Professional proficiency in English.",
+      "gap": "Spoken languages and CEFR proficiency",
+      "resolution": "supported"
+    },
+    {
+      "question": "Do you have any relevant professional certifications or training courses you would like to include? Please provide the name, issuer/provider, and year.",
+      "answer": "I do not have any professional certifications, as my expertise is built entirely on my hands-on backend software engineering experience and my degree in Informatics and Computing Engineering.",
+      "gap": "Professional certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Do you have any relevant standalone projects or competitions you would like to include? Please provide the name, dates, technologies used, and your individual contribution.",
+      "answer": "Yes, during my degree at FEUP I built a Distributed Key-Value Store using Python and C++ featuring replication and fault tolerance, as well as a Hospital RDBMS project. You can check out my code on my GitHub profile (github.com/dsantos-code).",
+      "gap": "Standalone projects and repositories",
+      "resolution": "supported"
+    },
+    {
+      "question": "To highlight your fit for the Backend Software Engineer (Python) role, which key points should we emphasize in your professional summary (e.g., 3 years of Python/FastAPI/Django development, relational database optimization, or microservices)?",
+      "answer": "I should emphasize my 3.5 years of experience building high-throughput RESTful APIs and asynchronous microservices using Python (FastAPI and Django), as well as my proven track record in PostgreSQL schema optimization and Redis caching to reduce database load.",
+      "gap": "Summary highlights and positioning",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: diogo.santos.backend@example.com",
+    "Phone: +351 925 678 123",
+    "Location: Porto, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+    "GitHub: https://github.com/dsantos-code",
+    "Junior Web Developer at SoftPorto Solutions from September to December 2020",
+    "Final grade of 14/20 for B.Sc. in Informatics and Computing Engineering at FEUP",
+    "Experience with Flask, Docker Compose, Celery, pytest, GitHub Actions, and AWS (S3, EC2, RDS)",
+    "Portuguese (Native), English (C1 Full Professional proficiency)",
+    "Distributed Key-Value Store and Hospital RDBMS academic projects at FEUP"
+  ],
+  "optimization_strategy": "Execute a rigorous two-phase evidence-based optimization. Phase 1 established structural enhancements based strictly on the original CV evidence, while Phase 2 engaged the candidate interactively using the ask_user tool to resolve missing contact information, profile URLs, internship experience, education grades, technical skills mapped against the job stack, natural languages, and academic projects. Unverified preferred stack items (Kubernetes, Kafka, GCP) were correctly omitted, ensuring 100% adherence to candidate-provided evidence.",
+  "unresolved_evidence_gaps": [
+    "No professional certifications (candidate confirmed none held).",
+    "No experience with Kubernetes, Apache Kafka, or GCP (confirmed by candidate as not applicable/unsupported)."
+  ]
+}

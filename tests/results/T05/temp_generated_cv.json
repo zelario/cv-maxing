@@ -1,0 +1,97 @@
+{
+  "contact": {
+    "name": "Diogo Santos",
+    "headline": "Fullstack Web Developer (React & Node.js)",
+    "specialisation": "Backend Engineering",
+    "phone": "+351 925 678 123",
+    "email": "diogo.santos.backend@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/diogosantos-backend",
+    "github": "https://github.com/dsantos-code",
+    "portfolio": ""
+  },
+  "summary": "Backend Software Engineer with over 3 years of professional experience designing RESTful APIs, high-throughput microservices, and robust relational databases using Python and PostgreSQL, achieving proven performance optimizations such as a 38% reduction in p95 query latency.",
+  "experience": [
+    {
+      "title": "Backend Software Engineer",
+      "dates": "2021-Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Designed and maintained 12+ REST microservices serving over 800 requests per second using Python, FastAPI, and Django.",
+        "Led PostgreSQL schema design and comprehensive query optimization, reducing p95 latency by 38% and decreasing database load by 45% via Redis caching.",
+        "Implemented Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Informatics and Computing Engineering",
+      "dates": "2017-2020",
+      "institution": "FEUP",
+      "location": "Porto, Portugal",
+      "grade": "14/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Languages & Frameworks",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Django"
+      ]
+    },
+    {
+      "category_name": "Databases & Infrastructure",
+      "skills": [
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "RabbitMQ",
+        "Linux"
+      ]
+    },
+    {
+      "category_name": "Tools & Platforms",
+      "skills": [
+        "Git",
+        "GitHub"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native proficiency",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Distributed Key-Value Store",
+      "dates": "2017-2020",
+      "description": "Developed a Distributed Key-Value Store using Python and C++ focusing on replication and fault tolerance as part of academic coursework at FEUP.",
+      "link": "https://github.com/dsantos-code",
+      "volunteering_or_other": ""
+    },
+    {
+      "name": "Hospital RDBMS Project",
+      "dates": "2017-2020",
+      "description": "Built a relational database project for a hospital system as part of academic coursework at FEUP.",
+      "link": "https://github.com/dsantos-code",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

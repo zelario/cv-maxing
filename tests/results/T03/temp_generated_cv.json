@@ -1,0 +1,85 @@
+{
+  "contact": {
+    "name": "Tomás Silva",
+    "headline": "Cloud & DevOps Engineer",
+    "specialisation": "Software Engineering & Data Science",
+    "phone": "+351 912 345 678",
+    "email": "tomas.silva.dev@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/tomassilva-dev",
+    "github": "https://github.com/tomassilva-data",
+    "portfolio": ""
+  },
+  "summary": "Computer Science graduate and aspiring software engineer targeting entry-level roles. Proficient in Python, SQL, and Git, with practical experience automating unit tests and managing PostgreSQL databases. Completed a B.Sc. in Computer Science with a 15/20 grade and a top-graded thesis in predictive analytics.",
+  "experience": [
+    {
+      "title": "Software Development Intern",
+      "dates": "July 2023 - September 2023",
+      "company": "SoftInov Soluções Tecnológicas",
+      "location": "Coimbra, Portugal",
+      "bullets": [
+        "Automated unit and integration testing with pytest, raising test coverage from 62% to 79%.",
+        "Handled PostgreSQL database queries and migrations, supporting internal tool development.",
+        "Documented REST APIs with OpenAPI/Swagger and collaborated within an agile Scrum team."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "dates": "2021-2024",
+      "institution": "University of Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Tools",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git",
+        "Bash",
+        "Docker"
+      ]
+    },
+    {
+      "category_name": "Libraries & Concepts",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "Unit Testing",
+        "PostgreSQL",
+        "pytest",
+        "REST APIs"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "Advanced professional proficiency",
+      "certification": "Cambridge Certificate"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Capstone Project: Customer Churn Analysis",
+      "dates": "2024",
+      "description": "Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    }
+  ],
+  "consent": true
+}

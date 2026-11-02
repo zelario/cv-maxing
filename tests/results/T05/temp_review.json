@@ -1,0 +1,233 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "React & TypeScript",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention experience or proficiency in React or TypeScript."
+    },
+    {
+      "requirement": "Node.js or Python",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Candidate demonstrates professional backend experience using Python (FastAPI, Django)."
+    },
+    {
+      "requirement": "HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of HTML5, CSS3, responsive design, or Tailwind CSS in the CV."
+    },
+    {
+      "requirement": "RESTful APIs",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django."
+      ],
+      "reasoning": "Candidate explicitly highlights building RESTful APIs in professional experience."
+    },
+    {
+      "requirement": "Git and GitHub-based development workflows",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Tools: Git"
+      ],
+      "reasoning": "Git is listed under technical skills, but GitHub or GitHub-based workflows are not mentioned."
+    },
+    {
+      "requirement": "Next.js",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Next.js is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "PostgreSQL, MySQL, or MongoDB",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Leading PostgreSQL schema design and comprehensive query optimization."
+      ],
+      "reasoning": "PostgreSQL is explicitly demonstrated in professional experience."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Implementing Docker containerization for standardized deployment environments."
+      ],
+      "reasoning": "Docker containerization is explicitly demonstrated in professional experience."
+    },
+    {
+      "requirement": "WCAG 2.1",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of web accessibility standards or WCAG 2.1."
+    },
+    {
+      "requirement": "Active portfolio of deployed web applications or open-source repositories / GitHub profile / Portfolio links",
+      "category": "Application Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio links, GitHub profile URLs, or links to deployed web projects are present in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Personal Info / Name",
+      "status": "present",
+      "evidence": [
+        "Diogo Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No physical location or address is provided."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is included."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No GitHub URL or portfolio link is provided in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Backend Software Engineer at CloudScale | 2021-Present (3 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Professional experience section is detailed with job title, company, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering, FEUP (2017-2020)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education details including degree, institution, and dates are present."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills are categorized and listed clearly."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No dedicated projects section is included in the CV."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training section is present."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No spoken languages section is included."
+    },
+    {
+      "section": "Consent",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "React and modern TypeScript experience",
+    "Frontend development experience (HTML5, modern CSS3, responsive design, Tailwind CSS)",
+    "Next.js framework experience",
+    "Web accessibility standards (WCAG 2.1)",
+    "Portfolio links, GitHub profile URL, or deployed web project links"
+  ],
+  "weak_evidence": [
+    "Git version control is listed as a tool without explicit reference to GitHub-based collaboration workflows."
+  ],
+  "strengths": [
+    "Demonstrated backend engineering experience with Python, FastAPI, and Django over 3 years.",
+    "Practical experience with database design and query optimization using PostgreSQL.",
+    "Experience with containerization (Docker) and message brokers (RabbitMQ).",
+    "Relevant educational background with a B.Sc. in Informatics and Computing Engineering from FEUP."
+  ],
+  "weaknesses": [
+    "Complete lack of frontend development competencies (React, TypeScript, HTML/CSS, Tailwind) required for the fullstack position.",
+    "Missing critical contact information (email, phone, location) and professional profile links (LinkedIn, GitHub/portfolio).",
+    "Absence of required application materials such as portfolio or GitHub profile links."
+  ],
+  "overall_assessment": "The candidate, Diogo Santos, is a backend-focused software engineer with 3 years of experience specializing in Python, FastAPI, Django, PostgreSQL, and Docker. In contrast, the target position is for a Fullstack Web Developer (React & Node.js) requiring strong frontend proficiency in React, TypeScript, HTML/CSS, and Tailwind CSS, alongside portfolio/GitHub links. While the candidate satisfies backend-related criteria such as Python, RESTful APIs, PostgreSQL, and Docker, there is a total lack of evidence for required frontend technologies, Next.js, and mandatory portfolio/GitHub links. Additionally, the CV lacks essential contact information and profile links.",
+  "reasoning": "The evaluation maps the candidate's stated experience and skills against the job posting requirements using an evidence-based methodology. Requirements were categorized and checked against explicit mentions and contextual evidence in the CV. Completeness was assessed independently across all standard dimensions based strictly on the provided CV text."
+}

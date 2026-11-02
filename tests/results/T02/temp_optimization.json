@@ -1,0 +1,200 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Tomás Silva\nComputer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Tomás Silva | tomas.silva.dev@example.com | +351 912 345 678 | Coimbra, Portugal | https://www.linkedin.com/in/tomassilva-dev | https://github.com/tomassilva-data",
+      "rationale": "Add verified contact information and profile URLs provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: tomas.silva.dev@example.com",
+        "Phone: +351 912 345 678",
+        "Location: Coimbra, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+        "GitHub: https://github.com/tomassilva-data"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Computer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Dedicated Computer Science graduate targeting a Backend Software Engineer (Python) role, leveraging verified core skills in Python, PostgreSQL, and Docker. Proven academic excellence with a 15/20 B.Sc. degree from the University of Coimbra and practical internship experience building robust automated test suites and backend query workflows.",
+      "rationale": "Create an impactful 3-line professional summary tailored to the target role following format research guidelines and strictly grounded in verified evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Computer Science graduate seeking an entry-level opportunity",
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Target role: Backend Software Engineer (Python)",
+        "Internship experience with Python, PostgreSQL, Docker, and pytest at SoftInov Soluções Tecnológicas"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration.",
+      "proposed_content": "Software Development Intern | SoftInov Soluções Tecnológicas (July 2023 – September 2023, 3 months)\n- Automated testing frameworks and backend test suites using Python and pytest.\n- Handled PostgreSQL queries and database migrations supporting internal tools.\n- Documented REST APIs and collaborated with engineering teams using Git and Docker.",
+      "rationale": "Enhance experience section with company name, exact dates, and concrete responsibilities confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support..."
+      ],
+      "user_provided_evidence": [
+        "Company name: SoftInov Soluções Tecnológicas",
+        "Dates: July to September 2023",
+        "Tasks: automated testing with pytest, PostgreSQL queries and migrations, documented REST APIs, Docker, Git"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20",
+      "proposed_content": "B.Sc. in Computer Science\nUniversity of Coimbra (September 2021 – July 2024)\nGrade: 15/20\nThesis: \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" (Grade: 17/20)",
+      "rationale": "Incorporate precise university dates and thesis details provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Degree dates: September 2021 to July 2024",
+        "Thesis topic: Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning (Grade: 17/20)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages & Tools: Python, SQL, Git\nLibraries/Concepts: Pandas, NumPy, Unit Testing",
+      "proposed_content": "Languages & Tools: Python, SQL, Docker, Git, PostgreSQL\nLibraries/Frameworks & Concepts: Pandas, NumPy, pytest, RESTful APIs, Unit Testing",
+      "rationale": "Update technical skills to accurately reflect confirmed experience with Python, PostgreSQL, Docker, and pytest while omitting unconfirmed frameworks.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Python, SQL, Git",
+        "Pandas, NumPy, Unit Testing"
+      ],
+      "user_provided_evidence": [
+        "Confirmed experience with Python, PostgreSQL, Docker, and pytest"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Key Projects",
+      "current_content": "Capstone Project: Customer Churn Analysis: Built a data pipeline in\nPython analyzing customer churn and retention using Pandas, Scikit-Learn,\nand PostgreSQL.",
+      "proposed_content": "Capstone Project: Customer Churn Analysis\n- Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.\n- Developed an E-Commerce Cohort & Sales SQL Analyzer processing over 250k transactions using PostgreSQL (CTEs, window functions) and Python (Matplotlib, Seaborn).\n- Developed a Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring.",
+      "rationale": "Add candidate-provided standalone projects (E-Commerce SQL Analyzer and Mini Inverted-Index Search Engine) to strengthen the project portfolio.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "user_provided_evidence": [
+        "E-Commerce Cohort & Sales SQL Analyzer using PostgreSQL, CTEs, window functions, and Python (Matplotlib, Seaborn) processing over 250k transactions",
+        "Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Advanced, Cambridge Certificate)",
+      "rationale": "Add verified spoken languages and CEFR proficiency levels provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Advanced (Cambridge Certificate)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Could you please confirm the exact job title from the posting as the target headline? (e.g., Backend Software Engineer (Python))",
+    "Could you please provide your email address, phone number, location, LinkedIn URL, and GitHub/portfolio URL? (You may reply with \"I do not have one\" or skip any missing items).",
+    "Could you please confirm your employment and internship details (company names, exact dates, and achievements for your listed roles)?",
+    "Could you please confirm your education degree, institution, dates, grade/GPA, and any thesis topic and grade?",
+    "More specifically, the job posting mentions/requires: Python (FastAPI, Flask, or Django), PostgreSQL, Docker and Docker Compose, Redis, pytest, RESTful API design principles, HTTP protocols, and microservice architecture. Do you have experience with any of these or any others you would like to include?",
+    "Could you please provide your spoken languages and stated CEFR proficiency levels?",
+    "Could you please provide any relevant certifications (name, issuer/provider, and year)?",
+    "Could you please provide any relevant standalone projects, dates, technologies, and your individual contribution?",
+    "Could you please confirm the key points you would like to highlight in your professional summary?"
+  ],
+  "user_answers": [
+    {
+      "question": "Could you please confirm the exact job title from the posting as the target headline? (e.g., Backend Software Engineer (Python))",
+      "answer": "Yes, the exact job title from the posting is Backend Software Engineer (Python).",
+      "gap": "Target job title confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your email address, phone number, location, LinkedIn URL, and GitHub/portfolio URL? (You may reply with \"I do not have one\" or skip any missing items).",
+      "answer": "My email is tomas.silva.dev@example.com, my phone number is +351 912 345 678, and my location is Coimbra, Portugal. My LinkedIn URL is https://www.linkedin.com/in/tomassilva-dev and my GitHub URL is https://github.com/tomassilva-data.",
+      "gap": "Missing contact information and profile URLs",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please confirm your employment and internship details (company names, exact dates, and achievements for your listed roles)?",
+      "answer": "I completed a 3-month Software Development Internship at SoftInov Soluções Tecnológicas from July to September 2023, where I automated testing with pytest, handled PostgreSQL queries and migrations, and documented REST APIs.",
+      "gap": "Employment company name, dates, and achievements",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please confirm your education degree, institution, dates, grade/GPA, and any thesis topic and grade?",
+      "answer": "My degree is a B.Sc. in Computer Science (Licenciatura em Engenharia Informática) from the University of Coimbra (FCTUC), completed from September 2021 to July 2024 with a GPA of 15/20. My thesis was titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" and received a grade of 17/20.",
+      "gap": "Education dates and thesis details",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: Python (FastAPI, Flask, or Django), PostgreSQL, Docker and Docker Compose, Redis, pytest, RESTful API design principles, HTTP protocols, and microservice architecture. Do you have experience with any of these or any others you would like to include?",
+      "answer": "Yes, I have experience with Python, PostgreSQL, Docker, and pytest from my academic projects and my software development internship at SoftInov Soluções Tecnológicas. However, I do not have experience with Redis, FastAPI, Flask, Django, or microservice architecture.",
+      "gap": "Required backend frameworks (FastAPI, Flask, Django), Redis, microservices, and Docker/pytest confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide your spoken languages and stated CEFR proficiency levels?",
+      "answer": "My native language is Portuguese, and I have a C1 Advanced proficiency in English backed by a Cambridge Certificate.",
+      "gap": "Spoken languages and CEFR proficiency levels",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please provide any relevant certifications (name, issuer/provider, and year)?",
+      "answer": "I do not have any professional certifications to list. However, I hold a Cambridge Certificate demonstrating C1 Advanced proficiency in English.",
+      "gap": "Professional certifications",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Could you please provide any relevant standalone projects, dates, technologies, and your individual contribution?",
+      "answer": "During my B.Sc., I developed an E-Commerce Cohort & Sales SQL Analyzer using PostgreSQL, CTEs, window functions, and Python (Matplotlib, Seaborn) to process and analyze over 250k transactions. I also built a Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring.",
+      "gap": "Standalone projects and contributions",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you please confirm the key points you would like to highlight in your professional summary?",
+      "answer": "I would like to highlight my strong Python backend development skills, my practical experience with PostgreSQL and Docker from my software internship, and my Computer Science degree from the University of Coimbra.",
+      "gap": "Summary highlights",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Target role: Backend Software Engineer (Python)",
+    "Email: tomas.silva.dev@example.com",
+    "Phone: +351 912 345 678",
+    "Location: Coimbra, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+    "GitHub: https://github.com/tomassilva-data",
+    "Internship Company: SoftInov Soluções Tecnológicas",
+    "Internship Dates: July to September 2023 (3 months)",
+    "Internship Details: automated testing with pytest, PostgreSQL queries and migrations, documented REST APIs, Docker, Git",
+    "Education Dates: September 2021 to July 2024",
+    "Thesis: Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning (Grade: 17/20)",
+    "Technical Skills confirmed: Python, PostgreSQL, Docker, pytest",
+    "Languages: Portuguese (Native), English (C1 Advanced with Cambridge Certificate)",
+    "Project 1: E-Commerce Cohort & Sales SQL Analyzer using PostgreSQL, CTEs, window functions, and Python (Matplotlib, Seaborn) analyzing over 250k transactions",
+    "Project 2: Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on integrating all missing contact information, populating precise internship and education timelines, adding candidate-provided academic and project accomplishments (SQL Analyzer and Search Engine), and structuring a tailored professional summary aligned with the Backend Software Engineer (Python) role while remaining strictly faithful to verified user evidence and transparently omitting unverified framework skills.",
+  "unresolved_evidence_gaps": [
+    "No experience with FastAPI, Flask, Django, or microservice architecture.",
+    "No experience with Redis caching.",
+    "No professional certifications."
+  ]
+}

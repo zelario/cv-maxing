@@ -1,0 +1,98 @@
+{
+  "contact": {
+    "name": "Tomás Silva",
+    "headline": "Backend Software Engineer (Python)",
+    "specialisation": "Computer Science",
+    "phone": "+351 912 345 678",
+    "email": "tomas.silva.dev@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/tomassilva-dev",
+    "github": "https://github.com/tomassilva-data",
+    "portfolio": ""
+  },
+  "summary": "Dedicated Computer Science graduate targeting a Backend Software Engineer (Python) role, leveraging verified core skills in Python, PostgreSQL, and Docker. Proven academic excellence with a 15/20 B.Sc. degree from the University of Coimbra and practical internship experience building robust automated test suites and backend query workflows.",
+  "experience": [
+    {
+      "title": "Software Development Intern",
+      "dates": "July 2023 – September 2023",
+      "company": "SoftInov Soluções Tecnológicas",
+      "location": "Coimbra, Portugal",
+      "bullets": [
+        "Automated testing frameworks and backend test suites using Python and pytest.",
+        "Handled PostgreSQL queries and database migrations supporting internal tools.",
+        "Documented REST APIs and collaborated with engineering teams using Git and Docker."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "dates": "September 2021 – July 2024",
+      "institution": "University of Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Tools",
+      "skills": [
+        "Python",
+        "SQL",
+        "Docker",
+        "Git",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "category_name": "Libraries, Frameworks & Concepts",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "pytest",
+        "RESTful APIs",
+        "Unit Testing"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "",
+      "certification": "Cambridge Certificate"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Capstone Project: Customer Churn Analysis",
+      "dates": "2024",
+      "description": "Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    },
+    {
+      "name": "E-Commerce Cohort & Sales SQL Analyzer",
+      "dates": "2023 – 2024",
+      "description": "Developed an E-Commerce Cohort & Sales SQL Analyzer using PostgreSQL (CTEs, window functions) and Python (Matplotlib, Seaborn) processing over 250k transactions.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    },
+    {
+      "name": "Mini Inverted-Index Search Engine",
+      "dates": "2023 – 2024",
+      "description": "Developed a Mini Inverted-Index Search Engine in Python featuring document parsing, tokenization, and TF-IDF scoring.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    }
+  ],
+  "consent": true
+}
