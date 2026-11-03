@@ -66,7 +66,8 @@ def prepare_generated_cv(
 
     raw_dict = _unescape_strings(generated.model_dump())
     prepared = GeneratedCV.model_validate(raw_dict)
-    if job and job.job_title.strip():
+    # Only fallback to job title if candidate/generator headline is not already set
+    if not (prepared.contact.headline and prepared.contact.headline.strip()) and job and job.job_title.strip():
         prepared.contact.headline = job.job_title.strip()
     # Normalize GitHub URL if provided as username or relative path
     if prepared.contact.github:
