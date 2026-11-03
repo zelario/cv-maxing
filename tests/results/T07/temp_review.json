@@ -1,0 +1,281 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript.",
+      "category": "Experience & Core Tech",
+      "status": "weak_evidence",
+      "evidence": [
+        "Frontend Developer at PixelWave: Building single-page web applications using React and TypeScript.",
+        "Skills: React, TypeScript"
+      ],
+      "reasoning": "The candidate has demonstrated hands-on experience with React and TypeScript in a frontend role (PixelWave), but lacks fullstack web development experience (backend technologies)."
+    },
+    {
+      "requirement": "Solid foundational knowledge of backend server development using Node.js or Python.",
+      "category": "Backend Development",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Node.js, Python, or backend server development experience in the CV."
+    },
+    {
+      "requirement": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)",
+      "category": "Frontend & Styling",
+      "status": "satisfied",
+      "evidence": [
+        "Web developer specializing in responsive interfaces...",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
+        "Skills: HTML5, CSS3/Tailwind"
+      ],
+      "reasoning": "The candidate explicitly specializes in responsive interfaces, lists HTML5 and CSS3/Tailwind, and demonstrates Tailwind CSS usage in their experience."
+    },
+    {
+      "requirement": "Experience consuming and designing RESTful APIs and handling asynchronous data flows.",
+      "category": "API Integration",
+      "status": "weak_evidence",
+      "evidence": [
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ],
+      "reasoning": "The candidate shows experience consuming REST APIs, but there is no evidence of designing RESTful APIs or handling complex asynchronous data flows beyond basic integration."
+    },
+    {
+      "requirement": "Strong proficiency with Git and GitHub-based development workflows.",
+      "category": "Tools & Workflow",
+      "status": "weak_evidence",
+      "evidence": [
+        "Skills: Git"
+      ],
+      "reasoning": "Git is listed in the skills section, but no context or project evidence demonstrates a GitHub-based development workflow."
+    },
+    {
+      "requirement": "Experience with Next.js (Server-Side Rendering, Static Site Generation, and App Router).",
+      "category": "Preferred Tech",
+      "status": "weak_evidence",
+      "evidence": [
+        "Skills: Next.js"
+      ],
+      "reasoning": "Next.js is listed in the skills section, but there is no contextual evidence or project work demonstrating SSR, SSG, or App Router experience."
+    },
+    {
+      "requirement": "Familiarity with relational or document databases (PostgreSQL, MySQL, or MongoDB).",
+      "category": "Preferred Tech",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No databases are mentioned in the CV skills or experience sections."
+    },
+    {
+      "requirement": "Experience with containerization using Docker.",
+      "category": "Preferred Tech",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Docker is not mentioned in the CV."
+    },
+    {
+      "requirement": "Understanding of web accessibility standards (WCAG 2.1).",
+      "category": "Preferred Tech",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of WCAG or web accessibility standards in the CV."
+    },
+    {
+      "requirement": "High attention to detail regarding visual polish, micro-interactions, and user-centric design.",
+      "category": "Soft Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Education: B.Sc. in Design and Multimedia (2018-2021)",
+        "Skills: Figma"
+      ],
+      "reasoning": "The candidate has a background in Design and Multimedia and lists Figma, providing indirect evidence of design sensibilities, but lacks direct context regarding micro-interactions in software engineering."
+    },
+    {
+      "requirement": "Excellent communication and teamwork skills, with the ability to work independently in a remote-first setup.",
+      "category": "Soft Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention communication, teamwork, or remote work capabilities."
+    },
+    {
+      "requirement": "An active portfolio of deployed web applications or open-source repositories.",
+      "category": "Portfolio",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio links or open-source repository references are provided in the CV."
+    },
+    {
+      "requirement": "Please submit your CV accompanied by links to your portfolio, GitHub profile, or deployed web projects that demonstrate your ability to deliver end-to-end web experiences.",
+      "category": "Application Material",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio, GitHub profile, or project links are included in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Full Name",
+      "status": "present",
+      "evidence": [
+        "Mariana Costa"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location or address is provided in the CV."
+    },
+    {
+      "section": "Contact / Links",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is provided in the CV."
+    },
+    {
+      "section": "Contact / Links",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No GitHub or portfolio URL is present in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Frontend Developer | PixelWave (2022-Present, 2 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "One professional experience entry is provided with roles and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Educational background is included."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+      ],
+      "relevance": "High",
+      "reasoning": "A dedicated technical skills list is provided."
+    },
+    {
+      "section": "Skills",
+      "field": "Tools / Software",
+      "status": "present",
+      "evidence": [
+        "Git, Figma"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Tools like Git and Figma are included in the skills list."
+    },
+    {
+      "section": "Methodologies",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No specific methodologies (e.g., Agile, Scrum) are explicitly detailed."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No spoken or programming languages section separate from skills is provided (though programming languages are in skills)."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No dedicated personal or academic projects section is included."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR compliance statement is present."
+    }
+  ],
+  "missing_evidence": [
+    "Backend server development experience using Node.js or Python",
+    "Experience designing RESTful APIs and handling complex asynchronous data flows",
+    "Familiarity with relational or document databases (PostgreSQL, MySQL, MongoDB)",
+    "Containerization experience with Docker",
+    "Understanding of web accessibility standards (WCAG 2.1)",
+    "Portfolio of deployed web applications or open-source repositories",
+    "Contact information (email, phone, location)",
+    "Professional online profile links (LinkedIn, GitHub)"
+  ],
+  "weak_evidence": [
+    "Fullstack web development experience (candidate has frontend experience only)",
+    "Git proficiency (listed in skills without workflow context)",
+    "Next.js experience (listed in skills without project context)",
+    "Attention to detail regarding micro-interactions (inferred from design degree and Figma skill, but lacks software implementation context)"
+  ],
+  "strengths": [
+    "Strong foundational match in frontend technologies including React, TypeScript, HTML5, and Tailwind CSS",
+    "Relevant educational background in Design and Multimedia complementing frontend UI/UX work",
+    "Clear professional summary highlighting specialization in responsive interfaces and design systems"
+  ],
+  "weaknesses": [
+    "Complete absence of backend development experience (Node.js/Python/databases), which is critical for a fullstack role",
+    "Missing essential contact details (email, phone, location) and portfolio/GitHub links required by the job posting",
+    "Lack of evidence for preferred tools and standards such as Docker, Next.js practical application, and WCAG 2.1"
+  ],
+  "overall_assessment": "The candidate demonstrates solid frontend development skills in React, TypeScript, HTML5, and Tailwind CSS, aligning well with the UI requirements of the role. However, there is a total lack of evidence regarding backend server development (Node.js or Python) and databases, which are core requirements for the Fullstack Web Developer position. Additionally, the CV lacks critical contact information, portfolio links, and evidence for preferred technologies like Docker and Next.js.",
+  "reasoning": "The evaluation compares the structured CV data against the structured job posting requirements objectively. Evidence statuses are assigned strictly based on explicit mentions and contextual demonstrations in the CV. Completeness dimensions are checked independently against standard CV sections."
+}

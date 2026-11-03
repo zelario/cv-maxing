@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What is your exact target job title you would like to use as the headline for your optimized CV? (e.g. Fullstack Web Developer (React & Node.js) or Frontend Developer)",
+    "answer": "My target job title for the headline should be Frontend Web Developer, as my professional background and expertise are entirely focused on frontend development."
+  },
+  {
+    "question": "What are your contact details and professional profile links? More specifically, please provide your email address, phone number, location, LinkedIn URL, and GitHub or portfolio URL. (You may skip any you do not wish to include or do not have).",
+    "answer": "My contact details are located in Lisbon, Portugal, and my email is mariana.costa.ui@example.com with phone number +351 934 567 890. You can also find my professional links on my LinkedIn at https://www.linkedin.com/in/marianacosta-frontend, my GitHub at https://github.com/marianacosta-ui, and my portfolio at https://marianacosta.dev."
+  },
+  {
+    "question": "Could you confirm your employment details for your role at PixelWave (Frontend Developer, 2022-Present)? Specifically, are there any additional achievements, metrics, or specific responsibilities you would like to include?",
+    "answer": "During my time at PixelWave, I built an internal Design System using Storybook and Tailwind that cut design-to-production time by 30%, and optimized Core Web Vitals to achieve a Google Lighthouse 95+ performance score."
+  },
+  {
+    "question": "Could you confirm your education details? More specifically, please confirm your degree (B.Sc. in Design and Multimedia), institution name, start and end dates (2018-2021), grade/GPA, and whether you completed a thesis and its topic/grade.",
+    "answer": "I completed my B.Sc. in Design and Multimedia at the Universidade de Coimbra from September 2018 to July 2021, graduating with a grade of 16/20. I did not complete a formal thesis as part of this degree."
+  },
+  {
+    "question": "More specifically, the job posting mentions/requires the following tech stack: React, TypeScript, Node.js, Python, HTML5, CSS3, Tailwind CSS, RESTful APIs, Git, Next.js, PostgreSQL, MySQL, MongoDB, Docker, and WCAG 2.1. Do you have experience with any of these or any others you would like to include?",
+    "answer": "I have extensive experience with React, TypeScript, Tailwind CSS, HTML5, CSS3, RESTful APIs, Git, Next.js (basics), and WCAG 2.1. However, as stated in my background, I do not possess backend server development experience with Node.js or Python, nor experience with databases like PostgreSQL, MySQL, MongoDB, or containerization tools like Docker."
+  },
+  {
+    "question": "What spoken languages do you speak, and what are your stated CEFR proficiency levels (e.g., English - C2, Portuguese - Native)?",
+    "answer": "My native language is Portuguese, and I speak English at a C1 full professional proficiency level."
+  },
+  {
+    "question": "Do you have any certifications? If so, please provide the name, issuer/provider, and year.",
+    "answer": "I do not have any professional certifications to list. My qualifications are based on my B.Sc. in Design and Multimedia and my hands-on frontend development experience."
+  },
+  {
+    "question": "Do you have any relevant standalone projects, open-source contributions, or competitions? If so, please provide the project name, dates, technologies used, and your individual contribution or deployed link.",
+    "answer": "I do not have any standalone personal projects, open-source contributions, or competitions to list, as my practical experience comes directly from my professional work at PixelWave Studios and DigitalCraft Agency."
+  },
+  {
+    "question": "Based on your verified experience, what key points would you like to highlight in your professional summary? (e.g., your focus on responsive web applications, design systems, TypeScript/React expertise, or performance optimization).",
+    "answer": "My professional summary should highlight my expertise in building responsive web applications with React and TypeScript, as well as my strong focus on design systems and client-side performance optimization."
+  }
+]

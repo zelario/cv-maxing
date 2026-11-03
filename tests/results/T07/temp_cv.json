@@ -1,0 +1,108 @@
+{
+  "cv": "Mariana Costa\nWeb developer specializing in responsive interfaces, design systems, and client-side performance.\nExperience\nFrontend Developer | PixelWave (2022-Present, 2 years)\nBuilding single-page web applications using React and TypeScript.\nImplementing robust component design systems utilizing Tailwind CSS.\nIntegrating REST APIs to connect frontend interfaces with backend services.\nEducation\nB.Sc. in Design and Multimedia (2018-2021)\nSkills\nJavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit.\nMariana Costa Page 1",
+  "personal_information": {
+    "name": "Mariana Costa",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Mariana Costa"
+  },
+  "summary": {
+    "text": "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+    "source_section": "Summary",
+    "source_text": "Web developer specializing in responsive interfaces, design systems, and client-side performance."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc.",
+      "field": "Design and Multimedia",
+      "institution": "",
+      "location": "",
+      "start_date": "2018",
+      "end_date": "2021",
+      "details": "",
+      "source_section": "Education",
+      "source_text": "B.Sc. in Design and Multimedia (2018-2021)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Frontend Developer",
+      "company": "PixelWave",
+      "location": "",
+      "start_date": "2022",
+      "end_date": "Present",
+      "description": "2 years",
+      "responsibilities": [
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "source_section": "Experience",
+      "source_text": "Frontend Developer | PixelWave (2022-Present, 2 years)\nBuilding single-page web applications using React and TypeScript.\nImplementing robust component design systems utilizing Tailwind CSS.\nIntegrating REST APIs to connect frontend interfaces with backend services."
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "TypeScript",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "React",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "Next.js",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "HTML5",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "CSS3/Tailwind",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "Git",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "Figma",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    },
+    {
+      "name": "Redux Toolkit",
+      "source_section": "Skills",
+      "source_text": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

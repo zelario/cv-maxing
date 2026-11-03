@@ -1,0 +1,190 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Contact",
+      "current_content": "Mariana Costa",
+      "proposed_content": "Mariana Costa | Lisbon, Portugal | +351 934 567 890 | mariana.costa.ui@example.com | LinkedIn: linkedin.com/in/marianacosta-frontend | GitHub: github.com/marianacosta-ui | Portfolio: marianacosta.dev",
+      "rationale": "Add missing professional contact details and profile links provided by the candidate to satisfy application requirements.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Location: Lisbon, Portugal",
+        "Email: mariana.costa.ui@example.com",
+        "Phone: +351 934 567 890",
+        "LinkedIn: https://www.linkedin.com/in/marianacosta-frontend",
+        "GitHub: https://github.com/marianacosta-ui",
+        "Portfolio: https://marianacosta.dev"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+      "proposed_content": "Frontend Web Developer specializing in responsive interfaces, React, and TypeScript, with a proven track record of building robust design systems and optimizing web performance at PixelWave.",
+      "rationale": "Update professional summary to incorporate candidate identity, target headline (Frontend Web Developer), core skills (React, TypeScript), and verified results (design systems, performance optimization).",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+        "Frontend Developer | PixelWave (2022-Present, 2 years)"
+      ],
+      "user_provided_evidence": [
+        "Target job title: Frontend Web Developer",
+        "Built internal Design System using Storybook and Tailwind that cut design-to-production time by 30%",
+        "Optimized Core Web Vitals to achieve a Google Lighthouse 95+ performance score"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Frontend Developer | PixelWave (2022-Present, 2 years)\nBuilding single-page web applications using React and TypeScript.\nImplementing robust component design systems utilizing Tailwind CSS.\nIntegrating REST APIs to connect frontend interfaces with backend services.",
+      "proposed_content": "Frontend Developer | PixelWave (2022-Present, 2 years)\n- Building single-page web applications using React and TypeScript.\n- Implementing robust component design systems utilizing Tailwind CSS, including an internal Design System using Storybook that cut design-to-production time by 30%.\n- Optimizing client-side performance and Core Web Vitals to achieve a Google Lighthouse 95+ performance score.\n- Integrating REST APIs to connect frontend interfaces with backend services.",
+      "rationale": "Enrich experience bullet points with verified quantitative achievements and concrete tooling (Storybook, Core Web Vitals, Lighthouse scores) provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ],
+      "user_provided_evidence": [
+        "Built internal Design System using Storybook and Tailwind that cut design-to-production time by 30%",
+        "Optimized Core Web Vitals to achieve a Google Lighthouse 95+ performance score"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Design and Multimedia (2018-2021)",
+      "proposed_content": "B.Sc. in Design and Multimedia | Universidade de Coimbra (2018-2021) | Grade: 16/20",
+      "rationale": "Add institution name and verified grade to the education section.",
+      "evidence_source": "user",
+      "source_evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "user_provided_evidence": [
+        "Institution: Universidade de Coimbra",
+        "Dates: September 2018 to July 2021",
+        "Grade: 16/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Skills",
+      "current_content": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit.",
+      "proposed_content": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit, Storybook, WCAG 2.1",
+      "rationale": "Add Storybook and WCAG 2.1 to the skills section based on verified experience and confirmed technical proficiencies.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+      ],
+      "user_provided_evidence": [
+        "Experience with Storybook",
+        "Experience with WCAG 2.1 web accessibility standards"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Full Professional Proficiency)",
+      "rationale": "Add a dedicated languages section with spoken languages and CEFR proficiency levels.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Full Professional Proficiency"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "What is your exact target job title you would like to use as the headline for your optimized CV? (e.g. Fullstack Web Developer (React & Node.js) or Frontend Developer)",
+    "What are your contact details and professional profile links? More specifically, please provide your email address, phone number, location, LinkedIn URL, and GitHub or portfolio URL. (You may skip any you do not wish to include or do not have).",
+    "Could you confirm your employment details for your role at PixelWave (Frontend Developer, 2022-Present)? Specifically, are there any additional achievements, metrics, or specific responsibilities you would like to include?",
+    "Could you confirm your education details? More specifically, please confirm your degree (B.Sc. in Design and Multimedia), institution name, start and end dates (2018-2021), grade/GPA, and whether you completed a thesis and its topic/grade.",
+    "More specifically, the job posting mentions/requires the following tech stack: React, TypeScript, Node.js, Python, HTML5, CSS3, Tailwind CSS, RESTful APIs, Git, Next.js, PostgreSQL, MySQL, MongoDB, Docker, and WCAG 2.1. Do you have experience with any of these or any others you would like to include?",
+    "What spoken languages do you speak, and what are your stated CEFR proficiency levels (e.g., English - C2, Portuguese - Native)?",
+    "Do you have any certifications? If so, please provide the name, issuer/provider, and year.",
+    "Do you have any relevant standalone projects, open-source contributions, or competitions? If so, please provide the project name, dates, technologies used, and your individual contribution or deployed link.",
+    "Based on your verified experience, what key points would you like to highlight in your professional summary? (e.g., your focus on responsive web applications, design systems, TypeScript/React expertise, or performance optimization)."
+  ],
+  "user_answers": [
+    {
+      "question": "What is your exact target job title you would like to use as the headline for your optimized CV?",
+      "answer": "My target job title for the headline should be Frontend Web Developer, as my professional background and expertise are entirely focused on frontend development.",
+      "gap": "Target job headline confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "What are your contact details and professional profile links?",
+      "answer": "My contact details are located in Lisbon, Portugal, and my email is mariana.costa.ui@example.com with phone number +351 934 567 890. You can also find my professional links on my LinkedIn at https://www.linkedin.com/in/marianacosta-frontend, my GitHub at https://github.com/marianacosta-ui, and my portfolio at https://marianacosta.dev.",
+      "gap": "Missing email, phone, location, LinkedIn URL, and portfolio/GitHub URL",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your employment details for your role at PixelWave (Frontend Developer, 2022-Present)?",
+      "answer": "During my time at PixelWave, I built an internal Design System using Storybook and Tailwind that cut design-to-production time by 30%, and optimized Core Web Vitals to achieve a Google Lighthouse 95+ performance score.",
+      "gap": "Employment achievements and metrics",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your education details? More specifically, please confirm your degree, institution, dates, grade/GPA, and thesis topic and grade.",
+      "answer": "I completed my B.Sc. in Design and Multimedia at the Universidade de Coimbra from September 2018 to July 2021, graduating with a grade of 16/20. I did not complete a formal thesis as part of this degree.",
+      "gap": "Institution name, dates, grade/GPA, and thesis details",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: [React, TypeScript, Node.js, Python, HTML5, CSS3, Tailwind CSS, RESTful APIs, Git, Next.js, PostgreSQL, MySQL, MongoDB, Docker, WCAG 2.1]. Do you have experience with any of these or any others you would like to include?",
+      "answer": "I have extensive experience with React, TypeScript, Tailwind CSS, HTML5, CSS3, RESTful APIs, Git, Next.js (basics), and WCAG 2.1. However, as stated in my background, I do not possess backend server development experience with Node.js or Python, nor experience with databases like PostgreSQL, MySQL, MongoDB, or containerization tools like Docker.",
+      "gap": "Backend server development, databases, containerization, and accessibility standards",
+      "resolution": "supported"
+    },
+    {
+      "question": "What spoken languages do you speak, and what are your stated CEFR proficiency levels?",
+      "answer": "My native language is Portuguese, and I speak English at a C1 full professional proficiency level.",
+      "gap": "Spoken languages and CEFR proficiency",
+      "resolution": "supported"
+    },
+    {
+      "question": "Do you have any certifications? If so, please provide the name, issuer/provider, and year.",
+      "answer": "I do not have any professional certifications to list. My qualifications are based on my B.Sc. in Design and Multimedia and my hands-on frontend development experience.",
+      "gap": "Certifications and professional licenses",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Do you have any relevant standalone projects, open-source contributions, or competitions? If so, please provide project name, dates, technologies, and individual contribution.",
+      "answer": "I do not have any standalone personal projects, open-source contributions, or competitions to list, as my practical experience comes directly from my professional work at PixelWave Studios and DigitalCraft Agency.",
+      "gap": "Standalone projects, open-source work, and competitions",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Based on your verified experience, what key points would you like to highlight in your summary?",
+      "answer": "My professional summary should highlight my expertise in building responsive web applications with React and TypeScript, as well as my strong focus on design systems and client-side performance optimization.",
+      "gap": "Summary focus points",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Target headline: Frontend Web Developer",
+    "Location: Lisbon, Portugal",
+    "Email: mariana.costa.ui@example.com",
+    "Phone: +351 934 567 890",
+    "LinkedIn URL: https://www.linkedin.com/in/marianacosta-frontend",
+    "GitHub URL: https://github.com/marianacosta-ui",
+    "Portfolio URL: https://marianacosta.dev",
+    "Institution: Universidade de Coimbra",
+    "Education Dates: September 2018 - July 2021",
+    "Grade: 16/20",
+    "Achievement: Built internal Design System using Storybook and Tailwind that cut design-to-production time by 30%",
+    "Achievement: Optimized Core Web Vitals to achieve a Google Lighthouse 95+ performance score",
+    "Languages: Portuguese (Native), English (C1 Full Professional Proficiency)",
+    "Technical familiarity: WCAG 2.1 accessibility standards and Storybook"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on adapting Mariana Costa's CV for the 'Frontend Web Developer' role at NovaTech Studios while strictly adhering to her verified evidence. Phase 1 established a baseline improvement of her professional summary and bullet points. Phase 2 interactively gathered missing contact details, location, social links, educational institution and grade, language proficiencies, and concrete achievement metrics (Storybook design system efficiency, Lighthouse 95+ score). Gaps regarding backend technologies (Node.js, Python, PostgreSQL, MongoDB) and Docker were transparently addressed and recorded as unresolved evidence gaps to prevent hallucination.",
+  "unresolved_evidence_gaps": [
+    "Backend server development experience using Node.js or Python",
+    "Relational or document database experience (PostgreSQL, MySQL, MongoDB)",
+    "Containerization experience with Docker",
+    "Professional certifications and credentials",
+    "Standalone personal projects, open-source repositories, or coding competitions"
+  ]
+}

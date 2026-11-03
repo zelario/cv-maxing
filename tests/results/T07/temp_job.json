@@ -1,0 +1,208 @@
+{
+  "job_title": "Fullstack Web Developer (React & Node.js)",
+  "company": {
+    "name": "NovaTech Studios",
+    "location": "Lisbon / Remote",
+    "website": ""
+  },
+  "location": "Lisbon / Remote",
+  "employment_type": "",
+  "seniority": "",
+  "description": "NovaTech Studios is a creative technology and product studio crafting interactive web applications, real-time collaboration platforms, and modern digital experiences. We partner with fast-growing startups and international scale-ups to turn ambitious product visions into performant, intuitive web solutions. We are looking for a versatile Fullstack Web Developer to join our Product Engineering team.",
+  "skills": [
+    {
+      "name": "React",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript."
+    },
+    {
+      "name": "TypeScript",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript."
+    },
+    {
+      "name": "Node.js",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid foundational knowledge of backend server development using Node.js or Python."
+    },
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid foundational knowledge of backend server development using Node.js or Python."
+    },
+    {
+      "name": "HTML5",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+    },
+    {
+      "name": "CSS3",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+    },
+    {
+      "name": "Tailwind CSS",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+    },
+    {
+      "name": "RESTful APIs",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Experience consuming and designing RESTful APIs and handling asynchronous data flows."
+    },
+    {
+      "name": "Git",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong proficiency with Git and GitHub-based development workflows."
+    },
+    {
+      "name": "Next.js",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with Next.js (Server-Side Rendering, Static Site Generation, and App Router)."
+    },
+    {
+      "name": "PostgreSQL",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with relational or document databases (PostgreSQL, MySQL, or MongoDB)."
+    },
+    {
+      "name": "MySQL",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with relational or document databases (PostgreSQL, MySQL, or MongoDB)."
+    },
+    {
+      "name": "MongoDB",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with relational or document databases (PostgreSQL, MySQL, or MongoDB)."
+    },
+    {
+      "name": "Docker",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with containerization using Docker."
+    },
+    {
+      "name": "WCAG 2.1",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Understanding of web accessibility standards (WCAG 2.1)."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript.",
+      "years": "",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript."
+    }
+  ],
+  "education_requirements": [],
+  "responsibilities": [
+    {
+      "description": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind.",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "description": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python.",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+    },
+    {
+      "description": "Integrate third-party APIs, authentication providers (OAuth/JWT), payment gateways, and database storage.",
+      "source_section": "What You'll Do",
+      "source_text": "Integrate third-party APIs, authentication providers (OAuth/JWT), payment gateways, and database storage."
+    },
+    {
+      "description": "Optimize client-side performance, state management, bundle size, and Core Web Vitals across diverse devices and browsers.",
+      "source_section": "What You'll Do",
+      "source_text": "Optimize client-side performance, state management, bundle size, and Core Web Vitals across diverse devices and browsers."
+    },
+    {
+      "description": "Maintain clean architectural boundaries between frontend state and backend persistence layers.",
+      "source_section": "What You'll Do",
+      "source_text": "Maintain clean architectural boundaries between frontend state and backend persistence layers."
+    },
+    {
+      "description": "Author thorough automated tests (unit and component testing) using frameworks like Jest or Vitest.",
+      "source_section": "What You'll Do",
+      "source_text": "Author thorough automated tests (unit and component testing) using frameworks like Jest or Vitest."
+    },
+    {
+      "description": "Collaborate in rapid product iterations, sprint reviews, and technical refinement sessions.",
+      "source_section": "What You'll Do",
+      "source_text": "Collaborate in rapid product iterations, sprint reviews, and technical refinement sessions."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "React",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "keyword": "Node.js",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+    },
+    {
+      "keyword": "TypeScript",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "keyword": "Python",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+    },
+    {
+      "keyword": "Tailwind",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Soft Skills",
+      "description": "High attention to detail regarding visual polish, micro-interactions, and user-centric design.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "High attention to detail regarding visual polish, micro-interactions, and user-centric design."
+    },
+    {
+      "type": "Soft Skills",
+      "description": "Excellent communication and teamwork skills, with the ability to work independently in a remote-first setup.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Excellent communication and teamwork skills, with the ability to work independently in a remote-first setup."
+    },
+    {
+      "type": "Portfolio",
+      "description": "An active portfolio of deployed web applications or open-source repositories.",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "An active portfolio of deployed web applications or open-source repositories."
+    },
+    {
+      "type": "Application Material",
+      "description": "Please submit your CV accompanied by links to your portfolio, GitHub profile, or deployed web projects that demonstrate your ability to deliver end-to-end web experiences.",
+      "requirement_type": "required",
+      "source_section": "Application",
+      "source_text": "Please submit your CV accompanied by links to your portfolio, GitHub profile, or deployed web projects that demonstrate your ability to deliver end-to-end web experiences."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "contact": {
+    "name": "Mariana Costa",
+    "headline": "Fullstack Web Developer (React & Node.js)",
+    "specialisation": "Responsive Interfaces and Design Systems",
+    "phone": "+351 934 567 890",
+    "email": "mariana.costa.ui@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/marianacosta-frontend",
+    "github": "https://github.com/marianacosta-ui",
+    "portfolio": "https://marianacosta.dev"
+  },
+  "summary": "Frontend Web Developer specializing in responsive interfaces, React, and TypeScript, with a proven track record of building robust design systems and optimizing web performance at PixelWave.",
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "dates": "2022-Present",
+      "company": "PixelWave",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS, including an internal Design System using Storybook that cut design-to-production time by 30%.",
+        "Optimizing client-side performance and Core Web Vitals to achieve a Google Lighthouse 95+ performance score.",
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Design and Multimedia",
+      "dates": "September 2018 - July 2021",
+      "institution": "Universidade de Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "16/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Core",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "category_name": "Libraries & Frameworks",
+      "skills": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "category_name": "Tools & Technologies",
+      "skills": [
+        "Git",
+        "Figma",
+        "Storybook",
+        "REST APIs",
+        "WCAG 2.1"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}
