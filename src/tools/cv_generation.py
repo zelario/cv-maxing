@@ -1,5 +1,7 @@
+import io
 from pathlib import Path
 
+import pdfplumber
 from jinja2 import Environment, FileSystemLoader, StrictUndefined
 from playwright.sync_api import Error as PlaywrightError
 from playwright.sync_api import sync_playwright
@@ -27,7 +29,7 @@ def render_cv_html(generated: GeneratedCV) -> str:
 
 
 def render_cv_pdf(html: str) -> bytes:
-    """Render a CV HTML document as an A4 PDF using Chromium."""
+    """Render a CV HTML document as an A4 PDF using Chromium with bottom-anchored GDPR consent."""
 
     with sync_playwright() as playwright:
         browser = None
@@ -35,11 +37,51 @@ def render_cv_pdf(html: str) -> bytes:
             browser = playwright.chromium.launch()
             page = browser.new_page()
             page.set_content(html, wait_until="load")
-            return page.pdf(
+            pdf_bytes = page.pdf(
                 format="A4",
                 print_background=True,
                 prefer_css_page_size=True,
             )
+
+            # Anchor GDPR consent statement to the bottom of the page where it is located
+            try:
+                with pdfplumber.open(io.BytesIO(pdf_bytes)) as doc:
+                    if doc.pages:
+                        last_page = doc.pages[-1]
+                        page_height = float(last_page.height)
+                        gdpr_words = [
+                            w
+                            for w in last_page.extract_words()
+                            if "gdpr" in w["text"].lower() or "consent" in w["text"].lower()
+                        ]
+                        if gdpr_words:
+                            current_bottom = max(float(w["bottom"]) for w in gdpr_words)
+                            # Target bottom: page_height minus bottom margin (1.76cm in pt) minus 1pt safety buffer
+                            target_bottom = page_height - (1.76 * 72.0 / 2.54) - 1.0
+                            delta_pt = target_bottom - current_bottom
+                            if delta_pt > 5.0:
+                                page.evaluate(
+                                    f"""() => {{
+                                        const consent = document.querySelector('.consent');
+                                        if (consent) {{
+                                            const cur = parseFloat(window.getComputedStyle(consent).marginTop) || 0;
+                                            const deltaPx = {delta_pt} * (96.0 / 72.0);
+                                            consent.style.marginTop = (cur + deltaPx) + 'px';
+                                        }}
+                                    }}"""
+                                )
+                                adjusted_pdf_bytes = page.pdf(
+                                    format="A4",
+                                    print_background=True,
+                                    prefer_css_page_size=True,
+                                )
+                                with pdfplumber.open(io.BytesIO(adjusted_pdf_bytes)) as adj_doc:
+                                    if len(adj_doc.pages) == len(doc.pages):
+                                        pdf_bytes = adjusted_pdf_bytes
+            except Exception:
+                pass
+
+            return pdf_bytes
         except PlaywrightError as exc:
             raise RuntimeError(
                 "Could not render the CV PDF. Install Playwright's Chromium with "

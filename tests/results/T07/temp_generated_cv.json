@@ -2,7 +2,7 @@
   "contact": {
     "name": "Mariana Costa",
     "headline": "Fullstack Web Developer (React & Node.js)",
-    "specialisation": "Responsive Interfaces and Design Systems",
+    "specialisation": "Frontend & Web Development",
     "phone": "+351 934 567 890",
     "email": "mariana.costa.ui@example.com",
     "location_city": "Lisbon",
@@ -11,7 +11,7 @@
     "github": "https://github.com/marianacosta-ui",
     "portfolio": "https://marianacosta.dev"
   },
-  "summary": "Frontend Web Developer specializing in responsive interfaces, React, and TypeScript, with a proven track record of building robust design systems and optimizing web performance at PixelWave.",
+  "summary": "Fullstack Web Developer with 2 years of professional experience specializing in React, TypeScript, and Tailwind CSS. Proven track record of building single-page web applications and robust component design systems at PixelWave.",
   "experience": [
     {
       "title": "Frontend Developer",
@@ -20,8 +20,7 @@
       "location": "Lisbon, Portugal",
       "bullets": [
         "Building single-page web applications using React and TypeScript.",
-        "Implementing robust component design systems utilizing Tailwind CSS, including an internal Design System using Storybook that cut design-to-production time by 30%.",
-        "Optimizing client-side performance and Core Web Vitals to achieve a Google Lighthouse 95+ performance score.",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
         "Integrating REST APIs to connect frontend interfaces with backend services."
       ]
     }
@@ -29,7 +28,7 @@
   "education": [
     {
       "degree": "B.Sc. in Design and Multimedia",
-      "dates": "September 2018 - July 2021",
+      "dates": "2018-2021",
       "institution": "Universidade de Coimbra",
       "location": "Coimbra, Portugal",
       "grade": "16/20"
@@ -37,30 +36,22 @@
   ],
   "skills": [
     {
-      "category_name": "Programming Languages & Core",
+      "category_name": "Programming Languages & Frontend",
       "skills": [
         "JavaScript",
         "TypeScript",
-        "HTML5",
-        "CSS3"
-      ]
-    },
-    {
-      "category_name": "Libraries & Frameworks",
-      "skills": [
         "React",
         "Next.js",
-        "Tailwind CSS",
+        "HTML5",
+        "CSS3/Tailwind",
         "Redux Toolkit"
       ]
     },
     {
-      "category_name": "Tools & Technologies",
+      "category_name": "Tools & Standards",
       "skills": [
         "Git",
         "Figma",
-        "Storybook",
-        "REST APIs",
         "WCAG 2.1"
       ]
     }
@@ -70,13 +61,13 @@
       "name": "Portuguese",
       "level": "Native",
       "details": "Native speaker",
-      "certification": ""
+      "certification": "Native"
     },
     {
       "name": "English",
-      "level": "C1",
-      "details": "Full Professional Proficiency",
-      "certification": ""
+      "level": "C1 Full Professional",
+      "details": "C1 Full Professional proficiency",
+      "certification": "C1"
     }
   ],
   "certifications": [],

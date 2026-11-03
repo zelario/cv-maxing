@@ -26,7 +26,7 @@ The assistant has asked you this question:
 "{question}"
 
 Instructions:
-1. Answer concisely (1 to 2 sentences) in the first person ("I...", "My...").
+1. Answer concisely (1 to 2 sentences) in the first person ("I...", "My..."). For confirmation questions (Yes/No), start directly with "Yes" or "No" and provide any requested details.
 2. Stay strictly truthful to your CV and your factual background.
 3. If the question asks for links (e.g. GitHub, LinkedIn, portfolio) or specific skills/certifications:
    - Provide them ONLY IF they are present in your CV or Additional Factual Background.
@@ -78,9 +78,13 @@ class Candidate:
                     answer = "I do not have additional information to add."
                 break
             except Exception as exc:
-                if ("429" in str(exc) or "RESOURCE_EXHAUSTED" in str(exc)) and attempt < max_retries - 1:
-                    print(f"\n[CANDIDATE SIMULATOR] Rate limited (429), waiting 35s (attempt {attempt + 1}/{max_retries})...")
-                    time.sleep(35)
+                is_transient = any(
+                    err in str(exc)
+                    for err in ["429", "503", "500", "RESOURCE_EXHAUSTED", "UNAVAILABLE"]
+                )
+                if is_transient and attempt < max_retries - 1:
+                    print(f"\n[CANDIDATE SIMULATOR] Transient API error, waiting 20s (attempt {attempt + 1}/{max_retries}): {exc}")
+                    time.sleep(20)
                     continue
                 print(f"\n[FATAL API ERROR] Candidate Simulator API/model error ({self.model}): {exc}")
                 print("[FATAL API ERROR] Terminating execution immediately as configured.\n")

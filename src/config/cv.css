@@ -170,6 +170,8 @@ li {
   margin-top: 6pt;
   font-size: var(--small-size);
   font-style: italic;
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 a {

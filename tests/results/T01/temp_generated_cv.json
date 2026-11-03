@@ -9,25 +9,25 @@
     "location_country": "Portugal",
     "linkedin": "https://www.linkedin.com/in/tomassilva-dev",
     "github": "https://github.com/tomassilva-data",
-    "portfolio": ""
+    "portfolio": "https://www.linkedin.com/in/tomassilva-dev"
   },
-  "summary": "Results-driven Data Science Intern candidate with a B.Sc. in Computer Science (15/20) and a strong foundation in Python, SQL, and machine learning. Proven ability to analyze large datasets and build predictive models, highlighted by a thesis grade of 17/20 on customer retention and churn prediction.",
+  "summary": "Data Science Intern candidate with a B.Sc. in Computer Science from the University of Coimbra (Grade: 15/20). Proficient in Python, SQL, Pandas, NumPy, and Scikit-Learn, with proven experience building robust data pipelines and predictive machine learning models for customer churn analysis.",
   "experience": [
     {
-      "title": "Software Development Intern",
-      "dates": "July 2023 - September 2023",
+      "title": "Software Engineering Intern",
+      "dates": "3 months",
       "company": "SoftInov Soluções Tecnológicas",
       "location": "Coimbra, Portugal",
       "bullets": [
-        "Automated unit and integration testing with pytest, raising service test coverage from 62% to 79%.",
-        "Performed SQL queries and database migrations in PostgreSQL.",
-        "Documented REST APIs with OpenAPI/Swagger and collaborated with engineering teams."
+        "Automated unit and integration testing using pytest within an agile team.",
+        "Wrote SQL queries and database migrations in PostgreSQL to support internal tooling.",
+        "Documented REST APIs and collaborated with developers on QA methodologies."
       ]
     }
   ],
   "education": [
     {
-      "degree": "B.Sc. in Computer Science",
+      "degree": "Bachelor in Computer Science",
       "dates": "2021-2024",
       "institution": "University of Coimbra",
       "location": "Coimbra, Portugal",
@@ -36,25 +36,23 @@
   ],
   "skills": [
     {
-      "category_name": "Languages & Tools",
+      "category_name": "Programming Languages & Tools",
       "skills": [
         "Python",
         "SQL",
         "Git",
-        "PostgreSQL",
-        "pytest"
+        "Streamlit"
       ]
     },
     {
-      "category_name": "Libraries & Concepts",
+      "category_name": "Libraries & Frameworks",
       "skills": [
         "Pandas",
         "NumPy",
         "Scikit-Learn",
-        "Machine Learning",
-        "Probability & Statistics",
-        "Unit Testing",
-        "Data Pipelines"
+        "Matplotlib",
+        "Seaborn",
+        "Unit Testing"
       ]
     }
   ],
@@ -62,30 +60,24 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "",
-      "certification": ""
+      "details": "Native speaker",
+      "certification": "None"
     },
     {
       "name": "English",
       "level": "C1 Advanced",
-      "details": "",
-      "certification": "Cambridge Certificate"
+      "details": "Advanced proficiency",
+      "certification": "Cambridge"
     }
   ],
-  "certifications": [
-    {
-      "name": "Cambridge C1 Advanced English Certificate",
-      "issuer": "Cambridge",
-      "year": ""
-    }
-  ],
+  "certifications": [],
   "projects": [
     {
       "name": "Capstone Project: Customer Churn Analysis",
       "dates": "2024",
-      "description": "Built an end-to-end data pipeline in Python analyzing customer churn and retention across 80k+ records using Pandas, Scikit-Learn, and PostgreSQL. Evaluated supervised machine learning classification models, achieving a 17/20 grade for the thesis.",
+      "description": "Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
       "link": "https://github.com/tomassilva-data",
-      "volunteering_or_other": ""
+      "volunteering_or_other": "Academic Project"
     }
   ],
   "consent": true

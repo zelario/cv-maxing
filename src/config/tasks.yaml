@@ -116,30 +116,28 @@ optimize_cv_task:
          evidence_source: "cv", source_evidence, and requires_human_approval: true.
 
     2. PHASE 2 - MANDATORY INTERACTIVE HITL QUESTIONS (TOOL EXECUTION REQUIRED):
-       - TOOL CALLING DIRECTIVE: You MUST execute the ask_user tool for EACH question on your checklist,
-         one question at a time. DO NOT output the final JSON answer until you have actively invoked
-         the ask_user tool and received responses. You are strictly forbidden from fabricating or
-         simulating user answers (such as "None provided" or "Confirmed") without calling ask_user.
-       - Question Sequence (ask one focused question at a time via ask_user):
-         1. Target role: confirm the exact job title from the posting as the target headline.
-         2. Missing contact & profile links: ask separately for missing email, phone, location,
-            LinkedIn URL, and portfolio/GitHub URL. Explicitly allow "I do not have one" or skip.
-         3. Employment/internship: confirm listed roles, company names, dates, and achievements.
-         4. Education: confirm degree, institution, dates, grade/GPA, thesis topic and grade.
-         5. Technical skills with Tech Stack Transparency: explicitly cite the target job's specific
-            tech stack (e.g. "More specifically, the job posting mentions/requires: [list exact job
-            technologies]. Do you have experience with any of these or any others you would like to include?").
-         6. Languages: ask for spoken languages and stated CEFR proficiency levels.
-         7. Certifications: ask for name, issuer/provider, and year.
-         8. Projects & competitions: ask for relevant standalone projects, dates, technologies, and individual contribution.
-         9. Summary claims: confirm key points to highlight in the summary.
+       - TOOL CALLING DIRECTIVE: You MUST execute the ask_user tool for EACH of the 9 sections below,
+         one section at a time. It is strictly mandatory to address every single section in sequence.
+         DO NOT output the final JSON until all 9 sections have been completed.
+       - Questioning Rule for Every Section:
+         * IF INFORMATION EXISTS (in CV or Job): State the known facts and ask for Yes/No confirmation
+           (e.g., "We found / propose [X]. Do you confirm? (Yes/No)").
+         * IF INFORMATION DOES NOT EXIST (Missing): Ask if the candidate has that information to add
+           (e.g., "Do you have any [X] to include? (If none, reply 'I do not have one')").
+       - Mandatory 9-Section Checklist (ask one at a time via ask_user):
+         1. Target role: confirm job title as headline (Yes/No, or specify another).
+         2. Contact & links: if present, confirm (Yes/No); if any missing (phone, LinkedIn, GitHub), ask for missing items.
+         3. Employment: if listed, state role/company/dates and confirm (Yes/No); if none, ask if candidate has work experience.
+         4. Education: if listed, state degree/institution/grade and confirm (Yes/No); if none, ask for academic background.
+         5. Technical skills gaps: if missing job technologies exist, ask if candidate has experience with them; if none missing, confirm skills (Yes/No).
+         6. Languages: if listed, confirm (Yes/No); if none, ask if candidate speaks other languages.
+         7. Certifications: if listed, confirm (Yes/No); if none, ask if candidate has certifications/licenses.
+         8. Projects: if listed, confirm (Yes/No); if none, ask if candidate has projects/repositories to include.
+         9. Summary focus: propose key strengths to highlight and confirm (Yes/No).
        - Handling Candidate Answers:
-         * When the candidate provides new evidence, store it in user_provided_evidence and create
-           corresponding ProposedCVChange items with evidence_source: "user" or "cv_and_user".
-         * Record every question asked in questions_asked, and every actual candidate answer in
-           user_answers with its gap and resolution (supported, unsupported, not_applicable, unresolved).
-         * Every unaddressed gap or negative answer ("I do not have one") must be recorded in
-           unresolved_evidence_gaps.
+         * Store new candidate evidence in user_provided_evidence and create ProposedCVChange items.
+         * Record every question in questions_asked and answer in user_answers.
+         * Record unaddressed gaps or negative answers in unresolved_evidence_gaps.
 
     3. STRICT CONSTRAINTS:
        - Never invent skills, qualifications, metrics, or technologies not confirmed by the candidate.

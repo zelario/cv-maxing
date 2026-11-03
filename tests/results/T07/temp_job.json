@@ -8,8 +8,38 @@
   "location": "Lisbon / Remote",
   "employment_type": "",
   "seniority": "",
-  "description": "NovaTech Studios is a creative technology and product studio crafting interactive web applications, real-time collaboration platforms, and modern digital experiences. We partner with fast-growing startups and international scale-ups to turn ambitious product visions into performant, intuitive web solutions. We are looking for a versatile Fullstack Web Developer to join our Product Engineering team.",
+  "description": "NovaTech Studios is a creative technology and product studio crafting interactive web applications, real-time collaboration platforms, and modern digital experiences. We partner with fast-growing startups and international scale-ups to turn ambitious product visions into performant, intuitive web solutions.\n\nWe are looking for a versatile Fullstack Web Developer to join our Product Engineering team.\n\nIn this role, you will own features end-to-end—from responsive, pixel-perfect frontend components to reliable backend API endpoints and data models. You will work closely with UX/UI designers, product managers, and fellow engineers to deliver seamless, accessible user experiences.",
   "skills": [
+    {
+      "name": "React",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "name": "TypeScript",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "name": "Modern CSS/Tailwind",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "name": "Node.js (Express/NestJS)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+    },
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+    },
     {
       "name": "React",
       "requirement_type": "required",
@@ -17,7 +47,7 @@
       "source_text": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript."
     },
     {
-      "name": "TypeScript",
+      "name": "Modern TypeScript",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
       "source_text": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript."
@@ -38,19 +68,25 @@
       "name": "HTML5",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
-      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)."
     },
     {
-      "name": "CSS3",
+      "name": "Modern CSS3",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
-      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)."
+    },
+    {
+      "name": "Responsive design",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)."
     },
     {
       "name": "Tailwind CSS",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
-      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)"
+      "source_text": "Deep fluency in HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)."
     },
     {
       "name": "RESTful APIs",
@@ -60,6 +96,12 @@
     },
     {
       "name": "Git",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong proficiency with Git and GitHub-based development workflows."
+    },
+    {
+      "name": "GitHub-based development workflows",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
       "source_text": "Strong proficiency with Git and GitHub-based development workflows."
@@ -103,7 +145,7 @@
   ],
   "experience_requirements": [
     {
-      "description": "Demonstrable hands-on experience in fullstack web development, with strong proficiency in React and modern TypeScript.",
+      "description": "Demonstrable hands-on experience in fullstack web development",
       "years": "",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
@@ -151,13 +193,18 @@
   "keywords": [
     {
       "keyword": "React",
-      "source_section": "What You'll Do",
-      "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+      "source_section": "Fullstack Web Developer (React & Node.js)",
+      "source_text": "Fullstack Web Developer (React & Node.js)"
     },
     {
       "keyword": "Node.js",
-      "source_section": "What You'll Do",
-      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
+      "source_section": "Fullstack Web Developer (React & Node.js)",
+      "source_text": "Fullstack Web Developer (React & Node.js)"
+    },
+    {
+      "keyword": "Fullstack",
+      "source_section": "About the Role",
+      "source_text": "We are looking for a versatile Fullstack Web Developer to join our Product Engineering team."
     },
     {
       "keyword": "TypeScript",
@@ -165,19 +212,19 @@
       "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
     },
     {
-      "keyword": "Python",
-      "source_section": "What You'll Do",
-      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
-    },
-    {
       "keyword": "Tailwind",
       "source_section": "What You'll Do",
       "source_text": "Develop modern, responsive, and accessible user interfaces using React, TypeScript, and modern CSS/Tailwind."
+    },
+    {
+      "keyword": "Python",
+      "source_section": "What You'll Do",
+      "source_text": "Design, build, and maintain clean, modular backend APIs and service layers using Node.js (Express/NestJS) or Python."
     }
   ],
   "other_requirements": [
     {
-      "type": "Soft Skills",
+      "type": "Design Attention",
       "description": "High attention to detail regarding visual polish, micro-interactions, and user-centric design.",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
@@ -198,7 +245,7 @@
       "source_text": "An active portfolio of deployed web applications or open-source repositories."
     },
     {
-      "type": "Application Material",
+      "type": "Application Submission",
       "description": "Please submit your CV accompanied by links to your portfolio, GitHub profile, or deployed web projects that demonstrate your ability to deliver end-to-end web experiences.",
       "requirement_type": "required",
       "source_section": "Application",

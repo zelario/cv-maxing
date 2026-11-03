@@ -1,177 +1,150 @@
 {
   "requirement_matches": [
     {
-      "requirement": "Currently pursuing or holding a Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field",
-      "category": "Education",
-      "status": "satisfied",
-      "evidence": [
-        "B.Sc. in Computer Science, University of Coimbra (2021-2024)"
-      ],
-      "reasoning": "The candidate has graduated with a B.Sc. in Computer Science from the University of Coimbra, which satisfies the educational requirement."
-    },
-    {
-      "requirement": "Strong foundation in statistics, probability, and quantitative analysis",
-      "category": "Technical Skills",
-      "status": "no_evidence",
-      "evidence": [],
-      "reasoning": "There is no mention of statistics, probability, or quantitative analysis in the CV's skills or project descriptions."
-    },
-    {
       "requirement": "Experience with Python and SQL",
       "category": "Technical Skills",
       "status": "satisfied",
       "evidence": [
-        "Python",
-        "SQL",
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+        "Python, SQL listed in Technical Skills",
+        "Built a data pipeline in Python using PostgreSQL (SQL) in Capstone Project"
       ],
-      "reasoning": "Python and SQL are explicitly listed under Technical Skills, and Python is demonstrated through the capstone data pipeline project."
+      "reasoning": "The candidate lists Python and SQL in technical skills and demonstrates practical usage of Python and a SQL database (PostgreSQL) in their Capstone Project."
     },
     {
       "requirement": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools",
       "category": "Technical Skills",
       "status": "satisfied",
       "evidence": [
-        "Pandas",
-        "NumPy",
-        "Scikit-Learn",
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+        "Pandas, NumPy listed in Technical Skills",
+        "Used Pandas and Scikit-Learn in Capstone Project: Customer Churn Analysis"
       ],
-      "reasoning": "Pandas, NumPy, and Scikit-Learn are listed under technical skills and explicitly evidenced as being used in the capstone project."
+      "reasoning": "The candidate lists pandas, NumPy, and demonstrates scikit-learn and pandas usage within their Customer Churn Analysis capstone project."
     },
     {
-      "requirement": "Understanding of machine learning fundamentals and model evaluation",
-      "category": "Technical Skills",
-      "status": "weak_evidence",
+      "requirement": "Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field",
+      "category": "Education",
+      "status": "uncertain",
       "evidence": [
-        "Scikit-Learn",
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024)"
       ],
-      "reasoning": "The candidate lists Scikit-Learn and uses it in a project, but there is no explicit mention or discussion of model evaluation fundamentals or theoretical understanding."
+      "reasoning": "The candidate has completed their B.Sc. in Computer Science (2021-2024), but the requirement specifies 'Currently pursuing', and it is unclear if they are currently enrolled in a further degree program."
+    },
+    {
+      "requirement": "Experience with experimentation, A/B testing, or causal inference",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of experimentation, A/B testing, or causal inference in the CV."
+    },
+    {
+      "requirement": "Experience working with large datasets or data pipelines",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "reasoning": "The candidate explicitly demonstrates experience building a data pipeline in Python."
+    },
+    {
+      "requirement": "Knowledge of data visualisation tools or frameworks",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No specific data visualization tools or frameworks are mentioned in the CV."
+    },
+    {
+      "requirement": "Experience with cloud platforms or distributed data technologies",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No cloud platforms or distributed data technologies are mentioned in the CV."
     },
     {
       "requirement": "Ability to investigate ambiguous problems and break them down into structured analytical tasks",
       "category": "Soft Skills",
-      "status": "uncertain",
-      "evidence": [],
-      "reasoning": "The CV does not explicitly address the ability to investigate ambiguous problems, though problem-solving may be implied by the computer science degree and capstone project."
+      "status": "weak_evidence",
+      "evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention"
+      ],
+      "reasoning": "Implied through analytical project work, but no explicit discussion of investigating ambiguous problems."
     },
     {
       "requirement": "Strong analytical and problem-solving skills",
       "category": "Soft Skills",
-      "status": "weak_evidence",
+      "status": "satisfied",
       "evidence": [
-        "B.Sc. in Computer Science",
-        "Capstone Project: Customer Churn Analysis"
+        "Grade: 15/20 in B.Sc. Computer Science",
+        "Customer Churn Analysis Capstone Project"
       ],
-      "reasoning": "Analytical skills are implied through academic credentials and data project work, but not explicitly articulated."
+      "reasoning": "Demonstrated through academic performance and analytical capstone project execution."
     },
     {
       "requirement": "Good communication skills and ability to work effectively in a team",
       "category": "Soft Skills",
       "status": "satisfied",
       "evidence": [
-        "Curricular Summer Internship (3 months)... gaining practical experience in QA methodologies and team collaboration."
+        "Curricular Summer Internship: gaining practical experience in QA methodologies and team collaboration"
       ],
-      "reasoning": "Team collaboration is explicitly mentioned as gained experience during the summer internship."
+      "reasoning": "Explicitly mentions team collaboration gained during the internship."
     },
     {
       "requirement": "Comfortable working in a fast-paced, international environment",
-      "category": "Other",
+      "category": "Environment",
       "status": "no_evidence",
       "evidence": [],
-      "reasoning": "No evidence or mention of fast-paced or international environment experience is present in the CV."
-    },
-    {
-      "requirement": "Experience with experimentation, A/B testing, or causal inference",
-      "category": "Nice to Have",
-      "status": "no_evidence",
-      "evidence": [],
-      "reasoning": "No mention of experimentation, A/B testing, or causal inference in the CV."
-    },
-    {
-      "requirement": "Experience working with large datasets or data pipelines",
-      "category": "Nice to Have",
-      "status": "satisfied",
-      "evidence": [
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
-      ],
-      "reasoning": "The candidate explicitly built a data pipeline in Python for their capstone project."
-    },
-    {
-      "requirement": "Knowledge of data visualisation tools or frameworks",
-      "category": "Nice to Have",
-      "status": "no_evidence",
-      "evidence": [],
-      "reasoning": "No visualization tools or frameworks (such as Matplotlib, Seaborn, Tableau, etc.) are listed or mentioned."
-    },
-    {
-      "requirement": "Experience with cloud platforms or distributed data technologies",
-      "category": "Nice to Have",
-      "status": "no_evidence",
-      "evidence": [],
-      "reasoning": "No cloud platforms or distributed data technologies are mentioned in the CV."
-    },
-    {
-      "requirement": "Personal, academic, research, or open-source projects demonstrating practical application of data science",
-      "category": "Nice to Have",
-      "status": "satisfied",
-      "evidence": [
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
-      ],
-      "reasoning": "The academic capstone project demonstrates the practical application of data science techniques."
+      "reasoning": "No evidence provided regarding fast-paced or international environment experience."
     }
   ],
   "completeness": [
     {
-      "section": "Header",
+      "section": "Personal Information",
       "field": "Name",
       "status": "present",
       "evidence": [
         "Tomás Silva"
       ],
       "relevance": "Essential for candidate identification.",
-      "reasoning": "The candidate's full name is clearly stated at the top of the CV."
+      "reasoning": "Candidate name is clearly stated at the top of the CV."
     },
     {
-      "section": "Header",
+      "section": "Personal Information",
       "field": "Email",
       "status": "missing",
       "evidence": [],
-      "relevance": "Critical for recruiter communication and contact.",
-      "reasoning": "No email address is provided anywhere in the CV."
+      "relevance": "Critical for recruiter contact.",
+      "reasoning": "No email address is provided in the CV."
     },
     {
-      "section": "Header",
+      "section": "Personal Information",
       "field": "Phone",
       "status": "missing",
       "evidence": [],
-      "relevance": "Important for direct phone communication.",
+      "relevance": "Important for direct communication.",
       "reasoning": "No phone number is provided in the CV."
     },
     {
-      "section": "Header",
+      "section": "Personal Information",
       "field": "Location",
       "status": "missing",
       "evidence": [],
-      "relevance": "Important for role location/hybrid suitability.",
-      "reasoning": "No physical location or address is provided."
+      "relevance": "Important for role location/hybrid alignment.",
+      "reasoning": "No location or city is provided in the CV."
     },
     {
-      "section": "Header",
+      "section": "Personal Information",
       "field": "LinkedIn URL",
       "status": "missing",
       "evidence": [],
-      "relevance": "Professional networking and expanded profile visibility.",
+      "relevance": "Useful for professional background verification.",
       "reasoning": "No LinkedIn URL is present in the CV."
     },
     {
-      "section": "Header",
-      "field": "GitHub/portfolio URL",
+      "section": "Personal Information",
+      "field": "GitHub/Portfolio URL",
       "status": "missing",
       "evidence": [],
-      "relevance": "Crucial for technical roles to inspect code and projects.",
-      "reasoning": "No GitHub or portfolio URL link is included in the CV."
+      "relevance": "Crucial for verifying technical and data science projects.",
+      "reasoning": "No GitHub or portfolio URL is present in the CV."
     },
     {
       "section": "Summary",
@@ -180,131 +153,95 @@
       "evidence": [
         "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
       ],
-      "relevance": "Provides a quick overview of career intent and background.",
-      "reasoning": "A brief introductory statement is present."
+      "relevance": "Provides a quick overview of career intent.",
+      "reasoning": "A brief objective/summary statement is included."
     },
     {
       "section": "Experience",
-      "field": "Work Experience",
+      "field": "Experience",
       "status": "present",
       "evidence": [
-        "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support..."
+        "Curricular Summer Internship (3 months)"
       ],
-      "relevance": "Demonstrates practical professional history and teamwork.",
-      "reasoning": "An internship entry is included, though it is brief and focused on QA/software testing rather than data science."
+      "relevance": "Demonstrates practical work history.",
+      "reasoning": "An internship entry is provided, though lacking company name, location, and dates."
     },
     {
       "section": "Education",
       "field": "Education",
       "status": "present",
       "evidence": [
-        "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20"
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20"
       ],
-      "relevance": "Validates the required academic background.",
-      "reasoning": "Degree, institution, dates, and grade are clearly detailed."
+      "relevance": "Meets foundational educational background requirements.",
+      "reasoning": "Degree, institution, dates, and grade are clearly stated."
     },
     {
       "section": "Technical Skills",
       "field": "Technical Skills",
       "status": "present",
       "evidence": [
-        "Python, SQL, Git",
-        "Pandas, NumPy, Unit Testing"
+        "Python, SQL, Git, Pandas, NumPy, Unit Testing"
       ],
-      "relevance": "Highlights technical capabilities relevant to engineering and data roles.",
+      "relevance": "Directly matches technical requirements of the job posting.",
       "reasoning": "A dedicated technical skills section is present."
-    },
-    {
-      "section": "Technical Skills",
-      "field": "Tools/Software",
-      "status": "present",
-      "evidence": [
-        "Git",
-        "PostgreSQL"
-      ],
-      "relevance": "Indicates familiarity with developer and database tooling.",
-      "reasoning": "Git and PostgreSQL are listed."
-    },
-    {
-      "section": "Technical Skills",
-      "field": "Methodologies",
-      "status": "present",
-      "evidence": [
-        "Unit Testing",
-        "QA methodologies"
-      ],
-      "relevance": "Shows awareness of structured software development practices.",
-      "reasoning": "Unit testing and QA methodologies are mentioned."
-    },
-    {
-      "section": "Skills",
-      "field": "Transferable Skills",
-      "status": "present",
-      "evidence": [
-        "Team collaboration"
-      ],
-      "relevance": "Important for cross-functional teamwork.",
-      "reasoning": "Team collaboration is mentioned in the internship description."
-    },
-    {
-      "section": "Languages",
-      "field": "Languages",
-      "status": "missing",
-      "evidence": [],
-      "relevance": "Important for international and multi-lingual work environments.",
-      "reasoning": "No spoken or written languages are listed."
-    },
-    {
-      "section": "Certifications",
-      "field": "Certifications/Training",
-      "status": "missing",
-      "evidence": [],
-      "relevance": "Provides supplemental validation of specialized skills.",
-      "reasoning": "No certifications or additional training courses are listed."
     },
     {
       "section": "Projects",
       "field": "Projects",
       "status": "present",
       "evidence": [
-        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+        "Capstone Project: Customer Churn Analysis"
       ],
-      "relevance": "Demonstrates practical application of skills in a project setting.",
-      "reasoning": "A capstone project is detailed with description and technologies used."
+      "relevance": "Demonstrates practical data science skills.",
+      "reasoning": "A capstone project with description and technologies is included."
     },
     {
-      "section": "Other",
+      "section": "Certifications",
+      "field": "Certifications",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Optional additional credentials.",
+      "reasoning": "No certifications are listed in the CV."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Useful for international environments.",
+      "reasoning": "No spoken or written languages are listed."
+    },
+    {
+      "section": "GDPR",
       "field": "GDPR Consent",
       "status": "missing",
       "evidence": [],
-      "relevance": "Required for certain jurisdictions/recruiters depending on local regulations.",
+      "relevance": "Required in certain jurisdictions (e.g., EU).",
       "reasoning": "No GDPR consent statement is included."
     }
   ],
   "missing_evidence": [
-    "Foundation in statistics, probability, and quantitative analysis",
     "Experience with experimentation, A/B testing, or causal inference",
     "Knowledge of data visualisation tools or frameworks",
     "Experience with cloud platforms or distributed data technologies",
-    "Contact information (email, phone, location)",
-    "Professional profile links (LinkedIn, GitHub/portfolio)"
+    "Evidence of currently pursuing a Bachelor's or Master's degree (as graduation year is listed as 2024)",
+    "Candidate contact details (email, phone, location)",
+    "Professional profile links (LinkedIn, GitHub/Portfolio)"
   ],
   "weak_evidence": [
-    "Understanding of machine learning fundamentals and model evaluation (listed Scikit-Learn in a project, but lacks theoretical or evaluative context)",
-    "Strong analytical and problem-solving skills (implied by degree and project work rather than explicitly described)"
+    "Ability to investigate ambiguous problems and break them down into structured analytical tasks (only weakly evidenced via capstone project description)"
   ],
   "strengths": [
-    "Relevant educational background with a B.Sc. in Computer Science from the University of Coimbra with a strong grade (15/20)",
-    "Direct technical alignment with Python, SQL, Pandas, NumPy, and Scikit-Learn",
-    "Practical experience demonstrated through a data pipeline capstone project analyzing customer churn",
-    "Exposure to team collaboration through a curricular summer internship"
+    "Strong core technical skills matching requirements (Python, SQL, Pandas, NumPy, Scikit-Learn)",
+    "Relevant hands-on experience demonstrated through a data science capstone project building a data pipeline and analyzing customer churn",
+    "Academic background in Computer Science with a solid grade (15/20 from University of Coimbra)"
   ],
   "weaknesses": [
-    "Complete lack of candidate contact details (no email, phone, or location)",
-    "Absence of professional profile or portfolio links (LinkedIn, GitHub)",
-    "Professional experience is limited to a brief internship focused on QA/software testing rather than data science",
-    "Missing key preferred skills such as A/B testing, data visualization tools, and cloud platforms"
+    "Complete lack of contact information (email, phone, location) and profile URLs (LinkedIn, GitHub)",
+    "Missing preferred technical requirements such as A/B testing, data visualization tools, and cloud platforms",
+    "Internship experience lacks detail (no company name, location, or exact dates)"
   ],
-  "overall_assessment": "Tomás Silva presents a solid academic foundation as a Computer Science graduate with relevant core technical skills in Python, SQL, Pandas, NumPy, and Scikit-Learn, complemented by a capstone project involving a data pipeline. However, the CV suffers from critical completeness gaps regarding contact information and online profile links. While the candidate satisfies several technical and educational requirements for the Data Scientist Intern role, there is a lack of evidence concerning statistics, machine learning model evaluation theory, experimentation/A/B testing, and data visualization.",
-  "reasoning": "The evaluation maps the candidate's explicit qualifications and projects against the requirements outlined in the Revolut Data Scientist Intern posting. Core programming and data analysis library requirements are well-supported by both technical listings and the capstone project. Conversely, advanced data science topics (statistics, A/B testing, visualization, cloud) lack evidence, and fundamental contact details are entirely absent from the CV structure."
+  "overall_assessment": "The candidate Tomás Silva presents a relevant educational background in Computer Science and demonstrates core technical skills in Python, SQL, Pandas, and NumPy, complemented by a practical data science capstone project on customer churn. However, the CV lacks several preferred skills (A/B testing, visualization, cloud platforms) and is critically missing contact details, location, and professional profile links, making direct outreach and verification difficult.",
+  "reasoning": "The evaluation maps the candidate's stated experience and skills against the explicit requirements in the Revolut Data Scientist Intern job description, highlighting strong matches in core programming and libraries, alongside clear gaps in preferred skills and vital CV completeness dimensions like contact info."
 }

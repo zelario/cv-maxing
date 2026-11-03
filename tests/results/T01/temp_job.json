@@ -8,14 +8,8 @@
   "location": "London / Hybrid",
   "employment_type": "Internship",
   "seniority": "Intern",
-  "description": "We are looking for a Data Scientist Intern to join a cross-functional team working on data-driven products and customer experiences.\n\nYou will work closely with Data Scientists, Engineers, Product Managers, and other stakeholders to analyse large datasets, develop analytical solutions, run experiments, and turn data into actionable insights.",
+  "description": "We are looking for a Data Scientist Intern to join a cross-functional team working on data-driven products and customer experiences.",
   "skills": [
-    {
-      "name": "Statistics, probability, and quantitative analysis",
-      "requirement_type": "required",
-      "source_section": "What We're Looking For",
-      "source_text": "Strong foundation in statistics, probability, and quantitative analysis."
-    },
     {
       "name": "Python",
       "requirement_type": "required",
@@ -29,83 +23,53 @@
       "source_text": "Experience with Python and SQL."
     },
     {
-      "name": "pandas, NumPy, scikit-learn, or similar tools",
+      "name": "pandas",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
       "source_text": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools."
     },
     {
-      "name": "Machine learning fundamentals and model evaluation",
+      "name": "NumPy",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
-      "source_text": "Understanding of machine learning fundamentals and model evaluation."
+      "source_text": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools."
     },
     {
-      "name": "Experimentation, A/B testing, or causal inference",
+      "name": "scikit-learn",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools."
+    },
+    {
+      "name": "experimentation, A/B testing, or causal inference",
       "requirement_type": "preferred",
       "source_section": "Nice to Have",
       "source_text": "Experience with experimentation, A/B testing, or causal inference."
     },
     {
-      "name": "Large datasets or data pipelines",
+      "name": "large datasets or data pipelines",
       "requirement_type": "preferred",
       "source_section": "Nice to Have",
       "source_text": "Experience working with large datasets or data pipelines."
     },
     {
-      "name": "Data visualisation tools or frameworks",
+      "name": "data visualisation tools or frameworks",
       "requirement_type": "preferred",
       "source_section": "Nice to Have",
       "source_text": "Knowledge of data visualisation tools or frameworks."
     },
     {
-      "name": "Cloud platforms or distributed data technologies",
+      "name": "cloud platforms or distributed data technologies",
       "requirement_type": "preferred",
       "source_section": "Nice to Have",
       "source_text": "Experience with cloud platforms or distributed data technologies."
     }
   ],
-  "experience_requirements": [
-    {
-      "description": "Experience with Python and SQL",
-      "years": "",
-      "requirement_type": "required",
-      "source_section": "What We're Looking For",
-      "source_text": "Experience with Python and SQL."
-    },
-    {
-      "description": "Experience with experimentation, A/B testing, or causal inference",
-      "years": "",
-      "requirement_type": "preferred",
-      "source_section": "Nice to Have",
-      "source_text": "Experience with experimentation, A/B testing, or causal inference."
-    },
-    {
-      "description": "Experience working with large datasets or data pipelines",
-      "years": "",
-      "requirement_type": "preferred",
-      "source_section": "Nice to Have",
-      "source_text": "Experience working with large datasets or data pipelines."
-    },
-    {
-      "description": "Experience with cloud platforms or distributed data technologies",
-      "years": "",
-      "requirement_type": "preferred",
-      "source_section": "Nice to Have",
-      "source_text": "Experience with cloud platforms or distributed data technologies."
-    },
-    {
-      "description": "Personal, academic, research, or open-source projects demonstrating practical application of data science",
-      "years": "",
-      "requirement_type": "preferred",
-      "source_section": "Nice to Have",
-      "source_text": "Personal, academic, research, or open-source projects demonstrating practical application of data science."
-    }
-  ],
+  "experience_requirements": [],
   "education_requirements": [
     {
       "level": "Bachelor's or Master's",
-      "degree": "Bachelor's or Master's degree",
+      "degree": "Bachelor's or Master's",
       "field": "Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
@@ -178,21 +142,21 @@
   ],
   "other_requirements": [
     {
-      "type": "Soft Skill",
+      "type": "Soft Skills",
       "description": "Ability to investigate ambiguous problems and break them down into structured analytical tasks.",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
       "source_text": "Ability to investigate ambiguous problems and break them down into structured analytical tasks."
     },
     {
-      "type": "Soft Skill",
+      "type": "Soft Skills",
       "description": "Strong analytical and problem-solving skills.",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
       "source_text": "Strong analytical and problem-solving skills."
     },
     {
-      "type": "Soft Skill",
+      "type": "Soft Skills",
       "description": "Good communication skills and ability to work effectively in a team.",
       "requirement_type": "required",
       "source_section": "What We're Looking For",
