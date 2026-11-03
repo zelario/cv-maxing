@@ -1,0 +1,239 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Personal Information",
+      "current_content": "Diogo Santos",
+      "proposed_content": "Diogo Santos | Porto, Portugal | +351 925 678 123 | diogo.santos.backend@example.com | linkedin.com/in/diogosantos-backend | github.com/dsantos-code",
+      "rationale": "Add verified contact information and professional profile links provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: diogo.santos.backend@example.com",
+        "Phone: +351 925 678 123",
+        "Location: Porto, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+        "GitHub: https://github.com/dsantos-code"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+      "proposed_content": "Cloud & DevOps Engineer with 3+ years of professional backend experience building and deploying scalable microservices in Python. Leveraged verified core skills in Docker, GitHub Actions CI/CD pipelines, and Linux systems administration to optimize cloud infrastructure workflows. Delivered high-availability RESTful APIs and optimized PostgreSQL database operations at CloudScale.",
+      "rationale": "Optimize the summary to align with the target role of Cloud & DevOps Engineer while strictly incorporating verified backend, Docker, and CI/CD competencies.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Implementing Docker containerization for standardized deployment environments."
+      ],
+      "user_provided_evidence": [
+        "Experience with Python, AWS (S3, EC2, RDS integrations), Docker, GitHub Actions, and Linux administration"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "PROFESSIONAL EXPERIENCE",
+      "current_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication.",
+      "proposed_content": "Backend Software Engineer\nCloudScale | January 2021 – Present (3+ years)\n• Developed and deployed RESTful APIs in Python using FastAPI and Django.\n• Managed PostgreSQL schema design and comprehensive database query optimization.\n• Implemented Docker containerization and configured GitHub Actions CI/CD pipelines for standardized deployment environments.\n• Integrated RabbitMQ message brokers to handle asynchronous tasks and microservice communication.",
+      "rationale": "Expand experience bullets to include confirmed CI/CD pipeline implementation via GitHub Actions and refine dates based on user input.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "user_provided_evidence": [
+        "CloudScale Technologies from January 2021 to the present",
+        "Managed Docker environments and CI/CD pipelines"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "PROFESSIONAL EXPERIENCE",
+      "current_content": "",
+      "proposed_content": "Junior Web Developer\nSoftPorto Solutions | September 2020 – December 2020\n• Built and maintained Python backend web components and supported database integrations.",
+      "rationale": "Add confirmed prior professional experience at SoftPorto Solutions.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Junior Web Developer at SoftPorto Solutions from September 2020 to December 2020."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "EDUCATION",
+      "current_content": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)",
+      "proposed_content": "B.Sc. in Informatics and Computing Engineering\nFEUP | September 2017 – July 2020 | Grade: 14/20\n• Relevant coursework and academic projects: Distributed Key-Value Store and Hospital RDBMS.",
+      "rationale": "Add confirmed grade and academic project details to the education section.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+      ],
+      "user_provided_evidence": [
+        "B.Sc. in Informatics and Computing Engineering from FEUP, completed between September 2017 and July 2020 with a grade of 14/20",
+        "Worked on projects such as a Distributed Key-Value Store and a Hospital RDBMS"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "TECHNICAL SKILLS",
+      "current_content": "Languages & Frameworks: Python, FastAPI, Django\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux\nTools: Git",
+      "proposed_content": "Languages & Frameworks: Python, FastAPI, Django\nCloud & Infrastructure: AWS (S3, EC2, RDS integrations), Docker, Linux, PostgreSQL, Redis, RabbitMQ\nCI/CD & Tools: GitHub Actions, Git",
+      "rationale": "Update technical skills categories to explicitly highlight verified AWS service integrations, GitHub Actions CI/CD, and Linux administration.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "user_provided_evidence": [
+        "Experience with Python, AWS (S3, EC2, RDS integrations), Docker, GitHub Actions, and Linux administration"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "LANGUAGES",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Full Professional)",
+      "rationale": "Add verified spoken languages and CEFR proficiency levels.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C1 Full Professional)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "PROJECTS",
+      "current_content": "",
+      "proposed_content": "Projects:\n• Distributed Key-Value Store (FEUP): Developed a fault-tolerant distributed key-value store using Python and C++ focusing on replication and reliability.\n• Hospital RDBMS (FEUP): Designed and implemented a relational database management system for hospital record operations.",
+      "rationale": "Add verified academic projects from FEUP to strengthen technical depth.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Distributed Key-Value Store using Python and C++ focusing on replication and fault tolerance",
+        "Hospital RDBMS project"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "What is the exact target job title you are applying for? (Confirm if it is 'Cloud & DevOps Engineer' from the job posting).",
+    "What is your email address? (You may also reply 'I do not have one' or skip).",
+    "What is your phone number? (You may also reply 'I do not have one' or skip).",
+    "What is your current location? (You may also reply 'I do not have one' or skip).",
+    "What is your LinkedIn profile URL? (You may also reply 'I do not have one' or skip).",
+    "What is your GitHub or portfolio URL? (You may also reply 'I do not have one' or skip).",
+    "Could you confirm your employment details (job titles, company names, dates, and achievements) for your listed roles?",
+    "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade)?",
+    "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM roles, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash or Python]. Do you have experience with any of these or any others you would like to include?",
+    "What spoken languages do you know, and what are your stated CEFR proficiency levels? (You may also reply 'I do not have one' or skip).",
+    "Do you have any relevant certifications? Please provide the name, issuer/provider, and year if applicable. (You may also reply 'I do not have one' or skip).",
+    "Do you have any relevant standalone projects or competitions? Please provide the name, dates, technologies, and your individual contribution. (You may also reply 'I do not have one' or skip).",
+    "What key points would you like to highlight in your professional summary?"
+  ],
+  "user_answers": [
+    {
+      "question": "What is the exact target job title you are applying for? (Confirm if it is 'Cloud & DevOps Engineer' from the job posting).",
+      "answer": "Yes, I confirm that the exact target job title I am applying for is Cloud & DevOps Engineer.",
+      "gap": "Target job title confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "What is your email address? (You may also reply 'I do not have one' or skip).",
+      "answer": "My email address is diogo.santos.backend@example.com.",
+      "gap": "Missing email address",
+      "resolution": "supported"
+    },
+    {
+      "question": "What is your phone number? (You may also reply 'I do not have one' or skip).",
+      "answer": "My phone number is +351 925 678 123.",
+      "gap": "Missing phone number",
+      "resolution": "supported"
+    },
+    {
+      "question": "What is your current location? (You may also reply 'I do not have one' or skip).",
+      "answer": "My current location is Porto, Portugal, and I am open to hybrid work in Porto or Lisbon, as well as remote positions.",
+      "gap": "Missing location",
+      "resolution": "supported"
+    },
+    {
+      "question": "What is your LinkedIn profile URL? (You may also reply 'I do not have one' or skip).",
+      "answer": "My LinkedIn profile URL is https://www.linkedin.com/in/diogosantos-backend.",
+      "gap": "Missing LinkedIn URL",
+      "resolution": "supported"
+    },
+    {
+      "question": "What is your GitHub or portfolio URL? (You may also reply 'I do not have one' or skip).",
+      "answer": "My GitHub profile is https://github.com/dsantos-code, and I do not have a separate portfolio website.",
+      "gap": "Missing GitHub/portfolio URL",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your employment details (job titles, company names, dates, and achievements) for your listed roles?",
+      "answer": "My employment details are: Backend Software Engineer at CloudScale Technologies from January 2021 to the present, and Junior Web Developer at SoftPorto Solutions from September 2020 to December 2020. During these roles, I designed and maintained microservices in Python, optimized PostgreSQL databases, implemented Redis caching, and managed Docker environments and CI/CD pipelines.",
+      "gap": "Employment history details and dates",
+      "resolution": "supported"
+    },
+    {
+      "question": "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade)?",
+      "answer": "My education consists of a B.Sc. in Informatics and Computing Engineering from FEUP, completed between September 2017 and July 2020 with a grade of 14/20, where I worked on projects such as a Distributed Key-Value Store and a Hospital RDBMS.",
+      "gap": "Education grade and details",
+      "resolution": "supported"
+    },
+    {
+      "question": "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM roles, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash or Python]. Do you have experience with any of these or any others you would like to include?",
+      "answer": "I have experience with Python, AWS (S3, EC2, RDS integrations), Docker, GitHub Actions, and Linux administration, but I do not have experience with Terraform, Kubernetes, or advanced AWS infrastructure like VPC or EKS.",
+      "gap": "Cloud and DevOps tech stack gap (Terraform, Kubernetes, advanced AWS)",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "What spoken languages do you know, and what are your stated CEFR proficiency levels? (You may also reply 'I do not have one' or skip).",
+      "answer": "I am a native Portuguese speaker and have C1 Full Professional proficiency in English.",
+      "gap": "Languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "Do you have any relevant certifications? Please provide the name, issuer/provider, and year if applicable. (You may also reply 'I do not have one' or skip).",
+      "answer": "I do not have any cloud or professional certifications.",
+      "gap": "Certifications section",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "Do you have any relevant standalone projects or competitions? Please provide the name, dates, technologies, and your individual contribution. (You may also reply 'I do not have one' or skip).",
+      "answer": "During my degree at FEUP, I developed a Distributed Key-Value Store using Python and C++ focusing on replication and fault tolerance, as well as a Hospital RDBMS project.",
+      "gap": "Projects section",
+      "resolution": "supported"
+    },
+    {
+      "question": "What key points would you like to highlight in your professional summary?",
+      "answer": "I would like to highlight my 3+ years of backend development experience with Python, Docker, and Linux systems administration, alongside my hands-on background working with AWS integrations and CI/CD pipelines.",
+      "gap": "Summary focus points",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: diogo.santos.backend@example.com",
+    "Phone: +351 925 678 123",
+    "Location: Porto, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/diogosantos-backend",
+    "GitHub: https://github.com/dsantos-code",
+    "CloudScale Technologies employment from Jan 2021 to Present",
+    "Junior Web Developer at SoftPorto Solutions from Sept 2020 to Dec 2020",
+    "B.Sc. in Informatics and Computing Engineering from FEUP (Sep 2017 - Jul 2020, Grade: 14/20)",
+    "Experience with Python, AWS (S3, EC2, RDS integrations), Docker, GitHub Actions, and Linux administration",
+    "Portuguese (Native), English (C1 Full Professional)",
+    "Distributed Key-Value Store and Hospital RDBMS academic projects at FEUP"
+  ],
+  "optimization_strategy": "The optimization strategy bridges the candidate's strong backend Python and Docker background with the requirements of the Cloud & DevOps Engineer role by incorporating verified AWS service integrations (S3, EC2, RDS), GitHub Actions CI/CD pipelines, and Linux administration. Contact details, professional profile links, language proficiencies, additional professional experience (SoftPorto Solutions), and academic projects (FEUP) are integrated to maximize application completeness while remaining strictly truthful to candidate confirmations.",
+  "unresolved_evidence_gaps": [
+    "Lack of experience with Terraform and Infrastructure as Code (IaC)",
+    "Lack of experience with Kubernetes (EKS)",
+    "Lack of experience with advanced AWS infrastructure (VPC, IAM roles, Route53)",
+    "Lack of experience with centralized monitoring and logging tools (Prometheus, Grafana, CloudWatch)",
+    "Absence of official cloud or professional certifications"
+  ]
+}

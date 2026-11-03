@@ -1,0 +1,216 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Terraform / Infrastructure as Code",
+      "category": "Required Skills & Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The job posting requires Terraform and Infrastructure as Code experience. The CV lists no mention of Terraform or IaC tools."
+    },
+    {
+      "requirement": "Amazon Web Services (AWS)",
+      "category": "Required Skills & Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The role requires hands-on experience with AWS services (EC2, S3, RDS, VPC, IAM, Route53). The CV does not mention AWS."
+    },
+    {
+      "requirement": "CI/CD pipelines (GitHub Actions, GitLab CI)",
+      "category": "Required Skills & Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The job requires building and maintaining automated CI/CD pipelines. The CV mentions Git as a tool, but has no mention of CI/CD pipeline implementation."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Required Skills & Experience",
+      "status": "satisfied",
+      "evidence": [
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Solid working experience containerizing applications and services with Docker."
+      ],
+      "reasoning": "The candidate has direct professional experience implementing Docker containerization for deployment environments, satisfying the Docker requirement."
+    },
+    {
+      "requirement": "Kubernetes (EKS)",
+      "category": "Required Skills & Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The job requires Kubernetes/EKS experience. The CV does not mention Kubernetes."
+    },
+    {
+      "requirement": "Monitoring & Logging (Prometheus, Grafana, CloudWatch)",
+      "category": "Required Skills & Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The role requires implementing centralized monitoring and logging. The CV contains no mention of Prometheus, Grafana, or CloudWatch."
+    },
+    {
+      "requirement": "Linux systems administration & scripting (Bash or Python)",
+      "category": "Required Skills & Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Linux (listed under Databases & Infrastructure)"
+      ],
+      "reasoning": "The candidate lists Python and Linux as skills, but does not provide evidence of operational Linux systems administration or shell scripting in a DevOps/Cloud context."
+    },
+    {
+      "requirement": "Bachelor's degree in Computer Science, Telecommunications, Informatics, or related field",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering, FEUP (2017-2020)"
+      ],
+      "reasoning": "The candidate holds a B.Sc. in Informatics and Computing Engineering, which matches the required educational background."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Diogo Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location information is provided in the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is included in the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is included in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Backend Software Engineer at CloudScale | 2021-Present (3 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Professional experience section is present with job title, company, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering, FEUP (2017-2020)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education history is clearly documented."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills are categorized and listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications are listed in the CV."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No dedicated projects section is present."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No spoken or written human languages are listed."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Experience with Terraform and Infrastructure as Code (IaC)",
+    "Hands-on experience with Amazon Web Services (AWS) core services",
+    "CI/CD pipeline implementation and optimization (GitHub Actions, GitLab CI)",
+    "Kubernetes container cluster management",
+    "Centralized monitoring and logging tools (Prometheus, Grafana, CloudWatch)"
+  ],
+  "weak_evidence": [
+    "Linux systems administration and shell scripting (Python is listed, but not shell scripting or Linux systems administration experience in a DevOps capacity)",
+    "Contact information (email, phone, location, and social/code profile links are entirely absent)"
+  ],
+  "strengths": [
+    "Relevant educational background with a B.Sc. in Informatics and Computing Engineering",
+    "Solid professional backend experience with Python, FastAPI, Django, PostgreSQL, and Docker"
+  ],
+  "weaknesses": [
+    "Complete absence of cloud computing (AWS) and infrastructure automation (Terraform/IaC) experience required for the Cloud & DevOps role",
+    "Missing contact information (email, phone number) in the CV header",
+    "No links to professional profiles such as GitHub or LinkedIn"
+  ],
+  "overall_assessment": "The candidate, Diogo Santos, presents a background focused on backend software engineering (Python, FastAPI, Django, databases) rather than Cloud and DevOps engineering. The CV lacks primary required competencies for the targeted position, specifically Terraform, AWS, CI/CD pipelines, Kubernetes, and monitoring tools. Additionally, the CV lacks essential contact details such as an email address and phone number.",
+  "reasoning": "The evaluation compares the candidate's structured CV against the requirements of the Cloud & DevOps Engineer job posting. While the candidate fulfills the educational requirement and possesses Docker experience, major gaps exist across core DevOps requirements including AWS, Terraform, CI/CD, and Kubernetes. Furthermore, completeness checks reveal missing contact and link fields."
+}

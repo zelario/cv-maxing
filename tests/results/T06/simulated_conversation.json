@@ -1,0 +1,54 @@
+[
+  {
+    "question": "What is the exact target job title you are applying for? (Confirm if it is 'Cloud & DevOps Engineer' from the job posting).",
+    "answer": "Yes, I confirm that the exact target job title I am applying for is Cloud & DevOps Engineer."
+  },
+  {
+    "question": "What is your email address? (You may also reply 'I do not have one' or skip).",
+    "answer": "My email address is diogo.santos.backend@example.com."
+  },
+  {
+    "question": "What is your phone number? (You may also reply 'I do not have one' or skip).",
+    "answer": "My phone number is +351 925 678 123."
+  },
+  {
+    "question": "What is your current location? (You may also reply 'I do not have one' or skip).",
+    "answer": "My current location is Porto, Portugal, and I am open to hybrid work in Porto or Lisbon, as well as remote positions."
+  },
+  {
+    "question": "What is your LinkedIn profile URL? (You may also reply 'I do not have one' or skip).",
+    "answer": "My LinkedIn profile URL is https://www.linkedin.com/in/diogosantos-backend."
+  },
+  {
+    "question": "What is your GitHub or portfolio URL? (You may also reply 'I do not have one' or skip).",
+    "answer": "My GitHub profile is https://github.com/dsantos-code, and I do not have a separate portfolio website."
+  },
+  {
+    "question": "Could you confirm your employment details (job titles, company names, dates, and achievements) for your listed roles?",
+    "answer": "My employment details are: Backend Software Engineer at CloudScale Technologies from January 2021 to the present, and Junior Web Developer at SoftPorto Solutions from September 2020 to December 2020. During these roles, I designed and maintained microservices in Python, optimized PostgreSQL databases, implemented Redis caching, and managed Docker environments and CI/CD pipelines."
+  },
+  {
+    "question": "Could you confirm your education details (degree, institution, dates, grade/GPA, thesis topic and grade)?",
+    "answer": "My education consists of a B.Sc. in Informatics and Computing Engineering from FEUP, completed between September 2017 and July 2020 with a grade of 14/20, where I worked on projects such as a Distributed Key-Value Store and a Hospital RDBMS."
+  },
+  {
+    "question": "More specifically, the job posting mentions/requires: [Terraform, Amazon Web Services (AWS), CI/CD pipelines, GitHub Actions, GitLab CI, Docker, Kubernetes (EKS), Prometheus, Grafana, CloudWatch, IAM roles, AWS services (EC2, S3, RDS, VPC, IAM, Route53), Linux systems administration, Bash or Python]. Do you have experience with any of these or any others you would like to include?",
+    "answer": "I have experience with Python, AWS (S3, EC2, RDS integrations), Docker, GitHub Actions, and Linux administration, but I do not have experience with Terraform, Kubernetes, or advanced AWS infrastructure like VPC or EKS."
+  },
+  {
+    "question": "What spoken languages do you know, and what are your stated CEFR proficiency levels? (You may also reply 'I do not have one' or skip).",
+    "answer": "I am a native Portuguese speaker and have C1 Full Professional proficiency in English."
+  },
+  {
+    "question": "Do you have any relevant certifications? Please provide the name, issuer/provider, and year if applicable. (You may also reply 'I do not have one' or skip).",
+    "answer": "I do not have any cloud or professional certifications."
+  },
+  {
+    "question": "Do you have any relevant standalone projects or competitions? Please provide the name, dates, technologies, and your individual contribution. (You may also reply 'I do not have one' or skip).",
+    "answer": "During my degree at FEUP, I developed a Distributed Key-Value Store using Python and C++ focusing on replication and fault tolerance, as well as a Hospital RDBMS project."
+  },
+  {
+    "question": "What key points would you like to highlight in your professional summary?",
+    "answer": "I would like to highlight my 3+ years of backend development experience with Python, Docker, and Linux systems administration, alongside my hands-on background working with AWS integrations and CI/CD pipelines."
+  }
+]

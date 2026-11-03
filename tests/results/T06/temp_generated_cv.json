@@ -1,0 +1,107 @@
+{
+  "contact": {
+    "name": "Diogo Santos",
+    "headline": "Cloud & DevOps Engineer",
+    "specialisation": "Backend & Cloud Infrastructure",
+    "phone": "+351 925 678 123",
+    "email": "diogo.santos.backend@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/diogosantos-backend",
+    "github": "https://github.com/dsantos-code",
+    "portfolio": ""
+  },
+  "summary": "Cloud & DevOps Engineer with 3+ years of professional backend experience building and deploying scalable microservices in Python. Leveraged verified core skills in Docker, GitHub Actions CI/CD pipelines, and Linux systems administration to optimize cloud infrastructure workflows. Delivered high-availability RESTful APIs and optimized PostgreSQL database operations at CloudScale.",
+  "experience": [
+    {
+      "title": "Backend Software Engineer",
+      "dates": "January 2021 – Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed and deployed RESTful APIs in Python using FastAPI and Django.",
+        "Managed PostgreSQL schema design and comprehensive database query optimization.",
+        "Implemented Docker containerization and configured GitHub Actions CI/CD pipelines for standardized deployment environments.",
+        "Integrated RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ]
+    },
+    {
+      "title": "Junior Web Developer",
+      "dates": "September 2020 – December 2020",
+      "company": "SoftPorto Solutions",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Built and maintained Python backend web components and supported database integrations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Informatics and Computing Engineering",
+      "dates": "September 2017 – July 2020",
+      "institution": "FEUP",
+      "location": "Porto, Portugal",
+      "grade": "14/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Languages & Frameworks",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Django"
+      ]
+    },
+    {
+      "category_name": "Cloud & Infrastructure",
+      "skills": [
+        "AWS (S3, EC2, RDS integrations)",
+        "Docker",
+        "Linux",
+        "PostgreSQL",
+        "Redis",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "category_name": "CI/CD & Tools",
+      "skills": [
+        "GitHub Actions",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Full Professional",
+      "details": "",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Distributed Key-Value Store",
+      "dates": "2020",
+      "description": "Developed a fault-tolerant distributed key-value store using Python and C++ focusing on replication and fault tolerance.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    },
+    {
+      "name": "Hospital RDBMS",
+      "dates": "2019 - 2020",
+      "description": "Designed and implemented a relational database management system for hospital record operations.",
+      "link": "",
+      "volunteering_or_other": "Academic Project"
+    }
+  ],
+  "consent": true
+}
