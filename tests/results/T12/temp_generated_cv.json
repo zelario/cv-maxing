@@ -1,0 +1,79 @@
+{
+  "contact": {
+    "name": "Inês Martins",
+    "headline": "Intensive Care Unit (ICU) Staff Nurse",
+    "specialisation": "Nursing Council License No. 94312",
+    "phone": "+351 928 345 671",
+    "email": "ines.martins.nurse@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/inesmartins-enf",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Dedicated Intensive Care Unit (ICU) Staff Nurse and Registered Nurse with 3 years of verified post-operative surgical and internal medicine ward experience, core competencies in surgical patient care and medication administration, and a proven record of post-operative patient recovery and interdisciplinary teamwork.",
+  "experience": [
+    {
+      "title": "General Care Staff Nurse",
+      "dates": "2021-Present",
+      "company": "CHUC University Hospital",
+      "location": "Coimbra, Portugal",
+      "bullets": [
+        "Direct patient care in surgical ward.",
+        "Medication preparation and administration (IV/IM/Oral).",
+        "Wound dressing and wound care management.",
+        "Vital signs monitoring and patient admission/discharge records."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Nursing",
+      "dates": "2017-2021",
+      "institution": "Coimbra Nursing School (ESEnfC)",
+      "location": "Coimbra, Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Clinical Care",
+      "skills": [
+        "Surgical Patient Care",
+        "Medication Administration",
+        "Catheterization",
+        "Infection Prevention & Control",
+        "Basic Life Support",
+        "Multidisciplinary Teamwork"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "Upper-Intermediate",
+      "details": "B2",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Basic Life Support (BLS / SBV) Certification",
+      "issuer": "Coimbra Nursing School",
+      "year": ""
+    },
+    {
+      "name": "Prevention and Advanced Management of Complex Wounds and Pressure Ulcers (60 hours)",
+      "issuer": "Coimbra Nursing School (ESEnfC)",
+      "year": ""
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

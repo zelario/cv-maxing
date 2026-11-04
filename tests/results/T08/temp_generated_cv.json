@@ -1,0 +1,81 @@
+{
+  "contact": {
+    "name": "Mariana Costa",
+    "headline": "Data Scientist Intern",
+    "specialisation": "Web Development & Frontend Engineering",
+    "phone": "+351 934 567 890",
+    "email": "mariana.costa.ui@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/marianacosta-frontend",
+    "github": "https://github.com/marianacosta-ui",
+    "portfolio": "https://marianacosta.dev"
+  },
+  "summary": "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "dates": "2022-Present",
+      "company": "PixelWave",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Design and Multimedia",
+      "dates": "2018-2021",
+      "institution": "Universidade de Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "16/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Frameworks",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js"
+      ]
+    },
+    {
+      "category_name": "Web Technologies & Design",
+      "skills": [
+        "HTML5",
+        "CSS3/Tailwind",
+        "Figma",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "category_name": "Tools & Methods",
+      "skills": [
+        "Git",
+        "REST APIs"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": "Native"
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": "C1 Full Professional"
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}

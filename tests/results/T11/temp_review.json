@@ -1,0 +1,289 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Integrated Master's Degree (Mestrado Integrado) or equivalent university degree in Medicine",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "Integrated Master's in Medicine, Faculty of Medicine, University of Porto (2016-2022)"
+      ],
+      "reasoning": "The candidate possesses an Integrated Master's in Medicine from the Faculty of Medicine, University of Porto, directly fulfilling the education requirement."
+    },
+    {
+      "requirement": "Active medical registration and valid license with the Medical Association (Cédula Profissional da Ordem dos Médicos) with general practice autonomy (autonomia profissional / internato geral concluído)",
+      "category": "Licensure / Registration",
+      "status": "satisfied",
+      "evidence": [
+        "Medical Association License No. 68421",
+        "Medical doctor with completed general internship"
+      ],
+      "reasoning": "The CV lists a Medical Association License No. 68421 and indicates a completed general internship, satisfying the active registration and general practice autonomy requirement."
+    },
+    {
+      "requirement": "Valid, up-to-date certification in Basic Life Support (BLS / SBV)",
+      "category": "Certification",
+      "status": "weak_evidence",
+      "evidence": [
+        "Basic Life Support (BLS) listed under CLINICAL COMPETENCIES"
+      ],
+      "reasoning": "BLS is listed as a competence, but there is no explicit mention of an up-to-date certificate or validity status."
+    },
+    {
+      "requirement": "Sound clinical acumen, diagnostic reasoning, and strict adherence to evidence-based medical guidelines",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Clinical Patient Assessment",
+        "Primary triage and basic emergency intervention",
+        "Clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care"
+      ],
+      "reasoning": "Demonstrated through clinical rotations and core competencies such as patient assessment and emergency intervention."
+    },
+    {
+      "requirement": "Exceptional interpersonal and communication skills, demonstrating empathy, active listening, and patient-centered care",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Doctor-Patient Communication"
+      ],
+      "reasoning": "Doctor-Patient Communication is listed as a skill, but specific evidence or context demonstrating exceptional interpersonal skills, empathy, or active listening is lacking."
+    },
+    {
+      "requirement": "Ability to work effectively within an interdisciplinary medical environment",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no explicit mention or demonstration of working within an interdisciplinary medical environment in the provided CV."
+    },
+    {
+      "requirement": "Fluency in Portuguese with professional working proficiency in English",
+      "category": "Language",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention language proficiencies or fluencies in either Portuguese or English."
+    },
+    {
+      "requirement": "Current certification in Advanced Life Support (ALS / SAV)",
+      "category": "Certification (Preferred)",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Advanced Life Support (ALS) certification is not mentioned in the CV."
+    },
+    {
+      "requirement": "Prior clinical rotation or residency experience in hospital emergency departments or primary healthcare centers (Centros de Saúde)",
+      "category": "Experience (Preferred)",
+      "status": "satisfied",
+      "evidence": [
+        "General Practice Medical Resident at São João University Hospital (2023-2024)",
+        "Adult Emergency Care",
+        "Clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care"
+      ],
+      "reasoning": "The candidate completed residency experience including adult emergency care and clinical rotations."
+    },
+    {
+      "requirement": "Familiarity with clinical record software systems commonly used in Portugal (e.g., SClínico, SAM, or private clinical EHRs)",
+      "category": "Skills (Preferred)",
+      "status": "weak_evidence",
+      "evidence": [
+        "Electronic Health Records"
+      ],
+      "reasoning": "Electronic Health Records is listed as a clinical competency, but specific software systems (like SClínico or SAM) are not mentioned."
+    },
+    {
+      "requirement": "Participation in clinical research, medical conferences, or accredited continuing medical education (CME)",
+      "category": "Professional Development (Preferred)",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No participation in clinical research, medical conferences, or CME is mentioned in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Dr. Gonçalo Ferreira"
+      ],
+      "relevance": "Essential",
+      "reasoning": "Candidate name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Medical Doctor | General Practitioner"
+      ],
+      "relevance": "Important",
+      "reasoning": "Professional headline is explicitly provided."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Essential",
+      "reasoning": "Email address is missing from the personal information and header."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Essential",
+      "reasoning": "Phone number is missing from the personal information and header."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important",
+      "reasoning": "Geographic location or address is not provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Optional",
+      "reasoning": "No LinkedIn profile URL is included."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Not Applicable",
+      "reasoning": "Not applicable for a medical professional CV."
+    },
+    {
+      "section": "Professional Profile",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations."
+      ],
+      "relevance": "Important",
+      "reasoning": "A professional profile section summarizing background and experience is present."
+    },
+    {
+      "section": "Clinical Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "General Practice Medical Resident at São João University Hospital (2023-2024)"
+      ],
+      "relevance": "Essential",
+      "reasoning": "Clinical experience including role, institution, dates, and responsibilities is provided."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Integrated Master's in Medicine, Faculty of Medicine, University of Porto (2016-2022)"
+      ],
+      "relevance": "Essential",
+      "reasoning": "Educational history including degree, institution, and dates is fully provided."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Clinical Patient Assessment",
+        "Basic Life Support (BLS)",
+        "Pharmacological Prescription",
+        "Electronic Health Records"
+      ],
+      "relevance": "Essential",
+      "reasoning": "Technical clinical skills and competencies are listed."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Tools/Software",
+      "status": "present",
+      "evidence": [
+        "Electronic Health Records"
+      ],
+      "relevance": "Important",
+      "reasoning": "General mention of electronic health records is present, though specific software is absent."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Methodologies",
+      "status": "uncertain",
+      "evidence": [],
+      "relevance": "Optional",
+      "reasoning": "Standard medical methodologies/frameworks are not explicitly categorized."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Doctor-Patient Communication"
+      ],
+      "relevance": "Important",
+      "reasoning": "Communication skills are noted under competencies."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important",
+      "reasoning": "No languages section or proficiency levels are specified in the CV."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important",
+      "reasoning": "No dedicated certifications section is present; BLS is listed only as a general competency without validity details or certificate specifics."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Optional",
+      "reasoning": "No independent projects or research projects are listed."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Optional",
+      "reasoning": "No GDPR compliance statement or consent text is included."
+    }
+  ],
+  "missing_evidence": [
+    "Language proficiencies (Portuguese and English)",
+    "Experience working in an interdisciplinary medical environment",
+    "Evidence of continuing medical education (CME), clinical research, or medical conferences",
+    "Familiarity with specific Portuguese clinical software systems (e.g., SClínico, SAM)",
+    "Contact information (Email, phone number, and location)"
+  ],
+  "weak_evidence": [
+    "Basic Life Support (BLS) certification validity and up-to-date status",
+    "Electronic Health Records familiarity lacking specific platform context",
+    "Doctor-Patient Communication listed without contextual demonstration of empathy or active listening"
+  ],
+  "strengths": [
+    "Holds an Integrated Master's in Medicine from a reputable faculty (University of Porto)",
+    "Active medical license with completed general internship (General Practice autonomy)",
+    "Relevant clinical residency experience at a major university hospital (São João University Hospital) with emergency care and rotation exposure"
+  ],
+  "weaknesses": [
+    "Absence of crucial contact information (email, phone, location) preventing direct outreach",
+    "Lack of explicit language proficiency declarations, which is a required qualification",
+    "Omission of details regarding preferred qualifications such as CME participation, ALS certification, and specific EHR software familiarity"
+  ],
+  "overall_assessment": "Dr. Gonçalo Ferreira's CV demonstrates solid foundational qualifications for a General Practice Physician, including an Integrated Master's in Medicine, an active medical license with a general internship completed, and valuable residency experience in a major university hospital. However, the CV suffers from severe completeness issues by omitting essential contact information (email, phone, location) and language proficiency details. Additionally, several preferred and required qualifications—such as interdisciplinary teamwork evidence, specific clinical software familiarity, and CME participation—are currently lacking or unsupported by concrete evidence.",
+  "reasoning": "The candidate meets the core educational and licensure requirements mandated for the role and shows relevant clinical residency experience. Nevertheless, critical gaps in CV completeness (contact info, languages) and missing evidence for required language proficiencies and interdisciplinary skills highlight areas where the candidate must expand their documentation to fully substantiate their fit for the position."
+}

@@ -1,0 +1,182 @@
+{
+  "job_title": "Data Scientist Intern",
+  "company": {
+    "name": "Revolut",
+    "location": "London / Hybrid",
+    "website": ""
+  },
+  "location": "London / Hybrid",
+  "employment_type": "Internship",
+  "seniority": "Intern",
+  "description": "Revolut is a technology-driven financial services company building products that help customers manage, spend, save, and invest their money. Our teams use data, experimentation, and technology to solve complex problems and improve customer experiences at scale. We are looking for a Data Scientist Intern to join a cross-functional team working on data-driven products and customer experiences.",
+  "skills": [
+    {
+      "name": "Statistics, probability, and quantitative analysis",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong foundation in statistics, probability, and quantitative analysis."
+    },
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Experience with Python and SQL."
+    },
+    {
+      "name": "SQL",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Experience with Python and SQL."
+    },
+    {
+      "name": "pandas, NumPy, scikit-learn, or similar tools",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools."
+    },
+    {
+      "name": "Machine learning fundamentals and model evaluation",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Understanding of machine learning fundamentals and model evaluation."
+    },
+    {
+      "name": "Experimentation, A/B testing, or causal inference",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with experimentation, A/B testing, or causal inference."
+    },
+    {
+      "name": "Data visualisation tools or frameworks",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Knowledge of data visualisation tools or frameworks."
+    },
+    {
+      "name": "Cloud platforms or distributed data technologies",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with cloud platforms or distributed data technologies."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Experience working with large datasets or data pipelines",
+      "years": "",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience working with large datasets or data pipelines."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Bachelor's or Master's",
+      "degree": "Bachelor's or Master's degree",
+      "field": "Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Analyse large and complex datasets to identify trends, patterns, and opportunities.",
+      "source_section": "What You'll Do",
+      "source_text": "Analyse large and complex datasets to identify trends, patterns, and opportunities."
+    },
+    {
+      "description": "Build and evaluate statistical and machine learning models for business and product problems.",
+      "source_section": "What You'll Do",
+      "source_text": "Build and evaluate statistical and machine learning models for business and product problems."
+    },
+    {
+      "description": "Design and analyse experiments and A/B tests.",
+      "source_section": "What You'll Do",
+      "source_text": "Design and analyse experiments and A/B tests."
+    },
+    {
+      "description": "Define and monitor relevant metrics to measure product performance.",
+      "source_section": "What You'll Do",
+      "source_text": "Define and monitor relevant metrics to measure product performance."
+    },
+    {
+      "description": "Translate analytical findings into clear recommendations for technical and non-technical stakeholders.",
+      "source_section": "What You'll Do",
+      "source_text": "Translate analytical findings into clear recommendations for technical and non-technical stakeholders."
+    },
+    {
+      "description": "Work with engineers and product teams to productionise data-driven solutions.",
+      "source_section": "What You'll Do",
+      "source_text": "Work with engineers and product teams to productionise data-driven solutions."
+    },
+    {
+      "description": "Communicate results through clear visualisations, reports, and presentations.",
+      "source_section": "What You'll Do",
+      "source_text": "Communicate results through clear visualisations, reports, and presentations."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Data Science",
+      "source_section": "About the Role",
+      "source_text": "We are looking for a Data Scientist Intern to join a cross-functional team working on data-driven products and customer experiences."
+    },
+    {
+      "keyword": "Machine Learning",
+      "source_section": "What You'll Do",
+      "source_text": "Build and evaluate statistical and machine learning models for business and product problems."
+    },
+    {
+      "keyword": "Python",
+      "source_section": "What We're Looking For",
+      "source_text": "Experience with Python and SQL."
+    },
+    {
+      "keyword": "SQL",
+      "source_section": "What We're Looking For",
+      "source_text": "Experience with Python and SQL."
+    },
+    {
+      "keyword": "A/B Testing",
+      "source_section": "What You'll Do",
+      "source_text": "Design and analyse experiments and A/B tests."
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Problem Solving",
+      "description": "Ability to investigate ambiguous problems and break them down into structured analytical tasks.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Ability to investigate ambiguous problems and break them down into structured analytical tasks."
+    },
+    {
+      "type": "Analytical Skills",
+      "description": "Strong analytical and problem-solving skills.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong analytical and problem-solving skills."
+    },
+    {
+      "type": "Communication",
+      "description": "Good communication skills and ability to work effectively in a team.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Good communication skills and ability to work effectively in a team."
+    },
+    {
+      "type": "Environment Adaptability",
+      "description": "Comfortable working in a fast-paced, international environment.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Comfortable working in a fast-paced, international environment."
+    },
+    {
+      "type": "Projects",
+      "description": "Personal, academic, research, or open-source projects demonstrating practical application of data science.",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Personal, academic, research, or open-source projects demonstrating practical application of data science."
+    }
+  ]
+}

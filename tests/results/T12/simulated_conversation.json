@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: Do you confirm the target role headline as 'Intensive Care Unit (ICU) Staff Nurse' to align with the job application? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm the target role headline as \"Intensive Care Unit (ICU) Staff Nurse\"."
+  },
+  {
+    "question": "2. Contact & links: We noticed your CV currently lacks an email address, phone number, location, and LinkedIn URL. Do you have an email, phone number, location, and/or LinkedIn URL to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can add my email (ines.martins.nurse@example.com), phone number (+351 928 345 671), location (Coimbra, Portugal), and LinkedIn profile (https://www.linkedin.com/in/inesmartins-enf)."
+  },
+  {
+    "question": "3. Employment: We found your general care staff nurse role at CHUC University Hospital (2021-Present). Do you confirm this employment history? (Yes/No)",
+    "answer": "Yes, I confirm this employment history. I have been working as a General Care Staff Nurse at CHUC University Hospital from November 2021 to the present."
+  },
+  {
+    "question": "4. Education: We found your B.Sc. in Nursing from Coimbra Nursing School (2017-2021). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm this academic background. I completed my B.Sc. in Nursing at the Coimbra Nursing School (ESEnfC) between 2017 and 2021 with a grade of 15/20."
+  },
+  {
+    "question": "5. Technical skills gaps: The job requires practical mastery of clinical pharmacokinetics, critical medication dosage calculation, emergency drug titration, and advanced resuscitation techniques. Do you have experience with any of these critical care skills to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have experience with that; my background is in general surgery and post-operative inpatient care, and I do not possess ICU experience or Advanced Life Support (ALS) certification."
+  },
+  {
+    "question": "6. Languages: Your CV currently has no languages listed. Do you speak any other languages (e.g., English, French) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and have an upper-intermediate (B2) proficiency in English."
+  },
+  {
+    "question": "7. Certifications: Your CV currently lists no certifications. Do you have any certifications or licenses (other than your Nursing Council License No. 94312) such as Basic Life Support or specialized training to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold an active Basic Life Support (BLS / SBV) certification and have completed a 60-hour continuing course in the \"Prevention and Advanced Management of Complex Wounds and Pressure Ulcers\" from ESEnfC."
+  },
+  {
+    "question": "8. Projects: Your CV has no projects listed. Do you have any clinical audits, quality improvement projects, or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "9. Summary focus: We propose a professional summary focusing on your 3 years of hospital ward experience in post-operative surgical care, patient monitoring, and medication administration while adapting the headline to Intensive Care Unit (ICU) Staff Nurse. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

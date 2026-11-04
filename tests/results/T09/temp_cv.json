@@ -1,0 +1,129 @@
+{
+  "cv": "Pedro Oliveira\nFormer Civil Engineer transitioning to software. Completed an intensive 9-month fullstack\nsoftware bootcamp and built a verified portfolio of working applications.\nProfessional Experience\nFreelance Web Developer / Personal Projects (2023-Present)\nBuilt 3 complete web applications utilizing Python/Flask and JavaScript.\nCivil Project Engineer (2018-2022, 4 years)\nStructural calculations, site coordination, and project timeline/budget management.\nEducation\nFullstack Web Development Bootcamp (9 months, 2023)\nIntegrated Master's (M.Sc.) in Civil Engineering (2013-2018)\nSkills\nPython, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving.\nPedro Oliveira Page 1",
+  "personal_information": {
+    "name": "Pedro Oliveira",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header / Personal Information",
+    "source_text": "Pedro Oliveira"
+  },
+  "summary": {
+    "text": "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications.",
+    "source_section": "Summary",
+    "source_text": "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack\nsoftware bootcamp and built a verified portfolio of working applications."
+  },
+  "education": [
+    {
+      "level": "Integrated Master's (M.Sc.)",
+      "degree": "Integrated Master's (M.Sc.) in Civil Engineering",
+      "field": "Civil Engineering",
+      "institution": "",
+      "location": "",
+      "start_date": "2013",
+      "end_date": "2018",
+      "details": "",
+      "source_section": "Education",
+      "source_text": "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Civil Project Engineer",
+      "company": "",
+      "location": "",
+      "start_date": "2018",
+      "end_date": "2022",
+      "description": "Structural calculations, site coordination, and project timeline/budget management.",
+      "responsibilities": [
+        "Structural calculations",
+        "Site coordination",
+        "Project timeline/budget management"
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Project Management"
+      ],
+      "source_section": "Professional Experience",
+      "source_text": "Civil Project Engineer (2018-2022, 4 years)\nStructural calculations, site coordination, and project timeline/budget management."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "JavaScript",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "Flask",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "SQLite",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "HTML/CSS",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "Git",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "Project Management",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    },
+    {
+      "name": "Analytical Problem Solving",
+      "source_section": "Skills",
+      "source_text": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Freelance Web Developer / Personal Projects",
+      "description": "Built 3 complete web applications utilizing Python/Flask and JavaScript.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "JavaScript"
+      ],
+      "responsibilities": [],
+      "achievements": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "skills_evidenced": [
+        "Python",
+        "Flask",
+        "JavaScript"
+      ],
+      "source_section": "Professional Experience",
+      "source_text": "Freelance Web Developer / Personal Projects (2023-Present)\nBuilt 3 complete web applications utilizing Python/Flask and JavaScript."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Fullstack Web Development Bootcamp",
+      "issuer": "",
+      "date": "2023",
+      "source_section": "Education",
+      "source_text": "Fullstack Web Development Bootcamp (9 months, 2023)"
+    }
+  ],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

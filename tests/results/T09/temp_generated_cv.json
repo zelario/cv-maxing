@@ -1,0 +1,90 @@
+{
+  "contact": {
+    "name": "Pedro Oliveira",
+    "headline": "Data Scientist Intern",
+    "specialisation": "Quantitative Analysis & Software Development",
+    "phone": "+351 961 234 567",
+    "email": "pedro.oliveira.dev@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/pedro-oliveira-dev",
+    "github": "https://github.com/poliveira-projects",
+    "portfolio": ""
+  },
+  "summary": "Quantitative-focused Data Scientist Intern candidate leveraging a Master's in Civil Engineering and intensive full-stack software training. Core strengths include Python, SQL, and analytical problem-solving, supported by verified applied projects in data tracking and calculations.",
+  "experience": [
+    {
+      "title": "Civil Project Engineer",
+      "dates": "Jan 2019 – Dec 2022",
+      "company": "Teixeira & Associados Engenharia",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Performed structural calculations and quantitative data analysis for structural designs.",
+        "Managed project timelines and budgets using quantitative tracking methods.",
+        "Coordinated on-site engineering teams and stakeholder communications."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Integrated Master's (M.Sc.) in Civil Engineering",
+      "dates": "2013 – 2018",
+      "institution": "IST",
+      "location": "Lisbon, Portugal",
+      "grade": "14/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Technical Skills",
+      "skills": [
+        "Python",
+        "SQL (PostgreSQL, SQLite)",
+        "Flask",
+        "JavaScript",
+        "HTML/CSS",
+        "Git"
+      ]
+    },
+    {
+      "category_name": "Core Competencies",
+      "skills": [
+        "Quantitative Analysis",
+        "Applied Mathematics",
+        "Project Management",
+        "Analytical Problem Solving"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "B2 Upper-Intermediate",
+      "details": "",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Fullstack Web Development Bootcamp",
+      "issuer": "Lisbon Tech Academy",
+      "year": "2023"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Freelance Web Developer / Personal Projects",
+      "dates": "Oct 2023 – Present",
+      "description": "Built 3 complete web applications utilizing Python (Flask), SQLite, and JavaScript, including a Construction Equipment & Asset Tracker, a Personal Budget & Expense Analytics app, and a Structural Beam Deflection Calculator.",
+      "link": "https://github.com/poliveira-projects",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

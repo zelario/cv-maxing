@@ -1,0 +1,148 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Mariana Costa",
+      "proposed_content": "Mariana Costa\nLisbon, Portugal | +351 934 567 890 | mariana.costa.ui@example.com\nLinkedIn: https://www.linkedin.com/in/marianacosta-frontend | Portfolio: https://marianacosta.dev | GitHub: https://github.com/marianacosta-ui",
+      "rationale": "Add missing contact information and professional links provided directly by the user to ensure recruiters can reach the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: mariana.costa.ui@example.com",
+        "Phone: +351 934 567 890",
+        "Location: Lisbon, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/marianacosta-frontend",
+        "Portfolio: https://marianacosta.dev",
+        "GitHub: https://github.com/marianacosta-ui"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+      "proposed_content": "Frontend Developer targeting Data Scientist Intern role | Core skills: React, TypeScript, Tailwind CSS | Built single-page web applications and robust component design systems at PixelWave.",
+      "rationale": "Propose an evidence-grounded 3-line professional summary adhering strictly to research format guidelines: candidate identity and target role, verified core skills, and concrete verified project result from existing CV evidence.",
+      "evidence_source": "cv",
+      "source_evidence": [
+        "Mariana Costa",
+        "Frontend Developer | PixelWave (2022-Present, 2 years)",
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS."
+      ],
+      "user_provided_evidence": [],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Design and Multimedia (2018-2021)",
+      "proposed_content": "B.Sc. in Design and Multimedia, Universidade de Coimbra (2018-2021) - Grade: 16/20",
+      "rationale": "Incorporate verified institution and grade details provided by the user.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "user_provided_evidence": [
+        "Institution: Universidade de Coimbra",
+        "Grade: 16/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Full Professional)",
+      "rationale": "Add verified language proficiencies provided by the user.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Full Professional"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found your target role is Data Scientist Intern at Revolut. Do you confirm this is your target role? (Yes/No, or specify another)",
+    "We found your name is Mariana Costa. However, your email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are missing. Do you have these contact links and information to add? (If none, reply 'I do not have one')",
+    "We found your employment history lists Frontend Developer at PixelWave (2022-Present) building web apps and design systems. Do you confirm this work experience? (Yes/No)",
+    "We found your education lists a B.Sc. in Design and Multimedia (2018-2021). Do you confirm this academic background? (Yes/No)",
+    "The target role requires Python, SQL, pandas, NumPy, scikit-learn, and experimentation/A/B testing, which are currently missing from your CV. Do you have experience with Python, SQL, or data analysis tools to include? (If none, reply 'I do not have one')",
+    "No languages are currently listed on your CV. Do you speak any other languages that you would like to include? (If none, reply 'I do not have one')",
+    "No certifications are currently listed on your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "No personal or independent projects are currently listed on your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "We propose a professional summary focusing on your technical background and design systems expertise tailored toward quantitative and data-driven roles. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found your target role is Data Scientist Intern at Revolut. Do you confirm this is your target role? (Yes/No, or specify another)",
+      "answer": "Yes, that is my target role.",
+      "gap": "Target role alignment confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your name is Mariana Costa. However, your email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are missing. Do you have these contact links and information to add? (If none, reply 'I do not have one')",
+      "answer": "Yes, my email is mariana.costa.ui@example.com, my phone number is +351 934 567 890, and my location is Lisbon, Portugal. My LinkedIn is https://www.linkedin.com/in/marianacosta-frontend and my portfolio is https://marianacosta.dev.",
+      "gap": "Missing contact details and links",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your employment history lists Frontend Developer at PixelWave (2022-Present) building web apps and design systems. Do you confirm this work experience? (Yes/No)",
+      "answer": "Yes, I confirm my work experience as a Frontend Developer at PixelWave from March 2022 to the present.",
+      "gap": "Employment history confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your education lists a B.Sc. in Design and Multimedia (2018-2021). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm that I hold a B.Sc. in Design and Multimedia from the Universidade de Coimbra, completed between 2018 and 2021 with a grade of 16/20.",
+      "gap": "Education history confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "The target role requires Python, SQL, pandas, NumPy, scikit-learn, and experimentation/A/B testing, which are currently missing from your CV. Do you have experience with Python, SQL, or data analysis tools to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Missing core data science skills (Python, SQL, pandas, NumPy, scikit-learn)",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "No languages are currently listed on your CV. Do you speak any other languages that you would like to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese as my native language and English at a C1 full professional level.",
+      "gap": "Missing languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "No certifications are currently listed on your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Missing certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "No personal or independent projects are currently listed on your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my GitHub profile is https://github.com/marianacosta-ui and my portfolio is available at https://marianacosta.dev.",
+      "gap": "Missing project repositories",
+      "resolution": "supported"
+    },
+    {
+      "question": "We propose a professional summary focusing on your technical background and design systems expertise tailored toward quantitative and data-driven roles. Do you confirm this summary focus? (Yes/No)",
+      "answer": "No, because my background is entirely in frontend web development and UI/UX design (React, TypeScript, design systems), and I do not have experience with data science, Python, SQL, machine learning, or quantitative data analysis as required for this Data Scientist internship.",
+      "gap": "Summary focus alignment with data science target role",
+      "resolution": "unsupported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: mariana.costa.ui@example.com",
+    "Phone: +351 934 567 890",
+    "Location: Lisbon, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/marianacosta-frontend",
+    "Portfolio: https://marianacosta.dev",
+    "GitHub: https://github.com/marianacosta-ui",
+    "Institution: Universidade de Coimbra",
+    "Grade: 16/20",
+    "Languages: Portuguese (Native), English (C1 Full Professional)"
+  ],
+  "optimization_strategy": "Conducted autonomous evidence-based optimization by adding missing contact details, structuring a 3-line professional summary grounded in verified frontend achievements, and updating education and language sections. Followed Phase 2 mandatory interactive questioning across all 9 checklist areas, capturing verified user evidence while honestly noting major skill gaps for the Data Scientist intern role (Python, SQL, machine learning libraries).",
+  "unresolved_evidence_gaps": [
+    "Candidate lacks core technical requirements for Data Scientist Intern role: Python, SQL, pandas, NumPy, scikit-learn, and A/B testing/experimentation experience.",
+    "Candidate academic background is in Design and Multimedia rather than a quantitative field (Computer Science, Data Science, Mathematics, Statistics).",
+    "Candidate rejected summary focus tailored to data science due to fundamental mismatch with frontend web development background."
+  ]
+}

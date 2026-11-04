@@ -1,0 +1,270 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "React",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV lists Python, JavaScript, Flask, SQLite, HTML/CSS, and Git, but does not mention React."
+    },
+    {
+      "requirement": "TypeScript",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "TypeScript is not mentioned anywhere in the CV's skills or experience sections."
+    },
+    {
+      "requirement": "modern CSS/Tailwind",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "HTML/CSS listed under Skills"
+      ],
+      "reasoning": "The CV lists general HTML/CSS under skills, but lacks specific mention of modern CSS or Tailwind CSS."
+    },
+    {
+      "requirement": "Node.js (Express/NestJS) or Python",
+      "category": "Technical Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Python listed under Skills",
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript"
+      ],
+      "reasoning": "The candidate explicitly lists Python and demonstrates practical experience using Python/Flask in freelance web development projects."
+    },
+    {
+      "requirement": "HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "HTML/CSS listed under Skills"
+      ],
+      "reasoning": "Only general HTML/CSS is listed without explicit evidence of modern CSS3, responsive design principles, or Tailwind CSS."
+    },
+    {
+      "requirement": "Experience consuming and designing RESTful APIs and handling asynchronous data flows",
+      "category": "Technical Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript"
+      ],
+      "reasoning": "Web applications are mentioned, but specific API design or asynchronous data handling experience is not detailed."
+    },
+    {
+      "requirement": "Strong proficiency with Git and GitHub-based development workflows",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Git listed under Skills"
+      ],
+      "reasoning": "Git is listed in the skills section, but GitHub workflows or deep proficiency are not explicitly demonstrated with context."
+    },
+    {
+      "requirement": "Next.js",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Next.js is not mentioned in the CV."
+    },
+    {
+      "requirement": "PostgreSQL, MySQL, or MongoDB",
+      "category": "Preferred Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "SQLite listed under Skills"
+      ],
+      "reasoning": "The CV lists SQLite, which is a relational database, but does not mention PostgreSQL, MySQL, or MongoDB."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Docker is not mentioned in the CV."
+    },
+    {
+      "requirement": "WCAG 2.1",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Accessibility standards are not mentioned in the CV."
+    },
+    {
+      "requirement": "An active portfolio of deployed web applications or open-source repositories",
+      "category": "Preferred/Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications",
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript"
+      ],
+      "reasoning": "The summary mentions a verified portfolio and building 3 applications, but no direct URLs or links are provided."
+    },
+    {
+      "requirement": "Please submit your CV accompanied by links to your portfolio, GitHub profile, or deployed web projects",
+      "category": "Application Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not include links to a portfolio, GitHub profile, or deployed web projects."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Personal Info (Name)",
+      "status": "present",
+      "evidence": [
+        "Pedro Oliveira"
+      ],
+      "relevance": "Essential for identifying the candidate.",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter communication.",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct contact.",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for remote or location-based hiring.",
+      "reasoning": "No location is specified in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for professional background verification.",
+      "reasoning": "No LinkedIn URL is present in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [
+        "Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications"
+      ],
+      "relevance": "Critical for verifying technical projects and code quality.",
+      "reasoning": "The CV mentions a portfolio of working applications, but no exact URL or link is provided."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications."
+      ],
+      "relevance": "Provides a quick overview of career transition and background.",
+      "reasoning": "A clear professional summary is included."
+    },
+    {
+      "section": "Experience",
+      "field": "Work Experience",
+      "status": "present",
+      "evidence": [
+        "Freelance Web Developer / Personal Projects (2023-Present)",
+        "Civil Project Engineer (2018-2022, 4 years)"
+      ],
+      "relevance": "Demonstrates employment history and practical skills application.",
+      "reasoning": "Work experience entries are provided for both web development and civil engineering."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Fullstack Web Development Bootcamp (9 months, 2023)",
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "relevance": "Validates academic background and formal training.",
+      "reasoning": "Both bootcamp training and Master's degree details are provided."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem Solving."
+      ],
+      "relevance": "Outlines technical competencies.",
+      "reasoning": "A dedicated skills section is present."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "present",
+      "evidence": [
+        "Fullstack Web Development Bootcamp (9 months, 2023)"
+      ],
+      "relevance": "Shows professional development and bootcamp completion.",
+      "reasoning": "Bootcamp completion is listed under education/certifications."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Useful for multilingual environments.",
+      "reasoning": "No languages section is included."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Crucial for showcasing hands-on coding work, especially for career transitioners.",
+      "reasoning": "While projects are mentioned in the summary and experience, there is no dedicated projects section or detailed project breakdown."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for compliance in certain jurisdictions (e.g., EU/Portugal).",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Email address",
+    "Phone number",
+    "Location",
+    "LinkedIn profile URL",
+    "Portfolio or GitHub profile URL",
+    "Experience with React, TypeScript, and modern frontend frameworks (e.g., Next.js)",
+    "Experience with enterprise backend frameworks like Node.js (Express/NestJS)"
+  ],
+  "weak_evidence": [
+    "HTML/CSS listed without specific reference to modern CSS3 or Tailwind CSS",
+    "Git listed as a skill without explicit demonstration of GitHub-based workflows",
+    "SQLite listed as database experience instead of the preferred PostgreSQL, MySQL, or MongoDB",
+    "Portfolio mentioned in summary and experience without direct hyperlinks"
+  ],
+  "strengths": [
+    "Clear narrative regarding career transition from Civil Engineering to Software Development",
+    "Demonstrated experience with Python and Flask through freelance web development",
+    "Strong foundational academic background with an Integrated Master's degree in Civil Engineering",
+    "Completion of an intensive 9-month fullstack software bootcamp"
+  ],
+  "weaknesses": [
+    "Complete lack of contact information (email, phone, location)",
+    "Absence of core required technical stack skills (React, TypeScript, Node.js)",
+    "No external links or URLs provided for the mentioned portfolio and projects",
+    "Missing standard CV sections such as Languages and dedicated Projects"
+  ],
+  "overall_assessment": "The candidate Pedro Oliveira presents an interesting career transition profile from Civil Engineering to Software Development, backed by a 9-month fullstack bootcamp and freelance experience using Python, Flask, and JavaScript. However, there are significant gaps regarding the primary technical stack required for the role (React, TypeScript, and Node.js). Furthermore, the CV lacks essential contact details (email, phone, location) and required portfolio/GitHub links.",
+  "reasoning": "The evaluation compares the candidate's evidence against the job requirements using structured criteria. Mandatory requirements such as React and TypeScript have no evidence, while Python and Flask show satisfied or weak evidence. Completeness inspection reveals multiple missing standard fields and contact details."
+}

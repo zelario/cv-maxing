@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target Role: Do you confirm 'Data Scientist Intern' as the target role headline for your CV? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm \"Data Scientist Intern\" as the target role headline for my CV."
+  },
+  {
+    "question": "2. Contact & links: We noticed that email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are currently missing from your CV. Do you have any of these contact details or links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my contact details and links are: email is pedro.oliveira.dev@example.com, phone is +351 961 234 567, location is Lisbon, Portugal, LinkedIn is https://www.linkedin.com/in/pedro-oliveira-dev, and GitHub is https://github.com/poliveira-projects. I do not have a separate personal portfolio website."
+  },
+  {
+    "question": "3. Employment: We found your work experience listed as 'Freelance Web Developer / Personal Projects (2023-Present)' and 'Civil Project Engineer (2018-2022, 4 years)'. Do you confirm these employment entries? (Yes/No)",
+    "answer": "Yes, I confirm these employment entries: I worked as a Civil Project Engineer at Teixeira & Associados Engenharia from January 2019 to December 2022, and have been working as a Freelance Web Developer / working on personal projects from October 2023 to the present."
+  },
+  {
+    "question": "4. Education: We found your education listed as 'Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)' and 'Fullstack Web Development Bootcamp (9 months, 2023)'. Do you confirm these education and certification details? (Yes/No)",
+    "answer": "Yes, I confirm these education details: I hold an Integrated Master's (M.Sc.) in Civil Engineering from IST (2013–2018) with a grade of 14/20, and I completed an 800+ hour Fullstack Web Development Bootcamp at Lisbon Tech Academy in 2023."
+  },
+  {
+    "question": "5. Technical skills gaps: The target job requests skills in statistics, probability, quantitative analysis, SQL, pandas, NumPy, scikit-learn, and machine learning fundamentals. Do you have experience with any of these to include in your skills? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have experience with Python, SQL (PostgreSQL and SQLite), and quantitative analysis/applied mathematics from my Master's in Civil Engineering, though I do not have direct professional experience with pandas, NumPy, or scikit-learn."
+  },
+  {
+    "question": "6. Languages: We found no languages listed in your CV. Do you speak any other languages that we should add? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese (Native) and English (B2 Upper-Intermediate)."
+  },
+  {
+    "question": "7. Certifications: We found your Fullstack Web Development Bootcamp certificate. Do you have any additional certifications, licenses, or data science courses to include? (If none, reply 'I do not have one')",
+    "answer": "No, I do not have any additional certifications, licenses, or data science courses beyond my Fullstack Web Development Bootcamp certificate and my Integrated Master's in Civil Engineering."
+  },
+  {
+    "question": "8. Projects: We found 3 web applications utilizing Python/Flask and JavaScript listed under your freelance/personal projects. Do you confirm these projects? (Yes/No)",
+    "answer": "Yes, I confirm those projects, which include a Construction Equipment & Asset Tracker built with Python (Flask) and SQLite, a Personal Budget & Expense Analytics app, and a Structural Beam Deflection Calculator."
+  },
+  {
+    "question": "9. Summary focus: We propose highlighting your quantitative background in Civil Engineering, your 9-month full-stack software training, and your strong analytical problem-solving skills tailored for the Data Scientist Intern role. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus. Highlighting my quantitative background from my Master's in Civil Engineering and my Python/SQL skills from my software training aligns well with the Data Scientist Intern role."
+  }
+]

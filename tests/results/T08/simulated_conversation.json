@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found your target role is Data Scientist Intern at Revolut. Do you confirm this is your target role? (Yes/No, or specify another)",
+    "answer": "Yes, that is my target role."
+  },
+  {
+    "question": "We found your name is Mariana Costa. However, your email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are missing. Do you have these contact links and information to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is mariana.costa.ui@example.com, my phone number is +351 934 567 890, and my location is Lisbon, Portugal. My LinkedIn is https://www.linkedin.com/in/marianacosta-frontend and my portfolio is https://marianacosta.dev."
+  },
+  {
+    "question": "We found your employment history lists Frontend Developer at PixelWave (2022-Present) building web apps and design systems. Do you confirm this work experience? (Yes/No)",
+    "answer": "Yes, I confirm my work experience as a Frontend Developer at PixelWave from March 2022 to the present."
+  },
+  {
+    "question": "We found your education lists a B.Sc. in Design and Multimedia (2018-2021). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm that I hold a B.Sc. in Design and Multimedia from the Universidade de Coimbra, completed between 2018 and 2021 with a grade of 16/20."
+  },
+  {
+    "question": "The target role requires Python, SQL, pandas, NumPy, scikit-learn, and experimentation/A/B testing, which are currently missing from your CV. Do you have experience with Python, SQL, or data analysis tools to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "No languages are currently listed on your CV. Do you speak any other languages that you would like to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and English at a C1 full professional level."
+  },
+  {
+    "question": "No certifications are currently listed on your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "No personal or independent projects are currently listed on your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my GitHub profile is https://github.com/marianacosta-ui and my portfolio is available at https://marianacosta.dev."
+  },
+  {
+    "question": "We propose a professional summary focusing on your technical background and design systems expertise tailored toward quantitative and data-driven roles. Do you confirm this summary focus? (Yes/No)",
+    "answer": "No, because my background is entirely in frontend web development and UI/UX design (React, TypeScript, design systems), and I do not have experience with data science, Python, SQL, machine learning, or quantitative data analysis as required for this Data Scientist internship."
+  }
+]

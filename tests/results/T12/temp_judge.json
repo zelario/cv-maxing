@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 8,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Successfully integrated user-provided contact information and professional links accurately.",
+    "Correctly incorporated user-provided education details including the exact grade and full school designation.",
+    "Added valid user-confirmed language proficiencies and certifications (BLS and wound care course).",
+    "Maintained strict fidelity to the candidate's actual work history without fabricating ICU experience."
+  ],
+  "issues": [
+    "The target job requires specific ICU bedside experience and advanced clinical pharmacokinetics which the candidate truthfully admitted not possessing, creating a natural gap in direct job alignment despite role tailoring."
+  ],
+  "recommendations": [
+    "Highlight transferable surgical and post-operative monitoring competencies more explicitly toward high-acuity environments if applying for transition roles.",
+    "Pursue formal Advanced Life Support (ALS) certification to bridge the remaining preferred requirements for ICU positions."
+  ]
+}

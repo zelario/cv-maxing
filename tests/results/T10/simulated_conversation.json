@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: We propose the target job title 'Fullstack Web Developer' as the CV headline. Do you confirm? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm. My target job title should be \"Junior Fullstack Developer\"."
+  },
+  {
+    "question": "2. Contact & links: Your current CV lacks email, phone, location, and LinkedIn/GitHub links. Do you have contact information and portfolio/GitHub links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my location is Lisbon, Portugal, and my contact details are email: pedro.oliveira.dev@example.com, phone: +351 961 234 567, along with my LinkedIn (https://www.linkedin.com/in/pedro-oliveira-dev) and GitHub (https://github.com/poliveira-projects). I do not have a personal website or portfolio."
+  },
+  {
+    "question": "3. Employment: We found your work experience: Freelance Web Developer / Personal Projects (2023-Present) and Civil Project Engineer (2018-2022). Do you confirm these work experiences? (Yes/No)",
+    "answer": "Yes, I confirm those work experiences. I worked as a Civil Project Engineer from January 2019 to December 2022, and have been working on freelance web development and personal projects since October 2023."
+  },
+  {
+    "question": "4. Education: We found your education: Fullstack Web Development Bootcamp (2023) and Integrated Master's (M.Sc.) in Civil Engineering (2013-2018). Do you confirm these educational details? (Yes/No)",
+    "answer": "Yes, I confirm those educational details: the Fullstack Web Development Bootcamp (800+ hours at Lisbon Tech Academy in 2023) and my Integrated Master's in Civil Engineering from IST (2013–2018, grade 14/20)."
+  },
+  {
+    "question": "5. Technical skills gaps: The job requires React, TypeScript, Node.js, and modern CSS/Tailwind, but your CV lists Python, JavaScript, Flask, SQLite, HTML/CSS, Git. Do you have experience with any of the missing technologies (e.g., React, TypeScript, Node.js, Tailwind, PostgreSQL) to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have experience with Node.js, PostgreSQL, Tailwind CSS, and basic JavaScript-based backend development from my bootcamp and personal projects, though I do not have professional experience with React or TypeScript."
+  },
+  {
+    "question": "6. Languages: Your CV currently has no Languages section. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and English at a B2 upper-intermediate level."
+  },
+  {
+    "question": "7. Certifications: We found your bootcamp training (2023). Do you have any other certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have any other certifications or professional licenses."
+  },
+  {
+    "question": "8. Projects: Your CV mentions building 3 web applications in your bootcamp/freelance work, but lacks a dedicated projects section. Do you have specific project names/descriptions to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have three projects: \"Construction Equipment & Asset Tracker\" (Python/Flask, SQLite, JavaScript, Docker on Render), \"Personal Budget & Expense Analytics\" (Node.js, PostgreSQL, Chart.js), and \"Structural Beam Deflection Calculator\" (Python, Tailwind CSS)."
+  },
+  {
+    "question": "9. Summary focus: We propose a professional summary focusing on your transition from Civil Engineering to Software Development, highlighting your Python/Flask and Node.js/PostgreSQL fullstack skills and 3 completed web apps. Do you confirm? (Yes/No)",
+    "answer": "Yes, I confirm."
+  }
+]

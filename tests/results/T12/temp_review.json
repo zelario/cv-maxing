@@ -1,0 +1,282 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Bachelor's degree (Licenciatura) in Nursing from an accredited nursing institution.",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Nursing, Coimbra Nursing School (2017-2021)"
+      ],
+      "reasoning": "The candidate holds a B.Sc. in Nursing from Coimbra Nursing School, satisfying the degree requirement."
+    },
+    {
+      "requirement": "Active professional practicing license with the Nursing Council (Cédula Profissional da Ordem dos Enfermeiros).",
+      "category": "License",
+      "status": "satisfied",
+      "evidence": [
+        "Nursing Council License No. 94312"
+      ],
+      "reasoning": "The CV lists a Nursing Council License No. 94312, demonstrating active professional registration."
+    },
+    {
+      "requirement": "Proven clinical work experience or certified post-graduate clinical training in Intensive Care (ICU), Intermediate Care, Emergency, or Resuscitation.",
+      "category": "Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "General Care Staff Nurse at CHUC University Hospital (2021-Present) with experience in post-operative surgical and internal medicine care."
+      ],
+      "reasoning": "The candidate has 3 years of hospital ward experience in post-operative surgical and internal medicine care rather than specific ICU, intermediate care, emergency, or resuscitation clinical work or post-graduate training."
+    },
+    {
+      "requirement": "Practical mastery of clinical pharmacokinetics, critical medication dosage calculation, and emergency drug administration.",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Medication preparation and administration (IV/IM/Oral)."
+      ],
+      "reasoning": "The candidate lists medication administration and preparation (IV/IM/Oral), but lacks specific context regarding critical medication dosage calculation or emergency drug titration."
+    },
+    {
+      "requirement": "Demonstrated competency in advanced resuscitation techniques and emergency patient stabilization.",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Basic Life Support"
+      ],
+      "reasoning": "The candidate lists Basic Life Support under core competencies, but does not provide experiential context for advanced resuscitation techniques or emergency patient stabilization."
+    },
+    {
+      "requirement": "High emotional resilience, acute situational awareness, and the ability to make rapid clinical decisions under pressure.",
+      "category": "Soft Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention or demonstration of emotional resilience, situational awareness, or decision-making under pressure in the CV."
+    },
+    {
+      "requirement": "Strong commitment to ethical nursing practice and multidisciplinary teamwork.",
+      "category": "Soft Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Multidisciplinary Teamwork"
+      ],
+      "reasoning": "Multidisciplinary teamwork is explicitly listed as a core competency."
+    },
+    {
+      "requirement": "Recognized title of Specialist Nurse in Medical-Surgical Nursing (Enfermeiro Especialista em Enfermagem Médico-Cirúrgica).",
+      "category": "Education (Preferred)",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate does not mention holding the title of Specialist Nurse in Medical-Surgical Nursing."
+    },
+    {
+      "requirement": "Certified and current qualification in Advanced Life Support (ALS / SAV).",
+      "category": "Certifications (Preferred)",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No certification in Advanced Life Support (ALS / SAV) is present in the CV."
+    },
+    {
+      "requirement": "1 to 2+ years of prior bedside experience in an adult polyvalent intensive care unit.",
+      "category": "Experience (Preferred)",
+      "status": "no_evidence",
+      "evidence": [
+        "3 years of hospital ward experience in post-operative surgical and internal medicine care."
+      ],
+      "reasoning": "The candidate's experience is in general hospital wards (surgical and internal medicine) rather than a polyvalent intensive care unit."
+    },
+    {
+      "requirement": "Training in continuous renal replacement therapies (CRRT) or extracorporeal membrane oxygenation (ECMO).",
+      "category": "Training (Preferred)",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of CRRT or ECMO training in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Inês Martins"
+      ],
+      "relevance": "Essential for candidate identification.",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical contact channel for recruiters.",
+      "reasoning": "No email address is included in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Direct contact channel for urgent communications.",
+      "reasoning": "No phone number is included in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for assessing geographic proximity or relocation needs.",
+      "reasoning": "No physical location or address is provided."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Registered General Care Nurse | Nursing Council License No. 94312"
+      ],
+      "relevance": "Provides an immediate professional title and licensure context.",
+      "reasoning": "Professional headline is clearly stated below the name."
+    },
+    {
+      "section": "Contact Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Professional networking and extended profile verification.",
+      "reasoning": "No LinkedIn URL is provided."
+    },
+    {
+      "section": "Contact Information",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Not directly applicable to nursing roles, but tracked for completeness.",
+      "reasoning": "No portfolio or external repository link is present."
+    },
+    {
+      "section": "Profile Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Registered Nurse with 3 years of hospital ward experience in post-operative surgical and internal medicine care."
+      ],
+      "relevance": "Provides a concise overview of background and experience level.",
+      "reasoning": "A short profile summary section is included."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "General Care Staff Nurse, CHUC University Hospital (2021-Present)"
+      ],
+      "relevance": "Core dimension for evaluating employment history and responsibilities.",
+      "reasoning": "Work experience is documented with job titles, employer, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Nursing, Coimbra Nursing School (2017-2021)"
+      ],
+      "relevance": "Validates academic credentials and foundational training.",
+      "reasoning": "Education details are clearly structured."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention & Control"
+      ],
+      "relevance": "Highlights clinical capabilities and domain knowledge.",
+      "reasoning": "Skills are listed under a dedicated core competencies section."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "Tools/Software",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Indicates familiarity with hospital information systems or clinical technology.",
+      "reasoning": "No specific tools, software, or critical care information systems are mentioned."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Identifies structured nursing frameworks or protocols.",
+      "reasoning": "No explicit clinical methodologies or nursing frameworks are listed."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Multidisciplinary Teamwork"
+      ],
+      "relevance": "Reflects interpersonal and collaborative abilities.",
+      "reasoning": "Multidisciplinary teamwork is included in core competencies."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for multilingual healthcare environments.",
+      "reasoning": "No languages section or spoken languages are listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates continuous professional development or specialized qualifications.",
+      "reasoning": "No certifications or post-graduate training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Optional for traditional nursing roles, but checked for completeness.",
+      "reasoning": "No independent projects are documented."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Regulatory requirement for recruitment processing in certain jurisdictions.",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Specific ICU, intermediate care, emergency, or resuscitation clinical work experience",
+    "Certified post-graduate clinical training in critical care",
+    "Practical evidence of critical medication dosage calculation and emergency drug titration",
+    "Advanced Life Support (ALS / SAV) certification",
+    "Experience in an adult polyvalent intensive care unit",
+    "Training in continuous renal replacement therapies (CRRT) or extracorporeal membrane oxygenation (ECMO)",
+    "Specialist Nurse title in Medical-Surgical Nursing",
+    "Contact information (email, phone number, location)"
+  ],
+  "weak_evidence": [
+    "Medication preparation and administration is listed generically without detailing critical care pharmacokinetics or continuous infusion titration.",
+    "Basic Life Support is listed as a core competency without experiential context or advanced resuscitation documentation."
+  ],
+  "strengths": [
+    "Holds a Bachelor's degree in Nursing from Coimbra Nursing School",
+    "Possesses an active professional practicing license (Nursing Council License No. 94312)",
+    "Has 3 years of consistent hospital ward experience in post-operative surgical and internal medicine care",
+    "Demonstrates core clinical competencies including surgical patient care, medication administration, catheterization, and infection prevention"
+  ],
+  "weaknesses": [
+    "Lacks direct professional experience in an Intensive Care Unit (ICU) or high-acuity critical care environment",
+    "Missing critical contact information (email, phone, location) preventing direct recruiter outreach",
+    "Absence of preferred critical care qualifications such as Advanced Life Support (ALS) certification or Medical-Surgical Nursing specialization"
+  ],
+  "overall_assessment": "Inês Martins is a registered general care nurse with 3 years of hospital ward experience in post-operative surgical and internal medicine care, holding a valid nursing degree and active professional license. While she satisfies foundational educational and licensure requirements for a nursing professional, her profile lacks direct clinical experience in intensive care units (ICU), advanced life support certifications, and specialized critical care training requested for the ICU Staff Nurse role. Additionally, her CV is missing essential contact details such as email, phone number, and location.",
+  "reasoning": "The evaluation compares the candidate's documented background against the job posting requirements using evidence-based extraction. Matches are categorized based on explicit proof in the CV text, separating satisfied requirements from those with weak or missing evidence, while independently auditing CV completeness across standard structural dimensions."
+}

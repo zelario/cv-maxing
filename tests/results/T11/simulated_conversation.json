@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: We found the current headline is 'Medical Doctor | General Practitioner'. Do you confirm using 'General Practice Physician (Primary Care)' as the target headline? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm using \"General Practice Physician (Primary Care)\" as the target headline for this application."
+  },
+  {
+    "question": "2. Contact & links: We noticed your CV currently lacks email, phone number, and location. Do you have an email, phone number, and location (e.g., Coimbra, Portugal) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is goncalo.ferreira.md@example.com, my phone number is +351 917 890 123, and my location is Porto / Coimbra, Portugal."
+  },
+  {
+    "question": "3. Employment: We found 'General Practice Medical Resident at São João University Hospital (2023-2024)' with clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care. Do you confirm this employment entry? (Yes/No)",
+    "answer": "Yes, I confirm this entry. My correct clinical title was Médico Interno de Formação Geral at CHUSJ from January 2023 to February 2024, covering rotations in the Adult Emergency Department, Internal Medicine Ward, Primary Healthcare Center, General Surgery, and Pediatrics."
+  },
+  {
+    "question": "4. Education: We found 'Integrated Master's in Medicine' from the Faculty of Medicine, University of Porto (2016-2022). Do you confirm this education entry? (Yes/No)",
+    "answer": "Yes, I confirm this education entry. I graduated with an Integrated Master's in Medicine from the Faculty of Medicine, University of Porto, between 2016 and 2022 with a grade of 16/20."
+  },
+  {
+    "question": "5. Technical skills gaps: The job requires familiarity with Portuguese clinical record software systems (e.g., SClínico, SAM) and interdisciplinary medical teamwork. Do you have experience with SClínico or SAM and interdisciplinary clinical teamwork? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have experience with both SClínico and SAM from my general medical residency at São João University Hospital, and I regularly collaborated within interdisciplinary clinical teams alongside nurses, medical specialists, and diagnostic technicians."
+  },
+  {
+    "question": "6. Languages: We noticed your CV does not specify language proficiencies. Do you speak Portuguese (native/fluent) and English (professional working proficiency)? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese natively and have professional working proficiency in English (C1 Advanced Medical/Clinical)."
+  },
+  {
+    "question": "7. Certifications: We found Basic Life Support (BLS) listed without certificate validity details. Do you hold an up-to-date Basic Life Support (BLS) certification (and any other relevant certificates like ALS or Ordem dos Médicos registration number 68421)? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold an active Basic Life Support (BLS) certification and an Advanced Life Support (ALS) certification (valid to 2026, ERC certified), alongside my active professional registration with the Ordem dos Médicos (License No. 68421)."
+  },
+  {
+    "question": "8. Projects: We noticed no independent clinical research or audit projects listed in your CV. Do you have any clinical audit, research project, or scientific publication to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have a co-authored poster presentation titled \"Cardiovascular Risk Stratification in Outpatient Hypertension Clinics\" from 2023."
+  },
+  {
+    "question": "9. Summary focus: We propose a professional summary highlighting your identity as a General Practice Physician, your General Practice residency at São João University Hospital, your active Ordem dos Médicos license, and your core competencies in outpatient consultation, emergency triage, and electronic health records (SClínico/SAM). Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

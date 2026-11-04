@@ -1,0 +1,239 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Strong foundation in statistics, probability, and quantitative analysis.",
+      "category": "Core Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)",
+        "Analytical Problem Solving"
+      ],
+      "reasoning": "The candidate has a quantitative background in civil engineering and lists analytical problem-solving, but lacks explicit evidence of statistics, probability, or advanced quantitative analysis applied to data science."
+    },
+    {
+      "requirement": "Experience with Python and SQL.",
+      "category": "Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Python",
+        "SQLite",
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "reasoning": "The candidate lists Python and SQLite with web development context (Flask), but provides no direct evidence of SQL database experience for data analysis or querying."
+    },
+    {
+      "requirement": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools.",
+      "category": "Technical Tools",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of pandas, NumPy, scikit-learn, or similar data science libraries in the CV."
+    },
+    {
+      "requirement": "Understanding of machine learning fundamentals and model evaluation.",
+      "category": "Core Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention machine learning fundamentals or model evaluation."
+    },
+    {
+      "requirement": "Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field.",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "reasoning": "The candidate holds an Integrated Master's (M.Sc.) in Civil Engineering, which satisfies the engineering/quantitative degree requirement, though they are an alumnus rather than currently pursuing the degree."
+    },
+    {
+      "requirement": "Ability to investigate ambiguous problems and break them down into structured analytical tasks.",
+      "category": "Competencies",
+      "status": "weak_evidence",
+      "evidence": [
+        "Analytical Problem Solving",
+        "Structural calculations, site coordination, and project timeline/budget management."
+      ],
+      "reasoning": "Demonstrated general analytical problem-solving and project engineering tasks, but without specific alignment to data science problem structuring."
+    },
+    {
+      "requirement": "Strong analytical and problem-solving skills.",
+      "category": "Competencies",
+      "status": "satisfied",
+      "evidence": [
+        "Analytical Problem Solving",
+        "Structural calculations"
+      ],
+      "reasoning": "Strong evidence of analytical and problem-solving skills from both civil engineering and technical training."
+    },
+    {
+      "requirement": "Good communication skills and ability to work effectively in a team.",
+      "category": "Competencies",
+      "status": "weak_evidence",
+      "evidence": [
+        "site coordination"
+      ],
+      "reasoning": "Site coordination implies teamwork and communication, but no explicit communication skills are highlighted."
+    },
+    {
+      "requirement": "Comfortable working in a fast-paced, international environment.",
+      "category": "Competencies",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence provided regarding fast-paced or international environment experience."
+    },
+    {
+      "requirement": "Experience with experimentation, A/B testing, or causal inference.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of experimentation, A/B testing, or causal inference."
+    },
+    {
+      "requirement": "Knowledge of data visualisation tools or frameworks.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of data visualisation tools or frameworks."
+    },
+    {
+      "requirement": "Experience with cloud platforms or distributed data technologies.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of cloud platforms or distributed data technologies."
+    },
+    {
+      "requirement": "Experience working with large datasets or data pipelines",
+      "category": "Preferred Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience with large datasets or data pipelines; projects were focused on web development (Python/Flask)."
+    },
+    {
+      "requirement": "Personal, academic, research, or open-source projects demonstrating practical application of data science.",
+      "category": "Preferred Projects",
+      "status": "no_evidence",
+      "evidence": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "reasoning": "Projects are web development applications rather than data science applications."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Contact Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter contact",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct communication",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Determines geographical fit and eligibility",
+      "reasoning": "No location or city is specified in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides professional background and network",
+      "reasoning": "No LinkedIn URL is present in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Crucial for verifying software/coding projects",
+      "reasoning": "The CV mentions a verified portfolio but provides no exact URL link."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications."
+      ],
+      "relevance": "Summarizes professional identity and career pivot",
+      "reasoning": "A clear professional summary/headline statement is present at the top."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Freelance Web Developer / Personal Projects (2023-Present)",
+        "Civil Project Engineer (2018-2022, 4 years)"
+      ],
+      "relevance": "Demonstrates work history and career progression",
+      "reasoning": "Work history is detailed with dates and roles."
+    },
+    {
+      "section": "Education",
+      "field": "Education & Certifications",
+      "status": "present",
+      "evidence": [
+        "Fullstack Web Development Bootcamp (9 months, 2023)",
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "relevance": "Shows academic qualifications and upskilling efforts",
+      "reasoning": "Both university degree and bootcamp certification are included."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem Solving."
+      ],
+      "relevance": "Highlights technical capabilities",
+      "reasoning": "A dedicated skills section is present."
+    },
+    {
+      "section": "Compliance",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for certain jurisdictions (e.g., EU/UK applications)",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Experience with pandas, NumPy, scikit-learn, or similar data analysis and machine learning libraries",
+    "Understanding of machine learning fundamentals and model evaluation",
+    "Experience with experimentation, A/B testing, or causal inference",
+    "Knowledge of data visualisation tools or frameworks",
+    "Experience with cloud platforms or distributed data technologies",
+    "Experience working with large datasets or data pipelines",
+    "Data science specific projects or research"
+  ],
+  "weak_evidence": [
+    "Statistics, probability, and quantitative analysis (only inferred from Civil Engineering M.Sc.)",
+    "Python and SQL experience (Python and SQLite demonstrated only in the context of web development/Flask, not data analysis)",
+    "Problem-solving and analytical skills (demonstrated via civil engineering and bootcamp, but not specifically applied to data science)"
+  ],
+  "strengths": [
+    "Holds an Integrated Master's degree in Engineering, fulfilling the quantitative education requirement.",
+    "Demonstrates a clear career transition from civil engineering to software development through a 9-month bootcamp.",
+    "Shows practical implementation skills with Python and JavaScript through completed web applications."
+  ],
+  "weaknesses": [
+    "Lacks contact information (email, phone, location, and URLs for GitHub or LinkedIn).",
+    "Background is entirely focused on full-stack web development rather than data science, lacking core data science tools like pandas, NumPy, scikit-learn, and SQL analytics.",
+    "No experience with machine learning, model evaluation, or A/B testing."
+  ],
+  "overall_assessment": "The candidate presents a compelling profile for a software development transition, holding an engineering Master's degree and full-stack bootcamp training. However, for a Data Scientist Internship role, the CV lacks core technical requirements such as pandas, NumPy, scikit-learn, machine learning fundamentals, SQL data analysis, and experimentation experience. Furthermore, critical contact details and portfolio links are missing from the CV.",
+  "reasoning": "The evaluation maps the candidate's stated experience and skills against the explicit requirements of the Data Scientist Intern posting. While the educational background in engineering is a match, the technical stack and project experience are oriented toward web development (Python/Flask/SQLite) rather than data science, resulting in numerous missing or weak evidence items. Additionally, completeness checks reveal missing contact information and online profile links."
+}

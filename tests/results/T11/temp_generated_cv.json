@@ -1,0 +1,96 @@
+{
+  "contact": {
+    "name": "Dr. Gonçalo Ferreira",
+    "headline": "General Practice Physician (Primary Care)",
+    "specialisation": "General Practice / Medicine",
+    "phone": "+351 917 890 123",
+    "email": "goncalo.ferreira.md@example.com",
+    "location_city": "Porto / Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Dedicated General Practice Physician with a completed General Residency at São João University Hospital and full professional autonomy (Ordem dos Médicos License No. 68421). Proven expertise in outpatient primary consultations, adult emergency triage, and multidisciplinary clinical care supported by native Portuguese, professional English, and proficiency in SClínico and SAM electronic health records.",
+  "experience": [
+    {
+      "title": "General Practice Medical Resident",
+      "dates": "2023 - 2024",
+      "company": "São João University Hospital",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Conducted comprehensive clinical rotations across Adult Emergency Care, Internal Medicine Ward, Primary Healthcare Center, General Surgery, and Pediatrics.",
+        "Performed primary clinical triage, medical history taking, physical examinations, and basic emergency interventions.",
+        "Utilized SClínico and SAM electronic health record systems to maintain accurate patient documentation and collaborated effectively within an interdisciplinary medical team."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Integrated Master's in Medicine",
+      "dates": "2016 - 2022",
+      "institution": "Faculty of Medicine, University of Porto",
+      "location": "Porto, Portugal",
+      "grade": "16/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Clinical Competencies",
+      "skills": [
+        "Clinical Patient Assessment & Physical Examination",
+        "Pharmacological Prescription & Evidence-Based Treatment Planning",
+        "Adult Emergency Care & Primary Triage",
+        "Interdisciplinary Medical Teamwork"
+      ]
+    },
+    {
+      "category_name": "Tools & Technologies",
+      "skills": [
+        "Electronic Health Records (EHR): SClínico, SAM",
+        "Electronic Health Records"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Professional Working Proficiency (Advanced Medical/Clinical)",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Advanced Life Support (ALS)",
+      "issuer": "European Resuscitation Council",
+      "year": "2026"
+    },
+    {
+      "name": "Medical Association License No. 68421",
+      "issuer": "Ordem dos Médicos",
+      "year": "2023"
+    },
+    {
+      "name": "Basic Life Support (BLS)",
+      "issuer": "Certified Provider",
+      "year": "Active"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cardiovascular Risk Stratification in Outpatient Hypertension Clinics",
+      "dates": "2023",
+      "description": "Co-author, Poster Presentation focusing on cardiovascular risk stratification in outpatient settings.",
+      "link": "",
+      "volunteering_or_other": "Scientific Presentation"
+    }
+  ],
+  "consent": true
+}

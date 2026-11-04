@@ -1,0 +1,96 @@
+{
+  "cv": "Dr. Gonçalo Ferreira\nMedical Doctor | General Practitioner\nMedical Association License No. 68421\nPROFESSIONAL PROFILE\nMedical doctor with completed general internship, experienced in outpatient consultations, emergency\ndepartment triage, and inpatient rotations.\nCLINICAL EXPERIENCE\nGeneral Practice Medical Resident\nSão João University Hospital (2023-2024)\nClinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency\nCare.\nPrimary triage and basic emergency intervention.\nEDUCATION\nIntegrated Master's in Medicine\nFaculty of Medicine, University of Porto (2016-2022)\nCLINICAL COMPETENCIES\nClinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication.\nDr. Gonçalo Ferreira Page 1",
+  "personal_information": {
+    "name": "Dr. Gonçalo Ferreira",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Dr. Gonçalo Ferreira\nMedical Doctor | General Practitioner\nMedical Association License No. 68421"
+  },
+  "summary": {
+    "text": "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations.",
+    "source_section": "PROFESSIONAL PROFILE",
+    "source_text": "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations."
+  },
+  "education": [
+    {
+      "level": "Master's",
+      "degree": "Integrated Master's in Medicine",
+      "field": "Medicine",
+      "institution": "Faculty of Medicine, University of Porto",
+      "location": "",
+      "start_date": "2016",
+      "end_date": "2022",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "Integrated Master's in Medicine\nFaculty of Medicine, University of Porto (2016-2022)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "General Practice Medical Resident",
+      "company": "São João University Hospital",
+      "location": "",
+      "start_date": "2023",
+      "end_date": "2024",
+      "description": "Clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care.\nPrimary triage and basic emergency intervention.",
+      "responsibilities": [
+        "Clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care.",
+        "Primary triage and basic emergency intervention."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Internal Medicine",
+        "General Surgery",
+        "Pediatrics",
+        "Adult Emergency Care",
+        "Primary triage",
+        "basic emergency intervention"
+      ],
+      "source_section": "CLINICAL EXPERIENCE",
+      "source_text": "General Practice Medical Resident\nSão João University Hospital (2023-2024)\nClinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency\nCare.\nPrimary triage and basic emergency intervention."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Clinical Patient Assessment",
+      "source_section": "CLINICAL COMPETENCIES",
+      "source_text": "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication."
+    },
+    {
+      "name": "Basic Life Support (BLS)",
+      "source_section": "CLINICAL COMPETENCIES",
+      "source_text": "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication."
+    },
+    {
+      "name": "Pharmacological Prescription",
+      "source_section": "CLINICAL COMPETENCIES",
+      "source_text": "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication."
+    },
+    {
+      "name": "Electronic Health Records",
+      "source_section": "CLINICAL COMPETENCIES",
+      "source_text": "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication."
+    },
+    {
+      "name": "Doctor-Patient Communication",
+      "source_section": "CLINICAL COMPETENCIES",
+      "source_text": "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic\nHealth Records, Doctor-Patient Communication."
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": [
+    {
+      "type": "Medical Association License",
+      "content": "Medical Association License No. 68421",
+      "source_section": "Header",
+      "source_text": "Medical Association License No. 68421"
+    }
+  ]
+}

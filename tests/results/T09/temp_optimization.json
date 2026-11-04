@@ -1,0 +1,196 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Personal Information",
+      "current_content": "Pedro Oliveira",
+      "proposed_content": "Pedro Oliveira | Data Scientist Intern\nEmail: pedro.oliveira.dev@example.com | Phone: +351 961 234 567 | Location: Lisbon, Portugal\nLinkedIn: linkedin.com/in/pedro-oliveira-dev | GitHub: github.com/poliveira-projects",
+      "rationale": "Add missing critical contact information, professional links, and target role title to align with recruiter screening requirements.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: pedro.oliveira.dev@example.com",
+        "Phone: +351 961 234 567",
+        "Location: Lisbon, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/pedro-oliveira-dev",
+        "GitHub: https://github.com/poliveira-projects"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications.",
+      "proposed_content": "Quantitative-focused Data Scientist Intern candidate leveraging a Master's in Civil Engineering and intensive full-stack software training. Core strengths include Python, SQL, and analytical problem-solving, supported by verified applied projects in data tracking and calculations.",
+      "rationale": "Refine the professional summary to highlight candidate identity, target role, verified core skills (Python, SQL, analytical problem-solving), and quantitative background following the research format.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications."
+      ],
+      "user_provided_evidence": [
+        "Quantitative background from Master's in Civil Engineering",
+        "Python and SQL experience",
+        "Target role: Data Scientist Intern"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Civil Project Engineer (2018-2022, 4 years)\nStructural calculations, site coordination, and project timeline/budget management.",
+      "proposed_content": "Civil Project Engineer | Teixeira & Associados Engenharia (Jan 2019 – Dec 2022)\n- Performed structural calculations and quantitative data analysis for structural designs.\n- Managed project timelines and budgets using quantitative tracking methods.\n- Coordinated on-site engineering teams and stakeholder communications.",
+      "rationale": "Incorporate company name and dates provided by the candidate, enhancing bullet points to emphasize quantitative analysis and project management.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Civil Project Engineer (2018-2022, 4 years)\nStructural calculations, site coordination, and project timeline/budget management."
+      ],
+      "user_provided_evidence": [
+        "Company: Teixeira & Associados Engenharia",
+        "Dates: January 2019 to December 2022"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience / Projects",
+      "current_content": "Freelance Web Developer / Personal Projects (2023-Present)\nBuilt 3 complete web applications utilizing Python/Flask and JavaScript.",
+      "proposed_content": "Freelance Web Developer / Personal Projects (Oct 2023 – Present)\n- Built 3 complete web applications utilizing Python (Flask), SQLite, and JavaScript.\n- Developed a Construction Equipment & Asset Tracker, a Personal Budget & Expense Analytics app, and a Structural Beam Deflection Calculator.",
+      "rationale": "Detail the specific project applications provided by the candidate to demonstrate concrete technical output.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "user_provided_evidence": [
+        "Dates: October 2023 to present",
+        "Projects: Construction Equipment & Asset Tracker, Personal Budget & Expense Analytics app, and Structural Beam Deflection Calculator"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)",
+      "proposed_content": "Integrated Master's (M.Sc.) in Civil Engineering | IST (2013 – 2018)\n- Grade: 14/20\n- Focused on advanced quantitative analysis, structural modeling, and applied mathematics.",
+      "rationale": "Add institution name, grade, and quantitative coursework details provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "user_provided_evidence": [
+        "Institution: IST",
+        "Grade: 14/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Skills",
+      "current_content": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem Solving.",
+      "proposed_content": "Technical Skills: Python, SQL (PostgreSQL, SQLite), Flask, JavaScript, HTML/CSS, Git\nCore Competencies: Quantitative Analysis, Applied Mathematics, Project Management, Analytical Problem Solving",
+      "rationale": "Categorize and expand skills to explicitly feature Python, SQL, and quantitative analysis as confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem\nSolving."
+      ],
+      "user_provided_evidence": [
+        "SQL (PostgreSQL and SQLite)",
+        "Quantitative analysis and applied mathematics"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (B2 Upper-Intermediate)",
+      "rationale": "Add language proficiency details provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (B2 Upper-Intermediate)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target Role: Do you confirm 'Data Scientist Intern' as the target role headline for your CV? (Yes/No, or specify another)",
+    "2. Contact & links: We noticed that email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are currently missing from your CV. Do you have any of these contact details or links to include? (If none, reply 'I do not have one')",
+    "3. Employment: We found your work experience listed as 'Freelance Web Developer / Personal Projects (2023-Present)' and 'Civil Project Engineer (2018-2022, 4 years)'. Do you confirm these employment entries? (Yes/No)",
+    "4. Education: We found your education listed as 'Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)' and 'Fullstack Web Development Bootcamp (9 months, 2023)'. Do you confirm these education and certification details? (Yes/No)",
+    "5. Technical skills gaps: The target job requests skills in statistics, probability, quantitative analysis, SQL, pandas, NumPy, scikit-learn, and machine learning fundamentals. Do you have experience with any of these to include in your skills? (If none, reply 'I do not have one')",
+    "6. Languages: We found no languages listed in your CV. Do you speak any other languages that we should add? (If none, reply 'I do not have one')",
+    "7. Certifications: We found your Fullstack Web Development Bootcamp certificate. Do you have any additional certifications, licenses, or data science courses to include? (If none, reply 'I do not have one')",
+    "8. Projects: We found 3 web applications utilizing Python/Flask and JavaScript listed under your freelance/personal projects. Do you confirm these projects? (Yes/No)",
+    "9. Summary focus: We propose highlighting your quantitative background in Civil Engineering, your 9-month full-stack software training, and your strong analytical problem-solving skills tailored for the Data Scientist Intern role. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target Role: Do you confirm 'Data Scientist Intern' as the target role headline for your CV? (Yes/No, or specify another)",
+      "answer": "Yes, I confirm \"Data Scientist Intern\" as the target role headline for my CV.",
+      "gap": "Target role confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "2. Contact & links: We noticed that email, phone, location, LinkedIn URL, and GitHub/Portfolio URL are currently missing from your CV. Do you have any of these contact details or links to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my contact details and links are: email is pedro.oliveira.dev@example.com, phone is +351 961 234 567, location is Lisbon, Portugal, LinkedIn is https://www.linkedin.com/in/pedro-oliveira-dev, and GitHub is https://github.com/poliveira-projects. I do not have a separate personal portfolio website.",
+      "gap": "Missing contact information and profile URLs",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: We found your work experience listed as 'Freelance Web Developer / Personal Projects (2023-Present)' and 'Civil Project Engineer (2018-2022, 4 years)'. Do you confirm these employment entries? (Yes/No)",
+      "answer": "Yes, I confirm these employment entries: I worked as a Civil Project Engineer at Teixeira & Associados Engenharia from January 2019 to December 2022, and have been working as a Freelance Web Developer / working on personal projects from October 2023 to the present.",
+      "gap": "Employment details and company names",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: We found your education listed as 'Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)' and 'Fullstack Web Development Bootcamp (9 months, 2023)'. Do you confirm these education and certification details? (Yes/No)",
+      "answer": "Yes, I confirm these education details: I hold an Integrated Master's (M.Sc.) in Civil Engineering from IST (2013–2018) with a grade of 14/20, and I completed an 800+ hour Fullstack Web Development Bootcamp at Lisbon Tech Academy in 2023.",
+      "gap": "Education institution and grade",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The target job requests skills in statistics, probability, quantitative analysis, SQL, pandas, NumPy, scikit-learn, and machine learning fundamentals. Do you have experience with any of these to include in your skills? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have experience with Python, SQL (PostgreSQL and SQLite), and quantitative analysis/applied mathematics from my Master's in Civil Engineering, though I do not have direct professional experience with pandas, NumPy, or scikit-learn.",
+      "gap": "Advanced data science libraries (pandas, NumPy, scikit-learn) and machine learning fundamentals",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "6. Languages: We found no languages listed in your CV. Do you speak any other languages that we should add? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese (Native) and English (B2 Upper-Intermediate).",
+      "gap": "Languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: We found your Fullstack Web Development Bootcamp certificate. Do you have any additional certifications, licenses, or data science courses to include? (If none, reply 'I do not have one')",
+      "answer": "No, I do not have any additional certifications, licenses, or data science courses beyond my Fullstack Web Development Bootcamp certificate and my Integrated Master's in Civil Engineering.",
+      "gap": "Additional certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "8. Projects: We found 3 web applications utilizing Python/Flask and JavaScript listed under your freelance/personal projects. Do you confirm these projects? (Yes/No)",
+      "answer": "Yes, I confirm those projects, which include a Construction Equipment & Asset Tracker built with Python (Flask) and SQLite, a Personal Budget & Expense Analytics app, and a Structural Beam Deflection Calculator.",
+      "gap": "Project titles and descriptions",
+      "resolution": "supported"
+    },
+    {
+      "question": "9. Summary focus: We propose highlighting your quantitative background in Civil Engineering, your 9-month full-stack software training, and your strong analytical problem-solving skills tailored for the Data Scientist Intern role. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus. Highlighting my quantitative background from my Master's in Civil Engineering and my Python/SQL skills from my software training aligns well with the Data Scientist Intern role.",
+      "gap": "Summary focus confirmation",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: pedro.oliveira.dev@example.com",
+    "Phone: +351 961 234 567",
+    "Location: Lisbon, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/pedro-oliveira-dev",
+    "GitHub: https://github.com/poliveira-projects",
+    "Civil Project Engineer company: Teixeira & Associados Engenharia (Jan 2019 – Dec 2022)",
+    "Freelance / personal projects dates: October 2023 – Present",
+    "Master's institution: IST (2013–2018), Grade: 14/20",
+    "Bootcamp details: 800+ hour Fullstack Web Development Bootcamp at Lisbon Tech Academy in 2023",
+    "SQL experience: PostgreSQL and SQLite",
+    "Projects: Construction Equipment & Asset Tracker, Personal Budget & Expense Analytics app, Structural Beam Deflection Calculator",
+    "Languages: Portuguese (Native), English (B2 Upper-Intermediate)"
+  ],
+  "optimization_strategy": "Optimized Pedro Oliveira's CV for a Data Scientist Intern position at Revolut by integrating missing contact information, establishing a tailored professional summary emphasizing quantitative analysis and Python/SQL capabilities, updating employment details with specific company names and dates, detailing applied project work, and adding language proficiencies while noting gaps in machine learning libraries (pandas, NumPy, scikit-learn).",
+  "unresolved_evidence_gaps": [
+    "Direct professional or project experience with pandas, NumPy, scikit-learn, and machine learning fundamentals",
+    "Experience with experimentation, A/B testing, or causal inference",
+    "Experience with cloud platforms or distributed data technologies"
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Experience with Python and SQL.",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention Python or SQL anywhere in the experience, skills, or projects sections."
+    },
+    {
+      "requirement": "Familiarity with common data analysis and machine learning libraries such as pandas, NumPy, scikit-learn, or similar tools.",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV lists frontend technologies like React and TypeScript, but lacks any mention of pandas, NumPy, scikit-learn, or data analysis libraries."
+    },
+    {
+      "requirement": "Currently pursuing a Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field.",
+      "category": "Education",
+      "status": "weak_evidence",
+      "evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "reasoning": "The candidate has completed a Bachelor's degree, but it is in Design and Multimedia rather than a quantitative field, and they are not currently pursuing a degree as per the CV timeline (graduated 2021)."
+    },
+    {
+      "requirement": "Ability to investigate ambiguous problems and break them down into structured analytical tasks.",
+      "category": "Problem Solving",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence or project context is provided in the CV regarding structured analytical tasks or investigating ambiguous data problems."
+    },
+    {
+      "requirement": "Strong analytical and problem-solving skills.",
+      "category": "Soft Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance."
+      ],
+      "reasoning": "Problem-solving can be inferred generally from software development, but there is no direct demonstration of data-oriented analytical problem-solving."
+    },
+    {
+      "requirement": "Good communication skills and ability to work effectively in a team.",
+      "category": "Communication",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV describes job responsibilities at PixelWave but does not explicitly provide evidence of teamwork or communication skills."
+    },
+    {
+      "requirement": "Comfortable working in a fast-paced, international environment.",
+      "category": "Environment",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence is provided regarding international work environments or fast-paced startup experience."
+    },
+    {
+      "requirement": "Experience with experimentation, A/B testing, or causal inference.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV focuses entirely on frontend development and contains no mention of experimentation or A/B testing."
+    },
+    {
+      "requirement": "Knowledge of data visualisation tools or frameworks.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No data visualization tools or frameworks are mentioned in the CV."
+    },
+    {
+      "requirement": "Experience with cloud platforms or distributed data technologies.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No cloud platforms or distributed data technologies are present in the CV."
+    },
+    {
+      "requirement": "Experience working with large datasets or data pipelines.",
+      "category": "Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's experience is in frontend web development (React, TypeScript), not working with large datasets or data pipelines."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Full Name",
+      "status": "present",
+      "evidence": [
+        "Mariana Costa"
+      ],
+      "relevance": "Essential for candidate identification.",
+      "reasoning": "The candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter contact and communication.",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct telephonic communication.",
+      "reasoning": "No phone number is included in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for role location and hybrid/onsite assessment.",
+      "reasoning": "No location or address is provided."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Useful for professional background verification.",
+      "reasoning": "No LinkedIn profile URL is present."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for showcasing software development work.",
+      "reasoning": "No GitHub or portfolio links are provided."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance."
+      ],
+      "relevance": "Provides a quick overview of the candidate's core expertise.",
+      "reasoning": "A concise professional summary is included."
+    },
+    {
+      "section": "Experience",
+      "field": "Work Experience",
+      "status": "present",
+      "evidence": [
+        "Frontend Developer | PixelWave (2022-Present, 2 years)"
+      ],
+      "relevance": "Essential for evaluating career history and practical application of skills.",
+      "reasoning": "One current work experience entry is detailed with responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "relevance": "Shows academic background.",
+      "reasoning": "Degree level, field, and dates are provided, though institution name is missing."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+      ],
+      "relevance": "Highlights technical capabilities.",
+      "reasoning": "A dedicated skills list is present."
+    },
+    {
+      "section": "Skills",
+      "field": "Tools/Software",
+      "status": "present",
+      "evidence": [
+        "Git, Figma"
+      ],
+      "relevance": "Indicates familiarity with developer tools.",
+      "reasoning": "Git and Figma are listed among the technical skills."
+    },
+    {
+      "section": "Skills",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates process understanding (e.g., Agile, Scrum).",
+      "reasoning": "No methodologies are explicitly mentioned in the CV."
+    },
+    {
+      "section": "Skills",
+      "field": "Transferable Skills",
+      "status": "uncertain",
+      "evidence": [],
+      "relevance": "Highlights general competencies.",
+      "reasoning": "Transferable soft skills are not explicitly itemized, though implied through development work."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for international or multilingual workplaces.",
+      "reasoning": "No spoken or written languages are listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Validates continuous learning or specialized training.",
+      "reasoning": "No certifications or training sections are present."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides tangible proof of independent work.",
+      "reasoning": "No independent or personal projects are listed outside of work experience."
+    },
+    {
+      "section": "Consent",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required in certain jurisdictions for data processing.",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Python and SQL experience",
+    "Data analysis and machine learning libraries (pandas, NumPy, scikit-learn)",
+    "Currently pursuing a quantitative Bachelor's or Master's degree",
+    "Experience with experimentation, A/B testing, or causal inference",
+    "Data visualization tools or frameworks",
+    "Cloud platforms or distributed data technologies",
+    "Experience working with large datasets or data pipelines"
+  ],
+  "weak_evidence": [
+    "Educational background is in Design and Multimedia rather than a quantitative field",
+    "Problem-solving and analytical skills are only generalized through web development rather than data science contexts"
+  ],
+  "strengths": [
+    "Clear and structured presentation of professional experience in frontend development.",
+    "Explicit listing of modern web development stack (React, TypeScript, Tailwind CSS)."
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location).",
+    "Mismatch between candidate profile (Frontend Web Developer) and target role (Data Scientist Intern).",
+    "Lack of core data science requirements such as Python, SQL, and machine learning libraries."
+  ],
+  "overall_assessment": "The candidate's CV reflects a professional background focused entirely on frontend web development (React, TypeScript, design systems), whereas the target position is for a Data Scientist Intern requiring Python, SQL, statistics, and machine learning libraries. Additionally, the CV lacks essential contact details such as email, phone number, and location.",
+  "reasoning": "The evaluation compares Mariana Costa's structured CV against the Revolut Data Scientist Intern job posting. The candidate profile heavily centers on web interfaces and frontend engineering, resulting in no evidence or weak evidence for nearly all core data science technical requirements (Python, SQL, machine learning libraries, statistics, experimentation). Furthermore, critical contact details are missing from the CV completeness inspection."
+}

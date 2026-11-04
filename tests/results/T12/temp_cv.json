@@ -1,0 +1,96 @@
+{
+  "cv": "Inês Martins\nRegistered General Care Nurse | Nursing Council License No. 94312\nProfile Summary\nRegistered Nurse with 3 years of hospital ward experience in post-operative surgical and\ninternal medicine care.\nProfessional Experience\nGeneral Care Staff Nurse\nCHUC University Hospital (2021-Present)\nDirect patient care in surgical ward.\nMedication preparation and administration (IV/IM/Oral).\nWound dressing and wound care management.\nVital signs monitoring and patient admission/discharge records.\nEducation\nB.Sc. in Nursing\nCoimbra Nursing School (2017-2021)\nCore Competencies\nSurgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork.\nInês Martins Page 1",
+  "personal_information": {
+    "name": "Inês Martins",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Inês Martins\nRegistered General Care Nurse | Nursing Council License No. 94312"
+  },
+  "summary": {
+    "text": "Registered Nurse with 3 years of hospital ward experience in post-operative surgical and internal medicine care.",
+    "source_section": "Profile Summary",
+    "source_text": "Registered Nurse with 3 years of hospital ward experience in post-operative surgical and\ninternal medicine care."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc. in Nursing",
+      "field": "Nursing",
+      "institution": "Coimbra Nursing School",
+      "location": "",
+      "start_date": "2017",
+      "end_date": "2021",
+      "details": "",
+      "source_section": "Education",
+      "source_text": "B.Sc. in Nursing\nCoimbra Nursing School (2017-2021)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "General Care Staff Nurse",
+      "company": "CHUC University Hospital",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "Present",
+      "description": "",
+      "responsibilities": [
+        "Direct patient care in surgical ward.",
+        "Medication preparation and administration (IV/IM/Oral).",
+        "Wound dressing and wound care management.",
+        "Vital signs monitoring and patient admission/discharge records."
+      ],
+      "achievements": [],
+      "skills_evidenced": [],
+      "source_section": "Professional Experience",
+      "source_text": "General Care Staff Nurse\nCHUC University Hospital (2021-Present)\nDirect patient care in surgical ward.\nMedication preparation and administration (IV/IM/Oral).\nWound dressing and wound care management.\nVital signs monitoring and patient admission/discharge records."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Surgical Patient Care",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    },
+    {
+      "name": "Medication Administration",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    },
+    {
+      "name": "Catheterization",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    },
+    {
+      "name": "Infection Prevention & Control",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    },
+    {
+      "name": "Basic Life Support",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    },
+    {
+      "name": "Multidisciplinary Teamwork",
+      "source_section": "Core Competencies",
+      "source_text": "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention &\nControl, Basic Life Support, Multidisciplinary Teamwork."
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": [
+    {
+      "type": "License",
+      "content": "Nursing Council License No. 94312",
+      "source_section": "Header",
+      "source_text": "Nursing Council License No. 94312"
+    }
+  ]
+}

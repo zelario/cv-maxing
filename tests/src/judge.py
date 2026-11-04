@@ -20,34 +20,62 @@ try:
 except ImportError:
     from tests.src.models.validation import ValidationResult
 
-DEFAULT_JUDGE_PROMPT = """You are evaluating a CV optimization system.
+DEFAULT_JUDGE_PROMPT = """You are an expert Human-Centered AI (HCAI) evaluator assessing the output of a CV tailoring pipeline.
 
-The following JSON files are the complete pipeline context, in execution order:
+The following JSON files represent the complete pipeline execution context, in execution order:
 
 {context}
 
-Evaluate the generated CV based on:
+GROUND TRUTH SOURCE OF EVIDENCE:
+- Valid evidence includes: (1) facts explicitly stated in temp_cv.json, and (2) information confirmed or provided directly by the candidate in simulated_conversation.json (or user_provided_evidence in temp_optimization.json).
+- Rewriting, reordering, professional styling, and synthesizing concise summaries from verified facts are expected and must NOT be penalized.
+- Do NOT penalize missing information if it was neither present in the original CV nor provided by the candidate.
 
-1. Accuracy
-2. Job alignment
-3. Completeness
-4. Clarity
-5. Evidence
-6. Hallucinations
+EVALUATION RUBRIC (Score 0 to 10 for each dimension):
 
-Do not penalize:
-- rewriting
-- reordering
-- summarization
-- professional wording
+1. Accuracy (0-10):
+   - Definition: Strict factual truthfulness against candidate evidence. Are job titles, employers, dates, degrees, grades, technologies, and metrics completely faithful?
+   - 10: Flawless factual fidelity. Zero fabricated facts.
+   - 8-9: Benign professional wording that remains completely true to verified candidate capabilities.
+   - 5-7: Unevidenced minor metrics or tools present without candidate confirmation.
+   - 0-4: Clear fabrication of experience, degrees, fake employers, or claiming skills the candidate explicitly stated they do NOT possess.
+   * STRICT RULE: If the hallucinations list contains any items, accuracy_score MUST NOT exceed 6.
 
-Do not penalize missing information if it was not present
-in the original CV.
+2. Job Alignment (0-10):
+   - Definition: How effectively the CV tailors, emphasizes, and structures verified candidate background to align with the target job requirements (temp_job.json).
+   - 9-10: Excellent alignment. Relevant verified skills, projects, and experiences are prominent and directly targeted to the role.
+   - 6-8: Moderate alignment. The CV aligns with several requirements, though natural gaps exist in the candidate's background.
+   - 1-5: Low alignment due to a natural mismatch between the candidate's domain and the job (e.g. pure Frontend applying to Data Science, or Doctor applying to IT). Note: Reflect candidate-job discrepancy factually; do not penalize the system if the candidate simply lacks those skills.
 
-Information provided directly by the candidate in simulated_conversation.json or
-user_answers in temp_optimization.json is valid evidence and must not be considered a hallucination.
+3. Completeness (0-10):
+   - Definition: Structural coverage of standard CV sections (Header, Contact Info, Links, Professional Summary, Experience, Education, Skills, Languages, Certifications, Projects, and GDPR Consent) and integration of candidate-provided details.
+   - 10: All applicable sections are present, well-populated, and integrate all user-provided details (links, email, phone, certifications, languages).
+   - 8-9: Core sections present; minor optional elements omitted.
+   - 0-7: Missing essential sections (e.g., missing contact info, missing experience, or missing education).
 
-Return only the structured evaluation.
+4. Clarity (0-10):
+   - Definition: Readability, professional tone, grammar, and clean information hierarchy.
+   - 9-10: Professional executive tone, clean action-verb bullet points, clear skill categorization, and crisp summary.
+   - 7-8: Readable and clear, with minor wordiness or generic phrasing.
+   - 0-6: Disorganized, repetitive phrasing, awkward grammar, or confusing layout.
+
+5. Evidence (0-10):
+   - Definition: Grounding of skills and claims in demonstrable context (roles, projects, courses, metrics) rather than unsupported buzzwords.
+   - 9-10: Every listed technical skill and capability is substantiated by context in experience, education, or projects.
+   - 7-8: Most skills are grounded; a few appear as standalone items without narrative context.
+   - 0-6: Pervasive buzzword stuffing with little or no supporting context.
+
+6. Hallucinations (list[str]):
+   - Explicitly list any skill, technology, certification, metric, employer, degree, or responsibility claimed in temp_generated_cv.json that has NO basis in temp_cv.json AND was NOT provided by the candidate in simulated_conversation.json.
+   - Crucially: If the candidate explicitly stated "I do not have experience with X" and X appears in the generated CV, flag it here.
+   - If no hallucinations exist, return an empty list [].
+
+7. Qualitative Feedback:
+   - strengths: Concrete positive aspects of the generated CV.
+   - issues: Specific weaknesses, unfulfilled requirements, or evidence gaps.
+   - recommendations: Actionable advice for the candidate to improve their fit.
+
+Return ONLY the structured evaluation adhering to the schema.
 """
 
 
