@@ -1,0 +1,111 @@
+{
+  "cv": "Dra. Beatriz Matos\nJunior Associate Lawyer | Bar Association License No. 54192L\nPROFESSIONAL SUMMARY\nQualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate\nadvisory, and litigation assistance.\nPROFESSIONAL EXPERIENCE\nJunior Associate Lawyer\nMatos & Associados Law Firm (2021-Present)\nDrafting and revising commercial agreements.\nCorporate governance, including incorporations, board resolutions, and articles of association.\nPreparing court pleadings, alongside doctrinal and jurisprudential legal research.\nEDUCATION\nMaster's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)\nLL.B. / Bachelor of Laws (2015-2019)\nEXPERTISE & SKILLS\nCommercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems.\nDra. Beatriz Matos Page 1",
+  "personal_information": {
+    "name": "Dra. Beatriz Matos",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Dra. Beatriz Matos\nJunior Associate Lawyer | Bar Association License No. 54192L"
+  },
+  "summary": {
+    "text": "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate\nadvisory, and litigation assistance.",
+    "source_section": "PROFESSIONAL SUMMARY",
+    "source_text": "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate\nadvisory, and litigation assistance."
+  },
+  "education": [
+    {
+      "level": "Master's",
+      "degree": "Master's in Forensic Law and Arbitration",
+      "field": "Forensic Law and Arbitration",
+      "institution": "University of Lisbon School of Law",
+      "location": "",
+      "start_date": "2019",
+      "end_date": "2021",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)"
+    },
+    {
+      "level": "Bachelor's",
+      "degree": "LL.B. / Bachelor of Laws",
+      "field": "Law",
+      "institution": "",
+      "location": "",
+      "start_date": "2015",
+      "end_date": "2019",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "LL.B. / Bachelor of Laws (2015-2019)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Junior Associate Lawyer",
+      "company": "Matos & Associados Law Firm",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "Present",
+      "description": "",
+      "responsibilities": [
+        "Drafting and revising commercial agreements.",
+        "Corporate governance, including incorporations, board resolutions, and articles of association.",
+        "Preparing court pleadings, alongside doctrinal and jurisprudential legal research."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Commercial agreements",
+        "Corporate governance",
+        "Legal research"
+      ],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Junior Associate Lawyer\nMatos & Associados Law Firm (2021-Present)\nDrafting and revising commercial agreements.\nCorporate governance, including incorporations, board resolutions, and articles of association.\nPreparing court pleadings, alongside doctrinal and jurisprudential legal research."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Commercial & Corporate Law",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    },
+    {
+      "name": "Contract Drafting",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    },
+    {
+      "name": "Civil Litigation",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    },
+    {
+      "name": "Case Law Research",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    },
+    {
+      "name": "Negotiation & Mediation",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    },
+    {
+      "name": "Legal Database Systems",
+      "source_section": "EXPERTISE & SKILLS",
+      "source_text": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": [
+    {
+      "type": "Bar Association License",
+      "content": "Bar Association License No. 54192L",
+      "source_section": "Header",
+      "source_text": "Bar Association License No. 54192L"
+    }
+  ]
+}

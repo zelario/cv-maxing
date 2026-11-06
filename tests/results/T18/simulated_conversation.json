@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Target role: Do you confirm the target role headline as 'Backend Software Engineer (Python)'? (Yes/No, or specify another)",
+    "answer": "No, I do not confirm that target role. I am a Junior Associate Lawyer specializing in corporate and commercial law, and I do not have a background in software engineering, Python, or backend development."
+  },
+  {
+    "question": "Contact & links: We found your name is Dra. Beatriz Matos and your Bar Association License is No. 54192L, but phone, email, location, LinkedIn, and GitHub are missing. Do you have any email, phone, location, or LinkedIn URL to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is beatriz.matos.law@example.com, my phone is +351 919 456 782, my location is Lisbon, Portugal, and my LinkedIn is https://www.linkedin.com/in/beatrizmatos-adv. I do not have a GitHub profile as I am a lawyer and do not work in software engineering."
+  },
+  {
+    "question": "Employment: We found your current position as Junior Associate Lawyer at Matos & Associados Law Firm (2021-Present) focusing on commercial contract drafting, corporate governance, and court pleadings. Do you confirm this employment history? (Yes/No)",
+    "answer": "Yes, I confirm my employment history as a Junior Associate Lawyer at Matos & Associados Law Firm from 2021 to the present."
+  },
+  {
+    "question": "Education: We found your Master's in Forensic Law and Arbitration from University of Lisbon School of Law (2019-2021) and your LL.B. / Bachelor of Laws (2015-2019). Do you confirm this educational background? (Yes/No)",
+    "answer": "Yes, I confirm this educational background consisting of my Master's in Forensic Law and Arbitration (2019–2021) and my Bachelor of Laws (2015–2019) from the University of Lisbon School of Law."
+  },
+  {
+    "question": "Technical skills gaps: The job requires Python, FastAPI, Flask, Django, PostgreSQL, Docker, Docker Compose, Redis, pytest, and Git. Since your CV lists Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation & Mediation, and Legal Database Systems, do you have any software engineering or technical skills to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "Languages: No languages are currently listed on your CV. Do you speak any other languages (e.g., English, Portuguese) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese natively and English at a C1 full professional and legal drafting level, including TOLES Advanced certification."
+  },
+  {
+    "question": "Certifications: No dedicated certifications section is present, though your Bar Association License No. 54192L is listed under other information. Do you have any additional certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold my Bar Association License (Ordem dos Advogados nº 54192L), a TOLES Advanced certification in Legal English, and a training certificate in GDPR Compliance & Data Protection Governance."
+  },
+  {
+    "question": "Projects: No independent projects section is present on your CV. Do you have any projects or legal/professional initiatives to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "Summary focus: We propose highlighting your qualification as a legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus, as my background is entirely in corporate and commercial law. I do not have a background in software engineering or Python development, so I cannot apply for the Backend Software Engineer role."
+  }
+]

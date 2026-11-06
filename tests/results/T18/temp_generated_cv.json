@@ -1,0 +1,90 @@
+{
+  "contact": {
+    "name": "Dra. Beatriz Matos",
+    "headline": "Junior Associate Lawyer",
+    "specialisation": "Commercial & Corporate Law",
+    "phone": "+351 919 456 782",
+    "email": "beatriz.matos.law@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/beatrizmatos-adv",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance.",
+  "experience": [
+    {
+      "title": "Junior Associate Lawyer",
+      "dates": "2021-Present",
+      "company": "Matos & Associados Law Firm",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Drafting and revising commercial agreements.",
+        "Corporate governance, including incorporations, board resolutions, and articles of association.",
+        "Preparing court pleadings, alongside doctrinal and jurisprudential legal research."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in Forensic Law and Arbitration",
+      "dates": "2019-2021",
+      "institution": "University of Lisbon School of Law",
+      "location": "Lisbon, Portugal",
+      "grade": ""
+    },
+    {
+      "degree": "Bachelor of Laws (LL.B.)",
+      "dates": "2015-2019",
+      "institution": "University of Lisbon School of Law",
+      "location": "Lisbon, Portugal",
+      "grade": ""
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Legal Expertise",
+      "skills": [
+        "Commercial & Corporate Law",
+        "Contract Drafting",
+        "Civil Litigation",
+        "Case Law Research",
+        "Negotiation & Mediation",
+        "Legal Database Systems"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native proficiency",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full professional proficiency and legal drafting level",
+      "certification": "TOLES Advanced"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Bar Association License No. 54192L",
+      "issuer": "Ordem dos Advogados",
+      "year": ""
+    },
+    {
+      "name": "TOLES Advanced (Test of Legal English Skills)",
+      "issuer": "TOLES",
+      "year": ""
+    },
+    {
+      "name": "GDPR Compliance & Data Protection Governance Training Certificate",
+      "issuer": "",
+      "year": ""
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

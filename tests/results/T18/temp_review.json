@@ -1,0 +1,305 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Python",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's CV shows legal experience and education with no mention of Python."
+    },
+    {
+      "requirement": "FastAPI",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of FastAPI in the candidate's CV."
+    },
+    {
+      "requirement": "Flask",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Flask in the candidate's CV."
+    },
+    {
+      "requirement": "Django",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Django in the candidate's CV."
+    },
+    {
+      "requirement": "PostgreSQL",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of PostgreSQL in the candidate's CV."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Docker in the candidate's CV."
+    },
+    {
+      "requirement": "Docker Compose",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Docker Compose in the candidate's CV."
+    },
+    {
+      "requirement": "Redis",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Redis in the candidate's CV."
+    },
+    {
+      "requirement": "pytest",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of pytest in the candidate's CV."
+    },
+    {
+      "requirement": "RESTful API design principles",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of RESTful APIs in the candidate's CV."
+    },
+    {
+      "requirement": "HTTP protocols",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of HTTP protocols in the candidate's CV."
+    },
+    {
+      "requirement": "Microservice architecture",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of microservice architecture in the candidate's CV."
+    },
+    {
+      "requirement": "Git",
+      "category": "Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Git version control in the candidate's CV."
+    },
+    {
+      "requirement": "RabbitMQ",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of RabbitMQ in the candidate's CV."
+    },
+    {
+      "requirement": "Apache Kafka",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Apache Kafka in the candidate's CV."
+    },
+    {
+      "requirement": "Celery",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Celery in the candidate's CV."
+    },
+    {
+      "requirement": "AWS",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of AWS in the candidate's CV."
+    },
+    {
+      "requirement": "GCP",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GCP in the candidate's CV."
+    },
+    {
+      "requirement": "GitHub Actions",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GitHub Actions in the candidate's CV."
+    },
+    {
+      "requirement": "GitLab CI",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GitLab CI in the candidate's CV."
+    },
+    {
+      "requirement": "Kubernetes",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Kubernetes in the candidate's CV."
+    },
+    {
+      "requirement": "Proven software development experience focused on Python backend development",
+      "category": "Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate background is entirely in law and legal practice, with no software development experience."
+    },
+    {
+      "requirement": "Bachelor's or Master's degree in Computer Science, Software Engineering, Informatics, or a related technical discipline",
+      "category": "Education",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate holds degrees in Law (LL.B. and Master's in Forensic Law and Arbitration), not in a technical discipline."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Contact Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV header or contact section."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location or address details are provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is included in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GitHub or portfolio URL is included in the CV."
+    },
+    {
+      "section": "Professional Summary",
+      "field": "Summary",
+      "status": "present",
+      "evidence": [
+        "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance."
+      ],
+      "relevance": "High",
+      "reasoning": "A professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "Work History",
+      "status": "present",
+      "evidence": [
+        "Junior Associate Lawyer, Matos & Associados Law Firm (2021-Present)"
+      ],
+      "relevance": "High",
+      "reasoning": "Professional experience section is present detailing current employment."
+    },
+    {
+      "section": "Education",
+      "field": "Degrees",
+      "status": "present",
+      "evidence": [
+        "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)",
+        "LL.B. / Bachelor of Laws (2015-2019)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education section is fully detailed with degrees and institutions."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills / Expertise",
+      "status": "present",
+      "evidence": [
+        "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation & Mediation, Legal Database Systems."
+      ],
+      "relevance": "High",
+      "reasoning": "Skills and expertise are listed clearly."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No dedicated certifications section is present (though a Bar Association License is listed under other information)."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No independent projects section is present."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No languages section is included."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is present in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "Python programming language expertise",
+    "Experience with Python web frameworks (FastAPI, Flask, Django)",
+    "Relational database design and PostgreSQL experience",
+    "Containerization experience with Docker and Docker Compose",
+    "Caching experience with Redis",
+    "Testing experience with pytest",
+    "Understanding of RESTful APIs, HTTP protocols, and microservice architecture",
+    "Version control experience with Git",
+    "Degree in Computer Science, Software Engineering, or related technical discipline",
+    "Professional software development experience"
+  ],
+  "weak_evidence": [],
+  "strengths": [
+    "Clear professional summary highlighting legal qualifications",
+    "Detailed educational background in law",
+    "Listed Bar Association license demonstrating professional standing in the legal field"
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location)",
+    "Lack of professional online profiles (LinkedIn URL)",
+    "Total mismatch between candidate's legal background and the technical backend engineering role"
+  ],
+  "overall_assessment": "The candidate's profile is entirely focused on legal practice (Junior Associate Lawyer with degrees in Law). The job posting is for a Backend Software Engineer (Python). There is a complete lack of overlap between the candidate's qualifications and the required technical skills for the role.",
+  "reasoning": "Evaluation of the CV against the job requirements reveals zero evidence of the mandatory technical competencies, programming languages, databases, or educational background required for the Backend Software Engineer position."
+}

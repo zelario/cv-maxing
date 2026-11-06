@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 9,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Strict factual adherence to the candidate's real legal background without any fabricated software engineering skills, despite the target role mismatch.",
+    "Seamless integration of user-provided contact details, location, languages (Portuguese and English C1 with TOLES Advanced), and professional certifications.",
+    "Clean, professional information hierarchy and tone suitable for a legal professional."
+  ],
+  "issues": [
+    "Severe domain mismatch between the candidate's legal background and the target role of Backend Software Engineer (Python), which was correctly respected by not fabricating technical skills.",
+    "Lack of GitHub or portfolio links, though accurate given the candidate's profession."
+  ],
+  "recommendations": [
+    "Clarify the target role in the pipeline to match the candidate's legal profession rather than generating a CV for a software engineering position.",
+    "Maintain the current professional legal formatting for future legal job applications."
+  ]
+}
