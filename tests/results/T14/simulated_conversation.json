@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target role to be 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this as the desired headline for the CV? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm this as the desired headline for the CV. My preferred headline is Junior Associate Lawyer (Corporate & Commercial Law)."
+  },
+  {
+    "question": "We noticed that contact details such as email, phone number, location, and LinkedIn URL are currently missing from the CV header. Do you have any of these contact links or details to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is beatriz.matos.law@example.com, my phone number is +351 919 456 782, my location is Lisbon, Portugal, and my LinkedIn profile is https://www.linkedin.com/in/beatrizmatos-adv."
+  },
+  {
+    "question": "We found the employment history: Junior Associate Lawyer at Matos & Associados Law Firm (2021-Present), involving commercial agreement drafting, corporate governance, and legal research. Do you confirm this employment record? (Yes/No)",
+    "answer": "Yes, I confirm this employment record. I have been working as a Junior Associate Lawyer at Matos & Associados Sociedade de Advogados since September 2021, focusing on corporate and commercial law, contract drafting, and corporate governance."
+  },
+  {
+    "question": "We found the education history: Master's in Forensic Law and Arbitration (2019-2021) and LL.B. / Bachelor of Laws (2015-2019) from the University of Lisbon School of Law. Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm this academic background, which includes my Master's in Forensic Law and Arbitration (2019–2021) with a grade of 16/20 and my Bachelor of Laws (2015–2019) from the University of Lisbon School of Law."
+  },
+  {
+    "question": "The job requires M&A legal due diligence, GDPR/RGPD experience, Citius platform familiarity, and financial statements understanding. Do you have experience with any of these to include in your technical skills? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have practical experience with M&A legal due diligence, GDPR/RGPD compliance in commercial contracts (certified by the Lisbon Bar Council), and judicial platforms including Citius."
+  },
+  {
+    "question": "No languages are currently listed in your CV. Do you speak other languages like Portuguese (native) or English (fluent/professional) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my native language is Portuguese, and I have C1 full professional and legal English proficiency."
+  },
+  {
+    "question": "No separate certifications section is currently listed, although your Bar Association License No. 54192L is noted. Do you have any additional certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold a certification in GDPR Compliance & Data Protection Governance in Commercial Contracts from the Lisbon Bar Council (2022) and have achieved an Advanced Level (Certified High Pass) in the Test of Legal English Skills (TOLES)."
+  },
+  {
+    "question": "No independent projects are currently listed in your CV. Do you have any notable academic or legal projects, repositories, or landmark transactions to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one, as my practical experience is entirely focused on commercial contract drafting, corporate governance, and due diligence within my role at Matos & Associados."
+  },
+  {
+    "question": "We propose focusing your professional summary on your Bar admission, corporate and commercial law expertise, contract drafting, and due diligence achievements. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

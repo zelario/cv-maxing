@@ -1,0 +1,99 @@
+{
+  "contact": {
+    "name": "Dra. Beatriz Matos",
+    "headline": "Junior Associate Lawyer (Corporate & Commercial Law)",
+    "specialisation": "Corporate & Commercial Law",
+    "phone": "+351 919 456 782",
+    "email": "beatriz.matos.law@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/beatrizmatos-adv",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Qualified Junior Associate Lawyer admitted to the Bar, specializing in commercial contract drafting, corporate governance, and M&A legal due diligence. Equipped with C1 legal English proficiency, Bar Association License No. 54192L, and a Master's in Forensic Law and Arbitration, delivering precise advisory and transactional support.",
+  "experience": [
+    {
+      "title": "Junior Associate Lawyer",
+      "dates": "2021-Present",
+      "company": "Matos & Associados Law Firm",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Draft, review, and negotiate complex commercial agreements (service agreements, NDAs, supply terms) in Portuguese and English.",
+        "Manage corporate governance documentation, including corporate incorporations, board/shareholder resolutions, capital increases, and articles of association.",
+        "Conduct legal due diligence audits for M&A and corporate investment transactions, identifying legal risks and drafting reports.",
+        "Prepare court pleadings and legal memoranda utilizing judicial platforms (Citius) and doctrinal/jurisprudential legal research."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in Forensic Law and Arbitration",
+      "dates": "2019-2021",
+      "institution": "University of Lisbon School of Law",
+      "location": "Lisbon, Portugal",
+      "grade": "16/20"
+    },
+    {
+      "degree": "LL.B. / Bachelor of Laws",
+      "dates": "2015-2019",
+      "institution": "University of Lisbon School of Law",
+      "location": "Lisbon, Portugal",
+      "grade": ""
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Core Legal Practice",
+      "skills": [
+        "Commercial & Corporate Law",
+        "Contract Drafting & Negotiation",
+        "M&A Legal Due Diligence",
+        "Corporate Governance",
+        "Civil Litigation & Pre-Litigation Dispute Resolution"
+      ]
+    },
+    {
+      "category_name": "Tools, Platforms & Compliance",
+      "skills": [
+        "Case Law Research",
+        "Legal Database Systems",
+        "Citius Platform",
+        "GDPR & Data Protection Governance"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Full Professional",
+      "details": "Full professional and legal English proficiency for contract drafting and negotiation",
+      "certification": "TOLES Advanced"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "GDPR Compliance & Data Protection Governance in Commercial Contracts",
+      "issuer": "Lisbon Bar Council",
+      "year": "2022"
+    },
+    {
+      "name": "Bar Association License No. 54192L",
+      "issuer": "Ordem dos Advogados",
+      "year": ""
+    },
+    {
+      "name": "Test of Legal English Skills (TOLES) - Advanced Level",
+      "issuer": "Global Legal English",
+      "year": ""
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

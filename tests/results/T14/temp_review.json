@@ -1,0 +1,340 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Commercial agreements drafting, reviewing, and negotiation",
+      "category": "Experience & Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Drafting and revising commercial agreements.",
+        "Contract Drafting",
+        "Negotiation & Mediation"
+      ],
+      "reasoning": "The candidate has direct professional experience in drafting and revising commercial agreements, alongside listed expertise in contract drafting and negotiation."
+    },
+    {
+      "requirement": "Corporate governance documentation management",
+      "category": "Experience & Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Corporate governance, including incorporations, board resolutions, and articles of association."
+      ],
+      "reasoning": "The CV explicitly demonstrates experience with corporate governance, specifically mentioning incorporations, board resolutions, and articles of association."
+    },
+    {
+      "requirement": "Legal due diligence audits",
+      "category": "Experience & Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of legal due diligence audits for M&A or corporate investment transactions in the candidate's CV."
+    },
+    {
+      "requirement": "Legal research",
+      "category": "Experience & Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Preparing court pleadings, alongside doctrinal and jurisprudential legal research.",
+        "Case Law Research"
+      ],
+      "reasoning": "The candidate demonstrates practical experience conducting doctrinal and jurisprudential legal research as well as case law research expertise."
+    },
+    {
+      "requirement": "Pre-litigation commercial dispute resolution",
+      "category": "Experience & Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Civil Litigation",
+        "Negotiation & Mediation"
+      ],
+      "reasoning": "The CV lists civil litigation and negotiation & mediation skills, but does not explicitly mention pre-litigation commercial dispute resolution or risk assessments."
+    },
+    {
+      "requirement": "Portuguese commercial law, Commercial Companies Code, and Civil Code knowledge",
+      "category": "Knowledge",
+      "status": "weak_evidence",
+      "evidence": [
+        "Commercial & Corporate Law"
+      ],
+      "reasoning": "The candidate lists commercial & corporate law expertise, but specific command of the Commercial Companies Code or Civil Code is not explicitly detailed."
+    },
+    {
+      "requirement": "Legal analytical reasoning and drafting precision",
+      "category": "Competencies",
+      "status": "weak_evidence",
+      "evidence": [
+        "Drafting and revising commercial agreements.",
+        "Preparing court pleadings"
+      ],
+      "reasoning": "Drafting and preparing pleadings imply drafting skills, but analytical reasoning and drafting precision are not explicitly articulated."
+    },
+    {
+      "requirement": "Portuguese written and verbal communication",
+      "category": "Languages",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Portuguese language proficiency is not explicitly stated in the CV, although inferred by context and location of practice."
+    },
+    {
+      "requirement": "English proficiency for drafting and negotiating",
+      "category": "Languages",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of English language skills or proficiency in the CV."
+    },
+    {
+      "requirement": "GDPR / RGPD",
+      "category": "Preferred / Nice to Have",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GDPR or data protection experience appears in the CV."
+    },
+    {
+      "requirement": "Commercial registry portals, Citius, and corporate database management",
+      "category": "Preferred / Nice to Have",
+      "status": "weak_evidence",
+      "evidence": [
+        "Legal Database Systems"
+      ],
+      "reasoning": "The CV lists general legal database systems experience, but does not mention commercial registry portals or Citius."
+    },
+    {
+      "requirement": "Financial statements and corporate accounting concepts understanding",
+      "category": "Preferred / Nice to Have",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of financial statements or corporate accounting understanding is present in the CV."
+    },
+    {
+      "requirement": "University degree in Law (Licenciatura em Direito)",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "LL.B. / Bachelor of Laws (2015-2019)"
+      ],
+      "reasoning": "The candidate holds a Bachelor of Laws (LL.B.), which satisfies the foundational law degree requirement."
+    },
+    {
+      "requirement": "Master's degree (Mestrado) in Corporate Law, Business Law, or Forensic Law",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)"
+      ],
+      "reasoning": "The candidate holds a Master's in Forensic Law and Arbitration from the University of Lisbon School of Law."
+    },
+    {
+      "requirement": "Full admission to the Bar Association (Inscrição definitiva na Ordem dos Advogados)",
+      "category": "Bar Admission",
+      "status": "satisfied",
+      "evidence": [
+        "Bar Association License No. 54192L",
+        "Junior Associate Lawyer"
+      ],
+      "reasoning": "The candidate holds a Bar Association License (No. 54192L) and works as a Junior Associate Lawyer."
+    },
+    {
+      "requirement": "High ethical standards, professional discretion, and dedication to client service excellence",
+      "category": "Professional Standards",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "These soft behavioral standards are not explicitly addressed or described in the CV."
+    },
+    {
+      "requirement": "International academic exposure",
+      "category": "Preferred / Nice to Have",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of international academic exposure such as Erasmus or LL.M. coursework abroad."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Dra. Beatriz Matos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No physical location or address is specified in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn URL is included in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No portfolio or GitHub URL is provided (not standard for legal profiles)."
+    },
+    {
+      "section": "Headline",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Junior Associate Lawyer | Bar Association License No. 54192L"
+      ],
+      "relevance": "High",
+      "reasoning": "A professional headline indicating title and license number is present."
+    },
+    {
+      "section": "Professional Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is included."
+    },
+    {
+      "section": "Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "Junior Associate Lawyer - Matos & Associados Law Firm (2021-Present)"
+      ],
+      "relevance": "High",
+      "reasoning": "Work experience section is present with company, role, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)",
+        "LL.B. / Bachelor of Laws (2015-2019)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education history is fully documented with degrees and institutions."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research"
+      ],
+      "relevance": "High",
+      "reasoning": "Core technical legal skills are listed under Expertise & Skills."
+    },
+    {
+      "section": "Skills",
+      "field": "Tools / Software",
+      "status": "present",
+      "evidence": [
+        "Legal Database Systems"
+      ],
+      "relevance": "Medium",
+      "reasoning": "General legal database systems tool category is mentioned."
+    },
+    {
+      "section": "Skills",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No specific methodologies section is included, though standard legal practice methods are implied."
+    },
+    {
+      "section": "Skills",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Negotiation & Mediation"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Negotiation and mediation skills are listed."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No languages section or explicit language proficiencies are listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No separate certifications or training section is present (Bar license is noted in header/other)."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No independent projects section is included."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR compliance or data consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Legal due diligence audits for M&A and corporate investment transactions",
+    "Portuguese written and verbal communication proficiency",
+    "Fluent professional and legal English proficiency",
+    "GDPR / RGPD practical experience or certification",
+    "Commercial registry portals and Citius familiarity",
+    "Financial statements and corporate accounting concepts understanding",
+    "International academic exposure"
+  ],
+  "weak_evidence": [
+    "Pre-litigation commercial dispute resolution (only generalized civil litigation and negotiation listed)",
+    "Specific command of the Commercial Companies Code and Civil Code (only generalized commercial and corporate law listed)",
+    "Legal analytical reasoning and drafting precision (implied through drafting tasks rather than explicitly demonstrated)",
+    "Commercial registry electronic portals and judicial platforms (only general legal database systems listed)"
+  ],
+  "strengths": [
+    "Admitted to the Bar with an active Bar Association License",
+    "Holds both a Bachelor of Laws (LL.B.) and a Master's in Forensic Law and Arbitration from the University of Lisbon School of Law",
+    "Demonstrated professional experience in drafting and revising commercial agreements and corporate governance documentation",
+    "Practical experience conducting doctrinal and jurisprudential legal research and preparing court pleadings"
+  ],
+  "weaknesses": [
+    "Critical contact information (email, phone number, location) is completely missing from the CV",
+    "Language proficiencies (Portuguese and English) are not explicitly stated",
+    "Lacks evidence of key job requirements such as M&A due diligence audits, GDPR knowledge, and financial statement understanding"
+  ],
+  "overall_assessment": "The candidate presents a solid foundational profile for a Junior Associate Lawyer, featuring a relevant LL.B. and Master's degree, active Bar admission, and hands-on experience in commercial agreement drafting and corporate governance at a law firm. However, significant gaps exist regarding explicit evidence for M&A due diligence, language proficiencies (Portuguese and English), and GDPR familiarity. Furthermore, critical contact details such as email and phone number are entirely absent from the CV.",
+  "reasoning": "The evaluation assessed the candidate's evidence against all explicit job requirements and evaluated CV completeness across standard dimensions. Strengths and weaknesses were derived strictly from the provided structured CV and job posting data without external assumptions or numeric scoring."
+}

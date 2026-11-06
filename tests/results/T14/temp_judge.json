@@ -1,0 +1,19 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 9,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless integration of candidate-provided contact details, certifications, and languages gathered through the interactive conversation.",
+    "Exceptional alignment with the target job description by surfacing relevant commercial and corporate law competencies.",
+    "Clear professional tone, strong action verbs, and clean information hierarchy."
+  ],
+  "issues": [
+    "Some job requirements (such as financial statement understanding) remain unfulfilled due to genuine gaps in the candidate's background."
+  ],
+  "recommendations": [
+    "Consider gaining basic financial and accounting certifications to further strengthen candidacy for corporate law roles involving M&A and financial statements."
+  ]
+}

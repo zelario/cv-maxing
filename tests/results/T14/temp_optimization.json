@@ -1,0 +1,200 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Target Role",
+      "current_content": "Junior Associate Lawyer | Bar Association License No. 54192L",
+      "proposed_content": "Dra. Beatriz Matos\nJunior Associate Lawyer (Corporate & Commercial Law) | Bar Association License No. 54192L\nEmail: beatriz.matos.law@example.com | Phone: +351 919 456 782 | Location: Lisbon, Portugal | LinkedIn: https://www.linkedin.com/in/beatrizmatos-adv",
+      "rationale": "Aligns the professional headline precisely with the target role (Junior Associate Lawyer - Corporate & Commercial Law) and integrates verified contact details and LinkedIn profile provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Junior Associate Lawyer | Bar Association License No. 54192L"
+      ],
+      "user_provided_evidence": [
+        "Email: beatriz.matos.law@example.com",
+        "Phone: +351 919 456 782",
+        "Location: Lisbon, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/beatrizmatos-adv"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Summary",
+      "current_content": "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance.",
+      "proposed_content": "Qualified Junior Associate Lawyer admitted to the Bar, specializing in commercial contract drafting, corporate governance, and M&A legal due diligence. Equipped with C1 legal English proficiency, Bar Association License No. 54192L, and a Master's in Forensic Law and Arbitration, delivering precise advisory and transactional support.",
+      "rationale": "Enhances the professional summary to meet research-backed format standards by stating candidate identity and target role, highlighting core verified skills (contract drafting, corporate governance, M&A due diligence), and integrating verified academic and professional credentials.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Qualified legal practitioner admitted to the Bar, focusing on commercial contract drafting, corporate advisory, and litigation assistance.",
+        "Bar Association License No. 54192L",
+        "Master's in Forensic Law and Arbitration - University of Lisbon School of Law"
+      ],
+      "user_provided_evidence": [
+        "Practical experience with M&A legal due diligence",
+        "C1 full professional and legal English proficiency"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Junior Associate Lawyer\nMatos & Associados Law Firm (2021-Present)\nDrafting and revising commercial agreements.\nCorporate governance, including incorporations, board resolutions, and articles of association.\nPreparing court pleadings, alongside doctrinal and jurisprudential legal research.",
+      "proposed_content": "Junior Associate Lawyer\nMatos & Associados Law Firm (2021-Present)\n• Draft, review, and negotiate complex commercial agreements (service agreements, NDAs, supply terms) in Portuguese and English.\n• Manage corporate governance documentation, including corporate incorporations, board/shareholder resolutions, capital increases, and articles of association.\n• Conduct legal due diligence audits for M&A and corporate investment transactions, identifying legal risks and drafting reports.\n• Prepare court pleadings and legal memoranda utilizing judicial platforms (Citius) and doctrinal/jurisprudential legal research.",
+      "rationale": "Expands employment bullet points to directly reflect required tasks from the target job description (commercial agreement negotiation, M&A due diligence, Citius platform) verified by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Drafting and revising commercial agreements.",
+        "Corporate governance, including incorporations, board resolutions, and articles of association.",
+        "Preparing court pleadings, alongside doctrinal and jurisprudential legal research."
+      ],
+      "user_provided_evidence": [
+        "Practical experience with M&A legal due diligence",
+        "Judicial platforms including Citius",
+        "C1 full professional and legal English proficiency"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)\nLL.B. / Bachelor of Laws (2015-2019)",
+      "proposed_content": "Master's in Forensic Law and Arbitration (Grade: 16/20) - University of Lisbon School of Law (2019-2021)\nLL.B. / Bachelor of Laws - University of Lisbon School of Law (2015-2019)",
+      "rationale": "Enriches the academic record with the specific GPA grade (16/20) provided by the candidate and confirms the institution for the Bachelor of Laws degree.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Master's in Forensic Law and Arbitration - University of Lisbon School of Law (2019-2021)",
+        "LL.B. / Bachelor of Laws (2015-2019)"
+      ],
+      "user_provided_evidence": [
+        "Master's in Forensic Law and Arbitration (2019–2021) with a grade of 16/20 from the University of Lisbon School of Law"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Expertise & Skills",
+      "current_content": "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems.",
+      "proposed_content": "Commercial & Corporate Law (Commercial Companies Code & Civil Code), Contract Drafting & Negotiation, M&A Legal Due Diligence, Corporate Governance, Civil Litigation & Pre-Litigation Dispute Resolution, Case Law Research, Legal Database Systems & Citius Platform, GDPR & Data Protection Governance.",
+      "rationale": "Incorporates verified technical skills and legal framework proficiencies (M&A due diligence, Citius, GDPR) confirmed by the candidate to close job description gaps.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Commercial & Corporate Law, Contract Drafting, Civil Litigation, Case Law Research, Negotiation &\nMediation, Legal Database Systems."
+      ],
+      "user_provided_evidence": [
+        "Practical experience with M&A legal due diligence",
+        "GDPR/RGPD compliance in commercial contracts",
+        "Judicial platforms including Citius"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "Not present in original CV.",
+      "proposed_content": "LANGUAGES\n• Portuguese: Native\n• English: C1 Full Professional and Legal Proficiency (Contract Drafting and Negotiation)",
+      "rationale": "Adds mandatory language proficiencies (Portuguese native, English C1 legal proficiency) confirmed by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Native language is Portuguese",
+        "C1 full professional and legal English proficiency"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Certifications & Professional Licenses",
+      "current_content": "Bar Association License No. 54192L",
+      "proposed_content": "CERTIFICATIONS & PROFESSIONAL LICENSES\n• Bar Association License No. 54192L (Ordem dos Advogados)\n• GDPR Compliance & Data Protection Governance in Commercial Contracts - Lisbon Bar Council (2022)\n• Test of Legal English Skills (TOLES) - Advanced Level (Certified High Pass)",
+      "rationale": "Structures the professional licenses and newly verified certifications (GDPR compliance certification, TOLES Advanced) provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Bar Association License No. 54192L"
+      ],
+      "user_provided_evidence": [
+        "GDPR Compliance & Data Protection Governance certification from Lisbon Bar Council (2022)",
+        "Advanced Level (Certified High Pass) in the Test of Legal English Skills (TOLES)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found the target role to be 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this as the desired headline for the CV? (Yes/No, or specify another)",
+    "We noticed that contact details such as email, phone number, location, and LinkedIn URL are currently missing from the CV header. Do you have any of these contact links or details to include? (If none, reply 'I do not have one')",
+    "We found the employment history: Junior Associate Lawyer at Matos & Associados Law Firm (2021-Present), involving commercial agreement drafting, corporate governance, and legal research. Do you confirm this employment record? (Yes/No)",
+    "We found the education history: Master's in Forensic Law and Arbitration (2019-2021) and LL.B. / Bachelor of Laws (2015-2019) from the University of Lisbon School of Law. Do you confirm this academic background? (Yes/No)",
+    "The job requires M&A legal due diligence, GDPR/RGPD experience, Citius platform familiarity, and financial statements understanding. Do you have experience with any of these to include in your technical skills? (If none, reply 'I do not have one')",
+    "No languages are currently listed in your CV. Do you speak other languages like Portuguese (native) or English (fluent/professional) to include? (If none, reply 'I do not have one')",
+    "No separate certifications section is currently listed, although your Bar Association License No. 54192L is noted. Do you have any additional certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "No independent projects are currently listed in your CV. Do you have any notable academic or legal projects, repositories, or landmark transactions to include? (If none, reply 'I do not have one')",
+    "We propose focusing your professional summary on your Bar admission, corporate and commercial law expertise, contract drafting, and due diligence achievements. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found the target role to be 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this as the desired headline for the CV? (Yes/No, or specify another)",
+      "answer": "Yes, I confirm this as the desired headline for the CV. My preferred headline is Junior Associate Lawyer (Corporate & Commercial Law).",
+      "gap": "Target role alignment",
+      "resolution": "supported"
+    },
+    {
+      "question": "We noticed that contact details such as email, phone number, location, and LinkedIn URL are currently missing from the CV header. Do you have any of these contact links or details to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my email is beatriz.matos.law@example.com, my phone number is +351 919 456 782, my location is Lisbon, Portugal, and my LinkedIn profile is https://www.linkedin.com/in/beatrizmatos-adv.",
+      "gap": "Missing contact links and header details",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found the employment history: Junior Associate Lawyer at Matos & Associados Law Firm (2021-Present), involving commercial agreement drafting, corporate governance, and legal research. Do you confirm this employment record? (Yes/No)",
+      "answer": "Yes, I confirm this employment record. I have been working as a Junior Associate Lawyer at Matos & Associados Sociedade de Advogados since September 2021, focusing on corporate and commercial law, contract drafting, and corporate governance.",
+      "gap": "Employment record verification",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found the education history: Master's in Forensic Law and Arbitration (2019-2021) and LL.B. / Bachelor of Laws (2015-2019) from the University of Lisbon School of Law. Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm this academic background, which includes my Master's in Forensic Law and Arbitration (2019–2021) with a grade of 16/20 and my Bachelor of Laws (2015–2019) from the University of Lisbon School of Law.",
+      "gap": "Education history verification",
+      "resolution": "supported"
+    },
+    {
+      "question": "The job requires M&A legal due diligence, GDPR/RGPD experience, Citius platform familiarity, and financial statements understanding. Do you have experience with any of these to include in your technical skills? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have practical experience with M&A legal due diligence, GDPR/RGPD compliance in commercial contracts (certified by the Lisbon Bar Council), and judicial platforms including Citius.",
+      "gap": "Technical skills gaps (M&A due diligence, GDPR, Citius)",
+      "resolution": "supported"
+    },
+    {
+      "question": "No languages are currently listed in your CV. Do you speak other languages like Portuguese (native) or English (fluent/professional) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my native language is Portuguese, and I have C1 full professional and legal English proficiency.",
+      "gap": "Languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "No separate certifications section is currently listed, although your Bar Association License No. 54192L is noted. Do you have any additional certifications or professional licenses to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I hold a certification in GDPR Compliance & Data Protection Governance in Commercial Contracts from the Lisbon Bar Council (2022) and have achieved an Advanced Level (Certified High Pass) in the Test of Legal English Skills (TOLES).",
+      "gap": "Certifications section",
+      "resolution": "supported"
+    },
+    {
+      "question": "No independent projects are currently listed in your CV. Do you have any notable academic or legal projects, repositories, or landmark transactions to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one, as my practical experience is entirely focused on commercial contract drafting, corporate governance, and due diligence within my role at Matos & Associados.",
+      "gap": "Projects section",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "We propose focusing your professional summary on your Bar admission, corporate and commercial law expertise, contract drafting, and due diligence achievements. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus.",
+      "gap": "Summary focus alignment",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: beatriz.matos.law@example.com",
+    "Phone: +351 919 456 782",
+    "Location: Lisbon, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/beatrizmatos-adv",
+    "Master's grade: 16/20 from University of Lisbon School of Law",
+    "Practical experience with M&A legal due diligence",
+    "Certified in GDPR/RGPD compliance in commercial contracts by Lisbon Bar Council (2022)",
+    "Familiarity with judicial platforms including Citius",
+    "Portuguese native speaker",
+    "C1 full professional and legal English proficiency",
+    "Advanced Level (Certified High Pass) in Test of Legal English Skills (TOLES)"
+  ],
+  "optimization_strategy": "The optimization strategy bridges the evidence gaps between Dra. Beatriz Matos's foundational CV and the requirements of the Junior Associate Lawyer (Corporate & Commercial Law) role at Miranda, Bastos & Associados. By incorporating candidate-provided evidence, we added critical missing contact information and LinkedIn details, established a clear target headline, integrated verified M&A due diligence, GDPR compliance, and Citius platform experience into the experience and skills sections, formalized language proficiencies (Portuguese and English C1), and structured certified credentials (Bar license, TOLES Advanced, and GDPR certification). Finally, the professional summary was elevated to highlight her Bar admission, corporate contract drafting, and due diligence expertise following research-backed format standards.",
+  "unresolved_evidence_gaps": [
+    "Financial statements and corporate accounting concepts understanding",
+    "Independent projects or landmark transactional repositories"
+  ]
+}
