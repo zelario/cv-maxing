@@ -1,0 +1,136 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Dr. Gonçalo Ferreira\nMedical Doctor | General Practitioner\nMedical Association License No. 68421",
+      "proposed_content": "Dr. Gonçalo Ferreira\nData Scientist Intern | Medical Doctor\nEmail: goncalo.ferreira.md@example.com | Phone: +351 917 890 123 | Location: Porto / Coimbra, Portugal\nLinkedIn: https://www.linkedin.com/in/dr-goncalo-ferreira\nMedical Association License No. 68421",
+      "rationale": "Add confirmed contact details, professional location, and updated target headline as requested by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "goncalo.ferreira.md@example.com",
+        "+351 917 890 123",
+        "Porto / Coimbra, Portugal",
+        "https://www.linkedin.com/in/dr-goncalo-ferreira"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Profile",
+      "current_content": "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations.",
+      "proposed_content": "Medical Doctor with completed general internship at São João University Hospital and active medical license, transitioning toward analytical and data-driven problem-solving roles; brings verified expertise in clinical patient assessment, high-pressure triage, and multidisciplinary communication.",
+      "rationale": "Propose an impactful 3-line professional summary adhering to research format: candidate identity and target transition; 2-3 verified core skills; and concrete verified achievement.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations.",
+        "General Practice Medical Resident, São João University Hospital (2023-2024)"
+      ],
+      "user_provided_evidence": [],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Portuguese (Native), English (C1 Advanced)",
+      "rationale": "Add candidate's spoken languages provided during the interactive session.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native), English (C1 Advanced)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Certifications",
+      "current_content": "Basic Life Support (BLS) listed under competencies",
+      "proposed_content": "Advanced Life Support (ALS / SAV) Certification (ERC certified, valid to 2026), Basic Life Support (BLS), Medical Association License No. 68421",
+      "rationale": "Add the candidate's Advanced Life Support certification and consolidate professional credentials.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Advanced Life Support (ALS / SAV) Certification (ERC certified, valid to 2026)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found the target role to be 'Medical Doctor | General Practitioner' in your CV, whereas the target job is 'Data Scientist Intern'. Do you want to confirm your target job title headline as 'Data Scientist Intern' or keep it as 'Medical Doctor | General Practitioner'? (Yes/No, or specify another)",
+    "Your CV currently lacks an email address, phone number, and location. Do you have any contact links or details (email, phone, location, LinkedIn URL, GitHub URL) to include? (If none, reply 'I do not have one')",
+    "We found your work experience as a General Practice Medical Resident at São João University Hospital (2023-2024), involving clinical rotations, primary triage, and basic emergency intervention. Do you confirm this employment history? (Yes/No)",
+    "We found your education as an Integrated Master's in Medicine at the Faculty of Medicine, University of Porto (2016-2022). Do you confirm this academic background? (Yes/No)",
+    "The job requires Python, SQL, statistics, probability, quantitative analysis, pandas, NumPy, scikit-learn, and machine learning fundamentals. Do you have experience with any of these technologies or quantitative skills to add? (If none, reply 'I do not have one')",
+    "Your CV currently does not list any spoken or written languages. Do you have any languages to include? (If none, reply 'I do not have one')",
+    "Your CV currently does not list separate certifications or licenses, other than Medical Association License No. 68421 and Basic Life Support (BLS) under competencies. Do you have any additional certifications or licenses to include? (If none, reply 'I do not have one')",
+    "Your CV currently does not have a standalone projects section. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "We propose highlighting your core clinical competencies, problem-solving under pressure, structured triage, and doctor-patient communication in the summary. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found the target role to be 'Medical Doctor | General Practitioner' in your CV, whereas the target job is 'Data Scientist Intern'. Do you want to confirm your target job title headline as 'Data Scientist Intern' or keep it as 'Medical Doctor | General Practitioner'? (Yes/No, or specify another)",
+      "answer": "Yes, please update my target job title headline to \"Data Scientist Intern\".",
+      "gap": "Target role alignment",
+      "resolution": "supported"
+    },
+    {
+      "question": "Your CV currently lacks an email address, phone number, and location. Do you have any contact links or details (email, phone, location, LinkedIn URL, GitHub URL) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, you can include my email (goncalo.ferreira.md@example.com), phone number (+351 917 890 123), location (Porto / Coimbra, Portugal), and LinkedIn profile (https://www.linkedin.com/in/dr-goncalo-ferreira). I do not have a GitHub URL.",
+      "gap": "Missing contact information and links",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your work experience as a General Practice Medical Resident at São João University Hospital (2023-2024), involving clinical rotations, primary triage, and basic emergency intervention. Do you confirm this employment history? (Yes/No)",
+      "answer": "Yes, I confirm my employment history as a General Practice Medical Resident at São João University Hospital from January 2023 to February 2024.",
+      "gap": "Employment history confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your education as an Integrated Master's in Medicine at the Faculty of Medicine, University of Porto (2016-2022). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm my academic background is an Integrated Master's in Medicine at the Faculty of Medicine, University of Porto (2016–2022).",
+      "gap": "Education background confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "The job requires Python, SQL, statistics, probability, quantitative analysis, pandas, NumPy, scikit-learn, and machine learning fundamentals. Do you have experience with any of these technologies or quantitative skills to add? (If none, reply 'I do not have one')",
+      "answer": "I do not have experience with Python, SQL, pandas, NumPy, scikit-learn, machine learning, or software programming, as my background is entirely in medicine and clinical practice.",
+      "gap": "Technical skills gaps (Python, SQL, machine learning, data science tools)",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "Your CV currently does not list any spoken or written languages. Do you have any languages to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I am a native speaker of Portuguese and have C1 Advanced proficiency in English for medical and clinical contexts.",
+      "gap": "Missing languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "Your CV currently does not list separate certifications or licenses, other than Medical Association License No. 68421 and Basic Life Support (BLS) under competencies. Do you have any additional certifications or licenses to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have an Advanced Life Support (ALS / SAV) certification (ERC certified, valid to 2026) in addition to my Basic Life Support (BLS / SBV) certification and my active professional license (Ordem dos Médicos nº 68421).",
+      "gap": "Missing certifications section",
+      "resolution": "supported"
+    },
+    {
+      "question": "Your CV currently does not have a standalone projects section. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Missing projects/repositories",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "We propose highlighting your core clinical competencies, problem-solving under pressure, structured triage, and doctor-patient communication in the summary. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus on clinical competencies, problem-solving, structured triage, and communication.",
+      "gap": "Summary focus confirmation",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "goncalo.ferreira.md@example.com",
+    "+351 917 890 123",
+    "Porto / Coimbra, Portugal",
+    "https://www.linkedin.com/in/dr-goncalo-ferreira",
+    "Portuguese (Native), English (C1 Advanced)",
+    "Advanced Life Support (ALS / SAV) Certification (ERC certified, valid to 2026)"
+  ],
+  "optimization_strategy": "The optimization strategy bridges the candidate's medical profile with the target Data Scientist Intern role by incorporating all verified contact details, professional links, language proficiencies, and advanced certifications while maintaining strict evidence-grounding. Since the candidate confirmed an absolute lack of programming (Python, SQL), machine learning, and quantitative data science tooling, the optimization emphasizes transferable cognitive and professional strengths such as structured problem-solving, triage under pressure, analytical patient assessment, and multidisciplinary communication.",
+  "unresolved_evidence_gaps": [
+    "Candidate lacks core technical data science requirements including Python, SQL, pandas, NumPy, scikit-learn, machine learning fundamentals, A/B testing, and quantitative data analysis experience.",
+    "Candidate lacks a standalone projects or data repository portfolio."
+  ]
+}

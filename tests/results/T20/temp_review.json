@@ -1,0 +1,297 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Statistics, probability, and quantitative analysis",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV contains no mention of statistics, probability, or quantitative analysis."
+    },
+    {
+      "requirement": "Python",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Python is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "SQL",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "SQL is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "pandas, NumPy, scikit-learn, or similar tools",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No data analysis or machine learning libraries or tools are mentioned in the CV."
+    },
+    {
+      "requirement": "Machine learning fundamentals and model evaluation",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of machine learning or model evaluation in the CV."
+    },
+    {
+      "requirement": "Bachelor's or Master's degree in Computer Science, Data Science, Mathematics, Statistics, Engineering, or a related quantitative field",
+      "category": "Education Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Integrated Master's in Medicine, Faculty of Medicine, University of Porto (2016-2022)"
+      ],
+      "reasoning": "The candidate holds an Integrated Master's in Medicine, which satisfies the Master's degree requirement, though it is in a medical field rather than a core quantitative/technical field specified."
+    },
+    {
+      "requirement": "Ability to investigate ambiguous problems and break them down into structured analytical tasks",
+      "category": "Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Primary triage and basic emergency intervention."
+      ],
+      "reasoning": "Emergency triage involves assessing and categorizing urgent situations, which demonstrates problem-solving in high-pressure environments, but lacks direct evidence of structured analytical task breakdown for data science."
+    },
+    {
+      "requirement": "Strong analytical and problem-solving skills",
+      "category": "Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Clinical Patient Assessment",
+        "Primary triage and basic emergency intervention."
+      ],
+      "reasoning": "Clinical assessment and triage require problem-solving, but there is no evidence of data-related analytical skills."
+    },
+    {
+      "requirement": "Good communication skills and ability to work effectively in a team",
+      "category": "Other Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Doctor-Patient Communication"
+      ],
+      "reasoning": "Communication skills are explicitly demonstrated through doctor-patient communication and collaborative clinical rotations."
+    },
+    {
+      "requirement": "Comfortable working in a fast-paced, international environment",
+      "category": "Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Adult Emergency Care",
+        "São João University Hospital"
+      ],
+      "reasoning": "Emergency care implies a fast-paced environment, but there is no evidence of working in an international setting."
+    },
+    {
+      "requirement": "Experimentation, A/B testing, or causal inference",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of experimentation, A/B testing, or causal inference."
+    },
+    {
+      "requirement": "Large datasets or data pipelines",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience working with large datasets or data pipelines."
+    },
+    {
+      "requirement": "Data visualisation tools or frameworks",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of data visualization tools or frameworks."
+    },
+    {
+      "requirement": "Cloud platforms or distributed data technologies",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience with cloud platforms or distributed data technologies."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Dr. Gonçalo Ferreira"
+      ],
+      "relevance": "Essential for candidate identification.",
+      "reasoning": "The candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter contact.",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct communication.",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Relevant for hybrid or on-site role matching.",
+      "reasoning": "No location or address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Medical Doctor | General Practitioner"
+      ],
+      "relevance": "Quickly communicates professional identity.",
+      "reasoning": "A clear headline is present below the name."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides professional online profile reference.",
+      "reasoning": "No LinkedIn URL is included."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for technical roles to showcase projects.",
+      "reasoning": "No GitHub or portfolio URL is included."
+    },
+    {
+      "section": "Professional Profile",
+      "field": "Summary",
+      "status": "present",
+      "evidence": [
+        "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations."
+      ],
+      "relevance": "Provides a high-level overview of background and experience.",
+      "reasoning": "A professional profile section is present and describes the candidate's background."
+    },
+    {
+      "section": "Clinical Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "General Practice Medical Resident, São João University Hospital (2023-2024)"
+      ],
+      "relevance": "Demonstrates work history and practical application of skills.",
+      "reasoning": "Detailed clinical experience including roles, institutions, dates, and responsibilities is provided."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Integrated Master's in Medicine, Faculty of Medicine, University of Porto (2016-2022)"
+      ],
+      "relevance": "Validates academic qualifications.",
+      "reasoning": "Education history is clearly stated with degree, institution, and dates."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic Health Records, Doctor-Patient Communication."
+      ],
+      "relevance": "Highlights specific functional abilities.",
+      "reasoning": "A dedicated competencies section lists clinical skills."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Tools / Software",
+      "status": "present",
+      "evidence": [
+        "Electronic Health Records"
+      ],
+      "relevance": "Shows familiarity with specific software used in the domain.",
+      "reasoning": "Electronic Health Records are listed under competencies."
+    },
+    {
+      "section": "Header / Experience",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates workflow and process understanding.",
+      "reasoning": "No specific methodologies are explicitly highlighted."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Doctor-Patient Communication"
+      ],
+      "relevance": "Important for cross-functional collaboration and stakeholder engagement.",
+      "reasoning": "Communication skills are explicitly listed."
+    },
+    {
+      "section": "CV",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for international environments.",
+      "reasoning": "No spoken or written languages are listed."
+    },
+    {
+      "section": "CV",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Validates additional credentials.",
+      "reasoning": "No separate certifications section exists (though BLS is listed under competencies)."
+    },
+    {
+      "section": "CV",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Shows practical application beyond regular duties.",
+      "reasoning": "No standalone projects section is included."
+    },
+    {
+      "section": "CV",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for compliance in certain jurisdictions.",
+      "reasoning": "No GDPR consent statement is included in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "No experience or proficiency in Python, SQL, or data analysis libraries (pandas, NumPy, scikit-learn).",
+    "No background in statistics, probability, quantitative analysis, or machine learning fundamentals.",
+    "No contact information (email, phone number, location) provided in the CV."
+  ],
+  "weak_evidence": [
+    "Problem-solving and analytical skills are evidenced only through clinical triage and patient assessment rather than data-driven tasks.",
+    "Fast-paced environment experience is tied to emergency medical care rather than a corporate or international technology setting."
+  ],
+  "strengths": [
+    "Clear, well-structured layout outlining education, clinical experience, and core competencies.",
+    "Demonstrated strong communication and interpersonal skills through doctor-patient interactions.",
+    "Holds a recognized Master's level degree (Integrated Master's in Medicine)."
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location).",
+    "Total misalignment between candidate's medical background/skills and the technical data science requirements of the role.",
+    "Lack of programming, database, and machine learning tool evidence."
+  ],
+  "overall_assessment": "The candidate is a medical doctor with a background in general practice and clinical rotations. The job posting is for a Data Scientist Intern position requiring technical skills in Python, SQL, statistics, machine learning, and quantitative analysis. The candidate's profile lacks all core technical requirements for the data science role, and vital contact information is missing from the CV.",
+  "reasoning": "Evaluation against the job posting reveals no overlap in technical competencies (Python, SQL, machine learning, statistics) or preferred skills. While the candidate meets the general degree level requirement by holding an Integrated Master's, the field of study (Medicine) is outside the quantitative disciplines requested. Additionally, multiple standard CV completeness elements such as email, phone, and location are missing."
+}

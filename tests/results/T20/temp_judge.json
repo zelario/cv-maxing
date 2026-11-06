@@ -1,0 +1,22 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 9,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless adherence to user-provided evidence with zero hallucinations.",
+    "Successfully integrated all newly provided contact details, languages, and certifications.",
+    "Clean, professional information hierarchy and executive tone.",
+    "Honest representation of the candidate's background without fabricating technical data science skills that the candidate explicitly stated they do not possess."
+  ],
+  "issues": [
+    "Severe domain mismatch between the candidate's medical background and the technical requirements of the Data Scientist Intern role (Python, SQL, machine learning).",
+    "Setting the target headline to 'Data Scientist Intern' creates a misaligned professional persona given that all listed competencies and experience are entirely clinical."
+  ],
+  "recommendations": [
+    "Reconsider applying for roles that match the candidate's actual background, such as medical advisory, healthcare informatics, or clinical research positions, rather than technical data science.",
+    "If pursuing technical roles, the candidate must acquire formal training and project experience in Python, SQL, and machine learning."
+  ]
+}
