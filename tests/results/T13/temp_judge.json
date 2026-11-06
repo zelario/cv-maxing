@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless adherence to candidate-provided facts and user answers, with zero hallucinations.",
+    "Excellent professional styling, formatting, and clear information hierarchy in the generated CV.",
+    "Successfully incorporated contact information, languages, and specific nursing certifications directly verified by the candidate."
+  ],
+  "issues": [
+    "Fundamental domain mismatch between the candidate (Registered General Care Nurse) and the target job requirement (General Practice Physician).",
+    "The CV correctly refrains from fabricating physician qualifications, leading to a low job alignment score relative to the physician role."
+  ],
+  "recommendations": [
+    "Apply to nursing positions or healthcare roles matching a B.Sc. in Nursing rather than general physician roles.",
+    "Ensure future job targeting aligns more closely with the candidate's actual professional licensure (Ordem dos Enfermeiros)."
+  ]
+}

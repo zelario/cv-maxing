@@ -1,0 +1,153 @@
+{
+  "job_title": "General Practice Physician (Primary Care)",
+  "company": {
+    "name": "SaúdeViva Healthcare Network",
+    "location": "Coimbra / On-site",
+    "website": ""
+  },
+  "location": "Coimbra / On-site",
+  "employment_type": "",
+  "seniority": "",
+  "description": "General Practice Physician (Primary Care) at SaúdeViva Healthcare Network, Coimbra / On-site. Providing comprehensive primary medical care, conducting patient examinations, diagnosing and managing acute and chronic conditions, performing clinical triage, and collaborating within a multidisciplinary clinical team.",
+  "skills": [
+    {
+      "name": "Sound clinical acumen, diagnostic reasoning, and strict adherence to evidence-based medical guidelines",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Sound clinical acumen, diagnostic reasoning, and strict adherence to evidence-based medical guidelines."
+    },
+    {
+      "name": "Exceptional interpersonal and communication skills, demonstrating empathy, active listening, and patient-centered care",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Exceptional interpersonal and communication skills, demonstrating empathy, active listening, and patient-centered care."
+    },
+    {
+      "name": "Ability to work effectively within an interdisciplinary medical environment",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Ability to work effectively within an interdisciplinary medical environment."
+    },
+    {
+      "name": "Fluency in Portuguese with professional working proficiency in English",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Fluency in Portuguese with professional working proficiency in English."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Prior clinical rotation or residency experience in hospital emergency departments or primary healthcare centers (Centros de Saúde).",
+      "years": "",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Prior clinical rotation or residency experience in hospital emergency departments or primary healthcare centers (*Centros de Saúde*)."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Integrated Master's Degree",
+      "degree": "Mestrado Integrado or equivalent university degree",
+      "field": "Medicine",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Integrated Master's Degree (Mestrado Integrado) or equivalent university degree in **Medicine**."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Conduct outpatient medical consultations, thorough medical history taking (anamnesis), and detailed physical examinations for adult and pediatric patients.",
+      "source_section": "What You'll Do",
+      "source_text": "Conduct outpatient medical consultations, thorough medical history taking (anamnesis), and detailed physical examinations for adult and pediatric patients."
+    },
+    {
+      "description": "Diagnose acute clinical presentations, formulate evidence-based treatment plans, and prescribe appropriate pharmacological therapy.",
+      "source_section": "What You'll Do",
+      "source_text": "Diagnose acute clinical presentations, formulate evidence-based treatment plans, and prescribe appropriate pharmacological therapy."
+    },
+    {
+      "description": "Order, interpret, and evaluate complementary diagnostic tests (laboratory analyses, electrocardiograms, imaging studies).",
+      "source_section": "What You'll Do",
+      "source_text": "Order, interpret, and evaluate complementary diagnostic tests (laboratory analyses, electrocardiograms, imaging studies)."
+    },
+    {
+      "description": "Provide proactive preventive healthcare, routine checkups, immunization guidance, and lifestyle counseling.",
+      "source_section": "What You'll Do",
+      "source_text": "Provide proactive preventive healthcare, routine checkups, immunization guidance, and lifestyle counseling."
+    },
+    {
+      "description": "Manage and monitor adult patients with chronic medical conditions (e.g., hypertension, diabetes mellitus, dyslipidemia).",
+      "source_section": "What You'll Do",
+      "source_text": "Manage and monitor adult patients with chronic medical conditions (e.g., hypertension, diabetes mellitus, dyslipidemia)."
+    },
+    {
+      "description": "Perform clinical triage and early stabilization for urgent medical presentations before emergency referral if required.",
+      "source_section": "What You'll Do",
+      "source_text": "Perform clinical triage and early stabilization for urgent medical presentations before emergency referral if required."
+    },
+    {
+      "description": "Maintain complete, accurate, and confidential electronic health records (EHR) in compliance with clinical protocols and patient privacy standards.",
+      "source_section": "What You'll Do",
+      "source_text": "Maintain complete, accurate, and confidential electronic health records (EHR) in compliance with clinical protocols and patient privacy standards."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "General Practice Physician",
+      "source_section": "About the Role",
+      "source_text": "General Practice Physician (Médico de Clínica Geral / Medicina Geral e Familiar)"
+    },
+    {
+      "keyword": "Primary Care",
+      "source_section": "About the Role",
+      "source_text": "primary medical care"
+    },
+    {
+      "keyword": "SaúdeViva",
+      "source_section": "About SaúdeViva Healthcare Network",
+      "source_text": "SaúdeViva is a leading Portuguese private healthcare network"
+    },
+    {
+      "keyword": "Coimbra",
+      "source_section": "About the Role",
+      "source_text": "Coimbra Medical Center"
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Licensure / Registration",
+      "description": "Active medical registration and valid license with the Medical Association (Cédula Profissional da Ordem dos Médicos) with general practice autonomy (autonomia profissional / internato geral concluído).",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Active medical registration and valid license with the Medical Association (Cédula Profissional da Ordem dos Médicos) with general practice autonomy (*autonomia profissional / internato geral concluído*)."
+    },
+    {
+      "type": "Certification",
+      "description": "Valid, up-to-date certification in Basic Life Support (BLS / SBV).",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Valid, up-to-date certification in **Basic Life Support (BLS / SBV)**."
+    },
+    {
+      "type": "Certification",
+      "description": "Current certification in Advanced Life Support (ALS / SAV).",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Current certification in **Advanced Life Support (ALS / SAV)**."
+    },
+    {
+      "type": "Software Familiarity",
+      "description": "Familiarity with clinical record software systems commonly used in Portugal (e.g., SClínico, SAM, or private clinical EHRs).",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with clinical record software systems commonly used in Portugal (e.g., SClínico, SAM, or private clinical EHRs)."
+    },
+    {
+      "type": "Continuing Education / Research",
+      "description": "Participation in clinical research, medical conferences, or accredited continuing medical education (CME).",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Participation in clinical research, medical conferences, or accredited continuing medical education (CME)."
+    }
+  ]
+}

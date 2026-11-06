@@ -1,0 +1,92 @@
+{
+  "contact": {
+    "name": "Inês Martins",
+    "headline": "Registered General Care Nurse",
+    "specialisation": "Nursing Council License No. 94312",
+    "phone": "+351 928 345 671",
+    "email": "ines.martins.nurse@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/inesmartins-enf",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Dedicated Registered General Care Nurse with 3 years of hospital ward experience in post-operative surgical and internal medicine care at CHUC University Hospital. Proficient in surgical patient care, medication administration, and multidisciplinary teamwork, with active Ordem dos Enfermeiros registration (No. 94312).",
+  "experience": [
+    {
+      "title": "General Care Staff Nurse",
+      "dates": "2021-Present",
+      "company": "CHUC University Hospital",
+      "location": "Coimbra, Portugal",
+      "bullets": [
+        "Direct patient care in surgical ward.",
+        "Medication preparation and administration (IV/IM/Oral).",
+        "Wound dressing and wound care management.",
+        "Vital signs monitoring and patient admission/discharge records."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Nursing (Licenciatura em Enfermagem)",
+      "dates": "2017-2021",
+      "institution": "Coimbra Nursing School (ESEnfC)",
+      "location": "Coimbra, Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Clinical Competencies",
+      "skills": [
+        "Surgical Patient Care",
+        "Medication Administration (IV/IM/Oral)",
+        "Wound Care Management",
+        "Catheterization",
+        "Infection Prevention & Control",
+        "Basic Life Support (BLS/SBV)",
+        "Patient Triage & Documentation",
+        "Multidisciplinary Teamwork"
+      ]
+    },
+    {
+      "category_name": "Tools & Technologies",
+      "skills": [
+        "SClínico Clinical Software"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "B2 Upper-Intermediate",
+      "details": "Professional Working Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Ordem dos Enfermeiros Registration (License No. 94312)",
+      "issuer": "Ordem dos Enfermeiros",
+      "year": "2021"
+    },
+    {
+      "name": "Basic Life Support (BLS / SBV) Certification",
+      "issuer": "",
+      "year": ""
+    },
+    {
+      "name": "Continuing Education Course in Complex Wound and Pressure Ulcer Management",
+      "issuer": "",
+      "year": ""
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

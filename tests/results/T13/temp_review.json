@@ -1,0 +1,234 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Integrated Master's Degree (Mestrado Integrado) or equivalent university degree in Medicine.",
+      "category": "education",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate holds a B.Sc. in Nursing from Coimbra Nursing School, not an Integrated Master's Degree in Medicine."
+    },
+    {
+      "requirement": "Active medical registration and valid license with the Medical Association (Cédula Profissional da Ordem dos Médicos) with general practice autonomy.",
+      "category": "licensure",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate holds a Nursing Council License (No. 94312), not an Ordem dos Médicos medical license."
+    },
+    {
+      "requirement": "Sound clinical acumen, diagnostic reasoning, and strict adherence to evidence-based medical guidelines.",
+      "category": "skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Direct patient care in surgical ward.",
+        "Medication preparation and administration (IV/IM/Oral)."
+      ],
+      "reasoning": "The candidate demonstrates clinical nursing competencies and medication administration, but lacks medical diagnostic reasoning and independent physician clinical acumen."
+    },
+    {
+      "requirement": "Exceptional interpersonal and communication skills, demonstrating empathy, active listening, and patient-centered care.",
+      "category": "skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Direct patient care in surgical ward."
+      ],
+      "reasoning": "Direct patient care implies interaction, but there is no explicit demonstration or mention of exceptional interpersonal communication, empathy, or active listening."
+    },
+    {
+      "requirement": "Ability to work effectively within an interdisciplinary medical environment.",
+      "category": "skills",
+      "status": "satisfied",
+      "evidence": [
+        "Multidisciplinary Teamwork"
+      ],
+      "reasoning": "Multidisciplinary Teamwork is explicitly listed as a core competency."
+    },
+    {
+      "requirement": "Fluency in Portuguese with professional working proficiency in English.",
+      "category": "language",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention language proficiencies in either Portuguese or English."
+    },
+    {
+      "requirement": "Valid, up-to-date certification in Basic Life Support (BLS / SBV).",
+      "category": "certification",
+      "status": "satisfied",
+      "evidence": [
+        "Basic Life Support"
+      ],
+      "reasoning": "Basic Life Support is listed under core competencies."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Contact Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Inês Martins"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No telephone number is provided in the CV."
+    },
+    {
+      "section": "Contact Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No physical location or address is listed in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Registered General Care Nurse | Nursing Council License No. 94312"
+      ],
+      "relevance": "Medium",
+      "reasoning": "A professional title and license number are included in the header."
+    },
+    {
+      "section": "Contact Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No LinkedIn profile URL is provided."
+    },
+    {
+      "section": "Contact Information",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No portfolio or external project URL is provided."
+    },
+    {
+      "section": "Profile Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Registered Nurse with 3 years of hospital ward experience in post-operative surgical and internal medicine care."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A concise summary of experience is included."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "General Care Staff Nurse at CHUC University Hospital (2021-Present)"
+      ],
+      "relevance": "High",
+      "reasoning": "Work history with roles, dates, and responsibilities is provided."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Nursing, Coimbra Nursing School (2017-2021)"
+      ],
+      "relevance": "High",
+      "reasoning": "Educational background, degree, institution, and dates are present."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "Technical Skills / Tools",
+      "status": "present",
+      "evidence": [
+        "Surgical Patient Care, Medication Administration, Catheterization, Infection Prevention & Control, Basic Life Support, Multidisciplinary Teamwork"
+      ],
+      "relevance": "High",
+      "reasoning": "Core competencies and clinical skills are listed."
+    },
+    {
+      "section": "CV General",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No specific clinical methodologies are formally named beyond general duties."
+    },
+    {
+      "section": "CV General",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Multidisciplinary Teamwork"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Teamwork is listed as a core competency."
+    },
+    {
+      "section": "CV General",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No languages section or spoken languages are listed."
+    },
+    {
+      "section": "CV General",
+      "field": "Certifications / Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No formal standalone certifications section exists, though Basic Life Support is listed under core competencies."
+    },
+    {
+      "section": "CV General",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No projects are detailed in the CV."
+    },
+    {
+      "section": "CV General",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR compliance statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Integrated Master's Degree in Medicine (Mestrado Integrado ou equivalente)",
+    "Active medical registration and license with the Medical Association (Ordem dos Médicos)",
+    "Contact email address and phone number",
+    "Evidence of language proficiencies (Portuguese and English)"
+  ],
+  "weak_evidence": [
+    "Clinical acumen and diagnostic reasoning (demonstrated via nursing tasks rather than independent physician diagnosis)",
+    "Interpersonal, empathy, and active-listening communication skills"
+  ],
+  "strengths": [
+    "Relevant background in hospital patient care and surgical wards at a university hospital.",
+    "Demonstrated experience in multidisciplinary teamwork and basic life support."
+  ],
+  "weaknesses": [
+    "Complete mismatch in profession and qualification level (Candidate is a Registered Nurse, whereas the role is for a General Practice Physician).",
+    "Absence of essential contact details such as email and telephone number."
+  ],
+  "overall_assessment": "The candidate is a Registered General Care Nurse applying for a General Practice Physician (Primary Care) position. There is a fundamental disconnect in professional qualifications, as the role requires an Integrated Master's Degree in Medicine and a medical license with the Ordem dos Médicos, whereas the candidate holds a B.Sc. in Nursing and a nursing license. Furthermore, the CV lacks critical contact details and language proficiency evidence.",
+  "reasoning": "Evaluation is based strictly on comparing the provided structured CV of Inês Martins against the job posting for a General Practice Physician at SaúdeViva Healthcare Network. The candidate meets basic life support and multidisciplinary teamwork criteria, but fails to satisfy mandatory medical education, medical licensure, and core physician competencies."
+}
