@@ -1,0 +1,97 @@
+{
+  "cv": "Tiago Ribeiro\nDigital Marketing & Paid Media Specialist\nSummary\nMarketing specialist with 3 years of professional experience managing paid traffic\nacquisition campaigns, conversion funnels, and performance analytics.\nProfessional Experience\nDigital Marketing Specialist\nImpulso Digital Agency (2021-Present)\nManaging paid advertising campaigns on Meta Ads and Google Ads focusing on\nB2B lead generation.\nPerforming on-page SEO optimization.\nBuilding conversion funnel performance reports utilizing Google Analytics 4.\nEducation\nB.Sc. in Communication Sciences and Marketing\nUniversity of Minho (2018-2021)\nCore Competencies\nGoogle Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization.\nTiago Ribeiro Page 1",
+  "personal_information": {
+    "name": "Tiago Ribeiro",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Tiago Ribeiro\nDigital Marketing & Paid Media Specialist"
+  },
+  "summary": {
+    "text": "Marketing specialist with 3 years of professional experience managing paid traffic acquisition campaigns, conversion funnels, and performance analytics.",
+    "source_section": "Summary",
+    "source_text": "Marketing specialist with 3 years of professional experience managing paid traffic\nacquisition campaigns, conversion funnels, and performance analytics."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc. in Communication Sciences and Marketing",
+      "field": "Communication Sciences and Marketing",
+      "institution": "University of Minho",
+      "location": "",
+      "start_date": "2018",
+      "end_date": "2021",
+      "details": "",
+      "source_section": "Education",
+      "source_text": "B.Sc. in Communication Sciences and Marketing\nUniversity of Minho (2018-2021)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Digital Marketing Specialist",
+      "company": "Impulso Digital Agency",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "Present",
+      "description": "",
+      "responsibilities": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation.",
+        "Performing on-page SEO optimization.",
+        "Building conversion funnel performance reports utilizing Google Analytics 4."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Meta Ads",
+        "Google Ads",
+        "Google Analytics 4"
+      ],
+      "source_section": "Professional Experience",
+      "source_text": "Digital Marketing Specialist\nImpulso Digital Agency (2021-Present)\nManaging paid advertising campaigns on Meta Ads and Google Ads focusing on\nB2B lead generation.\nPerforming on-page SEO optimization.\nBuilding conversion funnel performance reports utilizing Google Analytics 4."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Google Ads",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Meta Ads (Facebook/Instagram)",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Search Engine Optimization (SEO)",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Google Analytics 4",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Copywriting",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Email Marketing",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    },
+    {
+      "name": "Conversion Funnel Optimization",
+      "source_section": "Core Competencies",
+      "source_text": "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO),\nGoogle Analytics 4, Copywriting, Email Marketing, Conversion Funnel\nOptimization."
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

@@ -1,0 +1,283 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Portuguese commercial law, the Commercial Companies Code, and the Civil Code",
+      "category": "Domain Knowledge",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's background is in Digital Marketing and Communication Sciences, with no mention of legal education or knowledge of Portuguese commercial/civil law."
+    },
+    {
+      "requirement": "Legal analytical reasoning, precision in drafting, and attention to detail",
+      "category": "Soft Skills / Core Competencies",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of legal reasoning or legal drafting skills in the CV."
+    },
+    {
+      "requirement": "Portuguese communication",
+      "category": "Language",
+      "status": "weak_evidence",
+      "evidence": [
+        "University of Minho (Portugal)"
+      ],
+      "reasoning": "Implied through studying at a Portuguese university, but explicit written and verbal communication skills in Portuguese are not stated."
+    },
+    {
+      "requirement": "English proficiency",
+      "category": "Language",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of English proficiency or language skills in the CV."
+    },
+    {
+      "requirement": "GDPR / RGPD",
+      "category": "Preferred / Optional",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of GDPR or data protection experience."
+    },
+    {
+      "requirement": "Commercial registry electronic portals, judicial platforms (Citius), and corporate database management",
+      "category": "Preferred / Optional",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No familiarity with Citius or commercial registry portals."
+    },
+    {
+      "requirement": "Financial statements and corporate accounting concepts",
+      "category": "Preferred / Optional",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of financial statement analysis or corporate accounting concepts."
+    },
+    {
+      "requirement": "University degree in Law (Licenciatura em Direito)",
+      "category": "Education",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate holds a B.Sc. in Communication Sciences and Marketing, not Law."
+    },
+    {
+      "requirement": "Master's degree (Mestrado) in Corporate Law, Business Law, or Forensic Law",
+      "category": "Education",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No master's degree in law listed."
+    },
+    {
+      "requirement": "Full admission to the Bar Association or trainee lawyer in final phase",
+      "category": "Bar Association Admission / Qualification",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No indication of admission to the Ordem dos Advogados."
+    },
+    {
+      "requirement": "High ethical standards, professional discretion, and dedication to client service excellence",
+      "category": "Other Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Standard professional attributes not explicitly addressed in relation to legal practice."
+    },
+    {
+      "requirement": "International academic exposure (e.g., Erasmus, LL.M. coursework, or international moot courts)",
+      "category": "Preferred / Optional",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No international academic exposure mentioned."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Tiago Ribeiro"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Digital Marketing & Paid Media Specialist"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Professional headline is provided below the name."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No geographic location or address is provided."
+    },
+    {
+      "section": "Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is included."
+    },
+    {
+      "section": "Personal Information",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No portfolio or GitHub URL is present."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Marketing specialist with 3 years of professional experience managing paid traffic acquisition campaigns, conversion funnels, and performance analytics."
+      ],
+      "relevance": "High",
+      "reasoning": "A summary section is included describing professional background."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Digital Marketing Specialist at Impulso Digital Agency (2021-Present)"
+      ],
+      "relevance": "High",
+      "reasoning": "Work experience details are provided with roles, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Communication Sciences and Marketing, University of Minho (2018-2021)"
+      ],
+      "relevance": "High",
+      "reasoning": "Educational background is clearly documented."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Google Ads",
+        "Meta Ads (Facebook/Instagram)",
+        "Search Engine Optimization (SEO)",
+        "Google Analytics 4"
+      ],
+      "relevance": "High",
+      "reasoning": "Core technical competencies relevant to marketing are listed."
+    },
+    {
+      "section": "Tools",
+      "field": "Tools/Software",
+      "status": "present",
+      "evidence": [
+        "Google Ads",
+        "Meta Ads",
+        "Google Analytics 4"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Specific tool names are identified within core competencies."
+    },
+    {
+      "section": "Methodologies",
+      "field": "Methodologies",
+      "status": "present",
+      "evidence": [
+        "Conversion Funnel Optimization",
+        "Search Engine Optimization (SEO)"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Marketing methodologies and optimization techniques are listed."
+    },
+    {
+      "section": "Skills",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Copywriting",
+        "Email Marketing"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Transferable communication and marketing skills are present."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No dedicated language section is present."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or professional training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No separate projects section is included."
+    },
+    {
+      "section": "Other",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "University degree in Law (Licenciatura em Direito)",
+    "Full admission to the Bar Association (Inscrição definitiva na Ordem dos Advogados) or trainee lawyer status",
+    "Knowledge of Portuguese commercial law, the Commercial Companies Code, and the Civil Code",
+    "Fluent professional and legal English proficiency",
+    "Experience in corporate and commercial law practice"
+  ],
+  "weak_evidence": [
+    "Portuguese communication (implied by studying in Portugal, but lacks explicit proficiency confirmation)"
+  ],
+  "strengths": [
+    "Clear professional summary outlining 3 years of digital marketing experience",
+    "Structured experience section detailing role responsibilities at Impulso Digital Agency",
+    "Clearly defined core competencies and technical marketing skills"
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location)",
+    "Lack of professional online profile links (LinkedIn)",
+    "Total mismatch between candidate's marketing background and the legal job requirements"
+  ],
+  "overall_assessment": "The candidate, Tiago Ribeiro, is a Digital Marketing & Paid Media Specialist with 3 years of experience in digital campaigns, SEO, and analytics. The target position is a Junior Associate Lawyer in Corporate & Commercial Law at a law firm in Lisbon. There is a complete misalignment between the candidate's professional profile (marketing) and the mandatory legal requirements (Law degree, Bar admission, commercial law knowledge, and legal drafting skills). Furthermore, the CV lacks essential contact details such as email, phone number, and location.",
+  "reasoning": "Evaluation is based strictly on comparing the provided structured CV against the structured job posting. Every required criterion for the legal role lacks supporting evidence in the candidate's marketing-focused CV. Completeness evaluation notes the absence of contact details and supporting sections."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Do you confirm your target role headline as 'Digital Marketing & Paid Media Specialist'? (Yes/No, or specify another)",
+    "answer": "Yes, I confirm my target role headline as \"Digital Marketing & Paid Media Specialist\"."
+  },
+  {
+    "question": "We found your name (Tiago Ribeiro) and headline, but email, phone, location, and links are missing. Do you have any contact details or links (phone, email, LinkedIn, location) to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is tiago.ribeiro.mkt@example.com, my phone number is +351 932 109 876, my location is Porto/Braga, Portugal, and my LinkedIn profile is https://www.linkedin.com/in/tiagoribeiro-mkt."
+  },
+  {
+    "question": "We found your employment history: Digital Marketing Specialist at Impulso Digital Agency (2021-Present) managing paid ads, SEO, and Google Analytics 4. Do you confirm this information? (Yes/No)",
+    "answer": "Yes, I confirm this information. I am a Digital Marketing & Paid Media Specialist with experience managing paid traffic acquisition, conversion funnels, and performance analytics."
+  },
+  {
+    "question": "We found your education: B.Sc. in Communication Sciences and Marketing from University of Minho (2018-2021). Do you confirm this education record? (Yes/No)",
+    "answer": "Yes, I confirm that education record. I hold a B.Sc. in Communication Sciences and Marketing from the University of Minho (2018–2021)."
+  },
+  {
+    "question": "The target role requires legal skills (Portuguese commercial law, Civil Code, GDPR, etc.), which are missing from your marketing CV. Do you have any experience or background in these legal or related corporate areas? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "No dedicated language section is currently present in your CV. Do you speak any other languages (e.g., English, Portuguese) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese (Native) and English (C1 Full Professional)."
+  },
+  {
+    "question": "No certifications or professional training courses are listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold certifications in Google Ads Search, GA4, Meta Certified Digital Marketing Associate, and HubSpot Email Marketing."
+  },
+  {
+    "question": "No separate projects section is currently included in your CV. Do you have any projects or portfolio links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have a professional portfolio website at https://tiagoribeiro.com, and my LinkedIn profile is available at https://www.linkedin.com/in/tiagoribeiro-mkt."
+  },
+  {
+    "question": "We propose a professional summary focusing on your 3 years of experience in paid traffic acquisition, conversion funnels, and performance analytics. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes. I confirm the summary focus on my background in paid traffic acquisition, conversion funnels, and performance analytics."
+  }
+]

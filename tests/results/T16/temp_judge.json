@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless adherence to ground truth and zero hallucinations; all information comes directly from the original CV and user conversation.",
+    "Excellent inclusion and integration of user-provided details such as contact info, languages, certifications, and portfolio links.",
+    "Clean, professional information hierarchy and tone in the generated CV."
+  ],
+  "issues": [
+    "Severe domain mismatch between the candidate's digital marketing background and the target Junior Associate Lawyer position.",
+    "Total absence of legal qualifications, Bar Association admission, and commercial law knowledge required by the target job posting."
+  ],
+  "recommendations": [
+    "Consider targeting roles specifically within digital marketing, paid media, and growth analytics where the candidate's verified skills and certifications align.",
+    "If pursuing a legal career, the candidate would need to complete a University degree in Law (Licenciatura em Direito) and obtain formal Bar admission."
+  ]
+}
