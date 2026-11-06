@@ -1,0 +1,99 @@
+{
+  "contact": {
+    "name": "Dr. Gonçalo Ferreira",
+    "headline": "Medical Doctor | General Practitioner",
+    "specialisation": "General Practice",
+    "phone": "+351 917 890 123",
+    "email": "goncalo.ferreira.md@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/dr-goncalo-ferreira",
+    "github": "",
+    "portfolio": ""
+  },
+  "summary": "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations. Proven clinical expertise supported by active medical licensing, life support certifications, and clinical research.",
+  "experience": [
+    {
+      "title": "General Practice Medical Resident",
+      "dates": "2023-2024",
+      "company": "São João University Hospital",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Clinical rotations across Internal Medicine, General Surgery, Pediatrics, and Adult Emergency Care.",
+        "Primary triage and basic emergency intervention."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Integrated Master's in Medicine",
+      "dates": "2016-2022",
+      "institution": "Faculty of Medicine, University of Porto",
+      "location": "Porto, Portugal",
+      "grade": ""
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Clinical Competencies",
+      "skills": [
+        "Clinical Patient Assessment",
+        "Basic Life Support (BLS)",
+        "Pharmacological Prescription",
+        "Electronic Health Records",
+        "Doctor-Patient Communication"
+      ]
+    },
+    {
+      "category_name": "Clinical Rotations",
+      "skills": [
+        "Internal Medicine",
+        "General Surgery",
+        "Pediatrics",
+        "Adult Emergency Care",
+        "Primary Triage"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "Advanced Medical/Clinical Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Advanced Life Support (ALS / SAV)",
+      "issuer": "ERC certified",
+      "year": "Valid to 2026"
+    },
+    {
+      "name": "Medical Association License No. 68421",
+      "issuer": "Ordem dos Médicos",
+      "year": ""
+    },
+    {
+      "name": "Basic Life Support (BLS / SBV)",
+      "issuer": "",
+      "year": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Cardiovascular Risk Stratification in Outpatient Hypertension Clinics",
+      "dates": "2023",
+      "description": "Co-author of scientific poster focusing on cardiovascular risk stratification in outpatient hypertension clinics.",
+      "link": "",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

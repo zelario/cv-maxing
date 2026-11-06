@@ -1,0 +1,254 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Meta Ads (Facebook & Instagram)",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's CV shows a background in medicine and clinical practice with no mention of Meta Ads or digital marketing experience."
+    },
+    {
+      "requirement": "Google Ads (Search, Shopping, YouTube, and Performance Max)",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence or mention of Google Ads in the candidate's medical profile."
+    },
+    {
+      "requirement": "Conversion Rate Optimization (CRO)",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience or mention related to CRO."
+    },
+    {
+      "requirement": "Google Analytics 4 (GA4)",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Google Analytics or web analytics tools."
+    },
+    {
+      "requirement": "Google Tag Manager",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience with Google Tag Manager."
+    },
+    {
+      "requirement": "Meta Ads Manager",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No familiarity with Meta Ads Manager shown."
+    },
+    {
+      "requirement": "Google Ads interface",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No familiarity with Google Ads interface."
+    },
+    {
+      "requirement": "Direct-response copywriting principles",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No background in copywriting."
+    },
+    {
+      "requirement": "Creative storytelling",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of creative storytelling in a marketing context."
+    },
+    {
+      "requirement": "Sales funnel mechanics",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience with sales funnels."
+    },
+    {
+      "requirement": "Google Sheets / Excel modeling",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No spreadsheet or quantitative data analysis skills mentioned."
+    },
+    {
+      "requirement": "English communication and presentation skills",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Doctor-Patient Communication"
+      ],
+      "reasoning": "The CV lists general communication skills in a medical context (Doctor-Patient Communication), but lacks evidence of executive stakeholder presentation or English proficiency explicitly tested for marketing."
+    },
+    {
+      "requirement": "2+ years of documented hands-on experience directly managing paid acquisition campaigns in Meta Ads and Google Ads",
+      "category": "Experience Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate's experience is strictly medical (General Practice Medical Resident), with no digital marketing experience."
+    },
+    {
+      "requirement": "Bachelor's degree in Marketing, Business Administration, Communication, Data Analytics, or related field",
+      "category": "Education Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate holds an Integrated Master's in Medicine, which does not match the required fields."
+    },
+    {
+      "requirement": "Google Ads Search/Measurement Certification or Meta Certified Media Buying Professional",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No marketing certifications are listed; only a medical license is provided."
+    },
+    {
+      "requirement": "Lifecycle retention and email marketing automation tools (e.g., Klaviyo, HubSpot, or ActiveCampaign)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience with email marketing or CRM automation tools."
+    },
+    {
+      "requirement": "Working knowledge of landing page builders (Webflow, Unbounce, Shopify) and basic HTML/CSS",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No technical web development or landing page builder experience."
+    },
+    {
+      "requirement": "Previous experience in a high-growth digital marketing agency or fast-scaling e-commerce startup",
+      "category": "Preferred Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Experience is limited to a university hospital."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "Candidate email address is completely absent from the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "Candidate phone number is not provided."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "Candidate location/city is not specified."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is provided."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No portfolio or GitHub URL is included."
+    },
+    {
+      "section": "Professional Profile",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Medical doctor with completed general internship, experienced in outpatient consultations, emergency department triage, and inpatient rotations."
+      ],
+      "relevance": "High",
+      "reasoning": "A professional summary is present at the top of the CV."
+    },
+    {
+      "section": "Clinical Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "General Practice Medical Resident, São João University Hospital (2023-2024)"
+      ],
+      "relevance": "High",
+      "reasoning": "Experience section is present with role, company, and dates."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Integrated Master's in Medicine, Faculty of Medicine, University of Porto (2016-2022)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education details are clearly stated."
+    },
+    {
+      "section": "Clinical Competencies",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Clinical Patient Assessment",
+        "Basic Life Support (BLS)",
+        "Pharmacological Prescription",
+        "Electronic Health Records",
+        "Doctor-Patient Communication"
+      ],
+      "relevance": "High",
+      "reasoning": "Clinical skills are listed under competencies."
+    },
+    {
+      "section": "Header / Other",
+      "field": "Certifications / Licenses",
+      "status": "present",
+      "evidence": [
+        "Medical Association License No. 68421"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Medical license number is provided."
+    },
+    {
+      "section": "CV",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No explicit GDPR compliance statement is included in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "Complete lack of digital marketing experience, specifically in Meta Ads, Google Ads, and analytics tools.",
+    "Absence of required contact details (email, phone number, location).",
+    "Absence of marketing-specific education or certifications."
+  ],
+  "weak_evidence": [
+    "Communication skills are demonstrated solely in a medical (Doctor-Patient) context rather than executive marketing presentations."
+  ],
+  "strengths": [
+    "Clear, structured layout outlining medical education and clinical experience.",
+    "Valid medical license and professional credentials clearly indicated."
+  ],
+  "weaknesses": [
+    "Severe mismatch between candidate profile (medical doctor) and job requirements (Growth Marketing & Paid Media Specialist).",
+    "Missing essential contact information (email, phone, location)."
+  ],
+  "overall_assessment": "The candidate's background is entirely within the medical and clinical domain, whereas the position requires expertise in growth marketing, paid media, and data analytics. There is a complete absence of relevant qualifications, experience, and skills required for the Growth Marketing & Paid Media Specialist role.",
+  "reasoning": "Evaluation is based strictly on comparing the provided medical CV of Dr. Gonçalo Ferreira against the requirements for a Growth Marketing & Paid Media Specialist at Elevate Commerce Solutions. The candidate fails to meet virtually all required and preferred criteria due to a completely disparate professional background."
+}

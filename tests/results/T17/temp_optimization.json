@@ -1,0 +1,144 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Dr. Gonçalo Ferreira\nMedical Doctor | General Practitioner\nMedical Association License No. 68421",
+      "proposed_content": "Dr. Gonçalo Ferreira\nMedical Doctor | General Practitioner\nEmail: goncalo.ferreira.md@example.com | Phone: +351 917 890 123 | Location: Porto, Portugal\nLinkedIn: https://www.linkedin.com/in/dr-goncalo-ferreira\nMedical Association License No. 68421",
+      "rationale": "Add missing verified contact details and location provided by the user while preserving the accurate medical professional headline and license number.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Medical Association License No. 68421"
+      ],
+      "user_provided_evidence": [
+        "Email: goncalo.ferreira.md@example.com",
+        "Phone: +351 917 890 123",
+        "Location: Porto, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/dr-goncalo-ferreira"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "None",
+      "proposed_content": "Portuguese (Native), English (C1 Advanced Medical Proficiency)",
+      "rationale": "Incorporate the user-confirmed language proficiencies to strengthen communication qualifications.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese natively",
+        "C1 Advanced Medical/Clinical proficiency in English"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Certifications",
+      "current_content": "Medical Association License No. 68421",
+      "proposed_content": "Medical Association License No. 68421 (Ordem dos Médicos)\nAdvanced Life Support (ALS / SAV, ERC certified, valid to 2026)\nBasic Life Support (BLS / SBV)",
+      "rationale": "Add user-confirmed official medical certifications and life support credentials.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Medical Association License No. 68421"
+      ],
+      "user_provided_evidence": [
+        "Advanced Life Support (ALS / SAV, ERC certified, valid to 2026)",
+        "Basic Life Support (BLS / SBV)",
+        "Active professional license from Ordem dos Médicos"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Projects",
+      "current_content": "None",
+      "proposed_content": "Clinical Research Project: Co-author of scientific poster titled \"Cardiovascular Risk Stratification in Outpatient Hypertension Clinics\" (2023)",
+      "rationale": "Include the user-provided clinical research project to highlight evidence-based medical research experience.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Co-author of scientific poster titled 'Cardiovascular Risk Stratification in Outpatient Hypertension Clinics' (2023)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target role: We found the current CV headline is 'Medical Doctor | General Practitioner' and the target job is 'Growth Marketing & Paid Media Specialist'. Do you confirm updating the target role/headline to 'Growth Marketing & Paid Media Specialist' or keeping your current medical headline? (Yes/No, or specify another)",
+    "2. Contact & links: We noticed that email, phone, location, and LinkedIn URL are currently missing from your CV header. Do you have an email address, phone number, location, and LinkedIn profile link to include? (If none or if you wish to skip, reply 'I do not have one')",
+    "3. Employment: We found your clinical experience listed as 'General Practice Medical Resident' at São João University Hospital (2023-2024), covering Internal Medicine, General Surgery, Pediatrics, Adult Emergency Care, primary triage, and basic emergency intervention. Do you confirm this employment history? (Yes/No)",
+    "4. Education: We found your education listed as 'Integrated Master's in Medicine' from the Faculty of Medicine, University of Porto (2016-2022). Do you confirm this academic background? (Yes/No)",
+    "5. Technical skills gaps: The target job requires digital marketing skills like Meta Ads, Google Ads, GA4, GTM, and CRO. Your CV lists clinical competencies like Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic Health Records, and Doctor-Patient Communication. Do you have any experience with these marketing technologies to include? (If none, reply 'I do not have one')",
+    "6. Languages: We found no languages listed in your current CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "7. Certifications: We found your 'Medical Association License No. 68421' listed in your CV. Do you have any other certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "8. Projects: We found no projects listed in your current CV. Do you have any clinical research, audits, or professional medical projects/repositories to include? (If none, reply 'I do not have one')",
+    "9. Summary focus: We propose highlighting your medical doctor background, completed general internship, outpatient/emergency experience, and clinical competencies. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target role: We found the current CV headline is 'Medical Doctor | General Practitioner' and the target job is 'Growth Marketing & Paid Media Specialist'. Do you confirm updating the target role/headline to 'Growth Marketing & Paid Media Specialist' or keeping your current medical headline? (Yes/No, or specify another)",
+      "answer": "No, I am a medical doctor with a background in general practice and clinical medicine, not a digital marketer. I cannot update my headline to \"Growth Marketing & Paid Media Specialist\" as I have no experience in paid media, advertising, or marketing.",
+      "gap": "Candidate background is entirely clinical and medical, creating a fundamental mismatch with the digital marketing target role.",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "2. Contact & links: We noticed that email, phone, location, and LinkedIn URL are currently missing from your CV header. Do you have an email address, phone number, location, and LinkedIn profile link to include? (If none or if you wish to skip, reply 'I do not have one')",
+      "answer": "Yes, you can use my email (goncalo.ferreira.md@example.com), phone number (+351 917 890 123), location (Porto/Coimbra, Portugal), and LinkedIn profile (https://www.linkedin.com/in/dr-goncalo-ferreira).",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: We found your clinical experience listed as 'General Practice Medical Resident' at São João University Hospital (2023-2024), covering Internal Medicine, General Surgery, Pediatrics, Adult Emergency Care, primary triage, and basic emergency intervention. Do you confirm this employment history? (Yes/No)",
+      "answer": "Yes, I confirm this employment history as a General Practice Medical Resident at São João University Hospital from January 2023 to February 2024.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: We found your education listed as 'Integrated Master's in Medicine' from the Faculty of Medicine, University of Porto (2016-2022). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm this academic background. I completed my Integrated Master's in Medicine at the Faculty of Medicine, University of Porto between 2016 and 2022.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The target job requires digital marketing skills like Meta Ads, Google Ads, GA4, GTM, and CRO. Your CV lists clinical competencies like Clinical Patient Assessment, Basic Life Support (BLS), Pharmacological Prescription, Electronic Health Records, and Doctor-Patient Communication. Do you have any experience with these marketing technologies to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have experience with those marketing technologies.",
+      "gap": "Complete absence of digital marketing tools and paid media skills required by the target role.",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "6. Languages: We found no languages listed in your current CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese natively and have C1 Advanced Medical/Clinical proficiency in English.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: We found your 'Medical Association License No. 68421' listed in your CV. Do you have any other certifications or professional licenses to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I hold Advanced Life Support (ALS / SAV, ERC certified, valid to 2026) and Basic Life Support (BLS / SBV) certifications, along with my active professional license from the Ordem dos Médicos.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "8. Projects: We found no projects listed in your current CV. Do you have any clinical research, audits, or professional medical projects/repositories to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have one clinical research project: I was a co-author of the scientific poster titled \"Cardiovascular Risk Stratification in Outpatient Hypertension Clinics\" (2023).",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "9. Summary focus: We propose highlighting your medical doctor background, completed general internship, outpatient/emergency experience, and clinical competencies. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus on my medical background, general internship, clinical experience, and competencies.",
+      "gap": "",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: goncalo.ferreira.md@example.com",
+    "Phone: +351 917 890 123",
+    "Location: Porto, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/dr-goncalo-ferreira",
+    "Portuguese (Native), English (C1 Advanced Medical Proficiency)",
+    "Advanced Life Support (ALS / SAV, ERC certified, valid to 2026)",
+    "Basic Life Support (BLS / SBV)",
+    "Clinical Research Project: Co-author of scientific poster 'Cardiovascular Risk Stratification in Outpatient Hypertension Clinics' (2023)"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on refining Dr. Gonçalo Ferreira's CV as a medical professional, incorporating verified contact information, language skills, life support certifications, and a clinical research project. Because the candidate's professional background is entirely in medicine and clinical practice while the target job is a 'Growth Marketing & Paid Media Specialist', the target role and technical marketing skills remain fundamentally mismatched and unresolved.",
+  "unresolved_evidence_gaps": [
+    "Target role mismatch: Candidate is a medical doctor and general practitioner, whereas the target job is Growth Marketing & Paid Media Specialist.",
+    "Complete lack of digital marketing experience, hands-on campaign management in Meta Ads/Google Ads, GA4, GTM, and CRO."
+  ]
+}

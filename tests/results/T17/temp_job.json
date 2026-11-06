@@ -1,0 +1,226 @@
+{
+  "job_title": "Growth Marketing & Paid Media Specialist",
+  "company": {
+    "name": "Elevate Commerce Solutions",
+    "location": "Lisbon / Remote",
+    "website": ""
+  },
+  "location": "Lisbon / Remote",
+  "employment_type": "",
+  "seniority": "",
+  "description": "We are hiring an analytical, data-driven Growth Marketing & Paid Media Specialist to lead and scale paid advertising campaigns for our key client portfolios.",
+  "skills": [
+    {
+      "name": "Meta Ads (Facebook & Instagram)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Plan, launch, and optimize high-ROI paid acquisition campaigns across Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, YouTube, and Performance Max)."
+    },
+    {
+      "name": "Google Ads (Search, Shopping, YouTube, and Performance Max)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Plan, launch, and optimize high-ROI paid acquisition campaigns across Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, YouTube, and Performance Max)."
+    },
+    {
+      "name": "Conversion Rate Optimization (CRO)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design and execute structured A/B tests on ad creatives, hooks, headlines, and landing pages to optimize conversion rate optimization (CRO)."
+    },
+    {
+      "name": "Google Analytics 4 (GA4)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Configure, audit, and troubleshoot conversion tracking, event pixels, custom events, and server-side tracking in Google Analytics 4 (GA4) and Google Tag Manager."
+    },
+    {
+      "name": "Google Tag Manager",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Configure, audit, and troubleshoot conversion tracking, event pixels, custom events, and server-side tracking in Google Analytics 4 (GA4) and Google Tag Manager."
+    },
+    {
+      "name": "Meta Ads Manager",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep technical familiarity with Meta Ads Manager and Google Ads interface, including bidding strategies, audience segmentation, and budget pacing."
+    },
+    {
+      "name": "Google Ads interface",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep technical familiarity with Meta Ads Manager and Google Ads interface, including bidding strategies, audience segmentation, and budget pacing."
+    },
+    {
+      "name": "Google Analytics 4 (GA4)",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong analytical proficiency using Google Analytics 4 (GA4) to track user events, attribution, and multi-touch funnels."
+    },
+    {
+      "name": "Direct-response copywriting principles",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven understanding of direct-response copywriting principles, creative storytelling, and sales funnel mechanics."
+    },
+    {
+      "name": "Creative storytelling",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven understanding of direct-response copywriting principles, creative storytelling, and sales funnel mechanics."
+    },
+    {
+      "name": "Sales funnel mechanics",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven understanding of direct-response copywriting principles, creative storytelling, and sales funnel mechanics."
+    },
+    {
+      "name": "Google Sheets / Excel modeling",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong spreadsheet and quantitative data analysis skills (Google Sheets / Excel modeling)."
+    },
+    {
+      "name": "English communication and presentation skills",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Excellent communication and presentation skills in English, with the ability to articulate performance metrics clearly to executive stakeholders."
+    },
+    {
+      "name": "Google Ads Search/Measurement Certification",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Official active certifications: Google Ads Search/Measurement Certification or Meta Certified Media Buying Professional."
+    },
+    {
+      "name": "Meta Certified Media Buying Professional",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Official active certifications: Google Ads Search/Measurement Certification or Meta Certified Media Buying Professional."
+    },
+    {
+      "name": "Lifecycle retention and email marketing automation tools (e.g., Klaviyo, HubSpot, or ActiveCampaign)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with lifecycle retention and email marketing automation tools (e.g., Klaviyo, HubSpot, or ActiveCampaign)."
+    },
+    {
+      "name": "Landing page builders (Webflow, Unbounce, Shopify)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Working knowledge of landing page builders (Webflow, Unbounce, Shopify) and basic HTML/CSS."
+    },
+    {
+      "name": "Basic HTML/CSS",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Working knowledge of landing page builders (Webflow, Unbounce, Shopify) and basic HTML/CSS."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Documented hands-on experience directly managing paid acquisition campaigns in Meta Ads and Google Ads.",
+      "years": "2+ years",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "At least 2+ years of documented hands-on experience directly managing paid acquisition campaigns in Meta Ads and Google Ads."
+    },
+    {
+      "description": "Previous experience in a high-growth digital marketing agency or fast-scaling e-commerce startup.",
+      "years": "",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Previous experience in a high-growth digital marketing agency or fast-scaling e-commerce startup."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Bachelor's degree",
+      "degree": "Bachelor's degree",
+      "field": "Marketing, Business Administration, Communication, Data Analytics, or related field",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Bachelor's degree in Marketing, Business Administration, Communication, Data Analytics, or related field (or equivalent practical experience)."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Plan, launch, and optimize high-ROI paid acquisition campaigns across Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, YouTube, and Performance Max).",
+      "source_section": "What You'll Do",
+      "source_text": "Plan, launch, and optimize high-ROI paid acquisition campaigns across Meta Ads (Facebook & Instagram) and Google Ads (Search, Shopping, YouTube, and Performance Max)."
+    },
+    {
+      "description": "Manage five-to-six figure monthly advertising budgets, allocating spend across channels to achieve target CAC, ROAS, and blended CPA targets.",
+      "source_section": "What You'll Do",
+      "source_text": "Manage five-to-six figure monthly advertising budgets, allocating spend across channels to achieve target CAC, ROAS, and blended CPA targets."
+    },
+    {
+      "description": "Design and execute structured A/B tests on ad creatives, hooks, headlines, and landing pages to optimize conversion rate optimization (CRO).",
+      "source_section": "What You'll Do",
+      "source_text": "Design and execute structured A/B tests on ad creatives, hooks, headlines, and landing pages to optimize conversion rate optimization (CRO)."
+    },
+    {
+      "description": "Configure, audit, and troubleshoot conversion tracking, event pixels, custom events, and server-side tracking in Google Analytics 4 (GA4) and Google Tag Manager.",
+      "source_section": "What You'll Do",
+      "source_text": "Configure, audit, and troubleshoot conversion tracking, event pixels, custom events, and server-side tracking in Google Analytics 4 (GA4) and Google Tag Manager."
+    },
+    {
+      "description": "Analyze full-funnel customer journey metrics, identify conversion drop-offs, and collaborate with copywriters and designers to produce high-converting ad assets.",
+      "source_section": "What You'll Do",
+      "source_text": "Analyze full-funnel customer journey metrics, identify conversion drop-offs, and collaborate with copywriters and designers to produce high-converting ad assets."
+    },
+    {
+      "description": "Build automated executive dashboards and weekly performance reports highlighting key revenue metrics and growth opportunities.",
+      "source_section": "What You'll Do",
+      "source_text": "Build automated executive dashboards and weekly performance reports highlighting key revenue metrics and growth opportunities."
+    },
+    {
+      "description": "Stay continuously updated on ad platform algorithm updates, tracking privacy shifts (iOS changes, cookie deprecation), and performance marketing trends.",
+      "source_section": "What You'll Do",
+      "source_text": "Stay continuously updated on ad platform algorithm updates, tracking privacy shifts (iOS changes, cookie deprecation), and performance marketing trends."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Growth Marketing",
+      "source_section": "Growth Marketing & Paid Media Specialist",
+      "source_text": "Growth Marketing & Paid Media Specialist"
+    },
+    {
+      "keyword": "Paid Media",
+      "source_section": "Growth Marketing & Paid Media Specialist",
+      "source_text": "Growth Marketing & Paid Media Specialist"
+    },
+    {
+      "keyword": "Performance Marketing",
+      "source_section": "About Elevate Commerce Solutions",
+      "source_text": "Elevate Commerce Solutions is a digital growth and performance marketing agency accelerating direct-to-consumer (D2C) e-commerce brands and B2B SaaS platforms across Europe and North America."
+    },
+    {
+      "keyword": "D2C",
+      "source_section": "About Elevate Commerce Solutions",
+      "source_text": "Elevate Commerce Solutions is a digital growth and performance marketing agency accelerating direct-to-consumer (D2C) e-commerce brands and B2B SaaS platforms across Europe and North America."
+    },
+    {
+      "keyword": "B2B SaaS",
+      "source_section": "About Elevate Commerce Solutions",
+      "source_text": "Elevate Commerce Solutions is a digital growth and performance marketing agency accelerating direct-to-consumer (D2C) e-commerce brands and B2B SaaS platforms across Europe and North America."
+    },
+    {
+      "keyword": "ROAS",
+      "source_section": "About Elevate Commerce Solutions",
+      "source_text": "We combine rigorous data analytics, creative testing, and multi-channel media buying to scale customer acquisition, maximize return on ad spend (ROAS), and unlock sustainable revenue growth."
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Application Material",
+      "description": "Please submit your CV accompanied by a summary or portfolio of past paid campaigns you have directly managed, including metrics (spend, ROAS, CPA) and key lessons learned.",
+      "requirement_type": "required",
+      "source_section": "Application",
+      "source_text": "Please submit your CV accompanied by a summary or portfolio of past paid campaigns you have directly managed, including metrics (spend, ROAS, CPA) and key lessons learned."
+    }
+  ]
+}

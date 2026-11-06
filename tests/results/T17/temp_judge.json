@@ -1,0 +1,22 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 1,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless adherence to factual grounding with zero fabrications.",
+    "Correctly respected the candidate's explicit refusal to adopt a marketing persona, maintaining complete medical integrity.",
+    "Integrated all user-provided contact details, languages, certifications, and clinical research projects accurately.",
+    "Professional executive tone, clean typography structure, and well-organized clinical competencies."
+  ],
+  "issues": [
+    "Fundamental domain mismatch between the candidate's background (Medical Doctor) and the target job (Growth Marketing & Paid Media Specialist).",
+    "Complete absence of digital marketing requirements (Meta Ads, Google Ads, GA4, CRO) due to the candidate's genuine clinical profile."
+  ],
+  "recommendations": [
+    "Apply strictly to medical, clinical, and healthcare-related roles where the candidate's true background aligns with industry requirements.",
+    "Utilize targeted CVs that match the medical profession rather than cross-industry pivots requiring extensive retraining."
+  ]
+}
