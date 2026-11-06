@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target role headline in your CV as 'Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases', but the target job is 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this target role or wish to specify another? (Yes/No, or specify another)",
+    "answer": "No, I am a Backend Software Engineer applying for tech roles, not a lawyer. There appears to be a mismatch between my CV and the target job description for a Junior Associate Lawyer."
+  },
+  {
+    "question": "We found your name is Diogo Santos, but email, phone, location, LinkedIn, and GitHub links are missing. Do you have contact links and location to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my location is Porto, Portugal, my email is diogo.santos.backend@example.com, my phone number is +351 925 678 123, my LinkedIn is https://www.linkedin.com/in/diogosantos-backend, and my GitHub is https://github.com/dsantos-code."
+  },
+  {
+    "question": "We found your employment history: Backend Software Engineer at CloudScale (2021-Present, 3 years), developing RESTful APIs in Python using FastAPI and Django, leading PostgreSQL schema design, Docker containerization, and RabbitMQ integration. Do you confirm this work experience? (Yes/No)",
+    "answer": "Yes, I confirm this work experience, along with my additional experience as a Junior Web Developer at SoftPorto Solutions."
+  },
+  {
+    "question": "We found your education: B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm my academic background is a B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020)."
+  },
+  {
+    "question": "The target job lists technologies like GDPR, Citius, and commercial registry platforms, which are missing from your technical skills. Do you have experience with any of these technologies or prefer to keep your current skills (Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, Git)?",
+    "answer": "No, I do not have experience with GDPR, Citius, or commercial registry platforms. I am a software engineer, so I prefer to keep my current technical skills in Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, and Git."
+  },
+  {
+    "question": "Languages are currently not listed on your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and have C1 Full Professional proficiency in English."
+  },
+  {
+    "question": "No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "No projects are currently listed in your CV. Do you have any independent projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "We propose a professional summary focusing on your 3 years of backend engineering experience building RESTful APIs, microservices, and managing relational databases. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus, as I am a Backend Software Engineer with over 3 years of professional experience specializing in Python, FastAPI, Django, microservices, and PostgreSQL database optimization."
+  }
+]

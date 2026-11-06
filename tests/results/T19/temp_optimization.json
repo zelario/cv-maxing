@@ -1,0 +1,155 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Diogo Santos",
+      "proposed_content": "Diogo Santos | Porto, Portugal | diogo.santos.backend@example.com | +351 925 678 123 | LinkedIn: https://www.linkedin.com/in/diogosantos-backend | GitHub: https://github.com/dsantos-code",
+      "rationale": "Add missing contact information and location provided directly by the user to ensure recruiters can reach the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Porto, Portugal",
+        "diogo.santos.backend@example.com",
+        "+351 925 678 123",
+        "https://www.linkedin.com/in/diogosantos-backend",
+        "https://github.com/dsantos-code"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+      "proposed_content": "Backend Software Engineer with 3+ years of professional experience building scalable RESTful APIs and microservices using Python, FastAPI, and Django. Proven track record leading PostgreSQL schema design and query optimization at CloudScale.",
+      "rationale": "Enhance the professional summary to clearly highlight candidate identity, target backend role, core verified skills, and concrete achievements.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization."
+      ],
+      "user_provided_evidence": [
+        "Backend Software Engineer"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Portuguese (Native), English (C1 Full Professional Proficiency)",
+      "rationale": "Add verified language proficiencies provided by the user.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C1 Full Professional Proficiency)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)",
+      "proposed_content": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\n- Developing RESTful APIs in Python using FastAPI and Django.\n- Leading PostgreSQL schema design and comprehensive query optimization.\n- Implementing Docker containerization for standardized deployment environments.\n- Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication.",
+      "rationale": "Format experience cleanly using bullet points for improved readability and recruiter scanning.",
+      "evidence_source": "cv",
+      "source_evidence": [
+        "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication."
+      ],
+      "user_provided_evidence": [],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)",
+      "proposed_content": "B.Sc. in Informatics and Computing Engineering\nFEUP | 2017-2020",
+      "rationale": "Standardize education formatting for professional clarity.",
+      "evidence_source": "cv",
+      "source_evidence": [
+        "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+      ],
+      "user_provided_evidence": [],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found the target role headline in your CV as 'Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases', but the target job is 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this target role or wish to specify another? (Yes/No, or specify another)",
+    "We found your name is Diogo Santos, but email, phone, location, LinkedIn, and GitHub links are missing. Do you have contact links and location to include? (If none, reply 'I do not have one')",
+    "We found your employment history: Backend Software Engineer at CloudScale (2021-Present, 3 years), developing RESTful APIs in Python using FastAPI and Django, leading PostgreSQL schema design, Docker containerization, and RabbitMQ integration. Do you confirm this work experience? (Yes/No)",
+    "We found your education: B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Do you confirm this academic background? (Yes/No)",
+    "The target job lists technologies like GDPR, Citius, and commercial registry platforms, which are missing from your technical skills. Do you have experience with any of these technologies or prefer to keep your current skills (Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, Git)?",
+    "Languages are currently not listed on your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "No projects are currently listed in your CV. Do you have any independent projects or repositories to include? (If none, reply 'I do not have one')",
+    "We propose a professional summary focusing on your 3 years of backend engineering experience building RESTful APIs, microservices, and managing relational databases. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found the target role headline in your CV as 'Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases', but the target job is 'Junior Associate Lawyer (Corporate & Commercial Law)'. Do you confirm this target role or wish to specify another? (Yes/No, or specify another)",
+      "answer": "No, I am a Backend Software Engineer applying for tech roles, not a lawyer. There appears to be a mismatch between my CV and the target job description for a Junior Associate Lawyer.",
+      "gap": "Candidate background is in backend engineering while the target job is a Junior Associate Lawyer.",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "We found your name is Diogo Santos, but email, phone, location, LinkedIn, and GitHub links are missing. Do you have contact links and location to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my location is Porto, Portugal, my email is diogo.santos.backend@example.com, my phone number is +351 925 678 123, my LinkedIn is https://www.linkedin.com/in/diogosantos-backend, and my GitHub is https://github.com/dsantos-code.",
+      "gap": "Missing contact information in original CV.",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your employment history: Backend Software Engineer at CloudScale (2021-Present, 3 years), developing RESTful APIs in Python using FastAPI and Django, leading PostgreSQL schema design, Docker containerization, and RabbitMQ integration. Do you confirm this work experience? (Yes/No)",
+      "answer": "Yes, I confirm this work experience, along with my additional experience as a Junior Web Developer at SoftPorto Solutions.",
+      "gap": "Additional work experience mentioned by candidate not originally in CV.",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your education: B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm my academic background is a B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020).",
+      "gap": "None",
+      "resolution": "supported"
+    },
+    {
+      "question": "The target job lists technologies like GDPR, Citius, and commercial registry platforms, which are missing from your technical skills. Do you have experience with any of these technologies or prefer to keep your current skills (Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, Git)?",
+      "answer": "No, I do not have experience with GDPR, Citius, or commercial registry platforms. I am a software engineer, so I prefer to keep my current technical skills in Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, and Git.",
+      "gap": "Legal technical requirements (GDPR, Citius) absent from software engineering profile.",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Languages are currently not listed on your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese as my native language and have C1 Full Professional proficiency in English.",
+      "gap": "Languages missing in original CV.",
+      "resolution": "supported"
+    },
+    {
+      "question": "No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "No certifications present.",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "No projects are currently listed in your CV. Do you have any independent projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "No independent projects listed.",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "We propose a professional summary focusing on your 3 years of backend engineering experience building RESTful APIs, microservices, and managing relational databases. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus, as I am a Backend Software Engineer with over 3 years of professional experience specializing in Python, FastAPI, Django, microservices, and PostgreSQL database optimization.",
+      "gap": "None",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Porto, Portugal",
+    "diogo.santos.backend@example.com",
+    "+351 925 678 123",
+    "https://www.linkedin.com/in/diogosantos-backend",
+    "https://github.com/dsantos-code",
+    "Portuguese (Native)",
+    "English (C1 Full Professional Proficiency)"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on refining Diogo Santos's CV as a Backend Software Engineer by incorporating his missing contact details, location, social links, and language proficiencies, while optimizing the professional summary and experience formatting for maximum impact in tech roles. All legal role requirements from the initial mismatched target job have been correctly identified as inapplicable since the candidate is a software engineer.",
+  "unresolved_evidence_gaps": [
+    "Complete mismatch between candidate's backend software engineering background (Python, FastAPI, PostgreSQL) and the target job description for a Junior Associate Lawyer in Corporate & Commercial Law.",
+    "Absence of legal degree (Licenciatura em Direito) and bar admission.",
+    "Absence of certifications and independent projects."
+  ]
+}

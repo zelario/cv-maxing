@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 2,
+  "completeness_score": 9,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless factual accuracy with zero hallucinations or unverified claims.",
+    "Excellent inclusion of user-provided contact details, location, and language proficiencies.",
+    "Clean, professional information hierarchy and formatting with strong action-oriented bullet points."
+  ],
+  "issues": [
+    "Severe natural domain mismatch between the candidate's backend software engineering background and the target job's legal requirements (Junior Associate Lawyer).",
+    "Target job requirements such as legal due diligence, Portuguese commercial law, and bar admission are completely unfulfilled due to the candidate's technical profile."
+  ],
+  "recommendations": [
+    "Direct the optimization pipeline towards backend engineering and software development job postings to achieve proper domain alignment.",
+    "Add independent software engineering projects or repositories to further reinforce technical competency."
+  ]
+}

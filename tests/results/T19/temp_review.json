@@ -1,0 +1,251 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Draft, review, and negotiate commercial agreements",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate has a background in software engineering (Python, FastAPI, Django, PostgreSQL) and shows no evidence of legal experience or drafting commercial agreements."
+    },
+    {
+      "requirement": "Support corporate governance matters",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience or background in corporate governance, board resolutions, or statutory amendments is present in the CV."
+    },
+    {
+      "requirement": "Legal due diligence audits",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of conducting legal due diligence audits or M&A transaction support."
+    },
+    {
+      "requirement": "Legal research",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No background or experience in conducting legal research, analyzing legislation, or drafting legal opinions."
+    },
+    {
+      "requirement": "Liaise with public regulatory bodies and authorities",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience interacting with regulatory bodies, commercial registries, or tax authorities in a legal capacity."
+    },
+    {
+      "requirement": "Pre-litigation commercial dispute resolution",
+      "category": "Responsibilities / Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of pre-litigation dispute resolution or settlement negotiations."
+    },
+    {
+      "requirement": "Portuguese commercial law knowledge",
+      "category": "Domain Knowledge",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's education is in Informatics and Computing Engineering (FEUP), with no indication of legal studies or knowledge of commercial law."
+    },
+    {
+      "requirement": "Legal analytical reasoning and drafting precision",
+      "category": "Competencies",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of legal reasoning or legal drafting skills."
+    },
+    {
+      "requirement": "Portuguese communication skills",
+      "category": "Communication",
+      "status": "uncertain",
+      "evidence": [],
+      "reasoning": "While the candidate is located or educated in Portugal (FEUP), the CV does not explicitly state language proficiencies."
+    },
+    {
+      "requirement": "English proficiency",
+      "category": "Communication",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No explicit mention of English proficiency or ability to negotiate in English."
+    },
+    {
+      "requirement": "University degree in Law (Licenciatura em Direito)",
+      "category": "Education",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Candidate holds a B.Sc. in Informatics and Computing Engineering, not a degree in Law."
+    },
+    {
+      "requirement": "Full admission to the Bar Association or trainee lawyer",
+      "category": "Bar Admission",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No bar admission or legal trainee status indicated."
+    },
+    {
+      "requirement": "GDPR / RGPD",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience or certification regarding GDPR in corporate operations."
+    },
+    {
+      "requirement": "Familiarity with commercial registry electronic portals and judicial platforms",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No familiarity with Citius or commercial registry portals."
+    },
+    {
+      "requirement": "Basic understanding of financial statements and corporate accounting",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No evidence of financial statement or corporate accounting knowledge."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Diogo Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's full name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No physical location or address is specified in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is present."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is present in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A concise professional summary is included at the top of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Backend Software Engineer at CloudScale (2021-Present)"
+      ],
+      "relevance": "High",
+      "reasoning": "Detailed professional experience in backend software engineering is provided."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering, FEUP (2017-2020)"
+      ],
+      "relevance": "High",
+      "reasoning": "Educational background is clearly documented."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Python, FastAPI, Django, PostgreSQL, Redis, Docker, RabbitMQ, Linux, Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills are categorized and listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications are listed in the CV."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No spoken or written languages are explicitly listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No independent projects section is included."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "University degree in Law (Licenciatura em Direito)",
+    "Bar admission or trainee lawyer status",
+    "Experience in commercial agreement drafting and negotiation",
+    "Knowledge of Portuguese commercial law and corporate governance",
+    "Contact information (email, phone number)"
+  ],
+  "weak_evidence": [],
+  "strengths": [
+    "Clear, structured technical CV format detailing software engineering experience",
+    "Demonstrated backend engineering experience with Python, FastAPI, Django, and PostgreSQL"
+  ],
+  "weaknesses": [
+    "Complete absence of legal education, qualifications, and professional experience required for a Junior Associate Lawyer role",
+    "Missing essential contact details (email and phone number)"
+  ],
+  "overall_assessment": "The candidate is a backend software engineer with professional experience in Python, APIs, and databases, whereas the target position is a Junior Associate Lawyer in Corporate & Commercial Law. There is a total mismatch between the candidate's technical profile and the legal requirements of the job posting.",
+  "reasoning": "The evaluation compares a structured CV belonging to a software engineer with 3 years of experience against a job posting for a Junior Associate Lawyer requiring a law degree, bar admission, and legal competencies. All mandatory legal requirements and qualifications are completely absent from the CV."
+}
