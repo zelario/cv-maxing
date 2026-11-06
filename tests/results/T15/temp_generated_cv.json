@@ -1,0 +1,107 @@
+{
+  "contact": {
+    "name": "Tiago Ribeiro",
+    "headline": "Growth Marketing & Paid Media Specialist",
+    "specialisation": "Digital Marketing & Paid Media",
+    "phone": "+351 932 109 876",
+    "email": "tiago.ribeiro.mkt@example.com",
+    "location_city": "Porto/Braga",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/tiagoribeiro-mkt",
+    "github": "",
+    "portfolio": "https://tiaboribeiro.com"
+  },
+  "summary": "Results-driven Growth Marketing & Paid Media Specialist with 3+ years of experience managing paid traffic acquisition campaigns across Meta Ads and Google Ads. Proficient in conversion funnel optimization, GA4 analytics, and A/B testing, delivering successful B2B lead generation and e-commerce growth.",
+  "experience": [
+    {
+      "title": "Digital Marketing & Paid Media Specialist",
+      "dates": "October 2021 – Present",
+      "company": "Impulso Digital Agency",
+      "location": "Portugal",
+      "bullets": [
+        "Managing high-performance paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation.",
+        "Designing and executing structured A/B tests on ad creatives, hooks, and landing pages to optimize conversion rates (CRO).",
+        "Configuring conversion tracking, event pixels, and event reporting utilizing Google Analytics 4 (GA4) and Google Tag Manager.",
+        "Building conversion funnel performance reports and quantitative data models utilizing Google Sheets and Google Analytics 4.",
+        "Performing on-page SEO optimization and applying direct-response copywriting principles to ad assets."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Communication Sciences and Marketing",
+      "dates": "2018 – 2021",
+      "institution": "University of Minho",
+      "location": "Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Paid Media & Advertising",
+      "skills": [
+        "Meta Ads",
+        "Meta Ads Manager",
+        "Google Ads (Search, Shopping, Performance Max)",
+        "Google Ads Interface"
+      ]
+    },
+    {
+      "category_name": "Analytics & Tracking",
+      "skills": [
+        "Google Analytics 4 (GA4)",
+        "Google Tag Manager",
+        "Looker Studio",
+        "Google Sheets / Excel Modeling"
+      ]
+    },
+    {
+      "category_name": "Marketing Methodologies",
+      "skills": [
+        "Conversion Rate Optimization (CRO)",
+        "A/B Testing",
+        "Direct-Response Copywriting",
+        "Search Engine Optimization (SEO)",
+        "Email Marketing Automation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Ads Search Certification",
+      "issuer": "Google Skillshop",
+      "year": "Active"
+    },
+    {
+      "name": "Google Analytics 4 (GA4) Certification",
+      "issuer": "Google Skillshop",
+      "year": "Active"
+    },
+    {
+      "name": "Meta Certified Digital Marketing Associate",
+      "issuer": "Meta",
+      "year": "Active"
+    },
+    {
+      "name": "HubSpot Email Marketing Certification",
+      "issuer": "HubSpot",
+      "year": "Active"
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

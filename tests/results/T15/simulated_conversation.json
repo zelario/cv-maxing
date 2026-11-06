@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target job title is 'Growth Marketing & Paid Media Specialist'. Do you confirm using this as your headline? (Yes/No)",
+    "answer": "Yes, I confirm using \"Growth Marketing & Paid Media Specialist\" as my headline."
+  },
+  {
+    "question": "We found your name is 'Tiago Ribeiro', but your email, phone, location, and LinkedIn URL are missing. Do you have an email address, phone number, location, and LinkedIn URL to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is tiago.ribeiro.mkt@example.com, my phone number is +351 932 109 876, my location is Porto/Braga, Portugal, and my LinkedIn URL is https://www.linkedin.com/in/tiagoribeiro-mkt."
+  },
+  {
+    "question": "We found your professional experience as a 'Digital Marketing Specialist' at 'Impulso Digital Agency' (2021-Present). Do you confirm this work history? (Yes/No)",
+    "answer": "Yes, I confirm this work history. I have been working as a Digital Marketing & Paid Media Specialist at Impulso Digital Performance Agency since October 2021."
+  },
+  {
+    "question": "We found your education is a 'B.Sc. in Communication Sciences and Marketing' from the 'University of Minho' (2018-2021). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm my academic background is a B.Sc. in Communication Sciences and Marketing from the University of Minho (2018–2021), with a final grade of 15/20."
+  },
+  {
+    "question": "The job description mentions technologies like Google Tag Manager, A/B testing, Google Sheets / Excel modeling, and direct-response copywriting. Do you have professional experience with any of these to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have hands-on professional experience with all of those areas. I utilize Google Tag Manager and Google Analytics 4 for conversion tracking, structure A/B tests for ad creatives and landing pages, build marketing reports in Google Sheets and Looker Studio, and apply direct-response copywriting principles to my campaigns."
+  },
+  {
+    "question": "We noticed there are no languages listed in your CV. Do you speak any other languages (e.g., English, Portuguese) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I am a native Portuguese speaker and have C1 Full Professional proficiency in English."
+  },
+  {
+    "question": "We noticed there are no certifications listed in your CV. Do you have any certifications or licenses (e.g., Google Ads, Meta Ads) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have several active certifications including Google Ads Search, Google Analytics 4 (GA4) via Google Skillshop, Meta Certified Digital Marketing Associate, and HubSpot Email Marketing."
+  },
+  {
+    "question": "We noticed there are no standalone projects listed in your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "No, I do not have code repositories or standalone software projects. However, I have a professional portfolio showcasing my past paid campaigns and case studies available at https://tiaboribeiro.com."
+  },
+  {
+    "question": "We propose highlighting your 3 years of performance marketing experience, paid traffic acquisition campaigns, and conversion funnels in your summary. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

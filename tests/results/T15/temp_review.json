@@ -1,0 +1,323 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Meta Ads",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation."
+      ],
+      "reasoning": "The candidate has documented hands-on experience managing paid advertising campaigns on Meta Ads within their professional experience."
+    },
+    {
+      "requirement": "Google Ads",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation."
+      ],
+      "reasoning": "The candidate demonstrates practical experience planning and managing Google Ads campaigns in their current role."
+    },
+    {
+      "requirement": "A/B testing",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Conversion Funnel Optimization"
+      ],
+      "reasoning": "Conversion Funnel Optimization is listed as a core competency, but explicit experience with structured A/B testing on creatives and landing pages is not detailed."
+    },
+    {
+      "requirement": "Google Analytics 4 (GA4)",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Building conversion funnel performance reports utilizing Google Analytics 4."
+      ],
+      "reasoning": "The candidate demonstrates practical use of GA4 for building performance reports and tracking conversion funnels."
+    },
+    {
+      "requirement": "Google Tag Manager",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Google Tag Manager is not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "Meta Ads Manager",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation."
+      ],
+      "reasoning": "Experience with Meta Ads implies familiarity with the advertising platform and its interface."
+    },
+    {
+      "requirement": "Google Ads interface",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation."
+      ],
+      "reasoning": "Experience managing Google Ads campaigns demonstrates working knowledge of the platform's interface."
+    },
+    {
+      "requirement": "Direct-response copywriting",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Copywriting"
+      ],
+      "reasoning": "Copywriting is included in core competencies, but specific application to direct-response ads or sales funnels is not contextualized in experience."
+    },
+    {
+      "requirement": "Google Sheets / Excel modeling",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Spreadsheet modeling or specific tool usage beyond GA4 is not mentioned."
+    },
+    {
+      "requirement": "English communication",
+      "category": "Skills",
+      "status": "uncertain",
+      "evidence": [],
+      "reasoning": "No explicit mention of English communication proficiency or stakeholder presentation skills appears in the CV."
+    },
+    {
+      "requirement": "Lifecycle retention and email marketing automation tools (Klaviyo, HubSpot, ActiveCampaign)",
+      "category": "Preferred Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Email Marketing"
+      ],
+      "reasoning": "Email Marketing is listed as a competency, but specific automation tools like Klaviyo, HubSpot, or ActiveCampaign are not mentioned."
+    },
+    {
+      "requirement": "Landing page builders (Webflow, Unbounce, Shopify) and basic HTML/CSS",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of landing page builders or basic HTML/CSS."
+    },
+    {
+      "requirement": "Directly managing paid acquisition campaigns in Meta Ads and Google Ads (2+ years)",
+      "category": "Experience Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Marketing specialist with 3 years of professional experience managing paid traffic acquisition campaigns",
+        "Impulso Digital Agency (2021-Present)"
+      ],
+      "reasoning": "The candidate has 3 years of professional experience, exceeding the 2+ years requirement, with direct experience in Meta Ads and Google Ads."
+    },
+    {
+      "requirement": "Previous experience in a high-growth digital marketing agency or fast-scaling e-commerce startup",
+      "category": "Experience Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Impulso Digital Agency (2021-Present)"
+      ],
+      "reasoning": "Candidate works at a digital agency ('Impulso Digital Agency'), but the high-growth scale or e-commerce focus is not explicitly described."
+    },
+    {
+      "requirement": "Bachelor's degree in Marketing, Business Administration, Communication, Data Analytics, or related field",
+      "category": "Education Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Communication Sciences and Marketing",
+        "University of Minho (2018-2021)"
+      ],
+      "reasoning": "The candidate holds a B.Sc. in Communication Sciences and Marketing from the University of Minho."
+    },
+    {
+      "requirement": "Official active certifications: Google Ads Search/Measurement Certification or Meta Certified Media Buying Professional",
+      "category": "Certifications",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No certifications are listed in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "name",
+      "status": "present",
+      "evidence": [
+        "Tiago Ribeiro"
+      ],
+      "relevance": "Essential contact and personal identification.",
+      "reasoning": "Candidate's full name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter communication and interview outreach.",
+      "reasoning": "No email address is provided in the CV text."
+    },
+    {
+      "section": "Header",
+      "field": "phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct, timely phone contact.",
+      "reasoning": "No phone number is included in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Determines geographical eligibility for remote or hybrid positions.",
+      "reasoning": "Candidate location is missing from the CV header and profile."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Allows recruiters to review full professional network and recommendations.",
+      "reasoning": "No LinkedIn profile link is provided."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Showcases previous campaign work, reports, or creative portfolios.",
+      "reasoning": "No portfolio or GitHub link is present in the document."
+    },
+    {
+      "section": "Summary",
+      "field": "professional summary",
+      "status": "present",
+      "evidence": [
+        "Marketing specialist with 3 years of professional experience managing paid traffic acquisition campaigns, conversion funnels, and performance analytics."
+      ],
+      "relevance": "Provides an immediate overview of candidate background and expertise.",
+      "reasoning": "A concise summary section is included right below the header."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "experience",
+      "status": "present",
+      "evidence": [
+        "Digital Marketing Specialist, Impulso Digital Agency (2021-Present)"
+      ],
+      "relevance": "Demonstrates career progression, relevant job roles, and applied skills.",
+      "reasoning": "Work history is detailed with roles, company, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Communication Sciences and Marketing, University of Minho (2018-2021)"
+      ],
+      "relevance": "Validates formal academic background matching required fields.",
+      "reasoning": "Degree, institution, and completion dates are clearly specified."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "technical skills",
+      "status": "present",
+      "evidence": [
+        "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO), Google Analytics 4"
+      ],
+      "relevance": "Highlights primary technical tools and competencies possessed by the candidate.",
+      "reasoning": "A dedicated core competencies section lists key marketing platforms."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "tools/software",
+      "status": "present",
+      "evidence": [
+        "Google Ads, Meta Ads, Google Analytics 4"
+      ],
+      "relevance": "Identifies familiarity with industry-standard advertising and analytics software.",
+      "reasoning": "Specific platform software tools are named within core competencies."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "methodologies",
+      "status": "present",
+      "evidence": [
+        "on-page SEO optimization",
+        "conversion funnel performance reports"
+      ],
+      "relevance": "Shows understanding of digital marketing processes and optimization techniques.",
+      "reasoning": "Methodologies such as SEO and conversion funnel reporting are described in work experience."
+    },
+    {
+      "section": "Core Competencies",
+      "field": "transferable skills",
+      "status": "present",
+      "evidence": [
+        "Copywriting",
+        "Email Marketing",
+        "Conversion Funnel Optimization"
+      ],
+      "relevance": "Broadens applicability across adjacent marketing disciplines.",
+      "reasoning": "Transferable marketing skills are explicitly listed."
+    },
+    {
+      "section": "Document",
+      "field": "languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Crucial for assessing multinational and multilingual communication capabilities.",
+      "reasoning": "No languages section or mention of spoken languages is included."
+    },
+    {
+      "section": "Document",
+      "field": "certifications/training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Validates official platform accreditations (e.g. Google/Meta certifications).",
+      "reasoning": "No certifications or professional training courses are listed."
+    },
+    {
+      "section": "Document",
+      "field": "projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides independent proof of practical campaign execution beyond employment.",
+      "reasoning": "No standalone project section or external project links are present."
+    },
+    {
+      "section": "Document",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for compliance when applying to positions within the European Union.",
+      "reasoning": "No GDPR privacy clause is included in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "Google Tag Manager configuration and troubleshooting experience",
+    "Spreadsheet modeling and quantitative data analysis (Google Sheets / Excel)",
+    "English communication and executive stakeholder presentation proof",
+    "Official active platform certifications (Google Ads or Meta Certified)",
+    "Contact information (email, phone, location, and LinkedIn profile URL)"
+  ],
+  "weak_evidence": [
+    "A/B testing experience for creatives and landing pages is not explicitly detailed",
+    "Direct-response copywriting is listed as a skill but lacks context in professional experience",
+    "Agency experience is present, but high-growth e-commerce scaling context is unverified"
+  ],
+  "strengths": [
+    "Meets the 2+ years experience requirement with 3 years of professional digital marketing experience",
+    "Holds a relevant Bachelor's degree in Communication Sciences and Marketing",
+    "Demonstrates hands-on experience managing paid acquisition campaigns on Meta Ads and Google Ads",
+    "Familiar with Google Analytics 4 for building conversion funnel performance reports"
+  ],
+  "weaknesses": [
+    "Critical contact details such as email, phone number, location, and LinkedIn profile are entirely missing from the CV",
+    "Lacks technical evidence for advanced tracking tools such as Google Tag Manager",
+    "No official platform certifications are listed to satisfy the preferred qualifications",
+    "Absence of quantitative performance metrics (e.g., ad budgets managed, ROAS achieved)"
+  ],
+  "overall_assessment": "The candidate meets several core requirements including educational background, duration of experience (3 years), and foundational platform skills in Meta Ads, Google Ads, and GA4. However, notable evidence gaps exist regarding advanced tracking tools (Google Tag Manager), spreadsheet modeling, A/B testing, and direct-response copywriting. Furthermore, critical contact information and professional profile links are entirely absent from the CV.",
+  "reasoning": "The evaluation maps candidate experience and skills directly against the structured job posting requirements using evidence status categories, and independently inspects the CV across all standard completeness dimensions without assigning numeric scores."
+}
