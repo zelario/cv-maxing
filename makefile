@@ -1,21 +1,19 @@
-.PHONY: run dev test help docker-build docker-run docker-up docker-down
+.PHONY: build app dev stop test cli
 
-run: dev
-
-dev:
-	uvicorn src.api:app --reload
-
-test:
-	python tests/src/validation_pipeline.py
-
-docker-build:
+build:
 	docker compose build
 
-docker-run:
-	docker compose run --rm --service-ports cv-maxing
+app:
+	docker compose run --rm --service-ports web
 
-docker-up:
-	docker compose up
+dev:
+	docker compose up -d dev
 
-docker-down:
-	docker compose down
+stop:
+	docker compose stop dev && docker compose rm -f dev
+
+test:
+	@read -p "Test ID: " id && docker compose exec dev python tests/src/validation_pipeline.py --test-id $$id
+
+cli:
+	docker compose exec dev python src/run.py

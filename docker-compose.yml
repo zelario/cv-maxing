@@ -1,13 +1,33 @@
 services:
-  cv-maxing:
+  web:
     build:
       context: .
       dockerfile: Dockerfile
     image: cv-maxing:latest
-    container_name: cv-maxing-container
+    container_name: cv-maxing-web
     ports:
       - "8000:8000"
     env_file:
       - .env
     volumes:
       - ./temp:/app/temp
+      - ./src:/app/src
+      - ./frontend:/app/frontend
+      - ./tests:/app/tests
+    command: ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  dev:
+    image: cv-maxing:latest
+    container_name: cv-maxing-dev
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./temp:/app/temp
+      - ./src:/app/src
+      - ./frontend:/app/frontend
+      - ./tests:/app/tests
+    stdin_open: true
+    tty: true
+    command: ["sleep", "infinity"]

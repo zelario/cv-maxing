@@ -15,7 +15,7 @@ RESULTS_DIR = PROJECT_ROOT / "tests" / "results"
 TEMP_DIR = PROJECT_ROOT / "temp"
 
 # ==============================================================================
-# OFFICIAL TEST MATRIX (T01 - T20)
+# OFFICIAL TEST MATRIX (T01 - T30)
 # ==============================================================================
 TEST_CASES: dict[str, tuple[str, str]] = {
     "T01": ("tomas_junior", "data_scientist_intern"),
@@ -38,6 +38,16 @@ TEST_CASES: dict[str, tuple[str, str]] = {
     "T18": ("beatriz_lawyer", "backend_engineer_mid"),
     "T19": ("diogo_backend", "lawyer_junior"),
     "T20": ("goncalo_doctor", "data_scientist_intern"),
+    "T21": ("rita_lead", "tech_lead_senior"),
+    "T22": ("andre_designer", "product_designer_mid"),
+    "T23": ("rita_lead", "backend_engineer_mid"),
+    "T24": ("diogo_backend", "tech_lead_senior"),
+    "T25": ("mariana_frontend", "product_designer_mid"),
+    "T26": ("andre_designer", "fullstack_developer_mid"),
+    "T27": ("pedro_transition", "tech_lead_senior"),
+    "T28": ("tomas_junior", "product_designer_mid"),
+    "T29": ("tiago_marketing", "product_designer_mid"),
+    "T30": ("rita_lead", "devops_engineer_mid"),
 }
 # ==============================================================================
 

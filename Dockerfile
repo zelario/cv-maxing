@@ -6,7 +6,6 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-# Install system utilities needed for Playwright and dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
@@ -17,7 +16,6 @@ RUN python -m pip install --upgrade pip \
     && find /usr/local -depth -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true \
     && find /usr/local -type f -name '*.pyc' -delete 2>/dev/null || true
 
-# Install only Playwright Chromium Headless Shell and its Linux system dependencies, then prune redundant files
 RUN python -m playwright install --with-deps --only-shell chromium \
     && rm -rf /root/.cache/ms-playwright/chromium-[0-9]* 2>/dev/null || true \
     && apt-get clean \
