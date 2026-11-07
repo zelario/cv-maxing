@@ -1,12 +1,81 @@
-# CV Maxing — Official Evaluation Test Results (T01 – T30)
+# CV Maxing: Evaluation Suite & Test Results
 
-This document presents the comprehensive validation and benchmark results for the **CV Maxing** pipeline across **30 official test scenarios** (T01 – T30), plus the rapid regression test scenario (**T0**).
-
-Each test crosses one of **10 Diverse Candidate Profiles** against one of **10 Distinct Job Postings**, spanning Technology (Software, Data, DevOps, Architecture), Product Design, and Non-IT domains (Healthcare, Law, Digital Marketing).
+This directory contains the complete automated evaluation suite, test fixtures, candidate profiles, job descriptions, and archived benchmark results for the **CV Maxing** pipeline across **30 official test scenarios** (T01 – T30), plus the rapid regression test scenario (**T0**).
 
 ---
 
-## 1. Executive Summary & Aggregate KPIs
+## 1. How Validation Was Performed (Methodology & Architecture)
+
+The validation suite implements an automated, reproducible Human-Centered AI (HCAI) benchmarking harness that runs without human intervention while preserving full Human-in-the-Loop (HITL) interactive semantics:
+
+```mermaid
+flowchart TD
+    subgraph TestInputs [1. Test Fixtures]
+        RawCV[Candidate CV PDF\ntests/cvs/]
+        JobDoc[Target Job Posting\ntests/jobs/]
+        ProfileDoc[Factual Ground Truth\ntests/profiles/]
+    end
+
+    subgraph PipelineExecution [2. CV Maxing Core Pipeline]
+        RawCV --> Task1[parse_cv_task]
+        JobDoc --> Task2[parse_job_task]
+        Task1 --> Task3[review_cv_task]
+        Task2 --> Task3
+        Task3 --> Task4[optimize_cv_task]
+        Task4 <-->|ask_user tool| SimCandidate[Candidate Simulator\ntests/src/candidate.py]
+        Task4 --> Task5[generate_cv_task]
+        Task5 --> PDFGen[Playwright Chromium PDF\nwith GDPR Bottom-Anchoring]
+    end
+
+    ProfileDoc -.->|Ground Truth & Negative Constraints| SimCandidate
+
+    subgraph Evaluation [3. Independent LLM-as-a-Judge]
+        PDFGen --> Judge[LLM-as-a-Judge\ntests/src/judge.py]
+        Task1 -.-> Judge
+        Task2 -.-> Judge
+        Task3 -.-> Judge
+        Task4 -.-> Judge
+        Task5 -.-> Judge
+        SimCandidate -.->|Transcript| Judge
+        Judge --> ValResult[ValidationResult Model\nScores + Hallucination Audit]
+    end
+
+    subgraph Archiving [4. Artifact Archival]
+        ValResult --> ResultsDir[tests/results/TXX/]
+        PDFGen --> ResultsDir
+    end
+```
+
+### Key Validation Components:
+
+1. **Automated Matrix Runner ([`tests/src/validation_pipeline.py`](src/validation_pipeline.py))**:
+   - Manages test case setup, parameter injection, intercepting the optimizer's `ask_user` tool via `set_question_handler`, saving intermediate JSON schemas, compiling PDFs, invoking the Judge, and archiving all artifacts.
+
+2. **Candidate Simulator ([`tests/src/candidate.py`](src/candidate.py))**:
+   - Acts as the human applicant during the interactive 9-section optimization interview.
+   - Grounded in a comprehensive factual profile ([`tests/profiles/`](profiles/)) containing verified degrees, grades, dates, company names, projects, and **strict negative constraints** (e.g., *"Candidate has never used AWS or Kafka"*, *"Candidate is a lawyer and refuses software titles"*).
+   - Truthfully provides missing contact details, degrees, or links when asked, and explicitly declines unevidenced technologies, simulating realistic candidate behavior.
+
+3. **Independent LLM-as-a-Judge ([`tests/src/judge.py`](src/judge.py))**:
+   - Employs an independent model (`gemini-3.5-flash-lite`) operating on an objective 5-dimension evaluation rubric ([`tests/src/models/validation.py`](src/models/validation.py)).
+   - Compares the final `GeneratedCV` against the ground-truth CV and conversation transcript.
+   - Evaluates:
+     - **Accuracy (0–10)**: Strict factual truthfulness. Any hallucination automatically caps this score at <= 6.
+     - **Job Alignment (0–10)**: How effectively verified background is tailored to job requirements without fabricating claims.
+     - **Completeness (0–10)**: Presence and integration of all standard CV sections, contact details, and user-provided inputs.
+     - **Clarity (0–10)**: Professional tone, action-verb bullet points, clean skill categorization, and typography.
+     - **Evidence (0–10)**: Contextual grounding of skills in tangible experience or projects rather than buzzword lists.
+     - **Hallucination Detection (`list[str]`)**: Explicitly scans for any skill, credential, metric, or title absent from the candidate's verified record.
+
+4. **Two-Pass Deterministic PDF Generation ([`src/tools/cv_generation.py`](../src/tools/cv_generation.py))**:
+   - Renders structured data via Jinja2 into Chromium A4 PDF.
+   - Automatically measures page geometry using `pdfplumber` and dynamically adjusts the `.consent` margin so the GDPR consent notice is pinned cleanly to the bottom of the page in a single line without causing second-page overflows.
+
+---
+
+## 2. Executive Summary & Aggregate KPIs
+
+Across all **30 official test scenarios** (T01 – T30):
 
 | Evaluation Dimension | Mean Score (Scale 1–10) | Benchmark Target | Success Rate |
 |---|:---:|:---:|:---:|
@@ -21,7 +90,7 @@ Each test crosses one of **10 Diverse Candidate Profiles** against one of **10 D
 
 ---
 
-## 2. Complete Test Matrix Performance Table
+## 3. Complete Test Matrix Performance Table
 
 | Test ID | Candidate Profile | Target Job Role | Scenario / Archetype | Accuracy | Alignment | Completeness | Clarity | Evidence | Hallucinations | PDF |
 |:---:|---|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -58,35 +127,33 @@ Each test crosses one of **10 Diverse Candidate Profiles** against one of **10 D
 
 ---
 
-## 3. Analysis by Test Archetype
+## 4. Analysis by Test Archetype
 
-The 30 test scenarios were designed to evaluate the system under five distinct operational conditions:
-
-### 3.1 Direct Domain Matches (8 Tests: T01, T04, T11, T12, T14, T15, T21, T22)
+### 4.1 Direct Domain Matches (8 Tests: T01, T04, T11, T12, T14, T15, T21, T22)
 - **Mean Accuracy**: 10.00 / 10
 - **Mean Job Alignment**: 9.50 / 10
 - **Mean Completeness**: 10.00 / 10
 - **Key Findings**: Near-perfect alignment achieved through comprehensive alignment of technical keywords, verified project highlighting, and metric extraction during interactive Human-in-the-Loop questions.
 
-### 3.2 Lateral Specializations & Career Progression (8 Tests: T02, T05, T06, T07, T23, T24, T25, T30)
+### 4.2 Lateral Specializations & Career Progression (8 Tests: T02, T05, T06, T07, T23, T24, T25, T30)
 - **Mean Accuracy**: 10.00 / 10
 - **Mean Job Alignment**: 7.88 / 10
 - **Mean Completeness**: 9.75 / 10
 - **Key Findings**: Strong alignment achieved by strategically prioritizing transferable competencies (e.g. backend fundamentals applied to fullstack roles, frontend skills applied to UI/UX product design), while transparently preserving evidence gaps for unfamiliar secondary tools.
 
-### 3.3 Career Transition & Reskilling (3 Tests: T09, T10, T27)
+### 4.3 Career Transition & Reskilling (3 Tests: T09, T10, T27)
 - **Mean Accuracy**: 10.00 / 10
 - **Mean Job Alignment**: 6.00 / 10
 - **Mean Completeness**: 10.00 / 10
 - **Key Findings**: Accurately showcases bootcamp projects and quantitative transferable abilities (e.g., Civil Engineering analytical rigor applied to software development) without exaggerating junior tenure. For high-seniority roles (T27), the system maintains 10/10 accuracy and correctly refuses to claim senior leadership tenure.
 
-### 3.4 Non-IT Professional Domains (4 Tests: T11, T12, T14, T15)
+### 4.4 Non-IT Professional Domains (4 Tests: T11, T12, T14, T15)
 - **Mean Accuracy**: 10.00 / 10
 - **Mean Job Alignment**: 9.75 / 10
 - **Mean Completeness**: 10.00 / 10
 - **Key Findings**: Demonstrates domain-agnostic adaptability. The system expertly structures clinical competencies for Healthcare (Medicine, Nursing), legal casework and Bar association credentials for Law, and campaign metrics and paid media tools for Digital Marketing.
 
-### 3.5 Cross-Domain Stress Tests / Negative Constraints (11 Tests: T03, T08, T13, T16, T17, T18, T19, T20, T26, T28, T29)
+### 4.5 Cross-Domain Stress Tests / Negative Constraints (11 Tests: T03, T08, T13, T16, T17, T18, T19, T20, T26, T28, T29)
 - **Mean Accuracy**: 10.00 / 10
 - **Mean Job Alignment**: 3.27 / 10
 - **Mean Completeness**: 9.82 / 10
@@ -97,7 +164,7 @@ The 30 test scenarios were designed to evaluate the system under five distinct o
 
 ---
 
-## 4. Human-Centered AI (HCAI) Verification
+## 5. Human-Centered AI (HCAI) Verification
 
 1. **Factual Evidence Preservation**:
    - Skills or requirements are included only if explicitly supported by the candidate's CV or verified interactive responses.
@@ -113,14 +180,49 @@ The 30 test scenarios were designed to evaluate the system under five distinct o
 
 ---
 
-## 5. Artifact Directory Structure
+## 6. How to Run the Tests
 
-Every test directory in `tests/results/TXX/` contains a complete audit trail:
-- `optimized_cv.pdf`: Final pixel-perfect single-page A4 PDF rendered via Chromium.
-- `simulated_conversation.json`: Verbatim transcript of all interactive HITL questions and candidate responses.
-- `temp_cv.json`: Extracted source CV representation (`StructuredCV`).
-- `temp_job.json`: Extracted job posting representation (`StructuredJob`).
-- `temp_review.json`: Objective gap analysis and completeness review (`ReviewerResult`).
-- `temp_optimization.json`: Proposed changes and evidence audit trail (`CVOptimizationResult`).
-- `temp_generated_cv.json`: Final target model (`GeneratedCV`).
-- `temp_judge.json`: Independent LLM-as-a-Judge evaluation scores and qualitative feedback.
+The test suite runs inside the persistent Docker development container to ensure environment consistency:
+
+```bash
+# 1. Start persistent dev container
+make dev
+
+# 2. Run a specific test case interactively (T0, T01 - T30)
+make test
+
+# 3. Or run directly via Docker CLI
+docker compose exec dev python tests/src/validation_pipeline.py --test-id T01
+docker compose exec dev python tests/src/validation_pipeline.py --test-id T21
+
+# 4. Run only the Judge evaluation on existing outputs
+docker compose exec dev python tests/src/validation_pipeline.py --judge-only
+```
+
+---
+
+## 7. Directory & Artifact Structure
+
+```text
+tests/
+├── README.md                # This comprehensive evaluation report
+├── cvs/                     # Raw input CV PDFs (10 candidates)
+├── jobs/                    # Target job descriptions in Markdown (10 postings)
+├── profiles/                # Ground-truth candidate profiles & negative constraints
+├── results/                 # Archived evaluation outputs (T0, T01 - T30)
+│   └── TXX/
+│       ├── optimized_cv.pdf           # Generated pixel-perfect A4 PDF
+│       ├── simulated_conversation.json# Full 9-question interview transcript
+│       ├── temp_cv.json               # Extracted StructuredCV model
+│       ├── temp_job.json              # Extracted StructuredJob model
+│       ├── temp_review.json           # Reviewer gap analysis model
+│       ├── temp_optimization.json     # Optimizer audit trail & proposed changes
+│       ├── temp_generated_cv.json     # Final GeneratedCV model
+│       └── temp_judge.json            # Judge scores & qualitative evaluation
+└── src/                     # Validation suite source code
+    ├── candidate.py         # Autonomous Candidate Simulator
+    ├── judge.py             # LLM-as-a-Judge implementation
+    ├── validation_pipeline.py # Matrix runner & CLI
+    └── models/
+        └── validation.py    # Pydantic evaluation schema
+```
