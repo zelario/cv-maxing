@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Regarding your target role: Your CV currently states you are seeking an entry-level opportunity in data science or software engineering, and you are applying for a Data Scientist Intern position at Revolut. Does this target role match your intended direction, or would you prefer a different focus?",
+    "answer": "Yes, this target role matches my intended direction as I am looking for opportunities in data science. My contact details are: Email: tomas.silva.dev@example.com, Phone: +351 912 345 678, LinkedIn: https://www.linkedin.com/in/tomassilva-dev, and GitHub: https://github.com/tomassilva-data."
+  },
+  {
+    "question": "Regarding your contact & links: We noticed your CV currently lacks contact details. You provided your email (tomas.silva.dev@example.com), phone (+351 912 345 678), LinkedIn (https://www.linkedin.com/in/tomassilva-dev), and GitHub (https://github.com/tomassilva-data). Do you have any additional contact links or a portfolio website to include?",
+    "answer": "That is all my correct contact information and professional links; I do not have a separate portfolio website to add."
+  },
+  {
+    "question": "Regarding your employment history: Your CV currently lists a 3-month Curricular Summer Internship focused on software testing and internal tool support. Does this cover your full work history, or would you wish to add other positions, company names, locations, or achievements?",
+    "answer": "Yes, that 3-month internship at SoftInov Soluções Tecnológicas (July–September 2023) covers my professional work history. During that time, I focused on automating unit and integration testing with pytest, writing SQL queries, and handling PostgreSQL database migrations."
+  },
+  {
+    "question": "Regarding your education: Your CV lists a B.Sc. in Computer Science from the University of Coimbra (2021-2024) with a grade of 15/20. Does this represent your full academic background, or do you wish to add other degrees, thesis details, or relevant coursework?",
+    "answer": "My B.Sc. in Computer Science from the University of Coimbra (2021-2024) with a grade of 15/20 is correct, and I also completed a thesis titled \"Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning\" (Grade: 17/20) alongside relevant coursework such as Machine Learning (17/20) and Probability & Statistics (16/20)."
+  },
+  {
+    "question": "Regarding technical skills gaps: The target job posting mentions key technologies and concepts like statistics, probability, quantitative analysis, machine learning model evaluation, experimentation, A/B testing, data visualization, and cloud platforms. Do you have experience with any of these or other relevant tools to add beyond your current skills?",
+    "answer": "Yes, I have strong academic foundations in statistics, probability, and machine learning model evaluation (including my thesis on customer churn using Scikit-Learn and Random Forest/XGBoost). However, I do not have experience with A/B testing, production cloud platforms, or distributed data technologies."
+  },
+  {
+    "question": "Regarding languages: Your CV currently does not list any spoken or natural languages. Does this cover all languages you speak, or would you like to add others and their proficiency levels?",
+    "answer": "Yes, I speak Portuguese as my native language and English at a C1 Advanced level (backed by a Cambridge Certificate), which I would like to add to my CV."
+  },
+  {
+    "question": "Regarding certifications: Your CV does not currently list any certifications. Do you hold any official certifications, licenses, or training to include?",
+    "answer": "I do not hold any official certifications or licenses beyond my academic degree. However, I have strong coursework and practical project experience in data science, including machine learning and statistics."
+  },
+  {
+    "question": "Regarding projects: Your CV details a Capstone Project on Customer Churn Analysis using Python, Pandas, Scikit-Learn, and PostgreSQL. Does this represent your main showcase work, or do you have additional projects, repositories, or demos to highlight?",
+    "answer": "That capstone project (which was my B.Sc. thesis graded 17/20 using 80k+ user records) is my main showcase work, but I also developed an E-Commerce Cohort & Sales SQL Analyzer and a Mini Inverted-Index Search Engine. My GitHub profile is https://github.com/tomassilva-data."
+  },
+  {
+    "question": "Regarding your summary focus: We propose highlighting your Computer Science B.Sc. with a 15/20 grade, strong foundation in Python, SQL, and Pandas, and proven experience in building data pipelines and machine learning models for customer churn analysis. Does this capture how you want to be presented, or would you prefer to emphasize a different angle?",
+    "answer": "That captures my background well, and I would also like to make sure my thesis grade (17/20) in customer retention and churn prediction is prominently featured. You can also include my contact details, LinkedIn (https://www.linkedin.com/in/tomassilva-dev), and GitHub (https://github.com/tomassilva-data) links."
+  }
+]

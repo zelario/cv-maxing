@@ -1,0 +1,99 @@
+{
+  "contact": {
+    "name": "Tomás Silva",
+    "headline": "Data Scientist Intern",
+    "specialisation": "Computer Science",
+    "phone": "+351 912 345 678",
+    "email": "tomas.silva.dev@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/tomassilva-dev",
+    "github": "https://github.com/tomassilva-data",
+    "portfolio": ""
+  },
+  "summary": "Computer Science graduate and Data Scientist Intern candidate with a 15/20 B.Sc. degree from the University of Coimbra. Expert in Python, SQL, and Scikit-Learn with proven academic and practical experience in building data pipelines, predictive models, and customer churn analysis.",
+  "experience": [
+    {
+      "title": "Curricular Summer Internship",
+      "dates": "July–September 2023",
+      "company": "SoftInov Soluções Tecnológicas",
+      "location": "Portugal",
+      "bullets": [
+        "Focused on automating unit and integration testing with pytest, writing SQL queries, and handling PostgreSQL database migrations.",
+        "Gained practical experience in QA methodologies, database management, and team collaboration."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "dates": "2021-2024",
+      "institution": "University of Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "Grade: 15/20 (Thesis Grade: 17/20)"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Tools",
+      "skills": [
+        "Python",
+        "SQL",
+        "Git",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "category_name": "Libraries & Concepts",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "Scikit-Learn",
+        "Statistics",
+        "Probability",
+        "Quantitative Analysis",
+        "Machine Learning Model Evaluation",
+        "Unit Testing"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "",
+      "certification": "Cambridge Certificate"
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Capstone Project: Customer Churn Analysis",
+      "dates": "2024",
+      "description": "Built a robust data pipeline in Python analyzing customer churn and retention using 80k+ user records with Pandas, Scikit-Learn (Random Forest/XGBoost), and PostgreSQL.",
+      "link": "https://github.com/tomassilva-data",
+      "volunteering_or_other": ""
+    },
+    {
+      "name": "E-Commerce Cohort & Sales SQL Analyzer",
+      "dates": "2023",
+      "description": "Developed analytical queries and Python scripts to extract customer retention cohorts and monitor sales KPIs.",
+      "link": "https://github.com/tomassilva-data",
+      "volunteering_or_other": ""
+    },
+    {
+      "name": "Mini Inverted-Index Search Engine",
+      "dates": "2023",
+      "description": "Implemented a keyword search and retrieval prototype in Python demonstrating data indexing and evaluation metrics.",
+      "link": "https://github.com/tomassilva-data",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

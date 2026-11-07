@@ -1,0 +1,187 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Tomás Silva\nComputer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.",
+      "proposed_content": "Tomás Silva | tomas.silva.dev@example.com | +351 912 345 678 | https://www.linkedin.com/in/tomassilva-dev | https://github.com/tomassilva-data\nData Science Intern candidate and Computer Science graduate with a 15/20 B.Sc. degree, expert in Python, SQL, and Scikit-Learn, with proven experience building data pipelines and predictive models for customer churn analysis.",
+      "rationale": "Incorporates contact information, professional links, and a tailored 2-3 line professional summary highlighting the candidate's identity, target role, core skills, and academic/project achievement.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Tomás Silva",
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
+      ],
+      "user_provided_evidence": [
+        "Email: tomas.silva.dev@example.com",
+        "Phone: +351 912 345 678",
+        "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+        "GitHub: https://github.com/tomassilva-data"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20",
+      "proposed_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20 (Thesis Grade: 17/20)\nRelevant Coursework: Machine Learning (17/20), Probability & Statistics (16/20)\nThesis: Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning",
+      "rationale": "Adds verified academic performance metrics and relevant coursework from candidate testimony, directly matching the Revolut Data Scientist Intern requirements for statistics and quantitative background.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science",
+        "University of Coimbra (2021-2024)",
+        "Grade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Thesis titled 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning' (Grade: 17/20)",
+        "Relevant coursework such as Machine Learning (17/20) and Probability & Statistics (16/20)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration.",
+      "proposed_content": "Curricular Summer Internship (3 months)\nSoftInov Soluções Tecnológicas (July–September 2023)\n- Focused on automating unit and integration testing with pytest, writing SQL queries, and handling PostgreSQL database migrations.\n- Gained practical experience in QA methodologies, database management, and team collaboration.",
+      "rationale": "Fills missing company name, location/dates, and concrete technical tasks (pytest, SQL queries, PostgreSQL migrations) provided by the user.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Curricular Summer Internship (3 months)",
+        "Focused on software testing and internal tool support, gaining practical experience in QA methodologies and team collaboration."
+      ],
+      "user_provided_evidence": [
+        "Company name: SoftInov Soluções Tecnológicas",
+        "Dates: July–September 2023",
+        "Tasks: Automating unit and integration testing with pytest, writing SQL queries, and handling PostgreSQL database migrations"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages & Tools: Python, SQL, Git\nLibraries/Concepts: Pandas, NumPy, Unit Testing",
+      "proposed_content": "Languages & Tools: Python, SQL, Git, PostgreSQL\nLibraries/Concepts: Pandas, NumPy, Scikit-Learn, Statistics, Probability, Quantitative Analysis, Machine Learning Model Evaluation, Unit Testing",
+      "rationale": "Expands the technical skills section with validated foundations in statistics, probability, and Scikit-Learn matching the target job description.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Languages & Tools: Python, SQL, Git",
+        "Libraries/Concepts: Pandas, NumPy, Unit Testing"
+      ],
+      "user_provided_evidence": [
+        "Strong academic foundations in statistics, probability, and machine learning model evaluation"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Key Projects",
+      "current_content": "Capstone Project: Customer Churn Analysis: Built a data pipeline in\nPython analyzing customer churn and retention using Pandas, Scikit-Learn,\nand PostgreSQL.",
+      "proposed_content": "Capstone Project: Customer Churn Analysis (B.Sc. Thesis): Built a robust data pipeline in Python analyzing customer churn and retention using 80k+ user records with Pandas, Scikit-Learn (Random Forest/XGBoost), and PostgreSQL.\n\nE-Commerce Cohort & Sales SQL Analyzer: Developed analytical queries and Python scripts to extract customer retention cohorts and monitor sales KPIs.\n\nMini Inverted-Index Search Engine: Implemented a keyword search and retrieval prototype in Python demonstrating data indexing and evaluation metrics.",
+      "rationale": "Adds scale details (80k+ records), model specifics (Random Forest/XGBoost) for the capstone project, and integrates the candidate's additional verified projects.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "user_provided_evidence": [
+        "Used 80k+ user records in B.Sc. thesis",
+        "Applied Random Forest/XGBoost",
+        "E-Commerce Cohort & Sales SQL Analyzer project",
+        "Mini Inverted-Index Search Engine project"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Advanced, Cambridge Certificate)",
+      "rationale": "Adds natural language proficiencies provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese as native language",
+        "English at C1 Advanced level backed by a Cambridge Certificate"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "Regarding your target role: Your CV currently states you are seeking an entry-level opportunity in data science or software engineering, and you are applying for a Data Scientist Intern position at Revolut. Does this target role match your intended direction, or would you prefer a different focus?",
+    "Regarding your contact & links: We noticed your CV currently lacks contact details. You provided your email (tomas.silva.dev@example.com), phone (+351 912 345 678), LinkedIn (https://www.linkedin.com/in/tomassilva-dev), and GitHub (https://github.com/tomassilva-data). Do you have any additional contact links or a portfolio website to include?",
+    "Regarding your employment history: Your CV currently lists a 3-month Curricular Summer Internship focused on software testing and internal tool support. Does this cover your full work history, or would you wish to add other positions, company names, locations, or achievements?",
+    "Regarding your education: Your CV lists a B.Sc. in Computer Science from the University of Coimbra (2021-2024) with a grade of 15/20. Does this represent your full academic background, or do you wish to add other degrees, thesis details, or relevant coursework?",
+    "Regarding technical skills gaps: The target job posting mentions key technologies and concepts like statistics, probability, quantitative analysis, machine learning model evaluation, experimentation, A/B testing, data visualization, and cloud platforms. Do you have experience with any of these or other relevant tools to add beyond your current skills?",
+    "Regarding languages: Your CV currently does not list any spoken or natural languages. Does this cover all languages you speak, or would you like to add others and their proficiency levels?",
+    "Regarding certifications: Your CV does not currently list any certifications. Do you hold any official certifications, licenses, or training to include?",
+    "Regarding projects: Your CV details a Capstone Project on Customer Churn Analysis using Python, Pandas, Scikit-Learn, and PostgreSQL. Does this represent your main showcase work, or do you have additional projects, repositories, or demos to highlight?",
+    "Regarding your summary focus: We propose highlighting your Computer Science B.Sc. with a 15/20 grade, strong foundation in Python, SQL, and Pandas, and proven experience in building data pipelines and machine learning models for customer churn analysis. Does this capture how you want to be presented, or would you prefer to emphasize a different angle?"
+  ],
+  "user_answers": [
+    {
+      "question": "Regarding your target role: Your CV currently states you are seeking an entry-level opportunity in data science or software engineering, and you are applying for a Data Scientist Intern position at Revolut. Does this target role match your intended direction, or would you prefer a different focus?",
+      "answer": "Yes, this target role matches my intended direction as I am looking for opportunities in data science. My contact details are: Email: tomas.silva.dev@example.com, Phone: +351 912 345 678, LinkedIn: https://www.linkedin.com/in/tomassilva-dev, and GitHub: https://github.com/tomassilva-data.",
+      "gap": "Missing contact details and target alignment verification",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding your contact & links: We noticed your CV currently lacks contact details. You provided your email (tomas.silva.dev@example.com), phone (+351 912 345 678), LinkedIn (https://www.linkedin.com/in/tomassilva-dev), and GitHub (https://github.com/tomassilva-data). Do you have any additional contact links or a portfolio website to include?",
+      "answer": "That is all my correct contact information and professional links; I do not have a separate portfolio website to add.",
+      "gap": "Additional portfolio website",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Regarding your employment history: Your CV currently lists a 3-month Curricular Summer Internship focused on software testing and internal tool support. Does this cover your full work history, or would you wish to add other positions, company names, locations, or achievements?",
+      "answer": "Yes, that 3-month internship at SoftInov Soluções Tecnológicas (July–September 2023) covers my professional work history. During that time, I focused on automating unit and integration testing with pytest, writing SQL queries, and handling PostgreSQL database migrations.",
+      "gap": "Missing company name and specific internship duties",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding your education: Your CV lists a B.Sc. in Computer Science from the University of Coimbra (2021-2024) with a grade of 15/20. Does this represent your full academic background, or do you wish to add other degrees, thesis details, or relevant coursework?",
+      "answer": "My B.Sc. in Computer Science from the University of Coimbra (2021-2024) with a grade of 15/20 is correct, and I also completed a thesis titled 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning' (Grade: 17/20) alongside relevant coursework such as Machine Learning (17/20) and Probability & Statistics (16/20).",
+      "gap": "Thesis details and coursework grades",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding technical skills gaps: The target job posting mentions key technologies and concepts like statistics, probability, quantitative analysis, machine learning model evaluation, experimentation, A/B testing, data visualization, and cloud platforms. Do you have experience with any of these or other relevant tools to add beyond your current skills?",
+      "answer": "Yes, I have strong academic foundations in statistics, probability, and machine learning model evaluation (including my thesis on customer churn using Scikit-Learn and Random Forest/XGBoost). However, I do not have experience with A/B testing, production cloud platforms, or distributed data technologies.",
+      "gap": "A/B testing, cloud platforms, and distributed technologies",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "Regarding languages: Your CV currently does not list any spoken or natural languages. Does this cover all languages you speak, or would you like to add others and their proficiency levels?",
+      "answer": "Yes, I speak Portuguese as my native language and English at a C1 Advanced level (backed by a Cambridge Certificate), which I would like to add to my CV.",
+      "gap": "Spoken languages",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding certifications: Your CV does not currently list any certifications. Do you hold any official certifications, licenses, or training to include?",
+      "answer": "I do not hold any official certifications or licenses beyond my academic degree. However, I have strong coursework and practical project experience in data science, including machine learning and statistics.",
+      "gap": "Official certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Regarding projects: Your CV details a Capstone Project on Customer Churn Analysis using Python, Pandas, Scikit-Learn, and PostgreSQL. Does this represent your main showcase work, or do you have additional projects, repositories, or demos to highlight?",
+      "answer": "That capstone project (which was my B.Sc. thesis graded 17/20 using 80k+ user records) is my main showcase work, but I also developed an E-Commerce Cohort & Sales SQL Analyzer and a Mini Inverted-Index Search Engine. My GitHub profile is https://github.com/tomassilva-data.",
+      "gap": "Additional projects and GitHub link",
+      "resolution": "supported"
+    },
+    {
+      "question": "Regarding your summary focus: We propose highlighting your Computer Science B.Sc. with a 15/20 grade, strong foundation in Python, SQL, and Pandas, and proven experience in building data pipelines and machine learning models for customer churn analysis. Does this capture how you want to be presented, or would you prefer to emphasize a different angle?",
+      "answer": "That captures my background well, and I would also like to make sure my thesis grade (17/20) in customer retention and churn prediction is prominently featured. You can also include my contact details, LinkedIn (https://www.linkedin.com/in/tomassilva-dev), and GitHub (https://github.com/tomassilva-data) links.",
+      "gap": "Summary emphasis refinement",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: tomas.silva.dev@example.com",
+    "Phone: +351 912 345 678",
+    "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+    "GitHub: https://github.com/tomassilva-data",
+    "Company name for internship: SoftInov Soluções Tecnológicas (July–September 2023)",
+    "Internship tasks: automating unit and integration testing with pytest, writing SQL queries, and PostgreSQL database migrations",
+    "B.Sc. Thesis: 'Customer Retention & Churn Prediction in Subscription SaaS using Supervised Learning' (Grade: 17/20)",
+    "Relevant Coursework: Machine Learning (17/20), Probability & Statistics (16/20)",
+    "Academic background in statistics, probability, and machine learning model evaluation (Random Forest/XGBoost on 80k+ records)",
+    "Portuguese (native) and English (C1 Advanced, Cambridge Certificate)",
+    "Additional projects: E-Commerce Cohort & Sales SQL Analyzer and Mini Inverted-Index Search Engine"
+  ],
+  "optimization_strategy": "The optimization strategy bridges the candidate's strong academic background in Computer Science (B.Sc. from University of Coimbra, 15/20) with the Data Scientist Intern role at Revolut. We incorporated crucial contact details and professional profiles, highlighted key project and thesis metrics (including 80k+ records and 17/20 thesis grade), expanded technical skill descriptions with verified statistical and machine learning foundations (Scikit-Learn, Random Forest/XGBoost), added natural languages (Portuguese and English C1), and detailed the internship company and tasks.",
+  "unresolved_evidence_gaps": [
+    "Experience with experimentation, A/B testing, or causal inference",
+    "Experience with cloud platforms or distributed data technologies",
+    "Official industry certifications"
+  ]
+}
