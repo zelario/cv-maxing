@@ -56,8 +56,8 @@ def render_cv_pdf(html: str) -> bytes:
                         ]
                         if gdpr_words:
                             current_bottom = max(float(w["bottom"]) for w in gdpr_words)
-                            # Target bottom: page_height minus bottom margin (1.76cm in pt) minus 1pt safety buffer
-                            target_bottom = page_height - (1.76 * 72.0 / 2.54) - 1.0
+                            # Target bottom: page_height minus bottom margin (1.76cm in pt) minus safety buffer (15pt)
+                            target_bottom = page_height - (1.76 * 72.0 / 2.54) - 15.0
                             delta_pt = target_bottom - current_bottom
                             if delta_pt > 5.0:
                                 page.evaluate(
@@ -65,8 +65,7 @@ def render_cv_pdf(html: str) -> bytes:
                                         const consent = document.querySelector('.consent');
                                         if (consent) {{
                                             const cur = parseFloat(window.getComputedStyle(consent).marginTop) || 0;
-                                            const deltaPx = {delta_pt} * (96.0 / 72.0);
-                                            consent.style.marginTop = (cur + deltaPx) + 'px';
+                                            consent.style.marginTop = (cur + {delta_pt}) + 'pt';
                                         }}
                                     }}"""
                                 )

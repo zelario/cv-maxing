@@ -1,0 +1,93 @@
+{
+  "contact": {
+    "name": "André Ferreira",
+    "headline": "Product and UI/UX Designer",
+    "specialisation": "Product and UI/UX Design",
+    "phone": "+351 926 789 123",
+    "email": "andre.ferreira.design@example.com",
+    "location_city": "Braga",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/andreferreira-design",
+    "github": "",
+    "portfolio": "https://andreferreira.design"
+  },
+  "summary": "Product and UI/UX Designer with 3 years of verified experience designing user flows, Design Systems, and responsive SaaS web applications at Aurora Digital, backed by a B.Sc. in Communication and Multimedia Design.",
+  "experience": [
+    {
+      "title": "Product Designer (UI/UX)",
+      "dates": "2022-Present",
+      "company": "Aurora Digital",
+      "location": "",
+      "bullets": [
+        "Designing interactive prototypes and high-fidelity UI specifications in Figma.",
+        "Building and maintaining component libraries and Design Systems.",
+        "Conducting user interviews, usability testing, and UX discovery.",
+        "Preparing design-to-development handoff documentation."
+      ]
+    },
+    {
+      "title": "Junior UI/UX Designer",
+      "dates": "2021-2022",
+      "company": "Studio Blend",
+      "location": "",
+      "bullets": [
+        "Creating wireframes, mockups, and responsive landing pages.",
+        "User journey mapping and persona definition."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Communication and Multimedia Design",
+      "dates": "2018-2021",
+      "institution": "Universidade do Minho",
+      "location": "",
+      "grade": "16/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Tools",
+      "skills": [
+        "Figma",
+        "FigJam",
+        "Sketch",
+        "Adobe Creative Suite"
+      ]
+    },
+    {
+      "category_name": "Methods",
+      "skills": [
+        "Wireframing",
+        "Prototyping",
+        "Usability Testing",
+        "Information Architecture"
+      ]
+    },
+    {
+      "category_name": "Standards",
+      "skills": [
+        "Design Systems",
+        "Component Libraries",
+        "Accessibility (WCAG)"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}

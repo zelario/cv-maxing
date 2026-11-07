@@ -1,0 +1,111 @@
+{
+  "cv": "Diogo Santos\nSoftware engineer with 3 years of professional experience building RESTful APIs, microservices, and\nmanaging relational databases.\nPROFESSIONAL EXPERIENCE\nBackend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication.\nEDUCATION\nB.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)\nTECHNICAL SKILLS\nLanguages & Frameworks: Python, FastAPI, Django\nDatabases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux\nTools: Git\nDiogo Santos Page 1",
+  "personal_information": {
+    "name": "Diogo Santos",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Diogo Santos"
+  },
+  "summary": {
+    "text": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases.",
+    "source_section": "Summary",
+    "source_text": "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and\nmanaging relational databases."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc. in Informatics and Computing Engineering",
+      "field": "Informatics and Computing Engineering",
+      "institution": "FEUP",
+      "location": "",
+      "start_date": "2017",
+      "end_date": "2020",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "B.Sc. in Informatics and Computing Engineering\nFEUP (2017-2020)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Backend Software Engineer",
+      "company": "CloudScale",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "Present",
+      "description": "",
+      "responsibilities": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Python",
+        "FastAPI",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "RabbitMQ"
+      ],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Backend Software Engineer\nCloudScale | 2021-Present (3 years)\nDeveloping RESTful APIs in Python using FastAPI and Django.\nLeading PostgreSQL schema design and comprehensive query optimization.\nImplementing Docker containerization for standardized deployment environments.\nIntegrating RabbitMQ message brokers to handle asynchronous tasks and microservice\ncommunication."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Python"
+    },
+    {
+      "name": "FastAPI",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "FastAPI"
+    },
+    {
+      "name": "Django",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Django"
+    },
+    {
+      "name": "PostgreSQL",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "PostgreSQL"
+    },
+    {
+      "name": "Redis",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Redis"
+    },
+    {
+      "name": "Docker",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Docker"
+    },
+    {
+      "name": "RabbitMQ",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "RabbitMQ"
+    },
+    {
+      "name": "Linux",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Linux"
+    },
+    {
+      "name": "Git",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Git"
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

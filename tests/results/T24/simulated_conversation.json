@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: We found the CV headline / summary aims for Software Engineer / Backend Software Engineer, while the target job is Senior / Staff Tech Lead (Distributed Systems). Do you confirm 'Backend Software Engineer' / 'Software Engineer' as your target role, or would you like to specify 'Senior / Staff Tech Lead (Distributed Systems)' or another title? (Yes/No, or specify another)",
+    "answer": "No, I would like to specify \"Backend Software Engineer\" or similar, as I have about 3.5 years of experience and do not meet the 7+ years or leadership requirements for a Senior/Staff Tech Lead role."
+  },
+  {
+    "question": "2. Contact & links: We noticed that email, phone, location, LinkedIn, and GitHub/portfolio URLs are missing from your CV. Do you have any of these contact details or links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can include my email (diogo.santos.backend@example.com), phone (+351 925 678 123), location (Porto, Portugal), LinkedIn (https://www.linkedin.com/in/diogosantos-backend), and GitHub (https://github.com/dsantos-code). I do not have a personal portfolio or website."
+  },
+  {
+    "question": "3. Employment: We found your professional experience: Backend Software Engineer at CloudScale from 2021-Present (3 years), focusing on RESTful APIs (FastAPI/Django), PostgreSQL schema design, Docker, and RabbitMQ. Do you confirm these details? (Yes/No)",
+    "answer": "Yes, I confirm these details. In addition to CloudScale, I also worked as a Junior Web Developer at SoftPorto Solutions from September to December 2020."
+  },
+  {
+    "question": "4. Education: We found your B.Sc. in Informatics and Computing Engineering from FEUP (2017-2020). Do you confirm these academic details? (Yes/No)",
+    "answer": "Yes, I confirm those details: B.Sc. in Informatics and Computing Engineering from FEUP (2017–2020) with a grade of 14/20."
+  },
+  {
+    "question": "5. Technical skills gaps: The target role lists Apache Kafka, AWS or GCP, Kubernetes, Terraform, OpenTelemetry/Datadog/Prometheus, and DDD/CQRS, which are currently missing or weak in your CV. Do you have experience with any of these technologies to add? (If none, reply 'I do not have one')",
+    "answer": "I do not have experience with Apache Kafka, Kubernetes, Terraform, production observability tools, or DDD/CQRS, as my background is focused on Python, FastAPI, Django, PostgreSQL, Redis, and RabbitMQ with basic AWS integrations."
+  },
+  {
+    "question": "6. Languages: Spoken human languages are not currently listed in your CV. Do you speak any other languages (e.g., Portuguese, English)? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese (Native) and English (C1 Full Professional)."
+  },
+  {
+    "question": "7. Certifications: No certifications are currently listed in your CV. Do you have any certifications or professional licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "8. Projects: No dedicated projects section is currently present in your CV. Do you have any personal or open-source GitHub projects/repositories to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have a Distributed Key-Value Store project built in Python and C++ featuring replication and fault tolerance from my time at FEUP."
+  },
+  {
+    "question": "9. Summary focus: We propose highlighting your core strengths in building scalable RESTful APIs, managing PostgreSQL query optimization, and implementing microservices with FastAPI and Docker. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

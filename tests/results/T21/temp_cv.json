@@ -1,0 +1,158 @@
+{
+  "cv": "Rita Santos\nSoftware engineer and tech lead with professional experience building distributed systems, event-driven\narchitectures, and backend microservices.\nPROFESSIONAL EXPERIENCE\nStaff Software Engineer / Tech Lead\nCloudScale | 2021-Present (3 years)\nLeading system architecture for event-driven backend services and API platforms.\nRe-architecting monolithic services into microservices using Go, Python, and Apache Kafka.\nMentoring engineers on code quality and technical design.\nManaging AWS cloud infrastructure and containerized deployments using Docker and Kubernetes.\nSenior Backend Engineer\nFinTech Global | 2018-2020 (3 years)\nDeveloping REST and gRPC microservices in Go and Python.\nPostgreSQL database schema design and query optimization.\nEDUCATION\nM.Sc. in Informatics and Computing Engineering\nFEUP (2010-2015)\nTECHNICAL SKILLS\nLanguages: Go, Python, SQL, Bash\nArchitecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis\nCloud & Tools: AWS, Docker, Kubernetes, Terraform, Git\nRita Santos Page 1",
+  "personal_information": {
+    "name": "Rita Santos",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Rita Santos"
+  },
+  "summary": {
+    "text": "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices.",
+    "source_section": "Summary",
+    "source_text": "Software engineer and tech lead with professional experience building distributed systems, event-driven\narchitectures, and backend microservices."
+  },
+  "education": [
+    {
+      "level": "M.Sc.",
+      "degree": "M.Sc. in Informatics and Computing Engineering",
+      "field": "Informatics and Computing Engineering",
+      "institution": "FEUP",
+      "location": "",
+      "start_date": "2010",
+      "end_date": "2015",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "M.Sc. in Informatics and Computing Engineering\nFEUP (2010-2015)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Staff Software Engineer / Tech Lead",
+      "company": "CloudScale",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "Present",
+      "description": "Leading system architecture for event-driven backend services and API platforms.",
+      "responsibilities": [
+        "Leading system architecture for event-driven backend services and API platforms.",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka.",
+        "Mentoring engineers on code quality and technical design.",
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Go",
+        "Python",
+        "Apache Kafka",
+        "AWS",
+        "Docker",
+        "Kubernetes"
+      ],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Staff Software Engineer / Tech Lead\nCloudScale | 2021-Present (3 years)\nLeading system architecture for event-driven backend services and API platforms.\nRe-architecting monolithic services into microservices using Go, Python, and Apache Kafka.\nMentoring engineers on code quality and technical design.\nManaging AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+    },
+    {
+      "job_title": "Senior Backend Engineer",
+      "company": "FinTech Global",
+      "location": "",
+      "start_date": "2018",
+      "end_date": "2020",
+      "description": "Developing REST and gRPC microservices in Go and Python.",
+      "responsibilities": [
+        "Developing REST and gRPC microservices in Go and Python.",
+        "PostgreSQL database schema design and query optimization."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Go",
+        "Python",
+        "PostgreSQL",
+        "REST",
+        "gRPC"
+      ],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Senior Backend Engineer\nFinTech Global | 2018-2020 (3 years)\nDeveloping REST and gRPC microservices in Go and Python.\nPostgreSQL database schema design and query optimization."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Go",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Languages: Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Python",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Languages: Go, Python, SQL, Bash"
+    },
+    {
+      "name": "SQL",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Languages: Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Bash",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Languages: Go, Python, SQL, Bash"
+    },
+    {
+      "name": "Microservices",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis"
+    },
+    {
+      "name": "Apache Kafka",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis"
+    },
+    {
+      "name": "RabbitMQ",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis"
+    },
+    {
+      "name": "PostgreSQL",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis"
+    },
+    {
+      "name": "Redis",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis"
+    },
+    {
+      "name": "AWS",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+    },
+    {
+      "name": "Docker",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+    },
+    {
+      "name": "Kubernetes",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+    },
+    {
+      "name": "Terraform",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+    },
+    {
+      "name": "Git",
+      "source_section": "TECHNICAL SKILLS",
+      "source_text": "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

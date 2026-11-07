@@ -1,0 +1,141 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "André Ferreira",
+      "proposed_content": "André Ferreira | Braga, Portugal | andre.ferreira.design@example.com | +351 926 789 123 | https://www.linkedin.com/in/andreferreira-design | https://andreferreira.design",
+      "rationale": "Incorporate candidate-provided contact details and professional links to satisfy standard application completeness and contact requirements.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        " Braga, Portugal",
+        " andre.ferreira.design@example.com",
+        " +351 926 789 123",
+        " https://www.linkedin.com/in/andreferreira-design",
+        " https://andreferreira.design"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.",
+      "proposed_content": "Product and UI/UX Designer with 3 years of verified experience designing user flows, Design Systems, and responsive SaaS web applications at Aurora Digital, backed by a B.Sc. in Communication and Multimedia Design.",
+      "rationale": "Refine the professional summary to precisely highlight candidate identity, core design strengths, and verified educational and professional background.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications."
+      ],
+      "user_provided_evidence": [
+        "Confirmed summary focus"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021)",
+      "proposed_content": "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021) — Grade: 16/20",
+      "rationale": "Add verified academic grade provided directly by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "B.Sc. in Communication and Multimedia Design from Universidade do Minho (2018–2021) with a grade of 16/20."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "LANGUAGES\nPortuguese (Native), English (C1 Advanced)",
+      "rationale": "Add verified language proficiencies provided directly by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese natively and English at a C1 Advanced level."
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target role: We found the CV headline is 'Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.' The target job title is 'Fullstack Web Developer (React & Node.js)'. Do you confirm updating the target role/headline to reflect Fullstack Web Developer or keeping the design focus? (Yes/No, or specify another)",
+    "2. Contact & links: We found the candidate's name is André Ferreira, but email, phone, location, LinkedIn, and portfolio/GitHub links are missing. Do you have any email, phone, location, LinkedIn, or portfolio URLs to include? (If none, reply 'I do not have one')",
+    "3. Employment: We found two roles: Product Designer (UI/UX) at Aurora Digital (2022-Present) and Junior UI/UX Designer at Studio Blend (2021-2022). Do you confirm this employment history? (Yes/No)",
+    "4. Education: We found: B.Sc. in Communication and Multimedia Design from Universidade do Minho (2018-2021). Do you confirm this education background? (Yes/No)",
+    "5. Technical skills gaps: The job requires React, TypeScript, modern CSS/Tailwind, Node.js or Python, and Jest/Vitest. The CV currently lists Figma, FigJam, Sketch, Adobe Creative Suite, Wireframing, Prototyping, Usability Testing, Information Architecture, Design Systems, Component Libraries, and Accessibility (WCAG). Do you have experience with React, TypeScript, Node.js, or Jest to add, or should we keep your skills strictly focused on design tools and methods?",
+    "6. Languages: Languages are currently missing from your CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "7. Certifications: Certifications/licenses are currently missing from your CV. Do you have any certifications or formal training courses to include? (If none, reply 'I do not have one')",
+    "8. Projects: Independent projects or code repositories are currently missing from your CV. Do you have any design projects or repositories to include? (If none, reply 'I do not have one')",
+    "9. Summary focus: We propose highlighting your 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications as a Product and UI/UX designer. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target role: We found the CV headline is 'Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.' The target job title is 'Fullstack Web Developer (React & Node.js)'. Do you confirm updating the target role/headline to reflect Fullstack Web Developer or keeping the design focus? (Yes/No, or specify another)",
+      "answer": "No, I cannot confirm updating my headline to Fullstack Web Developer. My background is entirely in Product and UI/UX Design, and my negative facts explicitly state that I have no software programming or coding experience (such as React, JavaScript, TypeScript, Node.js, or Python).",
+      "gap": "Candidate background is UI/UX Design, whereas target role is Fullstack Web Developer (React & Node.js).",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "2. Contact & links: We found the candidate's name is André Ferreira, but email, phone, location, LinkedIn, and portfolio/GitHub links are missing. Do you have any email, phone, location, LinkedIn, or portfolio URLs to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my location is Braga, Portugal, and my email is andre.ferreira.design@example.com. You can also include my phone number (+351 926 789 123), LinkedIn (https://www.linkedin.com/in/andreferreira-design), and portfolio website (https://andreferreira.design).",
+      "gap": "Missing contact details and professional links",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: We found two roles: Product Designer (UI/UX) at Aurora Digital (2022-Present) and Junior UI/UX Designer at Studio Blend (2021-2022). Do you confirm this employment history? (Yes/No)",
+      "answer": "Yes, I confirm this employment history.",
+      "gap": "None",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: We found: B.Sc. in Communication and Multimedia Design from Universidade do Minho (2018-2021). Do you confirm this education background? (Yes/No)",
+      "answer": "Yes, I confirm my education background: a B.Sc. in Communication and Multimedia Design from Universidade do Minho (2018–2021) with a grade of 16/20.",
+      "gap": "None",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The job requires React, TypeScript, modern CSS/Tailwind, Node.js or Python, and Jest/Vitest. The CV currently lists Figma, FigJam, Sketch, Adobe Creative Suite, Wireframing, Prototyping, Usability Testing, Information Architecture, Design Systems, Component Libraries, and Accessibility (WCAG). Do you have experience with React, TypeScript, Node.js, or Jest to add, or should we keep your skills strictly focused on design tools and methods?",
+      "answer": "No, I do not have experience with React, TypeScript, Node.js, or Jest, so we should keep my skills strictly focused on my actual design tools, methods, and systems.",
+      "gap": "Missing core technical requirements for Fullstack Web Developer role (React, TypeScript, Node.js, Jest, etc.)",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "6. Languages: Languages are currently missing from your CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese natively and English at a C1 Advanced level.",
+      "gap": "Missing languages section in original CV",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: Certifications/licenses are currently missing from your CV. Do you have any certifications or formal training courses to include? (If none, reply 'I do not have one')",
+      "answer": "No, I do not have any certifications or formal training courses to include.",
+      "gap": "No certifications or licenses available",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "8. Projects: Independent projects or code repositories are currently missing from your CV. Do you have any design projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one, as my background is strictly in product design (UI/UX) and design systems rather than software programming or code repositories.",
+      "gap": "No independent code repositories or technical projects",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "9. Summary focus: We propose highlighting your 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications as a Product and UI/UX designer. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus.",
+      "gap": "None",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Location: Braga, Portugal",
+    "Email: andre.ferreira.design@example.com",
+    "Phone: +351 926 789 123",
+    "LinkedIn: https://www.linkedin.com/in/andreferreira-design",
+    "Portfolio: https://andreferreira.design",
+    "Education Grade: 16/20",
+    "Languages: Portuguese (Native), English (C1 Advanced)"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on maximizing the candidate's professional CV presentation for UI/UX and Product Design roles while respecting the strict constraint that the candidate possesses zero fullstack web development experience (React, TypeScript, Node.js, Python, Jest) as mandated by the target job. We successfully integrated verified contact details, professional links, academic details, and spoken languages provided by the candidate, while preserving the integrity of the original experience and skills.",
+  "unresolved_evidence_gaps": [
+    "Target Role mismatch: Job requires Fullstack Web Developer (React & Node.js) while candidate is a Product and UI/UX Designer.",
+    "Missing required technical stack: React, TypeScript, modern CSS/Tailwind, Node.js or Python, Jest or Vitest.",
+    "Missing backend/database/containerization experience (PostgreSQL, MySQL, MongoDB, Docker).",
+    "Missing certifications and independent technical project repositories."
+  ]
+}

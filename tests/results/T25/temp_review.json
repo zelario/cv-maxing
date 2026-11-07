@@ -1,0 +1,234 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "2+ years of hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms.",
+      "category": "Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "Frontend Developer | PixelWave (2022-Present, 2 years)",
+        "Building single-page web applications using React and TypeScript."
+      ],
+      "reasoning": "The candidate has 2 years of experience as a Frontend Developer building single-page web applications, but lacks direct hands-on experience in Product Design or UI/UX Design as requested by the role."
+    },
+    {
+      "requirement": "Exceptional proficiency in Figma (mastery of auto-layout, nested component variants, variables, and interactive prototyping).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Figma listed under Skills"
+      ],
+      "reasoning": "Figma is listed in the skills section, but there is no contextual evidence or project details demonstrating mastery of auto-layout, nested component variants, variables, or interactive prototyping."
+    },
+    {
+      "requirement": "Proven track record in creating and maintaining Design Systems and reusable component libraries.",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Implementing robust component design systems utilizing Tailwind CSS."
+      ],
+      "reasoning": "The candidate demonstrates experience implementing robust component design systems utilizing Tailwind CSS in their current Frontend Developer role."
+    },
+    {
+      "requirement": "Strong grounding in UX research methodologies: usability testing, user journey mapping, and heuristic reviews.",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of UX research methodologies, usability testing, user journey mapping, or heuristic reviews in the CV."
+    },
+    {
+      "requirement": "A strong portfolio demonstrating end-to-end design thinking, problem framing, iteration processes, and polished visual design.",
+      "category": "Portfolio",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio URL or mention of a portfolio is present in the CV."
+    },
+    {
+      "requirement": "Understanding of modern web capabilities and constraints (responsive grids, flexbox behavior, component state management).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+        "Building single-page web applications using React and TypeScript.",
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Redux Toolkit."
+      ],
+      "reasoning": "The candidate's experience in frontend development, responsive interfaces, and state management (Redux Toolkit) demonstrates a strong understanding of modern web capabilities and constraints."
+    },
+    {
+      "requirement": "Fluent written and verbal communication in English and Portuguese.",
+      "category": "Languages",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no language section or mention of English and Portuguese proficiency in the CV."
+    },
+    {
+      "requirement": "Experience with design-to-code inspection tools (Storybook, Figma Code Connect).",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Storybook, Figma Code Connect, or similar design-to-code inspection tools."
+    },
+    {
+      "requirement": "Familiarity with micro-interactions and motion design (Principle, After Effects, or Lottie).",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of micro-interactions or motion design tools."
+    },
+    {
+      "requirement": "Knowledge of product analytics tools (Mixpanel, Hotjar, PostHog) to inform design decisions.",
+      "category": "Preferred",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of product analytics tools such as Mixpanel, Hotjar, or PostHog."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Mariana Costa"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided in the header."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "Email address is entirely absent from the CV."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "Phone number is not provided."
+    },
+    {
+      "section": "Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "Location/address is not specified."
+    },
+    {
+      "section": "Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is provided."
+    },
+    {
+      "section": "Personal Information",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No GitHub or portfolio URL is present in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is included."
+    },
+    {
+      "section": "Experience",
+      "field": "Work History",
+      "status": "present",
+      "evidence": [
+        "Frontend Developer | PixelWave (2022-Present, 2 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Current professional experience is detailed with dates and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Academic Background",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Education history is provided, though institution and location details are missing."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+      ],
+      "relevance": "High",
+      "reasoning": "A dedicated skills list is present."
+    },
+    {
+      "section": "Languages",
+      "field": "Spoken Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No languages are explicitly listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications and Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No separate projects section is included."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Direct experience in Product Design or UI/UX Design",
+    "UX research methodologies (usability testing, user journey mapping, heuristic reviews)",
+    "A portfolio demonstrating end-to-end design thinking and visual design",
+    "Fluent written and verbal communication proof in English and Portuguese",
+    "Contact information (email, phone, location)",
+    "Professional links (LinkedIn, GitHub/Portfolio URL)"
+  ],
+  "weak_evidence": [
+    "Figma proficiency is listed as a keyword/skill without contextual demonstration or project details",
+    "Experience is primarily in frontend development (React/TypeScript) rather than product/UI/UX design"
+  ],
+  "strengths": [
+    "Educational background in Design and Multimedia (B.Sc., 2018-2021)",
+    "Demonstrated practical experience building component design systems using Tailwind CSS",
+    "Strong technical foundation in modern web technologies (React, TypeScript, Next.js)"
+  ],
+  "weaknesses": [
+    "Complete lack of a portfolio link or samples of design work",
+    "Missing core contact information (email, phone, location)",
+    "Absence of UX research and discovery methodologies in the work history",
+    "Mismatch in primary professional profile (Frontend Developer vs. Product Designer)"
+  ],
+  "overall_assessment": "The candidate presents a background as a Frontend Developer with an educational foundation in Design and Multimedia. While they demonstrate experience with component design systems and modern web technologies, they lack core requirements for the Product Designer role, specifically hands-on UI/UX product design experience, UX research methodologies, a design portfolio, and required contact information.",
+  "reasoning": "The evaluation maps the candidate's stated CV data against the specific job posting requirements. The candidate satisfies criteria related to design systems and modern web capabilities through their frontend work, but has significant gaps in UI/UX experience, UX research, portfolio presence, language proficiency, and essential contact details."
+}

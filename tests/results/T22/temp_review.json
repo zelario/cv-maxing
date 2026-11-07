@@ -1,0 +1,296 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Figma (user flows, information architectures, wireframes, and high-fidelity interactive prototypes)",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Designing interactive prototypes and high-fidelity UI specifications in Figma.",
+        "Creating wireframes, mockups, and responsive landing pages."
+      ],
+      "reasoning": "The candidate has demonstrated hands-on experience designing interactive prototypes and high-fidelity UI specs in Figma, as well as creating wireframes during their tenure at Aurora Digital and Studio Blend."
+    },
+    {
+      "requirement": "Design System maintenance and creation",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Building and maintaining component libraries and Design Systems."
+      ],
+      "reasoning": "Directly supported by the candidate's professional experience at Aurora Digital where they built and maintained component libraries and Design Systems."
+    },
+    {
+      "requirement": "Accessibility standards (WCAG 2.1 AA)",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Standards: Design Systems, Component Libraries, Accessibility (WCAG)"
+      ],
+      "reasoning": "Accessibility (WCAG) is listed under design skills standards, but lack of detailed context or specific version (such as WCAG 2.1 AA) in project work leaves it as weak evidence."
+    },
+    {
+      "requirement": "Figma (auto-layout, nested component variants, variables, and interactive prototyping)",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Designing interactive prototypes and high-fidelity UI specifications in Figma."
+      ],
+      "reasoning": "While Figma and interactive prototyping are mentioned, advanced specific features like auto-layout variants, nested components, or variables are not explicitly detailed in the CV text."
+    },
+    {
+      "requirement": "Design Systems and reusable component libraries",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Building and maintaining component libraries and Design Systems."
+      ],
+      "reasoning": "Explicitly evidenced by professional experience building and maintaining component libraries and Design Systems at Aurora Digital."
+    },
+    {
+      "requirement": "UX research methodologies (usability testing, user journey mapping, and heuristic reviews)",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Conducting user interviews, usability testing, and UX discovery.",
+        "User journey mapping and persona definition."
+      ],
+      "reasoning": "Demonstrated through usability testing and user journey mapping performed across both professional roles."
+    },
+    {
+      "requirement": "Understanding of modern web capabilities and constraints",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.",
+        "Creating wireframes, mockups, and responsive landing pages."
+      ],
+      "reasoning": "The candidate mentions responsive SaaS web applications and landing pages, providing some context, but lacks explicit mention of technical web capabilities/constraints like flexbox behavior or component state management."
+    },
+    {
+      "requirement": "Design-to-code inspection tools (Storybook, Figma Code Connect)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Storybook or Figma Code Connect in the candidate's profile or skills."
+    },
+    {
+      "requirement": "Micro-interactions and motion design (Principle, After Effects, or Lottie)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of micro-interactions or motion design tools such as Principle, After Effects, or Lottie."
+    },
+    {
+      "requirement": "Product analytics tools (Mixpanel, Hotjar, PostHog)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of product analytics tools like Mixpanel, Hotjar, or PostHog."
+    },
+    {
+      "requirement": "Hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms",
+      "category": "Experience Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.",
+        "Product Designer (UI/UX) at Aurora Digital | 2022-Present (2 years)",
+        "Junior UI/UX Designer at Studio Blend | 2021-2022 (1.5 years)"
+      ],
+      "reasoning": "The candidate has over 3 years of cumulative experience specifically focused on SaaS web applications and UI/UX design."
+    },
+    {
+      "requirement": "A strong portfolio demonstrating end-to-end design thinking, problem framing, iteration processes, and polished visual design.",
+      "category": "Other Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio link or explicit reference to an attached/linked portfolio is provided in the CV content."
+    },
+    {
+      "requirement": "Fluent written and verbal communication in English and Portuguese.",
+      "category": "Other Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No languages section or explicit communication fluency statement for English and Portuguese is included in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Contact",
+      "field": "name",
+      "status": "present",
+      "evidence": [
+        "André Ferreira"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header / Contact",
+      "field": "email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is present in the provided CV structure."
+    },
+    {
+      "section": "Header / Contact",
+      "field": "phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is present in the provided CV structure."
+    },
+    {
+      "section": "Header / Contact",
+      "field": "location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location is listed in the personal information or header."
+    },
+    {
+      "section": "Header / Contact",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is included."
+    },
+    {
+      "section": "Header / Contact",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No portfolio or GitHub exact URL is present in the CV, which is a significant gap for a design role."
+    },
+    {
+      "section": "Summary",
+      "field": "professional summary",
+      "status": "present",
+      "evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "experience",
+      "status": "present",
+      "evidence": [
+        "Product Designer (UI/UX) at Aurora Digital | 2022-Present (2 years)",
+        "Junior UI/UX Designer at Studio Blend | 2021-2022 (1.5 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Detailed professional experience including titles, companies, dates, and responsibilities is provided."
+    },
+    {
+      "section": "Education",
+      "field": "education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Communication and Multimedia Design, Universidade do Minho (2018-2021)"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Educational background is clearly documented."
+    },
+    {
+      "section": "Skills",
+      "field": "technical skills",
+      "status": "present",
+      "evidence": [
+        "Tools: Figma, FigJam, Sketch, Adobe Creative Suite"
+      ],
+      "relevance": "High",
+      "reasoning": "Design tools are listed explicitly."
+    },
+    {
+      "section": "Skills",
+      "field": "tools/software",
+      "status": "present",
+      "evidence": [
+        "Figma, FigJam, Sketch, Adobe Creative Suite"
+      ],
+      "relevance": "High",
+      "reasoning": "Software tools are clearly stated under design skills."
+    },
+    {
+      "section": "Skills",
+      "field": "methodologies",
+      "status": "present",
+      "evidence": [
+        "Methods: Wireframing, Prototyping, Usability Testing, Information Architecture"
+      ],
+      "relevance": "High",
+      "reasoning": "Methodologies are explicitly categorized and listed."
+    },
+    {
+      "section": "Skills",
+      "field": "transferable skills",
+      "status": "uncertain",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No dedicated transferable skills section is present, though some soft skills are implied via responsibilities."
+    },
+    {
+      "section": "Languages",
+      "field": "languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No languages section or spoken languages are listed in the CV."
+    },
+    {
+      "section": "Certifications",
+      "field": "certifications/training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or additional training courses are included."
+    },
+    {
+      "section": "Projects",
+      "field": "projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No dedicated personal or standalone project section is provided."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR compliance or privacy statement is present."
+    }
+  ],
+  "missing_evidence": [
+    "Design-to-code inspection tools experience (Storybook, Figma Code Connect)",
+    "Micro-interactions and motion design familiarity (Principle, After Effects, Lottie)",
+    "Product analytics tools knowledge (Mixpanel, Hotjar, PostHog)",
+    "Portfolio link or URL demonstrating end-to-end design work",
+    "Explicit evidence of language fluency in English and Portuguese",
+    "Contact details (email, phone, location, and LinkedIn profile)"
+  ],
+  "weak_evidence": [
+    "Accessibility standards (WCAG) mention lacks specific version context (such as WCAG 2.1 AA) in project execution",
+    "Advanced Figma capabilities (auto-layout variants, nested component variants, variables) are not explicitly detailed beyond general Figma usage",
+    "Understanding of modern web capabilities and constraints is inferred from responsive web application design rather than explicitly articulated"
+  ],
+  "strengths": [
+    "3+ years of relevant hands-on experience in Product Design and UI/UX focused on SaaS web applications",
+    "Demonstrated practical experience building and maintaining Design Systems and component libraries at Aurora Digital",
+    "Solid grounding in UX research methodologies including usability testing, user interviews, and user journey mapping",
+    "Clear educational background holding a B.Sc. in Communication and Multimedia Design"
+  ],
+  "weaknesses": [
+    "Critical contact information missing (no email, phone, location, or LinkedIn URL provided)",
+    "No portfolio URL or link provided in the CV text, which is an essential requirement for design roles",
+    "No evidence of preferred technical tools such as product analytics or motion design applications",
+    "No explicit mention of language proficiencies required by the posting"
+  ],
+  "overall_assessment": "The candidate, André Ferreira, meets several core professional and technical requirements for the Product Designer role, offering over three years of targeted experience in SaaS web application design, component library management, and UX research methodologies like usability testing. However, there are significant gaps in required supplementary items, most notably the complete absence of contact details (email, phone, location), a portfolio URL, and language proficiencies. Additionally, preferred tool requirements (analytics and motion design) and advanced Figma capabilities lack explicit evidence.",
+  "reasoning": "The evaluation compares the structured CV evidence directly against the requirements outlined in the job posting, adhering strictly to the provided data without external assumptions or scoring."
+}

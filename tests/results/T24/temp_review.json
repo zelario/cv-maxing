@@ -1,0 +1,321 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "7+ years of professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer.",
+      "category": "Experience Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Software engineer with 3 years of professional experience",
+        "CloudScale | 2021-Present (3 years)"
+      ],
+      "reasoning": "The candidate has only 3 years of professional experience, which falls short of the 7+ years required, and lacks demonstrated leadership as a Tech Lead, Staff Engineer, or Principal Engineer."
+    },
+    {
+      "requirement": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ],
+      "reasoning": "The candidate has experience with microservices and RabbitMQ, but lacks deep expertise in distributed systems and event-driven architectures involving Apache Kafka or equivalent scale."
+    },
+    {
+      "requirement": "Apache Kafka",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Apache Kafka is not mentioned anywhere in the candidate's CV."
+    },
+    {
+      "requirement": "RabbitMQ",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication.",
+        "RabbitMQ listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "The candidate explicitly lists RabbitMQ and demonstrates its practical application in professional experience."
+    },
+    {
+      "requirement": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Developing RESTful APIs in Python using FastAPI and Django.",
+        "Python listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "The candidate demonstrates proficiency in Python through professional API development."
+    },
+    {
+      "requirement": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "PostgreSQL, Redis listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "The candidate has strong PostgreSQL experience, but Redis is only listed in technical skills without contextual evidence of design or transaction boundary usage."
+    },
+    {
+      "requirement": "PostgreSQL, Redis",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "PostgreSQL, Redis listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "PostgreSQL is well demonstrated, but Redis is only listed as a skill without project or work context."
+    },
+    {
+      "requirement": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Docker listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "The candidate demonstrates experience with Docker, but has no evidence of AWS/GCP cloud environments, Kubernetes, or Terraform."
+    },
+    {
+      "requirement": "Docker, Kubernetes",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Docker listed in TECHNICAL SKILLS"
+      ],
+      "reasoning": "Docker is demonstrated, but Kubernetes is completely absent from the CV."
+    },
+    {
+      "requirement": "Terraform",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Terraform is not mentioned in the candidate's CV."
+    },
+    {
+      "requirement": "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus).",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of distributed tracing or observability tools (OpenTelemetry, Datadog, Prometheus) in the CV."
+    },
+    {
+      "requirement": "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns.",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Domain-Driven Design and CQRS patterns are not mentioned in the CV."
+    },
+    {
+      "requirement": "Degree in Computer Science, Informatics Engineering, or related technical field.",
+      "category": "Education Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering",
+        "FEUP (2017-2020)"
+      ],
+      "reasoning": "The candidate holds a B.Sc. in Informatics and Computing Engineering from FEUP."
+    },
+    {
+      "requirement": "Exceptional communication skills, with the ability to explain complex technical trade-offs to both technical and non-technical stakeholders.",
+      "category": "Other Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "There is no mention of communication skills or stakeholder management in the CV."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Diogo Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "Email address is entirely absent from the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "Phone number is not provided in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "Geographic location or address is not specified."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn URL is included in the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is provided in the CV."
+    },
+    {
+      "section": "Headline",
+      "field": "Headline",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "A distinct professional headline/title is absent (though a summary is present)."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer with 3 years of professional experience building RESTful APIs, microservices, and managing relational databases."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is included right below the name."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Backend Software Engineer | CloudScale | 2021-Present (3 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Professional experience section is present with company, dates, and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Informatics and Computing Engineering | FEUP (2017-2020)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education details including degree, institution, and dates are present."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Languages & Frameworks: Python, FastAPI, Django",
+        "Databases & Infrastructure: PostgreSQL, Redis, Docker, RabbitMQ, Linux",
+        "Tools: Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical skills are explicitly categorized and listed."
+    },
+    {
+      "section": "Tools / Software",
+      "field": "Tools",
+      "status": "present",
+      "evidence": [
+        "Git",
+        "Docker",
+        "Linux"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Tools and software infrastructure are included under technical skills."
+    },
+    {
+      "section": "Methodologies",
+      "field": "Methodologies",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "Specific software engineering methodologies (e.g., Agile, Scrum) are not explicitly listed."
+    },
+    {
+      "section": "Transferable Skills",
+      "field": "Transferable Skills",
+      "status": "uncertain",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No explicit section for transferable or soft skills."
+    },
+    {
+      "section": "Languages",
+      "field": "Spoken Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "Spoken human languages are not listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications & Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or professional training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "A dedicated projects section is absent, though professional experience is detailed."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "GDPR consent clause is not present in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "7+ years of professional engineering experience",
+    "Proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer",
+    "Experience with Apache Kafka",
+    "Experience with cloud environments (AWS or GCP)",
+    "Experience with container orchestration tools like Kubernetes",
+    "Experience with Infrastructure as Code (Terraform)",
+    "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus)",
+    "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns",
+    "Exceptional communication skills and stakeholder management evidence"
+  ],
+  "weak_evidence": [
+    "Deep expertise in distributed systems and event-driven architectures (only basic microservice and RabbitMQ exposure shown)",
+    "Non-relational database design and transaction boundaries (Redis is listed as a skill without contextual implementation evidence)",
+    "Leadership and architectural decision-making at a senior/staff level"
+  ],
+  "strengths": [
+    "Relevant educational background with a B.Sc. in Informatics and Computing Engineering from FEUP",
+    "Demonstrated backend development proficiency in Python using FastAPI and Django",
+    "Practical experience with PostgreSQL schema design, query optimization, Docker containerization, and RabbitMQ message brokers",
+    "Clear and concise professional summary and experience formatting"
+  ],
+  "weaknesses": [
+    "Significant experience gap (3 years of experience versus 7+ years required)",
+    "Lack of senior technical leadership experience (Tech Lead / Staff / Principal)",
+    "Critical missing technical stack elements (Kafka, AWS/GCP, Kubernetes, Terraform)",
+    "Incomplete contact information (missing email, phone number, location, and professional profile links)"
+  ],
+  "overall_assessment": "Diogo Santos is a junior-to-mid level backend software engineer with 3 years of experience specializing in Python, FastAPI, Django, and PostgreSQL. While he has a solid educational foundation in Informatics Engineering and practical experience with Docker and RabbitMQ, he does not meet the senior-level requirements of the Senior / Staff Tech Lead position. Specifically, he falls short of the 7+ years of experience required, lacks demonstrated leadership as a Tech Lead or Staff Engineer, and lacks experience in key required technologies such as Apache Kafka, cloud platforms (AWS/GCP), Kubernetes, and Terraform. Additionally, his CV is missing vital contact information including email, phone, location, and online profile URLs.",
+  "reasoning": "The evaluation was conducted by systematically comparing the structured CV against the structured job posting requirements and evaluating CV completeness across standard dimensions. Evidence statuses were assigned strictly based on the provided text without assumptions or external data retrieval."
+}

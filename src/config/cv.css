@@ -8,7 +8,7 @@
   --name-size: 24pt;         /* docx: name run size */
   --headline-size: 14pt;     /* docx: headline run size */
   --heading-size: 11.5pt;    /* docx Heading1 style: 23 half-points */
-  --small-size: 8.5pt;       /* docx: consent line size: 17 half-points */
+  --small-size: 8pt;         /* consent line size */
   --margin: 2cm;             /* ~ docx left/right margin (720090 EMU) */
   --margin-v: 1.76cm;        /* ~ docx top/bottom margin (635000 EMU) */
 }

@@ -1,0 +1,197 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Target Role",
+      "current_content": "Mariana Costa",
+      "proposed_content": "Mariana Costa\nProduct Designer (UI/UX) - Web & SaaS",
+      "rationale": "Align the professional headline directly with the target job title 'Product Designer (UI/UX) - Web & SaaS' while maintaining candidate identity.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Mariana Costa"
+      ],
+      "user_provided_evidence": [
+        "Confirmed target role as Product Designer (UI/UX) - Web & SaaS"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Header / Contact Information",
+      "current_content": "Mariana Costa",
+      "proposed_content": "Mariana Costa | Lisbon, Portugal (Remote/Hybrid) | mariana.costa.ui@example.com | +351 934 567 890 | LinkedIn | GitHub | Portfolio",
+      "rationale": "Add missing professional contact details and links provided by the candidate to satisfy application completeness.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Location: Lisbon, Portugal (open to remote/hybrid)",
+        "Email: mariana.costa.ui@example.com",
+        "Phone: +351 934 567 890",
+        "LinkedIn profile, GitHub, and portfolio website link"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+      "proposed_content": "Mariana Costa — Product Designer (UI/UX) specializing in responsive interfaces, design systems, and component architectures. Leverages verified expertise in Figma and scalable design systems, backed by a B.Sc. in Design and Multimedia and cross-functional engineering experience.",
+      "rationale": "Propose an impactful 2 to 3-line professional summary that follows research format: (1) candidate identity and target role; (2) 2-3 verified core skills aligned with the job; (3) a concrete verified achievement or background result grounded strictly in evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Web developer specializing in responsive interfaces, design systems, and client-side performance.",
+        "B.Sc. in Design and Multimedia (2018-2021)",
+        "Implementing robust component design systems utilizing Tailwind CSS."
+      ],
+      "user_provided_evidence": [
+        "Confirmed target role as Product Designer (UI/UX) - Web & SaaS",
+        "Confirmed summary focus combining Design and Multimedia background with design systems and UI/UX specialization"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Frontend Developer | PixelWave (2022-Present, 2 years)\nBuilding single-page web applications using React and TypeScript.\nImplementing robust component design systems utilizing Tailwind CSS.\nIntegrating REST APIs to connect frontend interfaces with backend services.",
+      "proposed_content": "Frontend Developer | PixelWave (2022-Present, 2 years)\n• Building single-page web applications using React and TypeScript.\n• Implementing robust component design systems utilizing Tailwind CSS, reducing design-to-production time by 30% using Storybook and Figma.\n• Integrating REST APIs to connect frontend interfaces with backend services and collaborating closely on design-to-code inspection.",
+      "rationale": "Enhance experience details with user-provided quantification and tools (Storybook and Figma) while strictly preserving verified achievements.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Frontend Developer | PixelWave (2022-Present, 2 years)",
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS.",
+        "Integrating REST APIs to connect frontend interfaces with backend services."
+      ],
+      "user_provided_evidence": [
+        "Built an internal design system using Storybook and Tailwind that reduced design-to-production time by 30%"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Design and Multimedia (2018-2021)",
+      "proposed_content": "B.Sc. in Design and Multimedia (Licenciatura em Design e Multimédia) | Universidade de Coimbra (2018-2021) - Grade: 16/20\nSpecialization in web design, interactive UI, web standards, and visual communication.",
+      "rationale": "Incorporate candidate-provided institutional and grade details for the academic background.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Design and Multimedia (2018-2021)"
+      ],
+      "user_provided_evidence": [
+        "Universidade de Coimbra",
+        "Grade of 16/20",
+        "Specialization in web design, interactive UI, web standards, and visual communication"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Skills",
+      "current_content": "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit.",
+      "proposed_content": "Figma, Design Systems, UX Research (Heuristic Evaluations, Usability Testing), Storybook, JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Redux Toolkit.",
+      "rationale": "Reorder and expand skills to emphasize Figma, Design Systems, and UX research methodologies as confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "JavaScript, TypeScript, React, Next.js, HTML5, CSS3/Tailwind, Git, Figma, Redux Toolkit."
+      ],
+      "user_provided_evidence": [
+        "Experience with Storybook and Figma for design-to-code collaboration",
+        "Experience conducting heuristic evaluations and usability testing"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Full Professional)",
+      "rationale": "Add languages section capturing native Portuguese and C1 English proficiency as confirmed by candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C1 Full Professional)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found that your target role is Product Designer (UI/UX) - Web & SaaS based on the job description. Do you confirm this headline for your CV? (Yes/No, or specify another)",
+    "We noticed your contact and links section currently only has your name 'Mariana Costa' and is missing your email, phone, location, LinkedIn URL, and GitHub/Portfolio URL. Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+    "We found your employment history as Frontend Developer at PixelWave (2022-Present, 2 years) building single-page web applications using React and TypeScript, implementing component design systems with Tailwind CSS, and integrating REST APIs. Do you confirm this work experience? (Yes/No)",
+    "We found your education as B.Sc. in Design and Multimedia (2018-2021). Do you confirm this academic background? (Yes/No)",
+    "The job requires experience with UX research methodologies, design-to-code inspection tools (like Storybook or Figma Code Connect), and product analytics tools (like Mixpanel or Hotjar). Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+    "Languages are currently missing from your CV. Do you speak other languages like English and Portuguese, which are required for the role? (If none, reply 'I do not have one')",
+    "Certifications and training are currently not listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "Projects or repositories are currently not listed in your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "We propose focusing your professional summary on Mariana Costa as a Product Designer (UI/UX) specializing in responsive interfaces, design systems, and component architectures, backed by verified experience building design systems and a B.Sc. in Design and Multimedia. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found that your target role is Product Designer (UI/UX) - Web & SaaS based on the job description. Do you confirm this headline for your CV? (Yes/No, or specify another)",
+      "answer": "Yes. Since my background bridges frontend development and UI/UX design—including building design systems and collaborating closely in Figma—I confirm this headline.",
+      "gap": "Target role alignment",
+      "resolution": "supported"
+    },
+    {
+      "question": "We noticed your contact and links section currently only has your name 'Mariana Costa' and is missing your email, phone, location, LinkedIn URL, and GitHub/Portfolio URL. Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, you can include my location in Lisbon, Portugal (open to remote/hybrid), email at mariana.costa.ui@example.com, phone at +351 934 567 890, LinkedIn profile, GitHub, and portfolio website link.",
+      "gap": "Missing contact information and professional links",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your employment history as Frontend Developer at PixelWave (2022-Present, 2 years) building single-page web applications using React and TypeScript, implementing component design systems with Tailwind CSS, and integrating REST APIs. Do you confirm this work experience? (Yes/No)",
+      "answer": "Yes, I confirm this work experience, and during my time at PixelWave, I also built an internal design system using Storybook and Tailwind that reduced design-to-production time by 30%.",
+      "gap": "Work experience and metrics verification",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your education as B.Sc. in Design and Multimedia (2018-2021). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm my academic background. I graduated with a B.Sc. in Design and Multimedia (Licenciatura em Design e Multimédia) from the Universidade de Coimbra between September 2018 and July 2021, achieving a grade of 16/20 with a specialization in web design, interactive UI, web standards, and visual communication.",
+      "gap": "Detailed academic background verification",
+      "resolution": "supported"
+    },
+    {
+      "question": "The job requires experience with UX research methodologies, design-to-code inspection tools (like Storybook or Figma Code Connect), and product analytics tools (like Mixpanel or Hotjar). Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have experience with Storybook and Figma for design-to-code collaboration, as well as conducting heuristic evaluations and usability testing as part of my UX background, though I do not have direct experience with product analytics tools like Mixpanel or Hotjar.",
+      "gap": "Product analytics tools experience",
+      "resolution": "supported"
+    },
+    {
+      "question": "Languages are currently missing from your CV. Do you speak other languages like English and Portuguese, which are required for the role? (If none, reply 'I do not have one')",
+      "answer": "Yes, I am a native speaker of Portuguese and have C1 Full Professional proficiency in English.",
+      "gap": "Spoken languages",
+      "resolution": "supported"
+    },
+    {
+      "question": "Certifications and training are currently not listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "Projects or repositories are currently not listed in your CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Projects",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "We propose focusing your professional summary on Mariana Costa as a Product Designer (UI/UX) specializing in responsive interfaces, design systems, and component architectures, backed by verified experience building design systems and a B.Sc. in Design and Multimedia. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus. As my background is rooted in both a B.Sc. in Design and Multimedia and frontend development with extensive Figma and design system experience, emphasizing Product Design (UI/UX) aligns well with my profile.",
+      "gap": "Summary focus alignment",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Confirmed target role as Product Designer (UI/UX) - Web & SaaS",
+    "Location: Lisbon, Portugal (open to remote/hybrid)",
+    "Email: mariana.costa.ui@example.com",
+    "Phone: +351 934 567 890",
+    "LinkedIn profile, GitHub, and portfolio website link",
+    "Built an internal design system using Storybook and Tailwind that reduced design-to-production time by 30%",
+    "Universidade de Coimbra, B.Sc. in Design and Multimedia (2018-2021), grade 16/20, specialization in web design, interactive UI, web standards, and visual communication",
+    "Experience with Storybook and Figma for design-to-code collaboration",
+    "Experience conducting heuristic evaluations and usability testing",
+    "Portuguese (Native), English (C1 Full Professional)",
+    "Confirmed summary focus combining Design and Multimedia background with design systems and UI/UX specialization"
+  ],
+  "optimization_strategy": "Optimized Mariana Costa's CV for the Product Designer (UI/UX) - Web & SaaS role at Vektor Studio by integrating candidate-provided contact information and professional links, updating the professional summary and headline to highlight product design and design systems expertise, enriching work experience with verified metrics and design tools (Storybook, Figma), expanding education details with institution and grade information, adding spoken languages (Portuguese native, English C1), and integrating UX research methodologies and design-to-code collaboration tools into the technical skills section.",
+  "unresolved_evidence_gaps": [
+    "Product analytics tools (Mixpanel, Hotjar, PostHog)",
+    "Certifications and professional licenses",
+    "Dedicated personal projects or open-source repositories"
+  ]
+}

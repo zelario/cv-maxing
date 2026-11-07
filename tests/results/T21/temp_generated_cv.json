@@ -1,0 +1,112 @@
+{
+  "contact": {
+    "name": "Rita Santos",
+    "headline": "Senior / Staff Tech Lead (Distributed Systems)",
+    "specialisation": "Distributed Systems & Backend Engineering",
+    "phone": "+351 912 345 678",
+    "email": "rita.santos.tech@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/ritasantos-lead",
+    "github": "https://github.com/ritasantos-dev",
+    "portfolio": "https://github.com/ritasantos-dev"
+  },
+  "summary": "Staff Software Engineer and Tech Lead specializing in high-throughput distributed systems, event-driven architectures, and resilient backend microservices using Go, Python, and Apache Kafka. Proven track record of leading platform re-architecture, mentoring engineering teams, and scaling cloud-native infrastructure on AWS.",
+  "experience": [
+    {
+      "title": "Staff Software Engineer / Tech Lead",
+      "dates": "2021-Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Leading system architecture for high-throughput, low-latency event-driven backend services and API platforms.",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka.",
+        "Mentoring engineers on code quality, Domain-Driven Design (DDD) principles, CQRS patterns, and technical design.",
+        "Managing AWS cloud infrastructure and containerized deployments using Docker, Kubernetes, and Terraform with observability via Datadog and OpenTelemetry."
+      ]
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "dates": "2018-2020",
+      "company": "FinTech Global",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developing REST and gRPC microservices in Go and Python.",
+        "PostgreSQL database schema design, query optimization, and transaction boundary management."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "dates": "2015-2018",
+      "company": "InnoTech Labs",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed and maintained core backend services and APIs.",
+        "Participated in database optimization and deployment pipelines."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Informatics Engineering (Mestrado Integrado em Engenharia Informática)",
+      "dates": "2010-2015",
+      "institution": "FEUP",
+      "location": "Porto, Portugal",
+      "grade": "17/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages",
+      "skills": [
+        "Go",
+        "Python",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "category_name": "Architecture & Systems",
+      "skills": [
+        "Distributed Systems",
+        "Microservices",
+        "Event-Driven Architectures",
+        "Apache Kafka",
+        "RabbitMQ",
+        "PostgreSQL",
+        "Redis",
+        "Domain-Driven Design (DDD)",
+        "CQRS"
+      ]
+    },
+    {
+      "category_name": "Cloud & Tools",
+      "skills": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Git",
+        "OpenTelemetry",
+        "Datadog"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native language",
+      "certification": "None"
+    },
+    {
+      "name": "English",
+      "level": "C2 Proficient",
+      "details": "Proficient professional level",
+      "certification": "None"
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}

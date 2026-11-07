@@ -1,0 +1,22 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 7,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Perfect factual fidelity with zero hallucinations against candidate-provided evidence.",
+    "Comprehensive integration of all user-supplied contact details, languages, projects, and educational grades.",
+    "Exceptional professional presentation, executive tone, and clean skill categorization.",
+    "Honest representation of the candidate's actual junior-to-mid level profile without inventing missing senior requirements."
+  ],
+  "issues": [
+    "Natural mismatch in seniority and technical stack (e.g., missing Apache Kafka, Kubernetes, Terraform) required by the Senior/Staff Tech Lead role.",
+    "Candidate has 3.5 years of experience versus the 7+ years required by the job listing."
+  ],
+  "recommendations": [
+    "Continue targeting mid-level Backend Software Engineer roles that match the candidate's exact stack (Python, FastAPI, Django, PostgreSQL, RabbitMQ).",
+    "Gain exposure to distributed systems tooling like Apache Kafka and container orchestration (Kubernetes) to bridge gaps for future senior roles."
+  ]
+}

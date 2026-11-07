@@ -1,0 +1,84 @@
+{
+  "contact": {
+    "name": "Mariana Costa",
+    "headline": "Product Designer (UI/UX) - Web & SaaS",
+    "specialisation": "UI/UX & Design Systems",
+    "phone": "+351 934 567 890",
+    "email": "mariana.costa.ui@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://linkedin.com/in/example",
+    "github": "https://github.com/example",
+    "portfolio": "https://example.com"
+  },
+  "summary": "Mariana Costa — Product Designer (UI/UX) specializing in responsive interfaces, design systems, and component architectures. Leverages verified expertise in Figma and scalable design systems, backed by a B.Sc. in Design and Multimedia and cross-functional engineering experience.",
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "dates": "2022-Present",
+      "company": "PixelWave",
+      "location": "Remote",
+      "bullets": [
+        "Building single-page web applications using React and TypeScript.",
+        "Implementing robust component design systems utilizing Tailwind CSS, reducing design-to-production time by 30% using Storybook and Figma.",
+        "Integrating REST APIs to connect frontend interfaces with backend services and collaborating closely on design-to-code inspection."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Design and Multimedia",
+      "dates": "2018-2021",
+      "institution": "Universidade de Coimbra",
+      "location": "Coimbra, Portugal",
+      "grade": "16/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Design & UX",
+      "skills": [
+        "Figma",
+        "Design Systems",
+        "UX Research (Heuristic Evaluations, Usability Testing)",
+        "Storybook"
+      ]
+    },
+    {
+      "category_name": "Programming Languages & Frontend",
+      "skills": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3/Tailwind",
+        "Redux Toolkit"
+      ]
+    },
+    {
+      "category_name": "Tools & Technologies",
+      "skills": [
+        "Git",
+        "Figma"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": "None"
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": "None"
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}

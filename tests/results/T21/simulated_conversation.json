@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target job title is 'Senior / Staff Tech Lead (Distributed Systems)'. Do you confirm this target role headline for your CV? (Yes/No)",
+    "answer": "Yes, I confirm this target role headline. I want my CV to highlight my experience as a Staff / Tech Lead specializing in distributed systems."
+  },
+  {
+    "question": "We noticed your CV is missing contact links (email, phone, location, LinkedIn URL, GitHub/portfolio URL). Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can include my email (rita.santos.tech@example.com), phone (+351 912 345 678), location (Porto, Portugal), LinkedIn profile (https://www.linkedin.com/in/ritasantos-lead), and GitHub profile (https://github.com/ritasantos-dev)."
+  },
+  {
+    "question": "We found two professional experience entries: Staff Software Engineer / Tech Lead at CloudScale (2021-Present) and Senior Backend Engineer at FinTech Global (2018-2020). Do you confirm these employment records? (Yes/No)",
+    "answer": "Yes, I confirm those employment records, as well as my previous role as a Software Engineer at InnoTech Labs from 2015 to 2018."
+  },
+  {
+    "question": "We found your education listed as: M.Sc. in Informatics and Computing Engineering from FEUP (2010-2015). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm that academic background. Specifically, it is an M.Sc. in Informatics Engineering (Mestrado Integrado em Engenharia Informática) from FEUP, completed between 2010 and 2015 with a grade of 17/20, specializing in Distributed Systems, Software Architecture, and Fault Tolerance."
+  },
+  {
+    "question": "The job mentions preferred technologies such as OpenTelemetry, Datadog, Prometheus, Domain-Driven Design (DDD), and CQRS patterns, which are not currently in your CV. Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have experience with OpenTelemetry, Domain-Driven Design (DDD), and CQRS patterns, as well as tools like Datadog."
+  },
+  {
+    "question": "We noticed that spoken/natural languages are not listed in your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and English at a C2 proficient level."
+  },
+  {
+    "question": "We noticed no certifications or licenses section in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "We noticed no standalone projects section in your CV. Do you have any open-source repositories or projects to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "We propose a 2-3 line professional summary highlighting your identity as a Staff Software Engineer / Tech Lead specializing in distributed systems, event-driven architectures, and backend microservices using Go, Python, and Kafka, along with your M.Sc. background and leadership experience. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

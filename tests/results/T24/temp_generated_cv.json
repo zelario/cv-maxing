@@ -1,0 +1,99 @@
+{
+  "contact": {
+    "name": "Diogo Santos",
+    "headline": "Backend Software Engineer",
+    "specialisation": "Backend Engineering",
+    "phone": "+351 925 678 123",
+    "email": "diogo.santos.backend@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/diogosantos-backend",
+    "github": "https://github.com/dsantos-code",
+    "portfolio": ""
+  },
+  "summary": "Backend Software Engineer with 3.5 years of professional experience specializing in Python, FastAPI, and Django. Proven track record in developing high-performance RESTful APIs, optimizing PostgreSQL schemas, and implementing containerized microservices architecture.",
+  "experience": [
+    {
+      "title": "Backend Software Engineer",
+      "dates": "2021-Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developing high-performance RESTful APIs in Python using FastAPI and Django.",
+        "Leading PostgreSQL schema design and comprehensive query optimization.",
+        "Implementing Docker containerization for standardized deployment environments.",
+        "Integrating RabbitMQ message brokers to handle asynchronous tasks and microservice communication."
+      ]
+    },
+    {
+      "title": "Junior Web Developer",
+      "dates": "Sep 2020 - Dec 2020",
+      "company": "SoftPorto Solutions",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed backend components and web features using Python and Django.",
+        "Assisted in database management and maintenance tasks."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Informatics and Computing Engineering",
+      "dates": "2017 - 2020",
+      "institution": "FEUP",
+      "location": "Porto, Portugal",
+      "grade": "14/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Frameworks",
+      "skills": [
+        "Python",
+        "FastAPI",
+        "Django"
+      ]
+    },
+    {
+      "category_name": "Databases & Infrastructure",
+      "skills": [
+        "PostgreSQL",
+        "Redis",
+        "Docker",
+        "RabbitMQ",
+        "Linux"
+      ]
+    },
+    {
+      "category_name": "Tools & Technologies",
+      "skills": [
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native speaker",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Distributed Key-Value Store",
+      "dates": "2020",
+      "description": "Built a distributed key-value store in Python and C++ featuring data replication and fault tolerance as part of academic coursework at FEUP.",
+      "link": "https://github.com/dsantos-code",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

@@ -1,0 +1,118 @@
+{
+  "contact": {
+    "name": "Rita Santos",
+    "headline": "Backend Software Engineer (Python)",
+    "specialisation": "Distributed Systems and Backend Microservices",
+    "phone": "+351 912 345 678",
+    "email": "rita.santos.tech@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/ritasantos-lead",
+    "github": "https://github.com/ritasantos-dev",
+    "portfolio": ""
+  },
+  "summary": "Backend Software Engineer (Python) and Tech Lead with extensive experience building scalable microservices, RESTful APIs, and distributed systems using Python (FastAPI, Django), Go, and PostgreSQL. Proven track record of re-architecting monolithic services and managing high-throughput backend infrastructure.",
+  "experience": [
+    {
+      "title": "Staff Software Engineer / Tech Lead",
+      "dates": "2021-Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Led system architecture for event-driven backend services and API platforms.",
+        "Re-architected monolithic services into microservices using Go, Python, and Apache Kafka.",
+        "Mentored engineers on code quality and technical design.",
+        "Managed AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ]
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "dates": "2018-2020",
+      "company": "FinTech Global",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed high-throughput REST and gRPC microservices in Go and Python.",
+        "Designed PostgreSQL database schemas and optimized query performance for core financial services."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "dates": "2015-2018",
+      "company": "InnoTech Labs",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed backend services and RESTful APIs using Python (Django, FastAPI).",
+        "Implemented relational database schemas and queries using PostgreSQL.",
+        "Utilized Docker and GitLab CI/CD for containerized development and automated testing workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Informatics and Computing Engineering",
+      "dates": "2010-2015",
+      "institution": "Faculdade de Engenharia da Universidade do Porto (FEUP)",
+      "location": "Porto, Portugal",
+      "grade": "Mestrado Integrado em Engenharia Informática"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages",
+      "skills": [
+        "Python",
+        "Go",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "category_name": "Frameworks & APIs",
+      "skills": [
+        "FastAPI",
+        "Django",
+        "RESTful APIs",
+        "gRPC"
+      ]
+    },
+    {
+      "category_name": "Architecture & Systems",
+      "skills": [
+        "Microservices",
+        "Apache Kafka",
+        "RabbitMQ",
+        "PostgreSQL",
+        "Redis"
+      ]
+    },
+    {
+      "category_name": "Cloud & Tools",
+      "skills": [
+        "AWS",
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "Terraform",
+        "Git",
+        "GitLab CI/CD"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C2 Proficient",
+      "details": "",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [],
+  "consent": true
+}

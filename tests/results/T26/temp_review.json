@@ -1,0 +1,289 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "React, TypeScript, and modern CSS/Tailwind",
+      "category": "Required Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's CV lists UI/UX design tools (Figma, FigJam, Sketch, Adobe Creative Suite) and methods, but contains no mention of React, TypeScript, or modern CSS/Tailwind development experience."
+    },
+    {
+      "requirement": "Node.js (Express/NestJS) or Python",
+      "category": "Required Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No backend development experience using Node.js, Express, NestJS, or Python is present in the candidate's professional experience or skills."
+    },
+    {
+      "requirement": "Jest or Vitest",
+      "category": "Required Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV lists usability testing as a design method, but contains no evidence of automated unit or component testing frameworks such as Jest or Vitest."
+    },
+    {
+      "requirement": "Demonstrable hands-on experience in fullstack web development",
+      "category": "Required Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate has 3 years of experience as a Product Designer (UI/UX) and Junior UI/UX Designer, but lacks hands-on fullstack web development experience."
+    },
+    {
+      "requirement": "HTML5, modern CSS3, responsive design, and CSS frameworks (e.g., Tailwind CSS)",
+      "category": "Required Technical Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Designing responsive SaaS web applications (Summary)",
+        "Creating wireframes, mockups, and responsive landing pages (Studio Blend)"
+      ],
+      "reasoning": "While the candidate mentions designing responsive web applications and landing pages, there is no evidence of coding with HTML5, CSS3, or CSS frameworks."
+    },
+    {
+      "requirement": "RESTful APIs",
+      "category": "Required Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience consuming or designing RESTful APIs is stated in the CV."
+    },
+    {
+      "requirement": "Git and GitHub-based development workflows",
+      "category": "Required Technical Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention Git, GitHub, or version control workflows."
+    },
+    {
+      "requirement": "High attention to detail regarding visual polish, micro-interactions, and user-centric design",
+      "category": "Required Soft Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications",
+        "Designing interactive prototypes and high-fidelity UI specifications in Figma"
+      ],
+      "reasoning": "The candidate's core background in product and UI/UX design demonstrates user-centric design, interactive prototyping, and design systems."
+    },
+    {
+      "requirement": "Excellent communication and teamwork skills, with the ability to work independently in a remote-first setup",
+      "category": "Required Soft Skills",
+      "status": "uncertain",
+      "evidence": [],
+      "reasoning": "The CV does not explicitly mention communication, teamwork, or remote work capabilities, though professional design roles inherently require collaboration."
+    },
+    {
+      "requirement": "Submit CV accompanied by links to portfolio, GitHub profile, or deployed web projects",
+      "category": "Application Material",
+      "status": "weak_evidence",
+      "evidence": [],
+      "reasoning": "The candidate submitted a CV, but it lacks links to a portfolio, GitHub profile, or deployed web projects."
+    },
+    {
+      "requirement": "Next.js",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of Next.js in the CV."
+    },
+    {
+      "requirement": "PostgreSQL, MySQL, or MongoDB",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No database experience is listed in the CV."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of containerization or Docker."
+    },
+    {
+      "requirement": "Web accessibility standards (WCAG 2.1)",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Standards: Design Systems, Component Libraries, Accessibility (WCAG)"
+      ],
+      "reasoning": "The CV explicitly lists Accessibility (WCAG) under design standards."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "name",
+      "status": "present",
+      "evidence": [
+        "André Ferreira"
+      ],
+      "relevance": "Essential for candidate identification",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter contact",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct communication",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for geographical matching",
+      "reasoning": "No location or address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Useful for professional background verification",
+      "reasoning": "No LinkedIn URL is included in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for showcasing design work and code",
+      "reasoning": "No portfolio or GitHub URL is present in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "professional summary",
+      "status": "present",
+      "evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications."
+      ],
+      "relevance": "Provides a quick overview of candidate background",
+      "reasoning": "A professional summary statement is included."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "experience",
+      "status": "present",
+      "evidence": [
+        "Product Designer (UI/UX) at Aurora Digital | 2022-Present",
+        "Junior UI/UX Designer at Studio Blend | 2021-2022"
+      ],
+      "relevance": "Core section for evaluating career history",
+      "reasoning": "Two relevant design roles are documented with dates and responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Communication and Multimedia Design, Universidade do Minho (2018-2021)"
+      ],
+      "relevance": "Provides educational background",
+      "reasoning": "Degree, institution, and dates are provided."
+    },
+    {
+      "section": "Design Skills",
+      "field": "technical skills",
+      "status": "present",
+      "evidence": [
+        "Figma, FigJam, Sketch, Adobe Creative Suite"
+      ],
+      "relevance": "Crucial for assessing technical capabilities",
+      "reasoning": "A dedicated section lists design tools, methods, and standards."
+    },
+    {
+      "section": "Design Skills",
+      "field": "tools/software",
+      "status": "present",
+      "evidence": [
+        "Figma, FigJam, Sketch, Adobe Creative Suite"
+      ],
+      "relevance": "Highlights specific software proficiency",
+      "reasoning": "Design software tools are explicitly listed."
+    },
+    {
+      "section": "Design Skills",
+      "field": "methodologies",
+      "status": "present",
+      "evidence": [
+        "Wireframing, Prototyping, Usability Testing, Information Architecture"
+      ],
+      "relevance": "Demonstrates design process knowledge",
+      "reasoning": "Design methods are explicitly listed."
+    },
+    {
+      "section": "CV",
+      "field": "transferable skills",
+      "status": "uncertain",
+      "evidence": [],
+      "relevance": "Helps assess broader competencies",
+      "reasoning": "No explicit transferable skills section, though design methods and user research apply broadly."
+    },
+    {
+      "section": "CV",
+      "field": "languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for multilingual environments",
+      "reasoning": "No spoken or programming languages section is present."
+    },
+    {
+      "section": "CV",
+      "field": "certifications/training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Shows continuous professional development",
+      "reasoning": "No certifications or formal training courses are listed."
+    },
+    {
+      "section": "CV",
+      "field": "projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates practical application of skills",
+      "reasoning": "No independent project section is included."
+    },
+    {
+      "section": "CV",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for data processing compliance in certain regions",
+      "reasoning": "No GDPR statement is included in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "React, TypeScript, and modern CSS/Tailwind development experience",
+    "Node.js or Python backend development experience",
+    "Automated testing frameworks (Jest or Vitest)",
+    "Fullstack web development experience",
+    "Git and GitHub version control proficiency",
+    "Portfolio, GitHub, or deployed project links"
+  ],
+  "weak_evidence": [
+    "Responsive design experience is noted from a UI/UX perspective rather than frontend implementation",
+    "Application material requirement lacks the requested portfolio or project links"
+  ],
+  "strengths": [
+    "3 years of focused professional experience in Product and UI/UX design",
+    "Solid experience with industry-standard design tools including Figma",
+    "Familiarity with web accessibility standards (WCAG)",
+    "Clear educational background in Communication and Multimedia Design"
+  ],
+  "weaknesses": [
+    "Complete lack of contact information (email, phone, location)",
+    "Absence of online portfolio, GitHub profile, or project links",
+    "Missing core technical requirements for the Fullstack Web Developer role (React, Node.js, TypeScript)",
+    "Missing standard CV sections such as languages and certifications"
+  ],
+  "overall_assessment": "The candidate, André Ferreira, is a Product and UI/UX Designer with 3 years of experience in design tools, design systems, and user research. The job posting evaluated is for a Fullstack Web Developer (React & Node.js). The candidate's background is entirely focused on UI/UX design rather than software engineering, resulting in a substantial gap in required technical skills such as React, TypeScript, Node.js, and automated testing. Additionally, the CV lacks vital contact information and portfolio links.",
+  "reasoning": "Evaluation is based strictly on the provided StructuredCV and StructuredJob data. The candidate's evidence aligns with design competencies but fails to satisfy the software development requirements mandated by the job posting. Furthermore, completeness checks reveal missing contact details and platform links."
+}

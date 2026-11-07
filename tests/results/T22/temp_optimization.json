@@ -1,0 +1,171 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Contact",
+      "current_content": "André Ferreira",
+      "proposed_content": "André Ferreira\nProduct Designer (UI/UX) - Web & SaaS\nBraga, Portugal (Remote / Hybrid) | andre.ferreira.design@example.com | +351 926 789 123\nLinkedIn: linkedin.com/in/andreferreira-design | Portfolio: andreferreira.design",
+      "rationale": "Add missing contact information, location, LinkedIn URL, portfolio link, and updated headline matching the target job title based on user confirmation.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "André Ferreira"
+      ],
+      "user_provided_evidence": [
+        "Braga, Portugal",
+        "andre.ferreira.design@example.com",
+        "+351 926 789 123",
+        "https://www.linkedin.com/in/andreferreira-design",
+        "https://andreferreira.design",
+        "Product Designer (UI/UX) - Web & SaaS"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.",
+      "proposed_content": "Product Designer (UI/UX) - Web & SaaS with 3 years of verified expertise designing responsive SaaS web applications, creating scalable Design Systems, and conducting user interviews and usability testing with proven results at Aurora Digital.",
+      "rationale": "Optimize professional summary to highlight candidate identity, target role, verified core skills, and concrete project/company achievements in accordance with format research and user focus confirmation.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive\nSaaS web applications.",
+        "Product Designer (UI/UX) at Aurora Digital | 2022-Present (2 years)"
+      ],
+      "user_provided_evidence": [
+        "Product Designer (UI/UX) - Web & SaaS"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Product Designer (UI/UX)\nAurora Digital | 2022-Present (2 years)\nDesigning interactive prototypes and high-fidelity UI specifications in Figma.\nBuilding and maintaining component libraries and Design Systems.\nConducting user interviews, usability testing, and UX discovery.\nPreparing design-to-development handoff documentation.",
+      "proposed_content": "Product Designer (UI/UX)\nAurora Digital | November 2022 - Present (2 years)\n- Designing interactive prototypes and high-fidelity UI specifications in Figma using advanced auto-layout and component variables.\n- Building and maintaining component libraries and Design Systems.\n- Conducting user interviews, usability testing, and UX discovery adhering to accessibility standards (WCAG 2.1 AA).\n- Preparing design-to-development handoff documentation.",
+      "rationale": "Integrate confirmed advanced Figma capabilities and WCAG 2.1 AA accessibility standards into existing professional experience responsibilities.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Product Designer (UI/UX)\nAurora Digital | 2022-Present (2 years)\nDesigning interactive prototypes and high-fidelity UI specifications in Figma.\nBuilding and maintaining component libraries and Design Systems.\nConducting user interviews, usability testing, and UX discovery.\nPreparing design-to-development handoff documentation."
+      ],
+      "user_provided_evidence": [
+        "November 2022 to present",
+        "advanced Figma skills (auto-layout, components, variables)",
+        "WCAG 2.1 AA accessibility standards"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021)",
+      "proposed_content": "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho | 2018 - 2021 (Grade: 16/20)",
+      "rationale": "Include verified academic grade confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021)"
+      ],
+      "user_provided_evidence": [
+        "Grade: 16/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "LANGUAGES\n- Portuguese: Native\n- English: C1 Advanced",
+      "rationale": "Add verified language proficiencies required by the job description and provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese: Native",
+        "English: C1 Advanced"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target role: We found the CV title/header as \"André Ferreira\" and the summary mentions \"Product and UI/UX designer\". The target job is \"Product Designer (UI/UX) - Web & SaaS\". Do you confirm using \"Product Designer (UI/UX)\" or \"Product Designer (UI/UX) - Web & SaaS\" as the headline? (Yes/No, or specify another)",
+    "2. Contact & links: We found candidate name \"André Ferreira\", but phone, email, location, LinkedIn, and portfolio links are currently missing from the CV. Do you have an email, phone number, location, LinkedIn URL, and portfolio link to add? (If none, reply 'I do not have one')",
+    "3. Employment: We found two employment records: Product Designer (UI/UX) at Aurora Digital (2022-Present, 2 years) and Junior UI/UX Designer at Studio Blend (2021-2022, 1.5 years). Do you confirm these employment records? (Yes/No)",
+    "4. Education: We found B.Sc. in Communication and Multimedia Design at Universidade do Minho (2018-2021). Do you confirm this educational background? (Yes/No)",
+    "5. Technical skills gaps: The target job requests advanced Figma skills (auto-layout, nested component variants, variables, interactive prototyping), WCAG 2.1 AA accessibility standards, design-to-code tools (Storybook, Figma Code Connect), motion design (Principle, After Effects, Lottie), and product analytics (Mixpanel, Hotjar, PostHog). Do you have experience with any of these missing skills to include? (If none, reply 'I do not have one')",
+    "6. Languages: No languages section is present in the CV. The target role requires fluent written and verbal communication in English and Portuguese. Do you have fluency in English and/or Portuguese to include? (If none, reply 'I do not have one')",
+    "7. Certifications: No certifications are currently listed in the CV. Do you have any certifications or additional training courses to include? (If none, reply 'I do not have one')",
+    "8. Projects: No dedicated projects section is currently listed in the CV. Do you have any personal projects or repositories to include? (If none, reply 'I do not have one')",
+    "9. Summary focus: We propose highlighting your 3+ years of SaaS web application design, Design Systems creation and maintenance, and UX research methodologies to align with Vektor Studio's requirements. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target role: We found the CV title/header as \"André Ferreira\" and the summary mentions \"Product and UI/UX designer\". The target job is \"Product Designer (UI/UX) - Web & SaaS\". Do you confirm using \"Product Designer (UI/UX)\" or \"Product Designer (UI/UX) - Web & SaaS\" as the headline? (Yes/No, or specify another)",
+      "answer": "Yes, let's use \"Product Designer (UI/UX) - Web & SaaS\" as the headline to match the target job title closely.",
+      "gap": "Target headline specificity",
+      "resolution": "supported"
+    },
+    {
+      "question": "2. Contact & links: We found candidate name \"André Ferreira\", but phone, email, location, LinkedIn, and portfolio links are currently missing from the CV. Do you have an email, phone number, location, LinkedIn URL, and portfolio link to add? (If none, reply 'I do not have one')",
+      "answer": "Yes, my contact and link details are: Location: Braga, Portugal (remote / hybrid), Email: andre.ferreira.design@example.com, Phone: +351 926 789 123, LinkedIn: https://www.linkedin.com/in/andreferreira-design, and Portfolio: https://andreferreira.design.",
+      "gap": "Missing contact and portfolio links",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: We found two employment records: Product Designer (UI/UX) at Aurora Digital (2022-Present, 2 years) and Junior UI/UX Designer at Studio Blend (2021-2022, 1.5 years). Do you confirm these employment records? (Yes/No)",
+      "answer": "Yes, I confirm these employment records: Product Designer (UI/UX) at Aurora Digital from November 2022 to the present, and Junior UI/UX Designer at Studio Blend from July 2021 to October 2022.",
+      "gap": "Detailed employment dates and confirmation",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: We found B.Sc. in Communication and Multimedia Design at Universidade do Minho (2018-2021). Do you confirm this educational background? (Yes/No)",
+      "answer": "Yes, I confirm my educational background. I earned my B.Sc. in Communication and Multimedia Design at Universidade do Minho between 2018 and 2021 with a grade of 16/20.",
+      "gap": "Educational details and grade",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The target job requests advanced Figma skills (auto-layout, nested component variants, variables, interactive prototyping), WCAG 2.1 AA accessibility standards, design-to-code tools (Storybook, Figma Code Connect), motion design (Principle, After Effects, Lottie), and product analytics (Mixpanel, Hotjar, PostHog). Do you have experience with any of these missing skills to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have advanced Figma skills (auto-layout, components, variables) and experience with WCAG 2.1 AA accessibility standards and design-to-dev handoffs, but I do not have experience with Storybook, Figma Code Connect, motion design tools, or product analytics tools.",
+      "gap": "Preferred tool gaps (Storybook, Figma Code Connect, motion design, analytics)",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "6. Languages: No languages section is present in the CV. The target role requires fluent written and verbal communication in English and Portuguese. Do you have fluency in English and/or Portuguese to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I am fluent in Portuguese (Native) and English (C1 Advanced).",
+      "gap": "Language proficiencies",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: No certifications are currently listed in the CV. Do you have any certifications or additional training courses to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "8. Projects: No dedicated projects section is currently listed in the CV. Do you have any personal projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Standalone projects",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "9. Summary focus: We propose highlighting your 3+ years of SaaS web application design, Design Systems creation and maintenance, and UX research methodologies to align with Vektor Studio's requirements. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus. Highlighting my experience with SaaS web applications, Design Systems, and UX research aligns well with Vektor Studio's requirements.",
+      "gap": "Summary alignment focus",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Product Designer (UI/UX) - Web & SaaS",
+    "Braga, Portugal",
+    "andre.ferreira.design@example.com",
+    "+351 926 789 123",
+    "https://www.linkedin.com/in/andreferreira-design",
+    "https://andreferreira.design",
+    "Product Designer (UI/UX) at Aurora Digital from November 2022 to present",
+    "Junior UI/UX Designer at Studio Blend from July 2021 to October 2022",
+    "B.Sc. in Communication and Multimedia Design at Universidade do Minho grade 16/20",
+    "Advanced Figma skills (auto-layout, components, variables)",
+    "WCAG 2.1 AA accessibility standards experience",
+    "Portuguese: Native",
+    "English: C1 Advanced"
+  ],
+  "optimization_strategy": "Optimized the candidate's CV for Vektor Studio by incorporating verified contact and link details, adding a targeted professional headline, refining the summary to highlight 3 years of SaaS web application and Design Systems experience, incorporating confirmed advanced Figma and WCAG 2.1 AA standards into professional experience, adding academic grade details, and including a language proficiency section for English and Portuguese.",
+  "unresolved_evidence_gaps": [
+    "Design-to-code tools experience (Storybook, Figma Code Connect)",
+    "Motion design familiarity (Principle, After Effects, Lottie)",
+    "Product analytics tools knowledge (Mixpanel, Hotjar, PostHog)",
+    "Certifications and licenses",
+    "Standalone personal projects or repositories"
+  ]
+}

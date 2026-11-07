@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target job title is 'Backend Software Engineer (Python)'. Do you confirm this target role headline? (Yes/No)",
+    "answer": "Yes, I confirm this target role headline."
+  },
+  {
+    "question": "We noticed contact details (email, phone, location, LinkedIn, GitHub) are missing from the CV header. Do you have an email, phone number, location, or portfolio links to add? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can add my email (rita.santos.tech@example.com), phone (+351 912 345 678), location (Porto, Portugal), LinkedIn (https://www.linkedin.com/in/ritasantos-lead), and GitHub (https://github.com/ritasantos-dev) to the header."
+  },
+  {
+    "question": "We found employment history with CloudScale (2021-Present) as Staff Software Engineer / Tech Lead and FinTech Global (2018-2020) as Senior Backend Engineer. Do you confirm these employment entries? (Yes/No)",
+    "answer": "Yes, I confirm those employment entries. Furthermore, I also have previous experience as a Software Engineer at InnoTech Labs from October 2015 to January 2018."
+  },
+  {
+    "question": "We found M.Sc. in Informatics and Computing Engineering from FEUP (2010-2015). Do you confirm this education entry? (Yes/No)",
+    "answer": "Yes, I confirm this education entry. It is my M.Sc. in Informatics Engineering (Mestrado Integrado em Engenharia Informática) from the Faculdade de Engenharia da Universidade do Porto (FEUP), completed between 2010 and 2015."
+  },
+  {
+    "question": "We noticed technical skill gaps for FastAPI, Flask, Django, pytest, Docker Compose, and GitHub Actions/GitLab CI. Do you have professional experience with any of these technologies to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have professional experience with Django and FastAPI from my time at InnoTech Labs, as well as Docker and GitLab CI/CD across multiple roles. I do not have direct professional experience with Flask, pytest, or GitHub Actions."
+  },
+  {
+    "question": "We noticed spoken languages are not listed in the CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and have C2 Proficient fluency in English."
+  },
+  {
+    "question": "We noticed no certifications are listed in the CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "We noticed no dedicated projects section is present in the CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can include my GitHub profile: https://github.com/ritasantos-dev, which demonstrates my backend engineering capabilities."
+  },
+  {
+    "question": "We propose a summary focus highlighting Python, FastAPI/Django, PostgreSQL, and distributed microservices architecture for the target role. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]

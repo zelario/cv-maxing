@@ -1,0 +1,132 @@
+{
+  "cv": "André Ferreira\nProduct and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive\nSaaS web applications.\nPROFESSIONAL EXPERIENCE\nProduct Designer (UI/UX)\nAurora Digital | 2022-Present (2 years)\nDesigning interactive prototypes and high-fidelity UI specifications in Figma.\nBuilding and maintaining component libraries and Design Systems.\nConducting user interviews, usability testing, and UX discovery.\nPreparing design-to-development handoff documentation.\nJunior UI/UX Designer\nStudio Blend | 2021-2022 (1.5 years)\nCreating wireframes, mockups, and responsive landing pages.\nUser journey mapping and persona definition.\nEDUCATION\nB.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021)\nDESIGN SKILLS\nTools: Figma, FigJam, Sketch, Adobe Creative Suite\nMethods: Wireframing, Prototyping, Usability Testing, Information Architecture\nStandards: Design Systems, Component Libraries, Accessibility (WCAG)\nAndré Ferreira Page 1",
+  "personal_information": {
+    "name": "André Ferreira",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "André Ferreira"
+  },
+  "summary": {
+    "text": "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive SaaS web applications.",
+    "source_section": "Summary",
+    "source_text": "Product and UI/UX designer with 3 years of experience designing user flows, Design Systems, and responsive\nSaaS web applications."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc. in Communication and Multimedia Design",
+      "field": "Communication and Multimedia Design",
+      "institution": "Universidade do Minho",
+      "location": "",
+      "start_date": "2018",
+      "end_date": "2021",
+      "details": "",
+      "source_section": "EDUCATION",
+      "source_text": "B.Sc. in Communication and Multimedia Design\nUniversidade do Minho (2018-2021)"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Product Designer (UI/UX)",
+      "company": "Aurora Digital",
+      "location": "",
+      "start_date": "2022",
+      "end_date": "Present",
+      "description": "",
+      "responsibilities": [
+        "Designing interactive prototypes and high-fidelity UI specifications in Figma.",
+        "Building and maintaining component libraries and Design Systems.",
+        "Conducting user interviews, usability testing, and UX discovery.",
+        "Preparing design-to-development handoff documentation."
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "Figma"
+      ],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Product Designer (UI/UX)\nAurora Digital | 2022-Present (2 years)\nDesigning interactive prototypes and high-fidelity UI specifications in Figma.\nBuilding and maintaining component libraries and Design Systems.\nConducting user interviews, usability testing, and UX discovery.\nPreparing design-to-development handoff documentation."
+    },
+    {
+      "job_title": "Junior UI/UX Designer",
+      "company": "Studio Blend",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "2022",
+      "description": "",
+      "responsibilities": [
+        "Creating wireframes, mockups, and responsive landing pages.",
+        "User journey mapping and persona definition."
+      ],
+      "achievements": [],
+      "skills_evidenced": [],
+      "source_section": "PROFESSIONAL EXPERIENCE",
+      "source_text": "Junior UI/UX Designer\nStudio Blend | 2021-2022 (1.5 years)\nCreating wireframes, mockups, and responsive landing pages.\nUser journey mapping and persona definition."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Figma",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Tools: Figma, FigJam, Sketch, Adobe Creative Suite"
+    },
+    {
+      "name": "FigJam",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Tools: Figma, FigJam, Sketch, Adobe Creative Suite"
+    },
+    {
+      "name": "Sketch",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Tools: Figma, FigJam, Sketch, Adobe Creative Suite"
+    },
+    {
+      "name": "Adobe Creative Suite",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Tools: Figma, FigJam, Sketch, Adobe Creative Suite"
+    },
+    {
+      "name": "Wireframing",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Methods: Wireframing, Prototyping, Usability Testing, Information Architecture"
+    },
+    {
+      "name": "Prototyping",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Methods: Wireframing, Prototyping, Usability Testing, Information Architecture"
+    },
+    {
+      "name": "Usability Testing",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Methods: Wireframing, Prototyping, Usability Testing, Information Architecture"
+    },
+    {
+      "name": "Information Architecture",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Methods: Wireframing, Prototyping, Usability Testing, Information Architecture"
+    },
+    {
+      "name": "Design Systems",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Standards: Design Systems, Component Libraries, Accessibility (WCAG)"
+    },
+    {
+      "name": "Component Libraries",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Standards: Design Systems, Component Libraries, Accessibility (WCAG)"
+    },
+    {
+      "name": "Accessibility (WCAG)",
+      "source_section": "DESIGN SKILLS",
+      "source_text": "Standards: Design Systems, Component Libraries, Accessibility (WCAG)"
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

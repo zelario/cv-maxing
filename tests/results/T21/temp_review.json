@@ -1,0 +1,288 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer.",
+      "category": "Experience",
+      "status": "satisfied",
+      "evidence": [
+        "Staff Software Engineer / Tech Lead at CloudScale (2021-Present, 3 years)",
+        "Leading system architecture for event-driven backend services and API platforms.",
+        "Mentoring engineers on code quality and technical design."
+      ],
+      "reasoning": "The candidate explicitly demonstrates experience as a Tech Lead and Staff Software Engineer at CloudScale with responsibilities in system architecture and technical leadership."
+    },
+    {
+      "requirement": "7+ years of professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer.",
+      "category": "Experience",
+      "status": "weak_evidence",
+      "evidence": [
+        "Staff Software Engineer / Tech Lead at CloudScale (2021-Present, 3 years)",
+        "Senior Backend Engineer at FinTech Global (2018-2020, 3 years)"
+      ],
+      "reasoning": "The candidate shows 6 years of professional experience (3 years as Senior Backend Engineer and 3 years as Staff Software Engineer / Tech Lead), which falls slightly short of the explicit 7+ years requirement."
+    },
+    {
+      "requirement": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices.",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka."
+      ],
+      "reasoning": "The candidate has demonstrated professional work building distributed systems, event-driven architectures, microservices, and using Apache Kafka."
+    },
+    {
+      "requirement": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Languages: Go, Python, SQL, Bash",
+        "Developing REST and gRPC microservices in Go and Python.",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka."
+      ],
+      "reasoning": "The candidate demonstrates strong proficiency in Go and Python through both skills listing and practical backend microservices implementation."
+    },
+    {
+      "requirement": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis",
+        "PostgreSQL database schema design and query optimization."
+      ],
+      "reasoning": "The candidate demonstrates direct experience with PostgreSQL database schema design and query optimization, and lists Redis and PostgreSQL as system skills."
+    },
+    {
+      "requirement": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform).",
+      "category": "Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git",
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "reasoning": "The candidate demonstrates hands-on experience managing AWS cloud infrastructure and containerized deployments with Docker and Kubernetes, and lists Terraform in skills."
+    },
+    {
+      "requirement": "Exceptional communication skills, with the ability to explain complex technical trade-offs to both technical and non-technical stakeholders.",
+      "category": "Other Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Mentoring engineers on code quality and technical design."
+      ],
+      "reasoning": "The candidate demonstrates technical communication and mentorship of engineers, but there is no explicit evidence regarding communication with non-technical stakeholders."
+    },
+    {
+      "requirement": "Degree in Computer Science, Informatics Engineering, or related technical field.",
+      "category": "Education",
+      "status": "satisfied",
+      "evidence": [
+        "M.Sc. in Informatics and Computing Engineering, FEUP (2010-2015)"
+      ],
+      "reasoning": "The candidate holds an M.Sc. in Informatics and Computing Engineering, which matches the preferred educational background."
+    },
+    {
+      "requirement": "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus).",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention OpenTelemetry, Datadog, or Prometheus."
+    },
+    {
+      "requirement": "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns.",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention Domain-Driven Design (DDD) or CQRS patterns."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "name",
+      "status": "present",
+      "evidence": [
+        "Rita Santos"
+      ],
+      "relevance": "High",
+      "reasoning": "The candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV text."
+    },
+    {
+      "section": "Header",
+      "field": "phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV text."
+    },
+    {
+      "section": "Header",
+      "field": "location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location is provided in the CV text."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link or platform mention is present in the CV text."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No GitHub or portfolio URL is present in the CV text."
+    },
+    {
+      "section": "Summary",
+      "field": "professional summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise professional summary is present at the beginning of the CV."
+    },
+    {
+      "section": "Experience",
+      "field": "experience",
+      "status": "present",
+      "evidence": [
+        "Staff Software Engineer / Tech Lead, CloudScale | 2021-Present (3 years)",
+        "Senior Backend Engineer, FinTech Global | 2018-2020 (3 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Detailed professional experience with roles, companies, dates, and responsibilities is included."
+    },
+    {
+      "section": "Education",
+      "field": "education",
+      "status": "present",
+      "evidence": [
+        "M.Sc. in Informatics and Computing Engineering, FEUP (2010-2015)"
+      ],
+      "relevance": "High",
+      "reasoning": "Education history with degree, institution, and dates is present."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "technical skills",
+      "status": "present",
+      "evidence": [
+        "Languages: Go, Python, SQL, Bash",
+        "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis",
+        "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+      ],
+      "relevance": "High",
+      "reasoning": "A structured technical skills section categorizing languages, architecture, cloud, and tools is present."
+    },
+    {
+      "section": "Tools/Software",
+      "field": "tools/software",
+      "status": "present",
+      "evidence": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Git",
+        "Apache Kafka",
+        "RabbitMQ",
+        "Redis",
+        "PostgreSQL"
+      ],
+      "relevance": "High",
+      "reasoning": "Tools and software are included under technical skills."
+    },
+    {
+      "section": "Methodologies",
+      "field": "methodologies",
+      "status": "present",
+      "evidence": [
+        "Microservices",
+        "event-driven architectures"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Architectural methodologies like microservices and event-driven architectures are referenced."
+    },
+    {
+      "section": "Transferable Skills",
+      "field": "transferable skills",
+      "status": "present",
+      "evidence": [
+        "Mentoring engineers on code quality and technical design.",
+        "Leading system architecture"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Leadership and mentoring skills are evidenced through experience entries."
+    },
+    {
+      "section": "Languages",
+      "field": "languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "Spoken/natural languages are not listed in the CV."
+    },
+    {
+      "section": "Certifications",
+      "field": "certifications/training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training section is present."
+    },
+    {
+      "section": "Projects",
+      "field": "projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No standalone personal or academic projects section is present, though professional projects are described under experience."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus)",
+    "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns",
+    "Explicit communication with non-technical stakeholders",
+    "Full 7+ years of professional experience (currently shows 6 years)"
+  ],
+  "weak_evidence": [
+    "Total years of professional software engineering experience (6 years versus 7+ requested)",
+    "Non-technical stakeholder communication"
+  ],
+  "strengths": [
+    "Strong demonstrated experience in distributed systems, microservices, and event-driven architectures using Apache Kafka and Go/Python.",
+    "Solid cloud and container orchestration experience with AWS, Docker, Kubernetes, and Terraform.",
+    "Proven leadership experience as a Tech Lead and Staff Software Engineer.",
+    "Relevant M.Sc. degree in Informatics and Computing Engineering."
+  ],
+  "weaknesses": [
+    "Total professional experience is 6 years, which is slightly below the 7+ years requirement.",
+    "Missing contact information (email, phone, location) and professional profile links in the CV.",
+    "No evidence for preferred skills such as OpenTelemetry, Datadog, Prometheus, DDD, or CQRS."
+  ],
+  "overall_assessment": "The candidate demonstrates strong relevant technical and leadership competencies aligned with the core requirements of the Senior / Staff Tech Lead role, including hands-on expertise in distributed systems, microservices, Go, Python, Kafka, AWS, and Kubernetes. While professional experience totals 6 years (slightly under the 7+ years requirement) and certain preferred tools (such as Datadog or OpenTelemetry) are absent, the candidate provides robust evidence of architectural and technical leadership.",
+  "reasoning": "The evaluation maps the candidate's stated experience and skills directly against the job posting requirements using evidence-based methodology, noting strengths in technical execution and leadership, while transparently identifying gaps in years of experience and preferred tooling."
+}
