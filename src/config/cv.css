@@ -1,14 +1,14 @@
 
 
 :root {
-  --font-family: Calibri, Carlito, Arial, Helvetica, sans-serif;
+  --font-family: Carlito, Calibri, Arial, Helvetica, sans-serif;
   --accent: #172553;       
   --text: #171717;
   --body-size: 10.5pt;       /* docx default run size: 21 half-points */
   --name-size: 24pt;         /* docx: name run size */
   --headline-size: 14pt;     /* docx: headline run size */
   --heading-size: 11.5pt;    /* docx Heading1 style: 23 half-points */
-  --small-size: 8pt;         /* consent line size */
+  --small-size: 8.5pt;       /* docx: consent line size: 17 half-points */
   --margin: 2cm;             /* ~ docx left/right margin (720090 EMU) */
   --margin-v: 1.76cm;        /* ~ docx top/bottom margin (635000 EMU) */
 }

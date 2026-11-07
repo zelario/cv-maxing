@@ -59,32 +59,32 @@ Across all **30 official test scenarios** (T01 – T30):
 | **T01** | Tomás Silva (Junior CS) | Data Scientist Intern | Direct Match | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T02** | Tomás Silva (Junior CS) | Backend Software Engineer (Python) | Lateral Transition | 10/10 | 8/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T03** | Tomás Silva (Junior CS) | Cloud & DevOps Engineer | Domain Gap Stress Test | 10/10 | 4/10 | 9/10 | 10/10 | 8/10 | 0 | 1 Pág |
-| **T04** | Diogo Martins (Backend Mid) | Backend Software Engineer (Python) | Direct Match | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T05** | Diogo Martins (Backend Mid) | Fullstack Web Developer (React/Node) | Lateral Transition | 10/10 | 7/10 | 9/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T06** | Diogo Martins (Backend Mid) | Cloud & DevOps Engineer | Lateral Transition | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T04** | Diogo Santos (Backend Mid) | Backend Software Engineer (Python) | Direct Match | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T05** | Diogo Santos (Backend Mid) | Fullstack Web Developer (React/Node) | Lateral Transition | 10/10 | 7/10 | 9/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T06** | Diogo Santos (Backend Mid) | Cloud & DevOps Engineer | Lateral Transition | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T07** | Mariana Costa (Frontend Mid) | Fullstack Web Developer (React/Node) | Lateral Transition | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T08** | Mariana Costa (Frontend Mid) | Data Scientist Intern | Domain Gap Stress Test | 10/10 | 4/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T09** | Pedro Oliveira (Career Transition) | Data Scientist Intern | Career Transition | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T10** | Pedro Oliveira (Career Transition) | Fullstack Web Developer (React/Node) | Career Transition | 10/10 | 8/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T11** | Dr. Gonçalo Ribeiro (Doctor) | Junior Doctor / General Practice | Direct Match (Non-IT) | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
-| **T12** | Enf. Inês Santos (Nurse) | Registered Nurse (Hospital Care) | Direct Match (Non-IT) | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
-| **T13** | Enf. Inês Santos (Nurse) | Junior Doctor / General Practice | Clinical Scope Stress Test | 10/10 | 4/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T11** | Dr. Gonçalo Ferreira (Doctor) | Junior Doctor / General Practice | Direct Match (Non-IT) | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
+| **T12** | Inês Martins (Nurse) | Registered Nurse (Hospital Care) | Direct Match (Non-IT) | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
+| **T13** | Inês Martins (Nurse) | Junior Doctor / General Practice | Clinical Scope Stress Test | 10/10 | 4/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T14** | Dra. Beatriz Matos (Lawyer) | Junior Associate Lawyer | Direct Match (Non-IT) | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
-| **T15** | Tiago Ferreira (Marketing Mid) | Digital Marketing Specialist | Direct Match (Non-IT) | 10/10 | 9/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
-| **T16** | Tiago Ferreira (Marketing Mid) | Junior Associate Lawyer | Cross-Domain Stress Test (Marketing -> Law) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T17** | Dr. Gonçalo Ribeiro (Doctor) | Digital Marketing Specialist | Cross-Domain Stress Test (Medicine -> Marketing) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T15** | Tiago Ribeiro (Marketing Mid) | Digital Marketing Specialist | Direct Match (Non-IT) | 10/10 | 9/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
+| **T16** | Tiago Ribeiro (Marketing Mid) | Junior Associate Lawyer | Cross-Domain Stress Test (Marketing -> Law) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T17** | Dr. Gonçalo Ferreira (Doctor) | Digital Marketing Specialist | Cross-Domain Stress Test (Medicine -> Marketing) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T18** | Dra. Beatriz Matos (Lawyer) | Backend Software Engineer (Python) | Cross-Domain Stress Test (Law -> IT) | 10/10 | 3/10 | 9/10 | 10/10 | 8/10 | 0 | 1 Pág |
-| **T19** | Diogo Martins (Backend Mid) | Junior Associate Lawyer | Cross-Domain Stress Test (IT -> Law) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T20** | Dr. Gonçalo Ribeiro (Doctor) | Data Scientist Intern | Cross-Domain Stress Test (Medicine -> IT) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T19** | Diogo Santos (Backend Mid) | Junior Associate Lawyer | Cross-Domain Stress Test (IT -> Law) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T20** | Dr. Gonçalo Ferreira (Doctor) | Data Scientist Intern | Cross-Domain Stress Test (Medicine -> IT) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T21** | Rita Santos (Tech Lead) | Senior Tech Lead (Distributed Systems) | Direct Match | 10/10 | 10/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
 | **T22** | André Ferreira (Product Designer) | Product Designer (UI/UX SaaS) | Direct Match | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T23** | Rita Santos (Tech Lead) | Backend Software Engineer (Python) | Lateral Specialization | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
-| **T24** | Diogo Martins (Backend Mid) | Senior Tech Lead (Distributed Systems) | Seniority Gap Stress Test | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T24** | Diogo Santos (Backend Mid) | Senior Tech Lead (Distributed Systems) | Seniority Gap Stress Test | 10/10 | 7/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T25** | Mariana Costa (Frontend Mid) | Product Designer (UI/UX SaaS) | Cross-Discipline Transition | 10/10 | 8/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T26** | André Ferreira (Product Designer) | Fullstack Web Developer (React/Node) | Cross-Domain Stress Test (Design -> Code) | 10/10 | 4/10 | 9/10 | 10/10 | 8/10 | 0 | 1 Pág |
 | **T27** | Pedro Oliveira (Career Transition) | Senior Tech Lead (Distributed Systems) | Extreme Seniority Gap | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T28** | Tomás Silva (Junior CS) | Product Designer (UI/UX SaaS) | Cross-Domain Stress Test (CS -> Design) | 10/10 | 3/10 | 10/10 | 10/10 | 10/10 | 0 | 1 Pág |
-| **T29** | Tiago Ferreira (Marketing Mid) | Product Designer (UI/UX SaaS) | Cross-Domain Stress Test (Marketing -> Design) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
+| **T29** | Tiago Ribeiro (Marketing Mid) | Product Designer (UI/UX SaaS) | Cross-Domain Stress Test (Marketing -> Design) | 10/10 | 3/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 | **T30** | Rita Santos (Tech Lead) | Cloud & DevOps Engineer | Lateral Infrastructure Transition | 10/10 | 9/10 | 10/10 | 10/10 | 9/10 | 0 | 1 Pág |
 
 ---
