@@ -1,4 +1,8 @@
 {
+  "python.analysis.extraPaths": [
+    "src",
+    "tests/src"
+  ],
   "files.exclude": {
     "**/__pycache__": true,
     "**/*.pyc": true,
