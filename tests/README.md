@@ -8,44 +8,6 @@ This directory contains the complete automated evaluation suite, test fixtures, 
 
 The validation suite implements an automated, reproducible Human-Centered AI (HCAI) benchmarking harness that runs without human intervention while preserving full Human-in-the-Loop (HITL) interactive semantics:
 
-```mermaid
-flowchart TD
-    subgraph TestInputs [1. Test Fixtures]
-        RawCV[Candidate CV PDF\ntests/cvs/]
-        JobDoc[Target Job Posting\ntests/jobs/]
-        ProfileDoc[Factual Ground Truth\ntests/profiles/]
-    end
-
-    subgraph PipelineExecution [2. CV Maxing Core Pipeline]
-        RawCV --> Task1[parse_cv_task]
-        JobDoc --> Task2[parse_job_task]
-        Task1 --> Task3[review_cv_task]
-        Task2 --> Task3
-        Task3 --> Task4[optimize_cv_task]
-        Task4 <-->|ask_user tool| SimCandidate[Candidate Simulator\ntests/src/candidate.py]
-        Task4 --> Task5[generate_cv_task]
-        Task5 --> PDFGen[Playwright Chromium PDF\nwith GDPR Bottom-Anchoring]
-    end
-
-    ProfileDoc -.->|Ground Truth & Negative Constraints| SimCandidate
-
-    subgraph Evaluation [3. Independent LLM-as-a-Judge]
-        PDFGen --> Judge[LLM-as-a-Judge\ntests/src/judge.py]
-        Task1 -.-> Judge
-        Task2 -.-> Judge
-        Task3 -.-> Judge
-        Task4 -.-> Judge
-        Task5 -.-> Judge
-        SimCandidate -.->|Transcript| Judge
-        Judge --> ValResult[ValidationResult Model\nScores + Hallucination Audit]
-    end
-
-    subgraph Archiving [4. Artifact Archival]
-        ValResult --> ResultsDir[tests/results/TXX/]
-        PDFGen --> ResultsDir
-    end
-```
-
 ### Key Validation Components:
 
 1. **Automated Matrix Runner ([`tests/src/validation_pipeline.py`](src/validation_pipeline.py))**:
@@ -57,7 +19,7 @@ flowchart TD
    - Truthfully provides missing contact details, degrees, or links when asked, and explicitly declines unevidenced technologies, simulating realistic candidate behavior.
 
 3. **Independent LLM-as-a-Judge ([`tests/src/judge.py`](src/judge.py))**:
-   - Employs an independent model (`gemini-3.5-flash-lite`) operating on an objective 5-dimension evaluation rubric ([`tests/src/models/validation.py`](src/models/validation.py)).
+   - Employs an independent model (`gemini-3.8-flash`) operating on an objective 5-dimension evaluation rubric ([`tests/src/models/validation.py`](src/models/validation.py)).
    - Compares the final `GeneratedCV` against the ground-truth CV and conversation transcript.
    - Evaluates:
      - **Accuracy (0–10)**: Strict factual truthfulness. Any hallucination automatically caps this score at <= 6.
@@ -180,28 +142,7 @@ Across all **30 official test scenarios** (T01 – T30):
 
 ---
 
-## 6. How to Run the Tests
-
-The test suite runs inside the persistent Docker development container to ensure environment consistency:
-
-```bash
-# 1. Start persistent dev container
-make dev
-
-# 2. Run a specific test case interactively (T0, T01 - T30)
-make test
-
-# 3. Or run directly via Docker CLI
-docker compose exec dev python tests/src/validation_pipeline.py --test-id T01
-docker compose exec dev python tests/src/validation_pipeline.py --test-id T21
-
-# 4. Run only the Judge evaluation on existing outputs
-docker compose exec dev python tests/src/validation_pipeline.py --judge-only
-```
-
----
-
-## 7. Directory & Artifact Structure
+## 6. Directory & Artifact Structure
 
 ```text
 tests/
