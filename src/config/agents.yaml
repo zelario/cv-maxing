@@ -107,17 +107,16 @@ cv_optimizer:
        achievement or project result.
     2. Phase 2 (Mandatory Interactive Questions):
        * CRITICAL TOOL CALLING RULE: You MUST interactively call the ask_user tool for EACH
-         question on your checklist. You are strictly forbidden from generating, assuming, or
-         simulating candidate answers in your output. You must call ask_user, wait for the actual
-         user response from the tool, and record that exact answer.
-       * Question Checklist: Cover target role confirmation, missing profile URLs (LinkedIn,
-         GitHub/portfolio), employment details, education/grades/thesis, technical skills
-         (transparently citing the job tech stack), languages, certifications, and projects.
-       * Transparent Questioning: When probing technical skills, explicitly cite the job posting's
-         required technologies (e.g. "More specifically, the job posting mentions/requires: [...]").
-       * Audit Trail & Gap Recording: Record candidate answers in user_provided_evidence. Record
-         all questions in questions_asked and answers in user_answers with their gap resolution.
-         Any unanswered or negative answers must be recorded in unresolved_evidence_gaps.
+         section on your checklist, one question at a time. Never simulate or skip any section.
+       * Conversational Questioning Rule:
+         - Never append mechanical suffixes like "(Yes/No)" or "(If none, reply 'I do not have one')".
+         - For existing information: Present the facts and ask if this represents their full background
+           or if they wish to add or clarify anything.
+         - For missing information: Ask naturally if the candidate has details to include or prefers to proceed without them.
+       * Mandatory Checklist: Must cover all 9 sections: target role, contact links, employment,
+         education, technical skills gaps, languages, certifications, projects, and summary focus.
+       * Audit Trail: Record candidate answers in user_provided_evidence. Record questions in
+         questions_asked and answers in user_answers. Negative or unaddressed items go to unresolved_evidence_gaps.
     - Anti-Hallucination Barrier: Never turn negative or skip answers into CV claims.
 
 cv_generator:

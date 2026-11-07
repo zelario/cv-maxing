@@ -116,30 +116,30 @@ optimize_cv_task:
          evidence_source: "cv", source_evidence, and requires_human_approval: true.
 
     2. PHASE 2 - MANDATORY INTERACTIVE HITL QUESTIONS (TOOL EXECUTION REQUIRED):
-       - TOOL CALLING DIRECTIVE: You MUST execute the ask_user tool for EACH question on your checklist,
-         one question at a time. DO NOT output the final JSON answer until you have actively invoked
-         the ask_user tool and received responses. You are strictly forbidden from fabricating or
-         simulating user answers (such as "None provided" or "Confirmed") without calling ask_user.
-       - Question Sequence (ask one focused question at a time via ask_user):
-         1. Target role: confirm the exact job title from the posting as the target headline.
-         2. Missing contact & profile links: ask separately for missing email, phone, location,
-            LinkedIn URL, and portfolio/GitHub URL. Explicitly allow "I do not have one" or skip.
-         3. Employment/internship: confirm listed roles, company names, dates, and achievements.
-         4. Education: confirm degree, institution, dates, grade/GPA, thesis topic and grade.
-         5. Technical skills with Tech Stack Transparency: explicitly cite the target job's specific
-            tech stack (e.g. "More specifically, the job posting mentions/requires: [list exact job
-            technologies]. Do you have experience with any of these or any others you would like to include?").
-         6. Languages: ask for spoken languages and stated CEFR proficiency levels.
-         7. Certifications: ask for name, issuer/provider, and year.
-         8. Projects & competitions: ask for relevant standalone projects, dates, technologies, and individual contribution.
-         9. Summary claims: confirm key points to highlight in the summary.
+       - TOOL CALLING DIRECTIVE: You MUST execute the ask_user tool for EACH of the 9 sections below,
+         one section at a time. It is strictly mandatory to address every single section in sequence.
+         DO NOT output the final JSON until all 9 sections have been completed.
+       - Conversational Questioning Rule for Every Section:
+         * Do NOT append mechanical suffixes like "(Yes/No)" or "(If none, reply 'I do not have one')".
+         * IF INFORMATION EXISTS: State the known facts clearly and ask if this covers their full
+           background in that area or if they would like to add, expand, or adjust anything.
+           (e.g., "We found [X]. Does this represent your full [section], or would you like to add any details?")
+         * IF INFORMATION DOES NOT EXIST (Missing): Ask naturally if the candidate has details to include
+           or if they prefer to proceed without adding that section.
+       - Mandatory 9-Section Checklist (ask one at a time via ask_user):
+         1. Target role: present the proposed job title and ask if it matches their intended direction or if they prefer a different focus.
+         2. Contact & links: state existing contact details and ask if they have missing items (phone, email, LinkedIn, portfolio/GitHub) to include.
+         3. Employment: state listed roles, company names, and dates; ask if this covers their full work history or if they wish to add other positions or achievements.
+         4. Education: state degree, institution, dates, and grade; ask if this represents their full academic background or if they wish to add other degrees, thesis details, or coursework.
+         5. Technical skills gaps: transparently mention key technologies from the job posting; ask if they have experience with any of them or other relevant tools to add beyond their current skills.
+         6. Languages: state listed languages and proficiencies; ask if this covers all languages they speak or if they'd like to add others and their levels.
+         7. Certifications: state existing certifications (or note their absence); ask if they hold any official certifications, licenses, or training to include.
+         8. Projects: state identified projects; ask if this represents their main showcase work or if they have additional projects, repositories, or demos to highlight.
+         9. Summary focus: propose key strengths and achievements to highlight; ask if this captures how they want to be presented or if they'd prefer to emphasize a different angle.
        - Handling Candidate Answers:
-         * When the candidate provides new evidence, store it in user_provided_evidence and create
-           corresponding ProposedCVChange items with evidence_source: "user" or "cv_and_user".
-         * Record every question asked in questions_asked, and every actual candidate answer in
-           user_answers with its gap and resolution (supported, unsupported, not_applicable, unresolved).
-         * Every unaddressed gap or negative answer ("I do not have one") must be recorded in
-           unresolved_evidence_gaps.
+         * Store new candidate evidence in user_provided_evidence and create ProposedCVChange items.
+         * Record every question in questions_asked and answer in user_answers.
+         * Record unaddressed gaps or negative answers in unresolved_evidence_gaps.
 
     3. STRICT CONSTRAINTS:
        - Never invent skills, qualifications, metrics, or technologies not confirmed by the candidate.
