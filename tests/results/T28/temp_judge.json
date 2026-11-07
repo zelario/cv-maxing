@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 10,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless integration of all user-provided contact details, links, languages, and certifications.",
+    "Accurately reflects the candidate's true academic background and internship details without fabricating experience.",
+    "Clean structural organization with well-categorized technical skills and professional formatting."
+  ],
+  "issues": [
+    "Severe mismatch between the candidate's core profile (Computer Science / Software Engineering / Data Science) and the target role (Product Designer / UI/UX), which naturally results in low job alignment.",
+    "The target job requires extensive UI/UX competencies, design systems, and Figma mastery, which the candidate explicitly confirmed they do not possess."
+  ],
+  "recommendations": [
+    "Direct this generated CV toward junior software engineering, backend development, or data science positions rather than UI/UX Product Design roles.",
+    "If targeting UI/UX positions in the future, build a dedicated portfolio of design projects and gain hands-on experience with design tools like Figma and design systems."
+  ]
+}

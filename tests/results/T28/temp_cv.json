@@ -1,0 +1,110 @@
+{
+  "cv": "Tomás Silva\nComputer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering.\nEducation\nB.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20\nExperience\nCurricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration.\nKey Projects\nCapstone Project: Customer Churn Analysis: Built a data pipeline in\nPython analyzing customer churn and retention using Pandas, Scikit-Learn,\nand PostgreSQL.\nTechnical Skills\nLanguages & Tools: Python, SQL, Git\nLibraries/Concepts: Pandas, NumPy, Unit Testing\nTomás Silva Page 1",
+  "personal_information": {
+    "name": "Tomás Silva",
+    "email": "",
+    "phone": "",
+    "location": "",
+    "nationality": "",
+    "date_of_birth": "",
+    "source_section": "Header",
+    "source_text": "Tomás Silva"
+  },
+  "summary": {
+    "text": "Computer Science graduate seeking an entry-level opportunity in data science or software engineering.",
+    "source_section": "Summary",
+    "source_text": "Computer Science graduate seeking an entry-level opportunity in data science or\nsoftware engineering."
+  },
+  "education": [
+    {
+      "level": "B.Sc.",
+      "degree": "B.Sc. in Computer Science",
+      "field": "Computer Science",
+      "institution": "University of Coimbra",
+      "location": "",
+      "start_date": "2021",
+      "end_date": "2024",
+      "details": "Grade: 15/20",
+      "source_section": "Education",
+      "source_text": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20"
+    }
+  ],
+  "experience": [
+    {
+      "job_title": "Curricular Summer Internship",
+      "company": "",
+      "location": "",
+      "start_date": "",
+      "end_date": "",
+      "description": "Focused on software testing and internal tool support, gaining practical experience in QA methodologies and team collaboration.",
+      "responsibilities": [
+        "Software testing",
+        "Internal tool support"
+      ],
+      "achievements": [],
+      "skills_evidenced": [
+        "QA methodologies"
+      ],
+      "source_section": "Experience",
+      "source_text": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "source_section": "Technical Skills",
+      "source_text": "Languages & Tools: Python, SQL, Git"
+    },
+    {
+      "name": "SQL",
+      "source_section": "Technical Skills",
+      "source_text": "Languages & Tools: Python, SQL, Git"
+    },
+    {
+      "name": "Git",
+      "source_section": "Technical Skills",
+      "source_text": "Languages & Tools: Python, SQL, Git"
+    },
+    {
+      "name": "Pandas",
+      "source_section": "Technical Skills",
+      "source_text": "Libraries/Concepts: Pandas, NumPy, Unit Testing"
+    },
+    {
+      "name": "NumPy",
+      "source_section": "Technical Skills",
+      "source_text": "Libraries/Concepts: Pandas, NumPy, Unit Testing"
+    },
+    {
+      "name": "Unit Testing",
+      "source_section": "Technical Skills",
+      "source_text": "Libraries/Concepts: Pandas, NumPy, Unit Testing"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Capstone Project: Customer Churn Analysis",
+      "description": "Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
+      "technologies": [
+        "Python",
+        "Pandas",
+        "Scikit-Learn",
+        "PostgreSQL"
+      ],
+      "responsibilities": [],
+      "achievements": [],
+      "skills_evidenced": [
+        "Python",
+        "Pandas",
+        "Scikit-Learn",
+        "PostgreSQL"
+      ],
+      "source_section": "Key Projects",
+      "source_text": "Capstone Project: Customer Churn Analysis: Built a data pipeline in\nPython analyzing customer churn and retention using Pandas, Scikit-Learn,\nand PostgreSQL."
+    }
+  ],
+  "certifications": [],
+  "languages": [],
+  "achievements": [],
+  "other": []
+}

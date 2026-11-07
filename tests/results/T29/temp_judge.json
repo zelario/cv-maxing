@@ -1,0 +1,21 @@
+{
+  "accuracy_score": 10,
+  "job_alignment_score": 3,
+  "completeness_score": 10,
+  "clarity_score": 10,
+  "evidence_score": 9,
+  "hallucinations": [],
+  "strengths": [
+    "Flawless factual adherence to the original CV and all user-provided corrections and additions from the interview.",
+    "Excellent inclusion and structuring of contact info, portfolio link, native/fluent languages, and verified certifications.",
+    "Clean, professional information hierarchy and tone with well-categorized marketing skills."
+  ],
+  "issues": [
+    "Severe structural domain mismatch: candidate is a Digital Marketing & Paid Media Specialist applying for a Product Designer (UI/UX) - Web & SaaS role.",
+    "Candidate completely lacks the required product design tools, UI/UX methodologies, and portfolio items demanded by the target job."
+  ],
+  "recommendations": [
+    "Target roles that match digital marketing, paid traffic acquisition, and growth analytics domains rather than UI/UX product design.",
+    "Build practical UX/UI case studies and projects in Figma before attempting to apply for Product Designer positions."
+  ]
+}

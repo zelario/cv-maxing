@@ -1,0 +1,174 @@
+{
+  "job_title": "Product Designer (UI/UX) - Web & SaaS",
+  "company": {
+    "name": "Vektor Studio",
+    "location": "Porto / Remote",
+    "website": ""
+  },
+  "location": "Porto / Remote",
+  "employment_type": "",
+  "seniority": "",
+  "description": "Vektor Studio designs and scales digital products for global tech startups, B2B SaaS platforms, and innovative consumer brands. We pride ourselves on creating elegant, accessible, and intuitive user experiences that turn complex domain workflows into delight for daily users.\n\nWe are looking for a collaborative, user-centric Product Designer (UI/UX) to lead the design lifecycle of web applications, client portals, and SaaS dashboards.\n\nYou will take ownership of end-to-end product design: from understanding user needs through qualitative research and discovery to crafting high-fidelity design specifications and scalable Design Systems in Figma. You will collaborate daily with Product Managers, UX Researchers, and Frontend Engineers to ship polished, meaningful features.",
+  "skills": [
+    {
+      "name": "Figma",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Design intuitive user flows, information architectures, wireframes, and high-fidelity interactive prototypes in Figma."
+    },
+    {
+      "name": "Design Systems",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Build, maintain, and expand our cross-platform Design System (component libraries, auto-layout variants, variables, design tokens)."
+    },
+    {
+      "name": "Accessibility standards (WCAG 2.1 AA)",
+      "requirement_type": "required",
+      "source_section": "What You'll Do",
+      "source_text": "Advocate for accessibility standards (WCAG 2.1 AA) across visual hierarchy, contrast ratios, and interactive states."
+    },
+    {
+      "name": "Figma",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Exceptional proficiency in Figma (mastery of auto-layout, nested component variants, variables, and interactive prototyping)."
+    },
+    {
+      "name": "Design Systems and reusable component libraries",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Proven track record in creating and maintaining Design Systems and reusable component libraries."
+    },
+    {
+      "name": "UX research methodologies",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong grounding in UX research methodologies: usability testing, user journey mapping, and heuristic reviews."
+    },
+    {
+      "name": "Portfolio demonstrating end-to-end design thinking",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "A strong portfolio demonstrating end-to-end design thinking, problem framing, iteration processes, and polished visual design."
+    },
+    {
+      "name": "Understanding of modern web capabilities and constraints",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Understanding of modern web capabilities and constraints (responsive grids, flexbox behavior, component state management)."
+    },
+    {
+      "name": "English and Portuguese communication",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Fluent written and verbal communication in English and Portuguese."
+    },
+    {
+      "name": "Design-to-code inspection tools (Storybook, Figma Code Connect)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with design-to-code inspection tools (Storybook, Figma Code Connect)."
+    },
+    {
+      "name": "Micro-interactions and motion design (Principle, After Effects, or Lottie)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with micro-interactions and motion design (Principle, After Effects, or Lottie)."
+    },
+    {
+      "name": "Product analytics tools (Mixpanel, Hotjar, PostHog)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Knowledge of product analytics tools (Mixpanel, Hotjar, PostHog) to inform design decisions."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms.",
+      "years": "2+ years",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "2+ years of hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms."
+    }
+  ],
+  "education_requirements": [],
+  "responsibilities": [
+    {
+      "description": "Design intuitive user flows, information architectures, wireframes, and high-fidelity interactive prototypes in Figma.",
+      "source_section": "What You'll Do",
+      "source_text": "Design intuitive user flows, information architectures, wireframes, and high-fidelity interactive prototypes in Figma."
+    },
+    {
+      "description": "Lead user discovery sessions, qualitative interviews, usability testing, and heuristic evaluations to validate design hypotheses.",
+      "source_section": "What You'll Do",
+      "source_text": "Lead user discovery sessions, qualitative interviews, usability testing, and heuristic evaluations to validate design hypotheses."
+    },
+    {
+      "description": "Build, maintain, and expand our cross-platform Design System (component libraries, auto-layout variants, variables, design tokens).",
+      "source_section": "What You'll Do",
+      "source_text": "Build, maintain, and expand our cross-platform Design System (component libraries, auto-layout variants, variables, design tokens)."
+    },
+    {
+      "description": "Partner closely with frontend developers to ensure pixel-perfect implementation, responsive fidelity, and smooth design-to-development handoffs.",
+      "source_section": "What You'll Do",
+      "source_text": "Partner closely with frontend developers to ensure pixel-perfect implementation, responsive fidelity, and smooth design-to-development handoffs."
+    },
+    {
+      "description": "Advocate for accessibility standards (WCAG 2.1 AA) across visual hierarchy, contrast ratios, and interactive states.",
+      "source_section": "What You'll Do",
+      "source_text": "Advocate for accessibility standards (WCAG 2.1 AA) across visual hierarchy, contrast ratios, and interactive states."
+    },
+    {
+      "description": "Present design rationale, user insights, and design iterations clearly to internal teams and executive stakeholders.",
+      "source_section": "What You'll Do",
+      "source_text": "Present design rationale, user insights, and design iterations clearly to internal teams and executive stakeholders."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Product Designer",
+      "source_section": "About the Role",
+      "source_text": "Product Designer (UI/UX)"
+    },
+    {
+      "keyword": "UI/UX",
+      "source_section": "About the Role",
+      "source_text": "Product Designer (UI/UX)"
+    },
+    {
+      "keyword": "Web",
+      "source_section": "About the Role",
+      "source_text": "web applications, client portals, and SaaS dashboards"
+    },
+    {
+      "keyword": "SaaS",
+      "source_section": "About the Role",
+      "source_text": "web applications, client portals, and SaaS dashboards"
+    },
+    {
+      "keyword": "Figma",
+      "source_section": "About the Role",
+      "source_text": "Design Systems in Figma"
+    },
+    {
+      "keyword": "Design System",
+      "source_section": "What You'll Do",
+      "source_text": "Design System"
+    },
+    {
+      "keyword": "WCAG 2.1 AA",
+      "source_section": "What You'll Do",
+      "source_text": "WCAG 2.1 AA"
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Language",
+      "description": "Fluent written and verbal communication in English and Portuguese.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Fluent written and verbal communication in English and Portuguese."
+    }
+  ]
+}

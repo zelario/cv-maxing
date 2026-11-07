@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: We found the candidate headline is 'Digital Marketing & Paid Media Specialist'. Do you confirm this as the headline, or would you like to update it? (Yes/No, or specify another)",
+    "answer": "No, I would like to update it. Given that I am applying for a Product Designer role, this headline does not match my professional background as a digital marketing and paid media specialist, and my background does not include UX/UI design experience."
+  },
+  {
+    "question": "2. Contact & links: We found that email, phone, location, LinkedIn URL, and portfolio URL are missing from the CV. Do you have any of these contact items or links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is tiago.ribeiro.mkt@example.com, my phone is +351 932 109 876, my location is Porto / Braga, Portugal, and my portfolio is https://tiagoribeiro.com."
+  },
+  {
+    "question": "3. Employment: We found 1 professional entry: Digital Marketing Specialist at Impulso Digital Agency (2021-Present), managing paid ads on Meta Ads/Google Ads, SEO, and GA4 reports. Do you confirm this work experience? (Yes/No)",
+    "answer": "Yes, I confirm this work experience at Impulso Digital Agency since October 2021, alongside my previous internship at Agência Criativa Minho."
+  },
+  {
+    "question": "4. Education: We found B.Sc. in Communication Sciences and Marketing from University of Minho (2018-2021). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm my academic background. I graduated with a B.Sc. in Communication Sciences and Marketing from the University of Minho between 2018 and 2021 with a grade of 15/20."
+  },
+  {
+    "question": "5. Technical skills gaps: The job requires Figma, Design Systems, WCAG 2.1 AA accessibility, and UX research methodologies. Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have experience with Figma, Design Systems, WCAG accessibility, or Product Design, as my background is strictly in digital marketing, paid media, and growth marketing."
+  },
+  {
+    "question": "6. Languages: We found no languages listed in the CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese as my native language and have C1 Full Professional fluency in English."
+  },
+  {
+    "question": "7. Certifications: We found no certifications listed in the CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I hold certifications in Google Ads Search (2024), GA4 (Google Skillshop), Meta Certified Digital Marketing Associate (2022), and HubSpot Email Marketing (2023)."
+  },
+  {
+    "question": "8. Projects: We found no projects section in the CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "9. Summary focus: We propose highlighting 3 years of digital marketing, paid traffic acquisition campaigns, conversion funnels, and performance analytics. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus on my 3 years of experience in digital marketing, paid traffic acquisition, conversion funnels, and performance analytics."
+  }
+]

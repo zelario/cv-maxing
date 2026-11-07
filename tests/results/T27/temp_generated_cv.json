@@ -1,0 +1,109 @@
+{
+  "contact": {
+    "name": "Pedro Oliveira",
+    "headline": "Junior Fullstack Software Engineer",
+    "specialisation": "Software Engineering",
+    "phone": "+351 961 234 567",
+    "email": "pedro.oliveira.dev@example.com",
+    "location_city": "Lisbon",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/pedro-oliveira-dev",
+    "github": "https://github.com/poliveira-projects",
+    "portfolio": "null"
+  },
+  "summary": "Junior Fullstack Software Engineer transitioning from a 4-year Civil Engineering career. Leverages proficiency in Python, Flask, JavaScript, and SQLite, backed by an intensive 9-month Fullstack Web Development Bootcamp from Lisbon Tech Academy. Proven ability to build and deploy verified portfolio web applications integrating Python/Flask, PostgreSQL, and Docker.",
+  "experience": [
+    {
+      "title": "Civil Project Engineer",
+      "dates": "2018-2022",
+      "company": "Civil Engineering Firm",
+      "location": "Lisbon, Portugal",
+      "bullets": [
+        "Performed structural calculations, site coordination, and project timeline/budget management."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Integrated Master's (M.Sc.) in Civil Engineering",
+      "dates": "2013-2018",
+      "institution": "Instituto Superior Técnico (IST)",
+      "location": "Lisbon, Portugal",
+      "grade": "null"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Frameworks",
+      "skills": [
+        "Python",
+        "JavaScript",
+        "Node.js",
+        "Flask"
+      ]
+    },
+    {
+      "category_name": "Databases & Tools",
+      "skills": [
+        "SQLite",
+        "PostgreSQL",
+        "Docker",
+        "Git"
+      ]
+    },
+    {
+      "category_name": "Frontend & Methodologies",
+      "skills": [
+        "HTML/CSS",
+        "Tailwind CSS",
+        "Project Management",
+        "Analytical Problem Solving"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "null",
+      "certification": "null"
+    },
+    {
+      "name": "English",
+      "level": "B2 Upper-Intermediate",
+      "details": "null",
+      "certification": "null"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Fullstack Web Development Bootcamp",
+      "issuer": "Lisbon Tech Academy",
+      "year": "2023"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Construction Equipment & Asset Tracker",
+      "dates": "2023-Present",
+      "description": "Built complete web application utilizing Python (Flask), SQLite, JavaScript, and Docker.",
+      "link": "https://github.com/poliveira-projects",
+      "volunteering_or_other": "null"
+    },
+    {
+      "name": "Personal Budget & Expense Analytics",
+      "dates": "2023-Present",
+      "description": "Built complete web application utilizing Node.js, PostgreSQL, and Chart.js.",
+      "link": "https://github.com/poliveira-projects",
+      "volunteering_or_other": "null"
+    },
+    {
+      "name": "Structural Beam Deflection Calculator",
+      "dates": "2023-Present",
+      "description": "Built complete web application utilizing Python and Tailwind CSS.",
+      "link": "https://github.com/poliveira-projects",
+      "volunteering_or_other": "null"
+    }
+  ],
+  "consent": true
+}

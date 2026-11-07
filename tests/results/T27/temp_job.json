@@ -1,0 +1,192 @@
+{
+  "job_title": "Senior / Staff Tech Lead (Distributed Systems)",
+  "company": {
+    "name": "Aether Cloud Platforms",
+    "location": "Lisbon / Porto / Remote",
+    "website": ""
+  },
+  "location": "Lisbon / Porto / Remote",
+  "employment_type": "",
+  "seniority": "Senior / Staff",
+  "description": "Aether Cloud Platforms develops next-generation, high-performance infrastructure and data streaming platforms for enterprise clients across Europe and North America. We build mission-critical, fault-tolerant distributed systems capable of processing millions of operations per second with sub-millisecond reliability.\n\nWe are seeking an experienced Staff / Tech Lead to drive the technical direction, architectural soundness, and engineering excellence of our core distributed platform squad.\n\nIn this role, you will be the technical authority for key architectural decisions, collaborating closely with product management, engineering directors, and individual engineers to translate complex business challenges into resilient, scalable systems. You will balance hands-on design and critical path implementation with high-impact technical mentorship.",
+  "skills": [
+    {
+      "name": "distributed systems, microservices architectures, and event-driven architectures",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ)."
+    },
+    {
+      "name": "Apache Kafka",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ)."
+    },
+    {
+      "name": "RabbitMQ",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ)."
+    },
+    {
+      "name": "Go",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust)."
+    },
+    {
+      "name": "Python",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust)."
+    },
+    {
+      "name": "Java",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust)."
+    },
+    {
+      "name": "Rust",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust)."
+    },
+    {
+      "name": "relational and non-relational database design, query optimization, and transaction boundaries",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis)."
+    },
+    {
+      "name": "PostgreSQL",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis)."
+    },
+    {
+      "name": "Redis",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis)."
+    },
+    {
+      "name": "AWS or GCP",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform)."
+    },
+    {
+      "name": "Docker",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform)."
+    },
+    {
+      "name": "Kubernetes",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform)."
+    },
+    {
+      "name": "Terraform",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform)."
+    },
+    {
+      "name": "distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus)",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus)."
+    },
+    {
+      "name": "Domain-Driven Design (DDD) principles and CQRS patterns",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns."
+    }
+  ],
+  "experience_requirements": [
+    {
+      "description": "Professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer.",
+      "years": "7+ years",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "7+ years of professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer."
+    }
+  ],
+  "education_requirements": [
+    {
+      "level": "Degree",
+      "degree": "Degree",
+      "field": "Computer Science, Informatics Engineering, or related technical field",
+      "requirement_type": "preferred",
+      "source_section": "Nice to Have",
+      "source_text": "Degree in Computer Science, Informatics Engineering, or related technical field."
+    }
+  ],
+  "responsibilities": [
+    {
+      "description": "Lead the architectural design and evolution of high-throughput, low-latency distributed microservices and event-driven data streaming pipelines.",
+      "source_section": "What You'll Do",
+      "source_text": "Lead the architectural design and evolution of high-throughput, low-latency distributed microservices and event-driven data streaming pipelines."
+    },
+    {
+      "description": "Drive technical standards, architectural RFC processes, code quality initiatives, and system resilience practices across engineering squads.",
+      "source_section": "What You'll Do",
+      "source_text": "Drive technical standards, architectural RFC processes, code quality initiatives, and system resilience practices across engineering squads."
+    },
+    {
+      "description": "Author clear architectural documentation, trade-off analyses, and technical roadmaps aligned with organizational goals.",
+      "source_section": "What You'll Do",
+      "source_text": "Author clear architectural documentation, trade-off analyses, and technical roadmaps aligned with organizational goals."
+    },
+    {
+      "description": "Mentor senior and mid-level software engineers through system design reviews, pair programming, and architectural feedback.",
+      "source_section": "What You'll Do",
+      "source_text": "Mentor senior and mid-level software engineers through system design reviews, pair programming, and architectural feedback."
+    },
+    {
+      "description": "Troubleshoot complex distributed systems anomalies, performance bottlenecks, and concurrency issues in production.",
+      "source_section": "What You'll Do",
+      "source_text": "Troubleshoot complex distributed systems anomalies, performance bottlenecks, and concurrency issues in production."
+    },
+    {
+      "description": "Work with infrastructure/DevOps engineers to ensure clean cloud-native deployments (AWS, Kubernetes, Terraform) and robust observability.",
+      "source_section": "What You'll Do",
+      "source_text": "Work with infrastructure/DevOps engineers to ensure clean cloud-native deployments (AWS, Kubernetes, Terraform) and robust observability."
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "Distributed Systems",
+      "source_section": "About Aether Cloud Platforms",
+      "source_text": "We build mission-critical, fault-tolerant distributed systems capable of processing millions of operations per second with sub-millisecond reliability."
+    },
+    {
+      "keyword": "Microservices",
+      "source_section": "What You'll Do",
+      "source_text": "Lead the architectural design and evolution of high-throughput, low-latency distributed microservices and event-driven data streaming pipelines."
+    },
+    {
+      "keyword": "Event-Driven",
+      "source_section": "What You'll Do",
+      "source_text": "Lead the architectural design and evolution of high-throughput, low-latency distributed microservices and event-driven data streaming pipelines."
+    },
+    {
+      "keyword": "Cloud-Native",
+      "source_section": "What You'll Do",
+      "source_text": "Work with infrastructure/DevOps engineers to ensure clean cloud-native deployments (AWS, Kubernetes, Terraform) and robust observability."
+    }
+  ],
+  "other_requirements": [
+    {
+      "type": "Communication skills",
+      "description": "Exceptional communication skills, with the ability to explain complex technical trade-offs to both technical and non-technical stakeholders.",
+      "requirement_type": "required",
+      "source_section": "What We're Looking For",
+      "source_text": "Exceptional communication skills, with the ability to explain complex technical trade-offs to both technical and non-technical stakeholders."
+    }
+  ]
+}

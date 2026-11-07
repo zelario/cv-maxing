@@ -1,0 +1,330 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Terraform",
+      "category": "Required Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Terraform listed under TECHNICAL SKILLS (Cloud & Tools)"
+      ],
+      "reasoning": "Terraform is included in the technical skills list, but there is no contextual description of hands-on experience or projects using Terraform in the professional experience section."
+    },
+    {
+      "requirement": "Amazon Web Services (AWS)",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes. (CloudScale)"
+      ],
+      "reasoning": "Direct evidence of managing AWS cloud infrastructure in a professional experience role."
+    },
+    {
+      "requirement": "GitHub Actions",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "GitLab CI",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned anywhere in the CV."
+    },
+    {
+      "requirement": "Docker",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes. (CloudScale)"
+      ],
+      "reasoning": "Directly demonstrated through containerized deployments experience."
+    },
+    {
+      "requirement": "Kubernetes (EKS)",
+      "category": "Required Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes. (CloudScale)"
+      ],
+      "reasoning": "Demonstrated experience with Kubernetes container deployments."
+    },
+    {
+      "requirement": "Prometheus",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned in the CV."
+    },
+    {
+      "requirement": "Grafana",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned in the CV."
+    },
+    {
+      "requirement": "CloudWatch",
+      "category": "Required Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned in the CV."
+    },
+    {
+      "requirement": "AWS services (EC2, S3, RDS, VPC, IAM, Route53)",
+      "category": "Experience Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "reasoning": "AWS is mentioned generally, but specific core services like EC2, S3, RDS, VPC, IAM, or Route53 are not explicitly detailed."
+    },
+    {
+      "requirement": "Solid practical experience writing and managing modular Infrastructure as Code using Terraform",
+      "category": "Experience Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Terraform listed under TECHNICAL SKILLS"
+      ],
+      "reasoning": "Skill is listed, but practical experience managing modular IaC with Terraform is absent from job descriptions."
+    },
+    {
+      "requirement": "Linux systems administration",
+      "category": "Experience Requirements",
+      "status": "weak_evidence",
+      "evidence": [
+        "Bash listed under TECHNICAL SKILLS (Languages)"
+      ],
+      "reasoning": "Bash is listed as a language, but Linux systems administration experience is not explicitly described."
+    },
+    {
+      "requirement": "Bash or Python",
+      "category": "Experience Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Languages: Go, Python, SQL, Bash",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka."
+      ],
+      "reasoning": "Python and Bash are listed, and Python is demonstrated in professional experience."
+    },
+    {
+      "requirement": "Solid working experience containerizing applications and services with Docker",
+      "category": "Experience Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "reasoning": "Demonstrated through experience managing containerized deployments."
+    },
+    {
+      "requirement": "Practical experience configuring and optimizing continuous integration and deployment pipelines (CI/CD)",
+      "category": "Experience Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of CI/CD pipeline configuration or optimization in the experience section."
+    },
+    {
+      "requirement": "Official AWS Certifications",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No certifications section or mentions of AWS certifications in the CV."
+    },
+    {
+      "requirement": "Practical production experience deploying and managing Kubernetes clusters",
+      "category": "Preferred Skills",
+      "status": "satisfied",
+      "evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "reasoning": "Evidenced by managing containerized deployments using Kubernetes at CloudScale."
+    },
+    {
+      "requirement": "GitOps methodologies (ArgoCD or Flux)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned in the CV."
+    },
+    {
+      "requirement": "Compliance standards (SOC2, ISO 27001)",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Not mentioned in the CV."
+    },
+    {
+      "requirement": "Bachelor's degree in Computer Science, Telecommunications, Informatics, or related engineering field",
+      "category": "Education Requirements",
+      "status": "satisfied",
+      "evidence": [
+        "M.Sc. in Informatics and Computing Engineering, FEUP (2010-2015)"
+      ],
+      "reasoning": "Candidate holds a higher degree (M.Sc.) in Informatics and Computing Engineering, satisfying the education requirement."
+    },
+    {
+      "requirement": "Systematic troubleshooting skills and a strong commitment to infrastructure security and reliability.",
+      "category": "Other Requirements",
+      "status": "uncertain",
+      "evidence": [
+        "Staff Software Engineer / Tech Lead role managing infrastructure and systems architecture."
+      ],
+      "reasoning": "Implied through senior engineering and tech lead experience, but troubleshooting and security commitment are not explicitly detailed."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Full Name",
+      "status": "present",
+      "evidence": [
+        "Rita Santos"
+      ],
+      "relevance": "Essential for candidate identification.",
+      "reasoning": "Name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for recruiter communication.",
+      "reasoning": "No email address is provided in the CV data."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for direct contact.",
+      "reasoning": "No phone number is provided in the CV data."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Relevant for hybrid/onsite position matching.",
+      "reasoning": "No location information is provided in the CV data."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides professional background depth.",
+      "reasoning": "No LinkedIn URL is present in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for verifying code and technical projects.",
+      "reasoning": "No GitHub or portfolio URLs are present in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices."
+      ],
+      "relevance": "Provides a quick overview of candidate profile.",
+      "reasoning": "A concise summary section is included."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Staff Software Engineer / Tech Lead at CloudScale (2021-Present)",
+        "Senior Backend Engineer at FinTech Global (2018-2020)"
+      ],
+      "relevance": "Critical for assessing past job responsibilities and achievements.",
+      "reasoning": "Two structured professional experience entries are provided with dates and descriptions."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "M.Sc. in Informatics and Computing Engineering, FEUP (2010-2015)"
+      ],
+      "relevance": "Validates academic background.",
+      "reasoning": "Degree, institution, and dates are provided."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Languages: Go, Python, SQL, Bash",
+        "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis",
+        "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+      ],
+      "relevance": "Essential for matching technical requirements.",
+      "reasoning": "Technical skills are categorized and listed clearly."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Preferred for specific job requirements (e.g., AWS certifications).",
+      "reasoning": "No certifications are listed in the CV."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates practical application of skills outside formal employment.",
+      "reasoning": "No dedicated projects section is included."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Useful for multinational environments.",
+      "reasoning": "Spoken/written languages are not listed."
+    },
+    {
+      "section": "Consent",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required in certain jurisdictions for data processing.",
+      "reasoning": "No GDPR statement is present."
+    }
+  ],
+  "missing_evidence": [
+    "GitHub Actions or GitLab CI experience",
+    "Monitoring and logging tools experience (Prometheus, Grafana, CloudWatch)",
+    "Specific core AWS services experience (EC2, S3, RDS, VPC, IAM, Route53)",
+    "CI/CD pipeline configuration and optimization experience",
+    "Official AWS Certifications",
+    "GitOps methodologies (ArgoCD, Flux)",
+    "Compliance standards familiarity (SOC2, ISO 27001)"
+  ],
+  "weak_evidence": [
+    "Terraform (listed in skills but lacks contextual project or experience details)",
+    "Linux systems administration (implied via Bash/infrastructure work but not explicitly described)",
+    "Modular Infrastructure as Code experience"
+  ],
+  "strengths": [
+    "Strong background in software engineering, distributed systems, and backend microservices with Go and Python",
+    "Demonstrated experience managing AWS cloud infrastructure, Docker, and Kubernetes",
+    "Holds a Master's degree in Informatics and Computing Engineering",
+    "Clear professional progression up to Staff Software Engineer / Tech Lead level"
+  ],
+  "weaknesses": [
+    "Missing critical contact details (email, phone, location) and profile links (LinkedIn, GitHub)",
+    "Lacks explicit evidence for several mandatory DevOps tools and practices specified in the job posting (GitHub Actions/GitLab CI, Prometheus/Grafana, specific AWS core services)",
+    "No mention of CI/CD pipeline management or GitOps tools"
+  ],
+  "overall_assessment": "Rita Santos presents a strong background as a Software Engineer and Tech Lead with solid experience in AWS, Docker, Kubernetes, Go, and Python. However, her profile leans more towards software engineering and backend microservices than dedicated Cloud & DevOps engineering. Several mandatory requirements from the job posting—such as GitHub Actions/GitLab CI, specific core AWS services, monitoring tools like Prometheus and Grafana, and CI/CD pipeline experience—lack direct evidence or are entirely missing from the CV. Additionally, key contact information (email, phone, location) is absent.",
+  "reasoning": "The evaluation maps the candidate's stated experience and skills against the job posting requirements using evidence-based criteria. Strengths and gaps are clearly delineated between what is explicitly demonstrated, weakly supported, or missing entirely."
+}

@@ -1,0 +1,240 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "7+ years of professional experience in software engineering, with proven leadership as a Tech Lead, Staff Engineer, or Principal Engineer.",
+      "category": "Experience Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate has transitioned from civil engineering recently and has experience as a freelance web developer/personal projects starting in 2023, along with 4 years as a Civil Project Engineer (2018-2022). There is no evidence of 7+ years of software engineering experience or leadership as a Tech Lead/Staff Engineer."
+    },
+    {
+      "requirement": "Deep expertise in designing and maintaining distributed systems, microservices architectures, and event-driven architectures (e.g., Apache Kafka, RabbitMQ).",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV lists Python, JavaScript, Flask, SQLite, HTML/CSS, and Git, but shows no mention or evidence of distributed systems, microservices, Apache Kafka, or RabbitMQ."
+    },
+    {
+      "requirement": "Strong programming proficiency in modern backend languages suited for distributed computing (such as Go, Python, Java, or Rust).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "Python"
+      ],
+      "reasoning": "The candidate lists Python and uses Python/Flask for building 3 complete web applications. However, there is no evidence of proficiency in Go, Java, or Rust, nor deep backend experience suited for high-throughput distributed computing."
+    },
+    {
+      "requirement": "Solid foundation in relational and non-relational database design, query optimization, and transaction boundaries (PostgreSQL, Redis).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "SQLite"
+      ],
+      "reasoning": "The candidate lists SQLite and SQL/database exposure through projects, but there is no evidence of PostgreSQL, Redis, query optimization, or transaction boundaries in complex systems."
+    },
+    {
+      "requirement": "Demonstrated experience with cloud environments (AWS or GCP), container orchestration (Docker, Kubernetes), and Infrastructure as Code (Terraform).",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The CV does not mention AWS, GCP, Docker, Kubernetes, or Terraform."
+    },
+    {
+      "requirement": "Experience with distributed tracing and observability tools (OpenTelemetry, Datadog, Prometheus).",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of distributed tracing or observability tools."
+    },
+    {
+      "requirement": "Familiarity with Domain-Driven Design (DDD) principles and CQRS patterns.",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of DDD or CQRS patterns."
+    },
+    {
+      "requirement": "Degree in Computer Science, Informatics Engineering, or related technical field.",
+      "category": "Education Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's degree is an Integrated Master's (M.Sc.) in Civil Engineering, which is not in Computer Science or a related technical field."
+    },
+    {
+      "requirement": "Exceptional communication skills, with the ability to explain complex technical trade-offs to both technical and non-technical stakeholders.",
+      "category": "Other Requirements",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No specific evidence demonstrating exceptional communication skills regarding technical trade-offs."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header / Personal Information",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Pedro Oliveira"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate's full name is clearly stated at the top of the CV."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV structure."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No phone number is provided in the CV structure."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location or address is provided."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile URL is provided."
+    },
+    {
+      "section": "Header / Personal Information",
+      "field": "GitHub / Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "The summary mentions a 'verified portfolio of working applications', but no direct URL link to GitHub or a portfolio is provided."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications."
+      ],
+      "relevance": "High",
+      "reasoning": "A concise summary detailing the candidate's career transition and bootcamp completion is present."
+    },
+    {
+      "section": "Professional Experience",
+      "field": "Experience",
+      "status": "present",
+      "evidence": [
+        "Freelance Web Developer / Personal Projects (2023-Present)",
+        "Civil Project Engineer (2018-2022, 4 years)"
+      ],
+      "relevance": "High",
+      "reasoning": "Work history is provided, covering both recent freelance/personal project work and prior civil engineering experience."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "Fullstack Web Development Bootcamp (9 months, 2023)",
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "relevance": "High",
+      "reasoning": "Both formal academic education and bootcamp training are documented."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills",
+      "status": "present",
+      "evidence": [
+        "Python, JavaScript, Flask, SQLite, HTML/CSS, Git"
+      ],
+      "relevance": "High",
+      "reasoning": "Core technical skills and tools are listed."
+    },
+    {
+      "section": "Skills",
+      "field": "Methodologies / Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Project Management",
+        "Analytical Problem Solving"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Transferable soft skills and methodologies are listed."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No spoken languages are explicitly listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications / Training",
+      "status": "present",
+      "evidence": [
+        "Fullstack Web Development Bootcamp (2023)"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Bootcamp completion is included under education/certifications."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "present",
+      "evidence": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "relevance": "Medium",
+      "reasoning": "Project work is described under the freelance/personal projects section."
+    },
+    {
+      "section": "GDPR",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is included."
+    }
+  ],
+  "missing_evidence": [
+    "7+ years of professional software engineering experience",
+    "Leadership experience as a Tech Lead, Staff Engineer, or Principal Engineer",
+    "Expertise in distributed systems, microservices, Apache Kafka, or RabbitMQ",
+    "Proficiency in backend languages like Go, Java, or Rust",
+    "Experience with relational/non-relational databases beyond SQLite (e.g., PostgreSQL, Redis)",
+    "Cloud environment experience (AWS or GCP)",
+    "Container orchestration and Infrastructure as Code experience (Docker, Kubernetes, Terraform)",
+    "Degree in Computer Science, Informatics Engineering, or related technical field"
+  ],
+  "weak_evidence": [
+    "Python proficiency is supported only by a 9-month bootcamp and 3 personal/freelance web applications rather than enterprise distributed systems experience",
+    "Database exposure is limited to SQLite without evidence of query optimization or transaction boundaries in large-scale systems"
+  ],
+  "strengths": [
+    "Clear career transition narrative from civil engineering to software development",
+    "Completed a structured 9-month fullstack development bootcamp and built 3 web applications",
+    "Demonstrates foundational programming knowledge in Python, JavaScript, Flask, and SQL/SQLite",
+    "Strong project management and problem-solving background from previous engineering career"
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location, LinkedIn URL)",
+    "Lacks senior-level tenure (7+ years) and leadership experience required for a Senior/Staff Tech Lead role",
+    "Does not possess required technical stack experience (distributed systems, microservices, Kafka, Go, AWS, Kubernetes, Terraform)",
+    "Educational background is in civil engineering rather than computer science"
+  ],
+  "overall_assessment": "The candidate, Pedro Oliveira, is a junior-level developer transitioning from civil engineering who has completed a 9-month bootcamp and built several small web applications using Python, Flask, and JavaScript. The target role is a Senior / Staff Tech Lead in Distributed Systems requiring 7+ years of experience, deep expertise in distributed architecture, event-driven systems (Kafka/RabbitMQ), cloud platforms (AWS/GCP), container orchestration (Kubernetes), and infrastructure as code (Terraform). There is a fundamental mismatch between the candidate's current experience level and technical stack versus the senior requirements of the position. Additionally, the CV lacks essential contact details such as email and phone number.",
+  "reasoning": "The evaluation compares the structured CV against the structured job posting point-by-point. The candidate satisfies almost none of the mandatory senior-level and distributed systems requirements, exhibiting severe gaps in years of experience, technical stack, and domain expertise. Completeness inspection reveals missing contact details."
+}

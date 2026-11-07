@@ -1,0 +1,189 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header & Contact",
+      "current_content": "Tomás Silva",
+      "proposed_content": "Tomás Silva | Coimbra, Portugal | +351 912 345 678 | tomas.silva.dev@example.com | linkedin.com/in/tomassilva-dev | github.com/tomassilva-data",
+      "rationale": "Add missing contact details and professional profile links provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Email: tomas.silva.dev@example.com",
+        "Phone: +351 912 345 678",
+        "Location: Coimbra, Portugal",
+        "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+        "GitHub: https://github.com/tomassilva-data"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Computer Science graduate seeking an entry-level opportunity in data science or software engineering.",
+      "proposed_content": "Computer Science graduate from the University of Coimbra seeking an entry-level opportunity in software engineering or data science. Proficient in Python, SQL, and data pipelines with hands-on experience in automated unit testing and analytics. Proven ability to build and deliver a customer churn data pipeline using Pandas, Scikit-Learn, and PostgreSQL.",
+      "rationale": "Enhance the professional summary following format research (identity/target role, 2-3 core skills, verified achievement) using verified candidate data.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering.",
+        "B.Sc. in Computer Science, University of Coimbra",
+        "Python, SQL, Git, Pandas, NumPy, Unit Testing",
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "user_provided_evidence": [],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Experience",
+      "current_content": "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical experience in QA methodologies and team collaboration.",
+      "proposed_content": "Curricular Summer Internship (3 months) - SoftInov Soluções Tecnológicas\n- Focused on software testing and internal tool support, automating unit and integration testing with pytest.\n- Gained practical experience in QA methodologies, PostgreSQL, REST API documentation, and team collaboration.",
+      "rationale": "Incorporate verified details from candidate answer regarding the company name and specific technical tools used during the internship.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Curricular Summer Internship (3 months)\nFocused on software testing and internal tool support, gaining practical\nexperience in QA methodologies and team collaboration."
+      ],
+      "user_provided_evidence": [
+        "Company name: SoftInov Soluções Tecnológicas",
+        "Automated unit and integration testing with pytest, PostgreSQL, and REST API documentation"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20",
+      "proposed_content": "B.Sc. in Computer Science (Engenharia Informática)\nUniversity of Coimbra, FCTUC (September 2021 – July 2024)\nGrade: 15/20",
+      "rationale": "Add precise faculty and date details confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "B.Sc. in Computer Science\nUniversity of Coimbra (2021-2024)\nGrade: 15/20"
+      ],
+      "user_provided_evidence": [
+        "Faculty: FCTUC at the University of Coimbra",
+        "Dates: September 2021 to July 2024"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Key Projects",
+      "current_content": "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.",
+      "proposed_content": "Capstone Project: Customer Churn Analysis (B.Sc. Thesis Project)\n- Built a robust data pipeline in Python analyzing customer churn and retention in a subscription SaaS with over 80k user records.\n- Utilized Pandas, Scikit-Learn, and PostgreSQL for data manipulation, predictive modeling, and feature engineering.",
+      "rationale": "Expand project description with scale and context provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in\nPython analyzing customer churn and retention using Pandas, Scikit-Learn,\nand PostgreSQL."
+      ],
+      "user_provided_evidence": [
+        "B.Sc. thesis project",
+        "Subscription SaaS dataset with over 80k user records"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C1 Advanced, Cambridge Certificate)",
+      "rationale": "Add spoken languages and certification provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C1 Advanced, Cambridge Certificate)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Certifications",
+      "current_content": "",
+      "proposed_content": "Certifications: C1 Advanced English Proficiency (Cambridge Certificate)",
+      "rationale": "Add verified certification provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "C1 Advanced English Proficiency (Cambridge Certificate)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target role: We found the CV headline 'Computer Science graduate seeking an entry-level opportunity in data science or software engineering.' and the target job is 'Product Designer (UI/UX) - Web & SaaS'. Do you confirm using a target role title relevant to the job, or would you like to keep or specify another title? (Yes/No, or specify another)",
+    "2. Contact & links: We found the name 'Tomás Silva' but missing email, phone, location, LinkedIn, and portfolio/GitHub links. Do you have any email, phone, location, LinkedIn, or GitHub/portfolio links to include? (If none, reply 'I do not have one')",
+    "3. Employment: We found 'Curricular Summer Internship (3 months)' focused on software testing and internal tool support. Do you confirm this work experience item? (Yes/No)",
+    "4. Education: We found 'B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20'. Do you confirm this academic background? (Yes/No)",
+    "5. Technical skills gaps: The job requires Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL. Your CV already lists Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL (in projects). Do you confirm these technical skills? (Yes/No)",
+    "6. Languages: No languages are listed in your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "7. Certifications: No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "8. Projects: We found 'Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.' Do you confirm this project? (Yes/No)",
+    "9. Summary focus: We propose highlighting your Computer Science background, core programming and data skills (Python, SQL, Pandas, Scikit-Learn), and practical project/internship experience. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target role: We found the CV headline 'Computer Science graduate seeking an entry-level opportunity in data science or software engineering.' and the target job is 'Product Designer (UI/UX) - Web & SaaS'. Do you confirm using a target role title relevant to the job, or would you like to keep or specify another title? (Yes/No, or specify another)",
+      "answer": "No. My background is entirely in Computer Science, software development, and data science (Python, SQL, machine learning), so I do not have a background in Product Design or UI/UX. I would like to keep my target role focused on junior software engineering or data science.",
+      "gap": "Mismatch with Product Designer (UI/UX) target job",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "2. Contact & links: We found the name 'Tomás Silva' but missing email, phone, location, LinkedIn, and portfolio/GitHub links. Do you have any email, phone, location, LinkedIn, or GitHub/portfolio links to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, my email is tomas.silva.dev@example.com, my phone number is +351 912 345 678, my location is Coimbra, Portugal, and my LinkedIn and GitHub links are https://www.linkedin.com/in/tomassilva-dev and https://github.com/tomassilva-data respectively.",
+      "gap": "Missing contact and profile links",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: We found 'Curricular Summer Internship (3 months)' focused on software testing and internal tool support. Do you confirm this work experience item? (Yes/No)",
+      "answer": "Yes, I confirm that work experience. During that time at SoftInov Soluções Tecnológicas, I automated unit and integration testing with pytest and worked with PostgreSQL and REST API documentation.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: We found 'B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20'. Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm this academic background. My B.Sc. in Computer Science (Engenharia Informática) is from FCTUC at the University of Coimbra, spanning from September 2021 to July 2024 with a grade of 15/20.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The job requires Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL. Your CV already lists Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL (in projects). Do you confirm these technical skills? (Yes/No)",
+      "answer": "Yes, I confirm these technical skills. They reflect my background in Python, SQL, PostgreSQL, Git, and data manipulation libraries from my university projects and internship.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "6. Languages: No languages are listed in your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese (Native) and English (C1 Advanced, Cambridge Certificate).",
+      "gap": "Missing language section",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have a Cambridge Certificate for C1 Advanced English proficiency.",
+      "gap": "Missing certification section",
+      "resolution": "supported"
+    },
+    {
+      "question": "8. Projects: We found 'Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.' Do you confirm this project? (Yes/No)",
+      "answer": "Yes, I confirm this project. It was my B.Sc. thesis project where I used Pandas, Scikit-Learn, and PostgreSQL to analyze customer retention and churn prediction in a subscription SaaS with over 80k user records.",
+      "gap": "",
+      "resolution": "supported"
+    },
+    {
+      "question": "9. Summary focus: We propose highlighting your Computer Science background, core programming and data skills (Python, SQL, Pandas, Scikit-Learn), and practical project/internship experience. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus.",
+      "gap": "",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Email: tomas.silva.dev@example.com",
+    "Phone: +351 912 345 678",
+    "Location: Coimbra, Portugal",
+    "LinkedIn: https://www.linkedin.com/in/tomassilva-dev",
+    "GitHub: https://github.com/tomassilva-data",
+    "Internship company: SoftInov Soluções Tecnológicas",
+    "Internship details: pytest automated testing, PostgreSQL, REST API documentation",
+    "Education details: FCTUC, September 2021 – July 2024",
+    "Languages: Portuguese (Native), English (C1 Advanced)",
+    "Certification: Cambridge Certificate C1 Advanced",
+    "Project scale: B.Sc. thesis project analyzing subscription SaaS churn with over 80k user records"
+  ],
+  "optimization_strategy": "The optimization strategy focused on refining Tomás Silva's CV for junior software engineering and data science opportunities, integrating missing contact and profile links, expanding the internship and project descriptions with verified candidate evidence (SoftInov, pytest, 80k user records), adding languages and certifications, and constructing an impactful professional summary.",
+  "unresolved_evidence_gaps": [
+    "Target role mismatch: The target job posting is for a Product Designer (UI/UX) role, whereas the candidate is a Computer Science graduate seeking entry-level roles in software engineering or data science. The candidate lacks all required UI/UX competencies (Figma, Design Systems, UX research, portfolio)."
+  ]
+}

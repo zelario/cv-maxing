@@ -1,0 +1,259 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "2+ years of hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms.",
+      "category": "Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate has 3 years of experience in digital marketing and paid media, but lacks hands-on professional experience in Product Design or UI/UX Design for web applications or SaaS platforms."
+    },
+    {
+      "requirement": "Exceptional proficiency in Figma (mastery of auto-layout, nested component variants, variables, and interactive prototyping).",
+      "category": "Technical Skill",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Figma is not mentioned anywhere in the candidate's CV."
+    },
+    {
+      "requirement": "Proven track record in creating and maintaining Design Systems and reusable component libraries.",
+      "category": "Technical Skill",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Design systems are not present in the candidate's skills or experience sections."
+    },
+    {
+      "requirement": "Strong grounding in UX research methodologies: usability testing, user journey mapping, and heuristic reviews.",
+      "category": "Technical Skill",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate's background is in marketing and SEO/paid traffic, with no evidence of UX research methodologies."
+    },
+    {
+      "requirement": "A strong portfolio demonstrating end-to-end design thinking, problem framing, iteration processes, and polished visual design.",
+      "category": "Portfolio",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio or link to design work is provided in the CV."
+    },
+    {
+      "requirement": "Understanding of modern web capabilities and constraints (responsive grids, flexbox behavior, component state management).",
+      "category": "Technical Knowledge",
+      "status": "weak_evidence",
+      "evidence": [
+        "Performing on-page SEO optimization."
+      ],
+      "reasoning": "The candidate has basic web familiarity through on-page SEO, but there is no evidence of understanding web layout constraints, flexbox, or component state management."
+    },
+    {
+      "requirement": "Fluent written and verbal communication in English and Portuguese.",
+      "category": "Language / Communication",
+      "status": "uncertain",
+      "evidence": [],
+      "reasoning": "The CV is written in English and the candidate studied in Portugal (University of Minho), but explicit fluency in both languages is not stated."
+    },
+    {
+      "requirement": "Experience with design-to-code inspection tools (Storybook, Figma Code Connect).",
+      "category": "Preferred Tool",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of design-to-code inspection tools."
+    },
+    {
+      "requirement": "Familiarity with micro-interactions and motion design (Principle, After Effects, or Lottie).",
+      "category": "Preferred Skill",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of micro-interactions or motion design tools."
+    },
+    {
+      "requirement": "Knowledge of product analytics tools (Mixpanel, Hotjar, PostHog) to inform design decisions.",
+      "category": "Preferred Tool",
+      "status": "weak_evidence",
+      "evidence": [
+        "Google Analytics 4"
+      ],
+      "reasoning": "The candidate lists Google Analytics 4 for performance reporting, but does not show knowledge of the specific product analytics tools requested (Mixpanel, Hotjar, PostHog)."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "Name",
+      "status": "present",
+      "evidence": [
+        "Tiago Ribeiro"
+      ],
+      "relevance": "Essential for candidate identification.",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Headline",
+      "status": "present",
+      "evidence": [
+        "Digital Marketing & Paid Media Specialist"
+      ],
+      "relevance": "Helps recruiters quickly understand the candidate's professional domain.",
+      "reasoning": "A clear headline is present below the name."
+    },
+    {
+      "section": "Header",
+      "field": "Email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Critical for direct recruiter contact.",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for phone screening and direct communication.",
+      "reasoning": "No phone number is included in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "Location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Needed for geographic eligibility and remote work compliance.",
+      "reasoning": "No physical location or city is stated in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Provides professional background verification and networking context.",
+      "reasoning": "No LinkedIn profile link is provided."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/Portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Essential for design and technical roles to showcase work samples.",
+      "reasoning": "No portfolio or project repository URL is present."
+    },
+    {
+      "section": "Summary",
+      "field": "Professional Summary",
+      "status": "present",
+      "evidence": [
+        "Marketing specialist with 3 years of professional experience managing paid traffic acquisition campaigns, conversion funnels, and performance analytics."
+      ],
+      "relevance": "Provides a concise overview of experience and core expertise.",
+      "reasoning": "A summary section is included with years of experience and core focus areas."
+    },
+    {
+      "section": "Experience",
+      "field": "Professional Experience",
+      "status": "present",
+      "evidence": [
+        "Digital Marketing Specialist at Impulso Digital Agency (2021-Present)"
+      ],
+      "relevance": "Demonstrates employment history, career progression, and applied skills.",
+      "reasoning": "One relevant current role is detailed with responsibilities."
+    },
+    {
+      "section": "Education",
+      "field": "Education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Communication Sciences and Marketing, University of Minho (2018-2021)"
+      ],
+      "relevance": "Shows academic background and foundational training.",
+      "reasoning": "Undergraduate degree and institution are clearly listed."
+    },
+    {
+      "section": "Skills",
+      "field": "Technical Skills & Tools",
+      "status": "present",
+      "evidence": [
+        "Google Ads, Meta Ads (Facebook/Instagram), Search Engine Optimization (SEO), Google Analytics 4, Copywriting, Email Marketing, Conversion Funnel Optimization."
+      ],
+      "relevance": "Highlights specific tools and competencies possessed by the candidate.",
+      "reasoning": "A dedicated Core Competencies section is provided."
+    },
+    {
+      "section": "Skills",
+      "field": "Methodologies",
+      "status": "present",
+      "evidence": [
+        "Conversion Funnel Optimization"
+      ],
+      "relevance": "Demonstrates understanding of process and strategic frameworks.",
+      "reasoning": "Conversion funnel optimization is listed under core competencies."
+    },
+    {
+      "section": "Skills",
+      "field": "Transferable Skills",
+      "status": "present",
+      "evidence": [
+        "Copywriting",
+        "Email Marketing"
+      ],
+      "relevance": "Shows auxiliary capabilities useful across marketing and communication tasks.",
+      "reasoning": "Copywriting and email marketing are explicitly listed."
+    },
+    {
+      "section": "Languages",
+      "field": "Languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Important for assessing multi-lingual capabilities required by the role.",
+      "reasoning": "No languages section or explicit language proficiencies are stated."
+    },
+    {
+      "section": "Certifications",
+      "field": "Certifications/Training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Validates specialized training or platform accreditations.",
+      "reasoning": "No certifications or training courses are listed."
+    },
+    {
+      "section": "Projects",
+      "field": "Projects",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Demonstrates practical application beyond employment history.",
+      "reasoning": "No standalone projects section is included."
+    },
+    {
+      "section": "Other",
+      "field": "GDPR Consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Required for compliance in certain jurisdictions (e.g., EU recruitment).",
+      "reasoning": "No GDPR consent statement is present in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "Hands-on experience in Product Design or UI/UX Design for web applications or SaaS platforms",
+    "Proficiency in Figma (auto-layout, nested component variants, variables, interactive prototyping)",
+    "Experience creating and maintaining Design Systems and reusable component libraries",
+    "Grounding in UX research methodologies (usability testing, user journey mapping, heuristic reviews)",
+    "Professional design portfolio demonstrating end-to-end design thinking and visual design",
+    "Contact information (email, phone number, location)",
+    "Professional online profile links (LinkedIn, portfolio URL)"
+  ],
+  "weak_evidence": [
+    "Understanding of modern web capabilities through basic on-page SEO optimization",
+    "Analytics experience limited to Google Analytics 4 rather than specialized product analytics tools (Mixpanel, Hotjar, PostHog)"
+  ],
+  "strengths": [
+    "Clear professional summary highlighting 3 years of digital marketing and analytics experience",
+    "Structured employment history with specific responsibilities related to campaign management and funnel reporting",
+    "Relevant foundational education with a B.Sc. in Communication Sciences and Marketing"
+  ],
+  "weaknesses": [
+    "Complete absence of contact information (email, phone, location)",
+    "Lack of professional portfolio or links to online work",
+    "Mismatch between candidate profile (Digital Marketing & Paid Media) and job requirements (Product Designer / UI/UX)",
+    "Missing standard CV sections such as languages, certifications, and GDPR consent"
+  ],
+  "overall_assessment": "The candidate, Tiago Ribeiro, is a Digital Marketing & Paid Media Specialist with 3 years of experience in ad campaigns, SEO, and Google Analytics 4. The target job position is a Product Designer (UI/UX) - Web & SaaS requiring expertise in Figma, Design Systems, UX research methodologies, and a design portfolio. The candidate lacks all core UI/UX design requirements, technical tool proficiencies, and design portfolio evidence. Additionally, the CV is missing essential contact information including email, phone, location, and professional profile links.",
+  "reasoning": "The evaluation compares the structured CV against the structured job posting requirements and completeness dimensions. The candidate's background is strictly in digital marketing, whereas the role demands specialized product design (UI/UX) capabilities. Furthermore, critical contact details and portfolio links are entirely absent from the CV."
+}

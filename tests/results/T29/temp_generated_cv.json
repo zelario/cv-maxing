@@ -1,0 +1,99 @@
+{
+  "contact": {
+    "name": "Tiago Ribeiro",
+    "headline": "Digital Marketing & Paid Media Specialist",
+    "specialisation": "Digital Marketing & Paid Media",
+    "phone": "+351 932 109 876",
+    "email": "tiago.ribeiro.mkt@example.com",
+    "location_city": "Porto / Braga",
+    "location_country": "Portugal",
+    "linkedin": "linkedin.com/in/tiagoribeiro-mkt",
+    "github": "",
+    "portfolio": "https://tiagoribeiro.com"
+  },
+  "summary": "Tiago Ribeiro | Digital Marketing & Paid Media Specialist\nResults-driven Marketing Specialist with 3 years of verified professional experience managing paid traffic acquisition campaigns, conversion funnels, and performance analytics with Google Ads, Meta Ads, and GA4.",
+  "experience": [
+    {
+      "title": "Digital Marketing Specialist",
+      "dates": "October 2021 - Present",
+      "company": "Impulso Digital Agency",
+      "location": "Porto / Braga, Portugal",
+      "bullets": [
+        "Managing paid advertising campaigns on Meta Ads and Google Ads focusing on B2B lead generation.",
+        "Performing on-page SEO optimization to improve organic search visibility.",
+        "Building conversion funnel performance reports utilizing Google Analytics 4."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Communication Sciences and Marketing",
+      "dates": "2018 - 2021",
+      "institution": "University of Minho",
+      "location": "Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Paid Media & Advertising",
+      "skills": [
+        "Google Ads",
+        "Meta Ads (Facebook/Instagram)"
+      ]
+    },
+    {
+      "category_name": "Analytics & SEO",
+      "skills": [
+        "Google Analytics 4",
+        "Search Engine Optimization (SEO)",
+        "Conversion Funnel Optimization"
+      ]
+    },
+    {
+      "category_name": "Marketing & Content",
+      "skills": [
+        "Copywriting",
+        "Email Marketing"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "Native language",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1",
+      "details": "Full Professional Proficiency",
+      "certification": ""
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Ads Search Certification",
+      "issuer": "Google",
+      "year": "2024"
+    },
+    {
+      "name": "HubSpot Email Marketing Certification",
+      "issuer": "HubSpot",
+      "year": "2023"
+    },
+    {
+      "name": "Meta Certified Digital Marketing Associate",
+      "issuer": "Meta",
+      "year": "2022"
+    },
+    {
+      "name": "Google Analytics 4 (GA4) Certification",
+      "issuer": "Google Skillshop",
+      "year": ""
+    }
+  ],
+  "projects": [],
+  "consent": true
+}

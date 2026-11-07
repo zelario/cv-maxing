@@ -1,0 +1,38 @@
+[
+  {
+    "question": "We found the target role 'Staff Software Engineer / Tech Lead' / applying for 'Cloud & DevOps Engineer'. Do you confirm this target job title or wish to specify another? (Yes/No)",
+    "answer": "Yes, I confirm this target job title, although my background is as a Staff Software Engineer / Tech Lead with extensive hands-on experience in AWS cloud infrastructure and Terraform."
+  },
+  {
+    "question": "We found the candidate name 'Rita Santos', but contact links (email, phone, location, LinkedIn, GitHub) are missing. Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, you can include my location in Porto, Portugal, my email at rita.santos.tech@example.com, my phone number +351 912 345 678, my LinkedIn at https://www.linkedin.com/in/ritasantos-lead, and my GitHub at https://github.com/ritasantos-dev."
+  },
+  {
+    "question": "We found two employment roles: Staff Software Engineer / Tech Lead at CloudScale (2021-Present) and Senior Backend Engineer at FinTech Global (2018-2020). Do you confirm this work experience? (Yes/No)",
+    "answer": "Yes, I confirm my work experience at CloudScale and FinTech Global. Additionally, I also have prior experience as a Software Engineer at InnoTech Labs from 2015 to 2018."
+  },
+  {
+    "question": "We found your education: M.Sc. in Informatics and Computing Engineering at FEUP (2010-2015). Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm my academic background. I graduated with an M.Sc. in Informatics Engineering (Mestrado Integrado em Engenharia Informática) from the Faculdade de Engenharia da Universidade do Porto (FEUP) between 2010 and 2015, finishing with a grade of 17/20 and specializing in Distributed Systems, Software Architecture, and Fault Tolerance."
+  },
+  {
+    "question": "The job requires technologies like GitHub Actions, GitLab CI, Prometheus, Grafana, CloudWatch, and specific AWS services (EC2, S3, RDS, VPC, IAM, Route53). Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have experience with AWS services (including EC2, S3, RDS, VPC, and IAM), GitLab CI, Docker, Kubernetes (EKS), Terraform, and CloudWatch from my background in cloud-native architectures. However, I do not have direct production experience with GitHub Actions, Prometheus, or Grafana."
+  },
+  {
+    "question": "No languages were listed in the original CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese (Native) and English (C2 Proficient)."
+  },
+  {
+    "question": "No certifications were listed in the original CV. Do you have any certifications or licenses (e.g., AWS Certifications) to include? (If none, reply 'I do not have one')",
+    "answer": "I do not have one."
+  },
+  {
+    "question": "No projects section was listed in the original CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have a GitHub profile with repositories showcasing my infrastructure and backend work at https://github.com/ritasantos-dev."
+  },
+  {
+    "question": "We propose a summary highlighting your expertise in distributed systems, event-driven architectures, and backend microservices tailored for a Cloud & DevOps Engineer role. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes. I confirm this summary, and I would also like to ensure that my extensive hands-on experience with Terraform, AWS, Docker, Kubernetes, and CI/CD pipelines is prominently featured to match the Cloud & DevOps Engineer role."
+  }
+]

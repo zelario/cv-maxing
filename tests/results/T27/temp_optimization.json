@@ -1,0 +1,186 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header / Contact Information",
+      "current_content": "Pedro Oliveira",
+      "proposed_content": "Pedro Oliveira | Lisbon, Portugal | +351 961 234 567 | pedro.oliveira.dev@example.com | https://www.linkedin.com/in/pedro-oliveira-dev | https://github.com/poliveira-projects",
+      "rationale": "Add essential contact details and professional profile links provided by the candidate to ensure recruiter reachability.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Location: Lisbon, Portugal",
+        "Phone: +351 961 234 567",
+        "Email: pedro.oliveira.dev@example.com",
+        "LinkedIn: https://www.linkedin.com/in/pedro-oliveira-dev",
+        "GitHub: https://github.com/poliveira-projects"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Former Civil Engineer transitioning to software. Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications.",
+      "proposed_content": "Junior Fullstack Software Engineer transitioning from a 4-year Civil Engineering career. Leverages proficiency in Python, Flask, JavaScript, and SQLite, backed by an intensive 9-month Fullstack Web Development Bootcamp from Lisbon Tech Academy. Proven ability to build and deploy verified portfolio web applications integrating Python/Flask, PostgreSQL, and Docker.",
+      "rationale": "Align the professional summary with research-backed formatting: candidate identity and target role, verified core skills, and a concrete verified achievement or project result grounded strictly in candidate evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Former Civil Engineer transitioning to software.",
+        "Completed an intensive 9-month fullstack software bootcamp and built a verified portfolio of working applications."
+      ],
+      "user_provided_evidence": [
+        "Lisbon Tech Academy (Bootcamp issuer)",
+        "Core stack: Python, Flask, JavaScript, SQLite, PostgreSQL, Docker"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "Fullstack Web Development Bootcamp (9 months, 2023)\nIntegrated Master's (M.Sc.) in Civil Engineering (2013-2018)",
+      "proposed_content": "Fullstack Web Development Bootcamp (9 months, 2023) - Lisbon Tech Academy\nIntegrated Master's (M.Sc.) in Civil Engineering (2013-2018) - Instituto Superior Técnico (IST)",
+      "rationale": "Incorporate verified institutional names provided by the candidate for educational credentials.",
+      "evidence_source": "user",
+      "source_evidence": [
+        "Fullstack Web Development Bootcamp (9 months, 2023)",
+        "Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)"
+      ],
+      "user_provided_evidence": [
+        "Lisbon Tech Academy",
+        "Instituto Superior Técnico (IST)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Projects",
+      "current_content": "Freelance Web Developer / Personal Projects (2023-Present)\nBuilt 3 complete web applications utilizing Python/Flask and JavaScript.",
+      "proposed_content": "Freelance Web Developer / Personal Projects (2023-Present)\n- Construction Equipment & Asset Tracker: Built with Python (Flask), SQLite, JavaScript, and Docker.\n- Personal Budget & Expense Analytics: Built with Node.js, PostgreSQL, and Chart.js.\n- Structural Beam Deflection Calculator: Built with Python and Tailwind CSS.",
+      "rationale": "Expand the projects section with the specific names, descriptions, and technologies provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [
+        "Built 3 complete web applications utilizing Python/Flask and JavaScript."
+      ],
+      "user_provided_evidence": [
+        "Construction Equipment & Asset Tracker (Python, Flask, SQLite, JavaScript, Docker)",
+        "Personal Budget & Expense Analytics (Node.js, PostgreSQL, Chart.js)",
+        "Structural Beam Deflection Calculator (Python, Tailwind CSS)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Skills",
+      "current_content": "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem Solving.",
+      "proposed_content": "Python, JavaScript, Node.js, Flask, SQLite, PostgreSQL, Docker, HTML/CSS, Tailwind CSS, Git, Project Management, Analytical Problem Solving.",
+      "rationale": "Update technical skills to include Node.js, PostgreSQL, Docker, and Tailwind CSS as confirmed by the candidate's project work.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Python, JavaScript, Flask, SQLite, HTML/CSS, Git, Project Management, Analytical Problem Solving."
+      ],
+      "user_provided_evidence": [
+        "Node.js",
+        "PostgreSQL",
+        "Docker",
+        "Tailwind CSS"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (B2 Upper-Intermediate)",
+      "rationale": "Add spoken languages provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (B2 Upper-Intermediate)"
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "1. Target role: We found your target role headline is 'Former Civil Engineer transitioning to software'. Given the target role is 'Senior / Staff Tech Lead (Distributed Systems)', do you wish to keep your headline as is or adjust it to reflect your current focus? (Yes/No, or specify another)",
+    "2. Contact & links: Your current CV only lists your name ('Pedro Oliveira') with no email, phone, location, LinkedIn, or GitHub/portfolio links. Do you have an email address, phone number, location, LinkedIn URL, or GitHub/portfolio URL to add? (If none, reply 'I do not have one')",
+    "3. Employment: Your CV lists 'Freelance Web Developer / Personal Projects (2023-Present)' and 'Civil Project Engineer (2018-2022, 4 years)'. Do you confirm this work history? (Yes/No)",
+    "4. Education: Your CV lists 'Fullstack Web Development Bootcamp (9 months, 2023)' and 'Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)'. Do you confirm this academic and bootcamp background? (Yes/No)",
+    "5. Technical skills gaps: The target job requires distributed systems, microservices, Kafka/RabbitMQ, Go/Java/Rust, PostgreSQL/Redis, AWS/GCP, Docker, Kubernetes, and Terraform. Do you have professional experience with any of these enterprise/cloud technologies to include? (If none, reply 'I do not have one')",
+    "6. Languages: Your CV currently lists no spoken languages. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "7. Certifications: Your CV lists the 'Fullstack Web Development Bootcamp (2023)'. Do you have any other certifications, licenses, or professional credentials to include? (If none, reply 'I do not have one')",
+    "8. Projects: Your CV mentions building 3 complete web applications utilizing Python/Flask and JavaScript under Freelance Web Developer / Personal Projects. Do you have specific project names, brief descriptions, or repository links to add for these projects? (If none, reply 'I do not have one')",
+    "9. Summary focus: We propose a professional summary highlighting your transition from Civil Engineering to Software Engineering, your 9-month bootcamp completion, and your core stack (Python, Flask, JavaScript, SQLite, Docker, PostgreSQL). Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "1. Target role: We found your target role headline is 'Former Civil Engineer transitioning to software'. Given the target role is 'Senior / Staff Tech Lead (Distributed Systems)', do you wish to keep your headline as is or adjust it to reflect your current focus? (Yes/No, or specify another)",
+      "answer": "No. My target role should remain focused on my current junior-level status, as I am transitioning from civil engineering into software development with about nine months of experience, and I do not possess the 7+ years of experience or senior background required for a Staff Tech Lead role.",
+      "gap": "Candidate seniority and background mismatch Senior / Staff Tech Lead role requirements.",
+      "resolution": "unsupported"
+    },
+    {
+      "question": "2. Contact & links: Your current CV only lists your name ('Pedro Oliveira') with no email, phone, location, LinkedIn, or GitHub/portfolio links. Do you have an email address, phone number, location, LinkedIn URL, or GitHub/portfolio URL to add? (If none, reply 'I do not have one')",
+      "answer": "Yes, my location is Lisbon, Portugal, my email is pedro.oliveira.dev@example.com, my phone number is +351 961 234 567, my LinkedIn is https://www.linkedin.com/in/pedro-oliveira-dev, and my GitHub is https://github.com/poliveira-projects (I do not have a portfolio website).",
+      "gap": "Missing contact and link details resolved via user input.",
+      "resolution": "supported"
+    },
+    {
+      "question": "3. Employment: Your CV lists 'Freelance Web Developer / Personal Projects (2023-Present)' and 'Civil Project Engineer (2018-2022, 4 years)'. Do you confirm this work history? (Yes/No)",
+      "answer": "Yes, I confirm this work history, consisting of my recent freelance/project work since late 2023 and my 4 years as a Civil Project Engineer from 2018 to 2022.",
+      "gap": "Work history verified.",
+      "resolution": "supported"
+    },
+    {
+      "question": "4. Education: Your CV lists 'Fullstack Web Development Bootcamp (9 months, 2023)' and 'Integrated Master's (M.Sc.) in Civil Engineering (2013-2018)'. Do you confirm this academic and bootcamp background? (Yes/No)",
+      "answer": "Yes, I confirm my academic background, which includes an Integrated Master's in Civil Engineering from IST (2013–2018) and an intensive 9-month Fullstack Web Development Bootcamp from Lisbon Tech Academy (2023).",
+      "gap": "Education details confirmed and augmented with institutions.",
+      "resolution": "supported"
+    },
+    {
+      "question": "5. Technical skills gaps: The target job requires distributed systems, microservices, Kafka/RabbitMQ, Go/Java/Rust, PostgreSQL/Redis, AWS/GCP, Docker, Kubernetes, and Terraform. Do you have professional experience with any of these enterprise/cloud technologies to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have experience with enterprise distributed systems, microservices, Kafka, Kubernetes, or Terraform, as I am a junior developer transitioning from civil engineering with basic local Docker and PostgreSQL experience.",
+      "gap": "Candidate lacks senior distributed systems and cloud infrastructure requirements (Kafka, Kubernetes, Terraform, Go, Java, Rust).",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "6. Languages: Your CV currently lists no spoken languages. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese (Native) and English (B2 Upper-Intermediate).",
+      "gap": "Languages provided by candidate.",
+      "resolution": "supported"
+    },
+    {
+      "question": "7. Certifications: Your CV lists the 'Fullstack Web Development Bootcamp (2023)'. Do you have any other certifications, licenses, or professional credentials to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "No additional certifications available.",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "8. Projects: Your CV mentions building 3 complete web applications utilizing Python/Flask and JavaScript under Freelance Web Developer / Personal Projects. Do you have specific project names, brief descriptions, or repository links to add for these projects? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have three projects: a Construction Equipment & Asset Tracker built with Python (Flask), SQLite, JavaScript, and Docker; a Personal Budget & Expense Analytics app built with Node.js, PostgreSQL, and Chart.js; and a Structural Beam Deflection Calculator built with Python and Tailwind CSS. My GitHub profile is https://github.com/poliveira-projects.",
+      "gap": "Detailed project names and technologies provided.",
+      "resolution": "supported"
+    },
+    {
+      "question": "9. Summary focus: We propose a professional summary highlighting your transition from Civil Engineering to Software Engineering, your 9-month bootcamp completion, and your core stack (Python, Flask, JavaScript, SQLite, Docker, PostgreSQL). Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes, I confirm this summary focus. It accurately highlights my career transition from civil engineering to software development, my bootcamp background, and my core tech stack.",
+      "gap": "Summary focus confirmed.",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Location: Lisbon, Portugal",
+    "Phone: +351 961 234 567",
+    "Email: pedro.oliveira.dev@example.com",
+    "LinkedIn: https://www.linkedin.com/in/pedro-oliveira-dev",
+    "GitHub: https://github.com/poliveira-projects",
+    "Bootcamp Issuer: Lisbon Tech Academy",
+    "University: Instituto Superior Técnico (IST)",
+    "Project 1: Construction Equipment & Asset Tracker (Python, Flask, SQLite, JavaScript, Docker)",
+    "Project 2: Personal Budget & Expense Analytics (Node.js, PostgreSQL, Chart.js)",
+    "Project 3: Structural Beam Deflection Calculator (Python, Tailwind CSS)",
+    "Languages: Portuguese (Native), English (B2 Upper-Intermediate)"
+  ],
+  "optimization_strategy": "The optimization strategy focuses on maximizing the presentation of Pedro Oliveira's junior fullstack profile by integrating verified contact details, professional links, specific project details, educational institutions, languages, and core skills (Docker, PostgreSQL, Node.js) while acknowledging and documenting the significant experience and technical stack gaps relative to the Senior / Staff Tech Lead (Distributed Systems) target role.",
+  "unresolved_evidence_gaps": [
+    "7+ years of professional software engineering experience and leadership as a Tech Lead, Staff Engineer, or Principal Engineer",
+    "Deep expertise in distributed systems, microservices, Apache Kafka, or RabbitMQ",
+    "Proficiency in backend languages like Go, Java, or Rust",
+    "Experience with distributed tracing, observability tools, Domain-Driven Design (DDD), or CQRS patterns",
+    "Cloud environments (AWS or GCP), container orchestration (Kubernetes), and Infrastructure as Code (Terraform)"
+  ]
+}

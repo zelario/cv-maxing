@@ -1,0 +1,267 @@
+{
+  "requirement_matches": [
+    {
+      "requirement": "Hands-on experience in Product Design or UI/UX Design, specifically focused on web applications or SaaS platforms (2+ years).",
+      "category": "Experience",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "The candidate has a background in Computer Science with a curricular summer internship in software testing, but lacks any professional product design or UI/UX design experience, let alone 2+ years in web/SaaS."
+    },
+    {
+      "requirement": "Exceptional proficiency in Figma (mastery of auto-layout, nested component variants, variables, and interactive prototyping).",
+      "category": "Tools",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Figma is not mentioned anywhere in the candidate's CV."
+    },
+    {
+      "requirement": "Proven track record in creating and maintaining Design Systems and reusable component libraries.",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No experience or mention of Design Systems or reusable component libraries."
+    },
+    {
+      "requirement": "Strong grounding in UX research methodologies: usability testing, user journey mapping, and heuristic reviews.",
+      "category": "Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of UX research methodologies, usability testing, or user journey mapping."
+    },
+    {
+      "requirement": "A strong portfolio demonstrating end-to-end design thinking, problem framing, iteration processes, and polished visual design.",
+      "category": "Portfolio",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No portfolio link or mention of design projects demonstrating UI/UX thinking."
+    },
+    {
+      "requirement": "Understanding of modern web capabilities and constraints (responsive grids, flexbox behavior, component state management).",
+      "category": "Skills",
+      "status": "weak_evidence",
+      "evidence": [
+        "B.Sc. in Computer Science from University of Coimbra"
+      ],
+      "reasoning": "The candidate has a Computer Science degree which implies some foundational understanding of web/software development concepts, but there is no specific evidence of understanding modern UI/UX web constraints or responsive design systems."
+    },
+    {
+      "requirement": "Fluent written and verbal communication in English and Portuguese.",
+      "category": "Languages",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "Language proficiencies are not stated in the CV."
+    },
+    {
+      "requirement": "Experience with design-to-code inspection tools (Storybook, Figma Code Connect).",
+      "category": "Preferred Tools",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of design-to-code inspection tools."
+    },
+    {
+      "requirement": "Familiarity with micro-interactions and motion design (Principle, After Effects, or Lottie).",
+      "category": "Preferred Skills",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of micro-interactions or motion design tools."
+    },
+    {
+      "requirement": "Knowledge of product analytics tools (Mixpanel, Hotjar, PostHog) to inform design decisions.",
+      "category": "Preferred Tools",
+      "status": "no_evidence",
+      "evidence": [],
+      "reasoning": "No mention of product analytics tools."
+    }
+  ],
+  "completeness": [
+    {
+      "section": "Header",
+      "field": "name",
+      "status": "present",
+      "evidence": [
+        "Tomás Silva"
+      ],
+      "relevance": "High",
+      "reasoning": "Candidate name is clearly provided at the top of the CV."
+    },
+    {
+      "section": "Header",
+      "field": "email",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No email address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "phone",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No phone number is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "location",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No location or address is provided in the CV."
+    },
+    {
+      "section": "Header",
+      "field": "headline",
+      "status": "present",
+      "evidence": [
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A brief objective/headline statement is present."
+    },
+    {
+      "section": "Header",
+      "field": "LinkedIn URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No LinkedIn profile link is included."
+    },
+    {
+      "section": "Header",
+      "field": "GitHub/portfolio URL",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "High",
+      "reasoning": "No exact GitHub or portfolio URL is provided in the CV."
+    },
+    {
+      "section": "Summary",
+      "field": "professional summary",
+      "status": "present",
+      "evidence": [
+        "Computer Science graduate seeking an entry-level opportunity in data science or software engineering."
+      ],
+      "relevance": "Medium",
+      "reasoning": "A short introductory summary is present."
+    },
+    {
+      "section": "Experience",
+      "field": "experience",
+      "status": "present",
+      "evidence": [
+        "Curricular Summer Internship (3 months) - Focused on software testing and internal tool support..."
+      ],
+      "relevance": "High",
+      "reasoning": "One short internship experience is listed."
+    },
+    {
+      "section": "Education",
+      "field": "education",
+      "status": "present",
+      "evidence": [
+        "B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20"
+      ],
+      "relevance": "High",
+      "reasoning": "Degree, institution, dates, and grade are clearly stated."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "technical skills",
+      "status": "present",
+      "evidence": [
+        "Python, SQL, Git, Pandas, NumPy, Unit Testing"
+      ],
+      "relevance": "High",
+      "reasoning": "Technical programming languages and concepts are listed."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "tools/software",
+      "status": "present",
+      "evidence": [
+        "Python, SQL, Git, Pandas, NumPy"
+      ],
+      "relevance": "High",
+      "reasoning": "Standard tools and libraries are listed."
+    },
+    {
+      "section": "Technical Skills",
+      "field": "methodologies",
+      "status": "present",
+      "evidence": [
+        "Unit Testing",
+        "QA methodologies"
+      ],
+      "relevance": "Medium",
+      "reasoning": "Methodologies like unit testing and QA are mentioned in skills/experience."
+    },
+    {
+      "section": "Header/Skills",
+      "field": "transferable skills",
+      "status": "present",
+      "evidence": [
+        "team collaboration"
+      ],
+      "relevance": "Low",
+      "reasoning": "Team collaboration is mentioned under the internship description."
+    },
+    {
+      "section": "Languages",
+      "field": "languages",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Medium",
+      "reasoning": "No dedicated language section or spoken languages are listed."
+    },
+    {
+      "section": "Certifications",
+      "field": "certifications/training",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No certifications or training courses are listed."
+    },
+    {
+      "section": "Key Projects",
+      "field": "projects",
+      "status": "present",
+      "evidence": [
+        "Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL."
+      ],
+      "relevance": "High",
+      "reasoning": "A capstone project is described with relevant technologies."
+    },
+    {
+      "section": "General",
+      "field": "GDPR consent",
+      "status": "missing",
+      "evidence": [],
+      "relevance": "Low",
+      "reasoning": "No GDPR consent statement is present in the CV."
+    }
+  ],
+  "missing_evidence": [
+    "2+ years of hands-on experience in Product Design or UI/UX Design",
+    "Proficiency in Figma (auto-layout, components, variables, prototyping)",
+    "Experience building and maintaining Design Systems and component libraries",
+    "UX research methodologies (usability testing, user journey mapping, heuristic reviews)",
+    "Portfolio demonstrating end-to-end design thinking and visual design",
+    "Fluent written and verbal communication in English and Portuguese",
+    "Contact information (email, phone, location)",
+    "Professional profile links (LinkedIn, portfolio URL)"
+  ],
+  "weak_evidence": [
+    "Understanding of modern web capabilities and constraints (only supported generally by a Computer Science degree, without specific UI/UX application evidence)"
+  ],
+  "strengths": [
+    "Holds a B.Sc. in Computer Science from the University of Coimbra with a strong academic grade (15/20)",
+    "Provides practical project experience involving Python, Pandas, and data pipelines"
+  ],
+  "weaknesses": [
+    "Complete mismatch with the job role: candidate is a Computer Science graduate looking for software engineering/data science roles, whereas the position is for a UI/UX Product Designer",
+    "Missing vital contact information (email, phone, location, portfolio/GitHub links)",
+    "No evidence of design tools (Figma), design systems, UX research methodologies, or UI/UX experience"
+  ],
+  "overall_assessment": "The candidate's profile represents a recent Computer Science graduate focused on software engineering and data science, whereas the open position is for a Product Designer (UI/UX) specializing in web and SaaS platforms. There is a total absence of UI/UX design experience, Figma proficiency, design systems knowledge, and a design portfolio. Additionally, the CV lacks essential contact details and portfolio links.",
+  "reasoning": "The evaluation compares the candidate's structured CV against the job requirements for a Product Designer role. The candidate demonstrates strong academic credentials in Computer Science, but lacks all core design competencies, tools, and experience required for the position. Completeness inspection notes missing contact information, links, and language details."
+}

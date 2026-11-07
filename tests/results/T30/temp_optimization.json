@@ -1,0 +1,219 @@
+{
+  "proposed_changes": [
+    {
+      "section": "Header",
+      "current_content": "Rita Santos",
+      "proposed_content": "Rita Santos | Porto, Portugal | +351 912 345 678 | rita.santos.tech@example.com | https://www.linkedin.com/in/ritasantos-lead | https://github.com/ritasantos-dev",
+      "rationale": "Add missing contact details and professional links provided by the candidate during the interactive session to ensure recruiters can easily reach out.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Location: Porto, Portugal",
+        "Email: rita.santos.tech@example.com",
+        "Phone: +351 912 345 678",
+        "LinkedIn: https://www.linkedin.com/in/ritasantos-lead",
+        "GitHub: https://github.com/ritasantos-dev"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Summary",
+      "current_content": "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices.",
+      "proposed_content": "Cloud & DevOps Engineer and Tech Lead with 9+ years of professional experience building distributed systems, AWS cloud infrastructure, and backend microservices using Terraform, Go, and Python.",
+      "rationale": "Align the professional summary with the target Cloud & DevOps Engineer role and highlight verified core skills (AWS, Terraform, Go, Python) based strictly on confirmed candidate evidence.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Software engineer and tech lead with professional experience building distributed systems, event-driven architectures, and backend microservices."
+      ],
+      "user_provided_evidence": [
+        "Confirmed target role and extensive hands-on experience with Terraform, AWS, Docker, Kubernetes, and CI/CD pipelines."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Staff Software Engineer / Tech Lead\nCloudScale | 2021-Present (3 years)\nLeading system architecture for event-driven backend services and API platforms.\nRe-architecting monolithic services into microservices using Go, Python, and Apache Kafka.\nMentoring engineers on code quality and technical design.\nManaging AWS cloud infrastructure and containerized deployments using Docker and Kubernetes.",
+      "proposed_content": "Staff Software Engineer / Tech Lead\nCloudScale | 2021-Present (3 years)\n- Leading system architecture for event-driven backend services and API platforms.\n- Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka.\n- Mentoring engineers on code quality and technical design.\n- Managing AWS cloud infrastructure (EC2, S3, RDS, VPC, IAM) and containerized deployments using Docker, Kubernetes, and Terraform.",
+      "rationale": "Enhance description to explicitly reflect core AWS services (EC2, S3, RDS, VPC, IAM) and Terraform as confirmed by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Managing AWS cloud infrastructure and containerized deployments using Docker and Kubernetes."
+      ],
+      "user_provided_evidence": [
+        "Experience with AWS services including EC2, S3, RDS, VPC, and IAM, as well as Terraform and Kubernetes."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "Senior Backend Engineer\nFinTech Global | 2018-2020 (3 years)\nDeveloping REST and gRPC microservices in Go and Python.\nPostgreSQL database schema design and query optimization.",
+      "proposed_content": "Senior Backend Engineer\nFinTech Global | 2018-2020 (3 years)\n- Developing REST and gRPC microservices in Go and Python.\n- PostgreSQL database schema design and query optimization.\n- Configuring and optimizing continuous integration and deployment pipelines (CI/CD) using GitLab CI.",
+      "rationale": "Add confirmed GitLab CI and CI/CD pipeline experience to address job requirements.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Developing REST and gRPC microservices in Go and Python."
+      ],
+      "user_provided_evidence": [
+        "Experience with GitLab CI, Docker, Kubernetes, and CI/CD pipelines."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Professional Experience",
+      "current_content": "",
+      "proposed_content": "Software Engineer\nInnoTech Labs | 2015-2018 (3 years)\n- Developed backend microservices and REST APIs using Python and Go.\n- Assisted in Linux systems administration and shell scripting (Bash) for deployment automation.",
+      "rationale": "Incorporate the candidate's prior work experience at InnoTech Labs (2015-2018) provided during the interactive session.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Prior experience as a Software Engineer at InnoTech Labs from 2015 to 2018."
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Education",
+      "current_content": "M.Sc. in Informatics and Computing Engineering\nFEUP (2010-2015)",
+      "proposed_content": "M.Sc. in Informatics and Computing Engineering\nFaculdade de Engenharia da Universidade do Porto (FEUP) | 2010-2015\n- Specialization in Distributed Systems, Software Architecture, and Fault Tolerance.\n- Final Grade: 17/20.",
+      "rationale": "Incorporate specific degree details, full institution name, specialization, and grade provided by the candidate.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "M.Sc. in Informatics and Computing Engineering\nFEUP (2010-2015)"
+      ],
+      "user_provided_evidence": [
+        "Faculdade de Engenharia da Universidade do Porto (FEUP)",
+        "Specialization in Distributed Systems, Software Architecture, and Fault Tolerance",
+        "Grade of 17/20"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Technical Skills",
+      "current_content": "Languages: Go, Python, SQL, Bash\nArchitecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis\nCloud & Tools: AWS, Docker, Kubernetes, Terraform, Git",
+      "proposed_content": "Languages & Scripting: Go, Python, SQL, Bash\nCloud & Infrastructure: AWS (EC2, S3, RDS, VPC, IAM), Terraform, Docker, Kubernetes (EKS)\nCI/CD & Tools: GitLab CI, Git\nArchitecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis, CloudWatch",
+      "rationale": "Reorganize and enrich technical skills with specific confirmed AWS services (EC2, S3, RDS, VPC, IAM), CloudWatch, and GitLab CI.",
+      "evidence_source": "cv_and_user",
+      "source_evidence": [
+        "Languages: Go, Python, SQL, Bash",
+        "Architecture & Systems: Microservices, Apache Kafka, RabbitMQ, PostgreSQL, Redis",
+        "Cloud & Tools: AWS, Docker, Kubernetes, Terraform, Git"
+      ],
+      "user_provided_evidence": [
+        "AWS services including EC2, S3, RDS, VPC, and IAM",
+        "GitLab CI and CloudWatch"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Languages",
+      "current_content": "",
+      "proposed_content": "Languages: Portuguese (Native), English (C2 Proficient)",
+      "rationale": "Add spoken languages provided by the candidate.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "Portuguese (Native)",
+        "English (C2 Proficient)"
+      ],
+      "requires_human_approval": true
+    },
+    {
+      "section": "Projects",
+      "current_content": "",
+      "proposed_content": "Projects:\n- Infrastructure & Backend Repositories (GitHub: https://github.com/ritasantos-dev): Developed and maintained open-source and personal repositories showcasing cloud infrastructure automation using Terraform, AWS, and containerized microservices with Docker and Kubernetes.",
+      "rationale": "Add dedicated projects section referencing the candidate's GitHub profile and repository work.",
+      "evidence_source": "user",
+      "source_evidence": [],
+      "user_provided_evidence": [
+        "GitHub profile and repositories at https://github.com/ritasantos-dev showcasing infrastructure and backend work."
+      ],
+      "requires_human_approval": true
+    }
+  ],
+  "questions_asked": [
+    "We found the target role 'Staff Software Engineer / Tech Lead' / applying for 'Cloud & DevOps Engineer'. Do you confirm this target job title or wish to specify another? (Yes/No)",
+    "We found the candidate name 'Rita Santos', but contact links (email, phone, location, LinkedIn, GitHub) are missing. Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+    "We found two employment roles: Staff Software Engineer / Tech Lead at CloudScale (2021-Present) and Senior Backend Engineer at FinTech Global (2018-2020). Do you confirm this work experience? (Yes/No)",
+    "We found your education: M.Sc. in Informatics and Computing Engineering at FEUP (2010-2015). Do you confirm this academic background? (Yes/No)",
+    "The job requires technologies like GitHub Actions, GitLab CI, Prometheus, Grafana, CloudWatch, and specific AWS services (EC2, S3, RDS, VPC, IAM, Route53). Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+    "No languages were listed in the original CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "No certifications were listed in the original CV. Do you have any certifications or licenses (e.g., AWS Certifications) to include? (If none, reply 'I do not have one')",
+    "No projects section was listed in the original CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+    "We propose a summary highlighting your expertise in distributed systems, event-driven architectures, and backend microservices tailored for a Cloud & DevOps Engineer role. Do you confirm this summary focus? (Yes/No)"
+  ],
+  "user_answers": [
+    {
+      "question": "We found the target role 'Staff Software Engineer / Tech Lead' / applying for 'Cloud & DevOps Engineer'. Do you confirm this target job title or wish to specify another? (Yes/No)",
+      "answer": "Yes, I confirm this target job title, although my background is as a Staff Software Engineer / Tech Lead with extensive hands-on experience in AWS cloud infrastructure and Terraform.",
+      "gap": "Target role alignment",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found the candidate name 'Rita Santos', but contact links (email, phone, location, LinkedIn, GitHub) are missing. Do you have any contact details or links to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, you can include my location in Porto, Portugal, my email at rita.santos.tech@example.com, my phone number +351 912 345 678, my LinkedIn at https://www.linkedin.com/in/ritasantos-lead, and my GitHub at https://github.com/ritasantos-dev.",
+      "gap": "Missing contact details and links",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found two employment roles: Staff Software Engineer / Tech Lead at CloudScale (2021-Present) and Senior Backend Engineer at FinTech Global (2018-2020). Do you confirm this work experience? (Yes/No)",
+      "answer": "Yes, I confirm my work experience at CloudScale and FinTech Global. Additionally, I also have prior experience as a Software Engineer at InnoTech Labs from 2015 to 2018.",
+      "gap": "Employment history completeness",
+      "resolution": "supported"
+    },
+    {
+      "question": "We found your education: M.Sc. in Informatics and Computing Engineering at FEUP (2010-2015). Do you confirm this academic background? (Yes/No)",
+      "answer": "Yes, I confirm my academic background. I graduated with an M.Sc. in Informatics Engineering (Mestrado Integrado em Engenharia Informática) from the Faculdade de Engenharia da Universidade do Porto (FEUP) between 2010 and 2015, finishing with a grade of 17/20 and specializing in Distributed Systems, Software Architecture, and Fault Tolerance.",
+      "gap": "Education details",
+      "resolution": "supported"
+    },
+    {
+      "question": "The job requires technologies like GitHub Actions, GitLab CI, Prometheus, Grafana, CloudWatch, and specific AWS services (EC2, S3, RDS, VPC, IAM, Route53). Do you have experience with any of these to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have experience with AWS services (including EC2, S3, RDS, VPC, and IAM), GitLab CI, Docker, Kubernetes (EKS), Terraform, and CloudWatch from my background in cloud-native architectures. However, I do not have direct production experience with GitHub Actions, Prometheus, or Grafana.",
+      "gap": "Missing DevOps technologies (GitHub Actions, Prometheus, Grafana, Route53)",
+      "resolution": "unresolved"
+    },
+    {
+      "question": "No languages were listed in the original CV. Do you speak any other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I speak Portuguese (Native) and English (C2 Proficient).",
+      "gap": "Missing languages section",
+      "resolution": "supported"
+    },
+    {
+      "question": "No certifications were listed in the original CV. Do you have any certifications or licenses (e.g., AWS Certifications) to include? (If none, reply 'I do not have one')",
+      "answer": "I do not have one.",
+      "gap": "Missing official AWS certifications",
+      "resolution": "not_applicable"
+    },
+    {
+      "question": "No projects section was listed in the original CV. Do you have any projects or repositories to include? (If none, reply 'I do not have one')",
+      "answer": "Yes, I have a GitHub profile with repositories showcasing my infrastructure and backend work at https://github.com/ritasantos-dev.",
+      "gap": "Missing projects section",
+      "resolution": "supported"
+    },
+    {
+      "question": "We propose a summary highlighting your expertise in distributed systems, event-driven architectures, and backend microservices tailored for a Cloud & DevOps Engineer role. Do you confirm this summary focus? (Yes/No)",
+      "answer": "Yes. I confirm this summary, and I would also like to ensure that my extensive hands-on experience with Terraform, AWS, Docker, Kubernetes, and CI/CD pipelines is prominently featured to match the Cloud & DevOps Engineer role.",
+      "gap": "Summary tailoring and focus",
+      "resolution": "supported"
+    }
+  ],
+  "user_provided_evidence": [
+    "Location: Porto, Portugal",
+    "Email: rita.santos.tech@example.com",
+    "Phone: +351 912 345 678",
+    "LinkedIn: https://www.linkedin.com/in/ritasantos-lead",
+    "GitHub: https://github.com/ritasantos-dev",
+    "Prior experience as Software Engineer at InnoTech Labs from 2015 to 2018",
+    "Faculdade de Engenharia da Universidade do Porto (FEUP) with M.Sc. in Informatics Engineering, specialization in Distributed Systems, Software Architecture, and Fault Tolerance, grade 17/20",
+    "Experience with AWS services (EC2, S3, RDS, VPC, IAM), GitLab CI, CloudWatch",
+    "Languages: Portuguese (Native), English (C2 Proficient)",
+    "GitHub repositories showcasing infrastructure automation and microservices"
+  ],
+  "optimization_strategy": "The CV is optimized for the Cloud & DevOps Engineer position by integrating newly provided contact details, incorporating prior software engineering experience and education details, adding missing language proficiencies and GitHub project links, and highlighting core cloud and infrastructure competencies (AWS core services, Terraform, Docker, Kubernetes, GitLab CI, CloudWatch) while clearly acknowledging gaps in secondary tools like GitHub Actions, Prometheus, Grafana, and official AWS certifications.",
+  "unresolved_evidence_gaps": [
+    "GitHub Actions experience",
+    "Prometheus monitoring experience",
+    "Grafana monitoring experience",
+    "AWS Route53 experience",
+    "Official AWS Certifications"
+  ]
+}

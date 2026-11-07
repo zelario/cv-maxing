@@ -1,0 +1,95 @@
+{
+  "contact": {
+    "name": "Tomás Silva",
+    "headline": "Junior Software Engineer",
+    "specialisation": "Software Engineering & Data Science",
+    "phone": "+351 912 345 678",
+    "email": "tomas.silva.dev@example.com",
+    "location_city": "Coimbra",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/tomassilva-dev",
+    "github": "https://github.com/tomassilva-data",
+    "portfolio": ""
+  },
+  "summary": "Computer Science graduate from the University of Coimbra seeking an entry-level opportunity in software engineering or data science. Proficient in Python, SQL, and data pipelines with hands-on experience in automated unit testing and analytics. Proven ability to build and deliver a customer churn data pipeline using Pandas, Scikit-Learn, and PostgreSQL.",
+  "experience": [
+    {
+      "title": "Curricular Summer Internship",
+      "dates": "3 months",
+      "company": "SoftInov Soluções Tecnológicas",
+      "location": "Portugal",
+      "bullets": [
+        "Focused on software testing and internal tool support, automating unit and integration testing with pytest.",
+        "Gained practical experience in QA methodologies, PostgreSQL, REST API documentation, and team collaboration."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science (Engenharia Informática)",
+      "dates": "September 2021 – July 2024",
+      "institution": "University of Coimbra, FCTUC",
+      "location": "Coimbra, Portugal",
+      "grade": "15/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Programming Languages & Databases",
+      "skills": [
+        "Python",
+        "SQL",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "category_name": "Libraries & Frameworks",
+      "skills": [
+        "Pandas",
+        "NumPy",
+        "Scikit-Learn"
+      ]
+    },
+    {
+      "category_name": "Tools & Methodologies",
+      "skills": [
+        "Git",
+        "Unit Testing",
+        "pytest",
+        "REST API Documentation",
+        "QA Methodologies"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C1 Advanced",
+      "details": "",
+      "certification": "Cambridge Certificate"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "C1 Advanced English Proficiency",
+      "issuer": "Cambridge",
+      "year": ""
+    }
+  ],
+  "projects": [
+    {
+      "name": "Capstone Project: Customer Churn Analysis",
+      "dates": "",
+      "description": "Built a robust data pipeline in Python analyzing customer churn and retention in a subscription SaaS with over 80k user records using Pandas, Scikit-Learn, and PostgreSQL.",
+      "link": "https://github.com/tomassilva-data",
+      "volunteering_or_other": "Academic Project"
+    }
+  ],
+  "consent": true
+}

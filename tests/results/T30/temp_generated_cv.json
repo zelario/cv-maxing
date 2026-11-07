@@ -1,0 +1,122 @@
+{
+  "contact": {
+    "name": "Rita Santos",
+    "headline": "Cloud & DevOps Engineer",
+    "specialisation": "Distributed Systems & Cloud Architecture",
+    "phone": "+351 912 345 678",
+    "email": "rita.santos.tech@example.com",
+    "location_city": "Porto",
+    "location_country": "Portugal",
+    "linkedin": "https://www.linkedin.com/in/ritasantos-lead",
+    "github": "https://github.com/ritasantos-dev",
+    "portfolio": ""
+  },
+  "summary": "Cloud & DevOps Engineer and Tech Lead with 9+ years of professional experience building distributed systems, AWS cloud infrastructure, and backend microservices using Terraform, Go, and Python.",
+  "experience": [
+    {
+      "title": "Staff Software Engineer / Tech Lead",
+      "dates": "2021-Present",
+      "company": "CloudScale",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Leading system architecture for event-driven backend services and API platforms.",
+        "Re-architecting monolithic services into microservices using Go, Python, and Apache Kafka.",
+        "Mentoring engineers on code quality and technical design.",
+        "Managing AWS cloud infrastructure (EC2, S3, RDS, VPC, IAM) and containerized deployments using Docker, Kubernetes, and Terraform."
+      ]
+    },
+    {
+      "title": "Senior Backend Engineer",
+      "dates": "2018-2020",
+      "company": "FinTech Global",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developing REST and gRPC microservices in Go and Python.",
+        "PostgreSQL database schema design and query optimization.",
+        "Configuring and optimizing continuous integration and deployment pipelines (CI/CD) using GitLab CI."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "dates": "2015-2018",
+      "company": "InnoTech Labs",
+      "location": "Porto, Portugal",
+      "bullets": [
+        "Developed backend microservices and REST APIs using Python and Go.",
+        "Assisted in Linux systems administration and shell scripting (Bash) for deployment automation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. in Informatics and Computing Engineering",
+      "dates": "2010-2015",
+      "institution": "Faculdade de Engenharia da Universidade do Porto (FEUP)",
+      "location": "Porto, Portugal",
+      "grade": "17/20"
+    }
+  ],
+  "skills": [
+    {
+      "category_name": "Languages & Scripting",
+      "skills": [
+        "Go",
+        "Python",
+        "SQL",
+        "Bash"
+      ]
+    },
+    {
+      "category_name": "Cloud & Infrastructure",
+      "skills": [
+        "AWS (EC2, S3, RDS, VPC, IAM)",
+        "Terraform",
+        "Docker",
+        "Kubernetes (EKS)"
+      ]
+    },
+    {
+      "category_name": "CI/CD & Tools",
+      "skills": [
+        "GitLab CI",
+        "Git"
+      ]
+    },
+    {
+      "category_name": "Architecture & Systems",
+      "skills": [
+        "Microservices",
+        "Apache Kafka",
+        "RabbitMQ",
+        "PostgreSQL",
+        "Redis",
+        "CloudWatch"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Portuguese",
+      "level": "Native",
+      "details": "",
+      "certification": ""
+    },
+    {
+      "name": "English",
+      "level": "C2 Proficient",
+      "details": "",
+      "certification": ""
+    }
+  ],
+  "certifications": [],
+  "projects": [
+    {
+      "name": "Infrastructure & Backend Repositories",
+      "dates": "",
+      "description": "Developed and maintained open-source and personal repositories showcasing cloud infrastructure automation using Terraform, AWS, and containerized microservices with Docker and Kubernetes.",
+      "link": "https://github.com/ritasantos-dev",
+      "volunteering_or_other": ""
+    }
+  ],
+  "consent": true
+}

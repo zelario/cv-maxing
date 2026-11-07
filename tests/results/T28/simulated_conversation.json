@@ -1,0 +1,38 @@
+[
+  {
+    "question": "1. Target role: We found the CV headline 'Computer Science graduate seeking an entry-level opportunity in data science or software engineering.' and the target job is 'Product Designer (UI/UX) - Web & SaaS'. Do you confirm using a target role title relevant to the job, or would you like to keep or specify another title? (Yes/No, or specify another)",
+    "answer": "No. My background is entirely in Computer Science, software development, and data science (Python, SQL, machine learning), so I do not have a background in Product Design or UI/UX. I would like to keep my target role focused on junior software engineering or data science."
+  },
+  {
+    "question": "2. Contact & links: We found the name 'Tomás Silva' but missing email, phone, location, LinkedIn, and portfolio/GitHub links. Do you have any email, phone, location, LinkedIn, or GitHub/portfolio links to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, my email is tomas.silva.dev@example.com, my phone number is +351 912 345 678, my location is Coimbra, Portugal, and my LinkedIn and GitHub links are https://www.linkedin.com/in/tomassilva-dev and https://github.com/tomassilva-data respectively."
+  },
+  {
+    "question": "3. Employment: We found 'Curricular Summer Internship (3 months)' focused on software testing and internal tool support. Do you confirm this work experience item? (Yes/No)",
+    "answer": "Yes, I confirm that work experience. During that time at SoftInov Soluções Tecnológicas, I automated unit and integration testing with pytest and worked with PostgreSQL and REST API documentation."
+  },
+  {
+    "question": "4. Education: We found 'B.Sc. in Computer Science, University of Coimbra (2021-2024), Grade: 15/20'. Do you confirm this academic background? (Yes/No)",
+    "answer": "Yes, I confirm this academic background. My B.Sc. in Computer Science (Engenharia Informática) is from FCTUC at the University of Coimbra, spanning from September 2021 to July 2024 with a grade of 15/20."
+  },
+  {
+    "question": "5. Technical skills gaps: The job requires Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL. Your CV already lists Python, SQL, Git, Pandas, NumPy, Unit Testing, and PostgreSQL (in projects). Do you confirm these technical skills? (Yes/No)",
+    "answer": "Yes, I confirm these technical skills. They reflect my background in Python, SQL, PostgreSQL, Git, and data manipulation libraries from my university projects and internship."
+  },
+  {
+    "question": "6. Languages: No languages are listed in your CV. Do you speak other languages (e.g., Portuguese, English) to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I speak Portuguese (Native) and English (C1 Advanced, Cambridge Certificate)."
+  },
+  {
+    "question": "7. Certifications: No certifications are currently listed in your CV. Do you have any certifications or licenses to include? (If none, reply 'I do not have one')",
+    "answer": "Yes, I have a Cambridge Certificate for C1 Advanced English proficiency."
+  },
+  {
+    "question": "8. Projects: We found 'Capstone Project: Customer Churn Analysis: Built a data pipeline in Python analyzing customer churn and retention using Pandas, Scikit-Learn, and PostgreSQL.' Do you confirm this project? (Yes/No)",
+    "answer": "Yes, I confirm this project. It was my B.Sc. thesis project where I used Pandas, Scikit-Learn, and PostgreSQL to analyze customer retention and churn prediction in a subscription SaaS with over 80k user records."
+  },
+  {
+    "question": "9. Summary focus: We propose highlighting your Computer Science background, core programming and data skills (Python, SQL, Pandas, Scikit-Learn), and practical project/internship experience. Do you confirm this summary focus? (Yes/No)",
+    "answer": "Yes, I confirm this summary focus."
+  }
+]
