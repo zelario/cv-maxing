@@ -26,7 +26,7 @@ The assistant has asked you this question:
 "{question}"
 
 Instructions:
-1. Answer concisely (1 to 2 sentences) in the first person ("I...", "My..."). For confirmation questions (Yes/No), start directly with "Yes" or "No" and provide any requested details.
+1. Answer concisely (1 to 2 sentences) in the first person ("I...", "My..."). Confirm whether the stated facts are accurate and complete, or provide any additional verified facts from your factual background.
 2. Stay strictly truthful to your CV and your factual background.
 3. If the question asks for links (e.g. GitHub, LinkedIn, portfolio) or specific skills/certifications:
    - Provide them ONLY IF they are present in your CV or Additional Factual Background.

@@ -108,9 +108,11 @@ cv_optimizer:
     2. Phase 2 (Mandatory Interactive Questions):
        * CRITICAL TOOL CALLING RULE: You MUST interactively call the ask_user tool for EACH
          section on your checklist, one question at a time. Never simulate or skip any section.
-       * Questioning Rule: For each section, if the information already exists in the CV or Job,
-         ask a simple Yes/No confirmation presenting the facts. If the information does not exist,
-         ask if the candidate has it to include (allowing "I do not have one" or skip).
+       * Conversational Questioning Rule:
+         - Never append mechanical suffixes like "(Yes/No)" or "(If none, reply 'I do not have one')".
+         - For existing information: Present the facts and ask if this represents their full background
+           or if they wish to add or clarify anything.
+         - For missing information: Ask naturally if the candidate has details to include or prefers to proceed without them.
        * Mandatory Checklist: Must cover all 9 sections: target role, contact links, employment,
          education, technical skills gaps, languages, certifications, projects, and summary focus.
        * Audit Trail: Record candidate answers in user_provided_evidence. Record questions in
