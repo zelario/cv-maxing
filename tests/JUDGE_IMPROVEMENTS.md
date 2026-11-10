@@ -1,7 +1,7 @@
 # Potenciais melhorias do Judge
 
 Este documento regista melhorias propostas para o avaliador automático definido em
-[`judge.py`](./judge.py), sem implicar que já estejam implementadas.
+[`judge.py`](./src/judge.py), sem implicar que já estejam implementadas.
 
 ## Prioridade alta
 
@@ -72,7 +72,51 @@ aceite como facto.
 
 ## Prioridade média
 
-### 5. Avaliar o PDF além dos dados estruturados
+### 5. Tornar explícito que o candidato é simulado, não um utilizador real
+
+**Situação atual:** `Candidate` em `tests/src/candidate.py` usa outro modelo de
+linguagem para responder às perguntas da pipeline, com base no CV, na vaga e num
+perfil adicional. Isto automatiza o ciclo Human-in-the-Loop, mas não demonstra
+como uma pessoa real entenderia as perguntas ou responderia. Mesmo com instruções
+para não inventar factos, o simulador pode omitir, reformular ou acrescentar
+informação incorretamente.
+
+**Melhoria proposta:**
+
+- Identificar sempre os resultados como provenientes de um candidato simulado.
+- Guardar no resultado o modelo usado pelo simulador e as entradas do cenário,
+  sem expor chaves ou outros segredos.
+- Criar cenários com respostas fixas e verificáveis para os testes de regressão,
+  em vez de depender exclusivamente de respostas geradas por LLM.
+- Manter testes adicionais com o simulador LLM para explorar variações de
+  perguntas e respostas, mas não tratar esses resultados como evidência de
+  comportamento de utilizadores reais.
+- Verificar se cada resposta simulada está apoiada no CV ou no perfil fornecido;
+  informação inventada pelo simulador não deve ser aceite como evidência válida
+  para avaliar o CV gerado.
+
+**Critério de validação:** repetir o mesmo cenário com respostas fixas deve
+produzir entradas idênticas para a pipeline. Nos cenários LLM, as respostas
+simuladas devem ser auditáveis face às fontes fornecidas e eventuais afirmações
+sem suporte devem ser assinaladas.
+
+### 6. Separar avaliação do simulador e avaliação da pipeline
+
+**Situação atual:** a pontuação final pode refletir tanto a qualidade da
+pipeline de CV como o comportamento do modelo que simula o candidato. Por
+exemplo, uma resposta incompleta do simulador pode fazer parecer que a pipeline
+ignorou informação que nunca recebeu.
+
+**Melhoria proposta:** registar separadamente a qualidade/fidelidade da conversa
+simulada e a qualidade do CV produzido. O Judge deve distinguir “o sistema não
+incorporou informação fornecida” de “o simulador não forneceu essa informação”.
+Para comparar versões da pipeline, usar cenários e respostas fixos.
+
+**Critério de validação:** quando a resposta do candidato contém um facto
+confirmado, o teste deve verificar separadamente que o simulador o forneceu e
+que a pipeline o tratou corretamente.
+
+### 7. Avaliar o PDF além dos dados estruturados
 
 **Situação atual:** `Judge.evaluate` carrega JSONs da pipeline, mas não inclui
 `optimized_cv.pdf` no contexto. Portanto, não consegue avaliar diretamente a
@@ -88,7 +132,7 @@ separada da precisão factual.
 cortado, várias páginas inesperadas e renderização correta; os resultados devem
 identificar cada caso.
 
-### 6. Reduzir o enviesamento causado pelos resultados intermédios
+### 8. Reduzir o enviesamento causado pelos resultados intermédios
 
 **Situação atual:** o Judge recebe `temp_review.json` e `temp_optimization.json`,
 além do CV final. As conclusões dessas etapas podem influenciar a avaliação do
@@ -103,7 +147,7 @@ reportando-a separadamente.
 intermédios; diferenças relevantes devem ser justificáveis e não depender apenas
 da autoavaliação da pipeline.
 
-### 7. Fazer o resultado indicar evidência para as conclusões
+### 9. Fazer o resultado indicar evidência para as conclusões
 
 **Situação atual:** o esquema guarda listas de alucinações, pontos fortes,
 problemas e recomendações, mas não exige referências específicas às fontes ou
@@ -118,7 +162,7 @@ afirmação do CV gerado e explicar que evidência foi procurada e não encontra
 
 ## Prioridade baixa
 
-### 8. Distinguir erro de execução de resultado de avaliação
+### 10. Distinguir erro de execução de resultado de avaliação
 
 **Situação atual:** a falta de ficheiros obrigatórios faz `evaluate` imprimir um
 erro e devolver `None`, enquanto erros da API terminam o processo.
@@ -138,5 +182,7 @@ recebe um erro explícito e que não é criado um `temp_judge.json` enganador.
 2. Separar `Accuracy` de `Evidence`.
 3. Impor no código as regras determinísticas, incluindo o limite por alucinação.
 4. Acrescentar testes unitários para as regras e casos-limite.
-5. Avaliar o PDF visualmente e, se necessário, separar a avaliação do processo da
+5. Distinguir testes com candidato simulado de testes com participantes humanos;
+   usar respostas fixas para comparações reproduzíveis.
+6. Avaliar o PDF visualmente e, se necessário, separar a avaliação do processo da
    avaliação do resultado final.
