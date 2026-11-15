@@ -1,4 +1,12 @@
-from pydantic import BaseModel, ConfigDict, Field
+import re
+from typing import Any
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
+
+
+def _clean_str(v: Any) -> Any:
+    if isinstance(v, str) and v.strip().lower() in ("none", "null", "n/a", "na", "undefined"):
+        return None
+    return v
 
 
 class ContactInfo(BaseModel):
@@ -15,6 +23,22 @@ class ContactInfo(BaseModel):
     github: str | None = None
     portfolio: str | None = None
 
+    @field_validator(
+        "headline",
+        "specialisation",
+        "phone",
+        "email",
+        "location_city",
+        "location_country",
+        "linkedin",
+        "github",
+        "portfolio",
+        mode="before",
+    )
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
+
 
 class ExperienceItem(BaseModel):
     title: str
@@ -23,6 +47,11 @@ class ExperienceItem(BaseModel):
     location: str | None = None
     bullets: list[str] = Field(default_factory=list)
 
+    @field_validator("location", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
+
 
 class EducationItem(BaseModel):
     degree: str
@@ -30,6 +59,11 @@ class EducationItem(BaseModel):
     institution: str
     location: str | None = None
     grade: str | None = None
+
+    @field_validator("location", "grade", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
 
 
 class SkillCategory(BaseModel):
@@ -43,11 +77,48 @@ class Language(BaseModel):
     details: str | None = None
     certification: str | None = None
 
+    @field_validator("level", "details", "certification", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
+
+    @model_validator(mode="after")
+    def deduplicate_fields(self) -> "Language":
+        # Clean certification redundancy
+        if self.certification:
+            c_low = self.certification.strip().lower()
+            l_low = (self.level or "").strip().lower()
+            if c_low in ("native", "none", "null", "n/a") or c_low == l_low or c_low in l_low.split():
+                self.certification = None
+
+        # Clean details redundancy
+        if self.details:
+            d_low = self.details.strip().lower()
+            l_low = (self.level or "").strip().lower()
+            if "native" in l_low and any(w in d_low for w in ["native", "materna", "mother tongue"]):
+                self.details = None
+            elif d_low == l_low:
+                self.details = None
+            else:
+                filler = {"proficiency", "speaker", "level", "language", "proficient", "advanced", "working", "professional", "full"}
+                d_words = set(re.findall(r"\b\w+\b", d_low)) - filler
+                l_words = set(re.findall(r"\b\w+\b", l_low)) - filler
+                specific_context = any(term in d_low for term in ["legal", "medical", "clinical", "contract", "drafting", "negotiation", "technical"])
+                if not specific_context and (not d_words or d_words.issubset(l_words)):
+                    self.details = None
+
+        return self
+
 
 class Certification(BaseModel):
     name: str
     issuer: str | None = None
     year: str | None = None
+
+    @field_validator("issuer", "year", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
 
 
 class Project(BaseModel):
@@ -56,6 +127,11 @@ class Project(BaseModel):
     description: str | None = None
     link: str | None = None
     volunteering_or_other: str | None = None
+
+    @field_validator("dates", "description", "link", "volunteering_or_other", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
 
 
 class GeneratedCV(BaseModel):
@@ -68,3 +144,9 @@ class GeneratedCV(BaseModel):
     certifications: list[Certification] = Field(default_factory=list)
     projects: list[Project] = Field(default_factory=list)
     consent: bool = False
+
+    @field_validator("summary", mode="before")
+    @classmethod
+    def clean_optional_strings(cls, v: Any) -> Any:
+        return _clean_str(v)
+

@@ -48,6 +48,19 @@ def _sort_chronologically(generated: GeneratedCV) -> None:
     generated.projects.sort(key=lambda item: _date_sort_key(item.dates), reverse=True)
 
 
+def _clean_null_strings(obj):
+    """Recursively convert string representations of null/none to None."""
+    if isinstance(obj, str):
+        if obj.strip().lower() in ("none", "null", "n/a", "na", "undefined"):
+            return None
+        return obj
+    if isinstance(obj, list):
+        return [_clean_null_strings(item) for item in obj]
+    if isinstance(obj, dict):
+        return {k: _clean_null_strings(v) for k, v in obj.items()}
+    return obj
+
+
 def _unescape_strings(obj):
     """Recursively decode HTML entities (&ccedil;, &eacute;, etc.) to clean Unicode."""
     if isinstance(obj, str):
@@ -64,7 +77,7 @@ def prepare_generated_cv(
 ) -> GeneratedCV:
     """Copy generated data, then apply deterministic headline, URLs, and ordering."""
 
-    raw_dict = _unescape_strings(generated.model_dump())
+    raw_dict = _clean_null_strings(_unescape_strings(generated.model_dump()))
     prepared = GeneratedCV.model_validate(raw_dict)
     # Only fallback to job title if candidate/generator headline is not already set
     if not (prepared.contact.headline and prepared.contact.headline.strip()) and job and job.job_title.strip():
