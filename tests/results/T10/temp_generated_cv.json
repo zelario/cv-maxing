@@ -83,14 +83,14 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "Native language",
-      "certification": "null"
+      "details": null,
+      "certification": null
     },
     {
       "name": "English",
       "level": "B2 Upper-Intermediate",
-      "details": "Professional working proficiency",
-      "certification": "null"
+      "details": null,
+      "certification": null
     }
   ],
   "certifications": [
@@ -105,21 +105,21 @@
       "name": "Construction Equipment & Asset Tracker",
       "dates": "2023",
       "description": "Developed with Python/Flask, SQLite, JavaScript, and Docker on Render.",
-      "link": "null",
+      "link": null,
       "volunteering_or_other": "Project"
     },
     {
       "name": "Personal Budget & Expense Analytics",
       "dates": "2023",
       "description": "Built using Node.js, PostgreSQL, and Chart.js for data visualization.",
-      "link": "null",
+      "link": null,
       "volunteering_or_other": "Project"
     },
     {
       "name": "Structural Beam Deflection Calculator",
       "dates": "2023",
       "description": "Created using Python and Tailwind CSS for responsive engineering calculations.",
-      "link": "null",
+      "link": null,
       "volunteering_or_other": "Project"
     }
   ],

@@ -9,7 +9,7 @@
     "location_country": "Portugal",
     "linkedin": "https://www.linkedin.com/in/pedro-oliveira-dev",
     "github": "https://github.com/poliveira-projects",
-    "portfolio": "null"
+    "portfolio": null
   },
   "summary": "Junior Fullstack Software Engineer transitioning from a 4-year Civil Engineering career. Leverages proficiency in Python, Flask, JavaScript, and SQLite, backed by an intensive 9-month Fullstack Web Development Bootcamp from Lisbon Tech Academy. Proven ability to build and deploy verified portfolio web applications integrating Python/Flask, PostgreSQL, and Docker.",
   "experience": [
@@ -29,7 +29,7 @@
       "dates": "2013-2018",
       "institution": "Instituto Superior Técnico (IST)",
       "location": "Lisbon, Portugal",
-      "grade": "null"
+      "grade": null
     }
   ],
   "skills": [
@@ -65,14 +65,14 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "null",
-      "certification": "null"
+      "details": null,
+      "certification": null
     },
     {
       "name": "English",
       "level": "B2 Upper-Intermediate",
-      "details": "null",
-      "certification": "null"
+      "details": null,
+      "certification": null
     }
   ],
   "certifications": [
@@ -88,21 +88,21 @@
       "dates": "2023-Present",
       "description": "Built complete web application utilizing Python (Flask), SQLite, JavaScript, and Docker.",
       "link": "https://github.com/poliveira-projects",
-      "volunteering_or_other": "null"
+      "volunteering_or_other": null
     },
     {
       "name": "Personal Budget & Expense Analytics",
       "dates": "2023-Present",
       "description": "Built complete web application utilizing Node.js, PostgreSQL, and Chart.js.",
       "link": "https://github.com/poliveira-projects",
-      "volunteering_or_other": "null"
+      "volunteering_or_other": null
     },
     {
       "name": "Structural Beam Deflection Calculator",
       "dates": "2023-Present",
       "description": "Built complete web application utilizing Python and Tailwind CSS.",
       "link": "https://github.com/poliveira-projects",
-      "volunteering_or_other": "null"
+      "volunteering_or_other": null
     }
   ],
   "consent": true

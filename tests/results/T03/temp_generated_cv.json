@@ -61,13 +61,13 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "Native speaker",
+      "details": null,
       "certification": ""
     },
     {
       "name": "English",
       "level": "C1 Advanced",
-      "details": "Advanced professional proficiency",
+      "details": null,
       "certification": "Cambridge Certificate"
     }
   ],

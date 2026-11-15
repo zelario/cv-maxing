@@ -66,13 +66,13 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "Native proficiency",
+      "details": null,
       "certification": ""
     },
     {
       "name": "English",
       "level": "C1",
-      "details": "Full Professional Proficiency",
+      "details": null,
       "certification": ""
     }
   ],

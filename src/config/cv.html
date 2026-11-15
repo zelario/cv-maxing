@@ -47,7 +47,7 @@
     </section>{% endif %}
 
     {% if languages %}<section><h2>Languages</h2>
-      {% for item in languages %}<p class="field"><span class="label">{{ item.name }}:</span>{% if item.level %} {{ item.level }}{% endif %}{% if item.details %} ({{ item.details }}){% endif %}{% if item.certification %} · {{ item.certification }}{% endif %}</p>{% endfor %}
+      {% for item in languages %}<p class="field"><span class="label">{{ item.name }}:</span>{% if item.level and item.level|lower not in ['none', 'null', 'n/a'] %} {{ item.level }}{% endif %}{% if item.details and item.details|lower not in ['none', 'null', 'n/a'] %} ({{ item.details }}){% endif %}{% if item.certification and item.certification|lower not in ['none', 'null', 'n/a'] %} · {{ item.certification }}{% endif %}</p>{% endfor %}
     </section>{% endif %}
 
     {% if certifications %}<section><h2>Certifications and Additional Training</h2>

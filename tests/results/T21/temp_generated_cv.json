@@ -96,14 +96,14 @@
     {
       "name": "Portuguese",
       "level": "Native",
-      "details": "Native language",
-      "certification": "None"
+      "details": null,
+      "certification": null
     },
     {
       "name": "English",
       "level": "C2 Proficient",
-      "details": "Proficient professional level",
-      "certification": "None"
+      "details": null,
+      "certification": null
     }
   ],
   "certifications": [],
