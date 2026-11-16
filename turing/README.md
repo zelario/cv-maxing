@@ -92,33 +92,28 @@ For each of the 3 cases, the participant receives:
 
 ```text
 turing/
-├── README.md                      # This protocol document (English)
-├── form_questions.md              # Ready-to-use survey text for Google / Microsoft Forms
-├── mapping_key.json               # Confidential mapping key (secret ground truth)
-├── cv_style.css                   # Shared CSS stylesheet for all CV variants
-├── STYLE_GUIDELINES.md            # HTML classes and visual directives for Human & LLM CVs
-├── render_cv.py                   # Playwright compiler script (.html -> A4 .pdf)
+├── README.md                              # This empirical protocol document
 │
-├── case_1_junior_tomas/           # Case 1: Tomás Silva (Data Scientist Intern)
-│   ├── case_1.md                  # Candidate profile + Target job description
-│   ├── cv_original.pdf            # Original un-tailored candidate CV
-│   ├── cv_maxing.pdf              # CV Maxing tailored version (T01)
-│   ├── cv_baseline_llm.pdf        # Commercial baseline version (ChatGPT)
-│   └── cv_human.pdf               # Manually tailored human version
+├── case_1_junior_tomas/                   # Case 1: Tomás Silva (Data Scientist Intern)
+│   ├── case_1.md                          # Candidate ground truth & target job posting
+│   ├── cv_maxing.pdf                      # Condition M (CV Maxing multi-agent tailored)
+│   ├── cv_chatgpt.pdf                     # Condition B (Commercial baseline ChatGPT)
+│   ├── cv_human.pdf                       # Condition H (Human gold standard tailored)
+│   └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side for survey forms (A, B, C)
 │
-├── case_2_transition_pedro/       # Case 2: Pedro Oliveira (Fullstack Developer)
-│   ├── case_2.md                  # Candidate profile + Target job description
-│   ├── cv_original.pdf
-│   ├── cv_maxing.pdf              # CV Maxing tailored version (T10)
-│   ├── cv_baseline_llm.pdf
-│   └── cv_human.pdf
+├── case_2_transition_pedro/               # Case 2: Pedro Oliveira (Fullstack Web Developer)
+│   ├── case_2.md                          # Candidate ground truth & target job posting
+│   ├── cv_maxing.pdf                      # Condition M
+│   ├── cv_chatgpt.pdf                     # Condition B
+│   ├── cv_human.pdf                       # Condition H
+│   └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
 │
-└── case_3_senior_rita/            # Case 3: Rita Santos (Senior Tech Lead)
-    ├── case_3.md                  # Candidate profile + Target job description
-    ├── cv_original.pdf
-    ├── cv_maxing.pdf              # CV Maxing tailored version (T21)
-    ├── cv_baseline_llm.pdf
-    └── cv_human.pdf
+└── case_3_senior_rita/                    # Case 3: Rita Santos (Staff Distributed Systems Lead)
+    ├── case_3.md                          # Candidate ground truth & target job posting
+    ├── cv_maxing.pdf                      # Condition M
+    ├── cv_chatgpt.pdf                     # Condition B
+    ├── cv_human.pdf                       # Condition H
+    └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
 ```
 
 ---
@@ -126,10 +121,11 @@ turing/
 ## 7. Execution Checklist
 
 - [x] Experimental protocol formulated in English (`README.md`);
-- [x] Initialize case directories with job postings, candidate ground truths, and source CVs;
+- [x] Initialize case directories with job postings and candidate ground truths;
 - [x] Synchronize optimized CV Maxing PDFs from the validation matrix (`T01`, `T10`, `T21`);
-- [x] Update survey questionnaire and mapping key for the 3 IT archetypes;
-- [ ] Generate Condition B (Baseline LLM) resumes via ChatGPT and render to PDF;
-- [ ] Produce Condition H (Human-tailored) resumes and render to PDF;
-- [ ] Distribute the blinded survey to 6–10 technical evaluators and recruiters;
-- [ ] Aggregate attribution frequencies and qualitative feedback for the final paper.
+- [x] Update survey questionnaire and mapping key for the 3 IT archetypes (`form_questions.md`);
+- [x] Generate Condition B (Baseline LLM) resumes via ChatGPT and render to A4 PDF;
+- [x] Produce Condition H (Human-tailored) resumes and render to A4 PDF with layout normalization;
+- [x] Generate high-resolution 3-way side-by-side comparison images for all 3 cases;
+- [ ] Distribute the blinded survey to technical evaluators and recruiters;
+- [ ] Aggregate attribution frequencies and qualitative feedback for the final evaluation paper.
