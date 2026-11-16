@@ -99,21 +99,24 @@ turing/
 │   ├── cv_maxing.pdf                      # Condition M (CV Maxing multi-agent tailored)
 │   ├── cv_chatgpt.pdf                     # Condition B (Commercial baseline ChatGPT)
 │   ├── cv_human.pdf                       # Condition H (Human gold standard tailored)
-│   └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side for survey forms (A, B, C)
+│   ├── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side for survey forms (A, B, C)
+│   └── comparison_cvmaxing_vs_chatgpt_vs_human.png # Labeled comparison image (CV Maxing | ChatGPT | Human)
 │
 ├── case_2_transition_pedro/               # Case 2: Pedro Oliveira (Fullstack Web Developer)
 │   ├── case_2.md                          # Candidate ground truth & target job posting
 │   ├── cv_maxing.pdf                      # Condition M
 │   ├── cv_chatgpt.pdf                     # Condition B
 │   ├── cv_human.pdf                       # Condition H
-│   └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
+│   ├── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
+│   └── comparison_cvmaxing_vs_chatgpt_vs_human.png # Labeled comparison image (CV Maxing | ChatGPT | Human)
 │
 └── case_3_senior_rita/                    # Case 3: Rita Santos (Staff Distributed Systems Lead)
     ├── case_3.md                          # Candidate ground truth & target job posting
     ├── cv_maxing.pdf                      # Condition M
     ├── cv_chatgpt.pdf                     # Condition B
     ├── cv_human.pdf                       # Condition H
-    └── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
+    ├── comparison_version_a_vs_b_vs_c.png # Blinded side-by-side (Version A, B, C)
+    └── comparison_cvmaxing_vs_chatgpt_vs_human.png # Labeled comparison image (CV Maxing | ChatGPT | Human)
 ```
 
 ---
