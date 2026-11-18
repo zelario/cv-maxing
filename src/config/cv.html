@@ -16,7 +16,7 @@
       {% set location = [contact.location_city, contact.location_country] | select | join(', ') %}
       {% set contact_items = [contact.phone, contact.email, location] | select | list %}
       {% if contact_items %}<div class="contact">{% for item in contact_items %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{{ item }}{% endfor %}</div>{% endif %}
-      {% set links = [contact.linkedin, contact.github, contact.portfolio] | select | list %}
+      {% set links = [contact.linkedin, contact.github, contact.portfolio] | select | unique | list %}
       {% if links %}<div class="contact">{% for item in links %}{% if not loop.first %}<span class="sep">|</span>{% endif %}{% set display_url = item | replace('https://', '') | replace('http://', '') | replace('www.', '') %}{% set href_url = item if '://' in item else 'https://' ~ item %}<a href="{{ href_url }}">{{ display_url }}</a>{% endfor %}</div>{% endif %}
     </header>
 

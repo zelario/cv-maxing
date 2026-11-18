@@ -89,16 +89,22 @@ def prepare_generated_cv(
             gh_user = gh.lstrip("/").replace("github.com/", "")
             prepared.contact.github = f"https://github.com/{gh_user}"
 
-    # Ensure project/competition links never leak into contact.portfolio in the header
+    # Ensure project/competition links never leak into contact.portfolio in the header,
+    # and deduplicate portfolio if it matches linkedin or github
     if prepared.contact.portfolio:
         portfolio_clean = prepared.contact.portfolio.strip().rstrip("/").lower()
-        is_project_link = any(
-            (p.link and (p.link.strip().rstrip("/").lower() == portfolio_clean or portfolio_clean in p.link.lower() or p.link.lower() in portfolio_clean))
-            or (p.description and portfolio_clean in p.description.lower())
-            for p in prepared.projects
-        )
-        if is_project_link:
+        norm_li = prepared.contact.linkedin.strip().rstrip("/").lower() if prepared.contact.linkedin else ""
+        norm_gh = prepared.contact.github.strip().rstrip("/").lower() if prepared.contact.github else ""
+        if (norm_li and portfolio_clean == norm_li) or (norm_gh and portfolio_clean == norm_gh):
             prepared.contact.portfolio = None
+        else:
+            is_project_link = any(
+                (p.link and (p.link.strip().rstrip("/").lower() == portfolio_clean or portfolio_clean in p.link.lower() or p.link.lower() in portfolio_clean))
+                or (p.description and portfolio_clean in p.description.lower())
+                for p in prepared.projects
+            )
+            if is_project_link:
+                prepared.contact.portfolio = None
 
     # Clean any raw URLs embedded in institution or company names
     for edu in prepared.education:
