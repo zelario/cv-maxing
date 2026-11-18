@@ -93,6 +93,9 @@ For each of the 3 cases, the participant receives:
 ```text
 turing/
 ├── README.md                              # This empirical protocol document
+├── analise_teste_turing.ipynb             # Dynamic Jupyter analysis notebook
+├── data/
+│   └── <google_forms_export>.csv          # Raw survey responses exported by Google Forms
 │
 ├── case_1_junior_tomas/                   # Case 1: Tomás Silva (Data Scientist Intern)
 │   ├── case_1.md                          # Candidate ground truth & target job posting
@@ -121,7 +124,40 @@ turing/
 
 ---
 
-## 7. Execution Checklist
+## 7. Survey Data Analysis
+
+The aggregated survey responses are stored in `turing/data/` and analyzed in [`analise_teste_turing.ipynb`](analise_teste_turing.ipynb).
+
+Before running the notebook, place the Google Forms CSV export inside `turing/data/`. The notebook does not require the CSV filename to be specified: it automatically loads the `*.csv` file with the newest modification time.
+
+The analysis includes:
+
+- Cleaning and validation of the exported survey rows;
+- Automatic detection of the three AI perception columns and forced-choice columns for each case;
+- Conversion of Likert responses from textual labels to values from 1 (Definitely Human) to 5 (Definitely AI);
+- Decoding of blinded Versions A, B, and C to the Human, CV Maxing, and ChatGPT conditions using the counterbalancing key;
+- Aggregate and per-case AI perception ratings;
+- Counts and percentages of the versions selected as Human;
+- Counts and percentages of the versions recommended for a technical interview;
+- Binomial tests comparing forced choices with chance-level probabilities;
+- Spearman and point-biserial correlations between AI perception ratings and evaluator decisions;
+- Heatmaps, bar charts, and scatter plots for the main results;
+- A pilot summary of hypotheses H1, H2, and H3;
+- Missing-value checks and explicit limitations for the current sample size.
+
+The dynamic transformation produces one observation per participant, case, and version. For example, with 11 valid participants, the three cases and three versions produce 11 × 3 × 3 = 99 condition-case observations. Forced-choice tables aggregate the one Human selection and one interview recommendation made by each participant for each case.
+
+Run the notebook from the repository root or from the `turing/` directory:
+
+```powershell
+jupyter notebook turing\analise_teste_turing.ipynb
+```
+
+The CSV with the most recent modification time is used automatically. If there are no CSV files in `turing/data/`, the notebook reports a clear `FileNotFoundError`.
+
+---
+
+## 8. Execution Checklist
 
 - [x] Experimental protocol formulated in English (`README.md`);
 - [x] Initialize case directories with job postings and candidate ground truths;
@@ -130,5 +166,8 @@ turing/
 - [x] Generate Condition B (Baseline LLM) resumes via ChatGPT and render to A4 PDF;
 - [x] Produce Condition H (Human-tailored) resumes and render to A4 PDF with layout normalization;
 - [x] Generate high-resolution 3-way side-by-side comparison images for all 3 cases;
+- [x] Export survey responses to `turing/data/`;
+- [x] Create the dynamic data-analysis notebook (`analise_teste_turing.ipynb`);
 - [ ] Distribute the blinded survey to technical evaluators and recruiters;
-- [ ] Aggregate attribution frequencies and qualitative feedback for the final evaluation paper.
+- [x] Aggregate attribution frequencies and interview recommendations with the dynamic analysis notebook;
+- [ ] Analyze and incorporate qualitative evaluator feedback for the final evaluation paper.
