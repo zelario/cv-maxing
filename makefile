@@ -1,4 +1,4 @@
-.PHONY: build app dev stop test cli
+.PHONY: build app dev stop test
 
 build:
 	docker compose build
@@ -14,6 +14,3 @@ stop:
 
 test:
 	@read -p "Test ID: " id && docker compose exec dev python tests/src/validation_pipeline.py --test-id $$id
-
-cli:
-	docker compose exec dev python src/cli.py

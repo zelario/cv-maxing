@@ -28,6 +28,69 @@ def render_cv_html(generated: GeneratedCV) -> str:
     return html.replace("</head>", f"<style>\n{css}\n</style>\n</head>")
 
 
+async def render_cv_pdf_async(html: str) -> bytes:
+    """Render a CV HTML document as an A4 PDF asynchronously using Chromium with bottom-anchored GDPR consent."""
+    from playwright.async_api import async_playwright, Error as AsyncPlaywrightError
+
+    async with async_playwright() as playwright:
+        browser = None
+        try:
+            browser = await playwright.chromium.launch()
+            page = await browser.new_page()
+            await page.set_content(html, wait_until="load")
+            pdf_bytes = await page.pdf(
+                format="A4",
+                print_background=True,
+                prefer_css_page_size=True,
+            )
+
+            # Anchor GDPR consent statement to the bottom of the page where it is located
+            try:
+                with pdfplumber.open(io.BytesIO(pdf_bytes)) as doc:
+                    if doc.pages:
+                        last_page = doc.pages[-1]
+                        page_height = float(last_page.height)
+                        gdpr_words = [
+                            w
+                            for w in last_page.extract_words()
+                            if "gdpr" in w["text"].lower() or "consent" in w["text"].lower()
+                        ]
+                        if gdpr_words:
+                            current_bottom = max(float(w["bottom"]) for w in gdpr_words)
+                            target_bottom = page_height - (1.76 * 72.0 / 2.54) - 15.0
+                            delta_pt = target_bottom - current_bottom
+                            if delta_pt > 5.0:
+                                await page.evaluate(
+                                    f"""() => {{
+                                        const consent = document.querySelector('.consent');
+                                        if (consent) {{
+                                            const cur = parseFloat(window.getComputedStyle(consent).marginTop) || 0;
+                                            consent.style.marginTop = (cur + {delta_pt}) + 'pt';
+                                        }}
+                                    }}"""
+                                )
+                                adjusted_pdf_bytes = await page.pdf(
+                                    format="A4",
+                                    print_background=True,
+                                    prefer_css_page_size=True,
+                                )
+                                with pdfplumber.open(io.BytesIO(adjusted_pdf_bytes)) as adj_doc:
+                                    if len(adj_doc.pages) == len(doc.pages):
+                                        pdf_bytes = adjusted_pdf_bytes
+            except Exception:
+                pass
+
+            return pdf_bytes
+        except AsyncPlaywrightError as exc:
+            raise RuntimeError(
+                "Could not render the CV PDF asynchronously. Install Playwright's Chromium with "
+                "`python -m playwright install chromium`."
+            ) from exc
+        finally:
+            if browser is not None:
+                await browser.close()
+
+
 def render_cv_pdf(html: str) -> bytes:
     """Render a CV HTML document as an A4 PDF using Chromium with bottom-anchored GDPR consent."""
 

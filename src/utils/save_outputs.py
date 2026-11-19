@@ -136,8 +136,8 @@ def prepare_generated_cv(
     return prepared
 
 
-def save_model_json(model: BaseModel, filename: str) -> Path:
-    """Serialize one validated Pydantic model to an allowed JSON file."""
+def save_model_json(model: BaseModel, filename: str, job_id: str | None = None) -> Path:
+    """Serialize one validated Pydantic model to an allowed JSON file, optionally isolated by job_id."""
 
     requested_path = Path(filename)
     if requested_path.name != filename or filename not in JSON_FILENAMES:
@@ -163,6 +163,13 @@ def save_model_json(model: BaseModel, filename: str) -> Path:
             os.fsync(file.fileno())
 
         os.replace(temporary_path, output_path)
+
+        # If job_id is provided, also save an isolated copy for session tracking
+        if job_id:
+            job_dir = DATA_DIRECTORY / job_id
+            job_dir.mkdir(parents=True, exist_ok=True)
+            isolated_path = job_dir / filename
+            isolated_path.write_text(output_path.read_text(encoding="utf-8"), encoding="utf-8")
     finally:
         if temporary_path and os.path.exists(temporary_path):
             os.remove(temporary_path)
@@ -170,8 +177,8 @@ def save_model_json(model: BaseModel, filename: str) -> Path:
     return output_path
 
 
-def save_pipeline_outputs(result) -> GeneratedCV:
-    """Save validated structured pipeline outputs."""
+def save_pipeline_outputs(result, job_id: str | None = None) -> GeneratedCV:
+    """Save validated structured pipeline outputs, optionally isolated by job_id."""
 
     model_specs = [
         ("temp_cv.json", StructuredCV),
@@ -210,7 +217,7 @@ def save_pipeline_outputs(result) -> GeneratedCV:
         output = outputs_by_model.get(model_cls)
         if output is None:
             raise TypeError(f"Pipeline did not return {model_cls.__name__}")
-        save_model_json(output, filename)
+        save_model_json(output, filename, job_id=job_id)
 
     raw_generated = outputs_by_model.get(GeneratedCV)
     if not isinstance(raw_generated, GeneratedCV):
@@ -220,7 +227,7 @@ def save_pipeline_outputs(result) -> GeneratedCV:
     generated = prepare_generated_cv(
         raw_generated, job_output if isinstance(job_output, StructuredJob) else None
     )
-    save_model_json(generated, "temp_generated_cv.json")
+    save_model_json(generated, "temp_generated_cv.json", job_id=job_id)
 
     print("[PIPELINE] Structured CV, job, review, optimization, and generated CV saved")
     return generated

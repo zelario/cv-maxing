@@ -39,6 +39,24 @@ class ContactInfo(BaseModel):
     def clean_optional_strings(cls, v: Any) -> Any:
         return _clean_str(v)
 
+    @field_validator("phone", mode="after")
+    @classmethod
+    def normalize_phone(cls, v: str | None) -> str | None:
+        if not v:
+            return None
+        cleaned = re.sub(r"\s+", " ", v.strip())
+        return cleaned or None
+
+    @field_validator("portfolio", mode="after")
+    @classmethod
+    def normalize_portfolio_url(cls, v: str | None) -> str | None:
+        if not v:
+            return None
+        p = v.strip()
+        if not p.startswith(("http://", "https://")) and "." in p:
+            return f"https://{p.lstrip('/')}"
+        return p
+
     @model_validator(mode="after")
     def deduplicate_links(self) -> "ContactInfo":
         norm_li = self.linkedin.strip().rstrip("/").lower() if self.linkedin else None
