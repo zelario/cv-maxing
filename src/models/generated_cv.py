@@ -39,6 +39,36 @@ class ContactInfo(BaseModel):
     def clean_optional_strings(cls, v: Any) -> Any:
         return _clean_str(v)
 
+    @field_validator("phone", mode="after")
+    @classmethod
+    def normalize_phone(cls, v: str | None) -> str | None:
+        if not v:
+            return None
+        cleaned = re.sub(r"\s+", " ", v.strip())
+        return cleaned or None
+
+    @field_validator("portfolio", mode="after")
+    @classmethod
+    def normalize_portfolio_url(cls, v: str | None) -> str | None:
+        if not v:
+            return None
+        p = v.strip()
+        if not p.startswith(("http://", "https://")) and "." in p:
+            return f"https://{p.lstrip('/')}"
+        return p
+
+    @model_validator(mode="after")
+    def deduplicate_links(self) -> "ContactInfo":
+        norm_li = self.linkedin.strip().rstrip("/").lower() if self.linkedin else None
+        norm_gh = self.github.strip().rstrip("/").lower() if self.github else None
+        if self.portfolio:
+            norm_p = self.portfolio.strip().rstrip("/").lower()
+            if (norm_li and norm_p == norm_li) or (norm_gh and norm_p == norm_gh):
+                self.portfolio = None
+        if self.github and norm_gh and norm_li and norm_gh == norm_li:
+            self.github = None
+        return self
+
 
 class ExperienceItem(BaseModel):
     title: str

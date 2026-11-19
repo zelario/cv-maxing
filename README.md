@@ -29,7 +29,7 @@ The candidate remains involved in the process and can review the generated CV be
 
 ```text
 src/
-  api.py                 FastAPI app and asynchronous job/session handling
+  app.py                 FastAPI application and asynchronous job/session handling
   crew.py                CrewAI agents and pipeline tasks
   config/                Agent and task prompts
   models/                Pydantic data models
@@ -37,7 +37,6 @@ src/
   utils/                 Pipeline output helpers
 frontend/                Browser interface (HTML, CSS, JavaScript)
 docs/                    Project documentation and research notes
-tests/                   Sample job description and space for CV inputs
 temp/                    Temporary uploads and generated outputs
 ```
 

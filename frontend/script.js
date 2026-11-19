@@ -102,6 +102,22 @@ function delay(milliseconds) {
   return new Promise((resolve) => window.setTimeout(resolve, milliseconds));
 }
 
+async function fetchWithRetry(url, options = {}, retries = 3, backoff = 1000) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, options);
+      if (!response.ok && response.status >= 500 && attempt < retries) {
+        await delay(backoff * Math.pow(2, attempt));
+        continue;
+      }
+      return response;
+    } catch (err) {
+      if (attempt >= retries) throw err;
+      await delay(backoff * Math.pow(2, attempt));
+    }
+  }
+}
+
 async function readResponse(response) {
   const payload = await response.json();
   if (!response.ok) throw new Error(payload.detail || 'The request failed.');
@@ -127,7 +143,8 @@ async function startOptimization() {
     const form = new FormData();
     form.append('cv', state.file);
     form.append('job', state.job.trim());
-    const created = await readResponse(await fetch('/api/jobs', { method: 'POST', body: form }));
+    const res = await fetchWithRetry('/api/jobs', { method: 'POST', body: form }, 1, 1000);
+    const created = await readResponse(res);
     state.jobId = created.id;
     await followOptimization();
   } catch (error) {
@@ -143,7 +160,8 @@ async function startOptimization() {
 async function followOptimization() {
   let seenQuestionId = null;
   while (state.jobId) {
-    const current = await readResponse(await fetch(`/api/jobs/${state.jobId}`, { cache: 'no-store' }));
+    const res = await fetchWithRetry(`/api/jobs/${state.jobId}`, { cache: 'no-store' }, 3, 1000);
+    const current = await readResponse(res);
     if (current.status === 'error') throw new Error(current.error || 'Could not complete the optimization.');
     if (current.status === 'complete') {
       state.result = current.result;
@@ -160,14 +178,15 @@ async function followOptimization() {
       state.submitAnswer = null;
       showScreen('processing');
       byId('loading-screen').textContent = 'Answer submitted. Working on it…';
-      await readResponse(await fetch(`/api/jobs/${state.jobId}/answer`, {
+      const answerRes = await fetchWithRetry(`/api/jobs/${state.jobId}/answer`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question_id: seenQuestionId, answer }),
-      }));
+      }, 3, 1000);
+      await readResponse(answerRes);
       continue;
     }
-    byId('loading-screen').textContent = 'Thinking about the details…';
+    byId('loading-screen').textContent = current.stage_message || 'Thinking about the details…';
     await delay(1200);
   }
 }
@@ -194,7 +213,7 @@ function renderResult() {
 
 async function downloadPdfResult() {
   try {
-    const response = await fetch(state.pdfUrl);
+    const response = await fetchWithRetry(state.pdfUrl, {}, 2, 1000);
     const blob = await response.blob();
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
